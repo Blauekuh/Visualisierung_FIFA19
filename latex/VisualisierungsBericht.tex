@@ -1,0 +1,277 @@
+%---------------- Präambel -----------------
+
+
+%----- Layout ---
+\documentclass[paper=a4,12pt,titlepage,listof=totoc]{scrartcl}
+\usepackage[left=3cm,right=3cm,top=2.25cm,bottom=2.25cm]{geometry}
+
+% --- Umstellung auf Pdflatex
+\usepackage[utf8]{inputenc}
+
+\usepackage[T1]{fontenc} %
+\usepackage{pslatex}%
+\usepackage[german]{babel}
+
+% --- Double Spacing added for Causal Inference
+\usepackage{setspace}
+\doublespacing
+
+
+
+
+
+% --- Spracheinstellungen ---
+%\usepackage{polyglossia} % Sprache
+%\setdefaultlanguage[babelshorthands=true]{german} % Standardsprache
+%\setotherlanguages{english} % Englisch als Sekundärsprache
+
+%\setdefaultlanguage{english} % Standardsprache
+%\setotherlanguages{german} % Englisch als Sekundärsprache
+
+
+
+% --- Abkürzungsverzeichnis ---
+\usepackage[nohyperlinks, 
+withpage, 
+smaller,
+footnote
+]{acronym}
+
+%--- Definitionsverzeichnis ---
+\usepackage{thmtools}
+
+
+% --- Formelsatz ---
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsfonts}
+
+
+% --- Grafiken ---
+\usepackage{graphicx}
+\usepackage{subfig}
+
+
+% --- Tabellen ---
+%\usepackage{slashbox}
+%\usepackage{rotating}
+
+
+
+
+
+%Causal Inference APA style
+\usepackage[backend=biber,style=apa,natbib=true, block=ragged]{biblatex}
+
+%\usepackage[backend=bibtex8,style=authoryear-ibid,natbib=true, block=ragged]{biblatex} %authoryear ,natbib=true -dw -comp authortitle-ibid authortitle-ibid
+%\bibliography{Marketing}
+%\addbibresource{Causal Inference.bib}
+
+\usepackage[babel,german=guillemets]{csquotes}
+\usepackage{lmodern}
+\begin{document}
+
+% Hier wird der Zitierstil festgelegt
+% In der Datei mlu_ifg.bst ist eine an der MLU verbreitete Zitierweise implementiert
+
+
+
+\pagenumbering{Roman} %Für die Verzeichnisse werden römische Seitenzahlen verwendet
+
+%###################################%
+%			Titelseite				%
+%			Bachelor        		%
+%###################################%
+\begin{titlepage}
+	\begin{center}
+		\large{\textsc{Martin-Luther-Universität Halle-Wittenberg}}\\
+				Juristische und Wirtschaftswissenschaftliche Fakultät
+	\end{center}
+	
+	\vskip 0.75cm
+	
+	\begin{center}
+		\includegraphics[width=0.5\textwidth]{grafiken/Double_seal_University_of_Halle-Wittenberg}
+	\end{center}
+
+	\vskip 1cm
+	
+	\begin{center}
+		\textsc{Bericht}
+	\end{center}
+	
+	\begin{center}
+		\setstretch{1.5}
+		zum Visualisierungsthema \\ 
+	\end{center}
+
+	\begin{center}
+		\Large
+		\textbf{FIFA 19}
+	\end{center}
+	\begin{center}
+		\setstretch{1.5}
+		 in Information Retrieval und Visualisierung \\
+	\end{center}
+
+	\vskip 1cm
+
+	\vskip 0.75cm
+
+	\begin{center}
+		\begin{tabular}{lll}
+			Eingereicht bei:  && Dr. Alexander Hinneburg \\
+			Eingereicht von:  && Johannes Lange \\
+			& & \\
+			& & \\
+			Eingereicht am: & & \today
+		\end{tabular}
+	\end{center}
+
+\end{titlepage}
+
+
+%###################################%
+%			Abstract				%
+%###################################%
+\setstretch{1.5}
+
+
+
+%###################################%
+%			Inhaltsverzeichnis		%
+%###################################%
+%\clearpage
+\setstretch{1.5}
+\tableofcontents
+
+%###################################%
+%			Abbildungsverzeichnis	%
+%###################################%
+\clearpage
+%\listoffigures
+
+%###################################%
+%			Tabellenverzeichnis		%
+%###################################%
+%\clearpage
+%\listoftables
+%\clearpage
+
+
+%###################################%
+%			Abkürzungsverzeichnis	%
+%###################################%
+%\section*{Abkürzungsverzeichnis}
+%	\addcontentsline{toc}{section}{Abkürzungsverzeichnis}
+%	\begin{acronym}
+%	\end{acronym}
+%\newpage
+
+
+%#######################################################################%
+% Ab hier beginnt der Haupteil ihrer Arbeit								%
+% Die Arbeit können sie mithilfe der Befehle                            %
+% \section{•}, \subsection{•} oder \subsubsection{•} strukturieren      %
+% Sie können die Arbeit zusätzlich in unterschiedliche Dateien 			%
+% aufteilen. nutzen sie dafür bitte den Befehl \include{•}.             %
+% Weitere nütztliche Hinweise sind in den verlinkten Tutorials oder 	%
+% als Kommentar in diesem Quelltext gegeben								%
+%#######################################################################%
+\pagenumbering{arabic}
+
+
+
+\section{Einleitung}
+
+
+\subsection{Anwendungshintergrund}
+
+\subsection{Zielgruppen}
+
+\subsection{Überblick und Beiträge}
+\newpage
+
+\section{Daten}
+
+\subsection{Technische Bereitstellung der Daten}
+
+\subsection{Datenvorverarbeitung}
+\newpage
+
+\section{Visualisierung}
+
+\subsection{Analyse der Anwendungsaufgaben}
+
+\subsection{Anforderungen an die Visualisierung}
+
+\subsection{Präsentation der Visualisierung}
+
+\subsubsection{Visualisierung Eins}
+
+\subsubsection{Visualisierung Zwei}
+
+\subsubsection{Visualisierung Drei}
+
+
+\subsection{Interaktion}
+\newpage
+
+\section{Implementierung}
+\newpage
+
+\section{Anwendungsfälle}
+
+\subsection{Anwendung Visualisierung Eins}
+
+\subsection{Anwendung Visualisierung Zwei}
+
+\subsection{Anwendung Visualisierung Drei}
+\newpage
+
+\section{Verwandte Arbeiten}
+\newpage
+\section{Zusammenfassung und Ausblick}	
+\newpage
+
+
+
+%###################################%
+%			Literaturverzeichnis	%
+%###################################%
+\setstretch{1.0}
+
+\setlength{\parskip}{0.8\baselineskip}
+\cleardoublepage
+\addcontentsline{toc}{section}{References}
+\printbibliography
+
+\clearpage
+
+\iffalse
+
+%###################################%
+%		Eidesstattliche Erklärung	%
+%		Bachelor/Master				%
+%###################################%
+%\pagestyle{empty}
+\begin{center}
+\textbf{Eidesstattliche Erklärung}%\footnote{Bachelorarbeiten sind mit einer Erklärung nach diesem Muster abzuschließen. Dabei ist das Datum entsprechend einzusetzen, und die Erklärung ist eigenhändig zu unterschreiben.}
+\end{center}
+
+
+Ich erkläre hiermit an Eides Statt, dass die vorliegende Bachelorarbeit von mir selbstständig und ohne Benutzung anderer als der angegebenen Hilfsmittel angefertigt wurde. Alle Stellen, die wörtlich oder sinngemäß aus veröffentlichten und nicht veröffentlichten Schriften entnommen wurden, sind als solche kenntlich gemacht.
+Diese Arbeit ist in gleicher oder ähnlicher Form noch nicht als Prüfungsarbeit eingereicht worden.
+
+Ich versichere zudem, dass ich keine Bachelor-Prüfung, Diplomvorprüfung oder Diplomprüfung in einem wirtschaftswissenschaftlichen Studiengang an einer Hochschule oder eine gleichwertig angerechnete Prüfung endgültig nicht bestanden habe.
+
+Ich versichere weiterhin, dass ich meinen Prüfungsanspruch nicht durch Versäumen einer Wiederholungsfrist verloren habe und dass ich mich nicht in einem schwebenden Verfahren zur Bachelor-Prüfung oder einer vergleichbaren Prüfung für einen wirtschaftswissenschaftlichen Studiengang an einer anderen Hochschule befinde.
+Ich wurde darüber belehrt, dass die vorliegende Arbeit mit Null Punkten als nicht bestanden bewertet wird, wenn die vorstehende Erklärung unrichtig oder unvollständig ist.
+
+\vskip 1cm
+Deutschland, den \today \\
+
+Unterschrift: ...............
+
+\fi
+\end{document}
