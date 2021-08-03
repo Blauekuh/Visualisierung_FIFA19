@@ -18,6 +18,7 @@ import TypedSvg.Types exposing (AnchorAlignment(..), FontWeight(..), Length(..),
 
 
 
+
 -- MAIN
 
 
@@ -40,13 +41,6 @@ type Model
     | Success (List String)
 
  
-type NewModel
-    = Loading2
-    | List Data   
-    
-type Data
-    = Failure2
-    | Success2 String
 
 
 init : () -> ( Model, Cmd Msg )
@@ -91,6 +85,7 @@ decodeStockDay =
                     |> Csv.Decode.andMap
                         (Csv.Decode.field "Age" 
                             (String.toFloat >> Result.fromMaybe "error parsing string")
+                                
                 )
         )
         )
@@ -152,32 +147,6 @@ subscriptions model =
     Sub.none
 
 
-
--- VIEW
-
-
-view : Model -> Html Msg
-view model =
-    --let
-     --   input =
-    --        umwandeln2 <| csvString_to_data fulltext
-   -- in
-    case model of
-        Failure ->
-            Html.text "I was unable to load your book."
-
-        Loading ->
-            Html.text "Loading..."
-
-        Success l ->
-            Html.div []
-                --[ scatterplot filterAndReduceCars <|umwandeln2 <| csvString_to_data l
-               [ List.map (\fulltext -> pre [] [ scatterplot filterAndReduceCars <| umwandeln2 <| csvString_to_data fulltext ]) l
-            ]
-   
-
-
-
 w : Float
 w =
     900
@@ -207,16 +176,11 @@ defaultExtent : ( number, number1 )
 defaultExtent =
     ( 0, 100 )
 
-
-
 scatterplot : XyData -> Svg msg
 scatterplot model =
     let
-        
-        --kreisbeschriftung : String
-        --kreisbeschriftung =
-            --Maybe.withDefault "Keine Beschriftung"
-                --(Maybe.map model.xDescription.)
+       
+
 
         xValues : List Float
         xValues =
@@ -253,25 +217,8 @@ scatterplot model =
             .point:hover text { display: inline; }
           """ ]
         
-         , g[ transform [ Translate (60) (390)]]
-            [
-                xAxis xValues
-                , text_
-                [ x (Scale.convert xScaleLocal labelPositions.x)
-                , y 35
-
-                -- , fontFamily [ "Helvetica", "sans-serif" ]
-                , fontSize (px 20)
-
-                --, fontWeight FontWeightBold
-                ]
-               
-                ]
-                
-         ,g[transform [Translate(60) (60)]]
-         
-             
         ]
+
 
 point : ContinuousScale Float -> ContinuousScale Float -> Point -> Svg msg
 point scaleX scaleY xyPoint =
@@ -289,6 +236,8 @@ point scaleX scaleY xyPoint =
         , text_ [ x 10, y -20, textAnchor AnchorMiddle ] [ Html.text xyPoint.pointName ]
         ]
 
+
+
 type alias Point =
     { pointName : String, x : Float, y : Float }
 
@@ -299,49 +248,45 @@ type alias XyData =
     , data : List Point
     }
 
+
 xScale : List Float -> ContinuousScale Float
 xScale values =
-    Scale.linear ( 0, w - 2 * padding ) ( wideExtent values )
+    Scale.linear ( 0, w - 2 * padding ) (wideExtent values)
 
 
 yScale : List Float -> ContinuousScale Float
 yScale values =
-    Scale.linear ( h - 2 * padding, 0 ) ( wideExtent values )
- 
-addieren : (Float, Float) -> Float-> (Float, Float) 
-addieren (min, max) shift =
+    Scale.linear ( h - 2 * padding, 0 ) (wideExtent values)
+
+
+addieren : ( Float, Float ) -> Float -> ( Float, Float )
+addieren ( min, max ) shift =
     if min <= 0 then
-        ( 0, max + shift)
-    else 
-        (min - shift, max + shift)
-    
- 
+        ( 0, max + shift )
+
+    else
+        ( min - shift, max + shift )
+
+
 wideExtent : List Float -> ( Float, Float )
-wideExtent values = 
+wideExtent values =
     let
-        result = 
-            Maybe.withDefault (0, 0)
-            (Statistics.extent values)
-        
-        max =          
-            Maybe.withDefault (0)
-            (List.maximum values)
-            
-        result1 = 
-            
-            addieren result (toFloat(tickCount)*max/50)
-        
-        result2 = 
-            addieren result1 (0.0)
-        
-          
+        result =
+            Maybe.withDefault ( 0, 0 )
+                (Statistics.extent values)
+
+        max =
+            Maybe.withDefault 0
+                (List.maximum values)
+
+        result1 =
+            addieren result (toFloat tickCount * max / 50)
+
+        result2 =
+            addieren result1 0.0
     in
-     result2
-    
-     
-     
- 
- 
+    result2
+
 xAxis : List Float -> Svg msg
 xAxis values =
     Axis.bottom [ Axis.tickCount tickCount ] (xScale values)
@@ -351,16 +296,57 @@ yAxis : List Float -> Svg msg
 yAxis values =
     Axis.left [ Axis.tickCount tickCount ] (yScale values)
 
-filterAndReduceCars : (String, Float, Float) -> XyData
-filterAndReduceCars  x  =
-    XyData "Age" "Rating" (List.filterMap maybePoint x)
+
+filterAndReducePlayers : List (String, Float, Float) -> XyData
+filterAndReducePlayers my_spielerListe =
+    XyData "Rating" "Age" (List.map pointName my_spielerListe)
 
 
-pointName : String -> Float -> Float -> Point
-pointName x y z =
+pointName : (String, Float, Float) -> Point
+pointName (x, y, z) =
     Point x y z
 
 
---maybePoint : Car -> Maybe Point
-maybePoint i =
-    Maybe.map3 (Just i.name) i.rating i.age
+
+
+
+
+-- VIEW
+
+
+view : Model -> Html Msg
+view model =
+    case model of
+        Failure ->
+            Html.text "I was unable to load your book."
+
+        Loading ->
+            Html.text "Loading..."
+
+        Success l ->
+            let
+                spieler =
+                    filterAndReducePlayers <| spielerListe l
+                
+            in
+            Html.div []
+                [
+                    scatterplot spieler
+                ]
+
+
+
+type alias Player =
+    { playerName : String
+    , age : Float
+    , rating : Float
+    }
+
+spielerListe : List String -> List(String, Float, Float)--Player    
+spielerListe liste1 =
+ List.map (\fulltext ->  umwandeln2 <| csvString_to_data fulltext ) liste1
+    |> List.concat
+
+
+
+    

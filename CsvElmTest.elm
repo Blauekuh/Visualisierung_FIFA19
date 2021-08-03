@@ -83,6 +83,7 @@ decodeStockDay =
                     |> Csv.Decode.andMap
                         (Csv.Decode.field "Age" 
                             (String.toFloat >> Result.fromMaybe "error parsing string")
+                                
                 )
         )
         )

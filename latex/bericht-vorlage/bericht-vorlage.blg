@@ -1,15 +1,15 @@
-[1] Config.pm:311> INFO - This is Biber 2.16
-[2] Config.pm:314> INFO - Logfile is 'bericht-vorlage.blg'
-[417] biber-MSWIN64:340> INFO - === 
-[502] Biber.pm:415> INFO - Reading 'bericht-vorlage.bcf'
-[834] Biber.pm:952> INFO - Found 1 citekeys in bib section 0
-[886] Biber.pm:4340> INFO - Processing section 0
-[918] Biber.pm:4531> INFO - Looking for bibtex format file 'literatur.bib' for section 0
-[1041] bibtex.pm:1689> INFO - LaTeX decoding ...
-[1059] bibtex.pm:1494> INFO - Found BibTeX data source 'literatur.bib'
-[1226] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[1227] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'variable = shifted' with 'variable = non-ignorable'
-[1228] Biber.pm:4168> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'de-DE'
-[1228] Biber.pm:4174> INFO - No sort tailoring available for locale 'de-DE'
-[1244] bbl.pm:654> INFO - Writing 'bericht-vorlage.bbl' with encoding 'UTF-8'
-[1247] bbl.pm:757> INFO - Output to bericht-vorlage.bbl
+[0] Config.pm:311> INFO - This is Biber 2.16
+[0] Config.pm:314> INFO - Logfile is 'bericht-vorlage.blg'
+[255] biber-MSWIN64:340> INFO - === 
+[339] Biber.pm:415> INFO - Reading 'bericht-vorlage.bcf'
+[557] Biber.pm:952> INFO - Found 1 citekeys in bib section 0
+[586] Biber.pm:4340> INFO - Processing section 0
+[610] Biber.pm:4531> INFO - Looking for bibtex format file 'literatur.bib' for section 0
+[732] bibtex.pm:1689> INFO - LaTeX decoding ...
+[746] bibtex.pm:1494> INFO - Found BibTeX data source 'literatur.bib'
+[892] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[893] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'variable = shifted' with 'variable = non-ignorable'
+[893] Biber.pm:4168> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'de-DE'
+[893] Biber.pm:4174> INFO - No sort tailoring available for locale 'de-DE'
+[906] bbl.pm:654> INFO - Writing 'bericht-vorlage.bbl' with encoding 'UTF-8'
+[910] bbl.pm:757> INFO - Output to bericht-vorlage.bbl
