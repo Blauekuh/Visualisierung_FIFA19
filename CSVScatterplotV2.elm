@@ -80,10 +80,10 @@ decodeStockDay =
     Csv.Decode.map (\a b c-> ( a, Just b, Just c ))
         (Csv.Decode.field "Name" Ok
             |> Csv.Decode.andMap
-                (Csv.Decode.field "Overall" 
+                (Csv.Decode.field "Age" 
                     (String.toFloat >> Result.fromMaybe "error parsing string")
                     |> Csv.Decode.andMap
-                        (Csv.Decode.field "Age" 
+                        (Csv.Decode.field "Overall" 
                             (String.toFloat >> Result.fromMaybe "error parsing string")
                                 
                 )
@@ -219,7 +219,7 @@ scatterplot model =
         , g [ transform [ Translate 60 390 ] ]
             [ xAxis xValues
             , text_
-                [ x (Scale.convert xScaleLocal labelPositions.x)
+                [ x 360--(Scale.convert xScaleLocal labelPositions.x)
                 , y 35
 
                 -- , fontFamily [ "Helvetica", "sans-serif" ]
@@ -227,7 +227,7 @@ scatterplot model =
 
                 --, fontWeight FontWeightBold
                 ]
-                [ TypedSvg.Core.text "Rating" ]
+                [ TypedSvg.Core.text "Age" ]
             ]
         , g [ transform [ Translate 60 60 ] ]
             [ yAxis yValues
@@ -240,7 +240,7 @@ scatterplot model =
 
                 --, fontWeight FontWeightBold
                 ]
-                [ TypedSvg.Core.text "Age" ]
+                [ TypedSvg.Core.text "Rating" ]
             ]
         , g [ transform [ Translate padding padding ] ]
             (List.map (point xScaleLocal yScaleLocal) model.data)
@@ -331,7 +331,7 @@ filterAndReducePlayers my_spielerListe =
 
 pointName : (String, Float, Float) -> Point
 pointName (x, y, z) =
-    Point x y z
+    Point (x ++ ", Age: " ++ (String.fromFloat y)++ ", Rating: " ++ (String.fromFloat z)) y z
 
 
 
