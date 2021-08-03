@@ -216,7 +216,34 @@ scatterplot model =
             .point:hover circle { stroke: rgba(0, 0, 0,1.0); fill: rgb(118, 214, 78); }
             .point:hover text { display: inline; }
           """ ]
-        
+        , g [ transform [ Translate 60 390 ] ]
+            [ xAxis xValues
+            , text_
+                [ x (Scale.convert xScaleLocal labelPositions.x)
+                , y 35
+
+                -- , fontFamily [ "Helvetica", "sans-serif" ]
+                , fontSize (px 20)
+
+                --, fontWeight FontWeightBold
+                ]
+                [ TypedSvg.Core.text "Rating" ]
+            ]
+        , g [ transform [ Translate 60 60 ] ]
+            [ yAxis yValues
+            , text_
+                [ x -30
+                , y -30
+
+                -- , fontFamily [ "Helvetica", "sans-serif" ]
+                , fontSize (px 20)
+
+                --, fontWeight FontWeightBold
+                ]
+                [ TypedSvg.Core.text "Age" ]
+            ]
+        , g [ transform [ Translate padding padding ] ]
+            (List.map (point xScaleLocal yScaleLocal) model.data)
         ]
 
 
@@ -330,9 +357,13 @@ view model =
                 
             in
             Html.div []
-                [
-                    scatterplot spieler
+                [ Html.p []
+                    [ Html.text "Original Car list:"
+                    , Html.text ", reduced Car list:"
                 ]
+            , scatterplot spieler
+            ]
+               
 
 
 
@@ -349,4 +380,23 @@ spielerListe liste1 =
 
 
 
+testListe = 
+    testDaten string1 string2 testPoint
+
+testDaten :  String -> String -> List Point -> XyData
+testDaten s1 s2 tp=
+    XyData s1 s2 tp
+
+
+
+
+string1 =
+    "Testdaten1"
+string2 =
+    "Testdaten2"
+
+testPoint : List Point
+testPoint = 
+    [Point "Name1" 1.0 2.0
+    ,Point  "Name2" 2.0 3.0 ]
     
