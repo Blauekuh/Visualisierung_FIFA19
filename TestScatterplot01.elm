@@ -39,6 +39,7 @@ type Model
     = Failure
     | Loading
     | Success (List String)
+    | Success2 (List String)
 
 
 
@@ -51,7 +52,13 @@ type Model
 init : () -> ( Model, Cmd Msg )
 init _ =
     ( Loading
-    , liste
+    , getRandomCatGif
+    )
+
+
+getRandomCatGif : Cmd Msg
+getRandomCatGif =
+    liste
         |> List.map
             (\datensatz ->
                 Http.get
@@ -60,10 +67,19 @@ init _ =
                     }
             )
         |> Cmd.batch
-    )
 
 
-
+getRandomCatGif2 : Cmd Msg
+getRandomCatGif2 =
+    liste
+        |> List.map
+            (\datensatz ->
+                Http.get
+                    { url = "https://raw.githubusercontent.com/JohannesLange/Visualisierung_FIFA19/master/" ++ datensatz
+                    , expect = Http.expectString GotText2
+                    }
+            )
+        |> Cmd.batch
 --|> Cmd.batch
 
 
@@ -117,6 +133,8 @@ renderList lst =
 
 type Msg
     = GotText (Result Http.Error String)
+    | GotText2 (Result Http.Error String)
+    | MorePlease
 
 
 
@@ -127,6 +145,9 @@ update msg model =
         currentList =
             case model of
                 Success l ->
+                    l
+                
+                Success2 l ->
                     l
 
                 Failure ->
@@ -146,7 +167,15 @@ update msg model =
 
                 Err _ ->
                     ( model, Cmd.none )
-        
+        GotText2 result ->
+            case result of
+                Ok fullText ->
+                    ( Success2 <| currentList ++ [ fullText ], Cmd.none )
+
+                Err _ ->
+                    ( model, Cmd.none )
+        MorePlease ->
+            (Loading, getRandomCatGif2)
 
 -- SUBSCRIPTIONS
 
@@ -365,10 +394,23 @@ view model =
                 
             in
             Html.div []
-                [--[ Html.button [onClick GotText] [ Html.text <| "Reload" ]
+                [ Html.button [onClick MorePlease] [ Html.text "More Please!" ]
                 
                     
-             scatterplot spieler
+             ,scatterplot spieler
+            ]
+        
+        Success2 l ->
+            let
+                spieler =
+                    filterAndReducePlayers <| spielerListe l "Overall" "Overall"
+                
+            in
+            Html.div []
+                [ Html.button [onClick MorePlease] [ Html.text "More Please!" ]
+                
+                    
+             ,scatterplot spieler
             ]
                 
     
