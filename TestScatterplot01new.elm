@@ -95,7 +95,26 @@ csvString_to_data csvRaw variable1 variable2 =
         |> Result.toMaybe
         |> Maybe.withDefault []
 
+csvString_to_data2 : String -> List Footballer
+csvString_to_data2 csvRaw  =
+    Csv.parse csvRaw
+        |> Csv.Decode.decodeCsv decodeFootballer
+        |> Result.toMaybe
+        |> Maybe.withDefault []
 
+type alias Footballer =
+   { name : String, age : Float, overall : Float, potential : Float }
+
+
+
+decodeFootballer : Csv.Decode.Decoder (Footballer -> a) a
+decodeFootballer =
+    Csv.Decode.map Footballer
+        ( Csv.Decode.field "Name" Ok
+            |> Csv.Decode.andMap (Csv.Decode.field "Age"  (String.toFloat >> Result.fromMaybe "error parsing string"))
+            |> Csv.Decode.andMap (Csv.Decode.field "Overall" (String.toFloat >> Result.fromMaybe "error parsing string"))
+            |> Csv.Decode.andMap (Csv.Decode.field "Potential" (String.toFloat >> Result.fromMaybe "error parsing string"))
+        )
 decodeStockDay : String -> String -> Csv.Decode.Decoder (( String, Maybe Float, Maybe Float ) -> a) a
 decodeStockDay variable1 variable2 =
     Csv.Decode.map (\a b c-> ( a, Just b, Just c ))
@@ -116,9 +135,9 @@ umwandeln ganzerText =
     List.map (\( a, b,c ) -> ( a, b |> Maybe.map String.fromFloat |> Maybe.withDefault "Kein Wert vorhanden",c |> Maybe.map String.fromFloat |> Maybe.withDefault "Kein Wert vorhanden" )) ganzerText
 
 
-umwandeln2 : List ( String, Maybe Float, Maybe Float ) -> List ( String, Float, Float)
-umwandeln2 ganzerText =
-    List.map (\( a, b,c ) -> ( a, b |>  Maybe.withDefault 0.0 ,c |> Maybe.withDefault 0.0 )) ganzerText
+--umwandeln2 : List Footballer -> List ( String, Float, Float)
+--umwandeln2 ganzerText =
+--    List.map (\( a, b,c ) -> ( a, b |>  Maybe.withDefault 0.0 ,c |> Maybe.withDefault 0.0 )) ganzerText
 
 
 
@@ -364,14 +383,14 @@ yAxis values =
     Axis.left [ Axis.tickCount tickCount ] (yScale values)
 
 
-filterAndReducePlayers : List (String, Float, Float) -> XyData
+filterAndReducePlayers : List Footballer -> XyData
 filterAndReducePlayers my_spielerListe =
     XyData "Rating" "Age" (List.map pointName my_spielerListe)
 
 
-pointName : (String, Float, Float) -> Point
-pointName (x, y, z) =
-    Point (x ++ ", Age: " ++ (String.fromFloat y)++ ", Rating: " ++ (String.fromFloat z)) y z
+pointName : Footballer -> Point
+pointName x =
+    Point ( x.name ++ ", Age: " ++ (String.fromFloat x.age)++ ", Rating: " ++ (String.fromFloat x.overall)) x.potential x.overall
 
 
 
@@ -393,7 +412,7 @@ view model =
         Success l ->
             let
                 spieler =
-                    filterAndReducePlayers <| spielerListe l "Potential" "Overall"
+                    filterAndReducePlayers <| spielerListe l 
                 
             in
             Html.div []
@@ -406,7 +425,7 @@ view model =
         Success2 l ->
             let
                 spieler =
-                    filterAndReducePlayers <| spielerListe l "Jersey Number" "Overall"
+                    filterAndReducePlayers <| spielerListe l 
                 
             in
             Html.div []
@@ -427,9 +446,9 @@ type alias Player =
     , rating : Float
     }
 
-spielerListe : List String -> String -> String -> List(String, Float, Float)--Player    
-spielerListe liste1 variable1 variable2 =
- List.map (\fulltext ->  umwandeln2 <| (csvString_to_data fulltext variable1 variable2 )) liste1
+spielerListe : List String -> List Footballer--Player    
+spielerListe liste1 =
+ List.map (\fulltext -> csvString_to_data2 fulltext) liste1
     |> List.concat
 
 
