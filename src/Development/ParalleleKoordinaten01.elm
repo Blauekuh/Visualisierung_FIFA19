@@ -42,10 +42,14 @@ type Model
     | Loading
     | Success
         { data : List Footballer
-        , xAAFunction : Footballer -> Float
-        , yAAFunction : Footballer -> Float
-        , xName : String
-        , yName : String
+        , firstFunc : Footballer -> Float
+        , secondFunc : Footballer -> Float
+        , thirdFunc : Footballer -> Float
+        , fourthFunc : Footballer -> Float
+        , firstName : String
+        , secondName : String
+        , thirdName : String
+        , fourthName : String
         }
     
 
@@ -99,10 +103,10 @@ decodeFootballer =
 
 type Msg
     = GotText (Result Http.Error String)
-    --| MorePlease
-    | Change (Footballer -> Float, Footballer -> Float)
-    | ChangeX (Footballer -> Float, String)
-    | ChangeY (Footballer -> Float, String)
+    | Change1 (Footballer -> Float, String)
+    | Change2 (Footballer -> Float, String)
+    | Change3 (Footballer -> Float, String)
+    | Change4 (Footballer -> Float, String)
 
     
 update : Msg -> Model -> ( Model, Cmd Msg )
@@ -111,36 +115,39 @@ update msg model =
         GotText result ->
             case result of
                 Ok fullText ->
-                    ( Success <| { data = spielerListe [ fullText ], xAAFunction = .age, yAAFunction = .overall , xName = "Age", yName = "Overall"}, Cmd.none )
+                    ( Success <| { data = spielerListe [ fullText ], firstFunc = .age, secondFunc = .overall, thirdFunc = .potential, fourthFunc = .age , firstName = "Age", secondName = "Overall", thirdName = "Potential", fourthName = "Age"}, Cmd.none )
 
                 Err _ ->
                     ( model, Cmd.none )
 
-
-        --MorePlease ->
-        --    ( Loading "" "", getRandomCatGif GotText2 )
-
-
-        Change (x, y) ->
+        Change1 (x, a) ->
             case model of
                 Success m ->
-                    ( Success <| { data = m.data, xAAFunction = x, yAAFunction = y, xName = m.xName, yName = m.yName}, Cmd.none )
+                    ( Success <| { data = m.data, firstFunc = x, secondFunc = m.secondFunc, thirdFunc = m.thirdFunc, fourthFunc = m.fourthFunc , firstName = a, secondName = m.secondName, thirdName = m.thirdName, fourthName = m.fourthName}, Cmd.none )
 
                 _ ->
                     ( model, Cmd.none )
 
-        ChangeX (x, a) ->
+        Change2 (y, a) ->
             case model of
                 Success m ->
-                    ( Success <| { data = m.data, xAAFunction = x, yAAFunction = m.yAAFunction, xName = a, yName = m.yName }, Cmd.none )
+                    ( Success <| {data = m.data, firstFunc = m.firstFunc, secondFunc = y, thirdFunc = m.thirdFunc, fourthFunc = m.fourthFunc , firstName = m.firstName, secondName = a, thirdName = m.thirdName, fourthName = m.fourthName}, Cmd.none )
+
+                _ ->
+                    ( model, Cmd.none )
+        
+        Change3 (z, a) ->
+            case model of
+                Success m ->
+                    ( Success <| { data = m.data, firstFunc = m.firstFunc, secondFunc = m.secondFunc, thirdFunc = z, fourthFunc = m.fourthFunc , firstName = m.firstName, secondName = m.secondName, thirdName = a, fourthName = m.fourthName}, Cmd.none )
 
                 _ ->
                     ( model, Cmd.none )
 
-        ChangeY (y, a) ->
+        Change4 (b, a) ->
             case model of
                 Success m ->
-                    ( Success <| { data = m.data, xAAFunction = m.xAAFunction, yAAFunction = y, xName = m.xName, yName = a }, Cmd.none )
+                    ( Success <| { data = m.data, firstFunc = m.firstFunc, secondFunc = m.secondFunc, thirdFunc = m.thirdFunc, fourthFunc = b, firstName = m.firstName, secondName = m.secondName, thirdName = m.thirdName, fourthName = a }, Cmd.none )
 
                 _ ->
                     ( model, Cmd.none )
@@ -317,7 +324,43 @@ view model =
                             )
                             listPlayers
                         ]
+
+                plotDaten = 
+                     multiDimDaten l.data l.firstFunc l.secondFunc l.thirdFunc l.fourthFunc .name l.firstName l.secondName l.thirdName l.fourthName       
             in
             Html.div []
-                [ parallelCoodinatesPlot 600 2 (multiDimDaten l.data .overall .age .potential .age .name "Overall" "Age" "Potential" "Overall")
+                [ 
+                    ul []
+                    [ li [] [
+                            Html.text <| "Set first Coloumn Value"
+                            , Html.button [ onClick (Change1 (.overall, "Overall")) ] [ Html.text "Overall" ]
+                            , Html.button [ onClick (Change1 (.potential, "Potential")) ] [ Html.text "Potential" ]
+                            , Html.button [ onClick (Change1 (.age, "Age")) ] [ Html.text "Age" ]
+                            ]
+                    ]
+                , ul []
+                    [ li [] [
+                            Html.text <| "Set second Coloumn Value"
+                            , Html.button [ onClick (Change2 (.overall, "Overall")) ] [ Html.text "Overall" ]
+                            , Html.button [ onClick (Change2 (.potential, "Potential")) ] [ Html.text "Potential" ]
+                            , Html.button [ onClick (Change2 (.age, "Age")) ] [ Html.text "Age" ]
+                            ]
+                    ]
+                ,ul []
+                    [ li [] [
+                            Html.text <| "Set third Coloumn Value"
+                            , Html.button [ onClick (Change3 (.overall, "Overall")) ] [ Html.text "Overall" ]
+                            , Html.button [ onClick (Change3 (.potential, "Potential")) ] [ Html.text "Potential" ]
+                            , Html.button [ onClick (Change3 (.age, "Age")) ] [ Html.text "Age" ]
+                            ]
+                    ]
+                , ul []
+                    [ li [] [
+                            Html.text <| "Set fourth Coloumn Value"
+                            , Html.button [ onClick (Change4 (.overall, "Overall")) ] [ Html.text "Overall" ]
+                            , Html.button [ onClick (Change4 (.potential, "Potential")) ] [ Html.text "Potential" ]
+                            , Html.button [ onClick (Change4 (.age, "Age")) ] [ Html.text "Age" ]
+                            ]
+                    ]        
+                    ,parallelCoodinatesPlot 600 2 plotDaten
                 ]
