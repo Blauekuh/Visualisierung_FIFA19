@@ -1,4 +1,4 @@
-module TestScatterplot01new exposing (..)
+module Development.TestScatterplot01new exposing (..)
 
 import Axis
 import Browser
@@ -32,34 +32,22 @@ main =
 
 
 -- MODEL
-
-
 type Model
     = Failure
-    | Loading String String
+    | Loading
     | Success
         { data : List Footballer
         , xAAFunction : Footballer -> Float
         , yAAFunction : Footballer -> Float
+        , xName : String
+        , yName : String
         }
-    | Success2 (List Footballer)
-
-
-
---| Success3 (List String) String String
-
-
-type Attribute1
-    = Attribute1 String
-
-
-type Attribute2
-    = Attribute2 String
+    
 
 
 init : () -> ( Model, Cmd Msg )
 init _ =
-    ( Loading "" ""
+    ( Loading 
     , getRandomCatGif GotText
     )
 
@@ -110,12 +98,10 @@ decodeFootballer =
 
 type Msg
     = GotText (Result Http.Error String)
-    | GotText2 (Result Http.Error String)
-    | MorePlease
-    | MorePlease2
-    | Change ( Footballer -> Float, Footballer -> Float )
-    | ChangeX (Footballer -> Float)
-    | ChangeY (Footballer -> Float)
+    --| MorePlease
+    | Change (Footballer -> Float, Footballer -> Float)
+    | ChangeX (Footballer -> Float, String)
+    | ChangeY (Footballer -> Float, String)
 
 
 
@@ -128,51 +114,45 @@ update msg model =
         GotText result ->
             case result of
                 Ok fullText ->
-                    ( Success <| { data = spielerListe [ fullText ], xAAFunction = .age, yAAFunction = .overall }, Cmd.none )
+                    ( Success <| { data = spielerListe [ fullText ], xAAFunction = .age, yAAFunction = .overall , xName = "Age", yName = "Overall"}, Cmd.none )
 
                 Err _ ->
                     ( model, Cmd.none )
 
-        GotText2 result ->
-            case result of
-                Ok fullText ->
-                    ( Success2 <| spielerListe [ fullText ], Cmd.none )
 
-                Err _ ->
-                    ( model, Cmd.none )
+        --MorePlease ->
+        --    ( Loading "" "", getRandomCatGif GotText2 )
 
-        MorePlease ->
-            ( Loading "" "", getRandomCatGif GotText2 )
 
-        MorePlease2 ->
-            ( Loading "" "", getRandomCatGif GotText )
-
-        Change ( x, y ) ->
+        Change (x, y) ->
             case model of
                 Success m ->
-                    ( Success <| { data = m.data, xAAFunction = x, yAAFunction = y }, Cmd.none )
+                    ( Success <| { data = m.data, xAAFunction = x, yAAFunction = y, xName = m.xName, yName = m.yName}, Cmd.none )
 
                 _ ->
                     ( model, Cmd.none )
 
-        ChangeX x ->
+        ChangeX (x, a) ->
             case model of
                 Success m ->
-                    ( Success <| { data = m.data, xAAFunction = x, yAAFunction = m.yAAFunction }, Cmd.none )
+                    ( Success <| { data = m.data, xAAFunction = x, yAAFunction = m.yAAFunction, xName = a, yName = m.yName }, Cmd.none )
 
                 _ ->
                     ( model, Cmd.none )
 
-        ChangeY y ->
+        ChangeY (y, a) ->
             case model of
                 Success m ->
-                    ( Success <| { data = m.data, xAAFunction = m.xAAFunction, yAAFunction = y }, Cmd.none )
+                    ( Success <| { data = m.data, xAAFunction = m.xAAFunction, yAAFunction = y, xName = m.xName, yName = a }, Cmd.none )
 
                 _ ->
                     ( model, Cmd.none )
 
 
-
+spielerListe : List String -> List Footballer
+spielerListe liste1 =
+    List.map (\t -> csvString_to_data t) liste1
+        |> List.concat
 -- SUBSCRIPTIONS
 
 
@@ -223,6 +203,7 @@ scatterplot model =
             --[0, 200000]
             List.map .y model.data
 
+
         xScaleLocal : ContinuousScale Float
         xScaleLocal =
             xScale xValues
@@ -241,7 +222,7 @@ scatterplot model =
             , y = wideExtent yValues |> Tuple.second
             }
     in
-    svg [ viewBox 0 0 w h, TypedSvg.Attributes.width <| TypedSvg.Types.Percent 100, TypedSvg.Attributes.height <| TypedSvg.Types.Percent 100 ]
+    svg [ viewBox 0 0 w h, TypedSvg.Attributes.width <| TypedSvg.Types.Percent 80, TypedSvg.Attributes.height <| TypedSvg.Types.Percent 80 ]
         [ style [] [ TypedSvg.Core.text """
             .point circle { stroke: rgba(0, 0, 0,0.4); fill: rgba(255, 255, 255,0.3); }
             .point text { display: none; }
@@ -291,7 +272,7 @@ point scaleX scaleY xyPoint =
                 (Scale.convert scaleY xyPoint.y)
             ]
         ]
-        [ circle [ cx 0, cy 0, r 5 ] []
+        [ circle [ cx 0, cy 0, r 3 ] []
         , text_ [ x 10, y -20, textAnchor AnchorMiddle ] [ Html.text xyPoint.pointName ]
         ]
 
@@ -342,6 +323,7 @@ wideExtent values =
     result2
 
 
+
 xAxis : List Float -> Svg msg
 xAxis values =
     Axis.bottom [ Axis.tickCount tickCount ] (xScale values)
@@ -354,7 +336,7 @@ yAxis values =
 
 filterAndReducePlayers : List Footballer -> (Footballer -> String) -> (Footballer -> Float) -> (Footballer -> Float) -> String -> String -> XyData
 filterAndReducePlayers playerlist a b c x y =
-    XyData x y (List.map (\n -> pointName n a b c) playerlist)
+    XyData x y (List.map (\n -> pointName n a b c x y) playerlist)
 
 
 
@@ -376,10 +358,9 @@ type alias Point =
     { pointName : String, x : Float, y : Float }
 
 
-pointName : Footballer -> (Footballer -> String) -> (Footballer -> Float) -> (Footballer -> Float) -> Point
-pointName player a b c =
-    Point (a player ++ ", " ++ a player ++ ": " ++ String.fromFloat (b player) ++ "," ++ a player ++ ": " ++ String.fromFloat (c player)) (b player) (c player)
-
+pointName : Footballer -> (Footballer -> String) -> (Footballer -> Float) -> (Footballer -> Float) -> String -> String -> Point
+pointName player a b c d e =
+    Point (a player ++ ", " ++ d ++ ": " ++ String.fromFloat (b player) ++ "," ++ e ++ ": " ++ String.fromFloat (c player)) (b player) (c player)
 
 
 -- VIEW
@@ -391,37 +372,33 @@ view model =
         Failure ->
             Html.text "I was unable to load the players."
 
-        Loading "" "" ->
+        Loading  ->
             Html.text "Loading Players..."
 
-        Loading _ _ ->
-            Html.text "Loading new Players ..."
 
         Success l ->
             let
                 spieler =
-                    filterAndReducePlayers l.data .name l.xAAFunction l.yAAFunction "Age" "Overall"
+                    filterAndReducePlayers l.data .name l.xAAFunction l.yAAFunction l.xName l.yName
             in
             Html.div []
-                [ Html.button [ onClick (Change ( .overall, .potential )) ] [ Html.text "Overall & Potential" ]
-                , Html.button [ onClick (ChangeX .potential) ] [ Html.text "Potential" ]
-
+                [
+                 ul []
+                    [ li [] [
+                            Html.text <| "Set X Value"
+                            , Html.button [ onClick (ChangeX (.overall, "Overall")) ] [ Html.text "Overall" ]
+                            , Html.button [ onClick (ChangeX (.potential, "Potential")) ] [ Html.text "Potential" ]
+                            , Html.button [ onClick (ChangeX (.age, "Age")) ] [ Html.text "Age" ]
+                            ]
+                    ]
+                , ul []
+                    [ li [] [
+                            Html.text <| "Set Y Value"
+                            , Html.button [ onClick (ChangeY (.overall, "Overall")) ] [ Html.text "Overall" ]
+                            , Html.button [ onClick (ChangeY (.potential, "Potential")) ] [ Html.text "Potential" ]
+                            , Html.button [ onClick (ChangeY (.age, "Age")) ] [ Html.text "Age" ]
+                            ]
+                    ]            
                 --  , Html.input [ Html.Attributes.placeholder "Age", Html.Attributes.value model.content, onInput Change ]
                 , scatterplot spieler
                 ]
-
-        Success2 l ->
-            let
-                spieler =
-                    filterAndReducePlayers l .name .overall .potential "Overall" "Potential"
-            in
-            Html.div []
-                [ Html.button [ onClick MorePlease2 ] [ Html.text "Age & Overall" ]
-                , scatterplot spieler
-                ]
-
-
-spielerListe : List String -> List Footballer
-spielerListe liste1 =
-    List.map (\t -> csvString_to_data t) liste1
-        |> List.concat
