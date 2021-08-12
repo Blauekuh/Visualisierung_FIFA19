@@ -67,7 +67,7 @@ getRandomCatGif x =
 
 liste : List String
 liste =
-    [ "dataHeight.csv" ]
+    [ "data1000.csv" ]
 
 
 csvString_to_data : String -> List Footballer
@@ -245,12 +245,12 @@ scatterplot model =
             ]
         , g [ transform [ Translate padding padding ] ]
             
-            (List.map (\n -> point xScaleLocal yScaleLocal n model.data) model.data)
+            (List.map (\n -> point xScaleLocal yScaleLocal n ) model.data)
         ]
 
 
-point : ContinuousScale Float -> ContinuousScale Float -> Point -> List Point -> Svg msg
-point scaleX scaleY xyPoint pointList=
+point : ContinuousScale Float -> ContinuousScale Float -> Point  -> Svg msg -- List Point
+point scaleX scaleY xyPoint = --pointList=
     g
         [ class [ "point" ]
         , fontSize <| Px 15.0
@@ -263,7 +263,7 @@ point scaleX scaleY xyPoint pointList=
         ]
         [ circle [ cx 0, cy 0, r 3 ] []
         , text_ [ x 10, y -20, textAnchor AnchorMiddle ] [ Html.text xyPoint.pointName ]
-        , text_ [ x 10, y 200, textAnchor AnchorEnd ] [ Html.text <|String.fromInt(sumX xyPoint pointList) ]
+        --, text_ [ x 10, y 200, textAnchor AnchorEnd ] [ Html.text <|String.fromInt(sumX xyPoint pointList) ]
         ]
 
 
@@ -328,7 +328,7 @@ filterAndReducePlayers : List Footballer -> (Footballer -> String) -> (Footballe
 filterAndReducePlayers playerlist a b c x y =
     XyData x y (List.map (\n -> pointName n a b c x y) playerlist)
 
-
+{--
 filterX : Point -> List Point -> List Point
 filterX a b =
     let
@@ -340,8 +340,12 @@ filterX a b =
             else
                 Nothing
     in
-    List.filterMap (isEqual a) b  
+    List.filterMap (isEqual a) b  --}
 
+
+filterX : Point -> List Point -> List Point
+filterX a b =
+    b
 
 sumX : Point -> List Point ->  Int
 sumX e f=
