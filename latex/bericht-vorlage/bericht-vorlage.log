@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.3) (preloaded format=pdflatex 2021.3.22)  30 JUL 2021 11:35
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.3) (preloaded format=pdflatex 2021.3.22)  12 AUG 2021 17:38
 entering extended mode
 **./bericht-vorlage.tex
 (bericht-vorlage.tex
@@ -899,20 +899,11 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
 
 {C:/Users/johan/AppData/Local/MiKTeX/pdftex/config/pdftex.map}] [2] [3]
-LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 9
-0.
+[4]
 
-(C:\Users\johan\AppData\Local\Programs\MiKTeX\tex/latex/lm\t1lmtt.fd
-File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10.95> on input line 90.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 90.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 90.
- [4]
-(bericht-vorlage.aux)
+LaTeX Warning: Empty bibliography on input line 108.
+
+[5] (bericht-vorlage.aux)
 Package rerunfilecheck Info: File `bericht-vorlage.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 Package logreq Info: Writing requests to 'bericht-vorlage.run.xml'.
@@ -920,25 +911,22 @@ Package logreq Info: Writing requests to 'bericht-vorlage.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 19581 strings out of 479324
- 354684 string characters out of 2856815
- 1227706 words of memory out of 3000000
- 36777 multiletter control sequences out of 15000+600000
- 462005 words of font info for 72 fonts, out of 8000000 for 9000
+ 19302 strings out of 479324
+ 349463 string characters out of 2856815
+ 1227681 words of memory out of 3000000
+ 36511 multiletter control sequences out of 15000+600000
+ 442596 words of font info for 54 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
  111i,6n,116p,10639b,2241s stack positions out of 5000i,500n,10000p,200000b,80000s
 {C:/Users/johan/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc}<C
 :/Users/johan/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx10.pfb><C
 :/Users/johan/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C
-:/Users/johan/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmcsc10.pfb><
-C:/Users/johan/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C
-:/Users/johan/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:
-/Users/johan/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri10.pfb><C:
-/Users/johan/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmssbx10.pfb><
-C:/Users/johan/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt10.pfb>
-Output written on bericht-vorlage.pdf (4 pages, 218829 bytes).
+:/Users/johan/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:
+/Users/johan/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/
+Users/johan/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmssbx10.pfb>
+Output written on bericht-vorlage.pdf (5 pages, 157303 bytes).
 PDF statistics:
- 159 PDF objects out of 1000 (max. 8388607)
- 30 named destinations out of 1000 (max. 500000)
+ 145 PDF objects out of 1000 (max. 8388607)
+ 29 named destinations out of 1000 (max. 500000)
  177 words of extra memory for PDF output out of 10000 (max. 10000000)
 
