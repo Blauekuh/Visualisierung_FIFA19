@@ -79,7 +79,7 @@ csvString_to_data csvRaw =
 
 
 type alias Footballer =
-    { name : String, age : Float, overall : Float, potential : Float, height : Float }
+    { name : String, age : Float, overall : Float, potential : Float}--, height : Float }
 
 
 decodeFootballer : Csv.Decode.Decoder (Footballer -> a) a
@@ -89,7 +89,7 @@ decodeFootballer =
             |> Csv.Decode.andMap (Csv.Decode.field "Age" (String.toFloat >> Result.fromMaybe "error parsing string"))
             |> Csv.Decode.andMap (Csv.Decode.field "Overall" (String.toFloat >> Result.fromMaybe "error parsing string"))
             |> Csv.Decode.andMap (Csv.Decode.field "Potential" (String.toFloat >> Result.fromMaybe "error parsing string"))
-            |> Csv.Decode.andMap (Csv.Decode.field "Height" (String.toFloat >> Result.fromMaybe "error parsing string"))
+            --|> Csv.Decode.andMap (Csv.Decode.field "Height" (String.toFloat >> Result.fromMaybe "error parsing string"))
         )
 
 
@@ -99,7 +99,6 @@ decodeFootballer =
 
 type Msg
     = GotText (Result Http.Error String)
-    --| MorePlease
     | Change (Footballer -> Float, Footballer -> Float)
     | ChangeX (Footballer -> Float, String)
     | ChangeY (Footballer -> Float, String)
@@ -374,16 +373,16 @@ view model =
                     [ li [] [
                             Html.text <| "Set X Value"
                             , Html.button [ onClick (ChangeX (.overall, "Overall")) ] [ Html.text "Overall" ]
-                            , Html.button [ onClick (ChangeX (.potential, "Potential")) ] [ Html.text "Potential" ]
+                            --, Html.button [ onClick (ChangeX (.potential, "Potential")) ] [ Html.text "Potential" ]
                             , Html.button [ onClick (ChangeX (.age, "Age")) ] [ Html.text "Age" ]
-                           -- , Html.button [ onClick (ChangeX (.height, "Height")) ] [ Html.text "Height" ]
+                            --, Html.button [ onClick (ChangeX (.height, "Height")) ] [ Html.text "Height" ]
                             ]
                     ]
                 , ul []
                     [ li [] [
                             Html.text <| "Set Y Value"
                             , Html.button [ onClick (ChangeY (.overall, "Overall")) ] [ Html.text "Overall" ]
-                            , Html.button [ onClick (ChangeY (.potential, "Potential")) ] [ Html.text "Potential" ]
+                            --, Html.button [ onClick (ChangeY (.potential, "Potential")) ] [ Html.text "Potential" ]
                             , Html.button [ onClick (ChangeY (.age, "Age")) ] [ Html.text "Age" ]
                            -- , Html.button [ onClick (ChangeY (.height, "Height")) ] [ Html.text "Height" ]
                             ]
