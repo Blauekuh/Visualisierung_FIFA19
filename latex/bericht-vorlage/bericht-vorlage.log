@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.3) (preloaded format=pdflatex 2021.3.22)  12 AUG 2021 17:38
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.3) (preloaded format=pdflatex 2021.3.22)  12 AUG 2021 18:15
 entering extended mode
 **./bericht-vorlage.tex
 (bericht-vorlage.tex
@@ -895,13 +895,21 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 28.
 (C:\Users\johan\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
+Underfull \hbox (badness 10000) in paragraph at lines 53--54
+
+ []
+
 [1
 
 
-{C:/Users/johan/AppData/Local/MiKTeX/pdftex/config/pdftex.map}] [2] [3]
-[4]
+{C:/Users/johan/AppData/Local/MiKTeX/pdftex/config/pdftex.map}]
+Underfull \hbox (badness 10000) in paragraph at lines 55--56
 
-LaTeX Warning: Empty bibliography on input line 108.
+ []
+
+[2] [3] [4]
+
+LaTeX Warning: Empty bibliography on input line 110.
 
 [5] (bericht-vorlage.aux)
 Package rerunfilecheck Info: File `bericht-vorlage.out' has not changed.
@@ -924,7 +932,7 @@ Here is how much of TeX's memory you used:
 :/Users/johan/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:
 /Users/johan/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/
 Users/johan/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmssbx10.pfb>
-Output written on bericht-vorlage.pdf (5 pages, 157303 bytes).
+Output written on bericht-vorlage.pdf (5 pages, 157987 bytes).
 PDF statistics:
  145 PDF objects out of 1000 (max. 8388607)
  29 named destinations out of 1000 (max. 500000)

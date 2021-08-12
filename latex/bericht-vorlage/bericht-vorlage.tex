@@ -50,15 +50,17 @@ Mögliche Zielgruppen: Videospieler, Teilnehmer einer Fantasy Fußball Liga
 \subsection{Überblick und Beiträge}
 %In diesem Abschnitt geben sie einen kurzen Überblick über die Daten und verwendeten Visualisierungen. Dann benennen sie die Beiträge ihres Projekts. Diese Beiträge müssen sie in den hinteren Teilen des Berichts genauer ausführen und belegen.
 
-Als erste Visualisierung habe ich mich für einen Scatterplot entschieden um mit diesem einen groben Überblick über mögliche Trends in den Daten zu ermöglichen.
-Als zweite Technik habe mich für die Technik der parallelen Koordinaten entschieden, mit dieser lassen sich Zusammenhänge zwischen zwei Merkmalen gut erkennen.
+Als erste Visualisierung habe ich mich für einen Scatterplot entschieden um mit diesem einen groben Überblick über mögliche Trends in den Daten zu ermöglichen.\\
+
+Als zweite Technik habe mich für die Technik der parallelen Koordinaten entschieden, mit dieser lassen sich Zusammenhänge zwischen zwei Merkmalen gut erkennen.\\
+
 Als dritte und letzte Technik habe ich die Baumdarstellung ausgewählt um sichtbar zu machen welche Fussballliga Europas im Durchschnitt die besten Spieler hat. Deswegen ist dies für X interessant.
 \newpage
 
 \section{Daten}
 %Beschreiben Sie vorhandenen Daten. Gehen sie kritisch darauf ein, in wie weit sich die Daten für die Bearbeitung der Fragestellungen und dem Erreichen von Lösungen für die oben beschriebene Zielgruppen eignen. Haben sie die Daten sinnvoll mit weiteren Datenquellen ergänzt? Wenn ja, wie?
 
-Grundsätzlich eignen sich die Daten gut um die gewünschten Fragestellungen beantworten zu können, jedoch enthält der Grunddatensatz einige Felder, die für die Visualisierung nicht nötig sind, deswegen wurde der Datensatz in der Vorvorarbeitung noch verkleinert (Siehe \ref{Datenvorverarbeitung} auf Seite \pageref{Datenvorverarbeitung}).
+Grundsätzlich eignen sich die Daten gut um die gewünschten Fragestellungen beantworten zu können, jedoch enthält der Grunddatensatz einige Felder, die für die Visualisierung nicht nötig sind, deswegen wurde der Datensatz in der Vorvorarbeitung noch verkleinert (Siehe \ref{Datenvorverarbeitung} auf Seite \pageref{Datenvorverarbeitung}). Außerdem ist der Datensatz sehr groß, was gerade bei den parallelen Koordinaten zu Problemen führen kann wenn der ganze Datensatz angezeigt wird, deswegen wurde sich bei den parallelen Koordinaten dazu entschieden nach zusätzlichen Dimensionen wie Nationalität zu Filtern um dies so übersichtlicher zu gestalten. Da Datenwerte wie Größe, Alter und Rating der Spieler diskret sind wurde sich dazu entschieden im Scatterplot die Anzahl an Spielern welche in diesem Punkt enthalten sind auszugeben. Weiterhin wurde die Opazität der Punkte verringert, da so zu sehen ist an welchen Stellen sich mehrere Spieler überlagern. 
 \subsection{Technische Bereitstellung der Daten}
 Wie sind die Daten zugänglich? Welche Formate werden genutzt. Gibt es Besonderheiten beim Lesen der Formate?
 \subsection{\label{Datenvorverarbeitung}}
