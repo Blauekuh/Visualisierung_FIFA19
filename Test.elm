@@ -5,9 +5,31 @@ import Html exposing (Html, button, div, text)
 import Html.Events exposing (onClick)
 import Csv exposing (..)
 
+init : () -> (Model, Cmd Msg)
+init _ =
+  ( Loading
+  , Http.get
+      { url = "/data.csv"
+      , expect = Http.expectString GotText
+      }
+  )
 
-datensatz =
-    Csv.parseWith "," data.csv
+csvString_to_data : String -> List ( String, Maybe Float )
+csvString_to_data csvRaw =
+    Csv.parse csvRaw
+        |> Csv.Decode.decodeCsv decodeStockDay
+        |> Result.toMaybe
+        |> Maybe.withDefault []
+
+decodeStockDay : Csv.Decode.Decoder (( String, Maybe Float ) -> a) a
+decodeStockDay =
+    Csv.Decode.map (\a b -> ( a, Just b ))
+        (Csv.Decode.field "Date" Ok
+            |> Csv.Decode.andMap
+                (Csv.Decode.field "Open"
+                    (String.toFloat >> Result.fromMaybe "error parsing string")
+                )
+        )
 
 
 type alias Model =

@@ -171,8 +171,7 @@ view model =
 
         Success l ->
             Html.div []
-                --[ scatterplot filterAndReduceCars <|umwandeln2 <| csvString_to_data l
-               [ List.map (\fulltext -> pre [] [ scatterplot filterAndReduceCars <| umwandeln2 <| csvString_to_data fulltext ]) l
+                [ scatterplot filterAndReduceCars <|umwandeln2 <| csvString_to_data l
             ]
    
 

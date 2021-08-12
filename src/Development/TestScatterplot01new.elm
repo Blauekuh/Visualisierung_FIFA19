@@ -37,8 +37,8 @@ type Model
     | Loading
     | Success
         { data : List Footballer
-        , xAAFunction : Footballer -> Float
-        , yAAFunction : Footballer -> Float
+        , xAAFunction : (Footballer -> Float)
+        , yAAFunction : (Footballer -> Float)
         , xName : String
         , yName : String
         }
@@ -79,17 +79,17 @@ csvString_to_data csvRaw =
 
 
 type alias Footballer =
-    { name : String, age : Float, overall : Float, potential : Float}--, height : Float }
+    { name : String, age : Float, overall : Float, potential : Float, height : Float }
 
 
-decodeFootballer : Csv.Decode.Decoder (Footballer -> a) a
+decodeFootballer : Csv.Decode.Decoder ( Footballer -> a) a
 decodeFootballer =
-    Csv.Decode.map Footballer
+    Csv.Decode.map Footballer 
         (Csv.Decode.field "Name" Ok 
             |> Csv.Decode.andMap (Csv.Decode.field "Age" (String.toFloat >> Result.fromMaybe "error parsing string"))
             |> Csv.Decode.andMap (Csv.Decode.field "Overall" (String.toFloat >> Result.fromMaybe "error parsing string"))
             |> Csv.Decode.andMap (Csv.Decode.field "Potential" (String.toFloat >> Result.fromMaybe "error parsing string"))
-            --|> Csv.Decode.andMap (Csv.Decode.field "Height" (String.toFloat >> Result.fromMaybe "error parsing string"))
+            |> Csv.Decode.andMap (Csv.Decode.field "Height" (String.toFloat >> Result.fromMaybe "error parsing string"))
         )
 
 
@@ -99,7 +99,6 @@ decodeFootballer =
 
 type Msg
     = GotText (Result Http.Error String)
-    | Change (Footballer -> Float, Footballer -> Float)
     | ChangeX (Footballer -> Float, String)
     | ChangeY (Footballer -> Float, String)
 
@@ -119,18 +118,6 @@ update msg model =
                 Err _ ->
                     ( model, Cmd.none )
 
-
-        --MorePlease ->
-        --    ( Loading "" "", getRandomCatGif GotText2 )
-
-
-        Change (x, y) ->
-            case model of
-                Success m ->
-                    ( Success <| { data = m.data, xAAFunction = x, yAAFunction = y, xName = m.xName, yName = m.yName}, Cmd.none )
-
-                _ ->
-                    ( model, Cmd.none )
 
         ChangeX (x, a) ->
             case model of
@@ -340,6 +327,7 @@ filterAndReducePlayers playerlist a b c x y =
 
 
 
+
 type alias Point =
     { pointName : String, x : Float, y : Float }
 
@@ -348,6 +336,12 @@ pointName : Footballer -> (Footballer -> String) -> (Footballer -> Float) -> (Fo
 pointName player a b c d e =
     Point (a player ++ ", " ++ d ++ ": " ++ String.fromFloat (b player) ++ "," ++ e ++ ": " ++ String.fromFloat (c player)) (b player) (c player)
 
+--umwandeln : List (Maybe Footballer) -> List Footballer
+--umwandeln players =
+--    List.map (\n -> n.age  Maybe.withDefault 0.0 ) players
+--    |>List.map (\n -> n.overall  Maybe.withDefault 0.0 ) players
+--    |>List.map (\n -> n.height  Maybe.withDefault 0.0 ) players
+--    |>List.map (\n -> n.potential  Maybe.withDefault 0.0 ) players
 
 -- VIEW
 
@@ -363,7 +357,8 @@ view model =
 
 
         Success l ->
-            let
+            let 
+                
                 spieler =
                     filterAndReducePlayers l.data .name l.xAAFunction l.yAAFunction l.xName l.yName
             in
@@ -373,18 +368,18 @@ view model =
                     [ li [] [
                             Html.text <| "Set X Value"
                             , Html.button [ onClick (ChangeX (.overall, "Overall")) ] [ Html.text "Overall" ]
-                            --, Html.button [ onClick (ChangeX (.potential, "Potential")) ] [ Html.text "Potential" ]
+                            , Html.button [ onClick (ChangeX (.potential, "Potential")) ] [ Html.text "Potential" ]
                             , Html.button [ onClick (ChangeX (.age, "Age")) ] [ Html.text "Age" ]
-                            --, Html.button [ onClick (ChangeX (.height, "Height")) ] [ Html.text "Height" ]
+                            , Html.button [ onClick (ChangeX (.height, "Height")) ] [ Html.text "Height" ]
                             ]
                     ]
                 , ul []
                     [ li [] [
                             Html.text <| "Set Y Value"
                             , Html.button [ onClick (ChangeY (.overall, "Overall")) ] [ Html.text "Overall" ]
-                            --, Html.button [ onClick (ChangeY (.potential, "Potential")) ] [ Html.text "Potential" ]
+                            , Html.button [ onClick (ChangeY (.potential, "Potential")) ] [ Html.text "Potential" ]
                             , Html.button [ onClick (ChangeY (.age, "Age")) ] [ Html.text "Age" ]
-                           -- , Html.button [ onClick (ChangeY (.height, "Height")) ] [ Html.text "Height" ]
+                            , Html.button [ onClick (ChangeY (.height, "Height")) ] [ Html.text "Height" ]
                             ]
                     ]            
                 --  , Html.input [ Html.Attributes.placeholder "Age", Html.Attributes.value model.content, onInput Change ]
