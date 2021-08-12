@@ -211,10 +211,11 @@ scatterplot model =
     in
     svg [ viewBox 0 0 w h, TypedSvg.Attributes.width <| TypedSvg.Types.Percent 80, TypedSvg.Attributes.height <| TypedSvg.Types.Percent 80 ]
         [ style [] [ TypedSvg.Core.text """
-            .point circle { stroke: rgba(0, 0, 0,0.4); fill: rgba(255, 255, 255,0.3); }
+            .point circle { stroke: rgba(0, 0, 155,0.05); fill: rgba(0, 0, 155,0.05); }
             .point text { display: none; }
             .point:hover circle { stroke: rgba(0, 0, 0,1.0); fill: rgb(118, 214, 78); }
             .point:hover text { display: inline; }
+            
           """ ]
         , g [ transform [ Translate 60 390 ] ]
             [ xAxis xValues
@@ -243,12 +244,13 @@ scatterplot model =
                 [ TypedSvg.Core.text model.yDescription ]
             ]
         , g [ transform [ Translate padding padding ] ]
-            (List.map (point xScaleLocal yScaleLocal) model.data)
+            
+            (List.map (\n -> point xScaleLocal yScaleLocal n model.data) model.data)
         ]
 
 
-point : ContinuousScale Float -> ContinuousScale Float -> Point -> Svg msg
-point scaleX scaleY xyPoint =
+point : ContinuousScale Float -> ContinuousScale Float -> Point -> List Point -> Svg msg
+point scaleX scaleY xyPoint pointList=
     g
         [ class [ "point" ]
         , fontSize <| Px 15.0
@@ -261,6 +263,7 @@ point scaleX scaleY xyPoint =
         ]
         [ circle [ cx 0, cy 0, r 3 ] []
         , text_ [ x 10, y -20, textAnchor AnchorMiddle ] [ Html.text xyPoint.pointName ]
+        , text_ [ x 10, y 200, textAnchor AnchorEnd ] [ Html.text <|String.fromInt(sumX xyPoint pointList) ]
         ]
 
 
@@ -326,7 +329,23 @@ filterAndReducePlayers playerlist a b c x y =
     XyData x y (List.map (\n -> pointName n a b c x y) playerlist)
 
 
+filterX : Point -> List Point -> List Point
+filterX a b =
+    let
+        isEqual : Point -> Point -> Maybe Point
+        isEqual t z =
+            if z.x == t.x && z.y == t.y then 
+                Just z
 
+            else
+                Nothing
+    in
+    List.filterMap (isEqual a) b  
+
+
+sumX : Point -> List Point ->  Int
+sumX e f=
+    List.length (filterX e f) 
 
 type alias Point =
     { pointName : String, x : Float, y : Float }
@@ -364,7 +383,8 @@ view model =
             in
             Html.div []
                 [
-                 ul []
+                    Html.text <| "Number of Players with this " ++ l.xName ++ " and this " ++ l.yName ++ ":" 
+                 ,ul []
                     [ li [] [
                             Html.text <| "Set X Value"
                             , Html.button [ onClick (ChangeX (.overall, "Overall")) ] [ Html.text "Overall" ]

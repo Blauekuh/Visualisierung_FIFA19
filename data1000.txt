@@ -1,0 +1,1001 @@
+,Name,Age,Nationality,Overall,Potential,Height,Weakfoot
+1,L. Messi,31,Argentina,94,94,170,4
+2,Cristiano Ronaldo,33,Portugal,94,94,188,4
+3,Neymar Jr,26,Brazil,92,93,175,5
+4,De Gea,27,Spain,91,93,193,3
+5,K. De Bruyne,27,Belgium,91,92,180,5
+6,E. Hazard,27,Belgium,91,91,173,4
+7,L. Modrić,32,Croatia,91,91,173,4
+8,L. Suárez,31,Uruguay,91,91,183,4
+9,Sergio Ramos,32,Spain,91,91,183,3
+10,J. Oblak,25,Slovenia,90,93,188,3
+11,R. Lewandowski,29,Poland,90,90,183,4
+12,T. Kroos,28,Germany,90,90,183,5
+13,D. Godín,32,Uruguay,90,90,188,3
+14,David Silva,32,Spain,90,90,173,2
+15,N. Kanté,27,France,89,90,168,3
+16,P. Dybala,24,Argentina,89,94,178,3
+17,H. Kane,24,England,89,91,188,4
+18,A. Griezmann,27,France,89,90,175,3
+19,M. ter Stegen,26,Germany,89,92,188,4
+20,T. Courtois,26,Belgium,89,90,198,2
+21,Sergio Busquets,29,Spain,89,89,188,3
+22,E. Cavani,31,Uruguay,89,89,185,4
+23,M. Neuer,32,Germany,89,89,193,4
+24,S. Agüero,30,Argentina,89,89,173,4
+25,G. Chiellini,33,Italy,89,89,188,3
+26,K. Mbappé,19,France,88,95,178,4
+27,M. Salah,26,Egypt,88,89,175,3
+28,Casemiro,26,Brazil,88,90,185,3
+29,J. Rodríguez,26,Colombia,88,89,180,3
+30,L. Insigne,27,Italy,88,88,163,3
+31,Isco,26,Spain,88,91,175,3
+32,C. Eriksen,26,Denmark,88,91,180,5
+33,Coutinho,26,Brazil,88,89,173,4
+34,P. Aubameyang,29,Gabon,88,88,188,4
+35,M. Hummels,29,Germany,88,88,190,3
+36,Marcelo,30,Brazil,88,88,175,4
+37,G. Bale,28,Wales,88,88,185,3
+38,H. Lloris,31,France,88,88,188,1
+39,G. Higuaín,30,Argentina,88,88,185,4
+40,Thiago Silva,33,Brazil,88,88,183,3
+41,S. Handanovič,33,Slovenia,88,88,193,2
+42,G. Buffon,40,Italy,88,88,193,2
+43,S. Umtiti,24,France,87,92,183,3
+44,M. Icardi,25,Argentina,87,90,180,4
+45,K. Koulibaly,27,Senegal,87,90,188,3
+46,P. Pogba,25,France,87,91,193,4
+47,K. Navas,31,Costa Rica,87,87,185,3
+48,R. Lukaku,25,Belgium,87,89,190,3
+49,C. Immobile,28,Italy,87,87,185,4
+50,Jordi Alba,29,Spain,87,87,170,3
+51,D. Mertens,31,Belgium,87,87,170,4
+52,J. Vertonghen,31,Belgium,87,87,188,3
+53,M. Hamšík,30,Slovakia,87,87,183,5
+54,I. Rakitić,30,Croatia,87,87,183,3
+55,Piqué,31,Spain,87,87,193,3
+56,L. Sané,22,Germany,86,92,183,3
+57,Bernardo Silva,23,Portugal,86,91,173,3
+58,Ederson,24,Brazil,86,90,188,3
+59,S. Mané,26,Senegal,86,87,175,4
+60,V. van Dijk,26,Netherlands,86,88,193,3
+61,R. Sterling,23,England,86,89,170,3
+62,Roberto Firmino,26,Brazil,86,87,180,4
+63,R. Varane,25,France,86,91,190,3
+64,M. Verratti,25,Italy,86,89,165,4
+65,Alex Sandro,27,Brazil,86,86,180,3
+66,Douglas Costa,27,Brazil,86,86,173,3
+67,T. Müller,28,Germany,86,86,185,4
+68,Thiago,27,Spain,86,86,175,3
+69,M. Reus,29,Germany,86,86,180,4
+70,Azpilicueta,28,Spain,86,86,178,3
+71,L. Bonucci,31,Italy,86,86,190,3
+72,T. Alderweireld,29,Belgium,86,87,185,3
+73,M. Pjanić,28,Bosnia Herzegovina,86,86,178,4
+74,M. Benatia,31,Morocco,86,86,188,3
+75,M. Özil,29,Germany,86,86,180,2
+76,Fernandinho,33,Brazil,86,86,178,4
+77,Iniesta,34,Spain,86,86,170,4
+78,M. Škriniar,23,Slovakia,85,92,188,4
+79,S. Milinković-Savić,23,Serbia,85,90,190,4
+80,Marco Asensio,22,Spain,85,92,183,3
+81,N. Fekir,24,France,85,89,173,3
+82,Alisson,25,Brazil,85,90,190,3
+83,J. Kimmich,23,Germany,85,88,175,4
+84,Saúl,23,Spain,85,90,183,4
+85,R. Mahrez,27,Algeria,85,85,178,4
+86,D. Alaba,26,Austria,85,87,180,4
+87,Koke,26,Spain,85,86,175,4
+88,A. Lacazette,27,France,85,86,175,4
+89,K. Manolas,27,Greece,85,87,188,2
+90,N. Otamendi,30,Argentina,85,85,183,3
+91,Parejo,29,Spain,85,85,183,4
+92,Paulinho,29,Brazil,85,85,183,3
+93,W. Szczęsny,28,Poland,85,87,196,3
+94,A. Sánchez,29,Chile,85,85,170,3
+95,Y. Brahimi,28,Algeria,85,85,175,3
+96,J. Boateng,29,Germany,85,85,193,4
+97,A. Vidal,31,Chile,85,85,180,4
+98,I. Perišić,29,Croatia,85,85,185,5
+99,E. Džeko,32,Bosnia Herzegovina,85,85,193,5
+100,S. Khedira,31,Germany,85,85,188,4
+101,Diego Costa,29,Spain,85,85,188,4
+102,R. Nainggolan,30,Belgium,85,85,175,3
+103,Naldo,35,Brazil,85,85,198,4
+104,B. Matuidi,31,France,85,85,180,2
+105,Miranda,33,Brazil,85,85,185,3
+106,K. Benzema,30,France,85,85,185,4
+107,Filipe Luís,32,Brazil,85,85,183,3
+108,V. Kompany,32,Belgium,85,85,190,3
+109,Pepe,35,Portugal,85,85,188,3
+110,Z. Ibrahimović,36,Sweden,85,85,196,4
+111,D. Sánchez,22,Colombia,84,88,188,3
+112,J. Giménez,23,Uruguay,84,88,185,3
+113,Alex Telles,25,Brazil,84,87,180,2
+114,A. Laporte,24,France,84,88,188,3
+115,Bruno Fernandes,23,Portugal,84,88,178,3
+116,N. Süle,22,Germany,84,90,196,3
+117,A. Martial,22,France,84,90,183,3
+118,D. Alli,22,England,84,90,188,3
+119,Fabinho,24,Brazil,84,88,188,2
+120,Marquinhos,24,Brazil,84,89,183,3
+121,William Carvalho,26,Portugal,84,86,188,4
+122,Jorginho,26,Italy,84,87,180,3
+123,F. Thauvin,25,France,84,87,178,3
+124,Carvajal,26,Spain,84,87,173,3
+125,M. Depay,24,Netherlands,84,89,175,3
+126,H. Son,25,Korea Republic,84,85,183,5
+127,A. Lopes,27,Portugal,84,86,183,2
+128,S. de Vrij,26,Netherlands,84,86,188,4
+129,M. Perin,25,Italy,84,89,188,3
+130,J. Cuadrado,30,Colombia,84,84,178,3
+131,Iago Aspas,30,Spain,84,84,175,3
+132,B. Leno,26,Germany,84,87,190,4
+133,N. Matić,29,Serbia,84,84,193,3
+134,L. Hrádecký,28,Finland,84,84,193,3
+135,Illarramendi,28,Spain,84,84,178,3
+136,K. Walker,28,England,84,84,183,2
+137,I. Gündoğan,27,Germany,84,84,180,4
+138,José Callejón,31,Spain,84,84,178,3
+139,A. Di María,30,Argentina,84,84,180,2
+140,M. Mandžukić,32,Croatia,84,84,190,3
+141,Willian,29,Brazil,84,84,175,4
+142,Sergio Asenjo,29,Spain,84,85,188,3
+143,E. Banega,30,Argentina,84,84,175,4
+144,A. Witsel,29,Belgium,84,84,188,4
+145,D. Payet,31,France,84,84,175,4
+146,Jonas,34,Brazil,84,84,180,5
+147,Sokratis,30,Greece,84,84,185,2
+148,S. Ruffier,31,France,84,84,188,3
+149,Falcao,32,Colombia,84,84,178,4
+150,K. Schmeichel,31,Denmark,84,84,188,3
+151,Raúl Albiol,32,Spain,84,84,190,3
+152,A. Gómez,30,Argentina,84,84,165,4
+153,A. Barzagli,37,Italy,84,84,188,3
+154,Quaresma,34,Portugal,84,84,175,4
+155,A. Robben,34,Netherlands,84,84,180,2
+156,O. Dembélé,21,France,83,92,178,5
+157,Gabriel Jesus,21,Brazil,83,92,175,3
+158,Ronaldo Cabrais,26,Brazil,83,83,178,4
+159,Josué Chiamulera,26,Brazil,83,83,185,3
+160,Louri Beretta,26,Brazil,83,83,188,3
+161,P. Kimpembe,22,France,83,89,188,3
+162,N. Keïta,23,Guinea,83,88,173,4
+163,C. Tolisso,23,France,83,88,180,3
+164,T. Lemar,22,France,83,89,170,2
+165,K. Coman,22,France,83,87,178,3
+166,J. Tah,22,Germany,83,88,196,4
+167,Anderson Talisca,24,Brazil,83,90,190,4
+168,T. Werner,22,Germany,83,87,180,4
+169,A. Rabiot,23,France,83,87,193,3
+170,L. Goretzka,23,Germany,83,88,188,4
+171,Q. Promes,26,Netherlands,83,84,175,4
+172,H. Ziyech,25,Morocco,83,86,180,2
+173,Lucas Vázquez,27,Spain,83,83,173,4
+174,Y. Carrasco,24,Belgium,83,86,180,4
+175,Gerard Moreno,26,Spain,83,85,180,4
+176,Felipe,29,Brazil,83,83,190,3
+177,M. Kovačić,24,Croatia,83,89,175,4
+178,Kepa,23,Spain,83,91,185,4
+179,Manu Trigueros,26,Spain,83,84,178,4
+180,S. Gnabry,22,Germany,83,88,175,4
+181,J. Pickford,24,England,83,88,185,4
+182,S. Savić,27,Montenegro,83,86,188,3
+183,J. Stones,24,England,83,87,188,4
+184,Suso,24,Spain,83,86,175,3
+185,J. Draxler,24,Germany,83,86,188,5
+186,Felipe Anderson,25,Brazil,83,85,175,4
+187,Lucas Moura,25,Brazil,83,84,175,3
+188,Danilo Pereira,26,Portugal,83,86,188,3
+189,Nacho Fernández,28,Spain,83,85,180,4
+190,T. Horn,25,Germany,83,87,193,3
+191,Allan,27,Brazil,83,83,175,3
+192,F. Acerbi,30,Italy,83,83,193,3
+193,Sergi Roberto,26,Spain,83,86,178,3
+194,Rodrigo,27,Spain,83,84,183,3
+195,Pizzi,28,Portugal,83,83,178,4
+196,K. Kampl,27,Slovenia,83,83,178,4
+197,Neto,28,Brazil,83,84,190,2
+198,O. Baumann,28,Germany,83,84,188,1
+199,I. Gueye,28,Senegal,83,83,175,3
+200,H. Mkhitaryan,29,Armenia,83,83,178,5
+201,Marcos Alonso,27,Spain,83,84,188,3
+202,D. Subašić,33,Croatia,83,83,190,2
+203,K. Glik,30,Poland,83,83,190,2
+204,K. Strootman,28,Netherlands,83,83,185,3
+205,B. Dost,29,Netherlands,83,83,196,3
+206,Oscar,26,Brazil,83,84,178,3
+207,M. Balotelli,27,Italy,83,83,188,4
+208,Luiz Gustavo,30,Brazil,83,83,188,3
+209,Giuliano,28,Brazil,83,83,173,3
+210,David Luiz,31,Brazil,83,83,188,3
+211,R. Fährmann,29,Germany,83,84,198,1
+212,Juan Mata,30,Spain,83,83,170,3
+213,Adán,31,Spain,83,83,190,2
+214,Rui Patrício,30,Portugal,83,83,190,2
+215,Y. Sommer,29,Switzerland,83,84,183,4
+216,Javi Martínez,29,Spain,83,83,193,3
+217,L. Bender,29,Germany,83,83,185,3
+218,Lucas Leiva,31,Brazil,83,83,178,3
+219,S. Mandanda,33,France,83,83,185,3
+220,Cesc Fàbregas,31,Spain,83,83,178,3
+221,M. Dembélé,30,Belgium,83,83,185,2
+222,F. Ribéry,35,France,83,83,170,4
+223,R. Jarstein,33,Norway,83,83,190,4
+224,D. De Rossi,34,Italy,83,83,183,4
+225,Pepe Reina,35,Spain,83,83,188,3
+226,J. Pavlenka,26,Czech Republic,82,85,196,3
+227,M. de Ligt,18,Netherlands,82,91,188,4
+228,Rodri,22,Spain,82,87,190,3
+229,Arthur,21,Brazil,82,90,170,3
+230,G. Donnarumma,19,Italy,82,93,196,3
+231,Rosberto Dourado,30,Brazil,82,82,175,4
+232,Juiano Mestres,34,Brazil,82,82,180,3
+233,Raphaelito Anjos,30,Brazil,82,82,190,2
+234,Gelson Martins,23,Portugal,82,87,173,3
+235,Gonçalo Guedes,21,Portugal,82,86,178,3
+236,L. Torreira,22,Uruguay,82,87,168,3
+237,Malcom,21,Brazil,82,89,173,4
+238,Pau López,23,Spain,82,87,188,3
+239,L. Hernández,22,France,82,88,183,3
+240,C. Lenglet,23,France,82,88,185,4
+241,A. Kramarić,27,Croatia,82,83,178,4
+242,A. Robertson,24,Scotland,82,87,178,2
+243,Dani García,28,Spain,82,83,180,3
+244,F. Bernardeschi,24,Italy,82,87,185,3
+245,J. Brandt,22,Germany,82,88,185,4
+246,D. Rugani,23,Italy,82,86,190,3
+247,Samu Castillejo,23,Spain,82,86,183,2
+248,João Cancelo,24,Portugal,82,88,183,3
+249,A. Romagnoli,23,Italy,82,89,188,3
+250,T. Partey,25,Ghana,82,88,185,3
+251,Fred,25,Brazil,82,84,170,4
+252,J. Vardy,31,England,82,82,178,3
+253,A. Belotti,24,Italy,82,87,180,5
+254,E. Forsberg,26,Sweden,82,83,178,4
+255,J. Lingard,25,England,82,83,175,3
+256,F. Vázquez,29,Argentina,82,82,185,3
+257,E. Višća,28,Bosnia Herzegovina,82,82,173,4
+258,A. Rüdiger,25,Germany,82,84,190,3
+259,A. Florenzi,27,Italy,82,83,173,3
+260,H. Maguire,25,England,82,85,193,3
+261,T. Meunier,26,Belgium,82,83,190,4
+262,S. Sané,27,Senegal,82,82,196,3
+263,G. Kondogbia,25,Central African Rep.,82,85,188,2
+264,Rafinha,25,Brazil,82,87,175,4
+265,Gabriel Paulista,27,Brazil,82,83,188,2
+266,Morata,25,Spain,82,85,188,4
+267,J. Cillessen,29,Netherlands,82,84,185,3
+268,W. Ben Yedder,27,France,82,82,170,5
+269,C. Bakambu,27,DR Congo,82,83,183,4
+270,Pablo Sarabia,26,Spain,82,83,175,4
+271,W. Zaha,25,Ivory Coast,82,85,180,3
+272,Luis Alberto,25,Spain,82,85,183,3
+273,Jonathan Viera,28,Spain,82,82,170,4
+274,Bartra,27,Spain,82,83,183,3
+275,S. Coates,27,Uruguay,82,83,196,3
+276,Willian José,26,Brazil,82,83,188,4
+277,Mário Fernandes,27,Russia,82,82,188,3
+278,Víctor Ruiz,29,Spain,82,83,185,2
+279,T. Delaney,26,Denmark,82,83,183,4
+280,K. Casteels,26,Belgium,82,85,198,2
+281,M. Götze,26,Germany,82,85,175,4
+282,S. Mustafi,26,Germany,82,84,183,3
+283,J. Pastore,29,Argentina,82,82,188,4
+284,Pedro,30,Spain,82,82,170,5
+285,G. Bonaventura,28,Italy,82,82,180,3
+286,R. Bürki,27,Switzerland,82,85,188,2
+287,Taison,30,Brazil,82,82,173,3
+288,S. Nzonzi,29,France,82,82,196,3
+289,Marlos,30,Ukraine,82,82,175,4
+290,A. Ramsey,27,Wales,82,83,183,3
+291,K. Trippier,27,England,82,82,178,4
+292,A. Kolarov,32,Serbia,82,82,188,3
+293,G. Sigurðsson,28,Iceland,82,82,185,5
+294,S. Giovinco,31,Italy,82,82,163,4
+295,M. Arnautović,29,Austria,82,82,193,4
+296,N. Gaitán,30,Argentina,82,82,173,2
+297,J. Henderson,28,England,82,82,183,3
+298,M. Kruse,30,Germany,82,82,180,4
+299,M. Parolo,33,Italy,82,82,183,4
+300,L. Fejsa,29,Serbia,82,82,183,3
+301,A. Rami,32,France,82,82,190,3
+302,V. Ćorluka,32,Croatia,82,82,193,3
+303,G. Wijnaldum,27,Netherlands,82,82,175,3
+304,F. Fazio,31,Argentina,82,82,196,2
+305,O. Giroud,31,France,82,82,193,3
+306,Marcano,31,Spain,82,82,188,3
+307,A. Guardado,31,Mexico,82,82,170,2
+308,E. Garay,31,Argentina,82,82,188,3
+309,Jardel,32,Brazil,82,82,193,2
+310,S. Sirigu,31,Italy,82,82,193,2
+311,E. Viviano,32,Italy,82,82,196,2
+312,L. Koscielny,32,France,82,82,185,3
+313,A. Consigli,31,Italy,82,82,188,3
+314,L. Biglia,32,Argentina,82,82,178,4
+315,Dani Alves,35,Brazil,82,82,173,3
+316,David Villa,36,Spain,82,82,175,5
+317,Aduriz,37,Spain,82,82,183,3
+318,P. Čech,36,Czech Republic,82,82,196,3
+319,Casillas,37,Spain,82,82,185,2
+320,M. Rashford,20,England,81,89,185,4
+321,Laure Santeiro,30,Brazil,81,81,170,5
+322,L. Bailey,20,Jamaica,81,89,178,4
+323,M. Akanji,22,Switzerland,81,87,188,3
+324,F. de Jong,21,Netherlands,81,89,180,3
+325,Nélson Semedo,24,Portugal,81,86,178,3
+326,Pablo Fornals,22,Spain,81,86,178,3
+327,Fabián,22,Spain,81,89,188,4
+328,E. Bailly,24,Ivory Coast,81,87,185,3
+329,Dani Ceballos,21,Spain,81,88,178,3
+330,H. Lozano,22,Mexico,81,86,175,4
+331,Morales,30,Spain,81,81,180,4
+332,J. Seri,26,Ivory Coast,81,82,170,4
+333,M. Politano,24,Italy,81,84,170,4
+334,M. Brozović,25,Croatia,81,84,180,4
+335,Williams,24,Spain,81,87,185,3
+336,A. Correa,23,Argentina,81,87,170,4
+337,A. Christensen,22,Denmark,81,88,188,3
+338,João Mário,25,Portugal,81,84,178,4
+339,T. Strakosha,23,Albania,81,86,193,2
+340,E. Hysaj,24,Albania,81,86,183,3
+341,P. Zieliński,24,Poland,81,88,180,5
+342,Ricardo Pereira,24,Portugal,81,85,175,4
+343,Grimaldo,22,Spain,81,87,170,2
+344,R. Guerreiro,24,Portugal,81,86,170,3
+345,A. Doucouré,25,France,81,85,183,3
+346,J. Martínez,25,Venezuela,81,84,170,4
+347,C. Bacca,31,Colombia,81,81,180,2
+348,A. Plea,25,France,81,83,180,3
+349,B. Davies,25,Wales,81,84,183,3
+350,M. Nastasić,25,Serbia,81,84,188,2
+351,A. Milik,24,Poland,81,88,185,3
+352,M. Sabitzer,24,Austria,81,84,178,4
+353,B. Mendy,23,France,81,86,185,3
+354,C. Kramer,27,Germany,81,82,190,3
+355,S. Vrsaljko,26,Croatia,81,84,180,3
+356,T. Hazard,25,Belgium,81,83,175,3
+357,K. Bellarabi,28,Germany,81,81,183,3
+358,S. Zaza,27,Italy,81,82,185,3
+359,F. Ghoulam,27,Algeria,81,82,183,4
+360,B. Lecomte,27,France,81,84,185,3
+361,J. Iličić,30,Slovenia,81,81,190,3
+362,K. Volland,25,Germany,81,83,178,3
+363,Paco Alcácer,24,Spain,81,85,175,4
+364,Vitolo,28,Spain,81,81,185,4
+365,G. Xhaka,25,Switzerland,81,84,185,2
+366,D. Tadić,29,Serbia,81,81,180,2
+367,C. Aránguiz,29,Chile,81,81,170,4
+368,S. Verdi,25,Italy,81,81,170,5
+369,D. Lovren,28,Croatia,81,82,188,4
+370,G. Medel,30,Chile,81,81,170,4
+371,X. Shaqiri,26,Switzerland,81,81,170,4
+372,J. Corona,25,Mexico,81,83,173,5
+373,A. Areola,25,France,81,85,196,3
+374,K. Vogt,26,Germany,81,82,193,3
+375,Ander Herrera,28,Spain,81,81,183,4
+376,E. Salvio,27,Argentina,81,81,173,4
+377,S. El Shaarawy,25,Italy,81,82,178,3
+378,C. Smalling,28,England,81,82,193,3
+379,Hulk,31,Brazil,81,81,180,3
+380,S. Kagawa,29,Japan,81,81,175,4
+381,M. Lanzini,25,Argentina,81,85,168,3
+382,F. Smolov,28,Russia,81,81,188,4
+383,L. Stindl,29,Germany,81,81,180,4
+384,O. Toprak,28,Turkey,81,82,185,4
+385,D. Perotti,29,Argentina,81,81,178,4
+386,F. Muslera,32,Uruguay,81,81,190,2
+387,B. Höwedes,30,Germany,81,81,188,3
+388,S. Kjær,29,Denmark,81,81,188,3
+389,S. Bender,29,Germany,81,81,185,4
+390,M. Valbuena,33,France,81,81,168,3
+391,Pedro León,31,Spain,81,81,183,3
+392,K. Boateng,31,Ghana,81,81,185,4
+393,L. Piszczek,33,Poland,81,81,183,4
+394,A. Candreva,31,Italy,81,81,180,4
+395,D. Wass,29,Denmark,81,81,180,3
+396,E. Lamela,26,Argentina,81,82,183,2
+397,D. Rose,27,England,81,81,175,3
+398,C. Vela,29,Mexico,81,81,178,2
+399,Renato Augusto,30,Brazil,81,81,185,4
+400,A. Valencia,32,Ecuador,81,81,180,2
+401,L. Fabiański,33,Poland,81,81,190,2
+402,João Moutinho,31,Portugal,81,81,170,4
+403,Borja Valero,33,Spain,81,81,175,4
+404,F. Quagliarella,35,Italy,81,81,180,4
+405,B. Gomis,32,France,81,81,183,3
+406,Manuel Fernandes,32,Portugal,81,81,175,4
+407,H. Herrera,28,Mexico,81,81,183,4
+408,Raffael,33,Brazil,81,81,175,4
+409,Nani,31,Portugal,81,81,178,5
+410,J. Milner,32,England,81,81,175,4
+411,J. Mathieu,34,France,81,81,188,2
+412,Joaquín,36,Spain,81,81,178,3
+413,M. Gómez,21,Uruguay,80,85,185,3
+414,K. Havertz,19,Germany,80,89,188,5
+415,T. Ndombele,21,France,80,89,180,3
+416,H. Aouar,20,France,80,90,175,4
+417,Carlos Soler,21,Spain,80,87,180,4
+418,Odriozola,22,Spain,80,88,175,3
+419,M. Almirón,24,Paraguay,80,84,175,2
+420,Welington Dano,30,Brazil,80,80,178,4
+421,Everton Andrão,34,Brazil,80,80,178,4
+422,Oyarzabal,21,Spain,80,87,180,3
+423,F. Balbuena,26,Paraguay,80,83,188,3
+424,M. Marega,27,Mali,80,80,185,3
+425,B. Pavard,22,France,80,86,185,3
+426,W. Ndidi,21,Nigeria,80,85,183,4
+427,A. Onana,22,Cameroon,80,85,188,3
+428,G. Lo Celso,22,Argentina,80,86,175,3
+429,M. Acuña,26,Argentina,80,80,173,3
+430,Rúben Neves,21,Portugal,80,87,180,3
+431,Mariano,24,Dominican Republic,80,85,180,4
+432,Raúl,28,Brazil,80,80,188,3
+433,M. Caldara,24,Italy,80,86,188,3
+434,M. Vecino,26,Uruguay,80,81,188,3
+435,T. Bakayoko,23,France,80,85,188,3
+436,M. Dahoud,22,Germany,80,86,178,4
+437,Rafa,25,Portugal,80,83,173,4
+438,K. Baldé,23,Senegal,80,85,180,4
+439,G. Rulli,26,Argentina,80,85,188,3
+440,F. Armani,31,Argentina,80,80,188,2
+441,Rony Lopes,22,Portugal,80,85,175,3
+442,Santi Mina,22,Spain,80,85,180,4
+443,K. Demirbay,24,Germany,80,84,183,4
+444,Gayà,23,Spain,80,85,173,3
+445,André Gomes,24,Portugal,80,85,188,4
+446,N. Tagliafico,25,Argentina,80,82,170,2
+447,M. Sanson,23,France,80,85,180,4
+448,Pacheco,26,Spain,80,83,185,2
+449,E. Can,24,Germany,80,85,183,4
+450,H. Çalhanoğlu,24,Turkey,80,84,178,4
+451,M. Ginter,24,Germany,80,82,188,3
+452,M. Keane,25,England,80,83,190,3
+453,L. Paredes,24,Argentina,80,85,180,4
+454,T. Stepanenko,28,Ukraine,80,80,180,3
+455,L. Shaw,22,England,80,85,180,2
+456,Z. Feddal,28,Morocco,80,80,190,2
+457,S. Haller,24,France,80,83,190,2
+458,Bernard,25,Brazil,80,81,165,4
+459,T. Inui,30,Japan,80,80,170,4
+460,Portu,26,Spain,80,81,178,4
+461,M. Batshuayi,24,Belgium,80,84,185,5
+462,E. Zahavi,30,Israel,80,80,183,4
+463,T. Vaclík,29,Czech Republic,80,81,188,3
+464,N. Pope,26,England,80,83,201,3
+465,Héctor Bellerín,23,Spain,80,85,178,3
+466,P. Kadeřábek,26,Czech Republic,80,81,183,2
+467,J. Butland,25,England,80,85,196,3
+468,J. Vestergaard,25,Denmark,80,81,198,4
+469,J. Tarkowski,25,England,80,83,193,4
+470,Deulofeu,24,Spain,80,82,178,4
+471,E. Dier,24,England,80,84,188,3
+472,J. Murillo,26,Colombia,80,84,183,2
+473,M. Badelj,29,Croatia,80,80,185,4
+474,Ismaily,28,Brazil,80,80,178,2
+475,N. Schulz,25,Germany,80,81,180,2
+476,L. Digne,24,France,80,84,178,3
+477,M. Uth,26,Germany,80,81,185,3
+478,Cristian Tello,26,Spain,80,80,178,4
+479,D. Vida,29,Croatia,80,80,183,3
+480,L. Muriel,27,Colombia,80,81,178,4
+481,V. Aboubakar,26,Cameroon,80,82,183,3
+482,A. Oxlade-Chamberlain,24,England,80,85,175,4
+483,S. Aurier,25,Ivory Coast,80,83,175,3
+484,J. Matip,26,Cameroon,80,82,193,2
+485,Y. Rakitskyi,28,Ukraine,80,80,185,3
+486,Sergi Enrich,28,Spain,80,80,180,4
+487,A. Yarmolenko,28,Ukraine,80,80,190,2
+488,Hugo Mallo,27,Spain,80,81,175,3
+489,André Almeida,27,Portugal,80,80,185,3
+490,D. Didavi,28,Germany,80,80,180,3
+491,R. Rodríguez,25,Switzerland,80,83,180,3
+492,R. Pereyra,27,Argentina,80,80,183,4
+493,Mario Gaspar,27,Spain,80,80,183,3
+494,Maicon,29,Brazil,80,80,190,3
+495,D. Blind,28,Netherlands,80,80,180,4
+496,J. Zoet,27,Netherlands,80,83,188,4
+497,A. Ljajić,26,Serbia,80,81,183,4
+498,Canales,27,Spain,80,80,180,3
+499,Iago Falqué,28,Spain,80,80,175,3
+500,L. de Jong,27,Netherlands,80,80,188,3
+501,Guaita,31,Spain,80,80,190,3
+502,Muniain,25,Spain,80,83,170,3
+503,Susaeta,30,Spain,80,80,178,3
+504,S. Rudy,28,Germany,80,80,178,3
+505,K. Trapp,27,Germany,80,81,188,4
+506,V. Wanyama,27,Kenya,80,82,183,3
+507,N. Nkoulou,28,Cameroon,80,80,183,3
+508,R. Boudebouz,28,Algeria,80,80,178,4
+509,Camacho,28,Spain,80,81,183,3
+510,S. Ulreich,29,Germany,80,80,193,2
+511,M. Musacchio,27,Argentina,80,80,180,3
+512,C. Stuani,31,Uruguay,80,80,185,3
+513,P. Gulácsi,28,Hungary,80,80,193,2
+514,Bruno,34,Spain,80,80,183,3
+515,F. Delph,28,England,80,80,175,3
+516,A. Lallana,30,England,80,80,178,5
+517,Marcelo,31,Brazil,80,80,190,2
+518,S. Coleman,29,Republic of Ireland,80,80,178,3
+519,Alexandre Pato,28,Brazil,80,80,180,3
+520,Antunes,31,Portugal,80,80,175,3
+521,Nacho Monreal,32,Spain,80,80,178,3
+522,Beñat,31,Spain,80,80,178,3
+523,A. Fernández,32,Argentina,80,80,178,3
+524,K. Gameiro,31,France,80,80,173,3
+525,I. Piatti,33,Argentina,80,80,180,4
+526,V. Birsa,31,Slovenia,80,80,183,4
+527,S. Romero,31,Argentina,80,80,193,3
+528,D. Criscito,31,Italy,80,80,183,3
+529,D. Valeri,32,Argentina,80,80,178,3
+530,D. Sturridge,28,England,80,80,180,2
+531,Raúl García,31,Spain,80,80,183,3
+532,S. Defour,30,Belgium,80,80,175,3
+533,M. Škrtel,33,Slovakia,80,80,190,2
+534,S. Radu,31,Romania,80,80,183,3
+535,G. Cahill,32,England,80,80,193,3
+536,L. Diarra,33,France,80,80,175,3
+537,L. Perrin,32,France,80,80,180,3
+538,Dante,34,Brazil,80,80,188,4
+539,A. Granqvist,33,Sweden,80,80,193,4
+540,A. Gignac,32,France,80,80,188,3
+541,M. Gómez,32,Germany,80,80,188,4
+542,I. Akinfeev,32,Russia,80,80,185,3
+543,I. Denisov,34,Russia,80,80,175,3
+544,Juanfran,33,Spain,80,80,180,3
+545,Diego López,36,Spain,80,80,196,3
+546,Santi Cazorla,33,Spain,80,80,168,5
+547,Jesús Navas,32,Spain,80,80,170,2
+548,J. Mascherano,34,Argentina,80,80,175,3
+549,A. Mirante,34,Italy,80,80,193,2
+550,D. Srna,36,Croatia,80,80,178,4
+551,B. Schweinsteiger,33,Germany,80,80,183,3
+552,Moyá,34,Spain,80,80,188,2
+553,W. Rooney,32,England,80,80,175,4
+554,Fernando Torres,34,Spain,80,80,185,4
+555,S. Sorrentino,39,Italy,80,80,185,3
+556,V. Tsygankov,20,Ukraine,79,86,178,4
+557,Rúben Dias,21,Portugal,79,85,185,4
+558,David Neres,21,Brazil,79,86,175,3
+559,Raphinha,21,Brazil,79,86,175,3
+560,A. Harit,21,Morocco,79,86,180,4
+561,Richarlison,21,Brazil,79,86,180,5
+562,L. Martínez,20,Argentina,79,86,175,4
+563,F. Kessié,21,Ivory Coast,79,88,183,4
+564,Luimo Boas Santos,30,Brazil,79,79,175,4
+565,Gabri Prestão,26,Brazil,79,79,185,3
+566,Melvin Parrela,30,Brazil,79,79,188,3
+567,Antônio Chiamuloira,30,Brazil,79,79,183,3
+568,Maikel Catarino,34,Brazil,79,79,178,3
+569,A. Lunev,26,Russia,79,81,188,3
+570,André Silva,22,Portugal,79,87,185,3
+571,C. Pulisic,19,United States,79,87,178,4
+572,M. Dmitrović,26,Serbia,79,80,193,2
+573,L. Tousart,21,France,79,84,185,3
+574,Marcos Llorente,23,Spain,79,87,183,3
+575,B. Verbič,24,Slovenia,79,81,178,3
+576,S. Bergwijn,20,Netherlands,79,86,178,2
+577,A. Diallo,22,France,79,86,185,3
+578,A. Golovin,22,Russia,79,85,180,4
+579,M. Campaña,29,Uruguay,79,80,185,3
+580,C. Pavón,22,Argentina,79,85,175,3
+581,K. Toko-Ekambi,25,Cameroon,79,80,185,4
+582,Granell,29,Spain,79,79,175,4
+583,F. Cervi,24,Argentina,79,84,165,3
+584,J. Weigl,22,Germany,79,84,185,3
+585,V. Lindelöf,23,Sweden,79,85,188,3
+586,A. Rebić,24,Croatia,79,82,185,3
+587,A. Sanabria,22,Paraguay,79,85,180,4
+588,R. Battaglia,26,Argentina,79,80,188,4
+589,M. Philipp,24,Germany,79,84,183,4
+590,A. Saint-Maximin,21,France,79,86,173,4
+591,D. Zappacosta,26,Italy,79,81,183,3
+592,L. Alario,25,Argentina,79,82,183,3
+593,D. Benedetto,28,Argentina,79,79,178,5
+594,I. Marcone,28,Argentina,79,80,183,3
+595,J. Gbamin,22,Ivory Coast,79,84,185,3
+596,J. Lerma,23,Colombia,79,84,178,4
+597,Ricardo Horta,23,Portugal,79,84,173,4
+598,R. Zobnin,24,Russia,79,86,183,3
+599,M. Meyer,22,Germany,79,83,173,4
+600,Bruma,23,Portugal,79,83,173,4
+601,R. Centurión,25,Argentina,79,81,175,3
+602,Jonny,24,Spain,79,83,170,3
+603,Otávio,23,Brazil,79,85,173,3
+604,J. Hofmann,25,Germany,79,80,175,4
+605,N. Aké,23,Netherlands,79,84,180,3
+606,J. Hector,28,Germany,79,79,185,3
+607,S. Kolašinac,25,Bosnia Herzegovina,79,82,183,2
+608,G. Pizarro,28,Argentina,79,79,185,3
+609,Roger,27,Spain,79,80,178,3
+610,Sergio Rico,24,Spain,79,83,193,3
+611,L. Milivojević,27,Serbia,79,81,185,2
+612,D. Baselli,26,Italy,79,82,183,3
+613,K. Rekik,23,Netherlands,79,83,185,2
+614,Denis Suárez,24,Spain,79,86,175,3
+615,W. Orban,25,Hungary,79,81,185,3
+616,Mário Rui,27,Portugal,79,80,170,3
+617,Iñigo Martínez,27,Spain,79,80,183,2
+618,K. Zouma,23,France,79,83,190,3
+619,Roque Mesa,29,Spain,79,79,170,3
+620,J. Brooks,25,United States,79,84,193,3
+621,L. Karius,25,Germany,79,83,188,3
+622,Zé Luís,27,Cape Verde,79,80,183,4
+623,D. Klaassen,25,Netherlands,79,81,178,3
+624,M. Elyounoussi,23,Norway,79,85,178,4
+625,L. Bittencourt,24,Germany,79,82,170,4
+626,Sergi Darder,24,Spain,79,83,180,3
+627,J. Roussillon,25,France,79,84,175,3
+628,D. Demme,26,Germany,79,80,170,4
+629,J. Gouweleeuw,26,Netherlands,79,80,188,3
+630,M. Rojo,28,Argentina,79,79,188,2
+631,J. Veretout,25,France,79,84,175,3
+632,L. Kurzawa,25,France,79,82,183,3
+633,G. Ramírez,27,Uruguay,79,79,183,3
+634,David López,28,Spain,79,79,183,3
+635,C. Tătăruşanu,32,Romania,79,79,196,3
+636,A. Mandi,26,Algeria,79,82,183,3
+637,D. Sidibé,25,France,79,80,183,4
+638,Y. Konoplyanka,28,Ukraine,79,79,178,3
+639,S. Berghuis,26,Netherlands,79,80,183,3
+640,H. Vanaken,25,Belgium,79,81,196,5
+641,Campaña,25,Spain,79,82,178,3
+642,M. van Ginkel,25,Netherlands,79,80,185,4
+643,Nolito,31,Spain,79,79,175,3
+644,M. Gregoritsch,24,Austria,79,82,193,3
+645,Ibai Gómez,28,Spain,79,79,178,4
+646,Danilo,26,Brazil,79,80,183,4
+647,R. Barkley,24,England,79,82,185,5
+648,M. Ryan,26,Australia,79,81,183,4
+649,Sergio León,29,Spain,79,79,178,4
+650,B. Stambouli,27,France,79,79,180,4
+651,J. Guilavogui,27,France,79,80,188,3
+652,Sérgio Oliveira,26,Portugal,79,82,180,3
+653,D. Caligiuri,30,Italy,79,79,183,4
+654,C. Wilson,26,England,79,81,180,3
+655,P. Jones,26,England,79,80,185,3
+656,Borja García,27,Spain,79,79,175,3
+657,Y. Belhanda,28,Morocco,79,79,178,4
+658,G. Pezzella,27,Argentina,79,81,185,3
+659,Jaume Costa,30,Spain,79,79,170,3
+660,C. Tosun,27,Turkey,79,80,183,4
+661,Escudero,28,Spain,79,79,175,2
+662,Kike García,28,Spain,79,79,185,4
+663,Elkeson,28,Brazil,79,79,180,4
+664,Ricardo Goulart,27,Brazil,79,80,180,4
+665,J. Guðmundsson,27,Iceland,79,79,178,4
+666,N. Clyne,27,England,79,80,175,2
+667,M. Hitz,30,Switzerland,79,79,193,3
+668,De Marcos,29,Spain,79,79,183,3
+669,B. Mee,28,England,79,79,183,3
+670,Rafael,27,Brazil,79,79,173,3
+671,Iborra,30,Spain,79,79,190,4
+672,J. Wilshere,26,England,79,81,173,2
+673,B. Hübner,28,Germany,79,79,193,2
+674,Souza,29,Brazil,79,79,188,4
+675,F. Coquelin,27,France,79,80,178,3
+676,Alex Teixeira,28,Brazil,79,79,173,4
+677,A. Dzagoev,28,Russia,79,79,178,3
+678,I. Smolnikov,29,Russia,79,79,178,3
+679,Y. M'Vila,28,France,79,80,183,3
+680,K. Asamoah,29,Ghana,79,79,173,3
+681,R. Zieler,29,Germany,79,80,188,3
+682,D. Drinkwater,28,England,79,79,178,4
+683,N. Kalinić,30,Croatia,79,79,188,4
+684,Mariano,32,Brazil,79,79,178,3
+685,S. Feghouli,28,Algeria,79,79,175,3
+686,Adrien Silva,29,Portugal,79,79,175,4
+687,Fernando,30,Brazil,79,79,183,2
+688,I. Traoré,30,Guinea,79,79,170,2
+689,G. Mercado,31,Argentina,79,79,180,3
+690,N. Petersen,29,Germany,79,79,188,4
+691,O. Karnezis,32,Greece,79,79,190,3
+692,M. Sakho,28,France,79,80,188,2
+693,Sidnei,28,Brazil,79,80,188,2
+694,S. Jovetić,28,Montenegro,79,79,183,4
+695,Eder,31,Italy,79,79,178,4
+696,J. Hernández,30,Mexico,79,79,175,3
+697,Fabricio,30,Spain,79,79,183,4
+698,Kiko Casilla,31,Spain,79,79,190,2
+699,Ángel,31,Spain,79,79,173,3
+700,M. Schneiderlin,28,France,79,79,185,3
+701,M. Fellaini,30,Belgium,79,79,193,3
+702,P. Wernbloom,32,Sweden,79,79,188,3
+703,D. Ospina,29,Colombia,79,79,183,3
+704,S. Mignolet,30,Belgium,79,79,193,2
+705,A. Begović,31,Bosnia Herzegovina,79,79,198,2
+706,N. Şahin,29,Turkey,79,79,180,3
+707,R. Bertrand,28,England,79,79,178,3
+708,A. Masiello,32,Italy,79,79,183,2
+709,T. Walcott,29,England,79,79,175,3
+710,Charles,34,Brazil,79,79,178,3
+711,T. Heaton,32,England,79,79,188,3
+712,H. Ben Arfa,31,France,79,79,178,4
+713,D. Abraham,31,Argentina,79,79,188,2
+714,E. Lavezzi,33,Argentina,79,79,173,4
+715,S. Kalou,32,Ivory Coast,79,79,183,3
+716,J. Farfán,33,Peru,79,79,178,3
+717,R. Babel,31,Netherlands,79,79,185,3
+718,A. Young,32,England,79,79,175,3
+719,J. Hart,31,England,79,79,196,3
+720,L. López,35,Argentina,79,79,175,4
+721,D. Baier,34,Germany,79,79,175,3
+722,B. Yılmaz,32,Turkey,79,79,188,3
+723,R. Adler,33,Germany,79,79,190,3
+724,S. Lichtsteiner,34,Switzerland,79,79,183,3
+725,E. Adebayor,34,Togo,79,79,193,3
+726,E. Belözoğlu,37,Turkey,79,79,170,4
+727,Loren,24,Spain,78,83,188,3
+728,Éder Militão,20,Brazil,78,87,185,2
+729,F. Chiesa,20,Italy,78,87,175,4
+730,M. Lazzari,24,Italy,78,81,175,3
+731,A. Hakimi,19,Morocco,78,86,180,2
+732,S. Nakajima,23,Japan,78,84,165,4
+733,L. Jović,20,Serbia,78,86,183,5
+734,S. Ascacíbar,21,Argentina,78,84,168,3
+735,A. Lafont,19,France,78,90,193,3
+736,T. Alexander-Arnold,19,England,78,88,180,3
+737,F. Krovinović,22,Croatia,78,84,178,4
+738,Sidney Pessinho,26,Brazil,78,78,188,3
+739,Everticinho,30,Brazil,78,78,175,3
+740,Claudio Coíntra,34,Brazil,78,78,175,5
+741,Ronaldo Esler,30,Brazil,78,78,168,3
+742,P. Lees-Melou,25,France,78,80,185,3
+743,B. Chilwell,21,England,78,85,178,3
+744,João Novais,24,Portugal,78,81,183,3
+745,D. Calabria,21,Italy,78,88,175,3
+746,F. Mendy,23,France,78,86,178,5
+747,L. Pellegrini,22,Italy,78,84,185,3
+748,Soares,27,Brazil,78,79,188,3
+749,Daniel Podence,22,Portugal,78,84,163,4
+750,M. Díaz,32,Argentina,78,78,188,2
+751,G. Martínez,25,Argentina,78,82,173,2
+752,M. Eggestein,21,Germany,78,84,180,4
+753,Trezeguet,23,Egypt,78,80,178,5
+754,N. Amiri,21,Germany,78,85,180,3
+755,Vallejo,21,Spain,78,86,183,3
+756,J. Gomez,21,England,78,88,188,3
+757,Diogo Jota,21,Portugal,78,86,178,4
+758,Joan Jordán,23,Spain,78,83,183,4
+759,Dyego Sousa,28,Brazil,78,78,190,3
+760,A. Marušić,25,Montenegro,78,79,185,4
+761,David Soria,25,Spain,78,80,193,3
+762,V. Rongier,23,France,78,83,173,3
+763,W. Weghorst,25,Netherlands,78,80,198,3
+764,O. Al Soma,29,Syria,78,78,190,4
+765,M. Nakamba,24,Zimbabwe,78,83,175,2
+766,Petros,29,Brazil,78,78,180,3
+767,Pablo Maffeo,20,Spain,78,86,173,3
+768,Y. Mina,23,Colombia,78,85,196,2
+769,M. Dúbravka,29,Slovakia,78,80,190,2
+770,Diego Carlos,25,Brazil,78,80,185,4
+771,D. Djené,26,Togo,78,79,175,4
+772,G. Simeone,22,Argentina,78,85,180,3
+773,M. Meza,25,Argentina,78,79,180,3
+774,Bastos,26,Angola,78,79,180,3
+775,S. Lobotka,23,Slovakia,78,84,170,4
+776,Y. Tielemans,21,Belgium,78,87,175,5
+777,Marcelo Goiano,30,Brazil,78,78,175,4
+778,K. Tete,22,Netherlands,78,83,180,3
+779,Capa,26,Spain,78,81,175,4
+780,M. Sportiello,26,Italy,78,81,193,2
+781,Jemerson,25,Brazil,78,81,183,2
+782,N. Maksimović,26,Serbia,78,81,193,3
+783,D. Zapata,27,Colombia,78,79,188,4
+784,J. Correa,23,Argentina,78,83,188,4
+785,E. Rigoni,25,Argentina,78,81,178,5
+786,C. Izquierdoz,29,Argentina,78,78,185,2
+787,W. Barrios,24,Colombia,78,85,178,3
+788,J. Mojica,25,Colombia,78,81,185,2
+789,A. Selikhov,24,Russia,78,82,188,4
+790,A. Iwobi,22,Nigeria,78,84,185,3
+791,D. Laxalt,25,Uruguay,78,80,178,3
+792,N. Bentaleb,23,Algeria,78,83,188,2
+793,N. Stark,23,Germany,78,84,190,3
+794,M. Lemina,24,Gabon,78,83,183,3
+795,L. Dendoncker,23,Belgium,78,84,188,4
+796,Ricardo Esgaio,25,Portugal,78,80,173,3
+797,P. Sisto,23,Denmark,78,84,173,4
+798,P. Max,24,Germany,78,81,178,3
+799,R. Gagliardini,24,Italy,78,82,190,2
+800,Pere Pons,25,Spain,78,83,178,3
+801,D. Berardi,23,Italy,78,83,183,3
+802,M. Halstenberg,26,Germany,78,79,188,3
+803,J. Quintero,25,Colombia,78,80,168,2
+804,Tiago Volpi,27,Brazil,78,80,185,2
+805,Óliver Torres,23,Spain,78,83,175,4
+806,Omar Mascarell,25,Spain,78,80,180,4
+807,H. Sakai,28,Japan,78,78,183,4
+808,Andreas Pereira,22,Brazil,78,84,178,4
+809,A. Januzaj,23,Belgium,78,84,185,4
+810,B. Cristante,23,Italy,78,86,185,3
+811,Matheus,25,Brazil,78,82,188,3
+812,B. Traoré,22,Burkina Faso,78,83,180,1
+813,Y. Poulsen,24,Denmark,78,80,193,3
+814,L. Trossard,23,Belgium,78,84,173,4
+815,M. Arnold,24,Germany,78,83,183,3
+816,M. De Sciglio,25,Italy,78,81,183,5
+817,Leo Baptistao,25,Brazil,78,79,180,3
+818,V. Chiricheş,28,Romania,78,78,183,3
+819,L. Pavoletti,29,Italy,78,78,188,3
+820,A. Cragno,24,Italy,78,84,183,3
+821,L. Castro,29,Argentina,78,78,183,3
+822,N. Füllkrug,25,Germany,78,79,188,4
+823,F. Fajr,29,Morocco,78,78,178,4
+824,R. Jiménez,27,Mexico,78,79,188,4
+825,E. Sala,27,Argentina,78,78,188,3
+826,S. García,27,Uruguay,78,78,180,4
+827,S. Arias,26,Colombia,78,81,178,3
+828,B. Reynet,27,France,78,80,185,3
+829,Pozuelo,26,Spain,78,79,173,5
+830,A. Trebel,27,France,78,79,175,2
+831,J. Lascelles,24,England,78,83,188,3
+832,T. Kongolo,24,Netherlands,78,83,188,4
+833,A. Carrillo,27,Peru,78,78,180,4
+834,Álvaro,28,Spain,78,79,183,3
+835,G. Defrel,27,France,78,78,178,3
+836,Fernando,26,Brazil,78,81,175,3
+837,V. Darida,27,Czech Republic,78,78,170,4
+838,R. Saponara,26,Italy,78,80,183,4
+839,Pedro Mendes,27,Portugal,78,80,185,3
+840,C. Schindler,28,Germany,78,80,188,3
+841,N. Chadli,28,Belgium,78,78,188,4
+842,Arbilla,31,Spain,78,78,178,4
+843,L. Dunk,26,England,78,81,193,4
+844,P. Hernández,31,Chile,78,78,185,3
+845,J. Guidetti,26,Sweden,78,81,185,3
+846,Sergi Gómez,26,Spain,78,83,185,2
+847,Oriol Romeu,26,Spain,78,80,183,3
+848,Lucas Pérez,29,Spain,78,78,180,4
+849,B. Natcho,30,Israel,78,78,178,4
+850,Cláudio Ramos,26,Portugal,78,82,183,3
+851,F. Lejeune,27,France,78,80,188,3
+852,G. Krychowiak,28,Poland,78,79,185,3
+853,N. Lodeiro,29,Uruguay,78,78,170,4
+854,O. Özyakup,25,Turkey,78,81,180,4
+855,C. Tévez,34,Argentina,78,78,170,3
+856,K. Papadopoulos,26,Greece,78,80,185,3
+857,M. Gradel,30,Ivory Coast,78,78,178,3
+858,M. Debuchy,32,France,78,78,175,3
+859,V. Moses,27,Nigeria,78,78,178,4
+860,Z. Junuzović,30,Austria,78,78,173,4
+861,Granero,30,Spain,78,78,180,4
+862,J. Baumgartlinger,30,Austria,78,78,183,3
+863,Fábio Coentrão,30,Portugal,78,78,178,2
+864,B. Costil,30,France,78,78,188,3
+865,Hilton,40,Brazil,78,78,180,3
+866,N. Gudelj,26,Serbia,78,80,188,2
+867,L. Pratto,30,Argentina,78,78,188,3
+868,E. Hernández,30,Mexico,78,78,170,3
+869,Jurado,32,Spain,78,78,175,4
+870,R. Cabella,28,France,78,78,170,4
+871,Rafael Tolói,27,Brazil,78,80,185,2
+872,C. Bravo,35,Chile,78,78,183,3
+873,Hernanes,33,Brazil,78,78,180,5
+874,K. Honda,32,Japan,78,78,183,3
+875,A. Dzyuba,29,Russia,78,78,196,3
+876,J. Holebas,34,Greece,78,78,185,2
+877,Javi García,31,Spain,78,78,185,3
+878,Sergio,31,Spain,78,78,178,2
+879,M. Cáceres,31,Uruguay,78,78,180,3
+880,Daniel Carriço,29,Portugal,78,78,180,3
+881,J. Cork,29,England,78,78,183,4
+882,J. Tomkins,29,England,78,79,193,3
+883,Guilherme,32,Russia,78,78,196,2
+884,Gervinho,31,Ivory Coast,78,78,178,3
+885,J. Shelvey,26,England,78,80,183,3
+886,R. Eremenko,31,Finland,78,78,185,4
+887,R. Vormer,30,Netherlands,78,78,178,4
+888,J. Lens,30,Netherlands,78,78,178,4
+889,Adriano,33,Brazil,78,78,173,5
+890,S. Cook,27,England,78,78,185,3
+891,L. Podolski,33,Germany,78,78,183,3
+892,C. Ansaldi,31,Argentina,78,78,180,5
+893,Manu García,32,Spain,78,78,183,3
+894,R. Alessandrini,29,France,78,78,173,4
+895,J. Ward-Prowse,23,England,77,82,173,3
+896,M. Harnik,31,Austria,77,77,185,4
+897,B. Moukandjo,29,Cameroon,77,77,180,3
+898,G. Pereiro,23,Uruguay,77,82,188,2
+899,G. Castro,31,Germany,77,77,173,4
+900,Aarón Martín,21,Spain,77,85,180,3
+901,F. Johnson,30,United States,77,77,183,4
+902,L. López,28,Argentina,77,77,190,3
+903,M. Dossevi,30,Togo,77,77,173,3
+904,Caiuby,29,Brazil,77,77,183,4
+905,Gabriel,24,Brazil,77,81,188,5
+906,Iván Ramis,33,Spain,77,77,188,3
+907,M. Suchý,30,Czech Republic,77,77,183,3
+908,T. Vilhena,23,Netherlands,77,81,175,4
+909,E. Çolak,27,Turkey,77,77,170,3
+910,V. Germain,28,France,77,77,180,4
+911,G. Hoarau,34,France,77,77,193,2
+912,Sergio García,35,Spain,77,77,175,2
+913,E. Choupo-Moting,29,Cameroon,77,77,190,4
+914,J. Pinola,35,Argentina,77,77,180,3
+915,J. Hendrix,23,Netherlands,77,82,180,3
+916,J. Izquierdo,25,Colombia,77,78,170,3
+917,S. Sydorchuk,27,Ukraine,77,78,188,3
+918,C. Grenier,27,France,77,78,185,4
+919,T. Strobl,28,Germany,77,77,188,3
+920,V. Odjidja-Ofoe,29,Belgium,77,77,183,4
+921,N. Guzmán,32,Argentina,77,77,193,3
+922,F. Fabra,27,Colombia,77,78,173,3
+923,J. Maddison,21,England,77,85,175,4
+924,K. El Ahmadi,33,Morocco,77,77,180,2
+925,M. Carcela-González,29,Morocco,77,77,175,3
+926,M. Gabbiadini,26,Italy,77,78,180,3
+927,Gomes,37,Brazil,77,77,190,2
+928,M. Ritchie,28,Scotland,77,77,173,4
+929,G. Bou,28,Argentina,77,77,178,4
+930,Javi Fuego,34,Spain,77,77,183,3
+931,E. Akbaba,25,Turkey,77,80,180,3
+932,J. Amavi,24,France,77,82,175,4
+933,R. Malinovskyi,25,Ukraine,77,81,180,4
+934,D. Welbeck,27,England,77,77,185,3
+935,G. Conti,23,Argentina,77,83,193,2
+936,Bruno,28,Spain,77,78,185,3
+937,Garry Rodrigues,27,Cape Verde,77,77,173,3
+938,A. Schwolow,26,Germany,77,78,188,3
+939,L. Cook,21,England,77,84,175,4
+940,P. Pérez,32,Argentina,77,77,175,3
+941,Gazzolisco,30,Brazil,77,77,185,5
+942,Jonatan Soriano,32,Spain,77,77,180,3
+943,Rubén Peña,26,Spain,77,78,170,3
+944,Mikel San José,29,Spain,77,77,188,3
+945,P. Groß,27,Germany,77,78,180,4
+946,L. Baines,33,England,77,77,170,3
+947,A. Ogbonna,30,Italy,77,77,190,3
+948,Juan Jesus,27,Brazil,77,77,185,2
+949,J. Martínez,31,Colombia,77,77,185,4
+950,N. Elvedi,21,Switzerland,77,84,188,3
+951,G. Moreno,32,Colombia,77,77,193,2
+952,J. Valdivia,34,Chile,77,77,173,4
+953,A. Carroll,29,England,77,77,193,3
+954,Luís Neto,30,Portugal,77,77,188,3
+955,A. Pyatov,34,Ukraine,77,77,190,3
+956,T. Gutiérrez,33,Colombia,77,77,178,3
+957,Álex Remiro,23,Spain,77,83,190,3
+958,Wilson Eduardo,27,Portugal,77,77,178,3
+959,Jorge Meré,21,Spain,77,83,183,3
+960,M. Elneny,25,Egypt,77,79,180,3
+961,D. Torres,28,Colombia,77,77,183,3
+962,Y. Bounou,27,Morocco,77,80,193,3
+963,A. Prijović,28,Serbia,77,77,190,3
+964,A. Jahanbakhsh,24,Iran,77,80,180,4
+965,J. Calleri,24,Argentina,77,82,180,2
+966,Simão Acunha,30,Brazil,77,77,178,2
+967,N. Müller,30,Germany,77,77,173,3
+968,L. Ocampos,23,Argentina,77,82,188,3
+969,J. Rodriguez,28,England,77,77,185,4
+970,V. Ibišević,33,Bosnia Herzegovina,77,77,188,3
+971,S. Rondón,28,Venezuela,77,77,185,4
+972,Victor Sánchez,30,Spain,77,77,175,3
+973,D. Suárez,30,Uruguay,77,77,173,3
+974,K. Huntelaar,34,Netherlands,77,77,185,4
+975,L. Dubois,23,France,77,84,178,4
+976,André Pinto,28,Portugal,77,77,193,2
+977,K. Lala,26,France,77,78,178,3
+978,O. Kıvrak,30,Turkey,77,77,188,3
+979,A. Bertolacci,27,Italy,77,77,178,3
+980,E. Giaccherini,33,Italy,77,77,168,3
+981,A. Živković,21,Serbia,77,84,170,3
+982,R. Ábila,28,Argentina,77,77,178,4
+983,P. Diop,32,Senegal,77,77,178,3
+984,D. Garmash,28,Ukraine,77,77,185,3
+985,T. Chandler,28,United States,77,77,183,3
+986,R. Klavan,32,Estonia,77,77,188,3
+987,A. Miranchuk,22,Russia,77,82,183,2
+988,D. Da Silva,30,France,77,77,183,4
+989,D. Benaglio,34,Switzerland,77,77,193,3
+990,T. Rincón,30,Venezuela,77,77,178,3
+991,M. Pereira,34,Uruguay,77,77,173,3
+992,C. Borges,30,Costa Rica,77,77,183,4
+993,J. Sand,37,Argentina,77,77,183,4
+994,Markel Bergara,32,Spain,77,77,180,3
+995,Vágner Love,34,Brazil,77,77,170,5
+996,B. Bourigeaud,24,France,77,81,178,3
+997,R. Soriano,27,Italy,77,77,183,4
+998,D. Kuzyaev,25,Russia,77,80,183,3
+999,R. Sambueza,34,Argentina,77,77,175,3
+1000,Montoya,27,Spain,77,78,175,4
