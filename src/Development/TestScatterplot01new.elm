@@ -67,7 +67,7 @@ getRandomCatGif x =
 
 liste : List String
 liste =
-    [ "data.csv" ]
+    [ "dataHeight.csv" ]
 
 
 csvString_to_data : String -> List Footballer
@@ -79,7 +79,7 @@ csvString_to_data csvRaw =
 
 
 type alias Footballer =
-    { name : String, age : Float, overall : Float, potential : Float }
+    { name : String, age : Float, overall : Float, potential : Float, height : Float }
 
 
 decodeFootballer : Csv.Decode.Decoder (Footballer -> a) a
@@ -89,6 +89,7 @@ decodeFootballer =
             |> Csv.Decode.andMap (Csv.Decode.field "Age" (String.toFloat >> Result.fromMaybe "error parsing string"))
             |> Csv.Decode.andMap (Csv.Decode.field "Overall" (String.toFloat >> Result.fromMaybe "error parsing string"))
             |> Csv.Decode.andMap (Csv.Decode.field "Potential" (String.toFloat >> Result.fromMaybe "error parsing string"))
+            |> Csv.Decode.andMap (Csv.Decode.field "Height" (String.toFloat >> Result.fromMaybe "error parsing string"))
         )
 
 
@@ -340,20 +341,6 @@ filterAndReducePlayers playerlist a b c x y =
 
 
 
---filterAndReducePlayers : List Footballer -> String -> String -> XyData
---filterAndReducePlayers playerlist x y =
---    if x  == "Age" then
---        if y == "Overall" then
---                XyData x y (List.map (\n -> pointName x y n.name n.age n.overall) playerlist)
---        else --y == "Potential" then
---                XyData x y (List.map (\n -> pointName x y n.name n.age n.potential) playerlist)
---    else if x == "Overall" then
---        if y == "Potential" then
---                XyData x y (List.map (\n -> pointName x y n.name n.overall n.potential) playerlist)
---        else    XyData x y  (List.map (\n -> pointName x y n.name n.overall n.potential) playerlist)
---   else  XyData x y (List.map (\n -> pointName x y n.name n.age n.age) playerlist)
-
-
 type alias Point =
     { pointName : String, x : Float, y : Float }
 
@@ -389,6 +376,7 @@ view model =
                             , Html.button [ onClick (ChangeX (.overall, "Overall")) ] [ Html.text "Overall" ]
                             , Html.button [ onClick (ChangeX (.potential, "Potential")) ] [ Html.text "Potential" ]
                             , Html.button [ onClick (ChangeX (.age, "Age")) ] [ Html.text "Age" ]
+                            , Html.button [ onClick (ChangeX (.height, "Height")) ] [ Html.text "Height" ]
                             ]
                     ]
                 , ul []
@@ -397,6 +385,7 @@ view model =
                             , Html.button [ onClick (ChangeY (.overall, "Overall")) ] [ Html.text "Overall" ]
                             , Html.button [ onClick (ChangeY (.potential, "Potential")) ] [ Html.text "Potential" ]
                             , Html.button [ onClick (ChangeY (.age, "Age")) ] [ Html.text "Age" ]
+                            , Html.button [ onClick (ChangeY (.height, "Height")) ] [ Html.text "Height" ]
                             ]
                     ]            
                 --  , Html.input [ Html.Attributes.placeholder "Age", Html.Attributes.value model.content, onInput Change ]
