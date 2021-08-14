@@ -76,7 +76,7 @@ getRandomCatGif x =
 
 liste : List String
 liste =
-    [ "data.csv" ]
+    [ "data1000.csv" ]
 
 
 csvString_to_data : String -> List Footballer
@@ -238,8 +238,8 @@ parallelCoodinatesPlot w ar model =
     in
     svg
         [ viewBox 0 0 (w + 2 * padding) (h + 2 * padding)
-        , TypedSvg.Attributes.width <| TypedSvg.Types.Percent 90
-        , TypedSvg.Attributes.height <| TypedSvg.Types.Percent 90
+        , TypedSvg.Attributes.width <| TypedSvg.Types.Percent 70
+        , TypedSvg.Attributes.height <| TypedSvg.Types.Percent 70
         ]
     <|
         [ TypedSvg.style []
@@ -332,7 +332,7 @@ view model =
                 [ 
                     ul []
                     [ li [] [
-                            Html.text <| "Set first Coloumn Value"
+                            Html.text <| "Set first coloumn value: "
                             , Html.button [ onClick (Change1 (.overall, "Overall")) ] [ Html.text "Overall" ]
                             , Html.button [ onClick (Change1 (.potential, "Potential")) ] [ Html.text "Potential" ]
                             , Html.button [ onClick (Change1 (.age, "Age")) ] [ Html.text "Age" ]
@@ -340,7 +340,7 @@ view model =
                     ]
                 , ul []
                     [ li [] [
-                            Html.text <| "Set second Coloumn Value"
+                            Html.text <| "Set second coloumn value: "
                             , Html.button [ onClick (Change2 (.overall, "Overall")) ] [ Html.text "Overall" ]
                             , Html.button [ onClick (Change2 (.potential, "Potential")) ] [ Html.text "Potential" ]
                             , Html.button [ onClick (Change2 (.age, "Age")) ] [ Html.text "Age" ]
@@ -348,7 +348,7 @@ view model =
                     ]
                 ,ul []
                     [ li [] [
-                            Html.text <| "Set third Coloumn Value"
+                            Html.text <| "Set third coloumn value: "
                             , Html.button [ onClick (Change3 (.overall, "Overall")) ] [ Html.text "Overall" ]
                             , Html.button [ onClick (Change3 (.potential, "Potential")) ] [ Html.text "Potential" ]
                             , Html.button [ onClick (Change3 (.age, "Age")) ] [ Html.text "Age" ]
@@ -356,7 +356,7 @@ view model =
                     ]
                 , ul []
                     [ li [] [
-                            Html.text <| "Set fourth Coloumn Value"
+                            Html.text <| "Set fourth coloumn value: "
                             , Html.button [ onClick (Change4 (.overall, "Overall")) ] [ Html.text "Overall" ]
                             , Html.button [ onClick (Change4 (.potential, "Potential")) ] [ Html.text "Potential" ]
                             , Html.button [ onClick (Change4 (.age, "Age")) ] [ Html.text "Age" ]

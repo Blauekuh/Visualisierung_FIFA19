@@ -31,17 +31,23 @@
 %Tipps zu Latex und Koma-Script für Hausarbeiten sind im \href{http://mirrors.ctan.org/info/latex-refsheet/LaTeX_RefSheet.pdf}{LaTeX Reference Sheet for a thesis with KOMA-Script} von Marion Lammarsch und Elke Schubert zusammengefasst. 
 %Der Bericht fällt in die Kategorie von InfoVis-Paper, die Tamara Munzner Design Study nennt \cite{Munzner2008}: In der Einleitung sollen sie zuerst das Zielproblem beschrieben. Daraus sollen sie Fragestellungen motivieren, die mittels Techniken der Informationsvisualisierung beantwortet werden können. 
 
-\textbf{Tamara Munzner angucken}
+\textbf{Tamara Munzner angucken}\\
+\textbf{Zielprobelm formulieren und daraus Fragestellung schreiben -> Wie können diese mittels Visualisierung beantwortet werden}
+
 
 Die Visualisierung von Daten nimmt mit Hinblick auf Big Data und damit immer unübersichtlicheren Grunddaten an Bedeutung zu. Um aus großen Mengen von Daten neue Informationen zu gewinnen reicht es nicht aus die Daten direkt zu analysieren. Durch die Anwendung der richtigen Visualisierungstechniken können neue Informationen gewonnen werden. In diesem Bericht geht es um die Visualisierung von Daten aus dem Computerspiel Fifa 19. Da sich diese Daten allerdings auf tatsächliche Fussballer beziehen besteht die Hoffnung mittels Visualisierung dieser Daten Rückschlüsse auf die tatsächlichen Sportler schließen zu können.
 
 
 \subsection{Anwendungshintergrund}
 %Sie müssen genug Hintergrund bereitstellen, so dass die Lesenden sich ein Urteil bilden können, ob ihre Lösung funktioniert. Sie sollen die Lesenden jedoch nicht mit Anwendungsdetails so überschütten, dass der Fokus auf die Fragen zur Informationsvisualisierung untergehen. 
+\textbf{Was sind die Daten, sind die Visualisierungslösungen angebracht, möglicherweise auf einzelne Variablen eingehen}\cite{Munzner2008}
+
 
 Die Frage, welche sich bei diesen Daten stellt ist, welchen Nutzen sie außerhalb eines Videospiels haben. Deswegen ist mein Ansatz zu vergleichen wie genau diese Daten die Wirklichkeit widerspiegeln. Ein Beispiel dafür könnte sein ob sich das Rating eines Spielers mit der körperlichen Entwicklung eines Spielers bewegt. Sollte dies zutreffen  müssten Spieler im Alter ihres physischen Peaks das höchste Rating haben. 
 \subsection{Zielgruppen}
 %Beschreiben sie die Personengruppe oder Personengruppen, die das von ihnen benannte Anwendungsproblem lösen möchte. Auf welches Vorwissen können sie in dieser Gruppen von Anwenderinnen aufbauen? Welche Informations"-bedürf"-nisse werden durch die Visualisierungen adressiert?
+
+\textbf{Fifa 19 Spieler -> Viel Vorwissen, Fussball Fan -> recht viel Vorwissen, Sportinteressent -> Kaum Vorwissen}
 
 Zielgruppen für Scatterplot:\\
 Parallele Koordinaten:\\
@@ -49,6 +55,8 @@ Baumdiagramm: Hier lässt sich erkennen welche Sportliga Europas im Durchschnitt
 Mögliche Zielgruppen: Videospieler, Teilnehmer einer Fantasy Fußball Liga
 \subsection{Überblick und Beiträge}
 %In diesem Abschnitt geben sie einen kurzen Überblick über die Daten und verwendeten Visualisierungen. Dann benennen sie die Beiträge ihres Projekts. Diese Beiträge müssen sie in den hinteren Teilen des Berichts genauer ausführen und belegen.
+
+\textbf{Sehr kurze Beschreibung der Daten, der Drei Techniken und Beiträge des Projekts(Mehrwert der Visualisierungstechniken)} 
 
 Als erste Visualisierung habe ich mich für einen Scatterplot entschieden um mit diesem einen groben Überblick über mögliche Trends in den Daten zu ermöglichen.\\
 
@@ -60,17 +68,27 @@ Als dritte und letzte Technik habe ich die Baumdarstellung ausgewählt um sichtb
 \section{Daten}
 %Beschreiben Sie vorhandenen Daten. Gehen sie kritisch darauf ein, in wie weit sich die Daten für die Bearbeitung der Fragestellungen und dem Erreichen von Lösungen für die oben beschriebene Zielgruppen eignen. Haben sie die Daten sinnvoll mit weiteren Datenquellen ergänzt? Wenn ja, wie?
 
+\textbf{Beschreibung der gegebenen Daten, Sind sie zur Beantwortung der Fragestellungen geeignet? Welche zusätzlichen Daten wurden genutzt} 
+
 Grundsätzlich eignen sich die Daten gut um die gewünschten Fragestellungen beantworten zu können, jedoch enthält der Grunddatensatz einige Felder, die für die Visualisierung nicht nötig sind, deswegen wurde der Datensatz in der Vorvorarbeitung noch verkleinert (Siehe \ref{Datenvorverarbeitung} auf Seite \pageref{Datenvorverarbeitung}). Außerdem ist der Datensatz sehr groß, was gerade bei den parallelen Koordinaten zu Problemen führen kann wenn der ganze Datensatz angezeigt wird, deswegen wurde sich bei den parallelen Koordinaten dazu entschieden nach zusätzlichen Dimensionen wie Nationalität zu Filtern um dies so übersichtlicher zu gestalten. Da Datenwerte wie Größe, Alter und Rating der Spieler diskret sind wurde sich dazu entschieden im Scatterplot die Anzahl an Spielern welche in diesem Punkt enthalten sind auszugeben. Weiterhin wurde die Opazität der Punkte verringert, da so zu sehen ist an welchen Stellen sich mehrere Spieler überlagern. 
 \subsection{Technische Bereitstellung der Daten}
 %Wie sind die Daten zugänglich? Welche Formate werden genutzt. Gibt es Besonderheiten beim Lesen der Formate?
+
+Über Github gehostet, als CSV für 1 und 2 und als JSON für 3.
+Die Daten mussten im Programm geparsed werden.
 \subsection{\label{Datenvorverarbeitung}Datenvorverarbeitung}
 %Welche Datenvorverarbeitungsschritte sind notwendig? Beschreiben Sie die einzelnen Schritte und begründen sie sie, z.B. warum werden manche Daten weggelassen, über welche Mengen werden Durchschnitte berechnet, warum sind die so berechneten Werte aussagekräftiger als andere Werte. 
-
+-Daten mussten gekürzt werden, da viele Visualisierungstechniken sonst unübersichtlich wurden.
+-Bei 3 wurde sich auf einzelne Fussballligen konzentriert
+-Weiterhin sind einige Spalten der Daten sehr irrelevant für die Analyse (Beispiel: Positionen der Spieler) 
 \section{Visualisierungen}
 \subsection{Analyse der Anwendungsaufgaben}
 %Analysieren sie die konkreten Anwendungsaufgaben. Welche Visualisierungen helfen den Personen, die die Software verwenden, sinnvolle mentale Modelle aufzubauen. Sind diese mentalen Modelle für sie notwendig, um die Aufgaben lösen zu können?
+
+\textbf{Wie hilft Scatterplot/Parallele Koordinaten/Baumdiagramm die genannten Problemstellungen zu beantworten?}
 \subsection{Anforderungen an die Visualisierungen}
 %Leiten sie Anforderungen an das Design der Visualisierungen ab, die sich durch ihre Analyse des Zielproblems ergeben.
+\textbf{Wie muss die Visualisierung designed werden um das Zielproblem gut beantworten zu können?}
 \subsection{Präsentation der Visualisierungen}
 %Präsentieren sie die visuelle Abbildungen und Kodierungen der Daten und Interaktionsmöglichkeiten. 
 %Sie müssen  begründen, warum und wiegut ihre Designentscheidungen die erstellten Anforderungen erfüllen. 
@@ -79,6 +97,8 @@ Grundsätzlich eignen sich die Daten gut um die gewünschten Fragestellungen bea
 %Die besten Begründungen diskutieren explizit die konkrete Auswahl der Visualisierungen im Kontext von mehreren verschiedenen Alternativen. Diskutieren sie die Expressivität und die Effektivität der einzelnen Visualisierungen. 
 
 %Die eben beschriebenen Präsentationen und Begründungen sollen für jede der drei folgenden Visualisierungen durchgeführt werden. 
+
+\textbf{Visualisierungstechniken vorstellen, Interaktivität zeigen, Designentscheidungen begründen(Erfüllen diese die Anforderungen?), Diskutieren wieso nicht andere Techniken verwendet wurden(Expressivität und Effektivität).}
 \subsubsection{Visualisierung Eins}
 \subsubsection{Visualisierung Zwei}
 \subsubsection{Visualisierung Drei}
@@ -86,23 +106,30 @@ Grundsätzlich eignen sich die Daten gut um die gewünschten Fragestellungen bea
 \subsection{Interaktion}
 %Erklären sie die möglichen Interaktionen mit den einzelnen Visualisierungen und die möglichen Verknüpfungen zwischen ihnen. Begründen Sie warum die konkreten Interaktionen umgesetzt wurden und welche Zwecke für die Anwenderinnen mit ihnen unterstützt werden. Begründen sie ebenfalls warum sie andere Interaktionsmöglichkeiten nicht umgesetzt haben. 
 
+\textbf{Interaktionen in den Visualisierungen(möglicherweise Interaktion zwischen den Techniken), Warum genau diese Techniken, welche Zwecke erfüllen sie für die Anwender, Warum wurden andere nicht umgesetzt}
+
 \section{Implementierung}
 %Beschreiben Sie die Implementierung ihrer Visualisierungsanwendung in Elm. Stellen die Gliederung ihres Quellcodes vor. Haben Sie verschiedene Elm-Module erstellt. Was war aufwändig umzusetzen, was ließ sich mit dem vorhanden Code aus den Übungen relativ einfach umsetzen? 
 
 %Wie sieht die Elm-Datenstruktur für das Model aus, in dem die verschiedenen Zustände der Interaktion gespeichert werden können.
 
+\textbf{Wie ist der Quellcode gegliedert, was lies sich aus den Übungen übernehmen, Wie sieht die Datenstruktur des Modells aus -> in dem verschiedene Zustände der Interaktion gespeichert wurden (Success record)}
+
 \section{Anwendungsfälle}
 %Präsentieren sie für jede der drei Visualisierungen einen sinnvollen Anwendungsfall in dem ein bestimmter Fakt, ein Muster oder die Abwesenheit eines Musters visuell festgestellt wird. Begründen sie warum dieser Anwendungsfall wichtig für die Zielgruppe der Anwenderinnen ist. Diskutieren sie weiterhin, ob die oben beschriebene Information auch mit anderen Visualisierungstechniken hätte gefunden werden können. Falls dies möglich wäre, vergleichen sie die den Aufwand und die Schwierigkeiten ihres Ansatzes und der Alternativen. 
+
+\textbf{Spezifischen Anwendungsfall für Nutzergruppen vorstellen, der an Hand der Visualisierungstechniken visuell erkennbar ist, wäre dies auch mit anderen Techniken möglich gewesen? Aufwand mit anderen Techniken vergleichen}
 \subsection{Anwendung Visualisierung Eins}
 \subsection{Anwendung Visualisierung Zwei}
 \subsection{Anwendung Visualisierung Drei}
 
 \section{Verwandte Arbeiten}
 %Führen sie eine kurze Literatursuche in der wissenschaftlichen Literatur zu Informationsvisualisierung und Visual Analytics nach ähnlichen Anwendungen durch. Diskutieren sie mindestens zwei Artikel. Stellen sie Gemeinsamkeiten und Unterschiede dar.
-
+\textbf{Zwei Artikel mit ähnlichen Zielen diskutieren}
 \section{Zusammenfassung und Ausblick}
 %Fassen sie die Beiträge ihre Visualisierungsanwendung zusammen. Wo bietet sie für die Personen der Zielgruppe einen echten Mehrwert.
 
+\textbf{Beiträge der Anwendung, welcher Mehrwert für Zielgruppe entsteht, mögliche Erweiterungen(Visualisierungen oder Daten)}
 %Was wären mögliche sinnvolle Erweiterungen, entweder auf der Ebene der Visualisierungen und/oder auf der Datenebene?
 
 \section*{Anhang: Git-Historie}

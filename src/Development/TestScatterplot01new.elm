@@ -54,20 +54,17 @@ init _ =
 
 getRandomCatGif : (Result Http.Error String -> Msg) -> Cmd Msg
 getRandomCatGif x =
-    liste
-        |> List.map
-            (\datensatz ->
                 Http.get
-                    { url = "https://raw.githubusercontent.com/JohannesLange/Visualisierung_FIFA19/master/" ++ datensatz
+                    { url = "https://raw.githubusercontent.com/JohannesLange/Visualisierung_FIFA19/master/data1000.csv"
                     , expect = Http.expectString x
                     }
-            )
-        |> Cmd.batch
 
 
-liste : List String
-liste =
-    [ "data1000.csv" ]
+
+
+--liste : List String
+--liste =
+--    [ "data1000.csv" ]
 
 
 csvString_to_data : String -> List Footballer
