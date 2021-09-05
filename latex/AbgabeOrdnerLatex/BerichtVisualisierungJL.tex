@@ -120,9 +120,13 @@ Auch die Daten der Visualisierung als Baumdiagramm liegen als \textit{.csv} vor 
 
 \subsection{\label{Datenvorverarbeitung}Datenvorverarbeitung}
 %Welche Datenvorverarbeitungsschritte sind notwendig? Beschreiben Sie die einzelnen Schritte und begründen sie sie, z.B. warum werden manche Daten weggelassen, über welche Mengen werden Durchschnitte berechnet, warum sind die so berechneten Werte aussagekräftiger als andere Werte. 
--Daten mussten gekürzt werden, da viele Visualisierungstechniken sonst unübersichtlich wurden.
--Bei 3 wurde sich auf einzelne Fussballligen konzentriert
--Weiterhin sind einige Spalten der Daten sehr irrelevant für die Analyse (Beispiel: Positionen der Spieler) 
+
+Die Daten der Fussballer bestehen aus ca. 19000 einzelnen Fussballern, jeder dieser hat 93 einzelne Variablen, diese sind für die Visualisierung generell nicht alle relevant. Weiterhin unterscheiden sich die relevanten Variablen auch zwischen den verschiedenen Visualisierungstechniken.
+
+Außerdem wurde der vorhandene Datensatz aus zwei verschiedenen Gründen gekürzt, zum einen ist die Darstellung durch die Größe des Datensatzes erheblich verlangsamt worden und zum anderen enthält der Datensatz Fussballer für die nicht alle Werte enthalten sind.
+
+Für die Darstellung des Baumdiagramms wurde sich auf die fünf größten europäischen Fussballligen konzentriert. Deswegen enthält der Datensatz für diese Visualisierungstechnik nur Daten von Spielern, deren Team Teil einer dieser Ligen ist.
+
 \section{Visualisierungen}
 \subsection{Analyse der Anwendungsaufgaben}
 %Analysieren sie die konkreten Anwendungsaufgaben. Welche Visualisierungen helfen den Personen, die die Software verwenden, sinnvolle mentale Modelle aufzubauen. Sind diese mentalen Modelle für sie notwendig, um die Aufgaben lösen zu können?
