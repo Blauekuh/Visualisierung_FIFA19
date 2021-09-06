@@ -1,10 +1,12 @@
 ,Name,Age,Club
 8,R. Weidenfeller,36,Borussia Dortmund
 51,C. Pizarro,40,SV Werder Bremen
+66,Joaquín,38,Real Betis
 67,Xabi Alonso,34,FC Bayern München
 71,D. Bonera,37,Villarreal CF
 117,N. de Jong,32,1. FSV Mainz 05
 142,R. Jarstein,35,Hertha BSC
+150,Aduriz,38,Athletic Club de Bilbao
 152,M. Langer,35,FC Schalke 04
 156,S. Lichtsteiner  B,35,FC Augsburg
 162,Cifuentes,41,Cádiz CF
@@ -27,6 +29,7 @@
 362,Jesús Navas,34,Sevilla FC
 366,Soldado,35,Granada CF
 367,Juanfran,33,Atlético Madrid
+368,Vesga,27,Athletic Club de Bilbao
 370,Gabi,33,Atlético Madrid
 373,Rubén,36,CA Osasuna
 400,M. Gómez,33,VfB Stuttgart
@@ -62,8 +65,11 @@
 759,M. Neuer,34,FC Bayern München
 796,David Silva,34,Real Sociedad
 805,I. Rakitić,32,Sevilla FC
+834,Barragán B,32,Real Betis
 886,E. Garay,32,Valencia CF
 903,Javi Moyano,34,Real Valladolid CF
+917,Raúl García,33,Athletic Club de Bilbao
+928,A. Guardado,33,Real Betis
 952,Manu García,34,Deportivo Alavés
 953,D. Zurutuza,32,Real Sociedad
 954,Coke,33,Levante UD
@@ -72,6 +78,7 @@
 1021,Joselu,30,Deportivo Alavés
 1033,L. Piszczek,35,Borussia Dortmund
 1035,Adrián López,32,CA Osasuna
+1042,C. Bravo,37,Real Betis
 1051,Pedro León,33,SD Eibar
 1064,N. Bungert,31,1. FSV Mainz 05
 1101,L. Suárez,33,Atlético Madrid
@@ -84,6 +91,7 @@
 1166,L. Bender,31,Bayer 04 Leverkusen
 1167,S. Bender,31,Bayer 04 Leverkusen
 1185,J. de Guzmán,31,Eintracht Frankfurt
+1187,Beñat,32,Athletic Club de Bilbao
 1188,Nacho Monreal,34,Real Sociedad
 1190,Javi Martínez,31,FC Bayern München
 1193,Ángel,33,Getafe CF
@@ -101,12 +109,14 @@
 1352,Luisinho,35,SD Huesca
 1372,M. Hasebe,36,Eintracht Frankfurt
 1378,M. Suchý,32,FC Augsburg
+1418,Sidnei,30,Real Betis
 1425,Koo Ja Cheol,29,FC Augsburg
 1455,T. Kroos,30,Real Madrid
 1473,H. Nordtveit,30,TSG 1899 Hoffenheim
 1492,J. Morávek,30,FC Augsburg
 1499,E. Hazard,29,Real Madrid
 1512,Víctor Díaz,32,Granada CF
+1537,Yuri Berchiche,30,Athletic Club de Bilbao
 1538,J. Grahl,31,VfB Stuttgart
 1549,S. Langkamp,31,SV Werder Bremen
 1552,M. Kruse,32,1. FC Union Berlin
@@ -157,6 +167,7 @@
 2113,Sergio Busquets,31,FC Barcelona
 2114,Parejo,31,Villarreal CF
 2122,Iborra,32,Villarreal CF
+2125,Muniain,27,Athletic Club de Bilbao
 2130,T. Müller,30,FC Bayern München
 2132,J. Baumgartlinger,32,Bayer 04 Leverkusen
 2138,Álvaro Giménez,29,Cádiz CF
@@ -164,7 +175,10 @@
 2166,Quique,30,SD Eibar
 2192,S. Zuber,28,Eintracht Frankfurt
 2202,Cote,30,SD Eibar
+2203,De Marcos,31,Athletic Club de Bilbao
+2209,Balenziaga,32,Athletic Club de Bilbao
 2213,M. Hitz,32,Borussia Dortmund
+2216,Canales,29,Real Betis
 2225,Oier,34,CA Osasuna
 2244,Etxeita,32,Getafe CF
 2246,T. Jantschke,30,Borussia Mönchengladbach
@@ -200,6 +214,7 @@
 2521,Mario Gaspar,29,Villarreal CF
 2535,K. Casteels,28,VfL Wolfsburg
 2561,M. Gonalons,31,Granada CF
+2569,Herrerín,32,Athletic Club de Bilbao
 2574,Jaume Costa,32,Villarreal CF
 2582,N. Gudelj,28,Sevilla FC
 2592,C. Trimmel,33,1. FC Union Berlin
@@ -208,11 +223,13 @@
 2603,P. Bargfrede,30,SV Werder Bremen
 2605,Aitor,29,Levante UD
 2621,M. Schmiedebach,30,1. FC Union Berlin
+2629,Víctor Ruiz,31,Real Betis
 2653,G. Burgstaller,31,FC Schalke 04
 2656,C. Groß,31,SV Werder Bremen
 2663,O. Baumann,30,TSG 1899 Hoffenheim
 2671,Koke,28,Atlético Madrid
 2672,Edu Ramos,28,Cádiz CF
+2679,Villalibre,22,Athletic Club de Bilbao
 2684,Portillo,30,Getafe CF
 2693,D. Didavi,30,VfB Stuttgart
 2712,M. Grün,33,Borussia Mönchengladbach
@@ -221,6 +238,7 @@
 2743,R. Gikiewicz,32,FC Augsburg
 2748,S. Okazaki,34,SD Huesca
 2749,Neto,30,FC Barcelona
+2752,Montoya B,29,Real Betis
 2754,S. Ilsanker,31,Eintracht Frankfurt
 2760,I. Belfodil,28,TSG 1899 Hoffenheim
 2763,Borja García,29,SD Huesca
@@ -232,6 +250,7 @@
 2817,J. Bruma,28,VfL Wolfsburg
 2818,K. Kampl,29,RB Leipzig
 2825,A. Finnbogason,31,FC Augsburg
+2826,Joel Robles,30,Real Betis
 2828,Baena,29,Granada CF
 2829,C. Doukouré,27,Levante UD
 2870,Iñigo Pérez,32,CA Osasuna
@@ -240,10 +259,12 @@
 2898,D. Alaba,28,FC Bayern München
 2910,Isco,28,Real Madrid
 2914,D. Boyata,29,Hertha BSC
+2921,Juanmi,27,Real Betis
 2934,F. Lejeune,29,Deportivo Alavés
 2947,Ximo Navarro,30,Deportivo Alavés
 2957,P. Herrmann,29,Borussia Mönchengladbach
 2961,J. Guilavogui,29,VfL Wolfsburg
+2969,Bartra,29,Real Betis
 2986,B. Stambouli,29,FC Schalke 04
 2990,Germán,33,Granada CF
 2992,Raúl Carnero,31,Real Valladolid CF
@@ -259,6 +280,7 @@
 3125,Ji Dong Won,29,1. FSV Mainz 05
 3127,A. Abrashi,30,SC Freiburg
 3141,Lucas Pérez,31,Deportivo Alavés
+3150,Ibai Gómez,30,Athletic Club de Bilbao
 3154,M. Gregoritsch,26,FC Augsburg
 3174,Nolito,33,RC Celta
 3177,Sergi Roberto,28,FC Barcelona
@@ -279,6 +301,7 @@
 3283,S. Ortega,27,DSC Arminia Bielefeld
 3291,S. Rode,29,Eintracht Frankfurt
 3293,Bruno,30,Real Valladolid CF
+3308,Cristian Tello,28,Real Betis
 3310,M. Uth,28,FC Schalke 04
 3312,T. Koubek,27,FC Augsburg
 3315,J. Oblak,27,Atlético Madrid
@@ -289,6 +312,7 @@
 3344,N. Schulz,27,Borussia Dortmund
 3366,Nacho Fernández,30,Real Madrid
 3406,S. Schipplock,31,DSC Arminia Bielefeld
+3448,A. Mandi,28,Real Betis
 3463,V. Darida,29,Hertha BSC
 3466,F. Rønnow,27,Eintracht Frankfurt
 3477,Gabriel Paulista,29,Valencia CF
@@ -303,6 +327,7 @@
 3559,J. Sánchez Miño,30,Elche CF
 3561,S. Sané,29,FC Schalke 04
 3569,J. Schmid  B,30,SC Freiburg
+3572,Saborit,25,Athletic Club de Bilbao
 3593,F. Klaus,27,VfL Wolfsburg
 3609,K. Stafylidis,26,TSG 1899 Hoffenheim
 3622,J. Gouweleeuw,28,FC Augsburg
@@ -338,6 +363,7 @@
 3970,Fede Vico,25,Granada CF
 3971,Bernardo,26,Granada CF
 3986,Juan Carlos,29,SD Huesca
+4019,Iñigo Martínez,29,Athletic Club de Bilbao
 4020,Hervías,27,Real Valladolid CF
 4036,W. Orban,27,RB Leipzig
 4037,S. Savić,29,Atlético Madrid
@@ -378,6 +404,7 @@
 4412,Roberto Torres,31,CA Osasuna
 4421,Insua,26,SD Huesca
 4432,F. Vázquez,31,Sevilla FC
+4445,William Carvalho,28,Real Betis
 4465,C. Bacca,33,Villarreal CF
 4475,M. van der Hoorn,27,DSC Arminia Bielefeld
 4476,Roger,29,Levante UD
@@ -434,6 +461,7 @@
 5001,José Mari,32,Cádiz CF
 5015,P. De Blasis,31,SD Eibar
 5029,Rubén García,26,CA Osasuna
+5038,K. Kodro,26,Athletic Club de Bilbao
 5044,Rubén Blanco,24,RC Celta
 5053,V. Lazaro B,24,Borussia Mönchengladbach
 5067,R. Azeez,27,Granada CF
@@ -494,6 +522,9 @@
 5903,Burgui,26,Deportivo Alavés
 5941,T. Jedvaj,24,Bayer 04 Leverkusen
 5952,D. Musto,31,SD Huesca
+5972,Capa,28,Athletic Club de Bilbao
+5975,Dani García,30,Athletic Club de Bilbao
+5977,Iñaki Williams,26,Athletic Club de Bilbao
 5987,I. Bebou,26,TSG 1899 Hoffenheim
 5996,P. Mwene,26,1. FSV Mainz 05
 5997,R. Framberger B,24,FC Augsburg
@@ -506,7 +537,9 @@
 6055,M. Philipp,24,Borussia Dortmund
 6056,F. Kath,25,SC Freiburg
 6066,A. Sørloth,24,RB Leipzig
+6069,N. Fekir,26,Real Betis
 6070,Akapo,27,Cádiz CF
+6110,Álex Moreno,27,Real Betis
 6165,D. Djené,28,Getafe CF
 6184,M. Dahoud,24,Borussia Dortmund
 6194,S. Adamyan,27,TSG 1899 Hoffenheim
@@ -514,6 +547,7 @@
 6238,Dani Calvo,26,Elche CF
 6256,J. Calleri,26,CA Osasuna
 6269,J. Ledesma,27,Cádiz CF
+6278,Camarasa,26,Real Betis
 6279,R. Battaglia,28,Deportivo Alavés
 6299,C. Tolisso,25,FC Bayern München
 6302,Marcos Mauro,29,Cádiz CF
@@ -524,6 +558,7 @@
 6327,Einar Galilea,26,Deportivo Alavés
 6336,Rubén Yáñez,26,Getafe CF
 6338,David Costas,25,RC Celta
+6350,A. Sanabria,24,Real Betis
 6351,N. Körber,23,Hertha BSC
 6359,J. Laursen,25,DSC Arminia Bielefeld
 6393,Zaldúa,28,Real Sociedad
@@ -560,6 +595,7 @@
 6756,Y. Koné,24,Elche CF
 6782,L. Klostermann  B,24,RB Leipzig
 6787,B. Embolo,23,Borussia Mönchengladbach
+6794,Unai López,24,Athletic Club de Bilbao
 6812,Sivera,23,Deportivo Alavés
 6821,L. Sané,24,FC Bayern München
 6822,M. Friedrich,24,1. FC Union Berlin
@@ -571,6 +607,7 @@
 6944,K. Piątek,25,Hertha BSC
 6963,E. Ünal,23,Getafe CF
 6985,S. Kurt,21,Hertha BSC
+7001,W. Kaptoum,23,Real Betis
 7025,Nuha,27,Granada CF
 7029,Mata,31,Getafe CF
 7035,F. Bredlow,25,VfB Stuttgart
@@ -585,6 +622,7 @@
 7138,Sergio Herrera,27,CA Osasuna
 7143,Rubén Mesa,26,Villarreal CF
 7171,Querol,31,Cádiz CF
+7177,Borja Iglesias,27,Real Betis
 7182,R. Bensebaini,25,Borussia Mönchengladbach
 7197,R. Zentner,25,1. FSV Mainz 05
 7216,Joan Jordán,25,Sevilla FC
@@ -607,9 +645,12 @@
 7427,N. Amiri,23,Bayer 04 Leverkusen
 7432,David García,26,CA Osasuna
 7442,K. Laimer,23,RB Leipzig
+7448,Ezkieta,23,Athletic Club de Bilbao
+7479,Lekue,27,Athletic Club de Bilbao
 7490,Gaspar,22,Cádiz CF
 7495,Merquelanz,25,Real Sociedad
 7498,Eneko Capilla,24,Real Sociedad
+7516,G. Rodríguez,25,Real Betis
 7523,K. Adams Nuhu,25,TSG 1899 Hoffenheim
 7532,Anuar,25,Real Valladolid CF
 7540,J. Augustin,23,RB Leipzig
@@ -675,6 +716,7 @@
 8324,J. Mees,24,1. FC Union Berlin
 8334,J. Rhyner,24,Cádiz CF
 8344,D. Sow,23,Eintracht Frankfurt
+8348,Córdoba,23,Athletic Club de Bilbao
 8355,Rubén Alcaraz,29,Real Valladolid CF
 8367,Edu Expósito,23,SD Eibar
 8372,J. Ryerson,22,1. FC Union Berlin
@@ -686,6 +728,7 @@
 8624,M. Gaćinović,25,TSG 1899 Hoffenheim
 8627,M. Diakhaby,23,Valencia CF
 8670,R. Manaj,23,FC Barcelona
+8695,Unai Simón,23,Athletic Club de Bilbao
 8697,Javito,19,SD Huesca
 8699,Unai Etxebarría,23,Valencia CF
 8701,Bruno Henrique,25,VfL Wolfsburg
@@ -801,6 +844,7 @@
 10206,Pepe Mena,22,Sevilla FC
 10213,Kike Pérez,23,Real Valladolid CF
 10245,A. Poulsen,20,Borussia Mönchengladbach
+10247,Altamirano,23,Real Betis
 10263,H. Wolf,21,Borussia Mönchengladbach
 10266,Darío Poveda,23,Getafe CF
 10271,J. Torunarigha,22,Hertha BSC
@@ -819,6 +863,7 @@
 10535,H. Abe,21,FC Barcelona
 10564,Erik Ruiz,24,Deportivo Alavés
 10569,P. Estupiñán,22,Villarreal CF
+10583,D. Lainez,20,Real Betis
 10607,M. Richter,22,FC Augsburg
 10611,E. Löwen,23,FC Augsburg
 10622,Guridi,25,Real Sociedad
@@ -848,6 +893,8 @@
 10930,Óscar,22,Sevilla FC
 10940,C. Gebauer  B,26,DSC Arminia Bielefeld
 10959,N. Maksimović,25,Getafe CF
+10977,Y. Fekir,23,Real Betis
+11014,Jesús Areso,20,Athletic Club de Bilbao
 11027,Valera,23,SD Huesca
 11029,T. Müsel,20,Borussia Mönchengladbach
 11032,Tete Morente,23,Elche CF
@@ -872,6 +919,8 @@
 11359,M. Olivera,22,Getafe CF
 11409,José Lara,20,Sevilla FC
 11413,Genaro,22,Sevilla FC
+11420,Francis B,24,Real Betis
+11421,Unai Núñez,23,Athletic Club de Bilbao
 11424,Javi Vázquez,19,Sevilla FC
 11430,Miranda,20,FC Barcelona
 11434,Dani Escriche,22,SD Huesca
@@ -880,6 +929,7 @@
 11482,Gorosabel,23,Real Sociedad
 11484,Diego Pampín,20,RC Celta
 11494,L. Tempelmann,21,SC Freiburg
+11509,Dani Martín,21,Real Betis
 11510,Gonzalo Pereira,22,Levante UD
 11515,Fran Manzanara,23,Levante UD
 11517,J. Mbom,20,SV Werder Bremen
@@ -890,7 +940,10 @@
 11602,Dani Raba,24,Villarreal CF
 11603,Pau Torres,23,Villarreal CF
 11606,Álex Centelles,20,Valencia CF
+11609,Callejón,22,Real Betis
 11613,J. Koundé,21,Sevilla FC
+11615,Sillero,22,Athletic Club de Bilbao
+11616,Nolaskoain,21,Athletic Club de Bilbao
 11637,J. Italiano,18,Borussia Mönchengladbach
 11649,Toni Moya,21,Atlético Madrid
 11675,Manu Vallejo,23,Valencia CF
@@ -901,6 +954,7 @@
 11713,Martín,24,Deportivo Alavés
 11715,Lucas,23,RC Celta
 11720,M. Diaby,20,Bayer 04 Leverkusen
+11727,Aitor Ruibal  B,24,Real Betis
 11763,Chris Ramos,23,Real Valladolid CF
 11776,L. Dietz,23,1. FC Union Berlin
 11777,K. Mavropanos,22,VfB Stuttgart
@@ -913,6 +967,7 @@
 11837,Luis Milla,25,Granada CF
 11865,C. Özkan,20,DSC Arminia Bielefeld
 11899,C. Siya,19,DSC Arminia Bielefeld
+11902,Loren,26,Real Betis
 11935,C. Akono,20,1. FSV Mainz 05
 11939,João Félix,20,Atlético Madrid
 11945,M. Čović,22,Hertha BSC
@@ -935,6 +990,7 @@
 12211,F. Agu,20,SV Werder Bremen
 12223,B. Sosa,22,VfB Stuttgart
 12226,R. Matondo,19,FC Schalke 04
+12229,Daniel Rebollo,20,Real Betis
 12235,David Alba,21,Getafe CF
 12236,Miguel Rubio,22,Real Valladolid CF
 12237,P. Mbodji,20,Getafe CF
@@ -943,6 +999,7 @@
 12283,M. Villa,23,Villarreal CF
 12326,Borja Garcés,20,Atlético Madrid
 12372,Kangin Lee,19,Valencia CF
+12377,Iñigo Vicente,22,Athletic Club de Bilbao
 12382,Rodrygo,19,Real Madrid
 12430,Javi López,19,Elche CF
 12431,N. Lozano,26,Granada CF
@@ -964,6 +1021,7 @@
 12602,J. Toro,23,SD Huesca
 12604,M. Bülter,27,1. FC Union Berlin
 12701,Echu,22,Granada CF
+12711,Sancet,20,Athletic Club de Bilbao
 12746,Trincão,20,FC Barcelona
 12845,Samu Pérez,23,Real Valladolid CF
 12850,M. Awoudja,22,VfB Stuttgart
@@ -1012,12 +1070,16 @@
 13397,N. Stendera,19,Eintracht Frankfurt
 13398,Pepe Castaño,21,Villarreal CF
 13401,Cheon Seong-Hoon,19,FC Augsburg
+13405,P. Akouokou,22,Real Betis
+13453,Julio Alonso,21,Real Betis
 13464,Lucas Ribeiro,20,TSG 1899 Hoffenheim
 13471,A. Espino,28,Cádiz CF
 13491,Tuta,20,Eintracht Frankfurt
 13493,A. Palaversa,20,Getafe CF
+13500,Emerson,21,Real Betis
 13520,E. Tapsoba,21,Bayer 04 Leverkusen
 13528,P. Finger,18,Eintracht Frankfurt
+13537,Unai Vencedor,19,Athletic Club de Bilbao
 13564,Altube,20,Real Madrid
 13578,Álex Sola,21,Real Sociedad
 13588,L. Unbehaun,19,Borussia Dortmund
@@ -1039,6 +1101,7 @@
 13906,L. Kilian,20,1. FSV Mainz 05
 13981,P. Osterhage,20,Borussia Dortmund
 13998,J. Zirkzee,19,FC Bayern München
+14015,Larrazabal,22,Athletic Club de Bilbao
 14064,Iago,23,FC Augsburg
 14083,Mingotes,24,Valencia CF
 14091,M. Klimowicz,19,VfB Stuttgart
@@ -1087,6 +1150,7 @@
 14847,T. Datković,25,SD Huesca
 14857,R. Araujo,21,FC Barcelona
 14862,Y. Musah,17,Valencia CF
+14956,Raúl García,19,Real Betis
 14968,N. Tauer,19,1. FSV Mainz 05
 14969,M. Papela,19,1. FSV Mainz 05
 15029,C. Noß,18,Borussia Mönchengladbach
@@ -1095,6 +1159,7 @@
 15097,Ekhi Bravo,22,SD Eibar
 15098,Nacho Pastor,17,Elche CF
 15101,N. Woltemade,18,SV Werder Bremen
+15134,Carlos Marín,23,Real Betis
 15136,M. Beier,17,TSG 1899 Hoffenheim
 15166,S. Abdulai,21,Getafe CF
 15171,T. Becker,23,FC Schalke 04
@@ -1116,6 +1181,7 @@
 15663,Ricard,20,Atlético Madrid
 15684,M. Nawrocki,18,SV Werder Bremen
 15688,Pacheco,19,Real Sociedad
+15717,Ander Iru,21,Athletic Club de Bilbao
 15750,Pablo Pérez,18,Sevilla FC
 15751,Alkain,23,Real Sociedad
 15763,Martínez,20,Real Sociedad
@@ -1125,6 +1191,7 @@
 15774,Jony Álamo,18,Elche CF
 15795,M. Thiaw,18,FC Schalke 04
 15846,T. Maciejewski,19,1. FC Union Berlin
+15858,Nico Williams,17,Athletic Club de Bilbao
 15872,M. Bogarde,18,TSG 1899 Hoffenheim
 15884,F. Wirtz,17,Bayer 04 Leverkusen
 15887,J. Ngankam,19,Hertha BSC
@@ -1135,6 +1202,7 @@
 15912,L. Netz,17,Hertha BSC
 15922,J. Mina,18,SV Werder Bremen
 15945,C. Bozdogan,19,FC Schalke 04
+15948,Baena,19,Real Betis
 15950,A. Mahmoud,20,Deportivo Alavés
 15958,E. Martel,18,RB Leipzig
 15978,D. Borkowski,18,RB Leipzig
@@ -1162,6 +1230,8 @@
 16419,I. Grbić,24,Atlético Madrid
 16455,O. Nowak,19,Getafe CF
 16457,F. Jörgensen,18,Villarreal CF
+16499,Jon Morcillo,21,Athletic Club de Bilbao
+16506,Zarraga,21,Athletic Club de Bilbao
 16535,Salinas,19,Elche CF
 16538,Diego Bri,17,Elche CF
 16539,Gerard Barri,19,Elche CF
