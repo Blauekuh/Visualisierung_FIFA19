@@ -63,20 +63,11 @@ init _ =
 
 getRandomCatGif : (Result Http.Error String -> Msg) -> Cmd Msg
 getRandomCatGif x =
-    liste
-        |> List.map
-            (\datensatz ->
                 Http.get
-                    { url = "https://raw.githubusercontent.com/JohannesLange/Visualisierung_FIFA19/master/" ++ datensatz
+                    { url = "https://raw.githubusercontent.com/JohannesLange/Visualisierung_FIFA19/master/data/data1000.csv"
                     , expect = Http.expectString x
                     }
-            )
-        |> Cmd.batch
 
-
-liste : List String
-liste =
-    [ "data1000.csv" ]
 
 
 csvString_to_data : String -> List Footballer
@@ -243,7 +234,12 @@ parallelCoodinatesPlot w ar model =
         ]
     <|
         [ TypedSvg.style []
-            []
+            [ TypedSvg.Core.text """
+            .parallelPoint { stroke: rgba(1, 0, 0,0.2);}
+		    .parallelPoint:hover {stroke: rgb(214, 118, 78); stroke-width: 2;} 
+            .parallelPoint text { display: none; }
+            .parallelPoint:hover text { display: inline; stroke: rgb(0, 0, 0); stroke-width: 1; font-size: small;}  
+            """ ]
         , g [ TypedSvg.Attributes.class [ "parallelAxis" ] ]
             [ g [ transform [ Translate (padding - 1) padding ] ] <|
                 List.indexedMap
@@ -256,7 +252,7 @@ parallelCoodinatesPlot w ar model =
                             [ axis ]
                     )
                     listAxis
-            , g [ transform [ Translate (padding - 1) 0 ] ] <|
+            , g [transform [ Translate (padding - 1) 0 ] ] <|
                 List.indexedMap
                     (\i desc ->
                         text_
@@ -272,7 +268,7 @@ parallelCoodinatesPlot w ar model =
             ]
         ]
             ++ (let
-                    drawPoint p =
+                    drawPoint p name descri =
                         let
                             linePath : Path.Path
                             linePath =
@@ -288,17 +284,31 @@ parallelCoodinatesPlot w ar model =
                                     p
                                     |> Shape.line Shape.linearCurve
                         in
+                        g[class ["parallelPoint"]][
                         Path.element linePath
                             [ stroke <| Paint <| Color.rgba 0 0 0 0.8
                             , strokeWidth <| Px 0.5
                             , fill PaintNone
+                            --, text_ [ x 10, y -20, textAnchor AnchorMiddle ] [ TypedSvg.Core.text "Test" ]
+                            ,class ["parallelPoint"]
                             ]
+                            , text_
+                                [ x 300
+                                , y -20
+                                , fontSize (px 15)
+                                , TypedSvg.Attributes.textAnchor AnchorMiddle
+                                ]
+                                [ TypedSvg.Core.text (name ++ (String.concat<|(List.map2(\a b-> ", " ++b++ ": "++ (String.fromFloat a))p descri))) ]
+                                --[ TypedSvg.Core.text (name ++ (String.concat descri)) ]
+                        ]
                 in
                 model.data
                     |> List.map
                         (\dataset ->
-                            g [ transform [ Translate (padding - 1) padding ] ]
-                                (List.map (.value >> drawPoint) dataset)
+                            g [transform [ Translate (padding - 1) padding ] ]
+                                --(List.map (.value >> drawPoint) dataset)
+                                (List.map (\a -> drawPoint a.value a.pointName model.dimDescription) dataset)
+                                
                         )
                )
 
