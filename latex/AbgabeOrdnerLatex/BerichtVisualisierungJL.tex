@@ -26,13 +26,13 @@ footnote
 
 
 
-\usepackage[backend=biber,style=numeric,]{biblatex}\addbibresource{literatur.bib}
+\usepackage[backend=biber,style=numeric,]{biblatex}\addbibresource{Visualisierung.bib}
 
 \begin{document}
 \pagenumbering{Roman}
 % ----------------------------------------------------------------------------
 \subject{Projektbericht zum Modul Information Retrieval und Visualisierung Sommersemester 2021}
-\title{Visualisierung von Daten des Videospiels Fifa 19}
+\title{Visualisierung von Daten des Videospiels Fifa 21}
 %\subtitle{Untertitel}% optional
 \author{Johannes Lange}% obligatorisch
 %\date{10.9.2021}
@@ -43,6 +43,10 @@ footnote
 % Inhaltsverzeichnis:
 \tableofcontents
 \newpage
+
+% Abbildungsverzeichnis
+\clearpage
+\listoffigures
 
 % Abkürzungsverzeichnis:
 \section*{Abkürzungsverzeichnis}\label{AV}
@@ -56,24 +60,29 @@ footnote
 \pagenumbering{arabic}
 \section{Einleitung}
 
- -Zu Parallel Koordinaten on Hover inklusive der verglichenen Werte hinzufügen
- -Aggregationsfunktion möglicherweise entfernen, überprüfen ob der Code deutlich schneller läuft
- -Torhüter herausfiltern, da diese keine Werte haben
- -Filter Funktion in parallelen Koordinaten und Scatterplot erweitern
+% -Zu Parallel Koordinaten on Hover inklusive der verglichenen Werte hinzufügen
+% -Aggregationsfunktion möglicherweise entfernen, überprüfen ob der Code deutlich schneller läuft
+% -Torhüter herausfiltern, da diese keine Werte haben
+% -Filter Funktion in parallelen Koordinaten und Scatterplot erweitern
 %Tipps zu Latex und Koma-Script für Hausarbeiten sind im \href{http://mirrors.ctan.org/info/latex-refsheet/LaTeX_RefSheet.pdf}{LaTeX Reference Sheet for a thesis with KOMA-Script} von Marion Lammarsch und Elke Schubert zusammengefasst. 
 %Der Bericht fällt in die Kategorie von InfoVis-Paper, die Tamara Munzner Design Study nennt \cite{Munzner2008}: In der Einleitung sollen sie zuerst das Zielproblem beschrieben. Daraus sollen sie Fragestellungen motivieren, die mittels Techniken der Informationsvisualisierung beantwortet werden können. 
 
-\textbf{Tamara Munzner angucken}\\
-\textbf{Zielprobelm formulieren und daraus Fragestellung schreiben -> Wie können diese mittels Visualisierung beantwortet werden}
+%\textbf{Tamara Munzner angucken}\\
+%\textbf{Zielprobelm formulieren und daraus Fragestellung schreiben -> Wie können diese mittels Visualisierung beantwortet werden}
 
 
-Die Visualisierung von Daten nimmt mit Hinblick auf Big Data und damit immer unübersichtlicheren Grunddaten an Bedeutung zu. Um aus großen Mengen von Daten neue Informationen zu gewinnen reicht es nicht aus die Daten direkt zu analysieren. Durch die Anwendung der richtigen Visualisierungstechniken können neue Informationen gewonnen werden. In diesem Bericht geht es um die Visualisierung von Daten aus dem Computerspiel Fifa 19. Da sich diese Daten allerdings auf tatsächliche Fussballer beziehen besteht die Hoffnung mittels Visualisierung dieser Daten Rückschlüsse auf die tatsächlichen Sportler schließen zu können.
+Die Visualisierung von Daten nimmt mit Hinblick auf Big Data und damit immer unübersichtlicheren Datengrundlagen an Bedeutung zu. Um aus großen Mengen von Daten neue Informationen zu gewinnen reicht es nicht aus die Daten direkt zu analysieren. Durch die Anwendung der richtigen Visualisierungstechniken können neue Informationen gewonnen werden. In diesem Bericht geht es um die Visualisierung von Daten aus dem Computerspiel Fifa 21. Da sich diese Daten allerdings auf tatsächliche Fussballer beziehen besteht die Hoffnung mittels Visualisierung dieser Daten Rückschlüsse auf die Sportler selbst schließen zu können.
+So könnten Erkenntnisse aus den Daten deutlich wertvoller sein als zuerst vermutet.\\
+Der gegebene Datensatz ist äußerst umfangreich, zu über 16000 Sportlern sind jeweils 107 Variablen festgehalten. Diese reichen von \textit{Name} über \textit{Verein} bis hin zu \textit{Schusskraft} eines Spielers. Da nicht alle Eigenschaften eines Fussballers konkret festgehalten werden können, sind einige der Werte geschätzt. Da aus diesem Grund wie oben beschrieben nicht sicher auf die tatsächlichen Spieler zurückgeschlossen werden kann, bietet sich eine Analyse der Daten bezüglich der Nähe zur Realität an. Doch selbst wenn die Daten nicht zu neuen Erkenntnissen bezüglich der realen Sportler führen können sich für Spieler des Videospiels neue Erkenntnisse ergeben. 
 
 
 \subsection{Anwendungshintergrund}
 %Sie müssen genug Hintergrund bereitstellen, so dass die Lesenden sich ein Urteil bilden können, ob ihre Lösung funktioniert. Sie sollen die Lesenden jedoch nicht mit Anwendungsdetails so überschütten, dass der Fokus auf die Fragen zur Informationsvisualisierung untergehen. 
 \textbf{Was sind die Daten, sind die Visualisierungslösungen angebracht, möglicherweise auf einzelne Variablen eingehen}\cite{Munzner2008}
 
+Im folgenden werden die drei verwendeten Visualisierungstechniken kurz vorgstellt und erklärt.
+Bei der ersten Visualisierungstechnik handelt es sich um einen Scatterplot. Mit diesem lassen sich Zusammenhänge zwischen zwei verschiedenen Attributen der Fussballer genauer untersuchen. So kann bspw. gezeigt werden ob sich das Alter eines Fussballers auf seine Bewertung im Spiel auswirkt.
+Die zweite Visualisierungstechnik ist die der parallelen Koordinaten. Diese eignet sich auf Grund ihrer Beschaffenheit dazu mehrdimensionale Daten zu untersuchen. In diesem Fall wurde sich für parallele Koordinaten mit vier verschiedenen Attributen entschieden um eine gewisse Überischtlichkeit zu wahren.
 
 Die Frage, welche sich bei diesen Daten stellt ist, welchen Nutzen sie außerhalb eines Videospiels haben. Deswegen ist mein Ansatz zu vergleichen wie genau diese Daten die Wirklichkeit widerspiegeln. Ein Beispiel dafür könnte sein ob sich das Rating eines Spielers mit der körperlichen Entwicklung eines Spielers bewegt. Sollte dies zutreffen  müssten Spieler im Alter ihres physischen Peaks das höchste Rating haben. 
 \subsection{Zielgruppen}
@@ -162,19 +171,26 @@ Für die Darstellung des Baumdiagramms wurde sich auf die fünf größten europ�
 \subsubsection{Visualisierung Zwei}
 
 \begin{figure}[h]
-\includegraphics[scale=0.25]{grafiken/ParalleleKoordinaten1}
+\centering
+\includegraphics[scale=0.4]{grafiken/ParalleleKoordinaten1}
 \caption{Darstellung der Parallelen Koordinaten\\ Quelle: Eigene Darstellung}
 \end{figure}
 
 
 
 \begin{figure}[h]
-\includegraphics[scale=0.25]{grafiken/Ronaldo}
+\includegraphics[scale=0.2]{grafiken/Ronaldo}
 \caption{Darstellung einer FUT Karte inklusive relevanter Werte am Beispiel Cristiano Ronaldo\\ Quelle: https://www.ea.com/de-de/games/fifa/fifa-21/news/fifa-21-player-ratings-best-strikers-st-cf}
 \end{figure}
 
 
 \subsubsection{Visualisierung Drei}
+\begin{figure}[h]
+\centering
+\includegraphics[scale=0.4]{grafiken/BaumDiagram1}
+\caption{Ausschnitt aus Baumdarstellung\\ Quelle: Eigene Darstellung}
+\end{figure}
+
 
 \subsection{Interaktion}
 %Erklären sie die möglichen Interaktionen mit den einzelnen Visualisierungen und die möglichen Verknüpfungen zwischen ihnen. Begründen Sie warum die konkreten Interaktionen umgesetzt wurden und welche Zwecke für die Anwenderinnen mit ihnen unterstützt werden. Begründen sie ebenfalls warum sie andere Interaktionsmöglichkeiten nicht umgesetzt haben. 
