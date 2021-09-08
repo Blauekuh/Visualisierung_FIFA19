@@ -78,20 +78,22 @@ Der gegebene Datensatz ist äußerst umfangreich, zu über 16000 Sportlern sind 
 
 \subsection{Anwendungshintergrund}
 %Sie müssen genug Hintergrund bereitstellen, so dass die Lesenden sich ein Urteil bilden können, ob ihre Lösung funktioniert. Sie sollen die Lesenden jedoch nicht mit Anwendungsdetails so überschütten, dass der Fokus auf die Fragen zur Informationsvisualisierung untergehen. 
-\textbf{Was sind die Daten, sind die Visualisierungslösungen angebracht, möglicherweise auf einzelne Variablen eingehen}\cite{Munzner2008}
+%\textbf{Was sind die Daten, sind die Visualisierungslösungen angebracht, möglicherweise auf einzelne Variablen eingehen}\cite{Munzner2008}
 
 Im folgenden werden die drei verwendeten Visualisierungstechniken kurz vorgstellt und erklärt.
 Bei der ersten Visualisierungstechnik handelt es sich um einen Scatterplot. Mit diesem lassen sich Zusammenhänge zwischen zwei verschiedenen Attributen der Fussballer genauer untersuchen. So kann bspw. gezeigt werden ob sich das Alter eines Fussballers auf seine Bewertung im Spiel auswirkt.
-Die zweite Visualisierungstechnik ist die der parallelen Koordinaten. Diese eignet sich auf Grund ihrer Beschaffenheit dazu mehrdimensionale Daten zu untersuchen. In diesem Fall wurde sich für parallele Koordinaten mit vier verschiedenen Attributen entschieden um eine gewisse Überischtlichkeit zu wahren.
+Die zweite Visualisierungstechnik ist die der parallelen Koordinaten. Diese eignet sich auf Grund ihrer Beschaffenheit dazu mehrdimensionale Daten zu untersuchen. In diesem Fall wurde sich für parallele Koordinaten mit vier verschiedenen Attributen entschieden um eine gewisse Übersichtlichkeit zu wahren.
+Bei der dritten Visualisierungstechnik handelt es sich um explizite Baumdarstellung. Dabei kann ein Überblick über Fussballer einer spezifischen Fussballliga gewonnen werden.
+Da diese Daten sehr schnell unübersichtlich werden kann nach Ligen gefiltert werden und in den jeweiligen Ligen noch an Hand von Positionen der Spieler.
 
 Die Frage, welche sich bei diesen Daten stellt ist, welchen Nutzen sie außerhalb eines Videospiels haben. Deswegen ist mein Ansatz zu vergleichen wie genau diese Daten die Wirklichkeit widerspiegeln. Ein Beispiel dafür könnte sein ob sich das Rating eines Spielers mit der körperlichen Entwicklung eines Spielers bewegt. Sollte dies zutreffen  müssten Spieler im Alter ihres physischen Peaks das höchste Rating haben. 
 \subsection{Zielgruppen}
 %Beschreiben sie die Personengruppe oder Personengruppen, die das von ihnen benannte Anwendungsproblem lösen möchte. Auf welches Vorwissen können sie in dieser Gruppen von Anwenderinnen aufbauen? Welche Informations"-bedürf"-nisse werden durch die Visualisierungen adressiert?
 Da es sich bei den Daten um die eines Videospiels handelt ist davon auszugehen, dass eine der Zielgruppen der Daten Spieler des Videospiels sind. Diese würde ich weiterhin in die des Spielmodus \textit{Karriere} und die des Spielmodus \textit{Fifa Ultimate Team  FUT} unterteilen.\\
 
-Spieler des Karrieremodus spielen das Spiel als Manager eines Vereins indem die Entwicklung von jungen Spielern wichtig ist und vor allem der Vergleich von Variablen wie Gehalt, Alter, Rating oder Potential relevant ist. In diesem Fall bietet sich eine Darstellung per Scatterplot an, da sich so schnell die aussichtsreichsten Fussballer erkennen lassen. Da der Karrieremodus nicht Online gespielt wird und die Schwierigkeit manuell festgelegt werden kann, ist davon auszugehen, dass das Vorwissen der Gruppe stark schwankt. Während einige Spieler bereits viel Wissen und sehr genaue Informationen benötigen, brauchen andere erst einmal Grundwissen bezüglich der Spieler.
+Spieler des Karrieremodus spielen das Spiel als Manager eines Vereins. In diesem Spielmodus ist die Entwicklung von jungen Spielern wichtig. Vor allem der Vergleich von Variablen wie Gehalt, Alter, Rating oder Potential ist dabei relevant. In diesem Fall bietet sich eine Darstellung per Scatterplot an, da sich so schnell die aussichtsreichsten Fussballer erkennen lassen. Da der Karrieremodus nicht Online gespielt wird und die Schwierigkeit manuell festgelegt werden kann, ist davon auszugehen, dass das Vorwissen der Gruppe stark schwankt. Während einige Spieler bereits viel Wissen und sehr genaue Informationen benötigen um auf dem höchsten Schwierigkeitsgrad bestehen zu können, benötigen andere erst einmal Grundwissen bezüglich der Spieler.
 
-Spieler des FUT Modus sammeln die Fussballer wie in einer Art Sammelkarten Spiel. Mit den Karten der Fussballer kann dann Online gegen andere Spieler angetreten werden. Dabei sind vor die aktuellen Werte der Spieler von Relevanz, da sich diese nicht durch Training oder ähnliches ändern lassen. Weil dieser Modus sehr kompetetiv ist kann ein Fussballer bereits durch einen schlechten Wert in einer Kategorie für Spieler unbrauchbar werden. Dadurch, dass \textit{FUT} zu den Onlinespielen gehört in denen viele Spieler sich durch \textit{Min-Maxing}\cite{noauthor_min-maxing_2014} einen Vorteil verschaffen wollen ist von einem hohen Vorwissen der Anwender der Visualisierung auszugehen.  
+Spieler des FUT Modus sammeln die Fussballer wie in einer Art Sammelkarten Spiel. Mit den Karten der Fussballer kann dann Online gegen andere Spieler angetreten werden. Dabei sind die aktuellen Werte der Spieler von Relevanz, da sich diese nicht durch Training oder ähnliches ändern lassen. Weil dieser Modus sehr kompetetiv ist kann ein Fussballer bereits durch einen schlechten Wert in einer Kategorie für Spieler unbrauchbar werden. Dadurch, dass \textit{FUT} zu den Onlinespielen gehört in denen viele Spieler sich durch \textit{Min-Maxing}\cite{noauthor_min-maxing_2014} einen Vorteil verschaffen wollen ist von einem hohen Vorwissen der Anwender der Visualisierung auszugehen. Für diese Spieler bieten sich vor allem die Visualisierung mittels der parallelen Koordinaten zum Vergleich mehrerer Variablen sowie die Darstellung mittels des Baumdiagrams an. 
 
 
 
@@ -108,13 +110,14 @@ Mögliche Zielgruppen: Videospieler, Teilnehmer einer Fantasy Fußball Liga
 %\textbf{Sehr kurze Beschreibung der Daten, der Drei Techniken und Beiträge des Projekts(Mehrwert der Visualisierungstechniken)} 
 
 
-Bei den Daten handelt es sich um einen Datensatz des Fussball Videospiels Fifa 19 dieser enthält Daten zu über 18000 Fussballern. In diesen enthalten sind neben Variablen wie Name, Verein und Alter auch ein ungefähr nach der Qualität des Fussballers festgelegtes Rating sowie Bewertungen seiner fussballerischen Fähigkeiten (Schießen, Passen, Dribbling, Verteidigen, Geschwindigkeit, Physis, etc.)\\
+Bei den Daten handelt es sich um einen Datensatz des Fussball Videospiels Fifa 21 dieser enthält Daten zu über 16000 Fussballern. In diesen enthalten sind neben Variablen wie Name, Verein und Alter auch ein ungefähr nach der Qualität des Fussballers festgelegtes Rating sowie Bewertungen der fussballerischen Fähigkeiten (Schießen, Passen, Dribbling, Verteidigen, Geschwindigkeit, Physis, etc.)\\
 
-Die erste verwendete Visualisierungstechnik ist der Scatterplot, dieser ist gut dazu geeignet zwei Variablen der Fussballer zu vergleichen. Bspw. könnte untersucht werden ob ein Fussballer entsprechend seines Könnens (Rating) verdient (Wage). \\
+Die erste verwendete Visualisierungstechnik ist der Scatterplot, dieser ist gut dazu geeignet zwei Variablen der Fussballer zu vergleichen. Bspw. könnte untersucht werden ob ein Fussballer entsprechend seines Könnens (Rating) verdient (Wage). Für Spieler des Karrieremodus können gerade solche Informationen relevant sein, da so Spieler gefunden werden können, die besser spielen als ihr Gehalt es vermuten lassen würde oder solche die zu teuer für ihr können sind.\\
 
-Bei der zweiten verwendeten Visualisierungstechnik handelt es sich um Parallele Koordinaten. Diese, im Vergleich zum Scatterplot, etwas fortgeschrittene Technik eignet sich um mehr als zwei Werte miteinander zu vergleichen. Ihr Einsatz bietet sich daher an um Werte eines Fussballers in den Attributen: Schießen, Passen, Dribbling, Verteidigen, Geschwindigkeit oder Physis miteinander zu vergleichen und dies vorher nach der Position des Fussballers zu Filtern um zu untersuchen ob sich ein Spieler anhand seiner Attribute dafür eignet auf dieser Position zu spielen. (Bsp. ein Stürmer benötigt vor allem Geschwindigkeit, Schießen und Dribbling, ein Verteidiger hingegen Verteidigen, Physis und Geschwindigkeit).\\
+Bei der zweiten verwendeten Visualisierungstechnik handelt es sich um Parallele Koordinaten. Diese, im Vergleich zum Scatterplot, etwas fortgeschrittene Technik eignet sich um mehr als zwei Werte miteinander zu vergleichen. Ihr Einsatz bietet sich daher an um Werte eines Fussballers in den Attributen: Schießen, Passen, Dribbling, Verteidigen, Geschwindigkeit oder Physis miteinander zu vergleichen und dies vorher nach der Position des Fussballers zu Filtern um zu untersuchen ob sich ein Spieler anhand seiner Attribute dafür eignet auf dieser Position zu spielen. (Bsp. ein Stürmer benötigt vor allem Geschwindigkeit, Schießen und Dribbling, ein Verteidiger hingegen Verteidigen, Physis und Geschwindigkeit).
+Diese Technik könnte besonders für Spieler des FUT Modus relevant sein, da sich so die besten Spieler für den kompetetiven Online-Modus finden lassen.\\
 
-Die dritte Visualisierungstechnik ist die Darstellung als Baumdiagramm. durch sie werden Spieler ihren Teams und diese ihren jeweiligen Ligen zugeordnet.
+Die dritte Visualisierungstechnik ist die Darstellung als Baumdiagramm. durch sie werden Spieler ihren Teams und diese ihren jeweiligen Ligen zugeordnet. Da es im FUT Modus ein Chemie System gibt indem ein Team nur gut zusammenspielen kann wenn Spieler einer Liga oder eines Teams entstammen kann ein Nutzer der Visualisierung mit Hilfe dieser ein Team aus einer spezifischen Liga zusammen bauen und nach jeder einzelnen Position filtern\cite{heib_fifa_2021}.
 
 
 
@@ -130,14 +133,21 @@ Grundsätzlich eignen sich die Daten gut um die gewünschten Fragestellungen bea
 %Wie sind die Daten zugänglich? Welche Formate werden genutzt. Gibt es Besonderheiten beim Lesen der Formate?
 Die Daten sind in einem privaten Github gehostet\footnote{\url{https://github.com/JohannesLange/Visualisierung_FIFA19/tree/master}}. Dort liegen die Daten der drei Visualisierungen jeweils als \textit{.csv} vor. Die verwendeten Variablen sowie die Anzahl an Fussballern wurden jeweils der Visualisierungstechnik entsprechend angepasst um den Datensatz so klein wie möglich zu halten.
 
-Auch die Daten der Visualisierung als Baumdiagramm liegen als \textit{.csv} vor und werden erst im Programm zu einer \textit{.json} encoded und dann wieder zu einem Baumdiagramm decoded. Da in den Daten der Spieler keine Daten zu den Fussballligen in denen die Vereine spielen, enthalten sind, sind diese zusätzlich hinzugefügt worden.
+Auch die Daten der Visualisierung als Baumdiagramm liegen als \textit{.csv} vor und werden erst im Programm zu einer \textit{.json} encoded und dann wieder zu einem Baumdiagramm decoded. So liegen die Daten nicht starr als \textit{.json} vor und sie können innerhalb des Programms vorgefiltert werden. Da in den Daten der Spieler keine Daten zu den Fussballligen in denen die Vereine spielen, enthalten sind, sind diese zusätzlich hinzugefügt worden.
 
 \subsection{\label{Datenvorverarbeitung}Datenvorverarbeitung}
 %Welche Datenvorverarbeitungsschritte sind notwendig? Beschreiben Sie die einzelnen Schritte und begründen sie sie, z.B. warum werden manche Daten weggelassen, über welche Mengen werden Durchschnitte berechnet, warum sind die so berechneten Werte aussagekräftiger als andere Werte. 
 
-Die Daten der Fussballer bestehen aus ca. 19000 einzelnen Fussballern, jeder dieser hat 93 einzelne Variablen, diese sind für die Visualisierung generell nicht alle relevant. Weiterhin unterscheiden sich die relevanten Variablen auch zwischen den verschiedenen Visualisierungstechniken.
+Die Daten der Fussballer bestehen aus ca. 17000 einzelnen Fussballern, jeder dieser hat 107 einzelne Variablen, diese sind für die Visualisierungen nicht alle relevant. Weiterhin unterscheiden sich die relevanten Variablen auch zwischen den verschiedenen Visualisierungstechniken.
 
-Außerdem wurde der vorhandene Datensatz aus zwei verschiedenen Gründen gekürzt, zum einen ist die Darstellung durch die Größe des Datensatzes erheblich verlangsamt worden und zum anderen enthält der Datensatz Fussballer für die nicht alle Werte enthalten sind.
+Die Vorverarbeitung der Daten ist in \textit{R} durchgeführt worden. Das genutzte Skript (\textit{RDataPreprocessing.r}) liegt im Github vor.
+Im ersten Schritt des preprocessing sind \textit{NA} Werte aus dem Datensatz entfernt worden.
+Als nächstes ist der Wert \textit{Height} von Fuß in Zentimeter umgewandelt worden. Weiterhin ist beim Wert \textit{Weight} die Beschriftung \textit{lbs} entfernt worden um den Wert so als Zahl lesbar zu machen.
+Gleiches ist für die Werte \textit{Wage} und \textit{Value} getan worden. Bei diesen Werten ist die Umwandlung allerdings komplizierter, da die Zahlen mit \textit{M} für Millionen und \textit{K} für Tausend abgekürzt worden sind.
+Nach dem anpassen dieser Werte können die für \textit{Scatterplot} und \textit{Parallele Koordinaten} relevanten Werte in einem neuen \textit{Data.frame} gespeichert und als \textit{.csv} wieder exportiert werden.  
+
+
+Der vorhandene Datensatz ist aus zwei verschiedenen Gründen gekürzt worden, zum einen ist die Darstellung durch die Größe des Datensatzes erheblich verlangsamt worden und zum anderen enthält der Datensatz Fussballer für die nicht alle Werte enthalten sind.
 
 Für die Darstellung des Baumdiagramms wurde sich auf die fünf größten europäischen Fussballligen konzentriert. Deswegen enthält der Datensatz für diese Visualisierungstechnik nur Daten von Spielern, deren Team Teil einer dieser Ligen ist.
 
