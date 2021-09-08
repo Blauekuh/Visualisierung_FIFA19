@@ -54,6 +54,8 @@ type Model
         , onOff : Bool
         , filterClub : String
         , onOff2 : Bool
+        , filterPosition : String
+        , onOff3 : Bool
         }
     
 
@@ -126,8 +128,10 @@ type Msg
     | Change4 (Footballer -> Float, String)
     | ChangeNation (String)
     | ChangeClub (String)
+    | ChangePosition (String)
     | ActivateFilter Bool
     | ActivateFilter2 Bool
+    | ActivateFilter3 Bool
 
     
 update : Msg -> Model -> ( Model, Cmd Msg )
@@ -136,7 +140,7 @@ update msg model =
         GotText result ->
             case result of
                 Ok fullText ->
-                    ( Success <| { data = spielerListe [ fullText ], firstFunc = .age, secondFunc = .overall, thirdFunc = .potential, fourthFunc = .age , firstName = "Age", secondName = "Overall", thirdName = "Pace", fourthName = "Shooting", filterNation = "Portugal", filterClub = "Juventus", onOff = False, onOff2 = False}, Cmd.none )
+                    ( Success <| { data = spielerListe [ fullText ], firstFunc = .age, secondFunc = .overall, thirdFunc = .pace, fourthFunc = .shooting , firstName = "Age", secondName = "Overall", thirdName = "Pace", fourthName = "Shooting", filterNation = "Portugal", filterClub = "Juventus", filterPosition = "ST"  ,  onOff = False, onOff2 = False, onOff3 = False}, Cmd.none )
 
                 Err _ ->
                     ( model, Cmd.none )
@@ -144,7 +148,7 @@ update msg model =
         Change1 (x, a) ->
             case model of
                 Success m ->
-                    ( Success <| { data = m.data, firstFunc = x, secondFunc = m.secondFunc, thirdFunc = m.thirdFunc, fourthFunc = m.fourthFunc , firstName = a, secondName = m.secondName, thirdName = m.thirdName, fourthName = m.fourthName, filterNation = m.filterNation, filterClub = m.filterClub, onOff = m.onOff, onOff2 = m.onOff2}, Cmd.none )
+                    ( Success <| { data = m.data, firstFunc = x, secondFunc = m.secondFunc, thirdFunc = m.thirdFunc, fourthFunc = m.fourthFunc , firstName = a, secondName = m.secondName, thirdName = m.thirdName, fourthName = m.fourthName, filterNation = m.filterNation, filterClub = m.filterClub, filterPosition = m.filterPosition, onOff = m.onOff, onOff2 = m.onOff2, onOff3= m.onOff3}, Cmd.none )
 
                 _ ->
                     ( model, Cmd.none )
@@ -152,7 +156,7 @@ update msg model =
         Change2 (y, a) ->
             case model of
                 Success m ->
-                    ( Success <| {data = m.data, firstFunc = m.firstFunc, secondFunc = y, thirdFunc = m.thirdFunc, fourthFunc = m.fourthFunc , firstName = m.firstName, secondName = a, thirdName = m.thirdName, fourthName = m.fourthName, filterNation = m.filterNation, filterClub = m.filterClub, onOff = m.onOff, onOff2 = m.onOff2}, Cmd.none )
+                    ( Success <| {data = m.data, firstFunc = m.firstFunc, secondFunc = y, thirdFunc = m.thirdFunc, fourthFunc = m.fourthFunc , firstName = m.firstName, secondName = a, thirdName = m.thirdName, fourthName = m.fourthName, filterNation = m.filterNation, filterClub = m.filterClub, filterPosition = m.filterPosition, onOff = m.onOff, onOff2 = m.onOff2, onOff3= m.onOff3}, Cmd.none )
 
                 _ ->
                     ( model, Cmd.none )
@@ -160,7 +164,7 @@ update msg model =
         Change3 (z, a) ->
             case model of
                 Success m ->
-                    ( Success <| { data = m.data, firstFunc = m.firstFunc, secondFunc = m.secondFunc, thirdFunc = z, fourthFunc = m.fourthFunc , firstName = m.firstName, secondName = m.secondName, thirdName = a, fourthName = m.fourthName, filterNation = m.filterNation, filterClub = m.filterClub, onOff = m.onOff, onOff2 = m.onOff2}, Cmd.none )
+                    ( Success <| { data = m.data, firstFunc = m.firstFunc, secondFunc = m.secondFunc, thirdFunc = z, fourthFunc = m.fourthFunc , firstName = m.firstName, secondName = m.secondName, thirdName = a, fourthName = m.fourthName, filterNation = m.filterNation, filterClub = m.filterClub, filterPosition = m.filterPosition, onOff = m.onOff, onOff2 = m.onOff2, onOff3= m.onOff3}, Cmd.none )
 
                 _ ->
                     ( model, Cmd.none )
@@ -168,7 +172,7 @@ update msg model =
         Change4 (b, a) ->
             case model of
                 Success m ->
-                    ( Success <| { data = m.data, firstFunc = m.firstFunc, secondFunc = m.secondFunc, thirdFunc = m.thirdFunc, fourthFunc = b, firstName = m.firstName, secondName = m.secondName, thirdName = m.thirdName, fourthName = a , filterNation = m.filterNation, filterClub = m.filterClub, onOff = m.onOff, onOff2 = m.onOff2}, Cmd.none )
+                    ( Success <| { data = m.data, firstFunc = m.firstFunc, secondFunc = m.secondFunc, thirdFunc = m.thirdFunc, fourthFunc = b, firstName = m.firstName, secondName = m.secondName, thirdName = m.thirdName, fourthName = a , filterNation = m.filterNation, filterClub = m.filterClub, filterPosition = m.filterPosition, onOff = m.onOff, onOff2 = m.onOff2, onOff3= m.onOff3}, Cmd.none )
 
                 _ ->
                     ( model, Cmd.none )
@@ -176,14 +180,14 @@ update msg model =
         ChangeNation (x) ->
             case model of
                 Success m ->
-                    ( Success <| { data = m.data, firstFunc = m.firstFunc, secondFunc = m.secondFunc, thirdFunc = m.thirdFunc, fourthFunc = m.fourthFunc , firstName = m.firstName, secondName = m.secondName, thirdName = m.thirdName, fourthName = m.fourthName, filterNation = x, filterClub = m.filterClub, onOff = m.onOff, onOff2 = m.onOff2}, Cmd.none )
+                    ( Success <| { data = m.data, firstFunc = m.firstFunc, secondFunc = m.secondFunc, thirdFunc = m.thirdFunc, fourthFunc = m.fourthFunc , firstName = m.firstName, secondName = m.secondName, thirdName = m.thirdName, fourthName = m.fourthName, filterNation = x, filterClub = m.filterClub, filterPosition = m.filterPosition, onOff = m.onOff, onOff2 = m.onOff2, onOff3= m.onOff3}, Cmd.none )
 
                 _ ->
                     ( model, Cmd.none )
         ActivateFilter (x) ->
             case model of
                 Success m ->
-                    ( Success <| { data = m.data, firstFunc = m.firstFunc, secondFunc = m.secondFunc, thirdFunc = m.thirdFunc, fourthFunc = m.fourthFunc , firstName = m.firstName, secondName = m.secondName, thirdName = m.thirdName, fourthName = m.fourthName, filterNation = m.filterNation, filterClub = m.filterClub, onOff = x, onOff2 = m.onOff2}, Cmd.none )
+                    ( Success <| { data = m.data, firstFunc = m.firstFunc, secondFunc = m.secondFunc, thirdFunc = m.thirdFunc, fourthFunc = m.fourthFunc , firstName = m.firstName, secondName = m.secondName, thirdName = m.thirdName, fourthName = m.fourthName, filterNation = m.filterNation, filterClub = m.filterClub, filterPosition = m.filterPosition, onOff = x, onOff2 = m.onOff2, onOff3 = m.onOff3}, Cmd.none )
 
                 _ ->
                     ( model, Cmd.none )
@@ -191,14 +195,29 @@ update msg model =
         ChangeClub (x) ->
             case model of
                 Success m ->
-                    ( Success <| { data = m.data, firstFunc = m.firstFunc, secondFunc = m.secondFunc, thirdFunc = m.thirdFunc, fourthFunc = m.fourthFunc , firstName = m.firstName, secondName = m.secondName, thirdName = m.thirdName, fourthName = m.fourthName, filterNation = m.filterNation, filterClub = x, onOff = m.onOff, onOff2 = m.onOff2}, Cmd.none )
+                    ( Success <| { data = m.data, firstFunc = m.firstFunc, secondFunc = m.secondFunc, thirdFunc = m.thirdFunc, fourthFunc = m.fourthFunc , firstName = m.firstName, secondName = m.secondName, thirdName = m.thirdName, fourthName = m.fourthName, filterNation = m.filterNation, filterClub = x, filterPosition = m.filterPosition, onOff = m.onOff, onOff2 = m.onOff2, onOff3 = m.onOff3}, Cmd.none )
 
                 _ ->
                     ( model, Cmd.none )
         ActivateFilter2 (x) ->
             case model of
                 Success m ->
-                    ( Success <| { data = m.data, firstFunc = m.firstFunc, secondFunc = m.secondFunc, thirdFunc = m.thirdFunc, fourthFunc = m.fourthFunc , firstName = m.firstName, secondName = m.secondName, thirdName = m.thirdName, fourthName = m.fourthName, filterNation = m.filterNation, filterClub = m.filterClub, onOff = m.onOff, onOff2 = x}, Cmd.none )
+                    ( Success <| { data = m.data, firstFunc = m.firstFunc, secondFunc = m.secondFunc, thirdFunc = m.thirdFunc, fourthFunc = m.fourthFunc , firstName = m.firstName, secondName = m.secondName, thirdName = m.thirdName, fourthName = m.fourthName, filterNation = m.filterNation, filterClub = m.filterClub, filterPosition = m.filterPosition, onOff = m.onOff, onOff2 = x, onOff3 = m.onOff3 }, Cmd.none )
+
+                _ ->
+                    ( model, Cmd.none )
+
+        ChangePosition (x) ->
+            case model of
+                Success m ->
+                    ( Success <| { data = m.data, firstFunc = m.firstFunc, secondFunc = m.secondFunc, thirdFunc = m.thirdFunc, fourthFunc = m.fourthFunc , firstName = m.firstName, secondName = m.secondName, thirdName = m.thirdName, fourthName = m.fourthName, filterNation = m.filterNation, filterClub = m.filterClub, filterPosition = x, onOff = m.onOff, onOff2 = m.onOff2, onOff3 = m.onOff3}, Cmd.none )
+
+                _ ->
+                    ( model, Cmd.none )
+        ActivateFilter3 (x) ->
+            case model of
+                Success m ->
+                    ( Success <| { data = m.data, firstFunc = m.firstFunc, secondFunc = m.secondFunc, thirdFunc = m.thirdFunc, fourthFunc = m.fourthFunc , firstName = m.firstName, secondName = m.secondName, thirdName = m.thirdName, fourthName = m.fourthName, filterNation = m.filterNation, filterClub = m.filterClub, filterPosition = m.filterPosition, onOff = m.onOff, onOff2 = m.onOff2, onOff3 = x}, Cmd.none )
 
                 _ ->
                     ( model, Cmd.none )
@@ -391,19 +410,38 @@ view model =
             let
 
 
-                spieler2 =
+                spielerN =
                     filterAttribute l.data .nationality l.filterNation
-                spieler3 =
+                spielerC =
                     filterAttribute l.data .club l.filterClub
-                spieler4 = 
-                    filterAttribute spieler2 .club l.filterClub
+                spielerP =
+                    filterAttribute l.data .position l.filterPosition
+                spielerNC = 
+                    filterAttribute spielerN .club l.filterClub
+                
+                spielerNCP =
+                    filterAttribute spielerNC .position l.filterPosition
+                
+                spielerNP =
+                    filterAttribute spielerN .position l.filterPosition
+                spielerCP =
+                    filterAttribute spielerC .position l.filterPosition
+
                 spielerfiltered =
-                    if l.onOff == True && l.onOff2 == True then 
-                        multiDimDaten spieler4 l.firstFunc l.secondFunc l.thirdFunc l.fourthFunc .name l.firstName l.secondName l.thirdName l.fourthName
-                    else if l.onOff == True && l.onOff2 == False then
-                        multiDimDaten spieler2 l.firstFunc l.secondFunc l.thirdFunc l.fourthFunc .name l.firstName l.secondName l.thirdName l.fourthName       
-                    else if l.onOff == False && l.onOff2 == True then
-                        multiDimDaten spieler3 l.firstFunc l.secondFunc l.thirdFunc l.fourthFunc .name l.firstName l.secondName l.thirdName l.fourthName       
+                    if l.onOff == True && l.onOff2 == True && l.onOff3 == True then 
+                        multiDimDaten spielerNCP l.firstFunc l.secondFunc l.thirdFunc l.fourthFunc .name l.firstName l.secondName l.thirdName l.fourthName
+                    else if l.onOff == True && l.onOff2 == True && l.onOff3 == False then
+                        multiDimDaten spielerNC l.firstFunc l.secondFunc l.thirdFunc l.fourthFunc .name l.firstName l.secondName l.thirdName l.fourthName       
+                    else if l.onOff == True && l.onOff2 == False && l.onOff3 == True then
+                        multiDimDaten spielerNP l.firstFunc l.secondFunc l.thirdFunc l.fourthFunc .name l.firstName l.secondName l.thirdName l.fourthName       
+                    else if l.onOff == False && l.onOff2 == True && l.onOff3 == True then
+                        multiDimDaten spielerCP l.firstFunc l.secondFunc l.thirdFunc l.fourthFunc .name l.firstName l.secondName l.thirdName l.fourthName       
+                    else if l.onOff == True && l.onOff2 == False && l.onOff3 == False then
+                        multiDimDaten spielerN l.firstFunc l.secondFunc l.thirdFunc l.fourthFunc .name l.firstName l.secondName l.thirdName l.fourthName       
+                    else if l.onOff == False && l.onOff2 == True && l.onOff3 == False then
+                        multiDimDaten spielerC l.firstFunc l.secondFunc l.thirdFunc l.fourthFunc .name l.firstName l.secondName l.thirdName l.fourthName       
+                    else if l.onOff == False && l.onOff2 == False && l.onOff3 == True then
+                        multiDimDaten spielerP l.firstFunc l.secondFunc l.thirdFunc l.fourthFunc .name l.firstName l.secondName l.thirdName l.fourthName       
                     else 
                         multiDimDaten l.data l.firstFunc l.secondFunc l.thirdFunc l.fourthFunc .name l.firstName l.secondName l.thirdName l.fourthName       
 
@@ -424,18 +462,27 @@ view model =
             Html.div []
                 [
                 ul [][
-                Html.text <| "Da der Datensatz sehr groß ist kann das Textfeld genutzt werden um nach Nationen zu filtern."]
+                Html.text <| "Da der Datensatz sehr groß ist können die Textfelder genutzt werden um nach Nationen, Clubs und Positionen zu filtern."]
                 ,ul[][
-                Html.text <| "Um dies zu aktivieren muss die Box angeklickt werden (Wenn eine neue Nation eingegeben wird, die Checkbox einmal deaktivieren und wieder reaktivieren)."]
-                ,ul[][  
-                input [ placeholder "Select Nation to Filter", value l.filterNation, onInput ChangeNation ] []
+                Html.text <| "Um dies zu aktivieren muss die Box angeklickt werden."]
+                ,ul[][
+                Html.text <| "Nationenfilter: "      
+                ,input [ placeholder "Select Nation to Filter", value l.filterNation, onInput ChangeNation ] []
                 ,input [ type_ "checkbox", onCheck ActivateFilter ] []
+                ]
+                ,ul[][
+                Html.text <| "Clubfilter: "
                 ,input [ placeholder "Select Club to Filter", value l.filterClub, onInput ChangeClub ] []
-                ,input [ type_ "checkbox", onCheck ActivateFilter2 ] []] 
+                ,input [ type_ "checkbox", onCheck ActivateFilter2 ] [] 
+                ]
+                ,ul[][
+                Html.text <| "Positionsfilter: "
+                ,input [ placeholder "Select Position to Filter", value l.filterPosition, onInput ChangePosition ] []
+                ,input [ type_ "checkbox", onCheck ActivateFilter3 ] []] 
                 
                     ,ul []
                     [ li [] [
-                            Html.text <| "Set first coloumn value: "
+                            Html.text <| "Wert der ersten Spalte festlegen: "
                             , Html.button [ onClick (Change1 (.overall, "OVA")) ] [ Html.text "Overall" ]
                             , Html.button [ onClick (Change1 (.potential, "POT")) ] [ Html.text "Potential" ]
                             , Html.button [ onClick (Change1 (.age, "Age")) ] [ Html.text "Age" ]
@@ -449,7 +496,7 @@ view model =
                     ]
                 , ul []
                     [ li [] [
-                            Html.text <| "Set second coloumn value: "
+                            Html.text <| "Wert der zweiten Spalte festlegen: "
                             , Html.button [ onClick (Change2 (.overall, "OVA")) ] [ Html.text "Overall" ]
                             , Html.button [ onClick (Change2 (.potential, "POT")) ] [ Html.text "Potential" ]
                             , Html.button [ onClick (Change2 (.age, "Age")) ] [ Html.text "Age" ]
@@ -463,7 +510,7 @@ view model =
                     ]
                 ,ul []
                     [ li [] [
-                            Html.text <| "Set third coloumn value: "
+                            Html.text <| "Wert der dritten Spalte festlegen: "
                             , Html.button [ onClick (Change3 (.overall, "OVA")) ] [ Html.text "Overall" ]
                             , Html.button [ onClick (Change3 (.potential, "POT")) ] [ Html.text "Potential" ]
                             , Html.button [ onClick (Change3 (.age, "Age")) ] [ Html.text "Age" ]
@@ -477,7 +524,7 @@ view model =
                     ]
                 , ul []
                     [ li [] [
-                            Html.text <| "Set fourth coloumn value: "
+                            Html.text <| "Wert der vierten Spalte festlegen: "
                             , Html.button [ onClick (Change4 (.overall, "OVA")) ] [ Html.text "Overall" ]
                             , Html.button [ onClick (Change4 (.potential, "POT")) ] [ Html.text "Potential" ]
                             , Html.button [ onClick (Change4 (.age, "Age")) ] [ Html.text "Age" ]
