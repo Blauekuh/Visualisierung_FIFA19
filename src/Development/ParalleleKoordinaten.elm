@@ -6,9 +6,9 @@ import Browser
 import Color
 import Csv
 import Csv.Decode
-import Html exposing (Html, a, li, pre, text, ul)
-import Html.Attributes exposing (placeholder, value, href)
-import Html.Events exposing (onClick, onInput)
+import Html exposing (Html, a, li, pre, text, ul, input)
+import Html.Attributes exposing (placeholder, value, type_, checked)
+import Html.Events exposing (onClick, onInput, onCheck)
 import Http
 import List.Extra
 import Path
@@ -50,6 +50,10 @@ type Model
         , secondName : String
         , thirdName : String
         , fourthName : String
+        , filterNation : String
+        , onOff : Bool
+        , filterClub : String
+        , onOff2 : Bool
         }
     
 
@@ -82,6 +86,7 @@ type alias Footballer =
     { name : String, 
     age : Float, 
     overall : Float, 
+    club : String,
     potential : Float, 
     nationality: String, 
     height: Float, 
@@ -100,6 +105,7 @@ decodeFootballer =
         (Csv.Decode.field "Name" Ok 
             |> Csv.Decode.andMap (Csv.Decode.field "Age" (String.toFloat >> Result.fromMaybe "error parsing string"))
             |> Csv.Decode.andMap (Csv.Decode.field "OVA" (String.toFloat >> Result.fromMaybe "error parsing string"))
+            |> Csv.Decode.andMap (Csv.Decode.field "Club" Ok)
             |> Csv.Decode.andMap (Csv.Decode.field "POT" (String.toFloat >> Result.fromMaybe "error parsing string"))
             |> Csv.Decode.andMap (Csv.Decode.field "Nationality" Ok)
             |> Csv.Decode.andMap (Csv.Decode.field "Height" (String.toFloat >> Result.fromMaybe "error parsing string"))
@@ -118,6 +124,10 @@ type Msg
     | Change2 (Footballer -> Float, String)
     | Change3 (Footballer -> Float, String)
     | Change4 (Footballer -> Float, String)
+    | ChangeNation (String)
+    | ChangeClub (String)
+    | ActivateFilter Bool
+    | ActivateFilter2 Bool
 
     
 update : Msg -> Model -> ( Model, Cmd Msg )
@@ -126,7 +136,7 @@ update msg model =
         GotText result ->
             case result of
                 Ok fullText ->
-                    ( Success <| { data = spielerListe [ fullText ], firstFunc = .age, secondFunc = .overall, thirdFunc = .potential, fourthFunc = .age , firstName = "Age", secondName = "Overall", thirdName = "Potential", fourthName = "Age"}, Cmd.none )
+                    ( Success <| { data = spielerListe [ fullText ], firstFunc = .age, secondFunc = .overall, thirdFunc = .potential, fourthFunc = .age , firstName = "Age", secondName = "Overall", thirdName = "Pace", fourthName = "Shooting", filterNation = "Portugal", filterClub = "Juventus", onOff = False, onOff2 = False}, Cmd.none )
 
                 Err _ ->
                     ( model, Cmd.none )
@@ -134,7 +144,7 @@ update msg model =
         Change1 (x, a) ->
             case model of
                 Success m ->
-                    ( Success <| { data = m.data, firstFunc = x, secondFunc = m.secondFunc, thirdFunc = m.thirdFunc, fourthFunc = m.fourthFunc , firstName = a, secondName = m.secondName, thirdName = m.thirdName, fourthName = m.fourthName}, Cmd.none )
+                    ( Success <| { data = m.data, firstFunc = x, secondFunc = m.secondFunc, thirdFunc = m.thirdFunc, fourthFunc = m.fourthFunc , firstName = a, secondName = m.secondName, thirdName = m.thirdName, fourthName = m.fourthName, filterNation = m.filterNation, filterClub = m.filterClub, onOff = m.onOff, onOff2 = m.onOff2}, Cmd.none )
 
                 _ ->
                     ( model, Cmd.none )
@@ -142,7 +152,7 @@ update msg model =
         Change2 (y, a) ->
             case model of
                 Success m ->
-                    ( Success <| {data = m.data, firstFunc = m.firstFunc, secondFunc = y, thirdFunc = m.thirdFunc, fourthFunc = m.fourthFunc , firstName = m.firstName, secondName = a, thirdName = m.thirdName, fourthName = m.fourthName}, Cmd.none )
+                    ( Success <| {data = m.data, firstFunc = m.firstFunc, secondFunc = y, thirdFunc = m.thirdFunc, fourthFunc = m.fourthFunc , firstName = m.firstName, secondName = a, thirdName = m.thirdName, fourthName = m.fourthName, filterNation = m.filterNation, filterClub = m.filterClub, onOff = m.onOff, onOff2 = m.onOff2}, Cmd.none )
 
                 _ ->
                     ( model, Cmd.none )
@@ -150,7 +160,7 @@ update msg model =
         Change3 (z, a) ->
             case model of
                 Success m ->
-                    ( Success <| { data = m.data, firstFunc = m.firstFunc, secondFunc = m.secondFunc, thirdFunc = z, fourthFunc = m.fourthFunc , firstName = m.firstName, secondName = m.secondName, thirdName = a, fourthName = m.fourthName}, Cmd.none )
+                    ( Success <| { data = m.data, firstFunc = m.firstFunc, secondFunc = m.secondFunc, thirdFunc = z, fourthFunc = m.fourthFunc , firstName = m.firstName, secondName = m.secondName, thirdName = a, fourthName = m.fourthName, filterNation = m.filterNation, filterClub = m.filterClub, onOff = m.onOff, onOff2 = m.onOff2}, Cmd.none )
 
                 _ ->
                     ( model, Cmd.none )
@@ -158,11 +168,40 @@ update msg model =
         Change4 (b, a) ->
             case model of
                 Success m ->
-                    ( Success <| { data = m.data, firstFunc = m.firstFunc, secondFunc = m.secondFunc, thirdFunc = m.thirdFunc, fourthFunc = b, firstName = m.firstName, secondName = m.secondName, thirdName = m.thirdName, fourthName = a }, Cmd.none )
+                    ( Success <| { data = m.data, firstFunc = m.firstFunc, secondFunc = m.secondFunc, thirdFunc = m.thirdFunc, fourthFunc = b, firstName = m.firstName, secondName = m.secondName, thirdName = m.thirdName, fourthName = a , filterNation = m.filterNation, filterClub = m.filterClub, onOff = m.onOff, onOff2 = m.onOff2}, Cmd.none )
 
                 _ ->
                     ( model, Cmd.none )
 
+        ChangeNation (x) ->
+            case model of
+                Success m ->
+                    ( Success <| { data = m.data, firstFunc = m.firstFunc, secondFunc = m.secondFunc, thirdFunc = m.thirdFunc, fourthFunc = m.fourthFunc , firstName = m.firstName, secondName = m.secondName, thirdName = m.thirdName, fourthName = m.fourthName, filterNation = x, filterClub = m.filterClub, onOff = m.onOff, onOff2 = m.onOff2}, Cmd.none )
+
+                _ ->
+                    ( model, Cmd.none )
+        ActivateFilter (x) ->
+            case model of
+                Success m ->
+                    ( Success <| { data = m.data, firstFunc = m.firstFunc, secondFunc = m.secondFunc, thirdFunc = m.thirdFunc, fourthFunc = m.fourthFunc , firstName = m.firstName, secondName = m.secondName, thirdName = m.thirdName, fourthName = m.fourthName, filterNation = m.filterNation, filterClub = m.filterClub, onOff = x, onOff2 = m.onOff2}, Cmd.none )
+
+                _ ->
+                    ( model, Cmd.none )
+
+        ChangeClub (x) ->
+            case model of
+                Success m ->
+                    ( Success <| { data = m.data, firstFunc = m.firstFunc, secondFunc = m.secondFunc, thirdFunc = m.thirdFunc, fourthFunc = m.fourthFunc , firstName = m.firstName, secondName = m.secondName, thirdName = m.thirdName, fourthName = m.fourthName, filterNation = m.filterNation, filterClub = x, onOff = m.onOff, onOff2 = m.onOff2}, Cmd.none )
+
+                _ ->
+                    ( model, Cmd.none )
+        ActivateFilter2 (x) ->
+            case model of
+                Success m ->
+                    ( Success <| { data = m.data, firstFunc = m.firstFunc, secondFunc = m.secondFunc, thirdFunc = m.thirdFunc, fourthFunc = m.fourthFunc , firstName = m.firstName, secondName = m.secondName, thirdName = m.thirdName, fourthName = m.fourthName, filterNation = m.filterNation, filterClub = m.filterClub, onOff = m.onOff, onOff2 = x}, Cmd.none )
+
+                _ ->
+                    ( model, Cmd.none )
 
 spielerListe : List String -> List Footballer
 spielerListe liste1 =
@@ -332,6 +371,12 @@ parallelCoodinatesPlot w ar model =
                         )
                )
 
+filterAttribute : List Footballer -> (Footballer -> String) -> String -> List Footballer
+filterAttribute spieler attribut wort =
+    List.filter (\n -> (attribut n) == wort ) spieler
+
+
+
 view : Model -> Html Msg
 view model =
     case model of
@@ -344,6 +389,24 @@ view model =
 
         Success l ->
             let
+
+
+                spieler2 =
+                    filterAttribute l.data .nationality l.filterNation
+                spieler3 =
+                    filterAttribute l.data .club l.filterClub
+                spieler4 = 
+                    filterAttribute spieler2 .club l.filterClub
+                spielerfiltered =
+                    if l.onOff == True && l.onOff2 == True then 
+                        multiDimDaten spieler4 l.firstFunc l.secondFunc l.thirdFunc l.fourthFunc .name l.firstName l.secondName l.thirdName l.fourthName
+                    else if l.onOff == True && l.onOff2 == False then
+                        multiDimDaten spieler2 l.firstFunc l.secondFunc l.thirdFunc l.fourthFunc .name l.firstName l.secondName l.thirdName l.fourthName       
+                    else if l.onOff == False && l.onOff2 == True then
+                        multiDimDaten spieler3 l.firstFunc l.secondFunc l.thirdFunc l.fourthFunc .name l.firstName l.secondName l.thirdName l.fourthName       
+                    else 
+                        multiDimDaten l.data l.firstFunc l.secondFunc l.thirdFunc l.fourthFunc .name l.firstName l.secondName l.thirdName l.fourthName       
+
                 multiDimDaten : List Footballer -> (Footballer -> Float) -> (Footballer -> Float) -> (Footballer -> Float) -> (Footballer -> Float) -> (Footballer -> String) -> String -> String -> String -> String-> MultiDimData
                 multiDimDaten listPlayers a b c d e f g h i=
                     MultiDimData [f, g, h, i]
@@ -359,8 +422,18 @@ view model =
                      multiDimDaten l.data l.firstFunc l.secondFunc l.thirdFunc l.fourthFunc .name l.firstName l.secondName l.thirdName l.fourthName       
             in
             Html.div []
-                [ 
-                    ul []
+                [
+                ul [][
+                Html.text <| "Da der Datensatz sehr groß ist kann das Textfeld genutzt werden um nach Nationen zu filtern."]
+                ,ul[][
+                Html.text <| "Um dies zu aktivieren muss die Box angeklickt werden (Wenn eine neue Nation eingegeben wird, die Checkbox einmal deaktivieren und wieder reaktivieren)."]
+                ,ul[][  
+                input [ placeholder "Select Nation to Filter", value l.filterNation, onInput ChangeNation ] []
+                ,input [ type_ "checkbox", onCheck ActivateFilter ] []
+                ,input [ placeholder "Select Club to Filter", value l.filterClub, onInput ChangeClub ] []
+                ,input [ type_ "checkbox", onCheck ActivateFilter2 ] []] 
+                
+                    ,ul []
                     [ li [] [
                             Html.text <| "Set first coloumn value: "
                             , Html.button [ onClick (Change1 (.overall, "OVA")) ] [ Html.text "Overall" ]
@@ -416,5 +489,5 @@ view model =
                             , Html.button [ onClick (Change4 (.physical, "PHY")) ] [ Html.text "Physical" ]
                             ]
                     ]        
-                    ,parallelCoodinatesPlot 600 2 plotDaten
+                    ,parallelCoodinatesPlot 600 2 spielerfiltered
                 ]
