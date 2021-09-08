@@ -147,14 +147,14 @@ update msg model =
         ChangeNation (x) ->
             case model of
                 Success m ->
-                    ( Success <| { data = m.data, xAAFunction = m.xAAFunction, yAAFunction = m.yAAFunction, xName = m.xName, yName = m.yName, filterNation = x, onOff = m.onOff, filterClub = m.filterClub, onOff2 = m.onOff2, selectedValue1 = 1, selectedValue2 = 2 }, Cmd.none )
+                    ( Success <| { data = m.data, xAAFunction = m.xAAFunction, yAAFunction = m.yAAFunction, xName = m.xName, yName = m.yName, filterNation = x, onOff = m.onOff, filterClub = m.filterClub, onOff2 = m.onOff2, selectedValue1 = m.selectedValue1, selectedValue2 = m.selectedValue2}, Cmd.none )
 
                 _ ->
                     ( model, Cmd.none )
         ActivateFilter (x) ->
                         case model of
                 Success m ->
-                    ( Success <| { data = m.data, xAAFunction = m.xAAFunction, yAAFunction = m.yAAFunction, xName = m.xName, yName = m.yName, filterNation = m.filterNation, onOff = x, filterClub = m.filterClub, onOff2 = m.onOff2, selectedValue1 = 1, selectedValue2 = 2 }, Cmd.none )
+                    ( Success <| { data = m.data, xAAFunction = m.xAAFunction, yAAFunction = m.yAAFunction, xName = m.xName, yName = m.yName, filterNation = m.filterNation, onOff = x, filterClub = m.filterClub, onOff2 = m.onOff2, selectedValue1 = m.selectedValue1, selectedValue2 = m.selectedValue2}, Cmd.none )
 
                 _ ->
                     ( model, Cmd.none )
@@ -162,14 +162,14 @@ update msg model =
         ChangeClub (x) ->
             case model of
                 Success m ->
-                    ( Success <| { data = m.data, xAAFunction = m.xAAFunction, yAAFunction = m.yAAFunction, xName = m.xName, yName = m.yName, filterNation = m.filterNation, onOff = m.onOff, filterClub = x, onOff2 = m.onOff2, selectedValue1 = 1, selectedValue2 = 2 }, Cmd.none )
+                    ( Success <| { data = m.data, xAAFunction = m.xAAFunction, yAAFunction = m.yAAFunction, xName = m.xName, yName = m.yName, filterNation = m.filterNation, onOff = m.onOff, filterClub = x, onOff2 = m.onOff2, selectedValue1 = m.selectedValue1, selectedValue2 = m.selectedValue2}, Cmd.none )
 
                 _ ->
                     ( model, Cmd.none )
         ActivateFilter2 (x) ->
                         case model of
                 Success m ->
-                    ( Success <| { data = m.data, xAAFunction = m.xAAFunction, yAAFunction = m.yAAFunction, xName = m.xName, yName = m.yName, filterNation = m.filterNation, onOff = m.onOff, filterClub = m.filterClub, onOff2 = x, selectedValue1 = 1, selectedValue2 = 2 }, Cmd.none )
+                    ( Success <| { data = m.data, xAAFunction = m.xAAFunction, yAAFunction = m.yAAFunction, xName = m.xName, yName = m.yName, filterNation = m.filterNation, onOff = m.onOff, filterClub = m.filterClub, onOff2 = x, selectedValue1 = m.selectedValue1, selectedValue2 = m.selectedValue2}, Cmd.none )
 
                 _ ->
                     ( model, Cmd.none )
@@ -251,7 +251,7 @@ scatterplot model =
             .point circle { stroke: rgba(0, 0, 155,0.05); fill: rgba(0, 0, 155,0.1); }
             .point text { display: none; }
             .point:hover circle { stroke: rgba(0, 0, 0,1.0); fill: rgb(118, 214, 78); }
-            .point:hover text { display: inline; }
+            .point:hover text { display: inline; text-shadow: 2px 2px rgb(255,255,255); fill: rgb(0,0,0); }
             
           """ ]
         , g [ transform [ Translate 60 390 ] ]
@@ -260,7 +260,7 @@ scatterplot model =
                 [ x 360 --(Scale.convert xScaleLocal labelPositions.x)
                 , y 35
 
-                -- , fontFamily [ "Helvetica", "sans-serif" ]
+                , fontFamily [ "sans-serif" ]
                 , fontSize (px 20)
 
                 --, fontWeight FontWeightBold
@@ -273,7 +273,7 @@ scatterplot model =
                 [ x -30
                 , y -30
 
-                -- , fontFamily [ "Helvetica", "sans-serif" ]
+                , fontFamily [ "sans-serif" ]
                 , fontSize (px 20)
 
                 --, fontWeight FontWeightBold
@@ -291,7 +291,7 @@ point scaleX scaleY xyPoint pointList=
     g
         [ class [ "point" ]
         , fontSize <| Px 15.0
-        , fontFamily [ "serif" ]
+        , fontFamily [ "sans-serif" ]
         , transform
             [ Translate
                 (Scale.convert scaleX xyPoint.x)
@@ -512,7 +512,7 @@ view model =
                 ul [][
                 Html.text <| "Da der Datensatz sehr groß ist kann das Textfeld genutzt werden um nach Nationen zu filtern."]
                 ,ul[][
-                Html.text <| "Um dies zu aktivieren muss die Box angeklickt werden (Wenn eine neue Nation eingegeben wird, die Checkbox einmal deaktivieren und wieder reaktivieren)."]
+                Html.text <| "Um dies zu aktivieren muss die Box angeklickt werden."]
                 ,ul[][  
                 input [ placeholder "Select Nation to Filter", value l.filterNation, onInput ChangeNation ] []
                 ,input [ type_ "checkbox", onCheck ActivateFilter ] []
