@@ -1,6 +1,8 @@
-# Visualisierungsprojekt mit Daten des Videospiels FIFA19
+# Visualisierungsprojekt mit Daten des Videospiels FIFA21
 Bei diesem Projekt handelt es sich um ein Visualisierungsprojekt in der Sprache ELM zum Modul Informationsvisualisierung 
 im SoSe 2021 an der Martin-Luther-Universität Halle-Wittenberg
+
+Das Git-Repository trägt den Namen Visualisierung FIFA19 da ursprünglich mit Daten des Spiels FIFA19 gearbeitet wurde.
 ## Installation
 Zum lokalen austesten des Projekts muss der Befehl 'elm make' im Terminal ausgeführt werden.
 Anschließend kann das Projekt unter http://localhost:8000/ aufgerufen werden.
@@ -22,7 +24,7 @@ Für das Projekt werden die folgenden ELM Pakete benötigt:
 - [zwilias/elm-reorderable](https://package.elm-lang.org/packages/zwilias/elm-reorderable/latest/)
 
 ## Daten
-Die [Daten](https://www.kaggle.com/karangadiya/fifa19) entstammen der Plattform Kaggle und wurden, wie für die jeweilige Visualisierung nötig modifiziert.
+Die [Daten](https://kaggle.com/ekrembayar/fifa-21-complete-player-dataset) entstammen der Plattform Kaggle und wurden, wie für die jeweilige Visualisierung nötig modifiziert.
 
 ## Projektvorschau
-Eine Vorschau des Projekts ist unter folgendem Link zu finden: Link!!
+Eine Vorschau des Projekts ist unter folgendem Link zu finden: https://johanneslange.github.io/Visualisierung_FIFA19/
