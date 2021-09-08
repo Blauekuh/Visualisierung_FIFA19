@@ -1,4 +1,4 @@
-module Development.TestScatterplot01Filter exposing (..)
+module Development.Scatterplot exposing (..)
 
 import Axis
 import Browser
@@ -62,7 +62,7 @@ init _ =
 getRandomCatGif : (Result Http.Error String -> Msg) -> Cmd Msg
 getRandomCatGif x =
                 Http.get
-                    { url = "https://raw.githubusercontent.com/JohannesLange/Visualisierung_FIFA19/master/data/spData2000.csv"
+                    { url = "https://raw.githubusercontent.com/JohannesLange/Visualisierung_FIFA19/master/data/spData.csv"
                     , expect = Http.expectString x
                     }
 
@@ -78,7 +78,7 @@ csvString_to_data csvRaw =
 
 
 type alias Footballer =
-    { name : String, age : Float, overall : Float, potential : Float, height : Float, nationality : String, club : String }
+    { name : String, age : Float, overall : Float, potential : Float, height : Float, nationality : String, club : String, weight : Float, wage : Float, value : Float}--, bp : String }
 
 
 decodeFootballer : Csv.Decode.Decoder ( Footballer -> a) a
@@ -91,6 +91,10 @@ decodeFootballer =
             |> Csv.Decode.andMap (Csv.Decode.field "Height" (String.toFloat >> Result.fromMaybe "error parsing string"))
             |> Csv.Decode.andMap (Csv.Decode.field "Nationality" Ok)
             |> Csv.Decode.andMap (Csv.Decode.field "Club" Ok)
+            |> Csv.Decode.andMap (Csv.Decode.field "Weight" (String.toFloat >> Result.fromMaybe "error parsing string"))
+            |> Csv.Decode.andMap (Csv.Decode.field "Wage" (String.toFloat >> Result.fromMaybe "error parsing string"))
+            |> Csv.Decode.andMap (Csv.Decode.field "Value" (String.toFloat >> Result.fromMaybe "error parsing string"))
+            --|> Csv.Decode.andMap (Csv.Decode.field "BP" Ok)
         )
 
 
@@ -244,7 +248,7 @@ scatterplot model =
     in
     svg [ viewBox 0 0 w h, TypedSvg.Attributes.width <| TypedSvg.Types.Percent 80, TypedSvg.Attributes.height <| TypedSvg.Types.Percent 80 ]
         [ style [] [ TypedSvg.Core.text """
-            .point circle { stroke: rgba(0, 0, 155,0.05); fill: rgba(0, 0, 155,0.05); }
+            .point circle { stroke: rgba(0, 0, 155,0.05); fill: rgba(0, 0, 155,0.1); }
             .point text { display: none; }
             .point:hover circle { stroke: rgba(0, 0, 0,1.0); fill: rgb(118, 214, 78); }
             .point:hover text { display: inline; }
@@ -443,6 +447,16 @@ view model =
                         "✓ "
                     else 
                         ""
+                v5 =
+                    if l.selectedValue1 == 5  then 
+                        "✓ "
+                    else 
+                        ""
+                v6 =
+                    if l.selectedValue1 == 6  then 
+                        "✓ "
+                    else 
+                        ""
                 v21 =
                     if l.selectedValue2 == 1 then 
                         "✓ "
@@ -464,7 +478,16 @@ view model =
                         "✓ "
                     else 
                         ""
-
+                v25 =
+                    if l.selectedValue2 == 5  then 
+                        "✓ "
+                    else 
+                        ""
+                v26 =
+                    if l.selectedValue2 == 6  then 
+                        "✓ "
+                    else 
+                        ""
 
                 spieler2 =
                     filterAttribute l.data .nationality l.filterNation
@@ -503,7 +526,8 @@ view model =
                             , Html.button [ onClick (ChangeX (.potential, "Potential", 2)) ] [ Html.text (v2 ++"Potential") ]
                             , Html.button [ onClick (ChangeX (.age, "Age", 3)) ] [ Html.text (v3 ++"Age") ]
                             , Html.button [ onClick (ChangeX (.height, "Height", 4)) ] [ Html.text (v4 ++ "Height") ]
-                            
+                            , Html.button [ onClick (ChangeX (.wage, "Wage", 5)) ] [ Html.text (v5 ++ "Wage in Tausend") ]
+                            , Html.button [ onClick (ChangeX (.value, "Value", 6)) ] [ Html.text (v6 ++ "Value in Tausend") ]
                     ]
                 , ul []
                     [ 
@@ -511,8 +535,9 @@ view model =
                             , Html.button [ onClick (ChangeY (.overall, "Overall", 1)) ] [ Html.text (v21 ++"Overall") ]
                             , Html.button [ onClick (ChangeY (.potential, "Potential", 2)) ] [ Html.text (v22 ++"Potential") ]
                             , Html.button [ onClick (ChangeY (.age, "Age", 3)) ] [ Html.text (v23 ++ "Age") ]
-                            , Html.button [ onClick (ChangeY (.height, "Height", 4)) ] [ Html.text (v24 ++"Height") ]
-                            
+                            , Html.button [ onClick (ChangeY (.height, "Height",4)) ] [ Html.text (v24 ++"Height") ]
+                            , Html.button [ onClick (ChangeY (.wage, "Wage", 5)) ] [ Html.text (v25 ++ "Wage in Tausend") ]
+                            , Html.button [ onClick (ChangeY (.value, "Value", 6)) ] [ Html.text (v26 ++ "Value in Tausend") ]
                     ]
                            
                 --  , Html.input [ Html.Attributes.placeholder "Age", Html.Attributes.value model.content, onInput Change ]

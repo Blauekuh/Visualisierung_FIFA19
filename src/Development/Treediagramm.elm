@@ -1,4 +1,4 @@
-module Development.Tree01 exposing (..)
+module Development.TreeDiagramm exposing (..)
 
 import Axis
 import Browser
@@ -19,7 +19,7 @@ import TypedSvg exposing (circle, g, line, path, rect, style, svg, text_)
 import TypedSvg.Attributes exposing (class, d, fill, fontFamily, fontSize, stroke, strokeWidth, textAnchor, transform, viewBox)
 import TypedSvg.Attributes.InPx exposing (cx, cy, height, r, width, x, x1, x2, y, y1, y2)
 import TypedSvg.Core exposing (Svg)--, text)
-import TypedSvg.Types as ST exposing (AnchorAlignment(..), Length(..), Paint(..), Transform(..))
+import TypedSvg.Types as ST exposing (AnchorAlignment(..), Length(..), Paint(..), Transform(..), px)
 
 
 
@@ -180,8 +180,8 @@ drawNode n =
         []
         [ circle 
             [ r 16
-            , stroke (Paint Color.black)
-            , fill (Paint Color.white)
+            , stroke (Paint Color.purple)
+            , fill (Paint Color.purple)
             , cx 0
             , cy 0
             
@@ -189,8 +189,10 @@ drawNode n =
             []
         , text_ 
             [ textAnchor AnchorStart
+            , fontFamily [ "Calibri", "sans-serif" ]
+                        --, fontSize (px 15)
             , transform 
-                [ Translate 5.5 20.5 
+                [ Translate 5.5 22.5 
                 , Rotate 25.0 0.0 0.0
                 ]
             ] 
@@ -218,16 +220,6 @@ type alias Ligen =
     {name : String
     ,team : String}
 
-
-ligenListe : List Ligen
-ligenListe =
-    [Ligen "Premier League" "Chelsea"
-    ,Ligen "Premier League" "Tottenham"
-    ,Ligen "Calcio A" "Juventus"]
-
---clubCombiner : List String -> List Footballer ->List Mannschaft
---clubCombiner x y =
---    List.map (\n -> Mannschaft n (List.filterMap (\b ->b.club == n)y )) x
 
 clubCombiner : String -> List Footballer -> String -> Mannschaft
 clubCombiner x y z =
@@ -286,7 +278,7 @@ treeDecoder2 =
                         Nothing ->
                             TreeDiagram.node (name) c
                         Just a ->
-                            TreeDiagram.node (name++ ", Anzahl Spieler im Team: " ++String.fromInt(a)) c
+                            TreeDiagram.node (name++ ", Anzahl der Spieler: " ++String.fromInt(a)) c
         )               
         (Decode.field ("name") Decode.string) 
         (Decode.maybe <|
@@ -351,18 +343,49 @@ treeDecoder2 =
 listeCalcio : List String        
 listeCalcio =
     ["Juventus",
-     "Napoli",
-     "Milan",
-     "Inter",
-     "Lazio",
-     "Roma"]
+    "Napoli",
+    "Milan",
+    "Inter",
+    "Lazio",
+    "Roma",
+    "Atalanta",
+    "Sassuolo",
+    "Sampdoria",
+    "Hellas Verona",
+    "Genoa",
+    "Bologna",
+    "Fiorentina",
+    "Udinese",
+    "Spezia",
+    "Cagliari",
+    "Torino",
+    "Benevento",
+    "Crotone",
+    "Parma"]
 
 
 listePremier : List String
 listePremier =
-    ["Chelsea",
-     "West Ham United"
-     
+    ["Arsenal",
+    "Aston Villa",
+    "Brighton & Hove Albion",
+    "Burnley",
+    "Chelsea",
+    "Crystal Palace",
+    "Everton",
+    "Fulham",
+    "Leeds United",
+    "Leicester City",
+    "Liverpool",
+    "Manchester City",
+    "Manchester United",
+    "Sheffield United",
+    "Newcastle United",
+    "Southampton",
+    "Tottenham Hotspur",
+    "West Bromwich Albion",
+    "West Ham United",
+    "Wolverhampton Wanderers"
      ]
 
 listeBundes : List String
@@ -423,7 +446,7 @@ type alias TreeLayout =
 
 
 newTreelayout =
-    TreeLayout topToBottom 250 80 80 120
+    TreeLayout topToBottom 150 80 70 120
 
 
 filterAttribute : List Footballer -> (Footballer -> String) -> String -> List Footballer
@@ -459,18 +482,26 @@ view model =
                         Html.div []
                             [   
                             ul [][
-                                Html.text <| "Um dies zu aktivieren muss die Box angeklickt werden (Wenn eine neue Nation eingegeben wird, die Checkbox einmal deaktivieren und wieder reaktivieren)."]
+                                Html.text <| "Im Testfeld kann nach Positionen der Spieler gefiltert werden."
+                            ]
+                            ,ul[][
+                                Html.text <| "Um dies zu aktivieren muss die Box angeklickt werden."
+                            ]
+                            
                             ,ul[][  
                                 input [ placeholder "Select Position to filter", value l.position, onInput ChangePosition ] []
                                 ,input [ type_ "checkbox", onCheck ActivateFilter ] []]
+                            ,ul[][
+                                Html.text <| "Positionen zur Auswahl: GK, CB, LB, RB, CDM, CM, CAM, LW, RW, LM, RM, CF, ST"
+                                ]
                             ,ul[][    
-                                 li [] [
-                                    Html.text <| "Set X Value"
+                                
+                                    Html.text <| "Wähle eine Liga aus:"
                                     , Html.button [ onClick (ChangeLiga ("Calcio A",listeCalcio)) ] [ Html.text "Calcio A" ]
                                     , Html.button [ onClick (ChangeLiga ("Premier League",listePremier)) ] [ Html.text "Premier League" ]
                                     , Html.button [ onClick (ChangeLiga ("Bundesliga",listeBundes)) ] [ Html.text "Bundesliga" ]
                                     , Html.button [ onClick (ChangeLiga ("La Liga",listeBbva)) ] [ Html.text "La Liga" ]
-                                        ]
+                                
                                 ]   
                             ,ul[][
                              TreeDiagram.Svg.draw newTreelayout drawNode drawLine schools]

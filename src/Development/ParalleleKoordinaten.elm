@@ -1,4 +1,4 @@
-module Development.ParalleleKoordinaten01 exposing (..)
+module Development.ParalleleKoordinaten exposing (..)
 
 
 import Axis
@@ -64,7 +64,7 @@ init _ =
 getRandomCatGif : (Result Http.Error String -> Msg) -> Cmd Msg
 getRandomCatGif x =
                 Http.get
-                    { url = "https://raw.githubusercontent.com/JohannesLange/Visualisierung_FIFA19/master/data/data1000.csv"
+                    { url = "https://raw.githubusercontent.com/JohannesLange/Visualisierung_FIFA19/master/data/pkData.csv"
                     , expect = Http.expectString x
                     }
 
@@ -79,7 +79,19 @@ csvString_to_data csvRaw =
 
 
 type alias Footballer =
-    { name : String, age : Float, overall : Float, potential : Float, nationality: String }
+    { name : String, 
+    age : Float, 
+    overall : Float, 
+    potential : Float, 
+    nationality: String, 
+    height: Float, 
+    position: String,  
+    pace: Float, 
+    shooting: Float, 
+    passing: Float,
+    dribbling: Float,
+    defending: Float,
+    physical: Float}
 
 
 decodeFootballer : Csv.Decode.Decoder (Footballer -> a) a
@@ -87,9 +99,17 @@ decodeFootballer =
     Csv.Decode.map Footballer
         (Csv.Decode.field "Name" Ok 
             |> Csv.Decode.andMap (Csv.Decode.field "Age" (String.toFloat >> Result.fromMaybe "error parsing string"))
-            |> Csv.Decode.andMap (Csv.Decode.field "Overall" (String.toFloat >> Result.fromMaybe "error parsing string"))
-            |> Csv.Decode.andMap (Csv.Decode.field "Potential" (String.toFloat >> Result.fromMaybe "error parsing string"))
+            |> Csv.Decode.andMap (Csv.Decode.field "OVA" (String.toFloat >> Result.fromMaybe "error parsing string"))
+            |> Csv.Decode.andMap (Csv.Decode.field "POT" (String.toFloat >> Result.fromMaybe "error parsing string"))
             |> Csv.Decode.andMap (Csv.Decode.field "Nationality" Ok)
+            |> Csv.Decode.andMap (Csv.Decode.field "Height" (String.toFloat >> Result.fromMaybe "error parsing string"))
+            |> Csv.Decode.andMap (Csv.Decode.field "BP" Ok)
+            |> Csv.Decode.andMap (Csv.Decode.field "PAC" (String.toFloat >> Result.fromMaybe "error parsing string"))
+            |> Csv.Decode.andMap (Csv.Decode.field "SHO" (String.toFloat >> Result.fromMaybe "error parsing string"))
+            |> Csv.Decode.andMap (Csv.Decode.field "PAS" (String.toFloat >> Result.fromMaybe "error parsing string"))
+            |> Csv.Decode.andMap (Csv.Decode.field "DRI" (String.toFloat >> Result.fromMaybe "error parsing string"))
+            |> Csv.Decode.andMap (Csv.Decode.field "DEF" (String.toFloat >> Result.fromMaybe "error parsing string"))
+            |> Csv.Decode.andMap (Csv.Decode.field "PHY" (String.toFloat >> Result.fromMaybe "error parsing string"))
         )
 
 type Msg
@@ -299,7 +319,7 @@ parallelCoodinatesPlot w ar model =
                                 , TypedSvg.Attributes.textAnchor AnchorMiddle
                                 ]
                                 [ TypedSvg.Core.text (name ++ (String.concat<|(List.map2(\a b-> ", " ++b++ ": "++ (String.fromFloat a))p descri))) ]
-                                --[ TypedSvg.Core.text (name ++ (String.concat descri)) ]
+                                
                         ]
                 in
                 model.data
@@ -343,33 +363,57 @@ view model =
                     ul []
                     [ li [] [
                             Html.text <| "Set first coloumn value: "
-                            , Html.button [ onClick (Change1 (.overall, "Overall")) ] [ Html.text "Overall" ]
-                            , Html.button [ onClick (Change1 (.potential, "Potential")) ] [ Html.text "Potential" ]
+                            , Html.button [ onClick (Change1 (.overall, "OVA")) ] [ Html.text "Overall" ]
+                            , Html.button [ onClick (Change1 (.potential, "POT")) ] [ Html.text "Potential" ]
                             , Html.button [ onClick (Change1 (.age, "Age")) ] [ Html.text "Age" ]
+                            , Html.button [ onClick (Change1 (.pace, "PAC")) ] [ Html.text "Pace" ]
+                            , Html.button [ onClick (Change1 (.shooting, "SHO")) ] [ Html.text "Shooting" ]
+                            , Html.button [ onClick (Change1 (.passing, "PAS")) ] [ Html.text "Passing" ]
+                            , Html.button [ onClick (Change1 (.dribbling, "DRI")) ] [ Html.text "Dribbling" ]
+                            , Html.button [ onClick (Change1 (.defending, "DEF")) ] [ Html.text "Defending" ]
+                            , Html.button [ onClick (Change1 (.physical, "PHY")) ] [ Html.text "Physical" ]
                             ]
                     ]
                 , ul []
                     [ li [] [
                             Html.text <| "Set second coloumn value: "
-                            , Html.button [ onClick (Change2 (.overall, "Overall")) ] [ Html.text "Overall" ]
-                            , Html.button [ onClick (Change2 (.potential, "Potential")) ] [ Html.text "Potential" ]
+                            , Html.button [ onClick (Change2 (.overall, "OVA")) ] [ Html.text "Overall" ]
+                            , Html.button [ onClick (Change2 (.potential, "POT")) ] [ Html.text "Potential" ]
                             , Html.button [ onClick (Change2 (.age, "Age")) ] [ Html.text "Age" ]
+                            , Html.button [ onClick (Change2 (.pace, "PAC")) ] [ Html.text "Pace" ]
+                            , Html.button [ onClick (Change2 (.shooting, "SHO")) ] [ Html.text "Shooting" ]
+                            , Html.button [ onClick (Change2 (.passing, "PAS")) ] [ Html.text "Passing" ]
+                            , Html.button [ onClick (Change2 (.dribbling, "DRI")) ] [ Html.text "Dribbling" ]
+                            , Html.button [ onClick (Change2 (.defending, "DEF")) ] [ Html.text "Defending" ]
+                            , Html.button [ onClick (Change2 (.physical, "PHY")) ] [ Html.text "Physical" ]
                             ]
                     ]
                 ,ul []
                     [ li [] [
                             Html.text <| "Set third coloumn value: "
-                            , Html.button [ onClick (Change3 (.overall, "Overall")) ] [ Html.text "Overall" ]
-                            , Html.button [ onClick (Change3 (.potential, "Potential")) ] [ Html.text "Potential" ]
+                            , Html.button [ onClick (Change3 (.overall, "OVA")) ] [ Html.text "Overall" ]
+                            , Html.button [ onClick (Change3 (.potential, "POT")) ] [ Html.text "Potential" ]
                             , Html.button [ onClick (Change3 (.age, "Age")) ] [ Html.text "Age" ]
+                            , Html.button [ onClick (Change3 (.pace, "PAC")) ] [ Html.text "Pace" ]
+                            , Html.button [ onClick (Change3 (.shooting, "SHO")) ] [ Html.text "Shooting" ]
+                            , Html.button [ onClick (Change3 (.passing, "PAS")) ] [ Html.text "Passing" ]
+                            , Html.button [ onClick (Change3 (.dribbling, "DRI")) ] [ Html.text "Dribbling" ]
+                            , Html.button [ onClick (Change3 (.defending, "DEF")) ] [ Html.text "Defending" ]
+                            , Html.button [ onClick (Change3 (.physical, "PHY")) ] [ Html.text "Physical" ]
                             ]
                     ]
                 , ul []
                     [ li [] [
                             Html.text <| "Set fourth coloumn value: "
-                            , Html.button [ onClick (Change4 (.overall, "Overall")) ] [ Html.text "Overall" ]
-                            , Html.button [ onClick (Change4 (.potential, "Potential")) ] [ Html.text "Potential" ]
+                            , Html.button [ onClick (Change4 (.overall, "OVA")) ] [ Html.text "Overall" ]
+                            , Html.button [ onClick (Change4 (.potential, "POT")) ] [ Html.text "Potential" ]
                             , Html.button [ onClick (Change4 (.age, "Age")) ] [ Html.text "Age" ]
+                            , Html.button [ onClick (Change4 (.pace, "PAC")) ] [ Html.text "Pace" ]
+                            , Html.button [ onClick (Change4 (.shooting, "SHO")) ] [ Html.text "Shooting" ]
+                            , Html.button [ onClick (Change4 (.passing, "PAS")) ] [ Html.text "Passing" ]
+                            , Html.button [ onClick (Change4 (.dribbling, "DRI")) ] [ Html.text "Dribbling" ]
+                            , Html.button [ onClick (Change4 (.defending, "DEF")) ] [ Html.text "Defending" ]
+                            , Html.button [ onClick (Change4 (.physical, "PHY")) ] [ Html.text "Physical" ]
                             ]
                     ]        
                     ,parallelCoodinatesPlot 600 2 plotDaten
