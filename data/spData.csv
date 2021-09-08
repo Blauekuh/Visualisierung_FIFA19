@@ -228,7 +228,7 @@
 306,Victor Valdés,34,Middlesbrough,82,82,183,172,Spain,GK,81,78,75,83,42,84,40,13000
 479,V. Kompany,33,RSC Anderlecht,82,82,190,187,Belgium,CB,50,53,68,63,83,78,29,10500
 569,Dani Alves,35,Paris Saint-Germain,82,82,173,150,Brazil,CAM,76,71,82,85,76,66,60,4800
-571,Santi Cazorla,35,Spain,82,82,168,143,Spain,CM,62,79,85,85,66,60,0,0
+571,Santi Cazorla,35,Spain,82,82,168,143,Spain,CM,62,79,85,85,66,60,1,0
 737,Raúl Albiol,34,Villarreal CF,82,82,188,163,Spain,CB,45,41,62,63,86,75,41,8000
 970,Diego Alves,31,Valencia CF,82,82,188,183,Brazil,GK,86,75,76,85,54,76,30,16000
 1062,I. Rakitic,32,Sevilla FC,82,82,183,172,Croatia,CM,61,79,85,78,75,69,39,17000
@@ -294,7 +294,7 @@
 5,Iniesta,36,Vissel Kobe,81,81,170,150,Spain,CAM,58,70,85,85,63,59,12,5500
 102,S. Eto'o,36,Atiker Konyaspor,81,81,178,165,Cameroon,ST,74,82,74,78,37,70,20,6500
 123,S. Gerrard,36,LA Galaxy,81,81,183,183,England,CM,54,81,83,75,67,75,10,1400
-171,D. Drogba,38,,81,81,188,176,Ivory Coast,ST,64,82,67,74,36,78,0,0
+171,D. Drogba,38,,81,81,188,176,Ivory Coast,ST,64,82,67,74,36,78,1,0
 214,P. Cech,36,Arsenal,81,81,196,198,Czech Republic,GK,77,82,68,79,37,83,60,2400
 305,Aduriz,38,Athletic Club de Bilbao,81,81,183,172,Spain,ST,59,81,65,73,49,75,27,6500
 335,J. Mathieu,35,Sporting CP,81,81,188,185,France,CB,68,65,71,62,83,81,13,5500
@@ -376,11 +376,11 @@
 8228,M. Dmitrovic,28,SD Eibar,81,82,193,207,Serbia,GK,78,80,79,82,37,81,30,15000
 8295,C. Pulisic,21,Chelsea,81,87,178,152,United States,RM,89,70,72,85,37,59,83,24500
 8822,B. Chilwell,23,Chelsea,81,85,178,170,England,LB,76,52,74,78,77,75,79,20500
-8895,Juiano Mestres,24,Brazil,81,81,180,181,Brazil,CB,71,61,57,62,82,80,0,0
+8895,Juiano Mestres,24,Brazil,81,81,180,181,Brazil,CB,71,61,57,62,82,80,1,0
 8913,Adryan Zonta,28,Brazil,81,81,173,150,Brazil,LWB,93,66,75,76,72,77,48,15000
 8914,Rosberto Dourado,20,Atlético Mineiro,81,81,175,154,Brazil,CDM,77,57,74,76,82,68,31,17500
 8930,Louri Beretta,28,Atlético Mineiro,81,81,188,183,Brazil,ST,78,84,62,72,33,71,53,18500
-8951,Welington Dano,20,Brazil,81,81,178,152,Brazil,LB,79,54,76,78,75,74,0,0
+8951,Welington Dano,20,Brazil,81,81,178,152,Brazil,LB,79,54,76,78,75,74,1,0
 8969,Nuno Padrenda,24,Brazil,81,81,180,165,Brazil,CAM,82,73,77,82,52,70,43,19500
 8991,Oswaldinato,28,Brazil,81,81,183,174,Brazil,ST,76,81,67,77,20,78,56,18500
 9371,Richarlison,23,Everton,81,88,180,157,Brazil,ST,83,78,72,81,50,80,90,25500
@@ -403,9 +403,9 @@
 212,Júlio César,37,SL Benfica,80,80,185,174,Brazil,GK,83,77,62,81,41,77,9,1000
 223,T. Motta,34,Paris Saint-Germain,80,80,188,181,Italy,CDM,29,62,76,67,76,80,80,4500
 269,P. Mertesacker,32,Arsenal,80,80,198,198,Germany,CB,26,41,55,47,84,69,110,8500
-395,Jefferson,33,Brazil,80,80,188,198,Brazil,GK,78,79,71,82,43,78,0,0
+395,Jefferson,33,Brazil,80,80,188,198,Brazil,GK,78,79,71,82,43,78,1,0
 443,J. Milner,34,Liverpool,80,80,175,154,England,CDM,58,70,82,77,77,77,94,7000
-445,Kaká,35,,80,80,185,183,Brazil,CAM,62,76,79,78,30,58,0,0
+445,Kaká,35,,80,80,185,183,Brazil,CAM,62,76,79,78,30,58,1,0
 467,Nani,33,Orlando City SC,80,80,178,154,Portugal,LW,72,76,79,85,37,67,13,9000
 568,Xabi Prieto,33,Real Sociedad,80,80,188,168,Spain,CM,48,75,84,75,46,60,40,8500
 579,Juanfran,33,Atlético Madrid,80,80,180,157,Spain,RB,79,58,74,76,76,76,50,5500
@@ -538,16 +538,16 @@
 11922,N. Vlašic,22,PFC CSKA Moscow,80,86,178,174,Croatia,CAM,83,75,76,82,48,71,47,20500
 12095,D. Livakovic,25,Dinamo Zagreb,80,86,188,174,Croatia,GK,80,78,74,82,55,79,0.5,15000
 13014,V. Tsygankov,22,Dynamo Kyiv,80,86,175,157,Ukraine,CAM,85,73,78,80,45,57,0.5,20500
-13333,J. Serendero,32,Uruguay,80,80,190,187,Uruguay,GK,78,81,77,77,42,80,0,0
-13338,J. Frendado,36,Uruguay,80,80,180,181,Uruguay,CB,71,61,57,62,82,75,0,0
-13339,M. Baldona,36,Uruguay,80,80,178,165,Uruguay,CDM,68,62,74,76,78,77,0,0
-13343,S. Ardero,32,Uruguay,80,80,170,139,Uruguay,CAM,82,72,77,83,26,51,0,0
-13344,L. Dálves,28,Uruguay,80,80,188,183,Uruguay,ST,80,82,60,71,34,75,0,0
-13346,M. Nérez,32,Uruguay,80,80,178,152,Uruguay,LB,79,54,75,78,76,74,0,0
-13347,E. Schetino,28,Uruguay,80,80,185,176,Uruguay,CB,80,43,56,65,82,76,0,0
-13348,J. Sildero,28,Uruguay,80,80,178,165,Uruguay,CAM,81,77,80,79,40,71,0,0
-14715,S. Mandíquez,31,Ecuador,80,80,188,185,Ecuador,ST,80,80,56,74,29,80,0,0
-55,Ricardo Carvalho,38,Portugal,79,79,183,174,Portugal,CB,40,47,60,56,80,66,0,0
+13333,J. Serendero,32,Uruguay,80,80,190,187,Uruguay,GK,78,81,77,77,42,80,1,0
+13338,J. Frendado,36,Uruguay,80,80,180,181,Uruguay,CB,71,61,57,62,82,75,1,0
+13339,M. Baldona,36,Uruguay,80,80,178,165,Uruguay,CDM,68,62,74,76,78,77,1,0
+13343,S. Ardero,32,Uruguay,80,80,170,139,Uruguay,CAM,82,72,77,83,26,51,1,0
+13344,L. Dálves,28,Uruguay,80,80,188,183,Uruguay,ST,80,82,60,71,34,75,1,0
+13346,M. Nérez,32,Uruguay,80,80,178,152,Uruguay,LB,79,54,75,78,76,74,1,0
+13347,E. Schetino,28,Uruguay,80,80,185,176,Uruguay,CB,80,43,56,65,82,76,1,0
+13348,J. Sildero,28,Uruguay,80,80,178,165,Uruguay,CAM,81,77,80,79,40,71,1,0
+14715,S. Mandíquez,31,Ecuador,80,80,188,185,Ecuador,ST,80,80,56,74,29,80,1,0
+55,Ricardo Carvalho,38,Portugal,79,79,183,174,Portugal,CB,40,47,60,56,80,66,1,0
 70,Casillas,38,FC Porto,79,79,185,185,Spain,GK,82,73,60,77,55,83,8,1300
 94,T. Rosický,36,Sparta Praha,79,79,178,159,Czech Republic,CAM,73,70,79,82,43,63,2,4200
 141,Quaresma,36,Vitória Guimarães,79,79,175,148,Portugal,RM,74,72,81,83,24,62,11,4200
@@ -593,8 +593,8 @@
 2105,S. Ulreich,31,FC Bayern München,79,79,193,192,Germany,GK,79,71,68,84,40,79,54,8000
 2115,M. Balotelli,29,Brescia,79,79,190,207,Italy,ST,74,82,72,78,24,74,0.5,12500
 2158,Y. M'Vila,30,Olympiacos CFP,79,79,183,176,France,CDM,65,62,74,73,75,77,0.5,10500
-2185,C. Noboa,33,Ecuador,79,79,183,165,Ecuador,CM,73,71,78,77,75,76,0,0
-2198,A. Dzyuba,31,Russia,79,79,196,201,Russia,ST,68,78,69,71,29,85,0,0
+2185,C. Noboa,33,Ecuador,79,79,183,165,Ecuador,CM,73,71,78,77,75,76,1,0
+2198,A. Dzyuba,31,Russia,79,79,196,201,Russia,ST,68,78,69,71,29,85,1,0
 2213,S. Nzonzi,31,Stade Rennais FC,79,79,196,196,France,CDM,34,55,71,68,77,86,47,9500
 2232,Alex Teixeira,30,Jiangsu Suning FC,79,79,175,159,Brazil,CAM,93,76,73,81,40,72,29,12000
 2345,F. Caputo,32,Sassuolo,79,79,180,163,Italy,ST,83,79,61,78,30,66,42,10000
@@ -650,7 +650,7 @@
 5014,Omar Mascarell,27,FC Schalke 04,79,80,180,168,Spain,CDM,63,61,72,77,75,73,31,13000
 5062,N. Aké,25,Manchester City,79,83,180,165,Netherlands,CB,74,53,70,71,81,76,100,14500
 5287,Rui Silva,26,Granada CF,79,83,190,201,Portugal,GK,78,74,75,84,30,80,23,12000
-5319,J. Quintero,27,Colombia,79,80,168,148,Colombia,CAM,71,76,81,83,39,51,0,0
+5319,J. Quintero,27,Colombia,79,80,168,148,Colombia,CAM,71,76,81,83,39,51,1,0
 5334,Samu Castillejo,25,Milan,79,80,183,148,Spain,CAM,81,73,78,82,43,52,42,15000
 5336,K. Mbabu,25,VfL Wolfsburg,79,83,183,183,Switzerland,RB,89,51,69,73,74,81,44,14500
 5359,Emerson,25,Chelsea,79,82,175,174,Italy,LWB,81,63,70,79,75,64,77,14000
@@ -667,7 +667,7 @@
 5997,Adama Traoré,24,Wolverhampton Wanderers,79,85,178,159,Spain,RM,96,66,68,87,38,81,80,17500
 6013,F. Fabra,29,Colombia,79,79,175,190,Colombia,LB,87,61,71,78,72,79,21,10500
 6020,A. Miranchuk,24,Atalanta,79,84,183,163,Russia,CAM,75,70,78,80,31,62,50,17000
-6063,W. Barrios,26,Colombia,79,84,178,163,Colombia,CDM,73,38,66,69,79,84,0,0
+6063,W. Barrios,26,Colombia,79,84,178,163,Colombia,CDM,73,38,66,69,79,84,1,0
 6169,D. Benedetto,30,Olympique de Marseille,79,79,178,176,Argentina,ST,77,80,67,75,38,75,48,12000
 6172,M. Casco,32,River Plate,79,79,170,152,Argentina,RM,88,73,75,81,71,81,20,8000
 6288,Ayoze Pérez,26,Leicester City,79,79,178,159,Spain,RW,78,75,71,82,58,66,90,13500
@@ -738,10 +738,10 @@
 12805,Rodrygo,19,Real Madrid,79,90,175,141,Brazil,RM,87,75,70,83,32,57,90,21000
 12971,Dani Olmo,22,RB Leipzig,79,87,178,159,Spain,CAM,68,76,77,83,50,60,48,18500
 13112,Vinícius,25,SL Benfica,79,84,190,183,Brazil,ST,75,80,57,75,41,83,18,17000
-13334,E. Guichón,32,Uruguay,79,79,168,143,Uruguay,LB,87,58,70,77,74,53,0,0
-13336,R. Di Leonardo,24,Uruguay,79,79,178,165,Uruguay,RB,78,51,69,78,76,67,0,0
-13341,E. Riquero,32,Uruguay,79,79,175,154,Uruguay,CDM,81,57,72,76,78,74,0,0
-13345,L. Sáreda,28,Uruguay,79,79,185,176,Uruguay,GK,81,75,71,82,60,77,0,0
+13334,E. Guichón,32,Uruguay,79,79,168,143,Uruguay,LB,87,58,70,77,74,53,1,0
+13336,R. Di Leonardo,24,Uruguay,79,79,178,165,Uruguay,RB,78,51,69,78,76,67,1,0
+13341,E. Riquero,32,Uruguay,79,79,175,154,Uruguay,CDM,81,57,72,76,78,74,1,0
+13345,L. Sáreda,28,Uruguay,79,79,185,176,Uruguay,GK,81,75,71,82,60,77,1,0
 69,F. Lampard,38,New York City FC,78,78,183,196,England,CM,43,80,80,73,58,68,8,575
 91,R. van Persie,34,Feyenoord,78,78,188,157,Netherlands,CAM,54,80,76,80,34,57,20,5500
 320,Moyá,36,Real Sociedad,78,78,188,183,Spain,GK,82,72,80,78,39,79,15,1700
@@ -786,7 +786,7 @@
 1815,Víctor Díaz,32,Granada CF,78,78,183,159,Spain,RB,72,56,68,68,74,76,26,6500
 1894,P. Piatti,31,Toronto FC,78,78,163,139,Argentina,LM,83,75,75,79,47,54,11,9000
 2097,M. Musacchio,29,Milan,78,78,180,161,Argentina,CB,63,47,63,67,82,70,38,8500
-2180,I. Smolnikov,29,Russia,78,78,178,154,Russia,RB,85,61,72,73,74,75,0,0
+2180,I. Smolnikov,29,Russia,78,78,178,154,Russia,RB,85,61,72,73,74,75,1,0
 2203,P. Mamaev,28,FC Krasnodar,78,78,178,154,Russia,RW,78,74,73,79,67,66,50,10500
 2224,Rafael Carioca,31,Tigres U.A.N.L.,78,78,180,172,Brazil,CDM,69,66,77,75,73,73,44,8000
 2225,M. Suárez,32,River Plate,78,78,183,165,Argentina,CAM,76,77,76,82,45,74,21,8500
@@ -840,7 +840,7 @@
 4007,D. da Costa,26,Eintracht Frankfurt,78,79,188,196,Germany,RWB,75,56,69,72,75,82,28,10500
 4078,E. Martínez,27,Aston Villa,78,81,196,198,Argentina,GK,78,80,78,77,58,77,43,9000
 4093,L. Spinazzola,27,Roma,78,78,185,165,Italy,RWB,78,64,74,78,75,72,0.5,11000
-4196,T. Vilhena,24,Netherlands,78,82,175,154,Netherlands,CM,75,73,76,78,70,79,0,0
+4196,T. Vilhena,24,Netherlands,78,82,175,154,Netherlands,CM,75,73,76,78,70,79,1,0
 4215,Joãozinho,28,FC Krasnodar,78,78,165,134,Brazil,CAM,90,74,75,79,56,51,50,10500
 4233,L. Karius,27,1. FC Union Berlin,78,81,188,192,Germany,GK,82,72,78,81,54,76,25,9000
 4272,C. Kramer,29,Borussia Mönchengladbach,78,78,190,168,Germany,CDM,50,49,69,72,77,76,37,9000
@@ -930,7 +930,7 @@
 8624,M. Akanji,24,Borussia Dortmund,78,84,188,201,Switzerland,CB,77,47,68,71,80,76,42,13000
 8773,Rubén Alcaraz,29,Real Valladolid CF,78,78,183,179,Spain,CDM,62,73,79,71,78,81,24,10000
 8784,S. Sensi,24,Inter,78,83,168,137,Italy,CM,67,59,80,80,67,67,73,13500
-8799,A. Lunev,28,Russia,78,79,188,176,Russia,GK,79,73,65,82,56,77,0,0
+8799,A. Lunev,28,Russia,78,79,188,176,Russia,GK,79,73,65,82,56,77,1,0
 8830,P. Lees-Melou,27,OGC Nice,78,79,185,154,France,CM,68,74,78,78,68,74,37,11500
 8837,S. Serdar,23,FC Schalke 04,78,84,183,165,Germany,CM,69,72,74,80,75,79,27,14000
 8860,F. Sacko,25,Vitória Guimarães,78,83,178,150,Mali,RB,94,45,61,74,71,75,11,12000
@@ -974,9 +974,9 @@
 13055,O. Kolár,25,SK Slavia Praha,78,83,193,179,Czech Republic,GK,75,73,81,80,58,79,0.5,10000
 13056,V. Coufal,27,SK Slavia Praha,78,78,175,168,Czech Republic,RB,81,58,72,74,73,81,0.5,9000
 13169,Trincão,20,FC Barcelona,78,91,183,170,Portugal,CAM,79,73,71,83,37,69,105,20000
-13337,D. Lenzado,32,Uruguay,78,78,183,174,Uruguay,CB,70,48,60,52,79,78,0,0
-13349,E. Aguerro,32,Uruguay,78,78,175,161,Uruguay,CF,84,79,65,80,27,66,0,0
-13351,S. Luna,32,Uruguay,78,78,175,165,Uruguay,RB,80,71,71,76,72,74,0,0
+13337,D. Lenzado,32,Uruguay,78,78,183,174,Uruguay,CB,70,48,60,52,79,78,1,0
+13349,E. Aguerro,32,Uruguay,78,78,175,161,Uruguay,CF,84,79,65,80,27,66,1,0
+13351,S. Luna,32,Uruguay,78,78,175,165,Uruguay,RB,80,71,71,76,72,74,1,0
 13923,Emerson,21,Real Betis,78,88,180,174,Brazil,RB,80,62,70,73,74,76,17,15000
 13943,E. Tapsoba,21,Bayer 04 Leverkusen,78,88,193,172,Burkina Faso,CB,74,52,63,63,78,78,38,15500
 14112,Bruno Guimarães,22,Olympique Lyonnais,78,87,183,172,Brazil,CM,69,64,77,78,74,73,52,15500
@@ -996,7 +996,7 @@
 599,Luisão,37,SL Benfica,77,77,196,201,Brazil,CB,29,50,55,51,80,73,9,600
 648,A. Young,34,Inter,77,77,175,143,England,LM,69,67,74,77,74,68,79,4500
 666,Hilton,42,Montpellier HSC,77,77,180,172,Brazil,CB,33,51,67,65,81,70,20,0
-673,Y. Zhirkov,36,Russia,77,77,180,165,Russia,LB,75,70,75,77,74,70,0,0
+673,Y. Zhirkov,36,Russia,77,77,180,165,Russia,LB,75,70,75,77,74,70,1,0
 690,R. Snodgrass,32,West Ham United,77,77,183,181,Scotland,RM,62,75,79,76,47,72,40,7000
 731,R. Babel,33,Galatasaray SK,77,77,185,187,Netherlands,ST,81,79,71,79,40,74,65,5500
 755,J. Farfán,34,Lokomotiv Moscow,77,77,178,185,Peru,RM,84,74,75,75,36,75,47,4500
@@ -1013,7 +1013,7 @@
 1182,Fábio Coentrão,30,Rio Ave FC,77,77,178,146,Portugal,LM,75,66,76,79,73,73,10,8500
 1187,D. Sturridge,29,Trabzonspor,77,77,180,168,England,ST,73,78,68,76,23,59,36,9000
 1192,Naldo,36,AS Monaco,77,77,198,194,Brazil,CB,50,65,62,60,79,69,20,1800
-1275,H. Moreno,32,Mexico,77,77,183,176,Mexico,CB,59,49,64,62,79,71,0,0
+1275,H. Moreno,32,Mexico,77,77,183,176,Mexico,CB,59,49,64,62,79,71,1,0
 1307,C. Bravo,37,Real Betis,77,77,183,176,Chile,GK,77,76,84,77,56,75,12,900
 1363,Matheus,37,Shijiazhuang Ever Bright F.C.,77,77,175,150,Brazil,LW,87,75,64,79,36,65,9,3000
 1411,R. Gurtner,33,Amiens SC,77,77,183,181,France,GK,77,75,75,78,43,77,6,4800
@@ -1107,7 +1107,7 @@
 3428,D. D'Ambrosio,31,Inter,77,77,180,165,Italy,RB,70,56,67,71,78,70,72,6500
 3533,Sergi Gómez,28,Sevilla FC,77,78,185,176,Spain,CB,62,40,64,61,78,74,26,8500
 3587,L. Unnerstall,29,PSV,77,78,198,227,Germany,GK,77,76,73,78,33,75,15,7000
-3619,M. Ozdoev,27,Russia,77,78,183,172,Russia,CDM,75,70,72,77,73,76,0,0
+3619,M. Ozdoev,27,Russia,77,78,183,172,Russia,CDM,75,70,72,77,73,76,1,0
 3641,S. Rode,29,Eintracht Frankfurt,77,77,180,157,Germany,CDM,68,64,71,73,76,77,27,7500
 3660,T. Horn,27,1. FC Köln,77,80,193,198,Germany,GK,78,78,60,79,48,73,21,8000
 3710,Pedro Mendes,29,Montpellier HSC,77,77,185,172,Portugal,CB,67,36,50,62,79,80,31,7500
@@ -1281,15 +1281,15 @@
 12736,J. David,20,LOSC Lille,77,88,178,170,Canada,ST,85,76,69,78,25,66,29,15500
 12940,Jovane Cabral,22,Sporting CP,77,87,175,159,Cape Verde,CAM,87,73,71,81,35,66,14,14500
 13301,O. Abdulrahman,26,Al Hilal,77,78,173,132,United Arab Emirates,CAM,80,70,77,79,33,50,40,10500
-13335,J. Herrería,32,Uruguay,77,77,175,157,Uruguay,RB,76,48,69,75,74,70,0,0
-13340,L. Baezo,32,Uruguay,77,77,188,194,Uruguay,CDM,71,70,69,71,78,83,0,0
-13342,F. Contedo,36,Uruguay,77,77,175,157,Uruguay,CAM,80,73,76,77,27,59,0,0
-13352,V. Castro,28,Uruguay,77,77,188,187,Uruguay,CDM,72,62,74,69,75,81,0,0
+13335,J. Herrería,32,Uruguay,77,77,175,157,Uruguay,RB,76,48,69,75,74,70,1,0
+13340,L. Baezo,32,Uruguay,77,77,188,194,Uruguay,CDM,71,70,69,71,78,83,1,0
+13342,F. Contedo,36,Uruguay,77,77,175,157,Uruguay,CAM,80,73,76,77,27,59,1,0
+13352,V. Castro,28,Uruguay,77,77,188,187,Uruguay,CDM,72,62,74,69,75,81,1,0
 13577,M. Greenwood,18,Manchester United,77,89,180,154,England,CAM,81,78,71,78,39,67,33,14500
 13584,S. Chukwueze,21,Villarreal CF,77,86,173,154,Nigeria,LM,88,72,66,84,36,58,23,14000
 13834,M. Ihattaren,18,PSV,77,88,183,165,Netherlands,CAM,75,68,76,83,41,64,7,14000
 13982,D. Kulusevski,20,Juventus,77,87,185,165,Sweden,LM,81,69,75,78,56,75,54,14500
-14713,K. Berlaso,32,Ecuador,77,77,173,152,Ecuador,RB,78,56,69,77,72,68,0,0
+14713,K. Berlaso,32,Ecuador,77,77,173,152,Ecuador,RB,78,56,69,77,72,68,1,0
 46,Eliseu,33,SL Benfica,76,76,175,181,Portugal,LB,76,72,69,73,74,78,15,3000
 88,A. Cassano,33,Sampdoria,76,76,175,176,Italy,CAM,38,72,84,81,16,46,40,3400
 121,J. Terry,36,Aston Villa,76,76,188,198,England,CB,34,47,57,50,77,73,30,1000
@@ -1336,7 +1336,7 @@
 1286,Joselu,30,Deportivo Alavés,76,76,193,176,Spain,ST,56,77,67,71,30,71,26,7500
 1328,V. Odjidja-Ofoe,31,KAA Gent,76,76,183,174,Belgium,CM,63,73,77,75,69,78,23,6500
 1372,A. Ayew,30,Swansea City,76,76,175,159,Ghana,RM,73,73,72,78,57,76,29,7500
-1388,M. Berg,33,Sweden,76,76,183,163,Sweden,ST,73,76,63,72,35,71,0,0
+1388,M. Berg,33,Sweden,76,76,183,163,Sweden,ST,73,76,63,72,35,71,1,0
 1392,A. Oukidja,31,FC Metz,76,76,183,176,Algeria,GK,76,71,65,81,46,76,15,4900
 1407,B. Ruíz,31,Sporting CP,76,76,188,172,Costa Rica,CAM,65,70,77,83,44,56,20,7000
 1437,M. Schneiderlin,30,OGC Nice,76,76,185,165,France,CDM,54,60,71,70,75,75,30,6500
@@ -1349,8 +1349,8 @@
 1667,M. Hasebe,36,Eintracht Frankfurt,76,76,180,159,Japan,CB,58,51,76,71,78,68,18,1600
 1724,Koo Ja Cheol,29,FC Augsburg,76,76,183,174,Korea Republic,CAM,67,76,73,78,59,65,30,7500
 1752,M. Cáceres,33,Fiorentina,76,76,180,172,Uruguay,CB,72,51,63,68,78,71,42,3600
-1756,Beto,38,Portugal,76,76,183,168,Portugal,GK,79,69,79,75,40,75,0,0
-1770,B. Dzsudzsák,33,Hungary,76,76,178,163,Hungary,RM,72,76,78,77,37,62,0,0
+1756,Beto,38,Portugal,76,76,183,168,Portugal,GK,79,69,79,75,40,75,1,0
+1770,B. Dzsudzsák,33,Hungary,76,76,178,163,Hungary,RM,72,76,78,77,37,62,1,0
 1784,T. Deeney,32,Watford,76,76,183,198,England,ST,55,79,67,70,37,84,21,6000
 1785,C. Clark,30,Newcastle United,76,76,185,194,Republic of Ireland,CB,51,53,53,54,78,74,34,6000
 1786,M. Albrighton,30,Leicester City,76,76,175,163,England,RM,68,68,76,77,59,67,66,7500
@@ -1378,7 +1378,7 @@
 2133,K. Asamoah,31,Inter,76,76,173,165,Ghana,CDM,71,68,76,79,77,72,74,7000
 2188,F. Smolov,30,Lokomotiv Moscow,76,76,188,176,Russia,CF,82,75,71,76,32,72,47,7500
 2202,A. Dzagoev,30,PFC CSKA Moscow,76,76,178,165,Russia,CM,72,71,74,76,70,68,40,7000
-2207,M. Isla,32,Chile,76,76,175,165,Chile,RB,77,54,73,75,72,73,0,0
+2207,M. Isla,32,Chile,76,76,175,165,Chile,RB,77,54,73,75,72,73,1,0
 2227,Maicón,28,Antalyaspor,76,76,183,161,Brazil,RM,89,70,70,73,47,72,20,8000
 2252,J. McCarthy,29,Crystal Palace,76,76,180,159,Republic of Ireland,CDM,57,60,74,73,75,66,46,6500
 2259,A. Budimir,28,RCD Mallorca,76,76,190,165,Croatia,ST,66,76,48,71,35,77,12,8000
@@ -1415,14 +1415,14 @@
 2935,M. Braithwaite,29,FC Barcelona,76,76,178,161,Denmark,ST,80,75,70,77,35,74,125,7500
 3111,W. Khazri,29,AS Saint-Étienne,76,76,183,168,Tunisia,CAM,71,79,76,79,42,67,34,7500
 3118,Adrián,33,Liverpool,76,76,190,176,Spain,GK,79,72,68,80,45,72,52,4200
-3129,A. Mooy,29,Australia,76,76,173,159,Australia,CM,63,71,78,74,69,75,0,0
+3129,A. Mooy,29,Australia,76,76,173,159,Australia,CM,63,71,78,74,69,75,1,0
 3148,T. Cairney,29,Fulham,76,76,185,185,Scotland,CAM,63,72,77,77,60,64,85,7500
 3165,A. Finnbogason,31,FC Augsburg,76,76,183,176,Iceland,ST,61,81,62,74,33,67,29,7000
 3166,Joel Robles,30,Real Betis,76,76,196,198,Spain,GK,78,73,72,80,53,73,17,5000
-3197,A. Guerra,30,Venezuela,76,76,173,143,Venezuela,CAM,76,67,74,78,53,63,0,0
+3197,A. Guerra,30,Venezuela,76,76,173,143,Venezuela,CAM,76,67,74,78,53,63,1,0
 3237,Anselmo,31,Al Wehda,76,76,185,181,Brazil,CDM,67,66,67,71,73,81,23,6000
 3352,Tomás Pina,32,Deportivo Alavés,76,76,183,172,Spain,CM,47,66,72,73,73,72,24,6000
-3434,S. Petrov,29,Russia,76,76,175,157,Russia,RB,76,69,67,71,73,67,0,0
+3434,S. Petrov,29,Russia,76,76,175,157,Russia,RB,76,69,67,71,73,67,1,0
 3522,Nolito,33,RC Celta,76,76,175,143,Spain,LW,66,75,75,76,45,63,25,4700
 3545,D. Praet,26,Leicester City,76,78,180,172,Belgium,CAM,67,70,77,78,61,64,66,9000
 3558,Wilson Eduardo,29,Al Ain FC,76,76,178,163,Angola,RM,78,79,73,77,31,67,0.5,7500
@@ -1466,7 +1466,7 @@
 4747,W. Hughes,25,Watford,76,79,185,161,England,CAM,64,64,77,77,68,64,18,9500
 4772,M. Weiser,26,Bayer 04 Leverkusen,76,77,178,157,Germany,CAM,70,62,74,82,72,68,47,8000
 4806,J. Lukaku,25,Lazio,76,77,178,190,Belgium,LM,91,61,70,80,71,74,47,9000
-4807,V. Claesson,28,Sweden,76,76,183,174,Sweden,CAM,76,74,74,74,45,75,0,0
+4807,V. Claesson,28,Sweden,76,76,183,174,Sweden,CAM,76,74,74,74,45,75,1,0
 4812,S. Andersson,28,1. FC Köln,76,76,190,190,Sweden,ST,63,76,54,69,31,77,30,8000
 4837,Marçal,31,Wolverhampton Wanderers,76,76,178,159,Brazil,LB,75,56,70,71,75,74,60,5500
 4876,T. Strobl,30,FC Augsburg,76,76,188,192,Germany,CDM,53,49,66,58,78,78,25,6500
@@ -1537,10 +1537,10 @@
 6978,T. Leibold,26,Hamburger SV,76,77,175,159,Germany,LB,81,58,74,76,70,71,14,8000
 7042,Raúl,30,SC Braga,76,76,188,176,Brazil,CB,53,54,58,55,77,80,14,6000
 7079,O. Watkins,24,Aston Villa,76,81,180,154,England,ST,83,73,68,74,46,67,49,10500
-7158,T. Hamed,31,Egypt,76,76,170,148,Egypt,CDM,64,59,69,69,75,75,0,0
+7158,T. Hamed,31,Egypt,76,76,170,148,Egypt,CDM,64,59,69,69,75,75,1,0
 7161,Y. Koné,24,Elche CF,76,81,175,157,Mali,LB,85,47,64,73,70,75,16,9000
 7193,A. Miranchuk,24,Lokomotiv Moscow,76,83,183,159,Russia,CAM,76,73,74,77,28,62,38,11000
-7339,D. Kuzyaev,27,Russia,76,77,183,163,Russia,CAM,80,68,73,78,72,66,0,0
+7339,D. Kuzyaev,27,Russia,76,77,183,163,Russia,CAM,80,68,73,78,72,66,1,0
 7469,V. Muriqi,26,Lazio,76,79,193,190,Kosovo,ST,60,76,55,68,28,82,53,9500
 7546,Sergio Herrera,27,CA Osasuna,76,78,193,181,Spain,GK,77,76,73,76,47,73,22,6500
 7564,K. Phillips,24,Leeds United,76,82,178,159,England,CDM,66,66,70,68,73,83,64,9500
@@ -1642,8 +1642,8 @@
 13792,Carlos Neva,24,Granada CF,76,81,175,141,Spain,LB,78,50,61,70,74,64,20,9000
 13855,P. Ševcík,26,SK Slavia Praha,76,79,173,146,Czech Republic,CAM,80,73,74,78,65,75,0.5,9500
 14210,E. Camavinga,17,Stade Rennais FC,76,88,183,150,France,CM,71,62,74,77,75,75,5,12000
-14710,A. Zamorado,39,Ecuador,76,76,183,172,Ecuador,CAM,57,78,81,77,36,59,0,0
-14712,J. Monsario,35,Ecuador,76,76,185,183,Ecuador,CB,34,48,48,39,76,82,0,0
+14710,A. Zamorado,39,Ecuador,76,76,183,172,Ecuador,CAM,57,78,81,77,36,59,1,0
+14712,J. Monsario,35,Ecuador,76,76,185,183,Ecuador,CB,34,48,48,39,76,82,1,0
 15194,L. Fernández,21,Tigres U.A.N.L.,76,85,165,143,Uruguay,CAM,72,76,73,78,41,63,31,12000
 15222,Ansu Fati,17,FC Barcelona,76,90,178,146,Spain,LW,88,71,68,79,29,53,24,15000
 44,R. Weidenfeller,36,Borussia Dortmund,75,75,190,198,Germany,GK,70,76,50,77,22,81,20,900
@@ -1657,7 +1657,7 @@
 336,A. Emaná,34,Gimnàstic de Tarragona,75,75,180,170,Cameroon,CAM,67,73,73,76,56,80,10,2200
 344,Iraizoz,37,Girona FC,75,75,190,196,Spain,GK,69,77,74,67,33,85,15,450
 355,K. Touré,35,Celtic,75,75,178,168,Ivory Coast,CB,63,59,60,55,74,79,30,700
-368,B. Schweinsteiger,34,,75,75,183,174,Germany,CB,34,69,77,71,72,71,0,0
+368,B. Schweinsteiger,34,,75,75,183,174,Germany,CB,34,69,77,71,72,71,1,0
 379,H. Kaldirim,30,Medipol Basaksehir FK,75,75,183,165,Turkey,LB,73,56,68,69,73,72,30,5500
 383,J. Hansen,35,FC Midtjylland,75,75,188,172,Denmark,GK,75,72,77,75,42,76,13,1800
 387,J. Briand,34,FC Girondins de Bordeaux,75,75,183,187,France,ST,63,75,72,73,46,72,31,3500
@@ -1748,7 +1748,7 @@
 1776,P. Aguilar,33,Cruz Azul,75,75,178,172,Paraguay,CB,56,52,54,55,76,75,47,3100
 1802,A. Rami,34,Boavista FC,75,75,190,198,France,CB,47,48,53,58,74,81,9,2500
 1817,L. Fejsa,31,Al Ahli,75,75,183,176,Serbia,CB,53,57,63,65,77,78,32,5000
-1854,E. Choupo-Moting,31,Cameroon,75,75,190,201,Cameroon,ST,73,72,68,77,37,71,0,0
+1854,E. Choupo-Moting,31,Cameroon,75,75,190,201,Cameroon,ST,73,72,68,77,37,71,1,0
 1866,Roberto,34,Real Valladolid CF,75,75,193,212,Spain,GK,78,67,73,79,47,73,14,2900
 1891,M. Moralez,33,New York City FC,75,75,157,123,Argentina,CAM,73,71,74,77,52,49,9,4000
 1897,I. Traoré,32,Borussia Mönchengladbach,75,75,170,134,Guinea,RM,70,69,73,82,44,47,32,5000
@@ -1756,7 +1756,7 @@
 1939,L. Pratto,32,River Plate,75,75,188,201,Argentina,ST,72,74,70,73,63,82,18,5500
 1979,Fábio Pacheco,32,Moreirense FC,75,75,180,161,Portugal,CDM,67,55,70,66,73,74,13,4400
 2003,I. Traoré,33,Angers SCO,75,75,183,192,Ivory Coast,CB,43,32,57,49,74,84,20,3100
-2037,I. Popov,31,Bulgaria,75,75,183,157,Bulgaria,CAM,76,74,73,74,61,70,0,0
+2037,I. Popov,31,Bulgaria,75,75,183,157,Bulgaria,CAM,76,74,73,74,61,70,1,0
 2044,R. Cota,32,Club León,75,75,183,190,Mexico,GK,75,70,67,78,57,79,17,4000
 2046,K. Gibbs,30,West Bromwich Albion,75,75,178,154,England,LB,76,57,68,72,72,70,61,5500
 2060,L. Ayling,28,Leeds United,75,75,185,159,England,RB,68,51,63,68,74,75,74,5500
@@ -1893,7 +1893,7 @@
 4462,Luo Guofu,32,Guangzhou Evergrande Taobao FC,75,75,175,159,China PR,CF,71,76,74,76,43,73,24,5500
 4478,F. Fajr,31,Sivasspor,75,75,178,157,Morocco,CM,61,73,78,76,67,66,18,5500
 4496,K. Rekik,25,Hertha BSC,75,79,185,185,Netherlands,CB,69,39,58,62,75,77,33,7500
-4502,M. Borjan,32,Canada,75,75,196,185,Canada,GK,76,74,72,72,43,74,0,0
+4502,M. Borjan,32,Canada,75,75,196,185,Canada,GK,76,74,72,72,43,74,1,0
 4548,S. Kverkvelia,28,Lokomotiv Moscow,75,77,196,192,Georgia,CB,72,38,53,40,78,81,0.5,6500
 4595,L. Castro,31,SPAL,75,75,183,168,Argentina,CM,67,67,77,78,64,64,32,5500
 4620,L. Pavoletti,31,Cagliari,75,75,188,187,Italy,ST,52,74,51,68,37,70,32,6000
@@ -1981,7 +1981,7 @@
 6213,C. Lema,29,Newell's Old Boys,75,75,190,198,Argentina,CB,37,49,56,39,75,82,18,5500
 6215,A. Hunou,26,Stade Rennais FC,75,77,178,154,France,ST,72,76,70,76,52,71,42,8000
 6217,G. Herrera,28,Yeni Malatyaspor,75,77,188,183,Argentina,GK,75,73,69,77,58,75,12,6000
-6218,R. Saravia,26,Argentina,75,77,175,165,Argentina,RWB,89,41,68,76,71,73,0,0
+6218,R. Saravia,26,Argentina,75,77,175,165,Argentina,RWB,89,41,68,76,71,73,1,0
 6227,J. Silva,26,CD Leganés,75,78,178,159,Argentina,LWB,73,60,68,72,71,74,12,7000
 6262,R. Skov,24,TSG 1899 Hoffenheim,75,81,185,179,Denmark,LM,79,77,77,76,64,71,24,8000
 6270,B. Dragowski,22,Fiorentina,75,82,188,163,Poland,GK,76,72,70,78,44,74,27,7000
@@ -1993,7 +1993,7 @@
 6333,U. Spajic,27,Feyenoord,75,76,183,183,Serbia,CB,67,40,51,61,76,77,13,6500
 6336,T. Jedvaj,24,Bayer 04 Leverkusen,75,81,183,181,Croatia,CB,68,51,58,63,75,74,38,8000
 6395,Danilo,28,VfL Bochum 1848,75,75,170,159,Brazil,LB,73,59,66,76,73,71,18,5500
-6404,Y. Gazinskiy,30,Russia,75,75,183,165,Russia,CDM,66,55,66,68,72,72,0,0
+6404,Y. Gazinskiy,30,Russia,75,75,183,165,Russia,CDM,66,55,66,68,72,72,1,0
 6428,A. El Ghazi,25,Aston Villa,75,78,188,198,Netherlands,ST,75,75,70,75,32,68,50,8500
 6485,Rúben Semedo,26,Olympiacos CFP,75,78,188,185,Portugal,CB,68,52,54,64,74,78,0.5,7500
 6504,A. Blake,29,Philadelphia Union,75,77,193,174,Jamaica,GK,75,68,68,80,46,75,7,5500
@@ -2034,7 +2034,7 @@
 7134,Núrio Fortuna,25,KAA Gent,75,78,178,161,Angola,LWB,85,61,65,72,71,74,19,7500
 7156,A. Long,27,New York Red Bulls,75,78,185,190,United States,CB,76,40,57,63,74,80,8,7000
 7159,O. Duda,25,1. FC Köln,75,79,180,165,Slovakia,CAM,68,73,72,79,54,61,24,8500
-7205,M. Normann,24,Norway,75,81,178,165,Norway,CDM,72,61,71,75,69,79,0,0
+7205,M. Normann,24,Norway,75,81,178,165,Norway,CDM,72,61,71,75,69,79,1,0
 7212,A. Cubas,24,Nîmes Olympique,75,82,165,132,Paraguay,CDM,69,52,68,72,75,57,18,8500
 7216,B. Mensah,25,Besiktas JK,75,80,180,143,Ghana,CAM,80,70,73,77,63,65,51,9000
 7247,R. Karsdorp,25,Roma,75,77,183,176,Netherlands,RB,84,63,72,73,71,72,0.5,7000
@@ -2229,8 +2229,8 @@
 13227,J. Rodríguez,26,Defensa y Justicia,75,79,188,168,Argentina,CB,67,39,59,62,75,75,14,7500
 13287,M. Kudus,19,Ajax,75,85,178,154,Ghana,CAM,87,70,67,79,53,77,9,10500
 13290,L. Suárez,22,Watford,75,86,185,163,Colombia,ST,86,78,62,72,40,80,17,11500
-13350,G. Ichazo,28,Uruguay,75,75,188,172,Uruguay,CB,58,50,61,49,75,79,0,0
-13353,D. Pámanes,32,Uruguay,75,75,180,157,Uruguay,ST,76,76,61,73,33,64,0,0
+13350,G. Ichazo,28,Uruguay,75,75,188,172,Uruguay,CB,58,50,61,49,75,79,1,0
+13353,D. Pámanes,32,Uruguay,75,75,180,157,Uruguay,ST,76,76,61,73,33,64,1,0
 13372,J. Todibo,20,FC Barcelona,75,86,190,179,France,CB,73,43,61,64,75,74,68,10500
 13383,M. Kumbulla,20,Roma,75,85,185,172,Albania,CB,61,32,53,58,77,73,0.5,10000
 13563,Adrià Pedrosa,22,RCD Espanyol,75,85,175,152,Spain,LM,88,57,70,75,69,65,7,9500
@@ -2241,7 +2241,7 @@
 14487,Iago,23,FC Augsburg,75,81,180,150,Brazil,LB,78,55,68,72,71,71,20,8000
 14561,K. Laba,28,Al Ain FC,75,75,180,165,Togo,ST,79,75,62,68,25,76,0.5,7000
 14591,S. Weissman,24,Real Valladolid CF,75,79,175,159,Israel,ST,76,77,65,71,24,67,18,9000
-14716,P. Vaquizo,34,Ecuador,75,75,180,154,Ecuador,ST,79,71,68,78,27,74,0,0
+14716,P. Vaquizo,34,Ecuador,75,75,180,154,Ecuador,ST,79,71,68,78,27,74,1,0
 14772,S. Dest,19,Ajax,75,86,175,137,United States,RM,87,58,71,79,67,64,7,10000
 14851,D. Bradaric,20,LOSC Lille,75,83,178,152,Croatia,LB,78,55,68,74,70,66,20,9000
 15259,J. Veerman,21,SC Heerenveen,75,83,185,165,Netherlands,CM,66,66,79,75,61,71,7,10000
@@ -2495,7 +2495,7 @@
 4997,A. Duncan,27,Fiorentina,74,75,178,172,Ghana,CDM,70,63,73,72,76,75,40,6500
 5046,Marcos Júnior,27,Yokohama F. Marinos,74,74,168,146,Brazil,CAM,89,74,68,76,36,63,12,6000
 5079,S. Holmén,28,Willem II,74,74,188,170,Sweden,CB,61,36,49,46,77,75,10,4900
-5082,M. Etxeberría,26,Paraguay,74,74,183,170,Paraguay,LM,80,60,72,77,54,69,0,0
+5082,M. Etxeberría,26,Paraguay,74,74,183,170,Paraguay,LM,80,60,72,77,54,69,1,0
 5100,Kévin Rodrigues,26,SD Eibar,74,75,170,154,Portugal,LM,68,59,75,72,70,60,23,6500
 5109,Dória,25,Santos Laguna,74,77,188,181,Brazil,CB,58,59,59,57,74,77,20,6500
 5127,Romarinho,29,Al Ittihad,74,74,175,152,Brazil,LW,86,70,67,78,30,62,36,5500
@@ -2527,7 +2527,7 @@
 5610,L. Markovic,24,Fulham,74,76,175,143,Serbia,RW,84,66,70,80,41,49,40,7000
 5642,A. Solari,28,Racing Club,74,74,175,154,Argentina,RM,89,63,72,74,56,74,18,5500
 5661,A. Scholz,27,FC Midtjylland,74,77,188,192,Denmark,CB,68,50,62,64,74,78,22,6000
-5666,C. Njie,25,Cameroon,74,75,175,150,Cameroon,LW,91,68,63,77,32,64,0,0
+5666,C. Njie,25,Cameroon,74,75,175,150,Cameroon,LW,91,68,63,77,32,64,1,0
 5705,Medrán,26,Chicago Fire,74,76,178,163,Spain,CM,57,68,77,72,63,54,8,6500
 5753,S. Palacios,28,Newell's Old Boys,74,74,170,152,Argentina,RM,88,71,65,76,36,66,15,5500
 5988,E. Sobol,25,Club Brugge KV,74,76,185,168,Ukraine,LWB,76,61,73,73,68,71,21,7000
@@ -2552,7 +2552,7 @@
 6418,R. Ortiz,30,Olimpia Asunción,74,74,175,165,Paraguay,CDM,79,68,67,72,69,84,0.5,4600
 6430,Wallace,25,Lazio,74,78,190,187,Brazil,CB,65,28,44,48,76,72,38,6500
 6475,M. Meza,27,Monterrey,74,75,180,176,Argentina,RM,77,71,72,79,45,71,34,6500
-6479,M. Mevlja,30,Slovenia,74,74,190,183,Slovenia,CB,70,38,60,58,77,74,0,0
+6479,M. Mevlja,30,Slovenia,74,74,190,183,Slovenia,CB,70,38,60,58,77,74,1,0
 6482,Carlos Mané,26,Rio Ave FC,74,75,173,150,Portugal,RW,82,71,67,79,41,47,11,6500
 6544,E. Belkalem,27,US Orléans Loiret Football,74,74,193,198,Algeria,CB,54,35,46,46,73,79,7,2800
 6561,T. Bongonda,24,KRC Genk,74,78,178,161,Belgium,CAM,78,66,69,80,26,50,14,7500
@@ -2560,7 +2560,7 @@
 6593,S. Adamyan,27,TSG 1899 Hoffenheim,74,75,183,172,Armenia,ST,80,73,64,77,37,70,28,6500
 6594,A. Oyongo,29,Montpellier HSC,74,74,175,154,Cameroon,LWB,85,59,67,74,66,76,26,4600
 6627,S. Vegas,23,Chile,74,81,180,165,Chile,CB,71,54,62,67,73,80,27,7000
-6649,V. Karavaev,25,Russia,74,77,175,154,Russia,RB,77,59,70,69,68,68,0,0
+6649,V. Karavaev,25,Russia,74,77,175,154,Russia,RB,77,59,70,69,68,68,1,0
 6650,J. Izquierdo,27,Brighton & Hove Albion,74,74,170,165,Colombia,RW,82,69,67,80,38,48,45,6000
 6656,J. Calleri,26,CA Osasuna,74,75,180,159,Argentina,ST,66,74,62,74,47,72,28,6500
 6669,J. Ledesma,27,Cádiz CF,74,77,185,183,Argentina,GK,75,71,64,75,45,73,19,4900
@@ -2587,7 +2587,7 @@
 7123,Vigaray,25,Real Zaragoza,74,77,183,154,Spain,RB,72,49,61,70,72,76,9,6000
 7228,M. Friedrich,24,1. FC Union Berlin,74,79,193,179,Germany,CB,60,36,56,50,75,72,20,7000
 7235,E. Unsain,25,Defensa y Justicia,74,80,188,183,Argentina,GK,77,69,76,79,56,68,10,5500
-7248,T. Zwane,30,South Africa,74,74,170,146,South Africa,CAM,78,65,72,76,49,62,0,0
+7248,T. Zwane,30,South Africa,74,74,170,146,South Africa,CAM,78,65,72,76,49,62,1,0
 7316,M. Rodák,23,Fulham,74,81,196,190,Slovakia,GK,76,71,72,75,46,70,44,6000
 7357,A. Briançon,25,Nîmes Olympique,74,77,185,174,France,CB,57,48,59,54,74,79,18,6500
 7427,Danilo,24,OGC Nice,74,78,183,163,Brazil,CM,68,65,72,72,74,77,25,7000
@@ -2768,7 +2768,7 @@
 14326,R. Sánchez,24,Paraguay,74,79,173,157,Paraguay,CM,69,66,70,72,67,75,28,7500
 14502,L. Kalvach,24,Viktoria Plzen,74,79,183,170,Czech Republic,CM,71,63,71,74,71,74,0.5,7000
 14653,Gabriel Martinelli,19,Arsenal,74,85,180,152,Brazil,LW,86,69,62,76,44,67,38,9500
-14722,J. Santigaro,34,Ecuador,74,74,198,192,Ecuador,GK,71,79,81,69,30,75,0,0
+14722,J. Santigaro,34,Ecuador,74,74,198,192,Ecuador,GK,71,79,81,69,30,75,1,0
 47,S. Given,40,Stoke City,73,73,185,185,Republic of Ireland,GK,69,72,72,70,42,76,20,500
 89,L. Donovan,35,Club León,73,73,173,154,United States,CAM,65,74,77,72,43,56,20,1800
 132,N. Penneteau,39,Sporting de Charleroi,73,73,185,172,France,GK,70,76,66,66,27,81,6,400
@@ -2776,13 +2776,13 @@
 155,D. Pizarro,38,Universidad de Chile,73,73,170,143,Chile,CM,35,59,80,74,56,46,8,1000
 159,R. Santa Cruz,38,Olimpia Asunción,73,73,188,176,Paraguay,ST,33,74,61,63,36,62,0.5,1400
 161,R. Márquez,38,Club Atlas,73,73,183,165,Mexico,CB,31,52,64,61,74,67,15,275
-217,S. Maloney,33,Scotland,73,73,170,152,Scotland,CAM,67,68,72,76,38,59,0,0
+217,S. Maloney,33,Scotland,73,73,170,152,Scotland,CAM,67,68,72,76,38,59,1,0
 224,L. Butelle,37,Angers SCO,73,73,188,185,France,GK,74,69,62,75,32,74,9,400
 230,J. Defoe,37,Rangers FC,73,73,170,143,England,ST,64,78,60,74,26,56,33,1400
 302,A. Boruc,40,Legia Warszawa,73,73,193,194,Poland,GK,73,72,66,71,32,75,5,400
 314,Cani,34,Real Zaragoza,73,73,180,165,Spain,CAM,63,72,73,73,45,61,10,1500
 319,Cifuentes,41,Cádiz CF,73,73,188,176,Spain,GK,67,74,65,71,46,82,10,400
-331,C. Kameni,35,Cameroon,73,73,185,190,Cameroon,GK,75,70,72,75,45,72,0,0
+331,C. Kameni,35,Cameroon,73,73,185,190,Cameroon,GK,75,70,72,75,45,72,1,0
 332,F. Béria,33,LOSC Lille,73,73,178,174,France,CDM,72,57,71,69,70,74,30,1200
 338,J. Jones,35,LA Galaxy,73,73,183,172,United States,CDM,65,68,70,69,69,84,6,950
 411,W. Morgan,36,Leicester City,73,73,185,223,Jamaica,CB,30,34,41,54,75,72,35,800
@@ -2824,12 +2824,12 @@
 941,L. Refaelov,34,Royal Antwerp FC,73,73,175,154,Israel,CAM,65,74,72,75,46,50,17,2000
 943,S. M'Bia,34,Shanghai Greenland Shenhua FC,73,73,188,192,Cameroon,CB,64,62,66,66,70,80,13,1500
 954,I. Khune,33,Kaizer Chiefs,73,73,180,179,South Africa,GK,70,71,90,73,35,74,0.5,2200
-957,C. Ke<U+0219>erü,33,Romania,73,73,178,157,Romania,ST,68,75,66,66,42,70,0,0
+957,C. Ke<U+0219>erü,33,Romania,73,73,178,157,Romania,ST,68,75,66,66,42,70,1,0
 964,F. Gago,34,Vélez Sarsfield,73,73,178,168,Argentina,CDM,55,53,77,70,66,70,13,1500
 983,H. Balta,34,Galatasaray SK,73,73,183,176,Turkey,CB,41,60,68,64,73,69,50,1200
 1007,G. Castro,33,VfB Stuttgart,73,73,173,159,Germany,CM,55,67,75,74,67,63,20,2300
 1017,A. Aldrete,32,Cruz Azul,73,73,178,165,Mexico,LB,72,57,68,69,70,71,40,2500
-1019,A. Shunin,33,Russia,73,73,190,194,Russia,GK,72,72,70,75,41,72,0,0
+1019,A. Shunin,33,Russia,73,73,190,194,Russia,GK,72,72,70,75,41,72,1,0
 1026,F. Higuaín,35,DC United,73,73,173,165,Argentina,CAM,54,71,77,72,49,59,5,1800
 1029,A. Büyük,32,Yeni Malatyaspor,73,73,178,172,Turkey,LM,75,71,66,76,29,67,13,3100
 1041,G. Curci,32,Hammarby IF,73,73,190,198,Italy,GK,70,70,59,74,23,78,5,2300
@@ -2857,7 +2857,7 @@
 1371,S. Missiroli,34,SPAL,73,73,190,170,Italy,CM,56,65,73,70,68,62,27,1900
 1410,Bojan,29,Montreal Impact,73,73,170,150,Spain,CAM,69,70,73,77,27,43,8,3900
 1420,Nuno Coelho,31,Os Belenenses,73,73,183,152,Portugal,CB,55,44,64,66,73,71,6,3000
-1422,B. Jokic,34,Slovenia,73,73,175,170,Slovenia,LWB,76,56,66,67,68,77,0,0
+1422,B. Jokic,34,Slovenia,73,73,175,170,Slovenia,LWB,76,56,66,67,68,77,1,0
 1433,A. Gabbarini,34,LDU Quito,73,73,183,183,Argentina,GK,71,72,65,77,46,71,0.5,1800
 1443,I. Ilicevic,31,1. FC Nürnberg,73,73,175,139,Croatia,CAM,72,70,73,76,37,57,20,3500
 1491,G. Bong,32,Nottingham Forest,73,73,188,163,Cameroon,LB,62,41,69,69,73,70,35,2500
@@ -2903,7 +2903,7 @@
 2160,D. Moreno,34,Club Atlético Talleres,73,73,178,183,Colombia,CAM,65,75,74,73,42,67,14,2100
 2166,C. Zambrano,30,Peru,73,73,185,183,Peru,CB,56,48,57,66,74,74,13,3200
 2191,V. Vasin,31,PFC CSKA Moscow,73,73,193,183,Russia,CB,67,41,58,45,74,74,30,3000
-2193,A. Ionov,31,Russia,73,73,178,152,Russia,RM,79,68,70,73,34,61,0,0
+2193,A. Ionov,31,Russia,73,73,178,152,Russia,RM,79,68,70,73,34,61,1,0
 2201,O. El Kaddouri,29,PAOK,73,73,185,181,Morocco,CAM,71,69,74,74,57,71,0.5,3900
 2212,C. Grenier,29,Stade Rennais FC,73,73,188,174,France,CM,51,71,78,74,60,65,35,3800
 2247,L. Balogun,32,Rangers FC,73,73,190,194,Nigeria,CB,53,45,60,60,74,72,36,2600
@@ -2911,14 +2911,14 @@
 2273,C. Villanueva,34,Al Fayha,73,73,173,161,Chile,CAM,58,70,75,76,50,48,18,2000
 2294,M. Abeid,27,FC Nantes,73,74,178,170,Algeria,CM,58,68,70,74,67,75,19,4100
 2349,M. Britos,32,Watford,73,73,190,187,Uruguay,CB,38,34,50,51,73,70,40,2300
-2369,A. Gunnarsson,30,Iceland,73,73,178,190,Iceland,CDM,53,62,67,69,70,74,0,0
+2369,A. Gunnarsson,30,Iceland,73,73,178,190,Iceland,CDM,53,62,67,69,70,74,1,0
 2370,Jonathas,31,Elche CF,73,73,190,179,Brazil,ST,70,73,59,68,31,77,18,3600
 2379,Saúl Berjón,34,Real Oviedo,73,73,178,185,Spain,LM,79,72,73,72,43,65,10,2000
 2384,B. Fornaroli,32,Perth Glory,73,73,175,150,Uruguay,ST,75,72,64,76,38,76,8,3200
 2417,J. Stanislas,30,Bournemouth,73,73,183,168,England,LM,73,68,73,74,36,54,12,3800
 2420,L. Cooper,28,Leeds United,73,74,188,161,Scotland,CB,51,35,54,57,73,77,63,3900
 2433,Víctor Vázquez,33,KAS Eupen,73,73,175,168,Spain,CAM,46,68,77,73,47,58,11,2400
-2454,J. Hušbauer,30,Czech Republic,73,73,183,168,Czech Republic,CM,60,72,77,73,58,65,0,0
+2454,J. Hušbauer,30,Czech Republic,73,73,183,168,Czech Republic,CM,60,72,77,73,58,65,1,0
 2456,M. Schäffler,31,1. FC Nürnberg,73,73,188,196,Germany,ST,68,76,51,63,32,78,12,3600
 2460,J. Kovarík,32,Viktoria Plzen,73,73,183,179,Czech Republic,LW,67,73,77,72,60,67,0.5,3100
 2463,Fábio,29,FC Nantes,73,73,173,163,Brazil,RB,75,56,69,73,71,65,20,3300
@@ -2928,7 +2928,7 @@
 2511,Y. Salibur,29,Fatih Karagümrük S.K.,73,73,178,168,France,RM,86,71,70,74,40,63,13,3900
 2513,Fernandão,31,Al Wehda,73,73,193,194,Brazil,ST,44,75,51,65,29,78,20,3600
 2553,J. Bennett,30,Cardiff City,73,73,178,163,England,LB,70,44,66,67,72,70,21,3200
-2561,B. Sigurðarson,28,Iceland,73,73,185,190,Iceland,ST,79,69,62,74,39,83,0,0
+2561,B. Sigurðarson,28,Iceland,73,73,185,190,Iceland,ST,79,69,62,74,39,83,1,0
 2580,Míchel,31,Real Valladolid CF,73,73,183,150,Spain,CM,47,66,79,73,55,54,16,3400
 2586,M. Henriksen,27,Rosenborg BK,73,74,188,176,Norway,CDM,65,70,68,68,70,77,6,4100
 2604,H. Dalsgaard B,30,Brentford,73,73,193,179,Denmark,RB,75,57,62,65,71,72,31,3200
@@ -2967,7 +2967,7 @@
 3177,E. Paredes,39,Colo-Colo,73,73,178,181,Chile,ST,59,76,66,72,34,71,6,1200
 3184,S. Gürler,28,Antalyaspor,73,73,175,143,Turkey,LM,80,67,69,74,44,54,16,4000
 3205,M. Pack,29,Cardiff City,73,73,188,163,England,CDM,51,60,71,69,68,78,22,3400
-3223,I. Fetfatzidis,29,Greece,73,73,165,146,Greece,RM,78,63,72,78,31,54,0,0
+3223,I. Fetfatzidis,29,Greece,73,73,165,146,Greece,RM,78,63,72,78,31,54,1,0
 3253,G. Donati,30,AC Monza,73,73,178,168,Italy,CB,69,43,62,67,74,76,4,3200
 3254,J. Martin,30,Stade Rennais FC,73,73,183,168,France,CM,59,69,74,72,66,67,33,3700
 3265,P. Kasami,27,FC Sion,73,73,188,192,Switzerland,RM,67,73,70,71,56,78,25,4200
@@ -3032,7 +3032,7 @@
 4311,C. Musonda,23,Chelsea,73,79,173,146,Belgium,CAM,81,63,69,80,24,40,50,5500
 4312,Edgar Badía,28,Elche CF,73,76,180,174,Spain,GK,76,69,67,75,33,73,13,3600
 4349,Juan Carlos,29,SD Huesca,73,73,183,161,Spain,CAM,67,68,73,74,57,59,20,3800
-4354,F. Erazo,30,Ecuador,73,73,193,190,Ecuador,CB,63,23,42,48,73,79,0,0
+4354,F. Erazo,30,Ecuador,73,73,193,190,Ecuador,CB,63,23,42,48,73,79,1,0
 4371,P. Bauer,27,Preston North End,73,75,193,194,Germany,CB,32,45,53,45,75,75,21,4200
 4383,Hervías,27,Real Valladolid CF,73,73,175,148,Spain,RM,78,64,69,77,40,50,16,4200
 4405,G. Zahid,24,Panathinaikos FC,73,77,175,146,Norway,CAM,74,63,71,74,35,65,0.5,5000
@@ -3052,7 +3052,7 @@
 4653,A. Poko,27,Göztepe SK,73,74,173,159,Gabon,CDM,74,57,64,74,69,79,19,4100
 4656,E. Alioski,28,Leeds United,73,73,173,139,North Macedonia,LB,81,69,68,69,65,73,63,3400
 4675,Patric,27,Lazio,73,76,183,159,Spain,CB,68,53,66,70,75,68,36,4300
-4682,K. Olsson,25,Sweden,73,78,180,152,Sweden,CAM,76,62,73,77,60,64,0,0
+4682,K. Olsson,25,Sweden,73,78,180,152,Sweden,CAM,76,62,73,77,60,64,1,0
 4694,A. Ciciretti,26,Napoli,73,74,170,137,Italy,CAM,77,68,73,75,35,49,46,4700
 4702,P. Nardi,26,FC Lorient,73,78,188,181,France,GK,78,67,68,78,48,69,18,3900
 4707,M. Stevanovic,29,Servette FC,73,73,180,159,Bosnia Herzegovina,RM,80,63,70,72,38,68,16,3900
@@ -3094,7 +3094,7 @@
 5303,Fran Sol,28,Dynamo Kyiv,73,73,180,170,Spain,ST,68,74,56,67,34,68,0.5,4100
 5314,L. Schaub,25,Austria,73,77,178,154,Austria,CAM,57,65,71,80,38,66,13,5000
 5326,L. Zuffi,30,FC Basel 1893,73,73,180,154,Switzerland,CM,65,71,79,71,71,70,14,3800
-5348,H. Aleesami,28,Norway,73,73,183,179,Norway,LB,76,57,68,70,67,72,0,0
+5348,H. Aleesami,28,Norway,73,73,183,179,Norway,LB,76,57,68,70,67,72,1,0
 5349,C. Nørgaard,26,Brentford,73,78,188,170,Denmark,CDM,57,58,68,68,73,72,31,4800
 5356,Júlio Tavares,31,Al Faisaly,73,73,188,183,Cape Verde,ST,55,73,56,69,30,82,15,3600
 5372,J. Velázquez,29,Querétaro,73,74,183,176,Argentina,CB,63,43,49,53,75,78,9,3800
@@ -3177,13 +3177,13 @@
 6848,A. Grassi,25,Parma,73,77,183,165,Italy,CM,65,63,72,74,67,62,24,5000
 6893,R. Tapia,24,RC Celta,73,78,185,172,Peru,CDM,65,58,67,73,71,79,14,4900
 6907,A. Živkovic,23,PAOK,73,77,170,150,Serbia,CAM,74,68,72,81,54,49,0.5,5000
-6962,N. Komlichenko,25,Russia,73,77,193,198,Russia,ST,73,71,58,68,50,77,0,0
+6962,N. Komlichenko,25,Russia,73,77,193,198,Russia,ST,73,71,58,68,50,77,1,0
 6991,J. Stacey,24,Bournemouth,73,78,178,137,England,RWB,75,54,66,71,69,70,10,4700
 7006,M. Veljkovic,24,SV Werder Bremen,73,77,188,187,Serbia,CB,59,31,55,59,74,72,17,4700
 7012,M. Al Buraik,27,Al Hilal,73,73,173,134,Saudi Arabia,RB,83,60,70,70,65,72,27,3600
 7017,S. Ingason,26,PAOK,73,75,188,183,Iceland,CB,61,50,53,54,75,74,0.5,4300
 7050,J. Rinne,27,Aalborg BK,73,76,188,190,Sweden,GK,73,72,70,75,47,71,10,3500
-7054,D. Dibusz,29,Hungary,73,73,188,179,Hungary,GK,74,72,70,75,23,72,0,0
+7054,D. Dibusz,29,Hungary,73,73,188,179,Hungary,GK,74,72,70,75,23,72,1,0
 7061,L. Acosta,26,Club Atlas,73,74,160,134,Argentina,CAM,80,66,68,80,46,55,12,4700
 7090,Hélder Costa,26,Leeds United,73,74,178,170,Portugal,RM,86,66,67,76,28,57,66,4700
 7106,A. Armstrong,23,Blackburn Rovers,73,81,168,152,England,ST,90,73,65,75,35,70,33,6000
@@ -3224,20 +3224,20 @@
 8172,L. Gamba,33,Rosario Central,73,73,170,154,Argentina,CAM,87,72,71,76,28,61,16,2500
 8218,D. Álvarez,25,Puebla FC,73,74,175,165,Mexico,LM,88,59,70,75,32,60,8,4800
 8232,C. González,27,U.N.A.M.,73,74,183,176,Paraguay,ST,60,77,53,67,34,72,13,4700
-8370,M. El Shenawy,31,Egypt,73,73,190,190,Egypt,GK,73,71,70,73,47,69,0,0
+8370,M. El Shenawy,31,Egypt,73,73,190,190,Egypt,GK,73,71,70,73,47,69,1,0
 8411,M. Vojvoda,25,Torino,73,77,185,179,Kosovo,RB,70,50,68,70,70,71,28,4500
 8431,L. Godoy,25,Estudiantes de La Plata,73,78,173,154,Argentina,RB,76,57,66,74,68,76,12,4700
 8486,V. Kovalenko,24,Shakhtar Donetsk,73,80,183,168,Ukraine,CAM,75,71,72,74,59,72,0.5,5500
 8504,J. Murillo,24,Venezuela,73,79,170,146,Venezuela,RM,92,68,61,77,30,49,6,5500
 8527,Aleix García,23,Manchester City,73,80,173,150,Spain,CAM,66,68,73,74,59,56,65,5500
-8564,Y. Boli,26,Côte d'Ivoire,73,75,180,172,Ivory Coast,ST,77,73,59,72,39,74,0,0
+8564,Y. Boli,26,Côte d'Ivoire,73,75,180,172,Ivory Coast,ST,77,73,59,72,39,74,1,0
 8568,S. Amallah,23,Standard de Liège,73,79,185,181,Morocco,CAM,69,73,71,75,56,68,12,5500
 8589,A. Umar,25,Çaykur Rizespor,73,75,175,159,Nigeria,CAM,81,66,68,77,46,71,12,4900
 8597,Dalbert,26,Inter,73,73,180,154,Brazil,LWB,89,57,68,75,69,69,60,4300
 8600,T. Ouwejan,23,Udinese,73,78,178,159,Netherlands,CDM,71,53,70,72,69,72,11,4700
 8647,A. Robinson,22,Fulham,73,82,183,154,United States,LB,87,39,50,72,70,69,51,5500
 8691,M. Matvienko,24,Shakhtar Donetsk,73,80,180,168,Ukraine,CB,74,43,59,59,74,74,0.5,5000
-8703,M. Degenek,26,Australia,73,78,188,181,Australia,CB,78,62,68,63,70,83,0,0
+8703,M. Degenek,26,Australia,73,78,188,181,Australia,CB,78,62,68,63,70,83,1,0
 8727,B. Heynen,23,KRC Genk,73,79,183,163,Belgium,CM,66,63,72,72,67,70,12,5500
 8760,A. Barboza,25,Independiente,73,78,193,194,Argentina,CB,51,56,59,61,72,84,14,4800
 8765,R. Krunic,26,Milan,73,74,183,163,Bosnia Herzegovina,CAM,66,73,73,76,65,69,28,4600
@@ -3330,7 +3330,7 @@
 10871,L. Singh,22,FC Paços de Ferreira,73,80,170,139,South Africa,RW,87,68,62,77,29,42,8,5500
 10967,M. Murillo,24,RSC Anderlecht,73,78,183,165,Panama,RB,81,49,64,68,68,79,14,4700
 11034,E. Löwen,23,FC Augsburg,73,79,188,201,Germany,CDM,57,62,71,69,70,86,19,5500
-11141,J. Savarino,22,Venezuela,73,82,170,146,Venezuela,CAM,82,70,66,77,37,63,0,0
+11141,J. Savarino,22,Venezuela,73,82,170,146,Venezuela,CAM,82,70,66,77,37,63,1,0
 11222,Pedro Sá,26,Portimonense SC,73,77,178,159,Portugal,CDM,61,55,62,66,69,77,7,4600
 11262,M. Ullmann,24,SK Rapid Wien,73,77,180,143,Austria,LWB,83,59,64,69,65,61,19,4600
 11296,L. Koutris,24,Olympiacos CFP,73,78,170,159,Greece,LB,82,60,64,70,67,68,0.5,4700
@@ -3389,7 +3389,7 @@
 14987,A. Musrati,24,SC Braga,73,78,188,183,Libya,CDM,55,51,66,65,69,79,9,4900
 15336,G. Corujo,24,Nacional de Montevideo,73,80,188,187,Uruguay,CB,64,33,53,48,76,75,0.5,5000
 15353,J. Pinos,30,Independiente del Valle,73,74,183,174,Ecuador,GK,71,72,73,70,22,75,0.5,3100
-15596,M. Mohamed,22,Egypt,73,80,185,172,Egypt,ST,70,73,57,67,38,75,0,0
+15596,M. Mohamed,22,Egypt,73,80,185,172,Egypt,ST,70,73,57,67,38,75,1,0
 15806,O. Dorley,21,SK Slavia Praha,73,83,175,139,Liberia,LM,86,64,74,78,67,70,0.5,6000
 16303,Evanilson,20,FC Porto,73,87,193,192,Brazil,ST,72,76,54,70,25,58,9,9000
 42,M. Stekelenburg,37,Ajax,72,72,198,203,Netherlands,GK,69,71,72,70,33,73,5,325
@@ -3447,7 +3447,7 @@
 1080,S. Sinclair,31,Preston North End,72,72,178,154,England,RW,85,70,64,74,41,64,21,2700
 1115,C. Daniels,32,Bournemouth,72,72,178,165,England,LB,61,61,73,72,73,62,37,1900
 1155,C. Rodríguez,34,Peñarol,72,72,178,203,Uruguay,CAM,68,65,72,77,54,64,0.5,1600
-1162,Shikabala,33,Egypt,72,72,183,163,Egypt,LW,74,72,70,76,35,59,0,0
+1162,Shikabala,33,Egypt,72,72,183,163,Egypt,LW,74,72,70,76,35,59,1,0
 1197,De la Bella,34,FC Cartagena,72,72,183,174,Spain,LB,66,53,67,68,69,71,6,1100
 1212,P. Hetemaj,33,Benevento,72,72,175,168,Finland,RWB,73,64,72,73,70,76,13,1800
 1220,S. Bamba,35,Cardiff City,72,72,190,190,Ivory Coast,CB,39,28,42,52,73,74,14,950
@@ -3522,7 +3522,7 @@
 2146,A. Paloschi,30,SPAL,72,72,183,176,Italy,ST,65,68,58,71,27,72,26,3000
 2157,S. Johansen,29,Fulham,72,72,183,172,Norway,CM,68,67,73,70,67,72,60,3000
 2175,Maurício,29,Lazio,72,72,185,181,Brazil,CB,61,47,53,54,71,73,30,2400
-2197,S. Dzhanaev,33,Russia,72,72,188,187,Russia,GK,74,67,69,73,46,71,0,0
+2197,S. Dzhanaev,33,Russia,72,72,188,187,Russia,GK,74,67,69,73,46,71,1,0
 2219,Sandro Manoel,31,Al Taawoun,72,72,175,170,Brazil,CDM,67,55,70,64,66,81,17,2400
 2223,O. Celustka,31,Sparta Praha,72,72,185,183,Czech Republic,CB,65,53,65,65,72,75,0.5,2300
 2240,L. Holtby,29,Blackburn Rovers,72,72,175,159,Germany,CAM,69,65,73,76,54,68,31,3000
@@ -3564,9 +3564,9 @@
 2706,F. N'Sakala,29,Besiktas JK,72,72,178,163,DR Congo,LB,84,45,66,74,64,74,38,2600
 2707,L. Orbán,31,Racing Club,72,72,178,174,Argentina,CB,61,53,64,61,72,74,13,2300
 2743,N. Hult,30,Hannover 96,72,72,173,146,Sweden,LB,81,59,69,72,66,63,17,2500
-2751,M. Albornoz,29,Chile,72,72,180,176,Chile,LB,70,53,70,73,66,72,0,0
+2751,M. Albornoz,29,Chile,72,72,180,176,Chile,LB,70,53,70,73,66,72,1,0
 2752,K. Nordfeldt,31,Gençlerbirligi SK,72,72,188,192,Sweden,GK,71,66,69,74,50,74,10,2000
-2757,R. Krhin,30,Slovenia,72,72,188,179,Slovenia,CDM,33,50,65,58,72,71,0,0
+2757,R. Krhin,30,Slovenia,72,72,188,179,Slovenia,CDM,33,50,65,58,72,71,1,0
 2774,L. Sané,32,FC Utrecht,72,72,193,170,Senegal,CB,52,44,58,59,71,72,13,2000
 2776,E. Cardona,27,Boca Juniors,72,72,183,203,Colombia,CAM,48,76,76,72,40,80,12,3300
 2781,L. Narsingh,29,Feyenoord,72,72,178,152,Netherlands,RW,88,62,65,74,25,58,12,3000
@@ -3576,13 +3576,13 @@
 2864,A. Pulido,29,Sporting Kansas City,72,72,178,183,Mexico,ST,77,70,63,71,36,73,7,3100
 2892,B. Nuytinck,30,Udinese,72,72,190,181,Netherlands,CB,33,40,48,51,76,68,12,2500
 2930,P. Farkas,27,FC Red Bull Salzburg,72,72,178,172,Austria,RB,84,60,65,66,66,78,18,2800
-2944,V. Belec,30,Slovenia,72,73,193,185,Slovenia,GK,73,72,60,74,48,71,0,0
+2944,V. Belec,30,Slovenia,72,73,193,185,Slovenia,GK,73,72,60,74,48,71,1,0
 2992,G. Burgstaller,31,FC Schalke 04,72,72,188,176,Austria,ST,55,72,66,69,39,81,21,2800
 3017,F. Bardi,27,Frosinone,72,72,188,176,Italy,GK,73,70,62,75,48,69,3,2200
 3048,Pelé,28,Rio Ave FC,72,72,183,172,Guinea Bissau,CDM,71,60,65,69,70,79,8,2800
 3056,A. Potuk,29,MKE Ankaragücü,72,72,178,148,Turkey,CAM,77,65,70,74,52,68,20,3000
 3064,F. Ulvestad,28,Djurgårdens IF,72,72,183,185,Norway,CDM,65,63,68,71,71,81,7,3100
-3069,M. Mahlangu,27,South Africa,72,72,173,148,South Africa,CAM,83,63,63,76,56,75,0,0
+3069,M. Mahlangu,27,South Africa,72,72,173,148,South Africa,CAM,83,63,63,76,56,75,1,0
 3087,S. Okazaki,34,SD Huesca,72,72,175,154,Japan,ST,62,70,68,74,55,66,18,1600
 3100,Juan Carlos,32,Girona FC,72,72,188,181,Spain,GK,71,72,74,73,60,71,6,1900
 3122,Dani Jiménez,30,AD Alcorcón,72,72,178,159,Spain,GK,73,69,65,75,52,69,6,2100
@@ -3596,7 +3596,7 @@
 3207,Y. Sanogo,26,Toulouse Football Club,72,72,190,163,France,ST,64,70,61,66,32,68,22,3400
 3219,M. Ducksch,26,Hannover 96,72,75,188,174,Germany,ST,67,73,60,67,34,68,21,3900
 3230,K. Babacar,27,Alanyaspor,72,73,185,187,Senegal,ST,66,72,55,71,35,68,12,3600
-3235,A. Said,34,Egypt,72,72,175,159,Egypt,CAM,62,77,73,71,47,60,0,0
+3235,A. Said,34,Egypt,72,72,175,159,Egypt,CAM,62,77,73,71,47,60,1,0
 3242,B. Leroy,31,AC Ajaccio,72,72,183,163,France,GK,71,71,70,72,39,72,4,2000
 3245,G. Imbula,26,Lecce,72,73,185,170,DR Congo,CM,68,58,68,74,60,71,13,3600
 3251,J. Sala,28,Spezia,72,72,180,165,Italy,RB,67,61,69,70,70,69,0.5,2700
@@ -3671,7 +3671,7 @@
 4033,Jota,29,Aston Villa,72,72,180,154,Spain,RW,69,68,72,74,31,58,41,3000
 4056,J. Risdon,27,Western United FC,72,72,168,154,Australia,RWB,74,49,61,66,70,79,3,2800
 4058,N. Wells,30,Bristol City,72,72,170,152,Bermuda,ST,75,72,63,71,44,63,33,3000
-4064,T. Serero,30,South Africa,72,72,173,150,South Africa,CM,79,48,68,77,66,56,0,0
+4064,T. Serero,30,South Africa,72,72,173,150,South Africa,CM,79,48,68,77,66,56,1,0
 4121,T. Monconduit,29,FC Lorient,72,72,183,183,France,CDM,61,55,69,67,71,76,20,2700
 4149,Cortez,29,Albirex Niigata,72,72,178,174,Brazil,LWB,58,62,68,75,70,79,5,1600
 4179,I. Diomandé,27,Çaykur Rizespor,72,73,183,181,Ivory Coast,CDM,64,55,64,67,70,76,10,3200
@@ -3680,7 +3680,7 @@
 4207,F. Hübner,29,1. FC Union Berlin,72,73,193,185,Germany,CB,52,43,47,43,76,72,20,2900
 4210,Gilberto,28,Yeni Malatyaspor,72,72,178,161,Brazil,ST,68,73,62,68,28,71,10,3200
 4221,V. Misidjan,26,1. FC Nürnberg,72,72,173,154,Netherlands,RM,86,64,64,77,29,58,10,3300
-4231,A. El Shenawy,29,Egypt,72,73,188,183,Egypt,GK,72,68,70,74,34,73,0,0
+4231,A. El Shenawy,29,Egypt,72,73,188,183,Egypt,GK,72,68,70,74,34,73,1,0
 4235,T. Smith,28,Stoke City,72,72,185,185,England,RB,69,46,67,66,69,71,20,2700
 4240,F. Silva,34,Universidad Católica,72,72,178,176,Chile,CDM,39,61,68,62,68,75,9,1200
 4255,K. Djidji,27,Torino,72,74,183,157,Ivory Coast,CB,61,32,53,63,74,69,26,3300
@@ -3697,7 +3697,7 @@
 4389,D. Roef,26,KAA Gent,72,75,188,192,Belgium,GK,75,70,64,75,50,70,12,2800
 4454,M. Bauer B,28,Stoke City,72,72,180,163,Austria,RB,79,46,69,71,68,69,20,2700
 4494,R. Alioui,28,Angers SCO,72,72,185,181,Morocco,ST,68,74,62,68,33,69,19,3200
-4500,C. Ramírez,23,Ecuador,72,77,175,172,Ecuador,LWB,81,40,62,73,65,69,0,0
+4500,C. Ramírez,23,Ecuador,72,77,175,172,Ecuador,LWB,81,40,62,73,65,69,1,0
 4503,David Ferreiro,32,SD Huesca,72,72,170,139,Spain,RW,87,68,71,75,37,48,17,2400
 4504,Igor Rossi,31,Al Faisaly,72,72,188,172,Brazil,CB,46,30,54,53,71,82,11,2300
 4523,K. Roofe,27,Rangers FC,72,73,178,143,Jamaica,ST,79,73,67,72,50,61,38,3600
@@ -3718,14 +3718,14 @@
 4794,J. Paredes B,32,El Nacional,72,72,178,159,Ecuador,RB,85,47,59,72,68,66,0.5,1900
 4808,F. Helander,27,Rangers FC,72,74,193,185,Sweden,CB,44,33,44,53,74,76,32,3300
 4841,Cristiano,33,Kashiwa Reysol,72,72,183,183,Brazil,ST,75,73,69,70,48,81,9,1900
-4859,Y. Banana,27,Cameroon,72,72,193,194,Cameroon,CB,56,34,43,42,72,81,0,0
+4859,Y. Banana,27,Cameroon,72,72,193,194,Cameroon,CB,56,34,43,42,72,81,1,0
 4886,Pedro Henrique,30,Kayserispor,72,72,180,168,Brazil,LM,80,68,68,73,31,61,11,2900
 4896,Aitor García,26,Real Sporting de Gijón,72,73,173,159,Spain,LM,86,71,67,72,37,59,8,3700
 4909,D. Bain,26,Stade Brestois 29,72,75,180,163,France,CB,64,26,49,53,72,75,13,3400
 4925,Patrick,28,Santa Clara,72,72,178,161,Brazil,RB,77,53,66,71,69,69,5,2700
 4939,D. Jevtic,26,Lech Poznan,72,74,183,165,Switzerland,CAM,71,66,71,71,45,64,9,3800
 4946,A. Bakasetas,27,Alanyaspor,72,73,180,172,Greece,CAM,68,74,74,69,43,71,11,3600
-4952,M. Belyaev,27,Russia,72,74,188,190,Russia,CB,67,28,51,39,74,68,0,0
+4952,M. Belyaev,27,Russia,72,74,188,190,Russia,CB,67,28,51,39,74,68,1,0
 4961,L. Kübler,27,SC Freiburg,72,72,180,163,Germany,RB,67,45,57,62,72,66,16,2800
 4962,O. Niasse,29,Everton,72,72,183,165,Senegal,ST,72,71,55,69,29,69,53,3100
 4981,M. Dijks,27,Bologna,72,73,193,198,Netherlands,CB,69,40,65,65,71,77,20,3100
@@ -3739,7 +3739,7 @@
 5199,Quini,30,Granada CF,72,72,178,163,Spain,LB,74,60,64,72,68,63,17,2500
 5216,J. van Overeem,26,FC Utrecht,72,74,180,157,Netherlands,CM,68,57,72,77,65,60,12,3700
 5234,Hélder Lopes,31,AEK Athens,72,72,178,146,Portugal,LB,73,58,69,68,69,69,0.5,2200
-5237,G. Lovrencsics,31,Hungary,72,72,178,174,Hungary,RB,86,68,64,71,65,72,0,0
+5237,G. Lovrencsics,31,Hungary,72,72,178,174,Hungary,RB,86,68,64,71,65,72,1,0
 5266,T. Murg,25,SK Rapid Wien,72,74,175,154,Austria,CAM,80,69,68,74,40,62,20,3800
 5273,F. Falco,28,Lecce,72,72,170,154,Italy,CAM,79,67,69,77,29,56,26,3100
 5291,J. Ikoko,24,En Avant de Guingamp,72,77,178,168,DR Congo,RB,80,40,63,71,68,69,15,3500
@@ -3759,7 +3759,7 @@
 5462,M. Fofana,28,Yeni Malatyaspor,72,72,178,157,Ivory Coast,LM,90,65,62,77,26,57,12,3100
 5482,E. Hestad,25,Molde FK,72,75,183,165,Norway,LM,75,65,68,73,53,68,6,3900
 5509,F. Barba,26,Benevento,72,75,185,176,Italy,CB,69,30,57,60,73,70,12,3400
-5514,A. Semenov,31,Russia,72,72,190,190,Russia,CB,53,40,57,59,73,74,0,0
+5514,A. Semenov,31,Russia,72,72,190,190,Russia,CB,53,40,57,59,73,74,1,0
 5544,K. Möhwald,26,SV Werder Bremen,72,73,183,170,Germany,CAM,58,70,75,73,61,65,19,3600
 5546,R. Czichos,30,1. FC Köln,72,72,188,190,Germany,CB,52,48,59,62,73,75,18,2500
 5554,Alex Muñoz,25,CD Tenerife,72,75,188,176,Spain,LB,78,56,63,68,68,74,7,3400
@@ -3778,7 +3778,7 @@
 5732,W. Saïd,25,Toulouse Football Club,72,74,173,157,France,CAM,75,73,67,76,29,57,6,3900
 5735,F. Aristeguieta,28,Venezuela,72,72,188,185,Venezuela,ST,52,74,55,67,42,84,12,3200
 5762,O. Duarte,31,Levante UD,72,72,185,179,Costa Rica,CB,54,47,50,52,73,75,15,2300
-5764,O. Gaber,28,,72,72,175,157,Egypt,RB,77,59,66,71,67,68,0,0
+5764,O. Gaber,28,,72,72,175,157,Egypt,RB,77,59,66,71,67,68,1,0
 5777,A. Mabil,24,FC Midtjylland,72,75,178,143,Australia,RM,90,62,64,73,33,55,19,3900
 5779,N. Castillo,27,Club América,72,73,178,179,Chile,ST,66,75,60,68,38,71,28,3600
 5783,C. Salcedo,26,Mexico,72,75,188,170,Mexico,CB,63,31,51,61,71,78,28,3400
@@ -3797,7 +3797,7 @@
 6032,J. Rojas,27,Olimpia Asunción,72,72,170,150,Paraguay,RW,92,66,64,75,34,63,0.5,3300
 6038,D. Bocanegra,33,Club Libertad,72,72,183,165,Colombia,CB,67,55,68,64,71,78,0.5,1500
 6041,R. Loaiza,26,Defensa y Justicia,72,75,180,154,Colombia,CDM,61,46,65,66,69,78,11,3500
-6046,E. Pavez,30,Chile,72,72,180,168,Chile,CM,78,67,66,72,69,84,0,0
+6046,E. Pavez,30,Chile,72,72,180,168,Chile,CM,78,67,66,72,69,84,1,0
 6047,C. Baeza,26,Chile,72,75,170,141,Chile,CM,68,67,69,72,68,71,11,3800
 6056,J. Nieto,26,Deportes Tolima,72,73,178,168,Colombia,CAM,71,66,75,72,48,72,3,3600
 6060,D. Andrade,29,Deportivo Cali,72,72,168,154,Colombia,LB,81,42,56,68,66,71,3,2600
@@ -3850,7 +3850,7 @@
 6658,B. Meling,25,Nîmes Olympique,72,77,173,141,Norway,LWB,80,47,65,66,67,60,15,3600
 6671,E. Cerutti,28,San Lorenzo de Almagro,72,72,178,165,Argentina,RM,84,65,66,73,36,65,16,3100
 6693,Rober Ibáñez,27,CD Leganés,72,72,178,157,Spain,RM,75,67,71,74,48,52,10,3300
-6716,Kahraba,26,Egypt,72,72,183,168,Egypt,LM,81,69,64,74,36,66,0,0
+6716,Kahraba,26,Egypt,72,72,183,168,Egypt,LM,81,69,64,74,36,66,1,0
 6720,Chema Rodríguez,28,Getafe CF,72,74,188,176,Spain,CB,62,59,57,60,72,71,18,3100
 6722,A. Mosquera,30,Club León,72,72,183,176,Colombia,CB,73,42,57,53,72,75,16,2500
 6728,R. Martínez,26,Club América,72,74,180,190,Colombia,ST,76,72,62,75,35,76,28,3800
@@ -3952,7 +3952,7 @@
 8345,Hwang In beom,22,Vancouver Whitecaps FC,72,79,178,154,Korea Republic,CAM,64,62,71,76,56,63,6,4300
 8360,M. Jonjic,29,Cerezo Osaka,72,72,188,183,Croatia,CB,68,45,49,48,74,77,7,2600
 8366,C. Ikonomidis,25,Perth Glory,72,74,180,161,Australia,RM,81,68,66,75,51,66,7,3800
-8384,C. Kouamé Koffi,29,Côte d'Ivoire,72,72,188,194,Ivory Coast,CDM,64,52,65,66,70,80,0,0
+8384,C. Kouamé Koffi,29,Côte d'Ivoire,72,72,188,194,Ivory Coast,CDM,64,52,65,66,70,80,1,0
 8394,J. Drommel,23,FC Twente,72,79,193,198,Netherlands,GK,73,69,70,73,51,70,5,3300
 8406,Sergi Palencia,24,CD Leganés,72,79,168,148,Spain,RWB,76,56,62,70,69,72,8,3900
 8483,R. Nyambe,22,Blackburn Rovers,72,81,178,154,Namibia,RB,80,33,57,70,68,76,24,4300
@@ -3978,7 +3978,7 @@
 8739,Moon Seon Min,28,Sangju Sangmu FC,72,72,173,150,Korea Republic,RM,93,65,65,74,37,62,4,3100
 8740,N. Benedetti,23,Club América,72,79,178,161,Colombia,CAM,73,67,69,74,45,61,23,4400
 8750,M. Jensen,24,Brentford,72,78,180,150,Denmark,CM,68,65,72,73,63,65,26,4200
-8755,J. Góralski,27,Poland,72,73,173,146,Poland,CDM,71,46,63,66,68,79,0,0
+8755,J. Góralski,27,Poland,72,73,173,146,Poland,CDM,71,46,63,66,68,79,1,0
 8841,E. Kwateng,23,FC Girondins de Bordeaux,72,78,180,165,France,RB,65,36,63,68,73,64,17,3800
 8874,Túlio Changas,24,Palmeiras,72,72,180,174,Brazil,GK,72,71,75,73,43,68,15,2400
 8876,Alam Araújo,28,Grêmio,72,72,178,172,Brazil,LB,73,51,64,68,72,68,19,2700
@@ -4178,8 +4178,8 @@
 14637,Nuno Tavares,20,SL Benfica,72,85,183,168,Portugal,LWB,87,52,64,74,66,72,6,5500
 14671,G. Fernández,26,Real Zaragoza,72,75,185,176,Uruguay,ST,80,71,59,67,52,78,9,3900
 14699,Douglas Augusto,23,PAOK,72,78,175,150,Brazil,CM,72,66,67,73,68,76,0.5,4200
-14711,A. Alfárnez,35,Ecuador,72,72,183,172,Ecuador,ST,79,70,56,72,30,72,0,0
-14725,B. Vendaza,39,Ecuador,72,72,180,159,Ecuador,CDM,62,36,62,62,72,76,0,0
+14711,A. Alfárnez,35,Ecuador,72,72,183,172,Ecuador,ST,79,70,56,72,30,72,1,0
+14725,B. Vendaza,39,Ecuador,72,72,180,159,Ecuador,CDM,62,36,62,62,72,76,1,0
 14796,Pedri,17,FC Barcelona,72,88,175,134,Spain,CAM,80,61,71,76,46,52,10,6000
 14914,Eduardo Quaresma,18,Sporting CP,72,86,185,168,Portugal,CB,61,31,47,55,72,67,3,6000
 14915,Nuno Mendes,18,Sporting CP,72,87,175,154,Portugal,LB,86,40,59,69,68,59,3,6000
@@ -4189,7 +4189,7 @@
 15339,B. Ocampo,21,Nacional de Montevideo,72,79,173,154,Uruguay,RM,86,65,68,75,60,74,0.5,4400
 15352,R. Schunke,28,Independiente del Valle,72,73,185,172,Argentina,CB,58,26,48,53,69,80,0.5,3000
 15458,L. Provod,23,SK Slavia Praha,72,80,188,185,Czech Republic,LM,75,70,68,72,62,77,0.5,4600
-15506,H. El Shahat,28,Egypt,72,72,170,141,Egypt,RW,83,67,65,76,48,64,0,0
+15506,H. El Shahat,28,Egypt,72,72,170,141,Egypt,RW,83,67,65,76,48,64,1,0
 16115,S. Rodríguez,20,Nacional de Montevideo,72,85,168,132,Uruguay,CAM,80,63,66,76,46,47,0.5,6000
 16242,Robson Bambu,22,OGC Nice,72,80,185,152,Brazil,CB,72,48,62,64,73,68,18,4200
 16491,Rúben Freitas,27,CD Nacional,72,73,180,168,Portugal,RB,89,56,66,67,63,77,8,3100
@@ -4289,11 +4289,11 @@
 1599,M. Edu,31,Philadelphia Union,71,71,185,179,United States,CB,61,63,63,66,67,75,6,1600
 1622,R. Sigurðsson,34,FC København,71,71,188,170,Iceland,CB,53,41,55,46,71,74,12,875
 1669,T. Horava,32,Viktoria Plzen,71,71,183,150,Czech Republic,CM,63,65,71,73,58,63,0.5,1800
-1681,M. Martins,33,Bolivia,71,71,188,181,Bolivia,ST,56,75,63,67,36,75,0,0
+1681,M. Martins,33,Bolivia,71,71,188,181,Bolivia,ST,56,75,63,67,36,75,1,0
 1694,M. Jedinák,33,Aston Villa,71,71,188,172,Australia,CB,45,67,64,59,73,74,10,950
 1717,Zeng Cheng,33,Shanghai Greenland Shenhua FC,71,71,193,176,China PR,GK,70,66,69,74,33,71,8,1300
 1732,Wang Dalei,31,Shandong Luneng TaiShan FC,71,71,188,201,China PR,GK,70,69,70,72,59,68,9,1500
-1734,T. Phala,30,South Africa,71,71,170,154,South Africa,RM,86,67,65,72,38,58,0,0
+1734,T. Phala,30,South Africa,71,71,170,154,South Africa,RM,86,67,65,72,38,58,1,0
 1741,Yu Hanchao,33,Shanghai Greenland Shenhua FC,71,71,178,154,China PR,LM,74,63,70,71,37,64,11,1400
 1748,Li Xuepeng,31,Guangzhou Evergrande Taobao FC,71,71,185,165,China PR,LB,81,55,68,67,66,71,14,1700
 1753,M. Männel,32,FC Erzgebirge Aue,71,71,183,176,Germany,GK,73,71,60,74,48,69,5,1400
@@ -4316,7 +4316,7 @@
 2028,L. Rossettini,35,Lecce,71,71,188,181,Italy,CB,50,44,46,53,72,70,15,725
 2036,D. Odoi,32,Fulham,71,71,178,159,Belgium,RB,76,51,66,73,67,70,47,1500
 2040,D. Kuciak,35,Lechia Gdansk,71,71,193,192,Slovakia,GK,74,64,64,76,36,71,4,650
-2068,R. Neustädter,32,Russia,71,71,188,179,Russia,CDM,40,52,65,64,72,73,0,0
+2068,R. Neustädter,32,Russia,71,71,188,179,Russia,CDM,40,52,65,64,72,73,1,0
 2081,F. Di Santo,31,San Lorenzo de Almagro,71,71,193,194,Argentina,ST,69,69,68,71,45,74,14,2100
 2099,M. Rodríguez,33,Universidad de Chile,71,71,178,165,Argentina,RB,74,60,63,68,67,74,8,1100
 2100,Dentinho,31,Shakhtar Donetsk,71,71,175,174,Brazil,CAM,77,67,67,74,48,71,0.5,2100
@@ -4413,7 +4413,7 @@
 3474,A. Abrashi,30,SC Freiburg,71,71,173,168,Albania,CDM,64,54,57,64,70,76,14,2000
 3475,E. Lenjani,29,FC Sion,71,71,175,143,Albania,LM,80,65,68,69,63,67,21,2300
 3479,A. Losilla,34,VfL Bochum 1848,71,71,185,176,France,CDM,53,55,63,71,69,76,11,900
-3483,A. Elek,28,Hungary,71,71,193,201,Hungary,CDM,64,65,64,62,68,82,0,0
+3483,A. Elek,28,Hungary,71,71,193,201,Hungary,CDM,64,65,64,62,68,82,1,0
 3491,P. Chavarría,32,Málaga CF,71,71,185,176,Argentina,ST,67,70,68,72,36,75,8,1900
 3516,W. Lautoa,32,Dijon FCO,71,71,183,192,New Caledonia,CDM,43,38,59,54,70,78,9,1600
 3573,L. Caldirola,29,Benevento,71,71,185,172,Italy,CB,49,41,63,60,71,69,11,2000
@@ -4444,7 +4444,7 @@
 3872,Kim Young Gwon,30,Gamba Osaka,71,71,185,165,Korea Republic,CB,68,45,62,59,71,77,8,1900
 3874,B. Martella,27,Brescia,71,71,183,176,Italy,LB,77,57,69,66,62,71,20,2100
 3875,P. Ntep,27,En Avant de Guingamp,71,71,180,165,Cameroon,LM,79,67,68,72,29,64,6,2500
-3878,N. Nikolic,32,Hungary,71,71,180,174,Hungary,ST,65,72,60,68,31,70,0,0
+3878,N. Nikolic,32,Hungary,71,71,180,174,Hungary,ST,65,72,60,68,31,70,1,0
 3898,Negueba,27,Gyeongnam FC,71,71,178,143,Brazil,RM,86,62,66,75,38,58,5,2500
 3902,A. Wisdom,27,Derby County,71,72,185,172,England,CB,68,30,60,63,71,77,17,2400
 3904,M. Camporese,27,Pordenone,71,71,185,165,Italy,CB,67,27,38,52,72,71,2,2200
@@ -4536,7 +4536,7 @@
 5030,P. Kühn,27,VfL Osnabrück,71,72,188,209,Germany,GK,72,64,69,78,49,75,7,1900
 5035,W. Vaulks,26,Cardiff City,71,73,180,165,Wales,CDM,57,62,64,64,70,77,17,2600
 5050,Q. Bernard,30,AJ Auxerre,71,71,183,179,France,LB,63,57,70,64,67,77,5,1900
-5052,Cicinho,31,Bulgaria,71,71,168,143,Bulgaria,RB,78,53,66,74,67,59,0,0
+5052,Cicinho,31,Bulgaria,71,71,168,143,Bulgaria,RB,78,53,66,74,67,59,1,0
 5077,S. Hedlund,27,Brøndby IF,71,71,173,146,Sweden,RW,91,64,65,75,27,67,15,2500
 5125,R. Ripart,27,Nîmes Olympique,71,72,180,161,France,ST,71,73,66,71,60,75,16,2800
 5167,Eugeni,25,SD Huesca,71,74,183,165,Spain,CAM,66,69,73,73,57,66,14,2900
@@ -4562,7 +4562,7 @@
 5471,M. Konaté,27,Amiens SC,71,71,183,172,Senegal,ST,75,69,55,71,23,65,5,2500
 5474,A. Chumacero,29,Bolivia,71,71,165,139,Bolivia,CM,69,67,70,72,63,71,6,2300
 5477,S. Dimitrievski,26,Rayo Vallecano,71,75,188,179,North Macedonia,GK,72,70,68,70,37,74,4,2200
-5492,M. Alaa,29,Egypt,71,71,188,192,Egypt,CB,58,39,58,53,72,78,0,0
+5492,M. Alaa,29,Egypt,71,71,188,192,Egypt,CB,58,39,58,53,72,78,1,0
 5499,H. Quiñones,27,América de Cali,71,71,178,154,Colombia,LB,75,60,64,71,65,69,2,2100
 5507,Álex Gallar,28,FC Cartagena,71,71,175,157,Spain,RM,74,71,71,72,42,62,6,2400
 5527,M. Schnatterer,34,1. FC Heidenheim 1846,71,71,180,165,Germany,RM,68,74,73,70,35,61,16,1200
@@ -4604,7 +4604,7 @@
 6015,Douglas Coutinho,22,SC Braga,71,79,183,157,Brazil,ST,85,69,58,74,22,62,10,2500
 6049,V. Hernández,31,Atlético Nacional,71,71,160,134,Colombia,LM,84,66,65,73,34,45,4,2100
 6057,R. Carrascal,27,América de Cali,71,72,173,168,Colombia,CM,66,61,69,65,65,71,2,2700
-6059,A. Silva,36,Paraguay,71,71,190,203,Paraguay,GK,70,67,64,71,39,70,0,0
+6059,A. Silva,36,Paraguay,71,71,190,203,Paraguay,GK,70,67,64,71,39,70,1,0
 6071,M. Cuero,27,Club Atlético Banfield,71,71,178,183,Colombia,RM,90,67,62,73,28,62,10,2500
 6082,L. Castro,31,Kaizer Chiefs,71,71,183,176,Colombia,ST,68,73,63,65,32,66,0.5,2100
 6122,M. Bolados,24,Colo-Colo,71,77,168,159,Chile,RM,84,66,66,72,55,66,6,3200
@@ -4625,7 +4625,7 @@
 6447,J. Cooper,25,Millwall,71,75,198,187,England,CB,52,32,47,51,71,76,9,2700
 6506,M. Thiam,27,Fenerbahçe SK,71,72,185,174,Senegal,ST,75,69,64,74,26,72,38,2800
 6508,A. Godoy,30,Nashville SC,71,71,183,181,Panama,CDM,39,55,64,65,64,74,5,2000
-6509,W. Ángel,27,Venezuela,71,73,188,185,Venezuela,CB,57,30,44,46,71,78,0,0
+6509,W. Ángel,27,Venezuela,71,73,188,185,Venezuela,CB,57,30,44,46,71,78,1,0
 6532,O. Ebrahimi,31,KAS Eupen,71,71,178,159,Iran,CDM,58,54,71,64,68,67,8,1800
 6555,G. Lajud,26,Santos Laguna,71,75,188,185,Mexico,GK,71,66,63,74,45,74,12,2200
 6559,K. Molino,30,Minnesota United FC,71,71,173,154,Trinidad &amp; Tobago,CF,72,69,66,75,49,65,6,2200
@@ -4638,7 +4638,7 @@
 6660,C. N'Doye,32,Angers SCO,71,71,193,198,Senegal,CB,53,65,66,65,70,90,15,1800
 6665,Simy,28,Crotone,71,71,198,185,Nigeria,ST,59,74,44,59,29,78,10,2400
 6667,E. Ofori,25,AIK,71,76,173,154,Ghana,CM,67,58,69,76,63,68,6,3100
-6684,S. Simic,24,Czech Republic,71,74,188,174,Czech Republic,CB,45,27,47,55,72,70,0,0
+6684,S. Simic,24,Czech Republic,71,74,188,174,Czech Republic,CB,45,27,47,55,72,70,1,0
 6688,J. Arzura,27,River Plate,71,74,175,157,Argentina,CDM,66,48,63,62,68,79,0.5,2600
 6701,Carlos Júnior,24,Santa Clara,71,74,173,146,Brazil,LW,73,69,63,74,30,48,4,3000
 6707,Saúl,25,Real Sporting de Gijón,71,76,183,168,Spain,LB,68,45,64,66,68,64,6,2800
@@ -4664,11 +4664,11 @@
 7016,Fabiano B,28,Denizlispor,71,71,188,176,Brazil,CB,66,47,60,64,70,78,15,2100
 7045,V. Kjartansson,30,Vålerenga Fotball,71,71,188,176,Iceland,ST,70,72,49,64,29,69,4,2300
 7052,M. Clarke,23,Derby County,71,79,185,183,England,CB,53,37,55,62,70,81,14,3200
-7063,W. Kanon,26,Côte d'Ivoire,71,73,188,187,Ivory Coast,CB,65,40,51,60,72,77,0,0
+7063,W. Kanon,26,Côte d'Ivoire,71,73,188,187,Ivory Coast,CB,65,40,51,60,72,77,1,0
 7092,M. Sobottka,26,Fortuna Düsseldorf,71,73,185,165,Germany,CDM,64,55,62,66,70,76,16,2600
 7095,Fernando Karanga,29,Henan Jianye FC,71,71,188,161,Brazil,ST,62,71,52,62,30,74,11,2400
 7098,P. Twumasi,26,Hannover 96,71,72,175,148,Ghana,LM,79,69,64,71,31,56,17,2800
-7112,A. Gomaa,24,Egypt,71,75,168,141,Egypt,LB,85,60,62,72,63,67,0,0
+7112,A. Gomaa,24,Egypt,71,75,168,141,Egypt,LB,85,60,62,72,63,67,1,0
 7113,P. Seguin,25,SpVgg Greuther Fürth,71,75,185,174,Germany,CDM,66,50,64,66,68,75,6,2800
 7114,J. Fulton,26,Swansea City,71,75,183,172,Scotland,CDM,65,54,63,67,70,73,17,2700
 7125,P. Žulj,27,RSC Anderlecht,71,72,185,176,Austria,CM,53,69,72,71,67,66,14,2700
@@ -4720,7 +4720,7 @@
 7766,M. Busch,25,1. FC Heidenheim 1846,71,75,183,176,Germany,RB,86,46,58,68,65,73,14,2700
 7775,J. Benítez,24,Monterrey,71,75,183,179,Paraguay,ST,78,69,58,71,22,69,30,3100
 7789,M. Mahi,26,FC Utrecht,71,74,188,172,Morocco,CAM,75,73,67,77,35,65,12,3000
-7797,R. Coetzee,21,South Africa,71,79,178,154,South Africa,CDM,75,28,59,62,74,63,0,0
+7797,R. Coetzee,21,South Africa,71,79,178,154,South Africa,CDM,75,28,59,62,74,63,1,0
 7802,J. Butez,25,Royal Antwerp FC,71,75,188,165,France,GK,73,67,73,72,44,68,9,2300
 7803,A. Traoré,25,Hatayspor,71,74,180,159,Mali,CAM,76,62,73,73,60,68,10,3000
 7813,V. Koziello,24,CD Nacional,71,76,168,128,France,CAM,74,61,72,74,63,55,7,3100
@@ -4751,7 +4751,7 @@
 8319,M. Romero,21,PSV,71,82,178,159,Argentina,ST,80,72,49,65,31,71,9,4100
 8363,J. Cullen,24,West Ham United,71,77,175,154,Republic of Ireland,CM,69,54,69,71,65,64,21,3200
 8367,Ricardo Lopes,29,Shanghai SIPG FC,71,71,183,163,Brazil,LW,76,73,66,72,38,72,10,2300
-8375,T. Morena B,25,South Africa,71,73,170,137,South Africa,RB,84,61,64,74,69,51,0,0
+8375,T. Morena B,25,South Africa,71,73,170,137,South Africa,RB,84,61,64,74,69,51,1,0
 8475,Francisco Geraldes,25,Rio Ave FC,71,74,175,150,Portugal,CAM,73,59,71,77,43,53,7,3000
 8523,D. Zhivoglyadov,26,Lokomotiv Moscow,71,74,178,143,Russia,RB,76,51,61,69,69,66,25,2600
 8628,K. Bua,26,CD Leganés,71,71,180,165,Switzerland,LM,83,64,65,73,38,63,9,2500
@@ -4894,7 +4894,7 @@
 11886,F. Carballo,23,Nacional de Montevideo,71,79,178,159,Uruguay,CM,65,60,70,68,64,76,0.5,3400
 11905,Gorosabel,23,Real Sociedad,71,77,175,154,Spain,RB,65,41,57,64,71,63,13,2900
 11935,I. Ganago,21,Racing Club de Lens,71,77,175,181,Cameroon,ST,76,72,58,71,34,67,20,3300
-11966,T. Mkhize,31,South Africa,71,71,178,159,South Africa,RB,75,49,59,68,67,65,0,0
+11966,T. Mkhize,31,South Africa,71,71,178,159,South Africa,RB,75,49,59,68,67,65,1,0
 12004,J. Intriago,24,FC Juárez,71,78,175,152,Ecuador,CDM,72,46,68,72,65,76,7,3000
 12046,A. Bareiro,31,Club Libertad,71,71,168,150,Paraguay,RM,82,56,66,70,33,56,0.5,2100
 12078,T. Belmonte,22,Club Atlético Lanús,71,82,178,150,Argentina,CB,68,61,63,69,68,76,9,3800
@@ -4908,7 +4908,7 @@
 12247,H. Evjen,20,AZ Alkmaar,71,82,173,143,Norway,LM,82,64,65,75,54,63,5,4100
 12387,N. Okafor,20,FC Red Bull Salzburg,71,82,185,187,Switzerland,ST,81,68,65,74,32,73,13,4100
 12400,B. Badiashile,19,AS Monaco,71,78,193,165,France,CB,54,33,55,56,71,74,13,2900
-12413,I. Nedelcearu,24,Romania,71,79,190,174,Romania,CB,61,46,53,55,71,77,0,0
+12413,I. Nedelcearu,24,Romania,71,79,190,174,Romania,CB,61,46,53,55,71,77,1,0
 12421,R. Aït Nouri,19,Angers SCO,71,86,178,154,France,LB,68,42,62,70,69,49,7,4700
 12473,K. Anzai,25,Portimonense SC,71,76,173,141,Japan,RWB,89,57,64,69,63,58,5,2800
 12531,N. Bancu,27,Romania,71,71,180,159,Romania,LB,75,66,67,71,65,70,7,2100
@@ -4987,12 +4987,12 @@
 285,K. Commons,32,Celtic,70,70,168,141,Scotland,CAM,51,72,71,72,31,63,30,1100
 290,R. Green,38,Chelsea,70,70,188,203,England,GK,70,70,57,71,34,70,20,120
 291,S. Padoin,35,Ascoli,70,70,178,161,Italy,CAM,62,63,73,74,71,62,2,500
-313,G. McAuley,39,Northern Ireland,70,70,190,196,Northern Ireland,CB,29,42,49,40,72,63,0,0
+313,G. McAuley,39,Northern Ireland,70,70,190,196,Northern Ireland,CB,29,42,49,40,72,63,1,0
 341,Nino,40,Elche CF,70,70,170,150,Spain,ST,57,74,63,70,46,55,9,0
 350,R. Fanni,38,Montreal Impact,70,70,185,179,France,CB,52,52,65,66,70,69,3,350
 362,A. Meier,36,Western Sydney Wanderers,70,70,196,212,Germany,ST,33,75,65,60,45,67,5,625
 366,M. Rensing,35,Fortuna Düsseldorf,70,70,190,201,Germany,GK,69,70,64,69,41,71,8,475
-384,E. Hallfreðsson,36,Iceland,70,70,185,190,Iceland,CDM,54,62,73,72,70,67,0,0
+384,E. Hallfreðsson,36,Iceland,70,70,185,190,Iceland,CDM,54,62,73,72,70,67,1,0
 398,Artur Moraes,36,CD Aves,70,70,193,209,Brazil,GK,71,68,64,69,44,74,3,70
 452,J. Lescott,33,Sunderland,70,70,188,196,England,CB,39,51,56,53,69,72,20,600
 470,B. Cesar,37,Chievo Verona,70,70,190,196,Slovenia,CB,32,27,40,52,70,70,0.5,350
@@ -5048,7 +5048,7 @@
 1256,A. Bonnet,33,Le Havre AC,70,70,173,143,France,LM,76,64,70,71,36,60,6,1100
 1276,P. Barrera,33,Atlético de San Luis,70,70,178,159,Mexico,RM,74,65,68,70,44,66,9,1100
 1296,N. Taylor,31,Aston Villa,70,70,175,165,Wales,LB,66,39,65,69,68,65,26,1300
-1322,A. Fathi,35,Egypt,70,70,175,172,Egypt,RB,63,62,64,66,69,74,0,0
+1322,A. Fathi,35,Egypt,70,70,175,172,Egypt,RB,63,62,64,66,69,74,1,0
 1335,D. Halfar,29,1. FC Kaiserslautern,70,70,173,148,Germany,CAM,74,56,70,75,31,58,10,1700
 1347,M. Robak,35,Slask Wroclaw,70,70,183,172,Poland,ST,57,69,52,66,39,73,5,825
 1353,Choi Chul Soon,33,Jeonbuk Hyundai Motors,70,70,175,150,Korea Republic,RB,71,46,63,66,67,75,6,800
@@ -5071,7 +5071,7 @@
 1691,S. Ninis,26,KV Mechelen,70,71,173,150,Greece,CAM,67,65,71,73,27,58,10,1200
 1695,K. Aït-Fana,27,Nîmes Olympique,70,70,175,154,Morocco,RM,72,64,67,75,33,48,5,1400
 1700,S. Williams,33,Millwall,70,70,183,176,Republic of Ireland,CDM,52,62,71,65,69,75,8,875
-1704,T. Matavž,31,Slovenia,70,70,188,179,Slovenia,ST,47,73,51,66,30,67,0,0
+1704,T. Matavž,31,Slovenia,70,70,188,179,Slovenia,ST,47,73,51,66,30,67,1,0
 1719,K. Barbarouses,30,New Zealand,70,70,170,150,New Zealand,RW,85,71,62,73,32,69,6,1700
 1727,G. Berardi,31,Leeds United,70,70,178,159,Switzerland,CB,66,39,60,64,69,77,41,1300
 1745,M. Langerak,31,Australia,70,70,193,172,Australia,GK,71,68,53,72,27,70,3,1100
@@ -5200,8 +5200,8 @@
 3155,F. Farnolle,35,BB Erzurumspor,70,70,196,229,Benin,GK,70,69,65,69,42,72,4,475
 3168,Baena,29,Granada CF,70,70,180,159,Spain,CB,39,54,65,61,68,71,6,1400
 3174,Suk Hyun Jun,29,ESTAC Troyes,70,70,190,181,Korea Republic,ST,59,72,57,68,39,78,6,1800
-3188,C. Ramos,29,Peru,70,70,183,172,Peru,CB,65,44,48,50,70,71,0,0
-3191,A. Corzo B,31,Peru,70,70,173,165,Peru,RB,71,46,58,63,70,64,0,0
+3188,C. Ramos,29,Peru,70,70,183,172,Peru,CB,65,44,48,50,70,71,1,0
+3191,A. Corzo B,31,Peru,70,70,173,165,Peru,RB,71,46,58,63,70,64,1,0
 3209,Ignasi Miquel,27,CD Leganés,70,71,188,181,Spain,CB,60,28,56,58,70,69,7,1800
 3214,J. Bidwell,27,Swansea City,70,71,183,176,England,LWB,68,41,65,63,68,74,15,1800
 3244,A. Ahamada,28,SK Brann,70,72,188,183,Comoros,GK,78,62,58,75,40,63,3,1500
@@ -5254,7 +5254,7 @@
 3841,Ryder Matos,27,Udinese,70,70,180,154,Brazil,RW,74,65,61,76,34,65,11,1900
 3854,S. Lletget,27,LA Galaxy,70,70,178,165,United States,RM,71,64,70,73,60,70,5,1800
 3866,E. Kachunga,28,Sheffield Wednesday,70,70,178,163,DR Congo,RM,76,68,63,70,45,72,12,1800
-3881,M. Pátkai,32,Hungary,70,70,173,154,Hungary,CDM,67,61,66,67,67,60,0,0
+3881,M. Pátkai,32,Hungary,70,70,173,154,Hungary,CDM,67,61,66,67,67,60,1,0
 3892,O. Omoijuanfo,26,Molde FK,70,73,188,165,Norway,ST,75,71,61,68,44,76,5,2200
 3918,M. Haïdara,27,Racing Club de Lens,70,71,178,168,Mali,LWB,76,51,59,67,66,77,19,1800
 3922,A. Søderlund,32,BK Häcken,70,70,188,190,Norway,ST,63,70,55,63,42,79,4,1400
@@ -5315,8 +5315,8 @@
 4680,J. Acosta,29,Liverpool Fútbol Club,70,70,178,165,Argentina,LM,83,66,62,71,38,61,0.5,1700
 4690,B. Uphoff,26,SC Freiburg,70,74,190,183,Germany,GK,69,69,68,71,38,69,10,1700
 4709,L. Jans,27,FC Metz,70,70,178,168,Luxembourg,RB,68,49,66,68,66,68,10,1600
-4734,A. Giannou,30,Australia,70,70,185,159,Australia,ST,66,71,55,66,28,74,0,0
-4760,B. Grobler,32,South Africa,70,70,183,172,South Africa,ST,76,68,56,68,34,63,0,0
+4734,A. Giannou,30,Australia,70,70,185,159,Australia,ST,66,71,55,66,28,74,1,0
+4760,B. Grobler,32,South Africa,70,70,183,172,South Africa,ST,76,68,56,68,34,63,1,0
 4769,S. Peeters,28,KAS Eupen,70,70,188,163,Belgium,CM,61,69,74,67,60,69,8,1800
 4776,M. Ishak,27,Lech Poznan,70,71,183,176,Sweden,ST,71,70,56,64,38,75,7,2100
 4799,Felipe,29,DC United,70,70,175,154,Brazil,CDM,56,65,71,69,61,71,5,1500
@@ -5337,7 +5337,7 @@
 5074,L. Cardozo,31,Club Libertad,70,70,180,165,Paraguay,CB,77,35,46,54,70,73,0.5,1300
 5122,L. Lollo,28,Venezia FC,70,70,180,165,Italy,RM,79,61,70,72,60,77,3,1800
 5124,M. Michel,28,AJ Auxerre,70,72,188,187,France,GK,70,68,66,72,49,69,4,1500
-5126,A. Gyurcsó,27,Hungary,70,70,180,148,Hungary,RW,89,67,65,71,33,61,0,0
+5126,A. Gyurcsó,27,Hungary,70,70,180,148,Hungary,RW,89,67,65,71,33,61,1,0
 5139,B. Hrgota,27,SpVgg Greuther Fürth,70,70,185,168,Sweden,ST,71,74,63,71,26,65,7,1900
 5154,J. Vázquez,32,Guadalajara,70,70,165,141,Mexico,CDM,72,53,68,66,71,70,24,1300
 5155,P. Iemmello,28,Benevento,70,70,178,163,Italy,ST,79,70,59,70,22,65,12,1800
@@ -5347,7 +5347,7 @@
 5196,B. Rabello,25,CD Universidad de Concepción,70,74,168,154,Chile,CAM,71,68,71,72,29,68,3,2300
 5211,B. Saller,27,SSV Jahn Regensburg,70,70,178,159,Germany,RB,77,53,67,67,64,66,7,1600
 5231,José Rodríguez,25,Málaga CF,70,74,180,165,Spain,CM,47,61,68,70,67,72,5,2100
-5232,C. Benavente,26,Peru,70,73,173,150,Peru,CAM,71,68,68,73,34,43,0,0
+5232,C. Benavente,26,Peru,70,73,173,150,Peru,CAM,71,68,68,73,34,43,1,0
 5240,A. Al Mayoof,33,Al Hilal,70,70,188,183,Saudi Arabia,GK,69,68,70,70,47,70,15,950
 5248,Jozabed,29,Málaga CF,70,70,180,143,Spain,CAM,57,69,69,70,57,64,7,1700
 5252,T. Pledl,26,Fortuna Düsseldorf,70,71,175,159,Germany,RM,76,59,69,74,49,57,15,2100
@@ -5372,8 +5372,8 @@
 5441,D. John,25,Swansea City,70,74,178,165,Wales,LWB,87,54,63,72,62,63,14,2000
 5457,A. Rojas,34,Central Córdoba,70,70,175,157,Argentina,CM,60,70,69,71,65,71,7,875
 5473,M. Goicoechea,32,Toulouse Football Club,70,70,185,181,Uruguay,GK,71,68,71,70,51,68,3,1100
-5475,R. Cardozo,30,Bolivia,70,70,170,154,Bolivia,LM,74,59,67,68,55,53,0,0
-5484,J. Irvine,27,Australia,70,72,188,154,Australia,ST,59,69,65,68,68,78,0,0
+5475,R. Cardozo,30,Bolivia,70,70,170,154,Bolivia,LM,74,59,67,68,55,53,1,0
+5484,J. Irvine,27,Australia,70,72,188,154,Australia,ST,59,69,65,68,68,78,1,0
 5489,P. Faragò,27,Cagliari,70,70,188,176,Italy,CM,63,57,70,69,65,66,17,1800
 5500,L. Baker,25,Trabzonspor,70,75,183,159,England,CM,67,67,72,71,63,66,16,2300
 5506,A. Callens,28,New York City FC,70,72,185,168,Peru,CB,45,33,49,51,69,76,5,1800
@@ -5397,7 +5397,7 @@
 5798,Jorginho,27,Al Qadisiyah,70,70,183,143,Brazil,CAM,69,58,69,72,42,52,10,1900
 5808,Cifu B,29,Elche CF,70,70,175,146,Spain,RB,81,54,58,67,64,75,11,1500
 5815,F. Calvo,27,Chicago Fire,70,70,180,176,Costa Rica,CB,67,44,60,62,69,75,5,1600
-5821,R. Sigurjónsson,30,Iceland,70,70,178,183,Iceland,CM,66,71,71,69,52,82,0,0
+5821,R. Sigurjónsson,30,Iceland,70,70,178,183,Iceland,CM,66,71,71,69,52,82,1,0
 5840,S. Asamoah,26,Sint-Truidense VV,70,74,163,141,Ghana,CDM,69,55,65,71,66,71,8,2100
 5864,L. Abergel,27,FC Lorient,70,72,170,143,France,RWB,73,47,62,67,66,75,15,1900
 5880,J. Osorio,28,Toronto FC,70,70,175,161,Canada,CAM,62,68,69,74,55,65,5,1800
@@ -5484,12 +5484,12 @@
 7105,M. Jojic,28,Medipol Basaksehir FK,70,70,178,174,Serbia,CAM,67,72,74,73,56,70,20,1800
 7121,Kang Hyeon Mu,25,Pohang Steelers,70,74,185,172,Korea Republic,GK,71,64,63,74,45,69,4,1700
 7152,T. Adarabioyo,22,Manchester City,70,81,193,172,England,CB,61,31,55,55,70,72,40,2800
-7171,P. Anton,29,Romania,70,70,183,181,Romania,CDM,60,58,66,60,67,70,0,0
+7171,P. Anton,29,Romania,70,70,183,181,Romania,CDM,60,58,66,60,67,70,1,0
 7181,Tang Miao  B,29,Guangzhou R&F FC,70,70,178,163,China PR,RB,75,29,64,69,61,78,9,1500
 7184,G. Esparza,27,Sol de América,70,70,168,152,Argentina,LM,90,60,64,72,44,54,0.5,1900
 7236,R. Aarons,24,Newcastle United,70,74,175,168,England,LM,78,63,67,73,39,54,18,2300
 7239,O. Hüsing,27,1. FC Heidenheim 1846,70,72,193,203,Germany,CB,46,32,45,45,70,79,12,1900
-7242,Zizo,24,Egypt,70,73,175,148,Egypt,RM,80,65,67,72,52,69,0,0
+7242,Zizo,24,Egypt,70,73,175,148,Egypt,RM,80,65,67,72,52,69,1,0
 7243,E. Koulouris,24,Toulouse Football Club,70,73,183,181,Greece,ST,67,72,54,66,27,60,4,2300
 7249,R. Rúnarsson,25,Arsenal,70,75,185,168,Iceland,GK,71,68,72,71,46,70,25,1800
 7251,A. Tello,23,Benevento,70,77,180,176,Colombia,RM,86,58,69,75,61,81,9,2500
@@ -5498,7 +5498,7 @@
 7292,B. Ajdini,27,VfL Osnabrück,70,71,175,161,Germany,RM,78,65,70,72,61,62,7,1800
 7323,H. Yamaguchi,29,Vissel Kobe,70,70,173,159,Japan,CM,75,64,70,72,65,71,6,1700
 7333,A. Kara,27,Kasimpasa SK,70,71,185,185,Turkey,CM,61,69,69,66,64,82,9,2000
-7345,D. Rotariu,23,Romania,70,75,180,159,Romania,LW,75,66,65,74,31,54,0,0
+7345,D. Rotariu,23,Romania,70,75,180,159,Romania,LW,75,66,65,74,31,54,1,0
 7351,N. Oroz,25,Racing Club,70,72,173,161,Argentina,CAM,75,59,67,74,52,58,11,2200
 7384,B. Fernández,25,Club Atlético Colón,70,72,175,154,Argentina,CAM,81,70,68,70,29,58,8,2200
 7388,A. Witry,24,Djurgårdens IF,70,76,178,168,Norway,RWB,76,54,65,66,65,67,4,2200
@@ -5539,14 +5539,14 @@
 7818,Raúl Guti,23,Elche CF,70,78,178,163,Spain,CDM,70,65,65,67,69,81,10,2600
 7819,K. Narey,25,Hamburger SV,70,71,180,165,Germany,RM,81,64,63,69,59,74,8,2100
 7857,Ygor Nogueira,25,Gil Vicente FC,70,72,188,181,Brazil,CB,54,30,45,50,69,78,5,1900
-7872,D. Bohar,28,Slovenia,70,70,173,152,Slovenia,LM,82,67,64,69,33,62,0,0
+7872,D. Bohar,28,Slovenia,70,70,173,152,Slovenia,LM,82,67,64,69,33,62,1,0
 7886,K. Balanta,23,Club Tijuana,70,77,180,161,Colombia,CDM,83,57,60,68,68,77,11,2500
 7897,A. Kamara,25,Fulham,70,74,178,179,France,ST,84,67,55,68,31,76,47,2300
-7902,E. Sorokin,24,Russia,70,76,188,179,Russia,CB,63,32,42,42,72,71,0,0
+7902,E. Sorokin,24,Russia,70,76,188,179,Russia,CB,63,32,42,42,72,71,1,0
 7940,L. León,27,Atlético de San Luis,70,70,183,154,Ecuador,CB,57,35,43,49,71,68,9,1600
 7941,M. Pineida,27,Barcelona Sporting Club,70,70,170,154,Ecuador,LB,70,34,61,55,67,52,0.5,1600
 7943,M. Bader,23,SV Darmstadt 98,70,78,175,161,Germany,RWB,71,34,58,67,66,65,9,2300
-8001,L. Cáceda,30,Paraguay,70,70,190,196,Paraguay,CB,60,25,35,41,70,76,0,0
+8001,L. Cáceda,30,Paraguay,70,70,190,196,Paraguay,CB,60,25,35,41,70,76,1,0
 8007,M. Duelund,23,Dynamo Kyiv,70,78,178,165,Denmark,CAM,74,66,68,73,42,68,0.5,2600
 8008,C. Yambéré,29,Ettifaq FC,70,71,190,179,Central African Republic,CB,57,31,48,53,70,76,15,1700
 8012,R. Lauritsen,24,IFK Norrköping,70,77,188,172,Denmark,CB,67,41,58,55,68,75,4,2300
@@ -5638,7 +5638,7 @@
 9697,Y. Suzuki,24,Sint-Truidense VV,70,75,183,165,Japan,ST,70,67,67,68,45,69,8,2400
 9699,A. Vega,22,Guadalajara,70,80,173,170,Mexico,ST,74,73,56,74,31,70,23,2900
 9729,R. Gumny,22,FC Augsburg,70,81,178,134,Poland,RWB,86,37,60,69,64,67,12,2800
-9736,S. Hlanti,30,South Africa,70,70,183,172,South Africa,LB,71,34,61,66,69,62,0,0
+9736,S. Hlanti,30,South Africa,70,70,183,172,South Africa,LB,71,34,61,66,69,62,1,0
 9774,Lincoln,21,Santa Clara,70,80,178,159,Brazil,CAM,78,64,67,75,30,54,3,2900
 9778,J. Angulo,23,Guadalajara,70,79,173,139,Mexico,LM,78,59,68,71,46,61,21,2700
 9787,A. Fukumori,27,Hokkaido Consadole Sapporo,70,72,183,165,Japan,CDM,65,67,72,66,70,72,4,1900
@@ -5758,7 +5758,7 @@
 11911,N. Maraš,24,UD Almería,70,78,188,174,Serbia,CB,67,37,48,54,70,73,5,2400
 11932,Dani Martín,21,Real Betis,70,80,188,170,Spain,GK,70,67,67,73,47,69,6,2300
 11943,J. Paintsil,22,MKE Ankaragücü,70,77,168,150,Ghana,CAM,85,63,60,76,32,60,14,2500
-11968,P. Mahlambi,21,South Africa,70,77,173,154,South Africa,RM,85,65,64,71,39,52,0,0
+11968,P. Mahlambi,21,South Africa,70,77,173,154,South Africa,RM,85,65,64,71,39,52,1,0
 11971,J. Deminguet,22,Stade Malherbe Caen,70,79,178,163,France,CM,69,60,71,71,62,64,5,2700
 12008,A. Preciado,25,Santos Laguna,70,71,180,159,Ecuador,ST,82,71,66,70,32,62,14,2100
 12065,C. Ferreira,20,River Plate,70,81,175,152,Argentina,CAM,76,70,74,74,52,63,7,3000
@@ -5773,7 +5773,7 @@
 12298,F. Ortega,21,Vélez Sarsfield,70,83,178,165,Argentina,LM,87,59,62,75,61,71,6,3100
 12378,E. Koljic,24,Universitatea Craiova,70,75,190,203,Bosnia Herzegovina,ST,61,70,52,62,33,76,7,2400
 12488,D. Nedelcu,23,FCSB (Steaua),70,77,188,172,Romania,CDM,62,56,61,60,68,75,8,2300
-12506,A. Modiba,23,South Africa,70,73,170,154,South Africa,LM,82,56,66,72,61,49,0,0
+12506,A. Modiba,23,South Africa,70,73,170,154,South Africa,LM,82,56,66,72,61,49,1,0
 12519,N. Baumann,24,FC Lugano,70,78,193,183,Switzerland,GK,69,68,68,74,23,69,3,2000
 12538,Alberto Soro,21,Granada CF,70,83,173,139,Spain,CAM,83,63,67,69,44,61,10,3400
 12599,H. Türkmen,22,Trabzonspor,70,75,183,172,Turkey,CB,73,37,50,57,72,70,13,2100
@@ -5851,7 +5851,7 @@
 14589,S. Nurkovic,28,Kaizer Chiefs,70,70,188,176,Serbia,ST,62,74,57,65,26,68,0.5,1800
 14616,Pedro Amaral,22,Rio Ave FC,70,78,178,159,Portugal,LB,74,46,55,67,68,64,5,2300
 14617,C. De Ketelaere,19,Club Brugge KV,70,82,193,163,Belgium,LM,73,62,72,73,56,65,9,3100
-14723,C. Lendezo,26,Ecuador,70,70,170,152,Ecuador,RW,88,65,55,76,26,59,0,0
+14723,C. Lendezo,26,Ecuador,70,70,170,152,Ecuador,RW,88,65,55,76,26,59,1,0
 14763,L. Randelovic,22,Olympiacos CFP,70,77,178,150,Serbia,RM,79,65,67,70,33,61,0.5,2500
 14996,Manu Sánchez,19,Atlético Madrid,70,82,178,154,Spain,LWB,70,40,59,66,67,61,12,2800
 15112,Ernesto,25,AD Alcorcón,70,71,173,154,Spain,RM,79,67,64,70,29,55,6,2100
@@ -5862,9 +5862,9 @@
 15425,E. Fernández,31,Deportivo Binacional,70,70,183,176,Peru,CB,61,42,50,54,69,73,0.5,1300
 15430,E. Aubert,31,Melgar FBC,70,70,173,143,Peru,CDM,57,36,59,61,64,74,0.5,1300
 15439,M. Sotillo,35,Deportivo Binacional,70,70,183,172,Peru,GK,72,75,68,65,49,70,0.5,475
-15505,Afsha,24,Egypt,70,74,168,146,Egypt,CAM,69,67,70,73,49,57,0,0
+15505,Afsha,24,Egypt,70,74,168,146,Egypt,CAM,69,67,70,73,49,57,1,0
 15537,N. Guirin,25,Club Plaza Colonia,70,75,183,161,Uruguay,GK,67,67,67,70,46,70,0.5,1800
-15597,M. Hany,24,Egypt,70,75,175,159,Egypt,RB,75,54,65,69,66,66,0,0
+15597,M. Hany,24,Egypt,70,75,175,159,Egypt,RB,75,54,65,69,66,66,1,0
 15599,Nilton Varela,19,Os Belenenses,70,82,183,168,Portugal,LWB,75,50,60,73,66,70,2,2800
 15764,N. Madueke,18,PSV,70,86,175,143,England,CAM,78,65,64,78,36,56,3,3700
 15800,Leonardo,23,Urawa Red Diamonds,70,75,180,170,Brazil,ST,69,72,56,67,31,63,7,2400
@@ -5901,7 +5901,7 @@
 532,J. Gutiérrez,36,Club Atlético Banfield,69,69,183,161,Argentina,CM,59,61,70,68,65,69,6,325
 567,Javi Fuego,36,Real Sporting de Gijón,69,69,180,161,Spain,CDM,40,60,66,64,67,70,3,230
 587,D. Bilyaletdinov,31,Rubin Kazan,69,69,185,170,Russia,CAM,58,70,70,69,46,63,20,875
-590,C. Moti,33,Romania,69,69,183,172,Romania,CB,64,32,51,51,68,74,0,0
+590,C. Moti,33,Romania,69,69,183,172,Romania,CB,64,32,51,51,68,74,1,0
 601,C. Molinaro,35,Venezia FC,69,69,183,181,Italy,LB,61,49,63,65,71,64,2,300
 606,V. Bojinov,33,Pescara,69,69,180,159,Bulgaria,ST,67,69,62,71,23,72,3,650
 607,A. Rosati,37,Torino,69,69,196,194,Italy,GK,68,69,46,68,31,70,9,110
@@ -5919,7 +5919,7 @@
 838,A. Baumjohann,33,Sydney FC,69,69,178,165,Germany,CAM,66,63,68,73,36,54,5,650
 889,J. Hayes,32,Aberdeen,69,69,173,161,Republic of Ireland,LM,78,60,66,73,65,72,5,825
 900,J. Féret,35,AJ Auxerre,69,69,188,168,France,CAM,44,64,72,68,55,63,4,450
-902,A. Williams,35,Wales,69,69,183,170,Wales,CB,40,43,52,58,70,72,0,0
+902,A. Williams,35,Wales,69,69,183,170,Wales,CB,40,43,52,58,70,72,1,0
 916,N. Onuoha,33,Real Salt Lake,69,69,183,172,England,CB,71,33,54,53,67,78,4,500
 920,G. Agbonlahor,30,Aston Villa,69,69,180,174,England,ST,77,69,60,68,37,63,20,1000
 977,Park Chu Young,34,FC Seoul,69,69,183,165,Korea Republic,CAM,61,70,72,71,37,59,6,550
@@ -5931,7 +5931,7 @@
 1066,S. Allagui,33,Royal Excel Mouscron,69,69,183,170,Tunisia,ST,66,69,63,71,29,59,7,650
 1067,M. Sougou,31,Moreirense FC,69,69,178,146,Senegal,RM,84,67,61,70,34,66,7,875
 1076,J. Peters,33,Willem II,69,69,183,172,Netherlands,CB,46,39,57,55,70,72,5,500
-1092,S. Ekramy,34,Egypt,69,69,193,205,Egypt,GK,65,69,77,79,57,64,0,0
+1092,S. Ekramy,34,Egypt,69,69,193,205,Egypt,GK,65,69,77,79,57,64,1,0
 1094,M. Lacen,34,Málaga CF,69,69,175,163,Algeria,CM,52,58,71,67,65,67,5,325
 1098,A. Traoré,28,Çaykur Rizespor,69,69,185,181,Senegal,LB,83,49,61,69,63,72,7,825
 1100,F. Fielding,32,Millwall,69,69,180,168,England,GK,67,67,60,74,40,66,6,650
@@ -5977,7 +5977,7 @@
 1713,Huang Bowen,32,Guangzhou Evergrande Taobao FC,69,69,180,157,China PR,CDM,66,63,70,63,65,71,10,700
 1733,W. Sandilands,36,Orlando Pirates,69,69,180,179,South Africa,GK,69,70,68,71,53,68,0.5,180
 1746,R. Kruse,31,Melbourne Victory,69,69,178,154,Australia,LM,73,68,66,68,40,58,5,925
-1755,K. Erasmus,28,South Africa,69,69,168,139,South Africa,ST,76,70,60,70,27,58,0,0
+1755,K. Erasmus,28,South Africa,69,69,168,139,South Africa,ST,76,70,60,70,27,58,1,0
 1795,B. Augustyn,32,Jagiellonia Bialystok,69,69,190,187,Poland,CB,48,42,47,51,67,73,5,675
 1807,Y. Benalouane,33,Nottingham Forest,69,69,185,190,Tunisia,CB,46,39,55,52,68,69,20,500
 1828,J. Henry,31,Oxford United,69,69,183,170,England,RM,71,69,68,70,45,64,6,925
@@ -6047,7 +6047,7 @@
 3149,A. Turan,28,MKE Ankaragücü,69,69,175,174,Turkey,LB,72,58,67,67,64,69,12,900
 3153,M. Peybernès,29,UD Almería,69,70,185,172,France,CB,48,31,50,49,70,72,5,1000
 3200,C. Lampe,33,Bolivia,69,69,193,187,Bolivia,GK,66,71,62,70,32,68,0.5,575
-3206,M. Bejarano,32,Bolivia,69,69,173,154,Bolivia,LB,67,33,52,61,67,66,0,0
+3206,M. Bejarano,32,Bolivia,69,69,173,154,Bolivia,LB,67,33,52,61,67,66,1,0
 3212,E. Izaguirre,32,Celtic,69,69,178,170,Honduras,LWB,66,38,67,69,65,74,20,575
 3232,I. Baldé,30,Real Oviedo,69,69,190,187,Senegal,ST,58,71,59,60,26,75,6,1000
 3233,N. Besara,29,Örebro SK,69,69,183,168,Sweden,CAM,69,69,68,71,45,64,3,1100
@@ -6090,7 +6090,7 @@
 3821,J. Ankersen,28,Aarhus GF,69,69,178,157,Denmark,LW,86,64,63,70,42,67,8,1100
 3869,M. Deplagne,28,FC Cincinnati,69,69,183,168,France,CB,58,28,62,52,69,73,4,900
 3870,U. Bech,27,Panathinaikos FC,69,69,170,148,Denmark,LW,79,65,62,74,24,57,0.5,1100
-3879,B. Baráth,28,Hungary,69,69,188,165,Hungary,CB,66,52,54,57,66,76,0,0
+3879,B. Baráth,28,Hungary,69,69,188,165,Hungary,CB,66,52,54,57,66,76,1,0
 3897,V. Berisha,26,Viking FK,69,70,175,165,Norway,ST,83,68,61,70,34,80,3,1300
 3900,D. Fagundez,25,New England Revolution,69,73,173,141,Uruguay,RM,75,65,68,75,39,59,4,1400
 3921,S. Thern,27,IFK Norrköping,69,69,180,168,Sweden,CAM,76,65,67,71,58,70,4,1100
@@ -6113,7 +6113,7 @@
 4335,A. Trajkovski,27,RCD Mallorca,69,69,180,172,North Macedonia,CAM,73,69,65,75,26,57,5,1100
 4343,B. van Leer,28,Sparta Rotterdam,69,70,188,176,Netherlands,GK,67,71,63,69,43,68,4,875
 4355,G. Saville,27,Middlesbrough,69,70,183,161,Northern Ireland,CM,63,65,69,68,66,74,9,1200
-4358,M. Smith,31,Northern Ireland,69,69,180,157,Northern Ireland,RB,71,43,63,65,65,74,0,0
+4358,M. Smith,31,Northern Ireland,69,69,180,157,Northern Ireland,RB,71,43,63,65,65,74,1,0
 4376,F. Lewis,26,Willem II,69,70,180,165,Netherlands,RB,87,47,59,68,65,73,5,1100
 4377,M. van Buren,27,SK Slavia Praha,69,69,183,161,Netherlands,ST,81,65,61,70,31,71,0.5,1100
 4402,A. Escoboza,27,Club América,69,70,170,154,Mexico,LM,74,65,70,72,61,67,16,1000
@@ -6159,7 +6159,7 @@
 4975,M. Eriksson,30,Djurgårdens IF,69,69,180,174,Sweden,CM,51,69,71,67,51,80,4,1000
 5007,M. Delgado,25,Toronto FC,69,71,175,146,United States,CDM,69,55,62,68,65,69,4,1200
 5017,D. Furman,27,Gençlerbirligi SK,69,69,180,157,Poland,CM,66,63,71,67,65,71,9,1100
-5029,D. Grigore,33,Romania,69,69,185,168,Romania,CB,62,52,57,48,69,76,0,0
+5029,D. Grigore,33,Romania,69,69,185,168,Romania,CB,62,52,57,48,69,76,1,0
 5042,M. Fox,26,Stoke City,69,70,185,172,Wales,LB,63,43,57,61,68,69,12,1100
 5051,J. Roye,29,GFC Ajaccio,69,69,175,150,France,CAM,69,67,69,68,49,65,4,1000
 5066,N. Al Abed,30,Al Hilal,69,69,170,132,Saudi Arabia,CAM,70,70,69,72,45,60,17,1000
@@ -6216,7 +6216,7 @@
 5907,S. O'Donnell,28,Motherwell,69,69,183,196,Scotland,RB,73,49,61,66,65,78,4,900
 5912,J. Cornejo,29,Universidad Católica,69,69,178,170,Chile,LB,75,57,63,65,67,69,6,875
 5914,O. Bosso,26,Audax Italiano,69,71,168,152,Chile,RB,81,38,60,57,66,62,3,1100
-5918,R. Williams,28,South Africa,69,71,183,157,South Africa,GK,71,64,65,71,57,67,0,0
+5918,R. Williams,28,South Africa,69,71,183,157,South Africa,GK,71,64,65,71,57,67,1,0
 5949,H. Ongenda,25,FC Botosani,69,73,170,159,France,RM,78,62,68,73,34,57,6,1400
 5953,B. Acosta,33,SK Brann,69,69,183,203,Costa Rica,CB,39,45,45,51,68,83,3,500
 5956,S. Rossbach,24,Odds BK,69,76,188,176,Norway,GK,70,66,66,72,44,67,2,1100
@@ -6266,9 +6266,9 @@
 6558,A. Hjulsager,25,KV Oostende,69,71,178,161,Denmark,CAM,73,64,64,71,58,64,6,1300
 6573,F. Oviedo,33,Club Bolívar,69,69,178,181,Paraguay,CDM,43,39,56,58,64,86,0.5,500
 6576,S. Torales,28,River Plate Asunción,69,69,175,159,Paraguay,CM,72,58,67,70,65,61,0.5,1000
-6590,A. El Solia,31,Egypt,69,69,185,170,Egypt,CDM,63,61,63,66,67,71,0,0
+6590,A. El Solia,31,Egypt,69,69,185,170,Egypt,CDM,63,61,63,66,67,71,1,0
 6592,Kim Min Woo,30,Suwon Samsung Bluewings,69,69,175,146,Korea Republic,LM,78,63,66,71,56,69,3,1000
-6624,S. Gbohouo,31,Côte d'Ivoire,69,69,190,181,Ivory Coast,GK,69,67,67,66,41,71,0,0
+6624,S. Gbohouo,31,Côte d'Ivoire,69,69,190,181,Ivory Coast,GK,69,67,67,66,41,71,1,0
 6644,B. Beckeles,34,Nashville SC,69,69,183,185,Honduras,RB,61,51,60,54,67,82,4,375
 6645,M. Helik,24,Barnsley,69,75,190,176,Poland,CB,67,49,47,53,69,73,6,1300
 6673,J. Murillo,26,Independiente Medellín,69,72,183,176,Colombia,CB,78,38,53,59,69,77,2,1200
@@ -6286,9 +6286,9 @@
 6753,N. Körber,23,Hertha BSC,69,75,185,185,Germany,GK,71,64,59,75,35,67,12,1100
 6772,S. Khaoui,25,Olympique de Marseille,69,73,183,150,Tunisia,CAM,67,64,70,72,38,53,16,1400
 6777,C. Mahoney,23,Millwall,69,76,175,148,England,RW,76,63,63,73,38,47,7,1500
-6804,Wanderson,32,Bulgaria,69,69,168,134,Bulgaria,CF,77,68,63,71,31,53,0,0
+6804,Wanderson,32,Bulgaria,69,69,168,134,Bulgaria,CF,77,68,63,71,31,53,1,0
 6806,O. Kemen,23,Chamois Niortais Football Club,69,77,178,168,France,CM,74,63,64,71,64,79,3,1400
-6821,B. Mkhwanazi,30,South Africa,69,69,183,165,South Africa,CB,68,31,49,44,73,73,0,0
+6821,B. Mkhwanazi,30,South Africa,69,69,183,165,South Africa,CB,68,31,49,44,73,73,1,0
 6826,B. Sanneh,24,KV Oostende,69,74,183,165,Gambia,CB,72,43,47,58,68,71,6,1300
 6833,Alex Alegría,27,RCD Mallorca,69,70,190,185,Spain,ST,50,69,56,68,33,72,5,1200
 6844,G. Campi,29,Trabzonspor,69,69,193,194,Argentina,CB,48,46,61,61,69,77,13,875
@@ -6357,7 +6357,7 @@
 7954,S. Živec,29,Zaglebie Lubin,69,69,178,154,Slovenia,RM,75,66,64,72,38,63,5,1000
 8013,M. Gakpa,26,Paris FC,69,72,183,154,France,CAM,73,62,71,75,53,58,5,1300
 8017,B. Akintola,24,Hatayspor,69,74,178,152,Nigeria,RM,90,56,58,73,42,61,7,1400
-8036,O. Ruisalvo,26,Paraguay,69,69,165,150,Paraguay,LW,74,68,66,70,35,49,0,0
+8036,O. Ruisalvo,26,Paraguay,69,69,165,150,Paraguay,LW,74,68,66,70,35,49,1,0
 8060,J. Dehm,24,Holstein Kiel,69,75,180,161,Germany,RWB,80,48,63,67,61,66,7,1300
 8084,S. Davis,27,New York Red Bulls,69,70,183,165,United States,CM,70,59,70,70,66,74,4,1200
 8101,K. Dowell,22,Norwich City,69,77,185,154,England,CAM,63,67,69,71,44,50,5,1500
@@ -6378,7 +6378,7 @@
 8318,N. Tripichio,24,Defensa y Justicia,69,74,175,134,Argentina,RWB,80,49,62,71,62,66,6,1200
 8341,L. Walsh,22,Bristol City,69,78,168,139,England,CAM,68,64,70,73,59,60,17,1600
 8356,R. Curtis,24,Portsmouth,69,75,183,170,Republic of Ireland,RM,86,64,60,69,48,76,6,1400
-8358,A. Figuera,30,Venezuela,69,69,170,150,Venezuela,CDM,67,38,61,61,69,66,0,0
+8358,A. Figuera,30,Venezuela,69,69,170,150,Venezuela,CDM,67,38,61,61,69,66,1,0
 8359,K. Paal,23,PEC Zwolle,69,76,175,154,Netherlands,LM,82,52,66,72,62,68,4,1300
 8361,Jorge Pombo,26,Cádiz CF,69,72,178,168,Spain,RM,69,70,68,71,57,82,14,1300
 8374,D. Cardoso,31,Kaizer Chiefs,69,69,183,172,South Africa,CB,68,33,48,56,71,70,0.5,775
@@ -6448,7 +6448,7 @@
 9285,B. Blasi,24,Unión de Santa Fe,69,75,180,165,Argentina,CB,65,35,57,65,68,74,5,1300
 9298,Dalmau,26,FC Utrecht,69,71,183,163,Spain,ST,71,71,53,66,41,56,8,1300
 9308,U. Sadiq,21,Perugia,69,78,193,176,Nigeria,ST,75,67,52,63,28,64,3,1600
-9311,A. Peñaranda,23,Venezuela,69,74,185,183,Venezuela,CAM,74,67,65,73,36,60,0,0
+9311,A. Peñaranda,23,Venezuela,69,74,185,183,Venezuela,CAM,74,67,65,73,36,60,1,0
 9342,T. Henry,25,Oud-Heverlee Leuven,69,72,193,190,France,ST,61,67,53,58,35,72,8,1300
 9349,L. Castro,28,Independiente Medellín,69,69,178,168,Colombia,ST,78,71,58,70,34,63,3,1100
 9353,L. Ruiz,24,UD Logroñés,69,76,185,168,Colombia,ST,64,70,57,70,23,63,4,1500
@@ -6486,7 +6486,7 @@
 9747,A. Campbell,21,Motherwell,69,78,175,163,Scotland,CDM,71,57,63,68,72,79,3,1600
 9758,B. Atik,24,SG Dynamo Dresden,69,74,170,161,Turkey,CAM,73,59,64,74,36,53,8,1400
 9764,K. Malinov,26,Oud-Heverlee Leuven,69,73,170,143,Bulgaria,CDM,73,55,59,61,64,71,7,1200
-9765,A. Nedyalkov,27,Bulgaria,69,70,180,154,Bulgaria,LB,65,47,59,66,66,67,0,0
+9765,A. Nedyalkov,27,Bulgaria,69,70,180,154,Bulgaria,LB,65,47,59,66,66,67,1,0
 9811,Thiago Martins,25,Yokohama F. Marinos,69,73,185,168,Brazil,CB,69,35,55,59,69,71,6,1200
 9834,C. Pickel,23,Grenoble Foot 38,69,80,183,168,Switzerland,CDM,66,53,63,64,65,76,3,1700
 9840,Matos,25,Málaga CF,69,72,168,141,Spain,LWB,79,47,58,65,60,58,5,1200
@@ -6530,7 +6530,7 @@
 10357,A. Sissako,22,SV Zulte-Waregem,69,77,185,172,France,CDM,70,54,64,67,67,74,6,1400
 10381,M. Varnier,21,Pisa,69,81,185,181,Italy,CB,65,38,50,54,69,71,1,1700
 10392,I. Atiemwen,23,Dinamo Zagreb,69,72,180,176,Nigeria,ST,81,67,63,70,44,68,0.5,1300
-10414,S. Szymanski,21,Poland,69,83,175,132,Poland,CAM,84,61,66,73,30,46,0,0
+10414,S. Szymanski,21,Poland,69,83,175,132,Poland,CAM,84,61,66,73,30,46,1,0
 10481,I. Mathew,22,Lillestrøm SK,69,78,173,154,Nigeria,RM,80,62,64,70,63,73,3,1600
 10507,K. Mohammed,24,Dynamo Kyiv,69,76,183,168,Ghana,CB,70,33,56,62,68,71,0.5,1300
 10546,Pedro Díaz,22,Real Sporting de Gijón,69,80,180,172,Spain,CAM,67,70,72,70,61,63,4,1700
@@ -6615,7 +6615,7 @@
 11680,A. Jakubech,23,KV Kortrijk,69,75,188,181,Slovakia,GK,72,64,64,69,40,67,4,1100
 11760,E. Vignato,19,Bologna,69,80,175,148,Italy,CAM,71,61,69,71,39,48,8,1800
 11764,Y. Çetin,23,Hellas Verona,69,79,188,198,Turkey,CB,56,42,42,45,71,71,10,1500
-11837,M. Villasanti,23,Paraguay,69,75,178,152,Paraguay,CM,70,62,61,70,59,64,0,0
+11837,M. Villasanti,23,Paraguay,69,75,178,152,Paraguay,CM,70,62,61,70,59,64,1,0
 11885,E. Sabbi,22,Odense Boldklub,69,78,178,154,United States,CAM,91,64,56,76,38,59,6,1600
 11891,T. Chancalay,21,Club Atlético Colón,69,79,178,163,Argentina,CAM,77,64,65,72,38,63,5,1700
 11893,S. Diarra,25,Gazisehir Gaziantep F.K.,69,74,173,137,Mali,CM,66,56,65,72,65,69,7,1400
@@ -6667,7 +6667,7 @@
 12702,Limones,33,CD Mirandés,69,69,188,192,Spain,GK,67,69,64,70,32,71,3,575
 12755,Júlio César,25,CD Nacional,69,74,188,179,Brazil,CB,42,36,44,48,69,78,5,1200
 12777,S. van der Water,23,Heracles Almelo,69,73,183,163,Netherlands,LM,81,68,60,72,40,63,4,1400
-12788,W. Coulibaly,28,Côte d'Ivoire,69,69,178,152,Ivory Coast,LB,72,41,56,67,66,69,0,0
+12788,W. Coulibaly,28,Côte d'Ivoire,69,69,178,152,Ivory Coast,LB,72,41,56,67,66,69,1,0
 12825,J. Igbekeme,24,Real Zaragoza,69,74,170,146,Nigeria,CDM,73,57,68,70,66,79,5,1400
 12888,M. Djitté,20,Grenoble Foot 38,69,80,180,165,Senegal,ST,79,67,53,73,28,65,3,1800
 12947,M. Salas,22,Club Necaxa,69,77,173,157,Argentina,CAM,71,70,66,73,29,63,6,1600
@@ -6687,11 +6687,11 @@
 13315,João Lucas,24,Santa Clara,69,72,180,146,Portugal,LB,75,42,61,65,65,63,3,1200
 13366,G. Yalçin,21,Besiktas JK,69,78,183,170,Turkey,ST,76,72,50,67,23,57,22,1700
 13454,I. Diveev,20,PFC CSKA Moscow,69,82,193,187,Russia,CB,61,34,57,56,71,70,12,1900
-13475,J. Lawrence,27,Wales,69,71,188,179,Wales,CB,49,29,62,56,70,70,0,0
+13475,J. Lawrence,27,Wales,69,71,188,179,Wales,CB,49,29,62,56,70,70,1,0
 13481,S. Hatanaka,24,Yokohama F. Marinos,69,73,183,176,Japan,CB,52,36,55,54,69,75,5,1200
 13522,Mollejo,19,Atlético Madrid,69,82,175,139,Spain,LM,74,64,64,69,37,65,12,2000
 13530,S. Sosa,21,River Plate,69,82,178,172,Argentina,CDM,62,57,59,65,67,73,5,1900
-13547,H. Vaca,21,Bolivia,69,77,168,132,Bolivia,LM,76,65,66,70,34,55,0,0
+13547,H. Vaca,21,Bolivia,69,77,168,132,Bolivia,LM,76,65,66,70,34,55,1,0
 13564,U. Meras,24,Le Havre AC,69,74,178,161,Turkey,LB,72,42,60,65,65,70,4,1200
 13618,Richardson,28,Kashiwa Reysol,69,69,175,163,Brazil,CDM,66,37,58,67,69,71,5,925
 13624,Iván Martos,23,UD Almería,69,76,183,150,Spain,LB,75,39,53,64,66,67,4,1300
@@ -6713,7 +6713,7 @@
 14125,D. Valdez,26,Sol de América,69,73,180,163,Paraguay,CDM,66,49,64,60,67,71,0.5,1200
 14155,I. Cristea,25,FCSB (Steaua),69,74,183,170,Romania,CB,62,36,45,55,69,76,7,1200
 14158,F. <U+0218>tefan,24,Romania,69,74,183,154,Romania,LB,71,62,65,65,66,72,4,1200
-14161,S. Arzamendia,22,Paraguay,69,79,173,152,Paraguay,LWB,72,57,61,67,65,62,0,0
+14161,S. Arzamendia,22,Paraguay,69,79,173,152,Paraguay,LWB,72,57,61,67,65,62,1,0
 14173,B. de Nooijer,22,FC Viitorul,69,77,185,176,Netherlands,LWB,84,45,58,66,61,71,4,1400
 14228,O. Browne,24,Montreal Impact,69,72,170,159,Panama,LW,78,65,62,75,36,59,5,1300
 14301,J. Mellot,26,En Avant de Guingamp,69,72,178,170,France,RB,76,40,56,66,66,71,4,1100
@@ -6729,9 +6729,9 @@
 14602,Nuno Santos,21,Boavista FC,69,79,165,128,Portugal,CAM,79,59,66,72,50,63,4,1700
 14635,J. Gvardiol,18,Dinamo Zagreb,69,86,185,181,Croatia,CB,77,41,63,65,65,78,0.5,2000
 14646,A. Niangbo,20,KAA Gent,69,80,173,148,Ivory Coast,ST,87,68,54,73,23,53,9,1800
-14717,J. Borgueray,30,Ecuador,69,70,198,192,Ecuador,GK,65,63,61,73,50,69,0,0
-14720,L. Conderia,27,Ecuador,69,69,188,185,Ecuador,ST,53,72,52,63,36,77,0,0
-14724,S. Herreyra,27,Ecuador,69,72,190,192,Ecuador,CB,57,30,41,42,69,79,0,0
+14717,J. Borgueray,30,Ecuador,69,70,198,192,Ecuador,GK,65,63,61,73,50,69,1,0
+14720,L. Conderia,27,Ecuador,69,69,188,185,Ecuador,ST,53,72,52,63,36,77,1,0
+14724,S. Herreyra,27,Ecuador,69,72,190,192,Ecuador,CB,57,30,41,42,69,79,1,0
 14774,S. Botman,20,LOSC Lille,69,78,193,179,Netherlands,CB,70,30,47,48,68,75,10,1500
 14795,K. Adeyemi,18,FC Red Bull Salzburg,69,87,178,150,Germany,LW,88,68,63,75,23,54,5,2200
 14806,J. Daoudi,31,Al Raed,69,69,175,161,Morocco,CDM,72,63,70,68,65,75,9,800
@@ -6747,7 +6747,7 @@
 15005,J. Bellingham,17,Borussia Dortmund,69,88,180,159,England,CAM,77,65,64,73,55,66,3,2100
 15060,I. Ndiaye,21,FC Luzern,69,78,175,143,Senegal,LM,91,62,59,76,53,61,6,1600
 15070,J. Chotard,18,Montpellier HSC,69,84,178,154,France,CM,69,53,70,72,61,63,5,2100
-15101,B. El Mohamady,23,Egypt,69,74,180,165,Egypt,CB,77,40,59,65,68,75,0,0
+15101,B. El Mohamady,23,Egypt,69,74,180,165,Egypt,CB,77,40,59,65,68,75,1,0
 15103,S. Nicholson,23,Sporting de Charleroi,69,75,193,183,Jamaica,ST,67,74,58,62,22,75,7,1500
 15198,Jonathan,22,UD Las Palmas,69,78,173,152,Brazil,LB,67,43,55,68,64,54,4,1500
 15243,B. Rodríguez,20,Los Angeles FC,69,79,173,150,Uruguay,RM,79,64,62,71,23,48,4,1700
@@ -6827,7 +6827,7 @@
 984,F. Öztürk,33,Galatasaray SK,68,68,190,190,Turkey,GK,71,63,62,71,56,69,16,475
 986,C. Kazim-Richards,33,Pachuca,68,68,188,209,Turkey,ST,58,69,66,62,34,81,8,575
 991,T. Carson,32,Motherwell,68,68,185,187,Northern Ireland,GK,69,68,63,66,52,68,3,550
-996,K. Árnason,37,Iceland,68,68,190,181,Iceland,CB,30,51,57,50,68,69,0,0
+996,K. Árnason,37,Iceland,68,68,190,181,Iceland,CB,30,51,57,50,68,69,1,0
 1003,M. Kadlec,32,Sparta Praha,68,68,185,172,Czech Republic,CB,69,53,63,62,67,69,0.5,300
 1085,M. Madl,32,FK Austria Wien,68,68,183,172,Austria,CB,49,51,61,57,68,75,7,575
 1122,M. Richards,30,Aston Villa,68,68,180,183,England,CB,66,45,57,59,64,71,8,675
@@ -6879,7 +6879,7 @@
 2035,T. Rogne,30,Lech Poznan,68,68,193,181,Norway,CB,48,27,51,47,68,72,4,725
 2062,G. Sunu,29,La Berrichonne de Châteauroux,68,68,183,176,Togo,RW,69,69,66,71,31,67,3,900
 2110,E. Bennett,31,Blackburn Rovers,68,68,178,161,England,RB,73,61,66,67,64,66,15,650
-2118,J. Carvallo,32,Peru,68,68,183,181,Peru,GK,73,67,69,61,53,68,0,0
+2118,J. Carvallo,32,Peru,68,68,183,181,Peru,GK,73,67,69,61,53,68,1,0
 2136,E. Ambrose,31,Livingston FC,68,68,190,154,Nigeria,CB,62,44,54,64,67,74,3,675
 2153,J. Cortés,29,Atlético de San Luis,68,68,170,170,Mexico,CM,65,68,69,68,59,63,6,850
 2156,A. Konradsen,29,Rosenborg BK,68,68,183,168,Norway,CM,65,65,65,65,65,79,4,850
@@ -6952,7 +6952,7 @@
 3306,L. Bacuna,28,Cardiff City,68,68,180,170,Curacao,CDM,78,65,67,68,65,76,11,800
 3333,J. Taylor,27,Doncaster Rovers,68,68,168,170,England,RM,88,62,60,69,26,62,5,950
 3353,L. Palmer  B,28,Sheffield Wednesday,68,68,183,179,Scotland,RB,75,58,64,65,62,72,8,775
-3364,P. Arajuuri,32,Finland,68,68,193,203,Finland,CB,33,35,44,42,66,82,0,0
+3364,P. Arajuuri,32,Finland,68,68,193,203,Finland,CB,33,35,44,42,66,82,1,0
 3368,Mika,28,Os Belenenses,68,71,196,198,Portugal,GK,70,65,66,70,34,68,3,800
 3370,X. Kouassi,30,Pau FC,68,68,175,152,Ivory Coast,CDM,69,51,61,67,67,75,2,725
 3385,Rodri,30,Real Oviedo,68,68,175,163,Spain,ST,77,69,55,70,22,67,5,875
@@ -7035,7 +7035,7 @@
 4550,M. Bennett,23,Millwall,68,74,178,141,England,RM,80,62,63,69,42,75,6,1200
 4558,Y. Croizet,28,Oud-Heverlee Leuven,68,68,180,176,France,LM,73,67,66,73,47,70,6,900
 4569,C. Jorquera,31,Fatih Karagümrük S.K.,68,68,173,152,Chile,CAM,68,66,71,75,50,60,6,775
-4570,L. Krajnc,25,Slovenia,68,69,188,190,Slovenia,CB,62,32,53,59,67,76,0,0
+4570,L. Krajnc,25,Slovenia,68,69,188,190,Slovenia,CB,62,32,53,59,67,76,1,0
 4571,B. Darri,25,Fatih Karagümrük S.K.,68,69,175,168,Netherlands,LW,78,63,59,75,25,52,6,1100
 4578,M. Ihiekwe,27,Rotherham United,68,69,185,179,England,CB,70,36,43,55,67,76,15,900
 4581,I. Höhn,28,SV Darmstadt 98,68,68,183,159,Germany,CB,46,32,51,57,70,67,8,775
@@ -7168,7 +7168,7 @@
 6359,L. Bittante,25,Cosenza,68,69,183,165,Italy,RWB,78,45,63,67,63,66,2,925
 6396,F. Ballas,27,FC Erzgebirge Aue,68,70,196,212,Germany,CB,55,34,46,41,67,75,4,950
 6439,H. Sakhi,24,AJ Auxerre,68,75,175,159,Morocco,CAM,71,64,66,70,55,53,3,1300
-6445,T. Nedelev,27,Bulgaria,68,68,178,159,Bulgaria,RM,69,68,66,68,31,54,0,0
+6445,T. Nedelev,27,Bulgaria,68,68,178,159,Bulgaria,RM,69,68,66,68,31,54,1,0
 6446,A. Sadiku,29,BB Erzurumspor,68,68,183,176,Albania,ST,70,68,50,64,38,69,7,900
 6491,G. Di Chiara,25,Perugia,68,69,185,176,Italy,LB,73,37,60,64,64,72,2,925
 6514,J. Lumley,25,Queens Park Rangers,68,74,190,161,England,GK,69,67,69,68,45,64,3,925
@@ -7280,7 +7280,7 @@
 8019,A. Gnoukouri,20,Inter,68,76,180,157,Ivory Coast,CDM,65,52,67,67,67,68,15,1300
 8023,E. Janža,27,Górnik Zabrze,68,69,175,168,Slovenia,LB,69,45,63,63,63,66,3,900
 8032,C. Teuchert,23,1. FC Union Berlin,68,77,183,176,Germany,ST,76,66,55,73,29,63,11,1400
-8038,A. Gabr,29,Egypt,68,68,190,194,Egypt,CB,63,35,47,46,69,72,0,0
+8038,A. Gabr,29,Egypt,68,68,190,194,Egypt,CB,63,35,47,46,69,72,1,0
 8045,C. Dunkley,28,Sheffield Wednesday,68,70,188,187,England,CB,57,37,42,51,68,76,8,900
 8052,J. Gorenc Stankovic,24,SK Sturm Graz,68,74,190,172,Slovenia,CB,49,46,58,62,70,65,7,1100
 8056,Javi Muñoz,25,CD Mirandés,68,73,175,165,Spain,CAM,70,61,67,69,59,63,4,1200
@@ -7343,7 +7343,7 @@
 8781,R. Chávez,25,Club Necaxa,68,72,173,152,Mexico,RWB,73,35,60,67,64,65,5,1000
 8789,E. Hackman,25,Portimonense SC,68,72,188,163,Ghana,RB,74,49,54,65,65,71,3,1000
 8813,Anderson Lopes,26,Hokkaido Consadole Sapporo,68,69,185,172,Brazil,ST,87,69,60,67,30,75,3,1100
-8834,L. Zahovic,24,Slovenia,68,75,178,150,Slovenia,ST,76,66,57,75,30,48,0,0
+8834,L. Zahovic,24,Slovenia,68,75,178,150,Slovenia,ST,76,66,57,75,30,48,1,0
 8842,A. Kalulu,24,FC Basel 1893,68,74,165,146,France,RW,91,63,57,73,32,50,6,1200
 8847,L. Coulibaly,24,Angers SCO,68,74,183,170,Mali,CDM,74,54,61,68,65,71,7,1100
 8858,K. Dermaku,28,Parma,68,70,196,196,Albania,CB,51,38,47,45,70,67,12,900
@@ -7558,14 +7558,14 @@
 12479,D. Fitz,21,FK Austria Wien,68,77,175,148,Austria,CAM,70,65,66,70,33,51,6,1400
 12484,L. Balerdi,21,Olympique de Marseille,68,81,188,168,Argentina,CB,72,30,52,59,68,68,9,1600
 12495,M. Vandevoordt,18,KRC Genk,68,87,188,174,Belgium,GK,72,67,64,71,15,59,0.55,1500
-12505,B. Petersen,23,South Africa,68,76,185,165,South Africa,GK,66,72,69,74,50,68,0,0
+12505,B. Petersen,23,South Africa,68,76,185,165,South Africa,GK,66,72,69,74,50,68,1,0
 12527,J. Mora,27,DC United,68,69,175,132,Costa Rica,LB,78,47,56,66,64,62,3,900
 12540,Hugo Duro,20,Real Madrid,68,80,180,168,Spain,ST,73,68,43,70,29,55,36,1600
 12602,J. Ekkelenkamp,20,Ajax,68,78,188,165,Netherlands,ST,64,65,63,67,58,71,5,1500
 12622,Josep Martínez,22,RB Leipzig,68,78,190,172,Spain,GK,70,68,64,69,27,67,11,1100
 12653,Lisandro Semedo,24,Fortuna Sittard,68,74,175,163,Cape Verde,RM,80,60,59,70,30,68,5,1200
 12678,S. Walukiewicz,20,Cagliari,68,81,188,187,Poland,CB,56,38,47,52,68,71,8,1600
-12695,M. Hamdy,24,Egypt,68,73,180,159,Egypt,CB,70,39,40,45,68,71,0,0
+12695,M. Hamdy,24,Egypt,68,73,180,159,Egypt,CB,70,39,40,45,68,71,1,0
 12725,D. Pineda,24,Santa Clara,68,71,178,146,El Salvador,CAM,73,63,61,73,29,46,3,1100
 12735,A. Vukotic,24,Waasland-Beveren,68,72,201,209,Serbia,CB,31,42,49,45,68,79,4,1000
 12782,D. Saddiki,23,Willem II,68,72,178,154,Netherlands,CB,76,54,61,62,67,75,4,1100
@@ -7646,9 +7646,9 @@
 14555,B. Pichler,22,FK Austria Wien,68,73,188,192,Austria,ST,72,67,63,66,33,70,7,1200
 14566,D. Štiglec,29,Slask Wroclaw,68,68,188,176,Croatia,LB,68,43,57,60,65,77,4,750
 14632,Sori Mané,24,Moreirense FC,68,77,188,174,Guinea Bissau,CB,59,45,55,57,68,75,4,1300
-14718,J. Mejídez,35,Ecuador,68,68,168,137,Ecuador,RM,77,59,62,72,29,49,0,0
-14719,J. Breitez,34,Ecuador,68,68,175,157,Ecuador,CB,78,34,54,63,69,77,0,0
-14727,R. Mandive,34,Ecuador,68,68,180,196,Ecuador,CDM,58,59,64,63,67,66,0,0
+14718,J. Mejídez,35,Ecuador,68,68,168,137,Ecuador,RM,77,59,62,72,29,49,1,0
+14719,J. Breitez,34,Ecuador,68,68,175,157,Ecuador,CB,78,34,54,63,69,77,1,0
+14727,R. Mandive,34,Ecuador,68,68,180,196,Ecuador,CDM,58,59,64,63,67,66,1,0
 14803,E. Coacci,21,Defensa y Justicia,68,79,165,148,Argentina,LM,87,60,62,73,36,52,5,1500
 14817,Simón Moreno,22,FC Cartagena,68,75,178,161,Spain,ST,74,68,52,66,21,55,4,1300
 14832,C. Summerville,18,Leeds United,68,83,175,141,Netherlands,RM,91,59,58,72,23,46,14,1800
@@ -7742,7 +7742,7 @@
 875,D. Graham,34,Sunderland,67,67,183,187,England,ST,36,69,60,62,47,71,6,400
 884,M. Jarvis,32,Walsall,67,67,170,159,England,RM,67,61,66,71,40,52,4,600
 926,D. Moor,36,Colorado Rapids,67,67,183,165,United States,CB,35,42,59,58,67,69,2,150
-928,W. Johnson,33,Canada,67,67,178,159,Canada,CDM,58,63,66,64,66,72,0,0
+928,W. Johnson,33,Canada,67,67,178,159,Canada,CDM,58,63,66,64,66,72,1,0
 929,J. Larentowicz,36,Atlanta United,67,67,185,174,United States,CDM,39,60,60,59,67,70,2,160
 949,J. Ledley,33,Newcastle Jets,67,67,183,161,Wales,CB,54,62,64,62,67,70,2,375
 993,N. Adams B,33,Northampton Town,67,67,178,154,Wales,LWB,68,57,66,64,56,67,4,350
@@ -7787,7 +7787,7 @@
 1631,B. Kopplin,31,Randers FC,67,67,183,176,Germany,RB,76,51,58,65,63,70,5,550
 1640,D. Damjanovic,38,Daegu FC,67,67,188,179,Montenegro,ST,39,70,64,64,34,67,3,275
 1696,R. Armand,33,Pau FC,67,67,180,165,France,ST,74,67,56,67,22,67,2,475
-1709,N. Rukavytsya,30,Australia,67,67,183,163,Australia,LW,91,62,57,69,28,64,0,0
+1709,N. Rukavytsya,30,Australia,67,67,183,163,Australia,LW,91,62,57,69,28,64,1,0
 1730,D. Stockdale,34,Wycombe Wanderers,67,67,190,185,England,GK,66,64,73,69,31,66,4,325
 1738,J. Jones,31,Wigan Athletic,67,67,190,201,England,GK,69,66,64,68,34,65,2,500
 1740,Zhang Chengdong,31,Hebei China Fortune FC,67,67,183,161,China PR,CB,62,66,65,69,63,78,5,575
@@ -7846,7 +7846,7 @@
 2596,M. Smith,28,Rotherham United,67,67,193,190,England,ST,64,64,53,60,30,77,16,800
 2610,H. Bazile,30,Le Havre AC,67,67,183,172,Haiti,RM,82,65,64,65,32,58,3,725
 2653,A. DeLaGarza,32,Inter Miami,67,67,175,150,Guam,RB,69,48,61,62,63,69,3,475
-2659,S. Chhetri,33,India,67,67,170,154,India,ST,74,69,53,65,32,59,0,0
+2659,S. Chhetri,33,India,67,67,170,154,India,ST,74,69,53,65,32,59,1,0
 2685,T. Adeyemi,26,Ipswich Town,67,67,185,172,England,CDM,66,61,61,64,65,75,4,800
 2687,D. Alar,30,SK Rapid Wien,67,67,185,172,Austria,ST,69,67,63,66,32,66,11,725
 2690,T. Sana,30,IFK Göteborg,67,67,175,159,Sweden,CAM,77,65,62,71,32,61,2,725
@@ -7939,7 +7939,7 @@
 4105,Sin Se Gye,29,Gangwon FC,67,67,178,165,Korea Republic,RB,83,58,65,63,60,70,3,625
 4124,A. Stewart,27,Wycombe Wanderers,67,69,183,168,England,CB,56,22,46,51,66,75,5,800
 4129,K. Issah,24,Gençlerbirligi SK,67,71,178,146,Ghana,CDM,72,43,60,65,65,70,9,850
-4136,J. Jeggo,28,Australia,67,67,178,157,Australia,CDM,69,61,63,65,63,69,0,0
+4136,J. Jeggo,28,Australia,67,67,178,157,Australia,CDM,69,61,63,65,63,69,1,0
 4165,G. Valsvik,27,Rosenborg BK,67,70,196,201,Norway,CB,48,47,46,39,68,81,3,825
 4166,E. Andersen,27,Molde FK,67,67,180,161,Norway,LM,75,63,67,66,42,64,3,800
 4185,H. Kryeziu,27,FC Zürich,67,70,180,165,Kosovo,CDM,71,57,64,65,63,69,5,825
@@ -7968,7 +7968,7 @@
 4631,M. Chiosa,25,Virtus Entella,67,70,180,163,Italy,CB,73,17,43,58,67,68,1,850
 4662,D. Marsura,25,Livorno,67,68,188,172,Italy,LM,86,63,59,71,32,65,2,900
 4673,C. McGeehan,25,KV Oostende,67,72,180,157,Northern Ireland,CAM,66,63,63,67,62,69,4,925
-4712,G. Terziev,28,Bulgaria,67,68,183,159,Bulgaria,CB,69,37,43,43,69,72,0,0
+4712,G. Terziev,28,Bulgaria,67,68,183,159,Bulgaria,CB,69,37,43,43,69,72,1,0
 4750,Satrústegui,29,C.D. Castellón,67,67,188,179,Spain,CB,71,46,60,55,66,68,3,650
 4755,T. Naylor,29,Portsmouth,67,67,188,159,England,CB,66,58,59,62,66,80,5,650
 4779,N. DeLeon,29,Toronto FC,67,67,178,170,United States,RM,70,62,64,66,57,71,3,750
@@ -8031,7 +8031,7 @@
 5686,M. Lackner,29,SV Ried,67,67,188,176,Austria,CDM,38,44,58,57,68,74,4,650
 5692,Lim Chai Min,29,Gangwon FC,67,68,188,181,Korea Republic,CB,74,26,39,42,67,76,3,725
 5710,M. Rose,24,Coventry City,67,74,188,154,Scotland,CB,59,39,57,58,67,71,11,975
-5717,B. Sangaré,34,Côte d'Ivoire,67,67,180,172,Ivory Coast,GK,69,65,63,68,42,67,0,0
+5717,B. Sangaré,34,Côte d'Ivoire,67,67,180,172,Ivory Coast,GK,69,65,63,68,42,67,1,0
 5752,T. Casasola,23,Cosenza,67,73,188,185,Argentina,CB,65,51,64,65,67,77,1,1000
 5766,J. Thiaré,27,Le Havre AC,67,68,180,150,Senegal,ST,81,65,54,69,22,63,4,900
 5769,K. Manneh,25,New England Revolution,67,69,175,141,United States,RM,91,63,60,68,34,59,3,925
@@ -8107,7 +8107,7 @@
 6796,S. Szmodics,24,Peterborough United,67,72,168,141,England,CAM,80,65,60,70,47,68,4,1000
 6798,S. Štefánik,25,Bruk-Bet Termalica Nieciecza,67,70,178,163,Slovakia,CAM,74,57,65,68,52,55,5,950
 6809,B. Barker,23,Rangers FC,67,72,180,150,England,RM,91,58,60,67,29,55,14,1000
-6816,R. Bezjak,31,Slovenia,67,67,178,154,Slovenia,ST,72,68,59,69,28,61,0,0
+6816,R. Bezjak,31,Slovenia,67,67,178,154,Slovenia,ST,72,68,59,69,28,61,1,0
 6819,P. Bochniewicz,24,SC Heerenveen,67,73,193,187,Poland,CB,43,24,52,48,67,73,3,950
 6836,Aarón,24,Granada CF,67,73,185,157,Spain,GK,65,69,63,66,36,65,5,800
 6850,P. Olsen,26,Aarhus GF,67,70,185,174,Denmark,CAM,63,60,67,69,51,69,5,925
@@ -8133,13 +8133,13 @@
 7093,Lee Gwang Hyeok,24,Pohang Steelers,67,70,170,132,Korea Republic,LM,90,54,61,68,37,51,3,975
 7102,Piao Cheng,30,Beijing Sinobo Guoan FC,67,67,175,152,China PR,CM,72,61,66,66,60,67,7,700
 7124,K. Fisker,31,Brøndby IF,67,67,170,157,Denmark,LM,69,63,69,70,46,74,7,650
-7138,T. Mokeke,29,South Africa,67,67,175,152,South Africa,CDM,72,43,65,68,66,58,0,0
+7138,T. Mokeke,29,South Africa,67,67,175,152,South Africa,CDM,72,43,65,68,66,58,1,0
 7143,Mosquito,21,Arsenal de Sarandí,67,81,175,154,Brazil,ST,81,66,49,68,25,59,6,1700
 7147,J. Onomah,23,Fulham,67,76,185,154,England,CAM,71,63,64,72,54,64,24,1200
 7153,C. Cadden,23,Columbus Crew SC,67,74,183,168,Scotland,RM,75,60,65,69,59,73,2,950
 7154,D. Ramírez,24,Club León,67,73,165,148,Mexico,RM,84,59,57,73,39,60,7,1000
 7160,J. Bree,22,Luton Town,67,76,178,163,England,RB,68,40,60,62,64,65,4,1100
-7172,V. Bozhikov,32,Bulgaria,67,67,185,176,Bulgaria,CB,56,35,51,48,67,71,0,0
+7172,V. Bozhikov,32,Bulgaria,67,67,185,176,Bulgaria,CB,56,35,51,48,67,71,1,0
 7178,N. Jackers,22,Waasland-Beveren,67,73,188,176,Belgium,GK,68,65,61,70,44,65,3,800
 7183,G. Lloris,24,AJ Auxerre,67,70,190,183,France,CB,50,36,50,52,69,68,2,875
 7186,M. Wdowiak,23,Cracovia,67,72,175,132,Poland,RM,90,57,60,69,40,62,3,1000
@@ -8206,7 +8206,7 @@
 7969,I. Chatzitheodoridis,22,Panathinaikos FC,67,74,178,148,Greece,LWB,78,54,61,65,61,64,0.5,950
 7985,M. Dittgen,25,FC St. Pauli,67,70,183,170,Germany,LM,89,56,55,67,54,68,6,950
 7987,R. Raveloson,23,ESTAC Troyes,67,75,183,161,Madagascar,RWB,73,58,64,70,64,71,3,1100
-7998,D. Mendiseca,22,Paraguay,67,67,183,174,Paraguay,CB,68,34,51,59,70,69,0,0
+7998,D. Mendiseca,22,Paraguay,67,67,183,174,Paraguay,CB,68,34,51,59,70,69,1,0
 8006,Q. Lecoeuche,26,AC Ajaccio,67,70,173,143,France,LWB,76,51,59,66,63,64,2,825
 8009,J. George,27,SSV Jahn Regensburg,67,67,175,168,Germany,RW,79,66,57,73,29,69,5,800
 8046,Akieme,22,UD Almería,67,76,175,143,Spain,LB,71,36,52,65,64,65,3,1100
@@ -8233,9 +8233,9 @@
 8309,B. Badibanga,24,Royal Excel Mouscron,67,72,175,157,Belgium,CAM,77,60,60,72,24,53,4,1000
 8340,Josep Señé,28,C.D. Castellón,67,67,183,159,Spain,CAM,65,60,67,66,48,52,3,775
 8352,D. Burnic,22,1. FC Heidenheim 1846,67,76,180,154,Germany,CDM,79,48,66,71,63,66,7,1200
-8373,A. Ashraf,29,Egypt,67,67,175,161,Egypt,CB,67,53,63,65,68,67,0,0
+8373,A. Ashraf,29,Egypt,67,67,175,161,Egypt,CB,67,53,63,65,68,67,1,0
 8380,W. Harding,23,Rotherham United,67,75,180,174,England,CB,75,40,53,60,63,75,11,1000
-8393,C. Gonzáles,27,Peru,67,68,178,154,Peru,CAM,69,65,66,70,54,54,0,0
+8393,C. Gonzáles,27,Peru,67,68,178,154,Peru,CAM,69,65,66,70,54,54,1,0
 8420,A. La Gumina,24,Sampdoria,67,74,183,159,Italy,ST,75,66,57,68,38,66,6,1100
 8422,K. Grabara,21,Aarhus GF,67,81,196,176,Poland,GK,71,66,63,68,39,68,2,1400
 8424,M. Thiam,24,Barnsley,67,70,180,181,Senegal,ST,74,63,61,70,47,73,4,975
@@ -8343,7 +8343,7 @@
 9912,K. Staude,23,FC Würzburger Kickers,67,73,175,154,Germany,RM,77,59,59,75,44,54,5,1000
 9923,J. Bruijn,22,SC Heerenveen,67,72,170,148,Netherlands,RM,71,55,68,72,50,57,3,1000
 9933,R. McCrorie,22,Aberdeen,67,78,188,176,Scotland,CB,77,35,54,62,67,78,3,1200
-9934,G. Kostadinov,29,Bulgaria,67,67,185,165,Bulgaria,CDM,63,52,57,56,66,68,0,0
+9934,G. Kostadinov,29,Bulgaria,67,67,185,165,Bulgaria,CDM,63,52,57,56,66,68,1,0
 9937,G. Hein,23,AJ Auxerre,67,73,170,143,France,CAM,77,66,64,72,34,54,2,1000
 9944,S. Seddon,22,AFC Wimbledon,67,77,178,150,England,LM,77,50,65,66,59,62,3,1100
 9949,S. Breitkreuz,28,FC Erzgebirge Aue,67,69,188,190,Germany,CB,57,56,46,52,66,72,3,775
@@ -8454,8 +8454,8 @@
 11228,Dani Ojeda,25,CD Leganés,67,70,178,159,Spain,LM,70,64,60,68,39,61,4,950
 11230,Matheus Aias,23,Orlando City SC,67,75,175,159,Brazil,ST,71,66,49,69,26,60,3,1100
 11236,R. Scheu,25,SV Sandhausen,67,70,178,163,Germany,RM,78,55,59,65,55,75,3,950
-11242,N. Mitrovic,27,Slovenia,67,68,193,194,Slovenia,CB,58,30,42,41,64,81,0,0
-11243,M. Blažic,27,Slovenia,67,70,185,179,Slovenia,CB,58,34,38,40,69,70,0,0
+11242,N. Mitrovic,27,Slovenia,67,68,193,194,Slovenia,CB,58,30,42,41,64,81,1,0
+11243,M. Blažic,27,Slovenia,67,70,185,179,Slovenia,CB,58,34,38,40,69,70,1,0
 11247,R. Harper,20,West Bromwich Albion,67,79,188,168,England,CM,68,53,65,68,60,72,18,1300
 11260,F. Luckeneder,26,TSV Hartberg,67,70,190,161,Austria,CB,51,25,38,39,70,68,3,850
 11287,S. Schimmer,26,1. FC Heidenheim 1846,67,69,185,165,Germany,ST,64,68,41,62,29,73,9,925
@@ -8527,7 +8527,7 @@
 12448,C. Baird,24,Real Salt Lake,67,72,178,161,United States,ST,79,65,55,66,33,67,3,1000
 12451,K. Thorstvedt,21,KRC Genk,67,76,188,192,Norway,CAM,64,67,68,68,54,74,4,1200
 12499,J. Clarke,19,Tottenham Hotspur,67,81,180,163,England,RM,75,60,61,72,25,53,13,1600
-12507,T. Mokoena,23,South Africa,67,72,175,159,South Africa,CAM,73,56,67,69,56,61,0,0
+12507,T. Mokoena,23,South Africa,67,72,175,159,South Africa,CAM,73,56,67,69,56,61,1,0
 12508,S. Ndlovu,23,Orlando Pirates,67,72,170,150,South Africa,LM,78,59,63,69,59,46,0.5,1000
 12513,P. Jaeckel,21,SpVgg Greuther Fürth,67,76,188,176,Germany,CB,59,33,51,46,68,68,3,1100
 12549,N. Williams,19,Liverpool,67,85,178,152,Wales,RWB,75,36,60,68,63,55,11,1500
@@ -8604,7 +8604,7 @@
 14017,Apa,20,Real Valladolid CF,67,79,170,137,Spain,RB,80,27,56,65,63,56,4,1200
 14055,F. Panák,24,Sparta Praha,67,76,188,170,Czech Republic,CB,67,53,62,64,67,66,0.5,1100
 14105,M. Olise,18,Reading,67,81,180,150,France,LM,78,48,66,72,42,48,2,1600
-14130,R. Vaca,21,Bolivia,67,80,175,134,Bolivia,RM,72,63,62,68,26,37,0,0
+14130,R. Vaca,21,Bolivia,67,80,175,134,Bolivia,RM,72,63,62,68,26,37,1,0
 14136,I. Gheorghe,20,FC Voluntari,67,81,170,139,Romania,RM,86,58,60,70,34,55,3,1700
 14139,W. Togui,23,KV Mechelen,67,71,180,179,Ivory Coast,ST,75,68,54,63,21,70,5,1000
 14149,A. Chindri<U+0219>,21,FC Botosani,67,78,190,187,Romania,CB,68,34,47,49,67,72,3,1200
@@ -8618,7 +8618,7 @@
 14322,H. Rodríguez,24,Club Bolívar,67,74,175,165,Bolivia,CM,74,55,57,66,59,65,0.5,1100
 14325,B. Ojeda,20,Olimpia Asunción,67,79,173,150,Paraguay,CDM,73,53,63,69,64,70,0.5,1300
 14371,J. Pretell,21,Melgar FBC,67,82,170,146,Peru,CDM,69,50,65,63,63,65,0.5,1600
-14373,P. Álvarez,26,Peru,67,69,180,172,Peru,GK,70,69,61,71,19,68,0,0
+14373,P. Álvarez,26,Peru,67,69,180,172,Peru,GK,70,69,61,71,19,68,1,0
 14374,J. Graterol,23,Venezuela,67,73,183,161,Venezuela,GK,69,68,63,68,22,68,0.6,800
 14397,J. Marx,25,SV Waldhof Mannheim,67,72,170,152,Germany,RWB,90,38,52,66,56,56,2,900
 14400,S. Bakari,25,RKC Waalwijk,67,70,178,148,Comoros,RM,82,56,60,70,59,68,3,850
@@ -8634,8 +8634,8 @@
 14683,E. Gallardo,23,Toronto FC,67,72,173,150,Venezuela,CAM,83,61,62,70,29,52,3,1000
 14687,D. Haru<U+021B>,21,FC Botosani,67,77,180,176,Romania,RB,78,40,55,58,62,69,3,1100
 14701,Bernardo Martins,22,FC Paços de Ferreira,67,76,175,154,Portugal,CAM,69,60,66,70,31,57,3,1200
-14714,M. Guerreyro,32,Ecuador,67,67,178,154,Ecuador,RM,70,43,67,68,47,65,0,0
-14726,M. Farrero,27,Ecuador,67,68,168,152,Ecuador,CAM,78,62,64,72,56,50,0,0
+14714,M. Guerreyro,32,Ecuador,67,67,178,154,Ecuador,RM,70,43,67,68,47,65,1,0
+14726,M. Farrero,27,Ecuador,67,68,168,152,Ecuador,CAM,78,62,64,72,56,50,1,0
 14767,Paulinho,23,Boavista FC,67,75,173,152,Brazil,RM,74,55,64,73,41,55,3,1100
 14785,D. Garcia,23,Estudiantes de La Plata,67,74,168,141,Uruguay,CAM,74,52,66,71,49,47,5,1100
 14840,C. Martínez,26,CD Mirandés,67,70,170,161,Dominican Republic,RB,68,39,54,61,66,63,3,825
@@ -8695,7 +8695,7 @@
 16824,F. Soucek,19,Sparta Praha,67,77,185,174,Czech Republic,CAM,73,62,65,68,55,72,0.5,1200
 16831,João Victor,21,CD Nacional,67,74,178,161,Brazil,CAM,82,58,59,72,31,48,3,1100
 16840,N. Hnid,23,AEK Athens,67,73,190,174,Tunisia,CB,61,26,44,46,67,70,0.5,950
-16865,T. Cseri,32,Hungary,67,67,175,168,Hungary,RW,75,60,62,68,28,51,0,0
+16865,T. Cseri,32,Hungary,67,67,175,168,Hungary,RW,75,60,62,68,28,51,1,0
 16910,C. Valenzuela,23,Famalicão,67,74,168,152,Argentina,LM,77,62,62,72,22,47,4,1100
 16916,K. Aktürkoglu,21,Galatasaray SK,67,77,173,157,Turkey,CAM,82,62,59,73,34,47,14,1200
 16925,O. Bukari,21,KAA Gent,67,76,170,150,Ghana,RM,84,62,61,71,24,50,6,1200
@@ -8740,7 +8740,7 @@
 831,Zapater,35,Real Zaragoza,66,66,180,176,Spain,CDM,49,64,68,61,66,68,2,275
 833,L. Chambers,34,Ipswich Town,66,66,185,192,England,CB,52,26,51,50,66,78,4,240
 890,G. Leadbitter,34,Sunderland,66,66,178,174,England,CDM,46,64,67,62,65,68,4,250
-994,K. Lafferty,32,Northern Ireland,66,66,193,194,Northern Ireland,ST,60,67,59,62,31,77,0,0
+994,K. Lafferty,32,Northern Ireland,66,66,193,194,Northern Ireland,ST,60,67,59,62,31,77,1,0
 999,A. Bellinghausen,34,Fortuna Düsseldorf,66,66,183,176,Germany,LM,70,58,65,63,61,75,8,325
 1012,S. Whalley,32,Shrewsbury,66,66,175,148,England,RW,87,59,59,67,37,62,4,500
 1079,A. Reyna,34,Tiburones Rojos de Veracruz,66,66,170,148,Mexico,CAM,62,64,66,66,38,58,3,325
@@ -8757,14 +8757,14 @@
 1493,M. Costanzo,31,FC St. Gallen,66,66,178,163,Switzerland,CM,56,66,65,67,53,57,5,550
 1548,César Díaz,33,C.D. Castellón,66,66,170,163,Spain,ST,82,69,57,67,34,73,3,400
 1570,David Caiado,33,FCSB (Steaua),66,66,175,163,Portugal,LW,65,61,64,73,31,45,5,400
-1575,N. Mihaylov,32,Bulgaria,66,66,193,198,Bulgaria,GK,63,65,64,67,59,65,0,0
+1575,N. Mihaylov,32,Bulgaria,66,66,193,198,Bulgaria,GK,63,65,64,67,59,65,1,0
 1587,R. Majewski,33,Western Sydney Wanderers,66,66,170,150,Poland,CAM,68,66,67,67,52,49,3,400
 1598,C. Seitz,33,DC United,66,66,190,236,United States,GK,67,61,71,66,52,69,2,350
 1630,Cabral,28,FC Lausanne-Sport,66,66,180,172,Cape Verde,CB,67,55,63,63,67,73,4,650
 1666,N. Gerzic,36,Örebro SK,66,66,175,174,Sweden,CM,43,51,70,69,56,65,1,200
 1720,Zheng Long,32,Dalian YiFang FC,66,66,178,157,China PR,RW,79,59,66,65,46,64,5,500
 1787,K. Pearce,29,Mansfield Town,66,66,188,209,England,CB,67,38,43,57,63,80,6,550
-1792,P. Zanev,34,Bulgaria,66,66,183,154,Bulgaria,CB,62,49,62,62,66,69,0,0
+1792,P. Zanev,34,Bulgaria,66,66,183,154,Bulgaria,CB,62,49,62,62,66,69,1,0
 1800,H. Saivet,29,Newcastle United,66,66,175,168,Senegal,RW,67,65,70,68,62,59,11,625
 1803,J. Taravel,33,KSV Cercle Brugge,66,66,190,187,France,CB,36,42,61,47,68,66,4,300
 1822,D. Di Gennaro,32,Lazio,66,66,180,159,Italy,CAM,67,63,69,67,58,63,14,475
@@ -8777,7 +8777,7 @@
 1916,M. Hansen,30,Hannover 96,66,66,188,187,Denmark,GK,65,64,64,66,49,65,6,425
 1934,L. Vibe,33,FC Midtjylland,66,66,180,159,Denmark,RW,72,67,60,67,36,62,8,400
 1936,J. Rask,30,Hobro IK,66,66,196,194,Denmark,GK,66,68,53,66,33,65,3,425
-1973,R. Feczesin,33,Hungary,66,66,188,165,Hungary,ST,62,63,60,64,38,70,0,0
+1973,R. Feczesin,33,Hungary,66,66,188,165,Hungary,ST,62,63,60,64,38,70,1,0
 1980,M. Kramer,31,ADO Den Haag,66,66,196,176,Netherlands,ST,46,64,56,56,35,63,3,575
 1985,A. Collin,34,Philadelphia Union,66,66,188,190,France,CB,41,46,52,49,62,75,2,240
 1987,G. Madine,29,Blackpool,66,66,193,165,England,ST,51,66,51,61,32,78,4,650
@@ -8800,7 +8800,7 @@
 2242,J. Baxter,27,Plymouth Argyle,66,66,175,163,England,CAM,62,66,66,66,39,64,6,675
 2267,F. Duplus  B,30,Oud-Heverlee Leuven,66,66,178,159,France,RB,69,34,56,57,66,67,4,500
 2295,W. Rémy,29,Legia Warszawa,66,66,183,165,France,CB,62,39,60,55,61,72,4,550
-2296,D. Penny,33,Peru,66,66,198,190,Peru,GK,66,68,56,64,61,69,0,0
+2296,D. Penny,33,Peru,66,66,198,190,Peru,GK,66,68,56,64,61,69,1,0
 2314,S. Camille,32,CD Tenerife,66,66,175,152,France,LB,83,44,59,65,61,74,3,350
 2325,J. Skjelvik,28,Odense Boldklub,66,66,183,170,Norway,LB,81,46,58,62,62,71,4,550
 2343,Rodnei,30,TSV 1860 München,66,66,190,198,Brazil,CB,36,51,54,53,62,73,6,450
@@ -8873,12 +8873,12 @@
 3786,J. Szumski,28,Raków Czestochowa,66,69,193,172,Poland,GK,68,63,64,68,22,66,2,575
 3809,A. Donnarumma,29,Milan,66,66,193,212,Italy,GK,70,62,51,74,18,59,8,450
 3818,N. Helenius,29,Aarhus GF,66,66,196,183,Denmark,ST,63,66,53,62,35,65,5,650
-3838,L. Boyce,29,Northern Ireland,66,66,183,165,Northern Ireland,ST,66,67,55,66,33,75,0,0
+3838,L. Boyce,29,Northern Ireland,66,66,183,165,Northern Ireland,ST,66,67,55,66,33,75,1,0
 3840,M. Abu,28,DC United,66,67,170,150,Ghana,CDM,69,54,62,66,61,67,3,650
 3853,G. Moncur,26,Luton Town,66,67,175,139,England,CAM,66,62,67,68,46,60,4,750
 3859,P. McEleney,27,Dundalk,66,66,180,185,Republic of Ireland,CAM,78,60,64,68,55,64,1,675
 3871,R. Laursen,28,Odense Boldklub,66,66,183,174,Denmark,RB,83,36,56,63,59,64,4,550
-3882,K. Simon,29,Hungary,66,66,175,148,Hungary,RM,79,61,61,65,27,55,0,0
+3882,K. Simon,29,Hungary,66,66,175,148,Hungary,RM,79,61,61,65,27,55,1,0
 3889,R. Teibert,27,Vancouver Whitecaps FC,66,66,173,146,Canada,CDM,56,52,67,68,64,65,3,650
 3903,W. Keane,26,Ipswich Town,66,67,188,159,England,ST,63,65,56,66,39,64,5,775
 3932,J. Flanagan,26,Rangers FC,66,67,180,174,England,CB,63,37,56,62,68,74,13,650
@@ -8891,7 +8891,7 @@
 4026,A. Vellios,26,Waasland-Beveren,66,67,190,172,Greece,ST,50,66,56,59,36,68,5,775
 4065,Go Moo Yol,29,Gangwon FC,66,66,185,176,Korea Republic,LM,76,63,57,67,31,67,3,625
 4069,C. Ripley,27,Preston North End,66,70,190,212,England,GK,67,66,65,69,35,65,6,575
-4087,Tan Long,32,China PR,66,66,185,165,China PR,ST,70,67,61,67,37,72,0,0
+4087,Tan Long,32,China PR,66,66,185,165,China PR,ST,70,67,61,67,37,72,1,0
 4090,N. Peñailillo,27,CD Antofagasta,66,66,185,165,Chile,LB,75,66,66,63,61,77,1,575
 4096,M. Ureña,30,GwangJu FC,66,66,178,174,Costa Rica,RW,80,63,59,70,37,66,2,625
 4112,M. O'Halloran,29,St. Johnstone FC,66,66,180,174,Scotland,RM,89,65,57,68,30,63,3,625
@@ -8908,7 +8908,7 @@
 4273,N. Devlin,26,Livingston FC,66,67,183,161,Scotland,RB,88,52,55,61,59,78,2,650
 4281,R. Wolski,27,Wisla Plock,66,67,180,154,Poland,CAM,66,62,68,69,34,53,2,750
 4295,R. Ligeon,26,De Graafschap,66,67,173,132,Netherlands,RWB,81,45,58,68,60,50,3,625
-4300,A. Tonev,30,Bulgaria,66,66,178,154,Bulgaria,LM,78,63,62,68,41,65,0,0
+4300,A. Tonev,30,Bulgaria,66,66,178,154,Bulgaria,LM,78,63,62,68,41,65,1,0
 4308,C. Edwards,26,Djurgårdens IF,66,69,180,154,England,CM,54,65,67,66,58,63,3,775
 4319,L. Polworth,25,Motherwell,66,70,178,159,Scotland,CAM,71,60,66,68,59,64,2,825
 4329,Pak Kwang Ryong,26,SKN St. Pölten,66,67,188,183,Korea DPR,ST,67,65,56,59,43,76,6,775
@@ -8935,7 +8935,7 @@
 4665,S. Sluga,27,Luton Town,66,70,190,179,Croatia,GK,66,65,67,70,54,62,3,575
 4691,M. Antonsson,29,Malmö FF,66,66,183,176,Sweden,ST,78,65,57,64,42,75,3,650
 4695,A. Lazaar,27,Cosenza,66,66,183,176,Morocco,LB,65,56,64,69,65,62,1,575
-4721,H. Halldórsson,36,Iceland,66,66,193,194,Iceland,GK,67,61,62,65,38,68,0,0
+4721,H. Halldórsson,36,Iceland,66,66,193,194,Iceland,GK,67,61,62,65,38,68,1,0
 4722,D. Georgievski,32,Western Sydney Wanderers,66,66,178,165,North Macedonia,LB,68,56,60,62,62,79,3,400
 4725,T. Boyd,29,Hallescher FC,66,66,188,181,United States,ST,47,69,43,58,28,76,2,650
 4728,M. Koval,27,Al Fateh,66,68,188,174,Ukraine,GK,67,63,63,69,44,65,6,550
@@ -8977,7 +8977,7 @@
 5229,E. Lee,25,Luton Town,66,69,180,159,England,CAM,72,64,63,67,41,62,4,800
 5245,M. Jahfali,29,Al Hilal,66,66,185,170,Saudi Arabia,CB,64,36,50,46,65,74,10,550
 5250,A. Maes,28,Beerschot AC,66,66,175,150,Belgium,CM,61,61,68,68,58,62,4,650
-5289,B. Smith,26,Australia,66,69,178,154,Australia,LB,78,43,58,64,62,64,0,0
+5289,B. Smith,26,Australia,66,69,178,154,Australia,LB,78,43,58,64,62,64,1,0
 5311,S. Piesinger,28,Randers FC,66,66,193,185,Austria,CB,34,55,53,55,64,78,4,575
 5315,A. Al Jebreen,30,Al Nassr,66,66,178,161,Saudi Arabia,CDM,57,66,65,64,63,69,9,525
 5316,M. Schmerböck,26,Wolfsberger AC,66,68,180,161,Austria,ST,76,65,60,68,34,62,6,800
@@ -9203,7 +9203,7 @@
 9003,Nazario Serpe,28,Bahia,66,66,178,170,Brazil,CDM,52,39,60,43,67,69,4,575
 9039,A. Da Cruz,23,Parma,66,74,183,163,Netherlands,ST,77,66,57,67,38,59,8,950
 9057,J. Vásquez,25,Deportivo Cali,66,69,175,172,Colombia,RM,79,64,60,68,23,71,1,800
-9076,E. Botka,24,Hungary,66,70,178,170,Hungary,RB,77,36,43,54,65,71,0,0
+9076,E. Botka,24,Hungary,66,70,178,170,Hungary,RB,77,36,43,54,65,71,1,0
 9082,L. Clemenza,22,Juventus,66,73,175,170,Italy,LM,65,57,68,74,33,41,15,900
 9094,C. Johnson,23,Portsmouth,66,72,180,157,England,RWB,71,46,59,63,60,71,3,775
 9103,A. Peña,24,Guadalajara,66,73,185,174,Mexico,CB,64,41,49,47,67,70,10,825
@@ -9270,7 +9270,7 @@
 10036,A. Zeqiri,21,FC Lausanne-Sport,66,80,185,176,Switzerland,ST,74,67,55,67,22,66,4,1400
 10042,B. Mason,22,Coventry City,66,73,173,154,England,LWB,82,40,58,62,62,67,9,800
 10054,A. Jovanovic,27,SD Huesca,66,70,193,187,Serbia,GK,68,60,63,66,22,68,5,575
-10059,D. Iliev,31,Bulgaria,66,66,185,181,Bulgaria,ST,64,64,64,67,37,66,0,0
+10059,D. Iliev,31,Bulgaria,66,66,185,181,Bulgaria,ST,64,64,64,67,37,66,1,0
 10078,J. Ruiz,22,FC Sion,66,78,188,181,France,CB,68,42,58,60,66,71,7,1100
 10079,S. Kneževic,23,FC Luzern,66,77,188,179,Switzerland,CB,44,34,43,48,67,72,4,1000
 10104,M. Dimun,23,Cracovia,66,75,185,168,Slovakia,CDM,60,38,55,58,64,74,3,925
@@ -9305,7 +9305,7 @@
 10512,A. Plizzari,19,Livorno,66,82,188,161,Italy,GK,68,68,59,72,41,62,0.5,1200
 10525,D. Sosa,22,Club Atlético Tigre,66,75,178,163,Argentina,LB,68,45,57,59,64,70,4,900
 10534,L. Faye,22,ADO Den Haag,66,70,170,174,Netherlands,LB,71,35,50,61,63,73,2,750
-10576,B. Chorbadzhiyski,23,Bulgaria,66,75,193,181,Bulgaria,CB,62,28,40,47,66,71,0,0
+10576,B. Chorbadzhiyski,23,Bulgaria,66,75,193,181,Bulgaria,CB,62,28,40,47,66,71,1,0
 10578,You Ju An,20,Suwon Samsung Bluewings,66,74,178,154,Korea Republic,ST,73,61,61,65,37,67,2,975
 10584,S. Shashoua,21,CD Tenerife,66,80,170,143,England,RM,76,52,61,69,34,46,2,1400
 10591,D. Rigo,21,ADO Den Haag,66,76,180,165,Belgium,CAM,59,57,73,68,46,57,2,1000
@@ -9549,7 +9549,7 @@
 14573,M. Gottschling,26,Viktoria Köln,66,69,183,159,Germany,RWB,79,57,58,66,58,69,2,700
 14627,O. Diakité,18,SCR Altach,66,80,188,181,Mali,CDM,69,57,61,62,61,79,1,1200
 14668,Riki,22,Real Oviedo,66,75,175,154,Spain,CAM,68,59,65,68,44,56,3,1000
-14721,J. Doriado,30,Ecuador,66,66,185,183,Ecuador,GK,65,66,59,66,42,66,0,0
+14721,J. Doriado,30,Ecuador,66,66,185,183,Ecuador,GK,65,66,59,66,42,66,1,0
 14756,S. Agouzoul,22,Royal Excel Mouscron,66,73,190,165,Morocco,CB,55,38,53,51,67,64,3,825
 14777,L. Requena,31,CD Cobresal,66,66,185,176,Argentina,GK,64,65,63,67,61,72,0.9,425
 14792,M. Velisar,21,Gaz Metan Medias,66,72,178,170,Romania,LB,71,50,59,58,61,65,2,800
@@ -9573,7 +9573,7 @@
 15027,I. Jack,22,Strømsgodset IF,66,76,188,165,Nigeria,CDM,56,45,58,61,65,69,1,950
 15046,K. Sardella,18,RSC Anderlecht,66,83,178,141,Belgium,RWB,74,37,65,73,59,56,2,1200
 15083,P. Mendy,24,Strømsgodset IF,66,72,185,165,France,LB,76,40,56,61,60,69,1,775
-15100,J. Dawa Tchakonte,24,Cameroon,66,71,193,209,Cameroon,CB,56,32,46,45,64,81,0,0
+15100,J. Dawa Tchakonte,24,Cameroon,66,71,193,209,Cameroon,CB,56,32,46,45,64,81,1,0
 15105,M. Sala,21,SPAL,66,78,178,150,Italy,LB,72,33,52,64,63,58,6,1100
 15109,A. Abdi,26,Paris FC,66,69,183,161,Tunisia,LWB,81,41,58,64,58,68,3,700
 15115,I. Goranov,28,Sporting de Charleroi,66,66,178,163,Bulgaria,LB,74,41,53,60,61,61,4,550
@@ -9655,7 +9655,7 @@
 16807,O. Tymchyk,23,Dynamo Kyiv,66,74,180,148,Ukraine,RB,72,24,48,48,64,52,0.5,850
 16837,Pep Chavarría,22,Real Zaragoza,66,72,175,154,Spain,LB,77,39,51,59,63,67,3,775
 16850,B. Soppy,18,Stade Rennais FC,66,81,180,176,France,RB,81,39,56,64,61,71,3,1200
-16887,M. Lotric,25,Slovenia,66,69,168,146,Slovenia,CAM,71,67,65,65,35,53,0,0
+16887,M. Lotric,25,Slovenia,66,69,168,146,Slovenia,CAM,71,67,65,65,35,53,1,0
 16901,Cedric Teguía,18,Real Oviedo,66,83,180,165,Spain,LWB,85,60,62,64,58,77,1,1300
 16946,Carlos Augusto,21,AC Monza,66,74,183,165,Brazil,CB,67,36,57,61,66,66,1,850
 17024,C. Olivera,18,UD Almería,66,84,170,148,Uruguay,CAM,78,59,63,70,36,48,1,1300
@@ -9824,7 +9824,7 @@
 3920,E. Ebanks-Landell,27,Shrewsbury,65,66,188,194,England,CB,55,48,49,53,64,73,3,550
 3947,E. Zavaleta,27,Toronto FC,65,66,185,185,United States,CB,58,55,52,54,63,75,2,550
 3971,P. Kitchen,28,LA Galaxy,65,66,183,161,United States,CB,53,56,57,57,63,74,2,525
-3982,G. Ivanov,32,Bulgaria,65,65,178,159,Bulgaria,CAM,71,65,62,66,30,63,0,0
+3982,G. Ivanov,32,Bulgaria,65,65,178,159,Bulgaria,CAM,71,65,62,66,30,63,1,0
 3989,M. Ødegaard,27,Sarpsborg 08 FF,65,68,185,176,Norway,CB,58,27,50,52,67,71,1,575
 4005,A. Woodyard,27,AFC Wimbledon,65,66,175,128,England,CDM,66,50,64,65,66,75,2,600
 4013,J. Drost,27,PEC Zwolle,65,66,175,165,Netherlands,LM,70,62,64,67,47,66,3,625
@@ -9881,8 +9881,8 @@
 4582,C. Thompson,26,Wycombe Wanderers,65,66,178,170,England,CDM,80,54,61,67,64,78,4,625
 4590,J. Omolo,30,KSV Cercle Brugge,65,65,178,161,Kenya,CB,61,47,55,61,63,68,3,450
 4596,Gálvez,27,C.D. Castellón,65,66,190,179,Spain,CDM,37,61,59,58,63,79,2,600
-4608,S. Delev,30,Bulgaria,65,65,170,150,Bulgaria,RW,79,63,59,66,24,55,0,0
-4623,R. Kirilov,26,Bulgaria,65,65,170,132,Bulgaria,RM,79,53,60,73,29,42,0,0
+4608,S. Delev,30,Bulgaria,65,65,170,150,Bulgaria,RW,79,63,59,66,24,55,1,0
+4623,R. Kirilov,26,Bulgaria,65,65,170,132,Bulgaria,RM,79,53,60,73,29,42,1,0
 4660,Pol Freixanet,28,CF Fuenlabrada,65,66,190,176,Spain,GK,64,69,59,66,48,60,2,450
 4666,M. Fornasier,26,Parma,65,67,185,176,Italy,CB,57,18,34,46,67,65,7,575
 4676,D. Babunski,26,FC Botosani,65,68,178,150,North Macedonia,CAM,72,61,63,69,55,65,3,675
@@ -9931,8 +9931,8 @@
 5404,M. Al Amri,28,Al Wehda,65,65,178,152,Saudi Arabia,LB,73,49,60,68,57,67,6,475
 5420,M. Fraser,26,St. Mirren,65,67,183,154,Scotland,RB,71,26,46,55,64,70,2,575
 5468,Nico Hidalgo,27,Racing Santander,65,65,175,141,Spain,RM,76,60,61,68,50,60,3,575
-5476,G. Valverde,30,Bolivia,65,65,178,172,Bolivia,CB,61,27,52,59,66,71,0,0
-5493,M. Mohsen,31,Egypt,65,65,185,179,Egypt,ST,64,65,51,65,44,74,0,0
+5476,G. Valverde,30,Bolivia,65,65,178,172,Bolivia,CB,61,27,52,59,66,71,1,0
+5493,M. Mohsen,31,Egypt,65,65,185,179,Egypt,ST,64,65,51,65,44,74,1,0
 5518,F. Loshaj,23,Cracovia,65,71,175,161,Kosovo,CM,62,57,63,68,53,64,3,725
 5531,T. Knipping,27,SG Dynamo Dresden,65,67,188,181,Germany,CB,48,31,42,49,64,75,2,575
 5543,A. Berzel,28,Türkgücü München,65,66,183,185,Germany,CB,69,51,53,49,63,76,2,525
@@ -9978,7 +9978,7 @@
 6305,L. Nielsen,32,Lyngby BK,65,65,188,168,Denmark,CB,53,31,40,37,64,70,3,350
 6341,O. Benítez,29,Patronato,65,66,185,174,Argentina,CB,51,32,38,33,66,73,4,500
 6346,N. Moiraghi,35,Club Atlético Tigre,65,65,180,176,Argentina,CB,48,35,44,45,66,63,3,160
-6392,J. Kauko,29,Finland,65,65,188,187,Finland,CM,60,60,58,63,62,82,0,0
+6392,J. Kauko,29,Finland,65,65,188,187,Finland,CM,60,60,58,63,62,82,1,0
 6425,L. Spalvis,25,1. FC Kaiserslautern,65,67,188,172,Lithuania,ST,65,65,52,63,32,61,2,675
 6437,L. Shephard,25,Newport County,65,68,178,148,Wales,RWB,75,48,57,62,60,67,3,600
 6450,A. Tshibola,25,Kilmarnock,65,69,190,185,DR Congo,CDM,63,54,65,68,62,73,2,675
@@ -10016,7 +10016,7 @@
 6998,E. O'Connell,24,Rochdale,65,71,190,176,Republic of Ireland,CB,53,41,50,56,63,75,1,675
 7023,L. Villagra,29,Nacional Asunción,65,65,180,174,Paraguay,ST,69,65,60,64,23,65,0.5,550
 7024,E. Hernández,33,Centro Atlético Fénix,65,65,183,190,Uruguay,GK,57,65,73,67,37,69,0.5,300
-7033,E. Markkanen,27,Finland,65,65,198,214,Finland,ST,63,64,49,53,31,79,0,0
+7033,E. Markkanen,27,Finland,65,65,198,214,Finland,ST,63,64,49,53,31,79,1,0
 7046,O. Mfulu,26,Elche CF,65,67,183,168,DR Congo,CDM,60,46,61,64,65,76,5,650
 7047,B. Angulo,24,América de Cali,65,67,170,141,Colombia,RM,81,56,64,67,37,49,1,675
 7060,B. Sørmo,23,Kristiansund BK,65,71,188,176,Norway,RB,78,44,55,60,60,70,1,650
@@ -10080,7 +10080,7 @@
 7862,J. Talbot,23,Bohemian FC,65,75,180,176,Republic of Ireland,GK,64,63,59,67,42,62,0.6,675
 7899,B. Collins,23,Barnsley,65,73,183,152,England,GK,66,60,63,67,43,63,2,625
 7942,O. Islas,24,Querétaro,65,71,170,141,Mexico,RM,78,61,60,64,29,53,3,750
-7949,R. Castro,30,Bolivia,65,65,180,154,Bolivia,CDM,59,34,57,60,65,51,0,0
+7949,R. Castro,30,Bolivia,65,65,180,154,Bolivia,CDM,59,34,57,60,65,51,1,0
 7957,P. Jaquez,23,U.N.A.M.,65,72,180,165,Mexico,CB,59,28,43,50,65,64,5,675
 7958,J. Eilers,32,SC Verl,65,65,188,170,Germany,RW,77,66,57,66,33,62,0.8,425
 7959,A. Diop,28,Kristiansund BK,65,65,196,165,Senegal,CDM,71,61,62,64,63,70,1,525
@@ -10088,8 +10088,8 @@
 7970,G. Dobson,22,Sunderland,65,72,185,165,England,CDM,68,54,64,64,63,77,3,750
 7971,K. da Graca,22,IFK Göteborg,65,73,188,176,Sweden,CB,59,30,45,44,65,70,1,725
 7972,M. Bola,22,Middlesbrough,65,74,185,172,England,LWB,76,33,53,65,60,69,4,750
-7999,S. Torrizales,26,Paraguay,65,66,178,165,Paraguay,CAM,68,57,63,69,49,48,0,0
-8000,J. Sambenito,26,Paraguay,65,65,175,159,Paraguay,ST,71,63,55,67,24,52,0,0
+7999,S. Torrizales,26,Paraguay,65,66,178,165,Paraguay,CAM,68,57,63,69,49,48,1,0
+8000,J. Sambenito,26,Paraguay,65,65,175,159,Paraguay,ST,71,63,55,67,24,52,1,0
 8050,J. Arias,25,VVV-Venlo,65,69,190,172,Curacao,ST,58,66,47,59,27,75,3,700
 8051,C. Depres,25,Nîmes Olympique,65,70,188,176,France,ST,46,67,51,61,30,59,6,725
 8076,M. Odjer,22,Trapani,65,74,170,152,Ghana,CDM,82,56,52,67,64,72,0.85,825
@@ -10111,7 +10111,7 @@
 8320,J. McCarthy,27,Inter Miami,65,66,190,181,United States,GK,66,64,58,68,34,63,2,450
 8324,I. Azzaoui,21,VfL Wolfsburg,65,75,178,159,Belgium,RM,76,55,56,73,29,51,7,875
 8335,J. Robson,22,Dundee United,65,72,173,150,Scotland,LB,81,31,59,63,58,58,2,675
-8365,N. Vidmar,31,Slovenia,65,65,188,194,Slovenia,GK,65,66,64,61,46,69,0,0
+8365,N. Vidmar,31,Slovenia,65,65,188,194,Slovenia,GK,65,66,64,61,46,69,1,0
 8378,O. Fisher,28,DC United,65,65,175,154,Jamaica,RB,73,36,57,66,62,56,2,475
 8405,H. Chapman,22,Blackburn Rovers,65,75,173,154,England,CAM,73,55,61,69,30,58,10,875
 8408,F. Azemi,27,Stabæk Fotball,65,65,185,179,Norway,ST,78,61,53,64,36,68,1,575
@@ -10135,7 +10135,7 @@
 8680,M. Bähre,24,Barnsley,65,70,178,154,Germany,RM,71,59,65,68,37,60,3,725
 8708,C. Connolly,22,Everton,65,71,183,154,England,CDM,60,54,63,63,65,68,13,675
 8710,R. Becker,23,SG Dynamo Dresden,65,71,183,174,Germany,CB,74,43,50,59,63,71,2,675
-8721,M. Bagayoko,29,Côte d'Ivoire,65,65,175,146,Ivory Coast,RB,76,27,53,66,64,64,0,0
+8721,M. Bagayoko,29,Côte d'Ivoire,65,65,175,146,Ivory Coast,RB,76,27,53,66,64,64,1,0
 8725,Varo,27,CD Lugo,65,69,190,185,Spain,GK,61,62,63,68,40,64,2,500
 8732,B. Haunstrup,23,Kilmarnock,65,72,180,165,England,LB,75,35,58,63,59,63,2,675
 8745,J. Lewis,23,Colorado Rapids,65,73,170,150,United States,CAM,76,64,57,70,29,54,2,800
@@ -10290,7 +10290,7 @@
 11048,Ðoàn Van Hâu,20,SC Heerenveen,65,75,185,154,Vietnam,LB,76,45,50,58,63,71,2,800
 11059,J. Castillo,19,Ajax,65,76,180,170,Netherlands,LM,78,53,62,67,56,71,2,825
 11061,V. Jónsson,26,Sandefjord Fotball,65,68,183,165,Iceland,RB,82,47,55,64,61,59,1,600
-11064,J. Pirinen,28,Finland,65,65,180,163,Finland,LB,77,38,51,63,63,67,0,0
+11064,J. Pirinen,28,Finland,65,65,180,163,Finland,LB,77,38,51,63,63,67,1,0
 11075,H. Vetlesen,20,Stabæk Fotball,65,78,175,159,Norway,CAM,67,57,63,68,58,63,1,1000
 11087,K. Velde,20,FK Haugesund,65,76,178,143,Norway,RM,81,60,55,69,33,62,1,925
 11106,Lim Chan Wool,24,Jeju United FC,65,67,175,157,Korea Republic,RM,73,59,64,65,45,66,2,675
@@ -10364,7 +10364,7 @@
 11970,F. Kanouté,21,KSV Cercle Brugge,65,74,185,172,Senegal,CB,62,53,60,64,62,72,2,775
 11978,G. Risso Patrón,24,Atlético Tucumán,65,72,173,161,Argentina,LB,69,37,52,61,64,60,3,675
 11981,S. Sadzoute,22,Pau FC,65,76,173,123,France,LB,73,45,57,66,60,57,1,850
-12003,M. Ortíz,29,Bolivia,65,65,180,183,Bolivia,CB,59,25,47,51,68,64,0,0
+12003,M. Ortíz,29,Bolivia,65,65,180,183,Bolivia,CB,59,25,47,51,68,64,1,0
 12057,S. Pinas,22,ADO Den Haag,65,73,183,148,Netherlands,CB,75,48,56,63,64,70,2,725
 12062,N. Díaz,21,Mazatlán FC,65,76,178,163,Chile,CB,67,25,48,60,66,71,2,850
 12100,A. Dursun,21,Trabzonspor,65,73,178,154,Turkey,LB,74,47,53,64,62,58,5,725
@@ -10505,7 +10505,7 @@
 14048,J. Ngakia,19,Watford,65,78,178,161,England,RWB,73,28,49,62,62,62,2,925
 14096,Jaime Seoane,23,SD Huesca,65,74,178,154,Spain,CAM,72,57,66,68,62,60,5,825
 14110,Robinho,22,Os Belenenses,65,74,170,128,Portugal,CAM,73,61,62,71,40,49,2,850
-14157,A. Rus,24,Romania,65,72,183,168,Romania,CB,70,47,53,58,64,71,0,0
+14157,A. Rus,24,Romania,65,72,183,168,Romania,CB,70,47,53,58,64,71,1,0
 14194,N. Boujellab,21,FC Schalke 04,65,77,183,159,Morocco,CAM,69,56,59,73,50,52,5,975
 14211,T. Pedersen,23,FK Haugesund,65,72,183,154,Norway,LB,70,41,57,60,63,60,1,675
 14212,S. Boey,19,Stade Rennais FC,65,78,178,154,France,RWB,72,41,58,65,59,56,5,925
@@ -10559,7 +10559,7 @@
 15047,M. Kana,17,RSC Anderlecht,65,85,180,148,Belgium,CDM,70,32,60,67,64,63,0.5,1000
 15090,Fer Niño,19,Villarreal CF,65,80,190,172,Spain,ST,64,62,55,61,28,63,5,1200
 15111,D. Takagi,24,Gamba Osaka,65,69,170,141,Japan,CAM,72,62,62,67,33,57,3,700
-15114,K. Dimitrov,23,Bulgaria,65,73,188,181,Bulgaria,CB,58,27,40,44,67,69,0,0
+15114,K. Dimitrov,23,Bulgaria,65,73,188,181,Bulgaria,CB,58,27,40,44,67,69,1,0
 15154,G. Ngonda,25,Dijon FCO,65,70,173,168,DR Congo,LWB,67,43,53,65,63,68,3,625
 15188,S. Pinna,22,Cagliari,65,74,173,150,Italy,RB,65,37,54,64,64,53,6,750
 15190,Borja Sainz,19,Deportivo Alavés,65,78,178,165,Spain,RM,75,51,60,67,35,49,3,1000
@@ -10571,7 +10571,7 @@
 15235,N. Mbuku,18,Stade de Reims,65,81,170,143,France,CAM,77,60,63,71,33,44,2,1100
 15237,Y. Lobo,27,Estudiantes de Mérida,65,66,188,170,Venezuela,CAM,68,56,60,67,55,65,0.5,600
 15242,M. Kikonda,24,Paris FC,65,73,175,163,France,CDM,65,51,61,66,62,66,2,725
-15248,D. Sigér,29,Hungary,65,65,175,154,Hungary,CM,57,56,58,64,62,67,0,0
+15248,D. Sigér,29,Hungary,65,65,175,154,Hungary,CM,57,56,58,64,62,67,1,0
 15254,I. Cissé,21,La Berrichonne de Châteauroux,65,73,190,187,Ivory Coast,CB,61,29,44,50,63,72,1,725
 15268,V. Trummer,20,SK Sturm Graz,65,75,188,183,Austria,LB,70,42,54,59,61,73,4,800
 15270,T. Datkovic,25,SD Huesca,65,70,183,172,Croatia,CB,64,26,35,36,66,63,2,650
@@ -10634,7 +10634,7 @@
 16122,I. Kargbo Jr.,20,Dynamo Kyiv,65,75,190,181,Belgium,ST,79,63,51,68,22,60,0.5,875
 16138,A. Benítez,24,Club Guaraní,65,70,183,168,Paraguay,CDM,62,32,57,52,62,66,0.5,650
 16188,R. Ledezma,18,PSV,65,78,168,141,United States,RM,73,50,67,70,45,44,2,975
-16221,A. Cre<U+021B>u,28,Romania,65,66,190,179,Romania,CDM,59,43,56,56,64,69,0,0
+16221,A. Cre<U+021B>u,28,Romania,65,66,190,179,Romania,CDM,59,43,56,56,64,69,1,0
 16328,D. Thiam,30,USL Dunkerque,65,65,178,148,France,LB,71,25,45,54,64,69,2,425
 16362,Milson,20,Clube Sport Marítimo,65,80,175,134,Angola,RM,81,50,59,71,33,50,2,1200
 16451,O. Traoré,22,KFC Uerdingen 05,65,73,188,170,Germany,RWB,86,40,59,64,58,66,2,700
@@ -10882,7 +10882,7 @@
 5534,E. Yesilyurt,26,Sivasspor,64,65,175,159,Germany,RM,68,53,60,67,31,59,4,525
 5550,N. Quaschner,25,DSC Arminia Bielefeld,64,65,183,179,Germany,ST,79,62,59,63,30,69,4,525
 5552,M. Starke,29,FSV Zwickau,64,64,178,179,Namibia,LM,76,68,62,67,33,67,0.75,450
-5573,F. Aird,22,Canada,64,68,175,154,Canada,RWB,85,55,59,64,58,62,0,0
+5573,F. Aird,22,Canada,64,68,175,154,Canada,RWB,85,55,59,64,58,62,1,0
 5574,R. Nagai,29,Sanfrecce Hiroshima,64,64,180,161,Japan,ST,83,61,57,63,27,65,3,450
 5587,A. Bone,31,Emelec,64,64,185,168,Ecuador,GK,64,66,60,59,32,67,0.5,300
 5593,M. Ingebrigtsen,22,Tromsø IL,64,73,170,150,Norway,LM,82,62,54,68,42,53,1,700
@@ -11129,7 +11129,7 @@
 9806,A. Maldonado,22,Club Atlético Banfield,64,73,188,187,Argentina,CB,51,32,37,42,66,73,3,625
 9924,I. Groothuizen,23,Vejle Boldklub,64,70,190,194,Netherlands,GK,62,63,66,67,24,62,2,475
 9929,J. Kitolano,20,Molde FK,64,76,175,143,Norway,LWB,84,37,54,65,56,62,1,750
-9935,I. Isa,31,Bulgaria,64,64,183,172,Bulgaria,ST,65,63,45,58,27,67,0,0
+9935,I. Isa,31,Bulgaria,64,64,183,172,Bulgaria,ST,65,63,45,58,27,67,1,0
 9960,V. Thill,20,CD Nacional,64,78,175,152,Luxembourg,CAM,74,53,62,69,27,41,2,1000
 9985,A. Araujo,28,Club Atlético Talleres,64,64,165,132,Argentina,RW,77,57,56,68,30,40,4,450
 10000,J. Okkels,20,IF Elfsborg,64,76,183,165,Denmark,CAM,82,58,56,66,26,61,1,800
@@ -11155,7 +11155,7 @@
 10388,G. Tormin,22,La Berrichonne de Châteauroux,64,72,175,159,France,LM,80,56,59,67,31,58,2,675
 10407,Strefezza,23,SPAL,64,72,168,139,Brazil,RM,82,46,57,70,26,45,7,675
 10412,Mario González,24,CD Tondela,64,69,183,168,Spain,RW,66,59,59,69,20,49,2,600
-10464,D. Wayar,26,Bolivia,64,67,170,146,Bolivia,CDM,61,35,57,56,65,55,0,0
+10464,D. Wayar,26,Bolivia,64,67,170,146,Bolivia,CDM,61,35,57,56,65,55,1,0
 10479,J. Mascia,26,Club Plaza Colonia,64,66,188,170,Uruguay,ST,54,69,49,62,35,62,0.5,550
 10499,N. Mileusnic,26,Adelaide United,64,64,180,157,Australia,LW,94,58,55,65,23,60,1,475
 10524,M. Lucero,27,Club Atlético Banfield,64,64,188,179,Argentina,LM,69,59,60,68,32,55,5,475
@@ -11270,7 +11270,7 @@
 11832,José Lara,20,Sevilla FC,64,78,163,132,Spain,CAM,65,59,62,68,33,35,4,1000
 11840,N. Sessa,24,1. FC Kaiserslautern,64,70,173,148,Germany,LM,77,58,60,71,33,50,1,625
 11848,B. Adekanye,21,Lazio,64,78,175,154,Netherlands,RW,71,59,55,68,30,50,9,1000
-11859,L. Millar,20,Canada,64,76,185,174,Canada,ST,74,62,54,68,22,59,0,0
+11859,L. Millar,20,Canada,64,76,185,174,Canada,ST,74,62,54,68,22,59,1,0
 11861,Junior Messias,29,Crotone,64,64,178,154,Brazil,CF,66,62,62,69,23,43,4,450
 11868,T. Mitchell,20,Crystal Palace,64,77,175,143,England,LB,72,37,51,64,62,53,7,800
 11872,Steven Prieto,22,Real Oviedo,64,73,183,172,Spain,ST,62,64,49,62,26,67,3,700
@@ -11445,7 +11445,7 @@
 14025,E. Cerrillo,19,FC Dallas,64,81,178,181,United States,CDM,66,43,58,55,59,68,1,900
 14068,V. Boniface,19,FK Bodø/Glimt,64,77,183,161,Nigeria,ST,78,63,50,67,25,63,0.95,850
 14117,M. Glushenkov,20,Spartak Moscow,64,79,178,152,Russia,LM,74,61,58,65,28,42,9,1000
-14128,S. Torres,29,Bolivia,64,64,180,150,Bolivia,RB,71,29,53,52,60,69,0,0
+14128,S. Torres,29,Bolivia,64,64,180,150,Bolivia,RB,71,29,53,52,60,69,1,0
 14129,A. Jusino,27,Bolivia,64,65,185,194,Bolivia,CB,48,27,31,42,66,78,0.5,450
 14146,R. Dâlbea,38,FC Hermannstadt,64,64,183,176,Romania,CDM,33,54,55,52,57,78,2,100
 14151,A. Patache,32,FC Botosani,64,64,175,163,Romania,RB,64,43,51,61,63,64,3,275
@@ -11486,8 +11486,8 @@
 14689,Admonio,25,CD Numancia,64,69,178,170,Guinea Bissau,CB,61,33,44,42,64,65,2,525
 14692,N. Havenaar,24,FC Thun,64,70,201,207,Japan,CB,43,29,35,33,64,77,3,550
 14704,J. Tunnicliffe,26,Crawley Town,64,68,185,181,England,CB,54,26,44,49,63,74,2,525
-14735,B. Raj,32,India,64,64,175,152,India,RB,76,44,58,59,59,63,0,0
-14749,G. Chatterjee,34,India,64,64,196,185,India,GK,64,68,69,60,30,61,0,0
+14735,B. Raj,32,India,64,64,175,152,India,RB,76,44,58,59,59,63,1,0
+14749,G. Chatterjee,34,India,64,64,196,185,India,GK,64,68,69,60,30,61,1,0
 14769,R. Opru<U+021B>,22,FC Hermannstadt,64,73,180,154,Romania,LB,72,25,50,55,60,68,2,625
 14775,B. Kemper,21,ADO Den Haag,64,73,185,174,Netherlands,CB,68,36,49,62,63,68,2,625
 14789,M. <U+0218>tefanescu,21,Sepsi OSK,64,76,173,146,Romania,ST,76,61,57,65,37,58,2,800
@@ -11552,7 +11552,7 @@
 15531,C. Latorre,33,Club Blooming,64,64,185,165,Uruguay,CDM,60,44,57,59,57,74,0.5,220
 15541,I. Salazar,22,Club Plaza Colonia,64,71,178,154,Uruguay,LM,92,47,58,62,27,58,0.5,625
 15562,Migue,23,FC Groningen,64,72,175,150,Spain,RB,69,45,57,65,61,64,2,600
-15569,Z. Nagy,26,Hungary,64,66,188,179,Hungary,LWB,80,52,52,62,59,63,0,0
+15569,Z. Nagy,26,Hungary,64,66,188,179,Hungary,LWB,80,52,52,62,59,63,1,0
 15580,L. Mifflin,20,Melgar FBC,64,70,183,168,Peru,LB,73,41,52,56,59,74,0.5,550
 15588,O. Salomón,21,Central Córdoba,64,77,180,181,Argentina,CB,62,33,47,49,66,62,2,800
 15598,S. Asan,21,Trabzonspor,64,69,170,148,Turkey,RB,65,43,54,63,62,48,4,550
@@ -11563,7 +11563,7 @@
 15684,P. Wimmer,19,FK Austria Wien,64,78,183,170,Austria,RM,83,52,58,66,44,68,3,975
 15688,L. Da Cunha,19,Stade Rennais FC,64,77,175,146,France,CAM,81,60,59,68,33,50,5,850
 15692,J. Palacios,21,San Lorenzo de Almagro,64,78,173,143,Argentina,RM,75,60,63,65,50,52,4,1000
-15714,G. Georgiev,31,Bulgaria,64,64,188,187,Bulgaria,GK,66,65,66,65,36,61,0,0
+15714,G. Georgiev,31,Bulgaria,64,64,188,187,Bulgaria,GK,66,65,66,65,36,61,1,0
 15761,Marc Echarri,21,Rayo Vallecano,64,75,190,172,Spain,ST,68,68,46,59,23,66,2,775
 15781,S. Pavlovic,19,AS Monaco,64,82,193,185,Serbia,CB,59,33,44,44,64,72,5,900
 15810,J. Caicedo,25,Emelec,64,66,183,176,Ecuador,LW,68,58,56,65,23,52,0.5,550
@@ -11633,7 +11633,7 @@
 16766,N. Olsak,28,RKC Waalwijk,64,65,180,170,Argentina,CDM,63,43,56,58,61,68,2,450
 16788,A. Kol,19,Galatasaray SK,64,79,175,154,Turkey,ST,77,63,57,66,22,64,8,975
 16853,C. Matsima,18,AS Monaco,64,79,190,165,France,CB,58,33,44,50,63,69,3,875
-16888,N. Kouter,26,Slovenia,64,68,173,154,Slovenia,CDM,66,52,58,58,63,64,0,0
+16888,N. Kouter,26,Slovenia,64,68,173,154,Slovenia,CDM,66,52,58,58,63,64,1,0
 16890,L. Šušnjara,23,FC Chambly Oise,64,69,188,165,Slovenia,LW,72,65,57,64,29,41,1,600
 16905,L. Lokotsch,24,Livingston FC,64,71,190,181,Germany,ST,72,61,41,63,26,72,2,650
 16915,E. Agbadou,23,KAS Eupen,64,71,193,187,Ivory Coast,CB,61,29,49,54,63,74,2,575
@@ -11817,7 +11817,7 @@
 6480,C. Burgess,24,Accrington Stanley,63,67,193,179,Australia,CB,45,28,41,41,62,75,1,425
 6486,C. Grant,25,Plymouth Argyle,63,67,183,168,England,CAM,60,60,64,65,59,66,3,475
 6505,G. Kastaneer,24,Coventry City,63,68,185,187,Curacao,ST,72,62,54,68,32,70,8,500
-6526,J. Lalpekhlua,27,India,63,63,175,165,India,ST,75,64,54,64,33,59,0,0
+6526,J. Lalpekhlua,27,India,63,63,175,165,India,ST,75,64,54,64,33,59,1,0
 6581,D. Djigla,24,Chamois Niortais Football Club,63,64,175,161,Benin,RW,91,64,56,64,32,55,1,450
 6616,J. Sanguinetti,29,Always Ready,63,63,173,154,Argentina,CAM,86,52,60,63,36,63,0.5,350
 6666,I. van Weert,25,RKC Waalwijk,63,66,180,168,Netherlands,CB,55,31,47,43,63,63,2,425
@@ -11831,7 +11831,7 @@
 6823,M. Evouna,27,Santa Clara,63,64,185,176,Gabon,ST,64,61,43,60,34,66,2,425
 6843,M. Hamzi,28,Al Hazem,63,63,173,134,Saudi Arabia,LM,82,57,54,64,44,54,5,375
 6861,I. Lasicki,25,Pogon Szczecin,63,67,183,154,Poland,CB,47,34,48,48,62,70,2,425
-6864,D. Bejarano,26,Bolivia,63,63,183,163,Bolivia,RM,72,40,59,65,53,69,0,0
+6864,D. Bejarano,26,Bolivia,63,63,183,163,Bolivia,RM,72,40,59,65,53,69,1,0
 6934,G. Thomas,23,Queens Park Rangers,63,72,173,168,Wales,RM,76,61,60,65,36,63,2,575
 6950,M. Konradsen,24,FK Bodø/Glimt,63,70,175,159,Norway,CM,70,59,62,68,58,61,1,500
 7015,J. Araya,23,CD Palestino,63,70,175,148,Chile,CM,66,48,59,64,57,65,1,500
@@ -11858,7 +11858,7 @@
 7731,L. Sliškovic,25,1. FC Magdeburg,63,67,180,174,Austria,CAM,64,60,55,65,27,56,1,475
 7733,A. Portales,24,Monterrey,63,68,183,168,Mexico,CB,66,36,54,56,61,71,6,425
 7752,S. Wright,22,Aberdeen,63,71,175,143,Scotland,RM,85,53,55,68,28,47,2,550
-7820,G. Singh Sandhu,26,India,63,67,193,198,India,GK,63,59,59,64,41,62,0,0
+7820,G. Singh Sandhu,26,India,63,67,193,198,India,GK,63,59,59,64,41,62,1,0
 7842,E. Lanini,26,Parma,63,66,185,165,Italy,ST,66,65,49,64,22,59,7,475
 7864,S. Vega,22,Millonarios FC,63,73,178,154,Colombia,RB,66,26,49,62,59,69,0.85,525
 7866,P. Zebli,20,KRC Genk,63,72,178,154,Ivory Coast,CDM,68,52,52,59,60,70,3,500
@@ -11964,7 +11964,7 @@
 9740,S. Skålevik,27,IK Start,63,64,180,165,Norway,ST,72,63,51,61,26,62,1,425
 9742,D. Vega,27,Sandefjord Fotball,63,63,178,159,Costa Rica,RM,80,58,56,66,34,54,1,375
 9756,J. Abu Hanna,20,SC Fortuna Köln,63,74,183,176,Germany,CB,64,33,53,53,62,71,0.5,550
-9766,Y. Karabelyov,24,Bulgaria,63,70,183,165,Bulgaria,CM,61,51,60,60,54,57,0,0
+9766,Y. Karabelyov,24,Bulgaria,63,70,183,165,Bulgaria,CM,61,51,60,60,54,57,1,0
 9772,A. Arias,24,Melgar FBC,63,70,165,141,Peru,CDM,60,56,63,63,64,51,0.5,500
 9784,R. Holden,22,Walsall,63,70,170,150,Northern Ireland,LM,75,52,61,65,36,49,3,525
 9791,L. Germoni,21,Castellammare di Stabia,63,69,175,143,Italy,LB,65,34,52,59,62,65,0.5,450
@@ -12011,7 +12011,7 @@
 10323,U. Yuvakuran,22,Besiktas JK,63,74,193,179,Turkey,GK,64,60,59,64,35,60,7,500
 10345,K. Sterling,20,Leyton Orient,63,75,175,157,England,ST,76,65,41,62,23,50,3,675
 10353,L. James-Wildin,22,Stevenage,63,72,178,165,Antigua &amp; Barbuda,RWB,77,51,54,61,56,75,2,500
-10380,M. Woud,21,New Zealand,63,74,196,187,New Zealand,GK,63,56,58,66,22,60,0,0
+10380,M. Woud,21,New Zealand,63,74,196,187,New Zealand,GK,63,56,58,66,22,60,1,0
 10399,L. Zanimacchia,21,Real Zaragoza,63,74,178,152,Italy,CAM,69,67,57,65,29,45,2,625
 10420,Jacobo,23,CD Tenerife,63,72,178,154,Spain,CAM,67,64,64,66,33,40,2,575
 10427,L. García,21,Sevilla FC,63,72,190,179,Colombia,GK,66,62,59,63,53,64,2,450
@@ -12124,7 +12124,7 @@
 11979,D. Khalid,21,Amiens SC,63,70,180,172,Morocco,CAM,64,63,56,68,19,53,1,525
 11990,H. Cochrane,18,Heart of Midlothian,63,82,178,152,Scotland,CAM,67,55,61,67,53,51,0.7,750
 12002,A. Dabo,19,FC Nantes,63,80,180,163,France,CAM,67,58,62,65,61,52,3,800
-12031,P. Soiri,25,Finland,63,64,183,139,Finland,RM,77,62,56,64,42,58,0,0
+12031,P. Soiri,25,Finland,63,64,183,139,Finland,RM,77,62,56,64,42,58,1,0
 12033,Mario Hernández,21,Rayo Vallecano,63,74,178,152,Spain,CB,59,31,45,36,65,64,1,575
 12038,Sillero,22,Athletic Club de Bilbao,63,75,178,176,Spain,CB,69,43,53,54,65,62,4,600
 12055,S. McLoughlin,23,Hull City,63,73,190,163,Republic of Ireland,CB,53,31,49,54,62,70,2,550
@@ -12182,7 +12182,7 @@
 12727,Rodolfo Cardoso,22,Santa Clara,63,71,185,181,Portugal,GK,64,60,57,64,27,61,0.85,425
 12741,E. Galbraith,19,Manchester United,63,81,175,148,Northern Ireland,CM,67,56,60,65,58,58,8,750
 12744,E. Henderson,20,Celtic,63,78,183,150,Scotland,CAM,69,51,66,67,36,40,7,800
-12757,C. McCowatt,21,New Zealand,63,73,180,161,New Zealand,CAM,70,62,60,60,52,68,0,0
+12757,C. McCowatt,21,New Zealand,63,73,180,161,New Zealand,CAM,70,62,60,60,52,68,1,0
 12768,P. Choroba,24,SC Verl,63,70,183,165,Germany,CB,66,54,51,58,59,77,0.5,450
 12771,D. Spence,19,Middlesbrough,63,79,183,157,England,RWB,79,29,45,61,59,56,2,725
 12775,E. Abedini,21,FC Lugano,63,76,190,168,Kosovo,CDM,60,38,58,59,59,69,1,675
@@ -12236,7 +12236,7 @@
 13435,Pelayo Morilla,18,Real Sporting de Gijón,63,79,180,163,Spain,LM,74,59,58,66,26,56,0.8,750
 13444,G. Rutter,18,Stade Rennais FC,63,74,183,154,France,ST,68,63,54,65,23,55,4,600
 13459,F. Bustamante,21,Club Atlético Tigre,63,76,168,143,Argentina,RM,77,54,51,69,45,53,2,700
-13511,A. Tsvetkov,29,Bulgaria,63,63,180,165,Bulgaria,CB,57,45,54,53,64,71,0,0
+13511,A. Tsvetkov,29,Bulgaria,63,63,180,165,Bulgaria,CB,57,45,54,53,64,71,1,0
 13527,M. López,20,San Jose Earthquakes,63,73,175,148,Peru,LB,72,45,59,62,58,59,1,550
 13536,A. Perea,19,Orlando City SC,63,78,185,168,Colombia,CDM,69,44,53,59,61,65,0.9,750
 13544,A. Solano,21,Atlético Madrid,63,73,175,152,Colombia,RB,63,35,54,62,61,56,6,550
@@ -12246,7 +12246,7 @@
 13609,R. Tugarev,21,Lokomotiv Moscow,63,74,170,139,Russia,CAM,75,59,62,59,49,49,7,625
 13625,L. Yamaguchi,21,Extremadura UD,63,73,185,161,Japan,GK,67,62,68,64,23,59,0.8,475
 13644,M. Miljevic,19,Argentinos Juniors,63,80,178,159,United States,RM,66,55,60,67,51,56,2,800
-13661,C. Añez,23,Bolivia,63,68,175,143,Bolivia,RB,71,30,50,52,63,51,0,0
+13661,C. Añez,23,Bolivia,63,68,175,143,Bolivia,RB,71,30,50,52,63,51,1,0
 13694,D. Ciobotariu,22,CFR Cluj,63,72,188,174,Romania,CB,68,23,46,48,64,74,3,500
 13713,F. Marchwinski,18,Lech Poznan,63,80,185,159,Poland,CAM,68,57,62,63,48,58,0.8,750
 13728,K. Dembélé,17,Celtic,63,84,168,130,England,CAM,86,57,56,70,16,32,1,800
@@ -12261,7 +12261,7 @@
 13840,L. Kharabadze,19,FC Zürich,63,80,183,174,Georgia,LB,80,48,52,64,56,71,2,725
 13847,A. Keita,20,Columbus Crew SC,63,75,188,181,United States,CB,68,27,49,48,61,70,1,600
 13850,S. Yatéké,19,FK Austria Wien,63,74,183,176,Central African Republic,ST,82,57,51,62,21,64,2,625
-13852,A. Schäfer,21,Hungary,63,78,180,154,Hungary,RM,75,50,58,62,53,47,0,0
+13852,A. Schäfer,21,Hungary,63,78,180,154,Hungary,RM,75,50,58,62,53,47,1,0
 13875,O. Fernandez,21,New York Red Bulls,63,75,175,154,United States,RM,75,52,59,65,44,59,1,650
 13905,C. Sertel,20,Medipol Basaksehir FK,63,76,188,183,Turkey,CB,66,31,47,57,63,65,5,650
 13911,Y. Delfi,19,Sporting de Charleroi,63,76,185,165,Iran,RM,72,62,58,68,33,62,2,700
@@ -12365,7 +12365,7 @@
 15217,V. Karpov,17,PFC CSKA Moscow,63,78,190,161,Russia,CDM,64,31,54,55,65,62,0.5,675
 15240,L. Rodríguez,29,Estudiantes de Mérida,63,63,173,152,Mexico,ST,60,67,44,65,19,57,0.5,375
 15266,M. Freites,21,Godoy Cruz,63,75,175,165,Argentina,RM,71,55,59,62,48,59,2,650
-15283,A. Szalai,22,Hungary,63,76,193,183,Hungary,CB,62,29,51,31,63,67,0,0
+15283,A. Szalai,22,Hungary,63,76,193,183,Hungary,CB,62,29,51,31,63,67,1,0
 15291,Jefferson Encada,21,Vitória Guimarães,63,71,188,161,Guinea Bissau,RM,83,53,57,64,30,62,2,550
 15384,G. Merloi,20,Astra Giurgiu,63,77,170,148,Romania,LM,75,59,58,65,30,50,2,800
 15398,P. Bonet,17,Stade Rennais FC,63,76,193,207,DR Congo,GK,65,60,58,61,17,64,0.5,500
@@ -12378,7 +12378,7 @@
 15467,Valín,19,Deportivo de La Coruña,63,76,178,152,Spain,RB,69,33,48,57,61,50,1,625
 15472,R. Villanueva,27,Caracas FC,63,63,178,170,Venezuela,CB,40,28,42,46,62,70,0.5,325
 15493,J. Torres,27,Aragua FC,63,63,170,152,Venezuela,RM,79,59,60,62,32,60,0.5,375
-15504,S. Omossola,22,Cameroon,63,69,185,165,Cameroon,GK,65,58,59,67,30,59,0,0
+15504,S. Omossola,22,Cameroon,63,69,185,165,Cameroon,GK,65,58,59,67,30,59,1,0
 15534,E. Redín,25,Club Plaza Colonia,63,66,183,172,Uruguay,CM,61,52,53,66,53,73,0.5,450
 15543,C. Menacho,20,Club Blooming,63,73,178,154,Bolivia,RM,70,48,57,65,33,61,0.5,600
 15555,C. Dekuyper,20,KSV Cercle Brugge,63,74,180,150,Belgium,CDM,66,40,57,61,62,62,2,600
@@ -12431,7 +12431,7 @@
 16215,T. Haas,22,Türkgücü München,63,68,178,168,Germany,RB,67,31,53,61,60,61,0.95,425
 16239,P. Abraham,17,AIK,63,79,175,152,Sweden,CAM,80,61,53,66,26,45,0.5,725
 16245,G. Ludwigson,26,Hammarby IF,63,66,183,165,Sweden,ST,72,62,53,62,27,67,2,475
-16247,B. Karagaren,27,Bulgaria,63,63,183,143,Bulgaria,RM,75,63,58,62,35,53,0,0
+16247,B. Karagaren,27,Bulgaria,63,63,183,143,Bulgaria,RM,75,63,58,62,35,53,1,0
 16284,T. Borges,21,Oud-Heverlee Leuven,63,72,170,146,Canada,CAM,73,66,59,71,41,51,2,575
 16296,A. Bajic,24,SV Ried,63,66,183,154,Austria,CM,67,59,62,61,58,64,2,475
 16312,J. Justvan,22,SC Paderborn 07,63,70,178,143,Germany,CAM,74,50,63,64,38,49,4,525
@@ -12476,7 +12476,7 @@
 16829,A. Gülay,17,Alanyaspor,63,78,180,154,Turkey,LB,66,41,57,62,58,57,0.5,675
 16848,A. Arli,17,Dijon FCO,63,81,175,154,Turkey,CAM,75,55,59,70,27,48,0.5,725
 16860,E. Guessand,19,OGC Nice,63,77,185,174,France,ST,66,62,51,60,21,61,4,800
-16866,B. Babati,24,Hungary,63,69,175,150,Hungary,LM,78,60,56,62,24,48,0,0
+16866,B. Babati,24,Hungary,63,69,175,150,Hungary,LM,78,60,56,62,24,48,1,0
 16871,Leo Román,20,RCD Mallorca,63,78,185,172,Spain,GK,64,62,66,63,50,60,1,675
 16898,S. Elisor,20,AC Ajaccio,63,72,185,165,France,ST,71,62,52,59,32,61,1,575
 16899,Diego Conde,21,CD Leganés,63,77,188,181,Spain,GK,58,56,61,67,42,65,1,675
@@ -12569,7 +12569,7 @@
 4797,M. Ovenstad,26,Mjøndalen IF,62,65,183,154,Norway,CAM,69,59,62,62,53,67,0.85,375
 4854,L. Caballero,30,Sportivo Luqueño,62,62,175,163,Paraguay,ST,44,64,54,62,43,58,0.5,300
 4920,M. Rybicki,27,Warta Poznan,62,62,175,143,Poland,RM,75,60,54,66,30,46,1,325
-4998,C. Howieson,24,New Zealand,62,65,180,172,New Zealand,CAM,70,57,62,62,51,67,0,0
+4998,C. Howieson,24,New Zealand,62,65,180,172,New Zealand,CAM,70,57,62,62,51,67,1,0
 5006,M. Armellino,30,AC Monza,62,62,175,165,Italy,CDM,63,41,58,63,58,65,1,275
 5040,L. Gambin,27,Colchester United,62,63,168,154,Malta,CAM,68,53,58,69,36,42,3,350
 5044,G. Williams,24,Grimsby Town,62,67,173,161,Wales,RM,76,61,59,67,31,60,2,400
@@ -12613,7 +12613,7 @@
 6785,R. Espejord,24,SC Heerenveen,62,69,188,190,Norway,ST,55,62,48,57,29,66,2,425
 6870,M. Jakóbowski,27,Warta Poznan,62,62,170,143,Poland,LM,79,56,57,62,33,47,1,325
 6880,T. Conlon,24,Port Vale,62,66,173,137,England,CM,63,50,62,65,56,66,2,400
-6912,M. Ridenton,24,New Zealand,62,66,180,159,New Zealand,CM,67,55,61,57,57,68,0,0
+6912,M. Ridenton,24,New Zealand,62,66,180,159,New Zealand,CM,67,55,61,57,57,68,1,0
 6956,O. Okungbowa,26,VfB Lübeck,62,65,188,168,Austria,CB,71,45,54,56,61,74,0.8,350
 6964,Jaime,25,CE Sabadell FC,62,67,183,165,Spain,CB,58,33,45,42,62,68,2,350
 6971,A. Bakayoko,24,Coventry City,62,68,193,187,Sierra Leone,ST,79,61,51,56,43,82,7,425
@@ -12683,7 +12683,7 @@
 8337,M. Sarr,23,Bologna,62,69,190,176,Senegal,GK,65,60,55,70,44,55,3,325
 8339,E. Ayuk,20,Philadelphia Union,62,73,173,150,Cameroon,RM,80,56,55,67,42,43,2,525
 8355,P. O'Connor,22,Bradford City,62,71,190,170,Republic of Ireland,CB,56,21,38,45,61,72,3,425
-8390,I. Jónsson,30,Iceland,62,63,188,181,Iceland,GK,62,60,58,63,46,61,0,0
+8390,I. Jónsson,30,Iceland,62,63,188,181,Iceland,GK,62,60,58,63,46,61,1,0
 8413,J. Maguire-Drew,22,Leyton Orient,62,69,180,165,England,LM,71,60,59,62,34,55,3,425
 8461,O. Muzayil B,27,Al Fayha,62,62,173,134,Saudi Arabia,RB,76,37,52,60,57,66,4,275
 8518,A. Lajami,24,Al Nassr,62,71,178,165,Saudi Arabia,CB,75,47,52,55,62,69,5,425
@@ -13002,7 +13002,7 @@
 13856,K. Hodžic,25,Mjällby AIF,62,65,178,157,Sweden,LWB,61,32,54,59,58,56,0.65,325
 13876,Julio Alonso,21,Real Betis,62,72,170,137,Spain,LB,70,36,48,59,60,59,3,450
 13877,E. Fernández,19,Defensa y Justicia,62,79,178,172,Argentina,CAM,68,54,63,65,58,61,2,650
-13895,A. Hristov,20,Bulgaria,62,75,190,176,Bulgaria,CB,61,28,39,41,62,66,0,0
+13895,A. Hristov,20,Bulgaria,62,75,190,176,Bulgaria,CB,61,28,39,41,62,66,1,0
 13898,J. Benson,20,Burnley,62,74,175,163,England,CAM,68,56,62,63,56,64,6,500
 13909,Iago Indias,24,C.D. Castellón,62,68,178,150,Spain,CB,51,38,49,49,64,60,1,375
 13918,Júnior Brumado,21,FC Midtjylland,62,74,190,176,Brazil,ST,74,58,45,67,29,74,4,550
@@ -13023,7 +13023,7 @@
 14150,A. Pi<U+021B>ian,24,Chindia Târgoviste,62,66,193,196,Romania,CB,53,25,40,43,60,70,1,350
 14160,R. Fernández,20,Bolivia,62,76,173,161,Bolivia,LB,60,32,53,50,56,60,0.5,625
 14192,T. Vlcek,18,SK Slavia Praha,62,80,183,161,Czech Republic,CB,69,28,46,64,58,67,0.5,575
-14201,V. Antov,18,Bulgaria,62,77,185,165,Bulgaria,CB,61,32,48,47,63,69,0,0
+14201,V. Antov,18,Bulgaria,62,77,185,165,Bulgaria,CB,61,32,48,47,63,69,1,0
 14204,K. Maradishvili,20,PFC CSKA Moscow,62,75,178,154,Russia,CAM,66,54,59,63,60,55,5,550
 14226,R. Piccoli,19,Spezia,62,80,183,172,Italy,ST,52,63,47,57,34,61,0.5,650
 14236,Miguel Marí,23,SD Eibar,62,71,185,161,Spain,CAM,60,51,64,64,50,49,4,450
@@ -13060,8 +13060,8 @@
 14697,K. Al Khathlan,24,Al Raed,62,67,178,150,Saudi Arabia,LWB,74,28,52,56,57,58,3,350
 14702,R. Balbuena,20,Arsenal de Sarandí,62,74,175,159,Argentina,RM,81,60,57,70,37,50,2,550
 14703,Ballarin,21,SD Huesca,62,73,170,137,Spain,ST,66,62,49,64,23,46,1,525
-14730,P. Bhatt,35,India,62,62,183,172,India,ST,71,62,51,61,29,70,0,0
-14734,H. Bhandari,31,India,62,62,178,163,India,RM,77,48,57,64,37,65,0,0
+14730,P. Bhatt,35,India,62,62,183,172,India,ST,71,62,51,61,29,70,1,0
+14734,H. Bhandari,31,India,62,62,178,163,India,RM,77,48,57,64,37,65,1,0
 14761,M. Rodin,24,Cracovia,62,70,193,176,Bosnia Herzegovina,CB,54,25,35,39,64,69,2,400
 14807,Lucas Soares,22,Vitória Guimarães,62,72,175,146,Brazil,RWB,74,37,54,65,57,59,2,450
 14815,Z. Ould Khaled,20,Angers SCO,62,74,196,174,France,CB,56,47,56,62,61,67,3,500
@@ -13284,7 +13284,7 @@
 4517,A. Koura,27,FC Lausanne-Sport,61,61,173,154,Burkina Faso,ST,78,61,50,61,19,60,3,275
 4603,K. Luckassen,26,FC Viitorul,61,62,185,176,Netherlands,ST,75,60,43,59,29,73,2,300
 4726,T. Marsh,26,Stevenage,61,62,180,176,England,LM,83,58,50,61,34,62,2,300
-4986,L. Ralte,25,India,61,62,173,157,India,LW,78,58,55,62,35,52,0,0
+4986,L. Ralte,25,India,61,62,173,157,India,LW,78,58,55,62,35,52,1,0
 5000,K. Thomas,23,Doncaster Rovers,61,68,178,168,England,ST,74,57,43,57,32,64,3,350
 5131,R. Bingham,25,Doncaster Rovers,61,64,180,165,England,ST,81,57,47,61,21,54,3,325
 5149,B. Al Nakhli,32,Al Adalah,61,61,178,152,Saudi Arabia,CB,60,39,49,53,60,65,3,160
@@ -13310,7 +13310,7 @@
 5946,M. Willock,23,Gillingham,61,68,183,159,England,CAM,70,55,57,66,52,66,2,350
 6004,N. Belloni,22,Inter,61,68,175,150,Italy,LM,68,55,56,65,33,54,8,325
 6128,P. Mullin,25,Cambridge United,61,64,178,157,England,ST,61,63,53,62,37,60,2,325
-6136,L. Gasparotto,21,Canada,61,71,188,163,Canada,CB,59,21,33,40,58,72,0,0
+6136,L. Gasparotto,21,Canada,61,71,188,163,Canada,CB,59,21,33,40,58,72,1,0
 6160,P. Magnín,30,Club Atlético Tigre,61,61,178,165,Argentina,ST,58,66,52,65,23,50,3,240
 6280,B. Barry,25,Barrow,61,65,183,168,England,RWB,74,34,50,57,56,69,2,275
 6356,D. Whitehead,26,Port Vale,61,63,178,152,England,CAM,70,58,60,64,53,61,2,300
@@ -13670,10 +13670,10 @@
 14682,J. Lonwijk,20,FC Utrecht,61,74,188,176,Netherlands,ST,71,57,58,59,41,72,2,475
 14684,N. Tarnat,22,Hannover 96,61,72,178,161,Germany,CM,64,57,59,60,57,60,3,400
 14685,M. Skóras,20,Lech Poznan,61,75,173,141,Poland,RM,78,47,56,63,34,63,1,550
-14729,A. Chakraborty,34,India,61,61,188,174,India,CB,37,44,46,41,61,75,0,0
-14736,D. Pillai,32,India,61,61,178,154,India,RM,70,50,58,61,45,62,0,0
-14743,A. Swaminathan,28,India,61,61,173,143,India,CAM,60,50,61,65,30,39,0,0
-14750,A. Ginti,26,India,61,62,170,152,India,LB,82,44,52,61,56,51,0,0
+14729,A. Chakraborty,34,India,61,61,188,174,India,CB,37,44,46,41,61,75,1,0
+14736,D. Pillai,32,India,61,61,178,154,India,RM,70,50,58,61,45,62,1,0
+14743,A. Swaminathan,28,India,61,61,173,143,India,CAM,60,50,61,65,30,39,1,0
+14750,A. Ginti,26,India,61,62,170,152,India,LB,82,44,52,61,56,51,1,0
 14757,L. Chevalier,18,LOSC Lille,61,83,188,172,France,GK,61,58,62,64,24,58,0.5,475
 14762,A. Mallamo,20,Castellammare di Stabia,61,71,175,154,Italy,CM,64,64,60,66,54,42,0.5,400
 14770,B. Yaméogo,26,Chindia Târgoviste,61,62,170,150,Burkina Faso,ST,77,61,51,62,21,63,1,300
@@ -13719,7 +13719,7 @@
 15509,T. Bourdal,21,Deportivo de La Coruña,61,72,183,172,Argentina,CB,66,33,44,37,62,63,1,400
 15532,M. Caseras,28,Club Plaza Colonia,61,61,168,139,Uruguay,CM,60,51,58,55,51,58,0.5,250
 15563,C. Makoun,20,Inter Miami,61,76,180,154,Venezuela,CB,46,42,53,50,63,66,1,525
-15565,E. Just,20,New Zealand,61,75,175,152,New Zealand,RM,70,53,53,69,27,45,0,0
+15565,E. Just,20,New Zealand,61,75,175,152,New Zealand,RM,70,53,53,69,27,45,1,0
 15572,P. Fuentes,24,Melgar FBC,61,66,178,170,Peru,CB,44,45,52,57,60,68,0.5,300
 15575,W. Tandazo,20,Melgar FBC,61,70,165,150,Peru,CDM,54,45,57,59,64,57,0.5,375
 15576,P. Labrin,20,Deportivo Binacional,61,70,170,152,Peru,CAM,69,55,56,65,55,64,0.5,375
@@ -13961,8 +13961,8 @@
 9096,O. Kakay B,22,Queens Park Rangers,60,68,180,159,Sierra Leone,RB,73,26,40,59,58,55,1,275
 9124,A. Wright,23,Bohemian FC,60,69,183,159,England,ST,74,60,50,57,26,61,0.6,325
 9130,C. Gondo,22,US Salernitana 1919,60,69,188,179,Ivory Coast,ST,59,62,41,57,21,63,0.8,325
-9163,C. Lewis,23,New Zealand,60,68,173,159,New Zealand,CAM,70,54,58,64,44,51,0,0
-9166,B. Makendzhiev,29,Bulgaria,60,60,183,168,Bulgaria,GK,61,54,60,58,45,69,0,0
+9163,C. Lewis,23,New Zealand,60,68,173,159,New Zealand,CAM,70,54,58,64,44,51,1,0
+9166,B. Makendzhiev,29,Bulgaria,60,60,183,168,Bulgaria,GK,61,54,60,58,45,69,1,0
 9193,V. Centurión,34,Sol de América,60,60,183,174,Paraguay,GK,60,61,60,61,23,59,0.5,90
 9199,F. Benko,21,LASK Linz,60,69,180,163,Croatia,CAM,63,53,57,63,44,57,2,325
 9243,C. Kirby,21,Harrogate Town,60,70,173,139,England,CM,71,50,59,62,57,67,1,325
@@ -13980,7 +13980,7 @@
 9637,J. Maddox,21,Vitória Guimarães,60,74,178,152,England,CAM,65,55,61,65,39,53,1,450
 9662,M. Kouhyar,20,Walsall,60,68,173,152,Afghanistan,RM,76,53,54,62,42,59,2,300
 9698,D. Pineda,25,Atlético de San Luis,60,65,178,170,Mexico,ST,55,64,43,58,28,57,3,275
-9759,U. Singh,22,India,60,67,180,165,India,RW,76,60,51,61,32,63,0,0
+9759,U. Singh,22,India,60,67,180,165,India,RW,76,60,51,61,32,63,1,0
 9831,R. Hale,20,St. Patrick's Athletic,60,73,175,154,Republic of Ireland,ST,73,59,54,60,26,62,0.5,400
 9846,C. O'Toole,22,Newcastle Jets,60,66,175,143,Australia,LWB,75,32,47,62,55,55,0.7,250
 9848,D. Kasumu,20,Milton Keynes Dons,60,73,180,154,Nigeria,CM,68,52,57,62,56,60,1,400
@@ -14108,7 +14108,7 @@
 12442,J. Marcinkowski,23,San Jose Earthquakes,60,70,185,183,United States,GK,64,60,66,63,23,56,0.85,275
 12482,E. Cantú,21,Monterrey,60,72,178,159,Mexico,RWB,68,43,59,64,61,59,4,375
 12485,K. Krolicki,23,Montreal Impact,60,66,178,154,Japan,CDM,65,35,58,66,57,62,1,275
-12512,A. de Jong,23,New Zealand,60,67,180,161,New Zealand,ST,64,57,55,59,27,62,0,0
+12512,A. de Jong,23,New Zealand,60,67,180,161,New Zealand,ST,64,57,55,59,27,62,1,0
 12548,A. Lewis,20,Amiens SC,60,77,175,139,England,LWB,65,36,57,60,57,58,0.75,425
 12559,I. Magnusson,22,Kalmar FF,60,71,178,150,Sweden,RM,85,49,52,62,51,63,0.75,350
 12572,I. Moreno,22,Mazatlán FC,60,70,168,134,Mexico,CAM,68,48,63,64,45,49,2,325
@@ -14171,7 +14171,7 @@
 13480,A. Tripaldelli,21,Cagliari,60,74,183,170,Italy,LB,55,33,46,61,60,55,3,425
 13482,Iván Martínez,18,CA Osasuna,60,81,180,154,Spain,GK,61,64,60,61,31,57,0.5,400
 13483,N. Balongo,21,Sint-Truidense VV,60,69,188,165,DR Congo,ST,81,59,46,63,23,52,2,325
-13484,A. Busti,19,Canada,60,77,183,165,Canada,GK,60,60,57,60,33,58,0,0
+13484,A. Busti,19,Canada,60,77,183,165,Canada,GK,60,60,57,60,33,58,1,0
 13497,M. Gneba,19,Amiens SC,60,73,175,159,France,ST,81,61,50,60,19,60,2,400
 13506,H. White,18,Tottenham Hotspur,60,80,178,154,England,LM,66,56,64,59,55,59,3,400
 13507,M. Fagan-Walcott,18,Tottenham Hotspur,60,83,185,176,England,CB,64,29,44,49,59,65,3,450
@@ -14260,8 +14260,8 @@
 14677,D. Tokpa,19,Amiens SC,60,68,180,163,France,ST,60,60,46,59,22,48,0.75,300
 14681,A. Ugur,19,Fortuna Sittard,60,73,183,150,Belgium,LM,70,49,59,66,53,51,1,375
 14691,J. Papeau,24,Amiens SC,60,67,178,176,France,CAM,76,52,58,67,37,56,1,300
-14728,A. Deshpande,39,India,60,60,180,168,India,CAM,52,59,61,65,36,48,0,0
-14738,B. Sidhu,32,India,60,60,170,150,India,CM,66,52,60,62,55,59,0,0
+14728,A. Deshpande,39,India,60,60,180,168,India,CAM,52,59,61,65,36,48,1,0
+14738,B. Sidhu,32,India,60,60,170,150,India,CM,66,52,60,62,55,59,1,0
 14780,N. Andermatt,24,SV Meppen,60,64,185,163,Switzerland,CAM,55,54,59,61,56,59,0.5,275
 14784,D. Hall,18,Feyenoord,60,79,180,157,Netherlands,RB,81,44,42,58,58,64,0.6,400
 14786,J. Tolkin,17,New York Red Bulls,60,75,170,134,United States,LWB,74,44,58,55,52,52,0.5,375
@@ -14546,7 +14546,7 @@
 10864,M. Samad,21,Olympique de Marseille,59,66,173,141,Cameroon,RW,70,57,53,63,29,41,5,220
 11052,D. Happe,21,Leyton Orient,59,72,196,187,England,CB,56,28,41,42,59,68,2,275
 11057,L. McCormick,21,Bristol Rovers,59,73,180,163,England,RM,75,50,56,64,47,63,1,350
-11102,L. Corbin-Ong,25,Canada,59,62,183,176,Canada,LB,76,25,43,56,53,73,0,0
+11102,L. Corbin-Ong,25,Canada,59,62,183,176,Canada,LB,76,25,43,56,53,73,1,0
 11114,E. Vertainen,21,HJK Helsinki,59,73,188,181,Finland,ST,76,57,52,59,35,66,0.5,350
 11143,T. Warschewski,20,SC Preußen Münster,59,65,188,172,Germany,ST,60,60,43,57,27,59,1,220
 11191,R. Bidounga,22,AS Nancy Lorraine,59,70,185,190,France,CB,58,29,35,39,59,67,0.9,240
@@ -14585,7 +14585,7 @@
 11991,O. Bailey,20,Birmingham City,59,73,178,165,England,CAM,72,55,53,63,23,51,2,350
 11998,A. Akinola,20,Toronto FC,59,73,178,181,United States,ST,85,55,47,62,20,67,1,350
 11999,J. Morton,21,Bristol City,59,71,185,161,England,CM,66,48,57,59,55,66,5,275
-12005,M. Bevan,22,New Zealand,59,65,183,170,New Zealand,ST,66,58,42,54,28,65,0,0
+12005,M. Bevan,22,New Zealand,59,65,183,170,New Zealand,ST,66,58,42,54,28,65,1,0
 12079,J. Oksanen,19,AFC Wimbledon,59,76,183,159,Finland,CM,64,54,59,57,54,55,0.7,325
 12132,J. Ogenia,21,Willem II,59,69,180,159,Curacao,RW,85,54,51,66,54,50,1,230
 12154,W. Ferry,20,Southampton,59,69,175,154,Republic of Ireland,CAM,72,51,56,64,31,45,6,250
@@ -14720,11 +14720,11 @@
 14690,B. Duncan,19,Derby County,59,79,175,152,England,ST,66,59,53,62,25,54,3,325
 14706,S. Matoug,19,Paris FC,59,73,178,159,France,CAM,61,52,57,61,42,48,0.9,325
 14707,F. Greilinger,19,TSV 1860 München,59,77,175,152,Germany,LM,74,47,52,65,26,48,0.5,325
-14732,T. Atwal,36,India,59,59,180,170,India,CB,46,45,55,42,58,67,0,0
-14739,R. Nadkarni,34,India,59,59,180,154,India,RM,64,56,59,62,25,62,0,0
-14742,A. Varkay,34,India,59,59,178,157,India,LB,72,30,49,57,54,71,0,0
-14746,V. Boral,30,India,59,59,183,170,India,GK,56,60,54,60,42,61,0,0
-14753,A. Khurana,27,India,59,61,185,179,India,CB,54,30,41,41,58,70,0,0
+14732,T. Atwal,36,India,59,59,180,170,India,CB,46,45,55,42,58,67,1,0
+14739,R. Nadkarni,34,India,59,59,180,154,India,RM,64,56,59,62,25,62,1,0
+14742,A. Varkay,34,India,59,59,178,157,India,LB,72,30,49,57,54,71,1,0
+14746,V. Boral,30,India,59,59,183,170,India,GK,56,60,54,60,42,61,1,0
+14753,A. Khurana,27,India,59,61,185,179,India,CB,54,30,41,41,58,70,1,0
 14765,G. Cîmpanu,19,FC Botosani,59,73,173,143,Romania,LM,78,54,48,62,35,61,1,325
 14888,F. Bilbija,20,FC Ingolstadt 04,59,74,188,172,Germany,CAM,60,49,55,64,27,47,1,350
 14926,D. Scislak,20,Górnik Zabrze,59,74,178,157,Poland,CAM,65,49,57,62,32,56,0.85,350
@@ -14823,7 +14823,7 @@
 16229,N. Hecker,28,SC Verl,59,59,183,165,Germany,RW,72,58,51,61,24,54,0.55,160
 16230,M. Haeder,31,SC Verl,59,59,175,165,Germany,ST,61,57,45,61,25,58,0.55,140
 16236,J. DeZart,22,Orlando City SC,59,71,185,194,Jamaica,CB,65,37,47,48,60,70,1,250
-16246,D. Naumov,22,Bulgaria,59,71,185,165,Bulgaria,GK,63,58,57,60,30,59,0,0
+16246,D. Naumov,22,Bulgaria,59,71,185,165,Bulgaria,GK,63,58,57,60,30,59,1,0
 16285,F. Cáseres,19,Vélez Sarsfield,59,73,178,146,Argentina,CM,72,38,61,64,54,54,2,325
 16321,L. Chalmers,20,Dundee United,59,69,175,154,Scotland,LM,73,55,52,59,20,50,1,250
 16327,Santiago Eneme,19,FC Nantes,59,73,183,143,Equatorial Guinea,CAM,64,50,54,66,36,50,2,325
@@ -14854,7 +14854,7 @@
 16588,F. Ellé Essouma,20,Paris FC,59,69,180,152,Cameroon,CM,66,46,59,61,53,55,1,250
 16591,S. Mohamed,20,Monterrey,59,72,178,150,Mexico,ST,57,58,53,62,38,57,4,300
 16592,D. Willms,21,FSV Zwickau,59,66,185,157,Germany,LM,86,49,53,60,40,60,0.5,220
-16594,I. Al Kaabi,27,,59,62,180,165,United Arab Emirates,GK,59,55,58,60,33,58,0,0
+16594,I. Al Kaabi,27,,59,62,180,165,United Arab Emirates,GK,59,55,58,60,33,58,1,0
 16604,J. Wieckhoff,19,FC St. Pauli,59,70,178,150,Germany,RB,71,34,50,59,55,53,1,240
 16606,D. Trivunic,18,Karlsruher SC,59,74,188,179,Serbia,CDM,62,45,54,56,55,59,0.55,300
 16614,J. Iskra,17,SPAL,59,78,183,165,Poland,RB,63,34,37,54,60,56,0.5,275
@@ -14915,7 +14915,7 @@
 6127,J. Wróbel,26,Stal Mielec,58,59,178,163,Poland,ST,69,56,52,59,54,54,0.95,150
 6846,J. Gemmer,24,AC Horsens,58,64,183,168,Denmark,CM,63,45,58,62,53,67,2,170
 6957,M. Diallo,25,Grenoble Foot 38,58,61,178,159,Senegal,ST,70,60,47,62,22,51,1,160
-7485,A. Singh,25,India,58,62,185,179,India,GK,56,53,54,60,43,63,0,0
+7485,A. Singh,25,India,58,62,185,179,India,GK,56,53,54,60,43,63,1,0
 7604,Dany Da Silva,23,FC Lausanne-Sport,58,66,188,172,Switzerland,GK,60,57,54,60,43,56,2,170
 7639,J. Muñoz,23,Deportes Iquique,58,63,178,154,Chile,LB,70,24,49,51,55,62,0.5,140
 7758,D. Grimshaw,21,Manchester City,58,70,185,170,England,GK,58,57,58,59,46,54,7,180
@@ -15075,7 +15075,7 @@
 13765,K. Cannavò,20,Empoli,58,75,180,154,Italy,ST,78,58,49,56,27,57,0.5,275
 13839,L. Scales,21,Shamrock Rovers,58,70,193,190,Republic of Ireland,CB,54,25,47,52,57,67,0.5,210
 13863,N. Okello,19,Toronto FC,58,74,193,170,Canada,CDM,73,42,52,56,51,67,0.65,250
-13868,H. Al Mansoury,24,,58,65,178,161,United Arab Emirates,GK,56,59,51,61,37,55,0,0
+13868,H. Al Mansoury,24,,58,65,178,161,United Arab Emirates,GK,56,59,51,61,37,55,1,0
 13924,Patrick,19,FC Midtjylland,58,75,185,179,Brazil,CB,69,37,42,47,55,65,2,250
 13955,J. Nelson,21,FC Dallas,58,67,178,161,United States,LB,58,27,47,53,55,55,0.9,180
 13970,K. Smith,28,Orlando City SC,58,58,180,179,United States,RB,62,26,43,56,56,62,1,110
@@ -15128,10 +15128,10 @@
 14676,J. Bumbu,21,Amiens SC,58,65,180,165,France,CB,59,47,58,62,58,57,0.85,180
 14680,L. Sopic,19,FC Emmen,58,72,193,176,Croatia,CB,63,29,43,47,57,66,0.65,250
 14709,J. Rudoni,19,AFC Wimbledon,58,72,185,170,England,CAM,67,52,54,60,53,57,0.85,275
-14731,T. Agarwal,34,India,58,58,173,150,India,LM,69,52,53,60,54,59,0,0
-14733,D. Sundaram,31,India,58,58,185,179,India,CB,60,48,43,41,56,69,0,0
-14740,P. Nagarajan,30,India,58,59,188,192,India,GK,59,61,51,56,50,57,0,0
-14747,G. Thakkar,23,,58,60,178,174,India,RM,85,55,46,60,23,61,0,0
+14731,T. Agarwal,34,India,58,58,173,150,India,LM,69,52,53,60,54,59,1,0
+14733,D. Sundaram,31,India,58,58,185,179,India,CB,60,48,43,41,56,69,1,0
+14740,P. Nagarajan,30,India,58,59,188,192,India,GK,59,61,51,56,50,57,1,0
+14747,G. Thakkar,23,,58,60,178,174,India,RM,85,55,46,60,23,61,1,0
 14766,J. Machado,38,AC Mineros de Guayana,58,58,185,185,Venezuela,CB,60,27,39,34,61,61,0.5,25
 14776,F. Honda,19,Sagan Tosu,58,72,170,141,Japan,LM,60,46,59,61,44,54,0.5,275
 14797,W. Taïbi,18,Angers SCO,58,76,183,154,France,CAM,56,48,62,64,41,38,1,250
@@ -15266,7 +15266,7 @@
 16863,J. Rezabala,20,Club Tijuana,58,70,168,148,Ecuador,CAM,65,52,55,63,39,42,3,230
 16872,R. Vita,19,ESTAC Troyes,58,74,170,146,France,LB,66,31,41,56,56,49,0.7,250
 16873,R. Ponti,22,AJ Auxerre,58,67,175,150,France,ST,68,59,49,61,30,50,1,200
-16886,F. Krastev,18,Bulgaria,58,75,173,139,Bulgaria,CAM,65,46,60,59,37,41,0,0
+16886,F. Krastev,18,Bulgaria,58,75,173,139,Bulgaria,CAM,65,46,60,59,37,41,1,0
 16900,D. Bangoura,18,Stade Brestois 29,58,69,175,143,Guinea,LW,80,47,46,66,16,31,1,200
 16926,A. Fouda,20,Stade Malherbe Caen,58,70,175,143,Cameroon,LB,64,32,50,53,55,50,0.95,210
 16931,J. Ngouabi,17,Stade Malherbe Caen,58,77,198,183,France,CB,59,27,41,38,56,69,0.5,230
@@ -15291,7 +15291,7 @@
 292,K. Stamatopoulos,40,AIK,57,57,188,176,Canada,GK,57,52,54,56,33,57,0.6,10
 2135,G. Cummins,32,Cork City,57,57,178,165,Republic of Ireland,ST,56,56,52,53,43,70,0.75,80
 2515,D. Webster B,30,Finn Harps,57,57,188,170,Republic of Ireland,CB,34,43,50,48,57,62,0.5,80
-3037,S. Paul,31,,57,57,185,172,India,GK,53,48,62,60,51,57,0,0
+3037,S. Paul,31,,57,57,185,172,India,GK,53,48,62,60,51,57,1,0
 3438,M. McGinley,30,Finn Harps,57,58,185,190,Republic of Ireland,GK,57,57,52,60,41,56,0.5,80
 3669,S. Walsh,25,Galway United,57,60,183,170,Republic of Ireland,LB,67,52,49,52,56,61,0.5,120
 3687,M. Mitrovic,25,SønderjyskE,57,62,183,190,Sweden,ST,54,52,43,61,31,70,3,90
@@ -15471,10 +15471,10 @@
 14655,D. Dugourd,23,Neuchâtel Xamax,57,64,193,190,Switzerland,ST,56,57,37,49,25,67,1,150
 14694,A. Casar,19,SCR Altach,57,71,190,190,Slovenia,CAM,61,45,56,60,49,66,1,220
 14695,E. Cuevas,23,Central Córdoba,57,64,178,154,Argentina,CAM,50,51,58,64,39,44,2,150
-14737,D. Raghavan,26,,57,60,185,176,India,ST,68,56,49,52,26,74,0,0
-14752,C. Palan,29,India,57,57,180,152,India,CM,68,47,57,55,59,68,0,0
-14754,O. Patla,27,India,57,58,168,152,India,RM,77,53,57,60,48,50,0,0
-14755,D. Singhal,35,India,57,57,178,157,India,RB,67,50,50,54,56,69,0,0
+14737,D. Raghavan,26,,57,60,185,176,India,ST,68,56,49,52,26,74,1,0
+14752,C. Palan,29,India,57,57,180,152,India,CM,68,47,57,55,59,68,1,0
+14754,O. Patla,27,India,57,58,168,152,India,RM,77,53,57,60,48,50,1,0
+14755,D. Singhal,35,India,57,57,178,157,India,RB,67,50,50,54,56,69,1,0
 14790,S. Mensah,20,SpVgg Unterhaching,57,69,178,163,Germany,LM,76,44,50,61,26,49,0.95,190
 14813,O. Villadsen,18,FC Nordsjælland,57,74,173,154,Denmark,RB,77,38,48,61,52,54,0.6,200
 14814,M. Nzita,19,Perugia,57,68,178,154,Belgium,LB,64,32,45,54,55,51,0.5,160
@@ -15699,7 +15699,7 @@
 13773,T. Buchanan,21,New England Revolution,56,70,183,152,Canada,ST,81,53,42,61,22,57,1,200
 13796,G. Dorsey,21,Toronto FC,56,65,183,161,United States,ST,72,49,50,59,43,57,1,140
 13802,F. Quinteros,21,Club Atlético Banfield,56,65,175,152,Argentina,LB,61,31,36,53,57,52,2,130
-13864,A. Al Hidhani,22,,56,64,173,148,United Arab Emirates,RB,73,33,45,55,51,55,0,0
+13864,A. Al Hidhani,22,,56,64,173,148,United Arab Emirates,RB,73,33,45,55,51,55,1,0
 13956,S. Junqua,23,Houston Dynamo,56,63,183,174,United States,LB,61,26,43,57,53,59,1,110
 13983,L. McNally,20,St. Patrick's Athletic,56,70,183,190,Republic of Ireland,CB,50,26,39,37,54,66,0.5,190
 13991,S. Watanabe,23,Nagoya Grampus,56,62,168,132,Japan,CAM,61,40,55,61,41,47,1,120
@@ -15730,7 +15730,7 @@
 14688,E. Carratala Jimenez,20,Viktoria Köln,56,69,175,157,Germany,RM,68,50,48,62,21,45,0.7,170
 14700,N. Smerdon,19,Exeter City,56,73,183,154,England,LB,68,31,47,53,50,51,1,180
 14708,N. Lang,18,TSV 1860 München,56,76,185,170,Germany,CB,67,22,34,43,56,60,0.5,170
-14741,A. Sanghu,20,,56,56,168,137,India,RM,79,42,50,59,29,49,0,0
+14741,A. Sanghu,20,,56,56,168,137,India,RM,79,42,50,59,29,49,1,0
 14829,A. Hasanally,18,Colchester United,56,74,165,132,England,CAM,83,50,49,60,34,39,0.95,190
 14835,J. Munsters,17,VVV-Venlo,56,69,188,161,Netherlands,CB,61,42,50,54,54,59,0.5,140
 14883,L. Ruggiero,18,Perugia,56,76,185,176,Italy,GK,56,59,54,55,23,58,0.5,160
@@ -15851,7 +15851,7 @@
 7525,M. Southam-Hales,24,Fleetwood Town,55,61,173,152,Wales,RB,67,43,51,54,53,49,1,100
 8107,N. Gartside,22,Derry City,55,65,183,152,Northern Ireland,GK,57,51,51,57,46,51,0.5,100
 8198,J. Thomson,23,Derry City,55,64,178,150,Scotland,CAM,59,48,55,55,43,56,0.55,120
-8372,J. Singh,26,India,55,56,170,159,India,ST,84,55,46,53,21,55,0,0
+8372,J. Singh,26,India,55,56,170,159,India,ST,84,55,46,53,21,55,1,0
 9083,L. Dunne,20,Colchester United,55,69,175,154,Republic of Ireland,LM,71,43,56,58,45,47,2,170
 9583,D. Araki,25,Júbilo Iwata,55,58,178,161,Japan,CM,76,50,49,56,53,75,1,100
 9591,Yu In Soo,25,Seongnam FC,55,58,178,157,Korea Republic,ST,70,59,53,63,45,61,0.8,90
@@ -15964,8 +15964,8 @@
 14618,G. Leibold,18,SV Wehen Wiesbaden,55,72,170,146,United States,LM,67,38,50,62,29,44,0.9,160
 14619,R. Campbell-Gordon,19,Port Vale,55,72,178,165,England,LB,81,30,40,52,48,64,1,160
 14693,C. Sabanci,20,MSV Duisburg,55,67,183,165,Germany,ST,66,57,32,55,22,39,0.5,140
-14745,M. Chada,27,,55,55,178,170,India,RM,67,52,47,61,32,57,0,0
-14748,E. Suresh,28,,55,55,175,161,India,RM,73,49,51,54,41,70,0,0
+14745,M. Chada,27,,55,55,178,170,India,RM,67,52,47,61,32,57,1,0
+14748,E. Suresh,28,,55,55,175,161,India,RM,73,49,51,54,41,70,1,0
 14787,J. Caicedo,17,Independiente Santa Fe,55,75,185,165,Colombia,CB,62,32,46,50,53,65,0.5,150
 14788,A. Porras,19,Independiente Santa Fe,55,69,183,168,Colombia,RB,67,29,40,51,53,64,0.5,160
 14854,D. Meddah,17,Le Havre AC,55,75,188,176,France,CAM,67,47,55,63,49,62,0.5,160
@@ -16130,7 +16130,7 @@
 14539,K. Ibrahim,20,1. FC Heidenheim 1846,54,68,188,190,Germany,GK,57,49,51,60,26,52,2,130
 14596,D. Preston,19,Grimsby Town,54,71,175,152,England,LB,68,28,38,55,51,51,0.8,140
 14664,T. Taylor,19,Grimsby Town,54,74,185,176,Wales,CDM,58,43,51,50,49,60,0.8,140
-14751,A. Grewal,26,,54,55,173,148,India,ST,75,49,43,57,26,47,0,0
+14751,A. Grewal,26,,54,55,173,148,India,ST,75,49,43,57,26,47,1,0
 14758,J. Odehnal,18,SCR Altach,54,70,188,176,Austria,GK,56,53,56,56,32,50,0.5,120
 14778,J. Neufville,20,Luton Town,54,70,183,163,England,ST,77,53,35,51,18,55,2,150
 14779,T. Tattermusch,19,SV Meppen,54,64,175,154,Germany,ST,64,56,44,60,23,45,0.5,110
@@ -16292,7 +16292,7 @@
 14633,R. Collins,18,AFC Wimbledon,53,72,193,179,England,CB,62,27,35,36,51,65,0.5,110
 14662,H. McEvoy,17,UCD AFC,53,72,180,172,Republic of Ireland,CB,57,38,42,48,51,55,0.5,110
 14663,L. Richards,18,Wolverhampton Wanderers,53,74,183,159,Republic of Ireland,CB,63,41,48,50,51,62,3,130
-14744,J. Mangat,26,,53,54,170,143,India,LM,68,41,45,58,22,41,0,0
+14744,J. Mangat,26,,53,54,170,143,India,LM,68,41,45,58,22,41,1,0
 14802,I. Mitran,18,Universitatea Craiova,53,68,178,163,Romania,CB,50,21,29,34,54,52,0.5,110
 14805,M. O'Malley,19,Scunthorpe United,53,69,170,152,Republic of Ireland,LB,62,25,35,44,52,54,1,120
 14841,C. Duke,19,Sporting Kansas City,53,70,168,130,United States,CAM,68,46,50,53,47,48,0.75,130
