@@ -155,7 +155,10 @@ Bei der dritten Zielgruppe, den Sportwissenschaftlern ist von genügend Vorwisse
 %In diesem Abschnitt geben sie einen kurzen Überblick über die Daten und verwendeten Visualisierungen. Dann benennen sie die Beiträge ihres Projekts. Diese Beiträge müssen sie in den hinteren Teilen des Berichts genauer ausführen und belegen.
 
 %\textbf{Sehr kurze Beschreibung der Daten, der Drei Techniken und Beiträge des Projekts(Mehrwert der Visualisierungstechniken)} 
+Wie bereits beschrieben sind Guides zu Videospielen bisher meist in Papierform veröffentlicht worden und sind wenig interaktiv. Da das Informationsbedürfnis von Spielern gerade in den letzten Jahren stark zugenommen hat, bietet sich der Einsatz von Visualisierungstechniken auf Basis von Daten, welche das Spiel selbst liefert an. So ist es möglich den gesteigerten Informationsbedarf zu decken ohne direkt Programmierkenntnisse beim Spieler vorauszusetzen. 
+Wie genau die Visualisierungen umgesetzt worden sind und welchen Mehrwert jede einzelne Technik bietet ist in Kapiteln 3 bis 5 beschrieben.
 
+\iffalse
 
 Bei den Daten handelt es sich um einen Datensatz des Fussball Videospiels Fifa 21 dieser enthält Daten zu über 16000 Fussballern. In diesen enthalten sind neben Variablen wie Name, Verein und Alter auch ein ungefähr nach der Qualität des Fussballers festgelegtes Rating sowie Bewertungen der fussballerischen Fähigkeiten (Schießen, Passen, Dribbling, Verteidigen, Geschwindigkeit, Physis, etc.)\\
 
@@ -169,7 +172,7 @@ Die dritte Visualisierungstechnik ist die Darstellung als Baumdiagramm. durch si
 
 
 Als dritte und letzte Technik habe ich die Baumdarstellung ausgewählt um sichtbar zu machen welche Fussballliga Europas im Durchschnitt die besten Spieler hat. Deswegen ist dies für X interessant.\\
-
+\fi
 \section{Daten}
 %Beschreiben Sie vorhandenen Daten. Gehen sie kritisch darauf ein, in wie weit sich die Daten für die Bearbeitung der Fragestellungen und dem Erreichen von Lösungen für die oben beschriebene Zielgruppen eignen. Haben sie die Daten sinnvoll mit weiteren Datenquellen ergänzt? Wenn ja, wie?
 
@@ -179,13 +182,8 @@ Grundsätzlich eignen sich die Daten gut um die gewünschten Fragestellungen bea
 
 \subsection{Technische Bereitstellung der Daten}
 %Wie sind die Daten zugänglich? Welche Formate werden genutzt. Gibt es Besonderheiten beim Lesen der Formate?
-Die Daten sind in einem privaten Github gehostet\footnote{\url{https://github.com/JohannesLange/Visualisierung_FIFA19/tree/master}}. Dort liegen die Daten der drei Visualisierungen jeweils als \textit{.csv} vor. Die verwendeten Variablen sowie die Anzahl an Fussballern wurden jeweils der Visualisierungstechnik entsprechend angepasst um den Datensatz so klein wie möglich zu halten.
-
-Auch die Daten der Visualisierung als Baumdiagramm liegen als \textit{.csv} vor und werden erst im Programm zu einer \textit{.json} encoded und dann wieder zu einem Baumdiagramm decoded. So liegen die Daten nicht starr als \textit{.json} vor und können innerhalb des Programms vorgefiltert werden. Da der Datensatz keine Daten bezüglich der Fussballligen, in denen die Vereine spielen, enthält, sind diese manuell eingefügt worden.
-
-
-
-
+Die Daten sind in einem öffentlichen Github Repository gehostet\footnote{\url{https://github.com/JohannesLange/Visualisierung_FIFA19/tree/master}}. Dort liegen die Daten der drei Visualisierungen jeweils als \textit{.csv} vor. Die verwendeten Variablen sowie die Anzahl an Fussballern wurden jeweils der Visualisierungstechnik entsprechend angepasst um den Datensatz so klein wie möglich zu halten und so die Geschwindigkeit der jeweiligen Anwendung zu optimieren.
+Auch die Daten der Visualisierung als Baumdiagramm liegen als \textit{.csv} vor. Sie werden erst im Programm zu einer \textit{.json} encoded und anschließend wieder zu einem Baumdiagramm decoded. So liegen die Daten nicht starr als \textit{.json} vor. Dies erlaubt das vorfiltern der Daten innerhalb des Programms. Da der Datensatz keine Daten bezüglich der Fussballligen, in denen die Vereine spielen, enthält, sind diese manuell eingefügt worden.
 
 
 \subsection{\label{Datenvorverarbeitung}Datenvorverarbeitung}
@@ -208,6 +206,10 @@ Für die Darstellung des Baumdiagramms wurde sich auf die vier größten europä
 Im Git Repository sind unter dem Ordner \textit{data} der ursprüngliche unveränderte Datensatz (\textit{fifa21\_male2.csv}) sowie die veränderten Datensätze (.....) zu finden.
 
 \section{Visualisierungen}
+Im folgenden Kapitel werden die drei Visualisierungen vorgestellt. Dabei wird sowohl auf die jeweiligen Einsatzmöglichkeiten der Techniken, als auch auf Anforderungen, die sich aus den Zielstellungen ergeben, eingegangen. Weiterhin werden im weiteren Verlauf die Visualisierungen vorgestellt und Interaktionsmöglichkeiten beschrieben.  
+
+\iffalse
+
 Der gegebene Datensatz wird auf drei verschiedene Arten visualisiert.
 Die erste Visualisierung ist ein Scatterplot. Mit diesem können zwei verschiedene Attribute des Datensatzes vom Nutzer freigewählt werden und die Spieler anhand dieser miteinander verglichen werden.\\
 Bei der zweiten Visualisierungsform handelt es sich um parallele Koordinaten, diese erlauben im Vergleich zum Scatterplot den Vergleich von mehr als zwei Attributen, sind aber vergleichsweise unübersichtlicher. Weiterhin müssen Nutzer deutlich bewanderter sein um sie interpretieren zu können, da Zusammenhänge nicht benachbarter Attribute kaum erkenntlich sind und vom Nutzer erwartet wird dieser nach Rechts und Links zu verschieben.\\
@@ -216,14 +218,31 @@ Die dritte Visualisierung ist ein explizites Baumdiagramm. Mit diesem kann die S
 
  Da der Datensatz sehr groß ist können die Spieler nach Verein und Nationalität noch zusätzlich gefiltert werden. Da es trotz dessen noch häufig Überschneidungen der Daten gibt, bspw. bei Alter und Overall der Spieler existiert eine Funktion, die anzeigt wie viele Spieler genau diese Werte aufweisen. Weiterhin sind die angezeigten Punkte teilweise durchsichtig. Dadurch können Überschneidungen der Punkte auch durch deren Opazität erkannt werden.
 
+\fi
+
 \subsection{Analyse der Anwendungsaufgaben}
 %Analysieren sie die konkreten Anwendungsaufgaben. Welche Visualisierungen helfen den Personen, die die Software verwenden, sinnvolle mentale Modelle aufzubauen. Sind diese mentalen Modelle für sie notwendig, um die Aufgaben lösen zu können?
+Die Visualisierungen sollen Nutzer dabei unterstützen neue Erkenntnisse aus Daten zu ziehen die ihnen ohne die Visualisierung, wenn überhaupt, nur als Liste vorliegen.
+Dabei bieten Scatterplot und Parallele Koordinaten die Möglichkeit größere Trends innerhalb der Daten zu erkennen: \textit{Wann erreichen Fussballer ihren Peak? Sind größere Fussballer besser, schneller, etc.?}
+Durch die eingebaute Funktion, dass ein Pfad eines Spielers beim hovern die Farbe ändert und die genauen Werte des Spielers angezeigt werden kann auch ein spezieller Spieler aus der gesamten Liste gefiltert werden. So kann untersucht werden ob dessen Eigenschaften von den generellen Trends abweicht. So kann beispielsweise mittels paralleler Koordinaten ein besonders ''guter'' Stürmer gefunden werden.
+Ähnliches bewirkt die Funktion der Farbänderung und Namensanzeige beim hovern über Punkten im Scatterplot.
+
+\textbf{Schreiben über Baumdiagramm}
 
 \textbf{Wie hilft Scatterplot/Parallele Koordinaten/Baumdiagramm die genannten Problemstellungen zu beantworten?}
 \subsection{Anforderungen an die Visualisierungen}
 %Leiten sie Anforderungen an das Design der Visualisierungen ab, die sich durch ihre Analyse des Zielproblems ergeben.
-\textbf{Wie muss die Visualisierung designed werden um das Zielproblem gut beantworten zu können?}
+%\textbf{Wie muss die Visualisierung designed werden um das Zielproblem gut beantworten zu können?}
+
+Beim Implementieren der Visualisierungen müssen aufgrund der Anforderungen der Ziele einige Anpassungen im Vergleich zu den Grundformen dieser Darstellung, welche in den Übungen erstellt worden sind, vorgenommen werden.
+Besonders die Größe des Datensatzes sorgt dafür, dass viele Trends innerhalb der Daten kaum visuell zu erkennen sind. Aus diesem Grund sind in allen drei Visualisierungsformen verschiedene Filterfunktionen implementiert worden. 
+So werden neben, den kompletten Datensatz übergreifenden Analysen, auch spezifische Untersuchungen an Hand Spieler einzelner Länder, Vereine und/oder Positionen möglich.
+Weiterhin ist wie bereits beschrieben in der Visualisierungsform der Parallelen Koordinaten eine Anzeige der genauen Werte eines Spielers, beim hovern über dessen Pfad, implementiert worden um überhaupt individuelle Spieler aus dem Datensatz erkennbar zu machen.
+Dies ist ebenfalls im Scatterplot implementiert worden.
+Das Baumdiagramm ist hingegen lediglich mit einem Filter ausgestattet um zu verhindern, dass der Nutzen der Visualisierungsform aufgrund von Unübersichtlichkeit, die bei breiten Baumdiagrammen schnell eintritt, abhanden kommt. 
 \subsection{Präsentation der Visualisierungen}
+
+Im folgenden Kapitel werden die drei bereits beschriebenen Visualisierungsformen vorgestellt und sie sowie ihre Interaktionsmöglichkeiten genauer beschrieben.
 %Präsentieren sie die visuelle Abbildungen und Kodierungen der Daten und Interaktionsmöglichkeiten. 
 %Sie müssen  begründen, warum und wiegut ihre Designentscheidungen die erstellten Anforderungen erfüllen. 
 %Weiterhin müssen sie begründen, warum die gewählte visuelle Kodierung der Daten für das zulösenden Problem passend ist. 
@@ -232,7 +251,7 @@ Die dritte Visualisierung ist ein explizites Baumdiagramm. Mit diesem kann die S
 
 %Die eben beschriebenen Präsentationen und Begründungen sollen für jede der drei folgenden Visualisierungen durchgeführt werden. 
 
-\textbf{Visualisierungstechniken vorstellen, Interaktivität zeigen, Designentscheidungen begründen(Erfüllen diese die Anforderungen?), Diskutieren wieso nicht andere Techniken verwendet wurden(Expressivität und Effektivität).}
+%\textbf{Visualisierungstechniken vorstellen, Interaktivität zeigen, Designentscheidungen begründen(Erfüllen diese die Anforderungen?), Diskutieren wieso nicht andere Techniken verwendet wurden(Expressivität und Effektivität).}
 \subsubsection{Visualisierung Eins}
 
 \begin{figure}[h]
