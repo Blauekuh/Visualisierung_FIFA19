@@ -316,7 +316,8 @@ parallelCoodinatesPlot w ar model =
             .parallelPoint { stroke: rgba(1, 0, 0,0.2);}
 		    .parallelPoint:hover {stroke: rgb(214, 118, 78); stroke-width: 2;} 
             .parallelPoint text { display: none; }
-            .parallelPoint:hover text { display: inline; stroke: rgb(0, 0, 0); stroke-width: 1; font-size: small;}  
+            .parallelPoint:hover text { display: inline; stroke: rgb(0, 0, 0); stroke-width: 1; font-size: small; font-family: sans-serif;}  
+            .parallelAxis text {stroke: rgb(0,0,0)}
             """ ]
         , g [ TypedSvg.Attributes.class [ "parallelAxis" ] ]
             [ g [ transform [ Translate (padding - 1) padding ] ] <|
@@ -364,7 +365,7 @@ parallelCoodinatesPlot w ar model =
                         in
                         g[class ["parallelPoint"]][
                         Path.element linePath
-                            [ stroke <| Paint <| Color.rgba 0 0 0 0.8
+                            [ stroke <| Paint <| Color.rgba 0 0 0 0.2
                             , strokeWidth <| Px 0.5
                             , fill PaintNone
                             --, text_ [ x 10, y -20, textAnchor AnchorMiddle ] [ TypedSvg.Core.text "Test" ]
