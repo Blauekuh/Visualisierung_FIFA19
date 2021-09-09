@@ -124,7 +124,9 @@ Ob Fragen von anderen Anforderungsgruppen, wie bspw. Sportwissenschaftlern beant
 
 Im folgenden werden die drei verwendeten Visualisierungstechniken kurz vorgstellt und erklärt.
 Bei der ersten Visualisierungstechnik handelt es sich um einen Scatterplot.\cite{noauthor_complete_nodate} Mit diesem lassen sich Zusammenhänge zwischen zwei verschiedenen, numerischen Attributen der Fussballer genauer untersuchen. So kann bspw. gezeigt werden ob sich das Alter von Fussballern auf deren Bewertung im Spiel auswirkt.\\
-Die zweite Visualisierungstechnik ist die der parallelen Koordinaten.\cite{few_multivariate_nodate} Diese eignet sich aufgrund ihrer Beschaffenheit dazu mehrdimensionale Daten auf übergreifende Trends zu untersuchen. Trotzdem können sie auch genutzt werden um spezifische Fussballer konkret zu untersuchen und deren Werte im Vergleich zu den übergreifenden Daten zu vergleichen. In diesem Fall ist sich für parallele Koordinaten mit vier verschiedenen Attributen entschieden worden. Dadurch können genügend Informationen angezeigt werden ohne eine gewisse Übersichtlichkeit zu verlieren. Diese Visualisierungsform kann besonders dazu genutzt werden mehrere Attribute eines Fussballers gleichzeitig zu untersuchen. Damit kann der Frage nach der Eignung eines Fussballers zum Einsatz auf einer spezischen Position nachgegangen werden.\\
+Die zweite Visualisierungstechnik ist die der parallelen Koordinaten.\cite{few_multivariate_nodate} Diese eignet sich aufgrund ihrer Beschaffenheit dazu mehrdimensionale Daten auf übergreifende Trends zu untersuchen. Trotzdem können sie auch genutzt werden um spezifische Fussballer konkret zu untersuchen und deren Werte im Vergleich zu den übergreifenden Daten zu betrachten. 
+Diese Darstellungsform ermöglicht den Vergleich vier verschiedener Attribute der Fussballer. Dabei ist allerdings zu beachten, dass Zusammenhänge innerhalb der Daten nur im Vergleich mit anderen Daten zu erkennen sind. Enthält der Datensatz bspw. nur einen Spieler zeigen die parallelen Koordinaten nur eine gerade Linie an. Weiterhin ist zu beachten, dass lediglich Zusammenhänge zwischen benachbarten Attributen zu erkennen sind. Dies kann bei ungeschulten Anwendern schnell zu Fehlinterpretationen führen.
+In diesem Fall ist sich für parallele Koordinaten mit vier verschiedenen Attributen entschieden worden. Dadurch können genügend Informationen angezeigt werden ohne eine gewisse Übersichtlichkeit zu verlieren. Diese Visualisierungsform kann besonders dazu genutzt werden mehrere Attribute eines Fussballers gleichzeitig zu untersuchen. Damit kann der Frage nach der Eignung eines Fussballers zum Einsatz auf einer spezifischen Position nachgegangen werden.\\
 Bei der dritten Visualisierungstechnik handelt es sich um die explizite Baumdarstellung. Durch sie kann ein Überblick über hierarchische Strukturen ermöglicht werden. In diesem Fall ist dies die Fussballliga als oberstes Element, darauf folgen die Vereine der Liga und zum Schluss die Fussballer der Vereine. Von den drei Techniken ist diese aufgrund ihrer Bekanntheit vermutlich am intuitivsten zu verstehen.
 
 
@@ -237,9 +239,9 @@ Insgesamt ist zu beachten, dass die Zielgruppen der Visualisierung mit Scatterpl
 %Leiten sie Anforderungen an das Design der Visualisierungen ab, die sich durch ihre Analyse des Zielproblems ergeben.
 %\textbf{Wie muss die Visualisierung designed werden um das Zielproblem gut beantworten zu können?}
 Da die Visualisierungen nicht zum Selbstzweck erstellt werden sondern spezifische Ziele adressieren sollen, müssen sie auch deren Anforderungen erfüllen. Deswegen beschreibt dieser Abschnitt Designentscheidungen der Visualisierungen, die sich aus Anforderungen der Zielprobleme ergeben.\\
-Da es sich bei den Zielgruppen nicht um Programmierer handelt ist eine Anforderung an alle Visualisierungen eine verständliche Darstellung. Dazu gehört die verständliche Beschriftung der Achsen sowie passende farbliche Kodierung einiger Elemente.\\
+Da es sich bei den Zielgruppen nicht um Programmierer handelt ist eine Anforderung an alle Visualisierungen eine verständliche Darstellung. Dazu gehört die verständliche Beschriftung der Achsen sowie passende farbliche Kodierung einiger Elemente. Ein weiterer Teil dieser Anforderung ist Übersichtlichkeit zu waren. Im Fall großer Datenmengen können Visualisierungen schnell unübersichtlich werden und so ihren Nutzen einbüßen. Aus diesem Grund sind in alle drei Visualisierungen verschiedene Filterfunktionen implementiert worden. Dies befriedigt eine weiteres Ziel: nur bestimmte Teilgruppen mit einander vergleichen zu können.\\
 Eine weitere Designentscheidung ergibt sich aus dem Ziel spezifische Fussballer untersuchen zu können. Aus diesem Grund ist sowohl im Scatterplot als auch bei den Parallelen Koordinaten eine \textit{on:hover} Funktion implementiert worden, die den gewählten Punkt oder Pfad hervorhebt und Name sowie Informationen zu dem jeweiligen Spieler anzeigt.
-Des Weiteren sind in alle drei Visualisierungen verschiedene Filterfunktionen implementiert worden. Diese Anforderung ergibt sich aus dem Ziel nur bestimmte Teilgruppen mit einander vergleichen zu können.
+Des Weiteren 
 Um den Nutzern einen Mehrwert gegenüber analogen Visualisierungen zu bieten und den Bedarf selbstgewählter Vergleiche von Daten zu decken, ist in die Visualisierung des Scatterplots und der Parallelen Koordinaten die Möglichkeit eingebaut worden die zu vergleichenden Attribute selbst zu wählen.
 
 
@@ -263,17 +265,24 @@ Im folgenden Kapitel werden die drei Visualisierungsformen vorgestellt. Weiterhi
 
 %\textbf{Visualisierungstechniken vorstellen, Interaktivität zeigen, Designentscheidungen begründen(Erfüllen diese die Anforderungen?), Diskutieren wieso nicht andere Techniken verwendet wurden(Expressivität und Effektivität).}
 \subsubsection{Visualisierung Eins}
-
-\begin{figure}[h]
+Bei der ersten Visualisierung handelt es sich um einen Scatterplot.
+Mit diesem können zwei Attribute der Fussballer mit einander verglichen werden. Welche diese sind kann vom Anwender per Knopfdruck festgelegt werden. Im Scatterplot wird jeder Spieler als ein Punkt dargestellt. Da im Datensatz viele diskrete Werte existieren und sich deswegen viele Werte überlagern, wurde die Opazität der einzelnen Punkte verringert. Dadurch ist es weiterhin möglich zu erkennen an welchen Stellen sich Daten fokussieren. Da die Opazität aber nicht unendlich verringert werden kann ist weiterhin eine Funktion eingebaut welche beim hovern über einen Spieler anzeigt wie viele andere Spieler von diesem überlagert werden.
+Die X und Y Achse sind immer mit dem aktuell ausgewählten Attribut beschriftet und skalieren bei Wechsel der Attribute automatisch mit.
+Abschließend sei zu erwähnen, dass eine Filterfunktion für Vereine und Nationalitäten der Spieler implementiert worden ist. Dadurch ist es den Anwendern möglich die Aufmerksamkeit auf spezifische Teilgruppen zu richten und mögliche lokale Trends in den Daten zu erkennen.
+\begin{figure}[h!]
 \centering
 \includegraphics[scale=0.4]{grafiken/Scatterplot1}
 \caption{Darstellung des Scatterplots\\ Quelle: eigene Darstellung}
+\label{SP}
 \end{figure}
 
 
 \subsubsection{Visualisierung Zwei}
+Bei der zweiten Visualisierung handelt es sich um die der Parallelen Koordinaten. 
+Wie bereits beschrieben ist diese Visualisierungsform dafür geeignet höherdimensionale Daten in einem zweidimensionalen Raum darzustellen. Zwar benötigt diese Darstelungsform mehr als einzelne Datensätze um interpretierbar zu sein, trotzdem muss ein einzelner Datensatz erkennbar bleiben. Aus diesem Grund sind zum einen Filterfunktionen für die Attribute: Verein, Nationalität und Position eingebaut worden, zum anderen ist eine \textit{on:hover} Funktionalität implementiert worden, die den Pfad des ausgewählten Fussballers einfärbt, verbreitert und dessen Namen und Werte oberhalb der Darstellung anzeigt.
+Da es für die Parallelen Koordinaten relevant ist ob Attribute benachbart sind oder nicht, ist genauso wie bei der Scatterplot Darstellung die Option implementiert worden die Werte der Achsen vom Nutzer selbst per Knopfdruck festlegen zu lassen.
 
-\begin{figure}[h]
+\begin{figure}[h!]
 \centering
 \includegraphics[scale=0.4]{grafiken/ParalleleKoordinaten1}
 \caption{Darstellung der Parallelen Koordinaten\\ Quelle: Eigene Darstellung}
@@ -285,6 +294,11 @@ Im folgenden Kapitel werden die drei Visualisierungsformen vorgestellt. Weiterhi
 
 
 \subsubsection{Visualisierung Drei}
+
+Bei der dritten Visualisierung handelt es sich um die explizite Baumdarstellung. Diese Darstellungsform ist besonders dazu geeignet Hierarchien zu visualisieren. 
+Die Hierarchie hat in diesem Fall drei Ebenen: Die Fussballliga, die Vereine und die Spieler.
+Die Visualisierung hätte um Länder und Kontinente erweitert werden können, dies hätte aber keinen erheblichen Mehrwert gegeben.
+Weiterhin sind explizite Bäume eine Visualisierungstechnik die schnell in die breite wachsen und unübersichtlich werden kann. Deswegen ist neben der Funktion einzelne Ligen auswählen zu können noch ein Positionsfilter für die Fussballer implementiert worden. So wird die Darstellung entweder aller Spieler einer Liga oder aller Spieler einer bestimmten Position aus einer Liga ermöglicht.
 \begin{figure}[h]
 \centering
 \includegraphics[scale=0.4]{grafiken/BaumDiagram1}
@@ -297,10 +311,20 @@ Im folgenden Kapitel werden die drei Visualisierungsformen vorgestellt. Weiterhi
 
 \textbf{Interaktionen in den Visualisierungen(möglicherweise Interaktion zwischen den Techniken), Warum genau diese Techniken, welche Zwecke erfüllen sie für die Anwender, Warum wurden andere nicht umgesetzt}
 
+Die Techniken erlauben die im vorherigen Kapitel beschriebenen Interaktionsmöglichkeit. Diese sind aber technisch von einander unabhängig. Es existieren also keine Interaktionen, die visualierungsübergreifend funktionieren. Da die Anwendungszwecke der Techniken sich allerdings stark von einander unterscheiden würde eine solche Interaktion vergleichsweise wenig Mehrwert bieten und die einzelnen Visualisierungen möglicherweise unverständlicher gestalten. 
+
 \section{Implementierung}
 %Beschreiben Sie die Implementierung ihrer Visualisierungsanwendung in Elm. Stellen die Gliederung ihres Quellcodes vor. Haben Sie verschiedene Elm-Module erstellt. Was war aufwändig umzusetzen, was ließ sich mit dem vorhanden Code aus den Übungen relativ einfach umsetzen? 
 
 %Wie sieht die Elm-Datenstruktur für das Model aus, in dem die verschiedenen Zustände der Interaktion gespeichert werden können.
+Die entwickelte Anwendung besteht aus drei verschiedenen Modulen, einem für jede Visualisierungstechnik. Dabei bauen alle drei Module auf den jeweiligen Übungen auf. Sie sind allerdings zum Teil stark erweitert und verändert worden.
+Besonders der Umstand, dass die Daten nicht direkt im Quellcode mit vorliegen sorgt dafür, dass die Vorlagen aus der Übung modifiziert werden müssen.
+Im Fall des Scatterplots enthält der \textit{Success} Zustand des Models einen Record mit den geladenen Daten sowie zusätzlichen, für die Interaktion der Visualisierung, relevanten Variablen. Weiterhin ist der \textit{Csv.Decoder} aus einer anderen Übungen verwendet und angepasst worden.
+Besonders wichtig für die Funktionalität der Interaktionen sind die verschiedenen Zustände von \textit{Msg}. Diese übergeben den vorherigen Zustand aller Attribute des bereits beschriebenen Records. Dabei wird lediglich der, der Funktion entsprechende Wert verändert. An der Darstellung des Scatterplots sind lediglich kleinere Veränderungen vorgenommen worden. Des Weiteren ist der Code um einige Ästhetische Funktionen sowie die Interaktionsmöglichkeiten erweitert worden.
+Die bereits im Fall des Scatterplots beschriebenen Anpassungen des Übungscodes treffen ebenso auf die Parallelen Koordinaten zu. Weitergehend sind diese um eine zusätzliche Filterfunktion erweitert worden. Außerdem ist das einfärben des Pfades, sowie die Anzeige des Spielernamens sowie seiner Werte implementiert worden.
+Der Code des Treediagramms ist im Vergleich zu dem der Übung am stärksten verändert worden. Da das Laden einer \textit{.json} dazu führt, dass die Darstellung in der ELM Anwendung nicht mehr verändert werden kann, ist sich dazu entschieden worden die Daten wie in den anderen beiden Visualisierungen als \textit{.csv} zu laden. Diese Daten können dann nach Bedarf gefiltert oder angepasst werden bevor sie vom \textit{json.encoder} encoded werden. Ist dies geschehen kann wieder auf die Vorleistung der Übung zurückgegriffen werden und die Daten können durch den \textit{TreeDecoder} decoded werden. Da in den ursprünglichen Daten keine Ligen vorliegen sind die verwendeten Ligen als Listen im ELM Code enthalten. Abschließend ist ein eigenes TreeLayout geschrieben worden, da bei Verwendung des vorgegebenen Treelayouts Informationen der Darstellung verloren gegangen wären.
+
+
 
 \textbf{Wie ist der Quellcode gegliedert, was lies sich aus den Übungen übernehmen, Wie sieht die Datenstruktur des Modells aus -> in dem verschiedene Zustände der Interaktion gespeichert wurden (Success record)}
 
