@@ -101,12 +101,21 @@ footnote
 %\textbf{Zielprobelm formulieren und daraus Fragestellung schreiben -> Wie können diese mittels Visualisierung beantwortet werden}
 
 
-Die Visualisierung von Daten nimmt mit Hinblick auf Big Data und damit immer unübersichtlicheren Datengrundlagen an Bedeutung zu. Um aus großen Mengen von Daten neue Informationen zu gewinnen reicht es nicht aus die Daten direkt zu analysieren. Durch die Anwendung der richtigen Visualisierungstechniken können neue Informationen gewonnen werden. In diesem Bericht geht es um die Visualisierung von Daten aus dem Computerspiel Fifa 21. Da sich diese Daten allerdings auf tatsächliche Fussballer beziehen besteht die Hoffnung mittels Visualisierung dieser Daten Rückschlüsse auf die Sportler selbst schließen zu können.
-So könnten Erkenntnisse aus den Daten deutlich wertvoller sein als zuerst vermutet.\\
-Der gegebene Datensatz ist äußerst umfangreich, zu über 16000 Sportlern sind jeweils 107 Variablen festgehalten. Diese reichen von \textit{Name} über \textit{Verein} bis hin zu \textit{Schusskraft} eines Spielers. Da nicht alle Eigenschaften eines Fussballers konkret festgehalten werden können, sind einige der Werte geschätzt. Da aus diesem Grund wie oben beschrieben nicht sicher auf die tatsächlichen Spieler zurückgeschlossen werden kann, bietet sich eine Analyse der Daten bezüglich der Nähe zur Realität an. Doch selbst wenn die Daten nicht zu neuen Erkenntnissen bezüglich der realen Sportler führen können sich für Spieler des Videospiels neue Erkenntnisse ergeben. 
+Die Visualisierung von Daten nimmt mit Hinblick auf Big Data und damit immer unübersichtlicheren Datengrundlagen an Bedeutung zu. Um aus großen Mengen von Daten neue Informationen zu gewinnen reicht es nicht aus die Daten direkt zu analysieren. Durch die Anwendung der richtigen Visualisierungstechniken können neue Informationen gewonnen werden.\\
+Besonders Fans von kompetetiven Videospielen versuchen oft jeden möglichen Vorteil zu nutzen um gewinnen zu können.
+Das Spiel FIFA 21, dessen Daten in dieser Arbeit visualsiert werden, bildet dabei keine Ausnahme.
+Früher wurden dazu häufig Guides verwendet in denen hunderte Seiten Tipps und Tricks abgedruckt worden sind. Diese Guides bieten jedoch keine Interaktion und sind oft aus der subjektiven Sicht eines Autors verfasst. 
+Moderne Visualisierungstechniken erlauben es jedoch deutlich mehr Informationen zu extrahieren und für die Spieler interaktiv nutzbar zu machen.
+Der gegebene Datensatz ist äußerst umfangreich, zu über 16000 Sportlern sind jeweils 107 Variablen festgehalten. Diese reichen von \textit{Name} über \textit{Verein} bis hin zu \textit{Schusskraft} eines Spielers.
+Zwar sind diese Daten dem Videospiel FIFA 21 entnommen, Daten wie Name, Alter, Verein oder ähnliche beruhen aber auf echten Daten der Spieler. Weiterhin versucht der Hersteller des Spiels auch die restlichen Daten so nah an der Realität zu verankern wie möglich.
+So besteht die Hoffnung mittels Visualisierungstechniken noch weitgreifendere Erkenntnisse aus dem gegebenen Datensatz ziehen zu können, als solche die Spielern des Spiels dienen.\\
+Spieler des Spiels möchten möglicherweise herausfinden, welcher Fussballer ihr Team verbessert aber wenig kostet also: \textit{Welche Spieler hat das höchste Overall bei geringstem Gehalt?}\\
+Eine Weitere Frage könnte sich beim Bau eines Teams bestehend aus Bundesliga Teams ergeben wenn noch ein Spieler einer bestimmten Position benötigt wird: \textit{Welche Linksverteidiger spielen in der Bundesliga?}\\
+Außerdem könnten sich Fragen nach den besten Spielern bezüglich individueller Kriterien ergeben: \textit{Welcher Stürmer ist schnell, Schussstark, kann gut dribbeln und ist groß?}\\
+Diese konkreten Fragen beziehen sich alle auf Fragen welche Anforderungen von Spielern des Spiels darstellen.\\
+Ob Fragen von anderen Anforderungsgruppen, wie bspw. Sportwissenschaftlern beantwortet werden können: \textit{Wann erreichen Fussballer ihren Peak? Sind größere Fussballer besser, schneller, etc.?} ist dabei nicht klar, da alle nicht erhobenen Daten von Mitarbeitern des Herstellers festgelegt worden sind und somit nicht genau den tatsächlichen Daten entsprechen können. Trotzdem lohnt es sich dies zu überprüfen und mit anderen wissenschaftlichen Arbeiten abzugleichen.
 
-Konkrete Fragen für Spieler des Spiels könnten dabei sein: \textit{Welche Spieler hat das höchste Overall bei geringstem Gehalt?} oder \textit{Welche Linksverteidiger spielen in der Bundesliga?}\\
-Weiterhin eignet sich gerade die Visualisierung mittels Scatterplot um Korrelation zwischen Daten zu untersuchen.
+\newpage
 
 
 \subsection{Anwendungshintergrund}
@@ -169,7 +178,7 @@ Als dritte und letzte Technik habe ich die Baumdarstellung ausgewählt um sichtb
 
 %\textbf{Beschreibung der gegebenen Daten, Sind sie zur Beantwortung der Fragestellungen geeignet? Welche zusätzlichen Daten wurden genutzt} 
 
-Grundsätzlich eignen sich die Daten gut um die gewünschten Fragestellungen beantworten zu können, jedoch enthält der Grunddatensatz einige Felder, die für die Visualisierung nicht nötig sind, deswegen wurde der Datensatz in der Vorvorarbeitung noch verkleinert (Siehe \ref{Datenvorverarbeitung}). Außerdem ist der Datensatz sehr groß, was gerade bei Scatterplot und parallelen Koordinaten zu Unübersichtlichkeit führen kann wenn der ganze Datensatz angezeigt wird, deswegen wurde sich bei diesen Visualisierungen dazu entschieden nach zusätzliche Filterfunktionalitäten einzubauen um dies so übersichtlicher zu gestalten. Da Datenwerte wie Größe, Alter und Rating der Spieler diskret sind, ist entschieden worden die Opazität der Punkte zu verringern, so ist zu erkennen an welchen Stellen sich mehrere Spieler überlagern. Da ab einer bestimmten Anzahl an Spielern die maximale Opazität erreicht ist und eine geringere Opazität pro Punkt einzelne Punkte fast unsichtbar machen würde, wird im Scatterplot beim hovern über einem Punkt angezeigt wie viele Spieler den gleichen Werte aufweisen.
+Grundsätzlich eignen sich die Daten gut um die gewünschten Fragestellungen beantworten zu können, jedoch enthält der Grunddatensatz einige Felder, die für die Visualisierung nicht nötig sind, deswegen wurde der Datensatz in der Vorvorarbeitung noch verkleinert (Siehe \ref{Datenvorverarbeitung}). Außerdem ist der Datensatz sehr groß, was gerade bei Scatterplot und parallelen Koordinaten zu Unübersichtlichkeit führen kann wenn der ganze Datensatz angezeigt wird, deswegen wurde sich bei diesen Visualisierungen dazu entschieden nach zusätzliche Filterfunktionalitäten einzubauen um dies so übersichtlicher zu gestalten. Da Datenwerte wie Größe, Alter und Rating der Spieler diskret sind, ist entschieden worden die Opazität der Punkte zu verringern, so ist zu erkennen an welchen Stellen sich mehrere Spieler überlagern. Da ab einer bestimmten Anzahl an Spielern die maximale Opazität erreicht ist und eine geringere Opazität pro Punkt einzelne Punkte fast unsichtbar machen würde, wird im Scatterplot beim hovern über einem Punkt angezeigt wie viele Spieler die genau gleichen  X und Y Werte aufweisen.
 
 \subsection{Technische Bereitstellung der Daten}
 %Wie sind die Daten zugänglich? Welche Formate werden genutzt. Gibt es Besonderheiten beim Lesen der Formate?
@@ -297,6 +306,97 @@ Die dritte Visualisierung ist ein explizites Baumdiagramm. Mit diesem kann die S
 \setcounter{page}{4}
 \section*{Anhang: Git-Historie}
 Das die Commits von zwei verschiedenen Accounts stammen ist zu entschuldigen. Die Anmeldung in der GIT GUI von Windows ist unabsichtlich mit einem anderen Account vorgenommen worden und erst später bemerkt worden.
+
+\begin{verbatim}
+* ba194f5 (HEAD -> master, origin/master) (Writing Chapter 2, 2021-09-09)
+* a32805e (Changes to html testsite, 2021-09-09)
+* fcfa8fa (Updates to Scatterplot, 2021-09-08)
+* 9f41152 (Added additional filterfunctionality to parallelCoordinates, 2021-09-08)
+* 130d43d (Updated Readme.md, 2021-09-08)
+* bcb2233 (changes to spData.csv reagrding encoding, 2021-09-08)
+* 14007ce (Added filter functionality to parallel Coordinates, 2021-09-08)
+* b373216 (deleted unused datasets, 2021-09-08)
+* 75f726f (started writing chapter preprocessing, 2021-09-08)
+* a2207bf (Renaming of elm files and Creation of elm files with smaller csv files, 2021-09-08)
+* a2e9801 (fixed error in index.html, 2021-09-08)
+* da0991c (Included new html file for parallel COordinates, 2021-09-08)
+* 9f20f40 (Updated RDataPreprocessing file, 2021-09-08)
+* c72d4a2 (Updated spData and spData2000 with value and wage, 2021-09-08)
+* e46740a (test changes in spData.csv, 2021-09-08)
+* 956bf26 (test update spDate, 2021-09-08)
+* 379c0de (updated spData again, 2021-09-08)
+* 477c43a (Updated spData.csv with wage and value data, 2021-09-08)
+* 3c200e1 (Updated Baumdata.csv with Premier League Data, 2021-09-07)
+* 3af31ee (Updated Baum csv data with serie a players, 2021-09-07)
+* 1e66fcd (Development of Filterfunction for Players Positions in Treediagram, 2021-09-07)
+* 1cfd18f (Updated Baumdata.csv, 2021-09-07)
+* f5adf5f (reworking of 1.1, 2021-09-07)
+* 1bd9293 (Creation of Tree.html, 2021-09-07)
+* b04c990 (Created index.html for github pages, 2021-09-07)
+* ebfba7f (Updated bibtex file, 2021-09-07)
+* c6240a4 (First try of preprocessing parallel coordinates data, 2021-09-06)
+* 43ba73b (Added highlighting and Player info on hover, 2021-09-06)
+* 447a93e (changed additional errors in baumData.csv reagrding laLiga players, 2021-09-06)
+* 30992b9 (fixed errors in LaLiga club names, 2021-09-06)
+* 3a8659a (Updated Baumdata.csv with laliga clubs, 2021-09-06)
+* 7a98e59 (Started writing preprocessing file in R, 2021-09-06)
+* d4b3df2 (Changed error in Baumdata regarding multiple club names, 2021-09-06)
+* c825fef (Created test csv Data for Baumdiagram, 2021-09-06)
+* 79150e1 (Implementation of Filter function in the Scatterplot as well as changes to the selections, 2021-09-06)
+* d3bc365 (-Created Fifa 21 Scatterplot Data, reduced to 2000 Players, 2021-09-05)
+* 605e204 (Added preliminary Scatterplot Data from Fifa 21, 2021-09-05)
+* cce366d (-Reorganization and inclusion of placeholder images, 2021-09-05)
+* a6328bf (Added full csv of fifa 21 data to gitignore, 2021-09-05)
+* abbce42 (started writing chapter 2.2, 2021-09-05)
+* 1bcf321 (-Reorganized git 2 deleting additional, unused files, 2021-09-05)
+* 0017063 (-Reorganized git, 2021-09-05)
+* e5ebc82 (Updated Readme.me, 2021-09-05)
+* 93b8a97 (-Started writing Chapter 2.1, 2021-09-05)
+* 4477dba (Started writing chapter 1.3, 2021-09-05)
+* 7be9390 (Started writing Chapter Zielgruppen, 2021-09-04)
+* 2386040 (Reduced size of csv for testing purposes, 2021-08-22)
+* 5d98177 (Added Nationality to CSV, 2021-08-22)
+* a395085 (Added smaller CSV tree file, 2021-08-15)
+* 4fa41ce (New Test CSV File for ElmTreeMap, 2021-08-15)
+* 5952879 (Added .json file and Excercise tree visualization code to start implementing tree visualization, 2021-08-14)
+* 1295900 (-Changed name of tex and pdf file and added new folder AbgabeOrdnerLatex, 2021-08-13)
+* 5c1747d (-Changed gitignore to new Latex files, 2021-08-13)
+* 9443014 (Kapitel 2 Daten Version 0.1, 2021-08-12)
+* f673cd6 (-Grundlagen des Projektberichts, 2021-08-12)
+* cd852b2 (TXT statt csv, 2021-08-12)
+* 9c07724 (-Added smaller CSV with 1000 lines, 2021-08-12)
+* a441b52 (-csv, 2021-08-12)
+* 2f7fbe0 (-csv, 2021-08-12)
+* 8ac06b8 (-minor fixes csv, 2021-08-12)
+* cc9cede (Prefiltering of Data, 2021-08-12)
+* eb68618 (Testing error with height, 2021-08-12)
+* 95935c0 (Testing Height in Metres instead of CM, 2021-08-12)
+* ef3a227 (Rounded Height, 2021-08-12)
+* cb4c956 (Reduced CSV file, 2021-08-12)
+* f0e6cae (Added Interactivity to parallel Coordinates, 2021-08-11)
+* 9ee66e1 (Added Parallele Koordinaten Grundfunktionalität, 2021-08-11)
+* eb4f173 (-Added Git Folder structure, 2021-08-11)
+* 7d09347 (Added changeablity to the data, 2021-08-10)
+* 07422d2 (Extended number of encodeable variables for the Scatterplot, 2021-08-06)
+* a6fd816 (-Added possibility to change variables, 2021-08-03)
+* f0f68ea (-Updated PointName -Started writing Paper, 2021-08-03)
+* adfd7a6 (-First working Scatterplot, 2021-08-03)
+* c4f4b5f (-Scatterplot first tries, 2021-08-03)
+* f9af25c (-Commiting new files, 2021-07-30)
+* 4618601 (Upload pdf, 2021-07-07)
+* d267f3d (-deleted Latex files, 2021-07-07)
+*   65fd4fd (Merge branch 'master' of https://github.com/Blauekuh/Visualisierung_FIFA19.git, 2021-07-07)
+|\
+| * 68629b2 (Update .gitignore, 2021-07-07)
+* | 7aaf7f3 (Latex File created, 2021-07-07)
+|/
+* be4234d (-Added gitignore, 2021-07-05)
+* 546ae0e (Upload CSV Dataset for Fifa 19, 2021-06-17)
+* c640421 (Commit of first test elm file, 2021-06-16)
+* fcdc3ad (origin/main, origin/Development) (Initial commit, 2021-06-16)
+\end{verbatim}
+
+
 
 \printbibliography
 
