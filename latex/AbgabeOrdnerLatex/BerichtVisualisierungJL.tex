@@ -82,7 +82,9 @@ footnote
 \section*{Abkürzungsverzeichnis}\label{AV}
 	\addcontentsline{toc}{section}{Abkürzungsverzeichnis}
 	\begin{acronym}
+	\acro{CB}[CB]{Centerback}
 	\acro{FUT}[FUT]{Fifa Ultimate Team}
+	\acro{RM}[RM]{rechtes Mittelfeld}
 	\end{acronym}
 \newpage
 % ----------------------------------------------------------------------------
@@ -319,10 +321,12 @@ Die Techniken erlauben die im vorherigen Kapitel beschriebenen Interaktionsmögl
 %Wie sieht die Elm-Datenstruktur für das Model aus, in dem die verschiedenen Zustände der Interaktion gespeichert werden können.
 Die entwickelte Anwendung besteht aus drei verschiedenen Modulen, einem für jede Visualisierungstechnik. Dabei bauen alle drei Module auf den jeweiligen Übungen auf. Sie sind allerdings zum Teil stark erweitert und verändert worden.
 Besonders der Umstand, dass die Daten nicht direkt im Quellcode mit vorliegen sorgt dafür, dass die Vorlagen aus der Übung modifiziert werden müssen.
-Im Fall des Scatterplots enthält der \textit{Success} Zustand des Models einen Record mit den geladenen Daten sowie zusätzlichen, für die Interaktion der Visualisierung, relevanten Variablen. Weiterhin ist der \textit{Csv.Decoder} aus einer anderen Übungen verwendet und angepasst worden.
-Besonders wichtig für die Funktionalität der Interaktionen sind die verschiedenen Zustände von \textit{Msg}. Diese übergeben den vorherigen Zustand aller Attribute des bereits beschriebenen Records. Dabei wird lediglich der, der Funktion entsprechende Wert verändert. An der Darstellung des Scatterplots sind lediglich kleinere Veränderungen vorgenommen worden. Des Weiteren ist der Code um einige Ästhetische Funktionen sowie die Interaktionsmöglichkeiten erweitert worden.
-Die bereits im Fall des Scatterplots beschriebenen Anpassungen des Übungscodes treffen ebenso auf die Parallelen Koordinaten zu. Weitergehend sind diese um eine zusätzliche Filterfunktion erweitert worden. Außerdem ist das einfärben des Pfades, sowie die Anzeige des Spielernamens sowie seiner Werte implementiert worden.
-Der Code des Treediagramms ist im Vergleich zu dem der Übung am stärksten verändert worden. Da das Laden einer \textit{.json} dazu führt, dass die Darstellung in der ELM Anwendung nicht mehr verändert werden kann, ist sich dazu entschieden worden die Daten wie in den anderen beiden Visualisierungen als \textit{.csv} zu laden. Diese Daten können dann nach Bedarf gefiltert oder angepasst werden bevor sie vom \textit{json.encoder} encoded werden. Ist dies geschehen kann wieder auf die Vorleistung der Übung zurückgegriffen werden und die Daten können durch den \textit{TreeDecoder} decoded werden. Da in den ursprünglichen Daten keine Ligen vorliegen sind die verwendeten Ligen als Listen im ELM Code enthalten. Abschließend ist ein eigenes TreeLayout geschrieben worden, da bei Verwendung des vorgegebenen Treelayouts Informationen der Darstellung verloren gegangen wären.
+Im Fall des Scatterplots hat das Model 3 Zustände: \textit{Failure}, \textit{Loading} und \textit{Success}. Der \textit{Success} Zustand des Models enthält dabei einen Record mit den geladenen Daten sowie zusätzlichen, für die Interaktion der Visualisierung, relevanten Variablen. Dieser grundlegende Aufbau sowie ein \textit{Csv.Decoder} sind dabei aus einer anderen Übungen verwendet und angepasst worden.
+Besonders wichtig für die Funktionalität der Interaktionen sind die verschiedenen Zustände von \textit{Msg}. Diese übergeben den vorherigen Zustand aller Attribute des bereits beschriebenen Records. Dabei wird lediglich der, der Funktion entsprechende Wert verändert. An der Darstellung des Scatterplots sind lediglich kleinere Veränderungen vorgenommen worden. Des Weiteren ist der Code um einige Ästhetische Funktionen sowie die Interaktionsmöglichkeiten erweitert worden.\\
+
+Die bereits im Fall des Scatterplots beschriebenen Anpassungen des Übungscodes treffen ebenso auf die Parallelen Koordinaten zu. Weitergehend sind diese um eine zusätzliche Filterfunktion erweitert worden. Außerdem ist das einfärben des Pfades, sowie die Anzeige des Spielernamens sowie seiner Werte implementiert worden.\\
+
+Der Code des Treediagramms ist im Vergleich zu dem der Übung am stärksten verändert worden. Da das Laden einer \textit{.json} dazu führt, dass die Darstellung in der ELM Anwendung nicht mehr verändert werden kann, ist sich dazu entschieden worden die Daten wie in den anderen beiden Visualisierungen als \textit{.csv} zu laden. Diese Daten können dann nach Bedarf gefiltert oder angepasst werden bevor sie vom \textit{json.encoder} encoded werden. Ist dies geschehen kann wieder auf die Vorleistung der Übung zurückgegriffen werden und die Daten können durch den \textit{TreeDecoder} decoded werden. Da in den ursprünglichen Daten keine Fussballligen vorliegen sind die verwendeten Ligen als Listen im ELM Code enthalten. Abschließend ist ein eigenes TreeLayout geschrieben worden, da bei Verwendung des vorgegebenen Treelayouts Informationen der Darstellung verloren gegangen wären.
 
 
 
@@ -331,15 +335,51 @@ Der Code des Treediagramms ist im Vergleich zu dem der Übung am stärksten ver�
 \section{Anwendungsfälle}
 %Präsentieren sie für jede der drei Visualisierungen einen sinnvollen Anwendungsfall in dem ein bestimmter Fakt, ein Muster oder die Abwesenheit eines Musters visuell festgestellt wird. Begründen sie warum dieser Anwendungsfall wichtig für die Zielgruppe der Anwenderinnen ist. Diskutieren sie weiterhin, ob die oben beschriebene Information auch mit anderen Visualisierungstechniken hätte gefunden werden können. Falls dies möglich wäre, vergleichen sie die den Aufwand und die Schwierigkeiten ihres Ansatzes und der Alternativen. 
 
+Im nachfolgenden Kapitel werden zu jeder der drei Visualisierungen ein konkreter Anwendungsfall vorgestellt. Zusätzlich werden Vor- und Nachteile der jeweiligen Visualisierungstechnik diskutiert.
+
 \textbf{Spezifischen Anwendungsfall für Nutzergruppen vorstellen, der an Hand der Visualisierungstechniken visuell erkennbar ist, wäre dies auch mit anderen Techniken möglich gewesen? Aufwand mit anderen Techniken vergleichen}
+
+
 \subsection{Anwendung Visualisierung Eins}
-
-
+Mit der Visualisierung des Scatterplots werden in Abbildung \ref{SP5} die Attribute \textit{Overall}\footnote{Bewertung eines Fussballers auf einer Skala von 1 bis 99} und \textit{Wage} mit einander verglichen.
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.5]{grafiken/Scatterplot5}
+\caption{Darstellung des Scatterplot und dessen \textit{on:hover} Funktionalität\\ Quelle: eigene Darstellung}
+\label{SP5}
+\end{figure}
+Beispielhaft soll der Nutzen dieser Visualisierung anhand eines Spielers des Karrieremodus von FIFA 21 dargestellt werden.
+Dieser Nutzer möchte für sein Team im Karrieremodus einen neuen Spieler finden. Dieser soll ein höchstmögliches Potential haben. Trotzdem soll das Gehalt des Fussballers bezahlbar sein. Weiterhin soll der Spieler Franzose sein. Aus diesem Grund vergleicht der Nutzer die Attribute \textit{Potential} und \textit{Wage} mit dem zusätzlichen Nationalitätenfilter \textit{France}. Dabei ist zu erkennen, dass mit steigendem Rating ab einem bestimmten Punkt das Gehalt exponential ansteigt. Ein Spieler, der zwar bereits ein sehr hohes Gehalt aufweist, für sein \textit{Potential} von 95 aber trotzdem vergleichsweise günstig ist, ist Kylian Mbappé. Dieser Spieler ist ein Ausreißer aus dem generellen Trend der exponentiell steigenden \textit{Wages} im Vergleich zum \textit{Potential}.
 
 \subsection{Anwendung Visualisierung Zwei}
+In der Visualisierung der Parallelen Koordinaten werden in Abbildungen \ref{PK5} und \ref{PK51} die Attribute \textit{Defending, Physical, Pace} und \textit{Passing} mit einander verglichen.
 
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.6]{grafiken/ParalleleKoordinaten5}
+\caption{Darstellung der Parallelen Koordinaten inklusive \textit{on:hover} Funktionalität\\ Quelle: eigene Darstellung}
+\label{PK5}
+\end{figure}
 
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.6]{grafiken/ParalleleKoordinaten51}
+\caption{Darstellung der Parallelen Koordinaten inklusive \textit{on:hover} Funktionalität\\ Quelle: eigene Darstellung}
+\label{PK51}
+\end{figure}
+
+Beispielhaft soll der Nutzen dieser Visualisierung anhand der Anforderungen eines Spielers des FUT Modus von FIFA 21 dargestellt werden.
+Dieser Anwender möchte sein Ultimate Team um einen Innenverteidiger (\textit{Centerback: CB}) erweitern. Neben den für einen Innenverteidiger typischerweise wichtigen Attribute interessiert diesen Spieler auch die Passgenauigkeit des Innenverteidigers. Deswegen wählt er für den Vergleich die Attribute \textit{Defending, Physical, Pace} und \textit{Passing} aus. Generell ist bei Innenverteidigern in dieser Darstellung zu erkennen, dass die Passgenauigkeit im Vergleich zur Geschwindigkeit eher abfallend ist. Wird Abbildung \ref{PK51} betrachtet in der Passen um zwei Positionen in der Darstellung nach Links verschoben worden ist, ist  zu sehen, dass David Alaba entgegen des Trends - Passen ist im Vergleich zu Verteidigen und Physis eher geringer - einen höheren Passwert aufweist. Da die anderen Werte im Vergleich zu anderen Innenverteidigern trotzdessen hoch liegt bietet sich die Auswahl dieses Innenverteidigers für den Beispielnutzer an.
 \subsection{Anwendung Visualisierung Drei}
+In der Visualisierung der Baumdarstellung wird die Hierarchie von Bundesligavereinen inklusive Spielern der Position rechtes Mittelfeld (RM) gezeigt.
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.6]{grafiken/Baumdiagramm5}
+\caption{Darstellung des Baumdiagramms\\ Quelle: eigene Darstellung}
+\label{BD5}
+\end{figure}
+
+
 
 \section{Verwandte Arbeiten}
 %Führen sie eine kurze Literatursuche in der wissenschaftlichen Literatur zu Informationsvisualisierung und Visual Analytics nach ähnlichen Anwendungen durch. Diskutieren sie mindestens zwei Artikel. Stellen sie Gemeinsamkeiten und Unterschiede dar.
