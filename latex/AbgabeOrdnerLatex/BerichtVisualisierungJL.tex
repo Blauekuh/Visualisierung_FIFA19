@@ -164,7 +164,7 @@ Wie genau die Visualisierungen umgesetzt worden sind und welchen Mehrwert jede e
 
 \iffalse
 
-Bei den Daten handelt es sich um einen Datensatz des Fussball Videospiels Fifa 21 dieser enthält Daten zu über 16000 Fussballern. In diesen enthalten sind neben Variablen wie Name, Verein und Alter auch ein ungefähr nach der Qualität des Fussballers festgelegtes Rating sowie Bewertungen der fussballerischen Fähigkeiten (Schießen, Passen, Dribbling, Verteidigen, Geschwindigkeit, Physis, etc.)\\
+
 
 Die erste verwendete Visualisierungstechnik ist der Scatterplot, dieser ist gut dazu geeignet zwei Variablen der Fussballer zu vergleichen. Bspw. könnte untersucht werden ob ein Fussballer entsprechend seines Könnens (Rating) verdient (Wage). Für Spieler des Karrieremodus können gerade solche Informationen relevant sein, da so Spieler gefunden werden können, die besser spielen als ihr Gehalt es vermuten lassen würde oder solche die zu teuer für ihr können sind.\\
 
@@ -181,8 +181,8 @@ Als dritte und letzte Technik habe ich die Baumdarstellung ausgewählt um sichtb
 %Beschreiben Sie vorhandenen Daten. Gehen sie kritisch darauf ein, in wie weit sich die Daten für die Bearbeitung der Fragestellungen und dem Erreichen von Lösungen für die oben beschriebene Zielgruppen eignen. Haben sie die Daten sinnvoll mit weiteren Datenquellen ergänzt? Wenn ja, wie?
 
 %\textbf{Beschreibung der gegebenen Daten, Sind sie zur Beantwortung der Fragestellungen geeignet? Welche zusätzlichen Daten wurden genutzt} 
-
-Grundsätzlich eignen sich die Daten gut um die gewünschten Fragestellungen beantworten zu können, jedoch enthält der Grunddatensatz einige Felder, die für die Visualisierung nicht nötig sind, deswegen wurde der Datensatz in der Vorvorarbeitung noch verkleinert (Siehe \ref{Datenvorverarbeitung}). Außerdem ist der Datensatz sehr groß, was gerade bei Scatterplot und parallelen Koordinaten zu Unübersichtlichkeit führen kann wenn der ganze Datensatz angezeigt wird, deswegen wurde sich bei diesen Visualisierungen dazu entschieden nach zusätzliche Filterfunktionalitäten einzubauen um dies so übersichtlicher zu gestalten. Da Datenwerte wie Größe, Alter und Rating der Spieler diskret sind, ist entschieden worden die Opazität der Punkte zu verringern, so ist zu erkennen an welchen Stellen sich mehrere Spieler überlagern. Da ab einer bestimmten Anzahl an Spielern die maximale Opazität erreicht ist und eine geringere Opazität pro Punkt einzelne Punkte fast unsichtbar machen würde, wird im Scatterplot beim hovern über einem Punkt angezeigt wie viele Spieler die genau gleichen  X und Y Werte aufweisen.
+Bei den Daten handelt es sich um einen Datensatz des Fussball Videospiels Fifa 21\footnote{\url{https://www.kaggle.com/ekrembayar/fifa-21-complete-player-dataset} besucht am 10.09.2021}. Dieser ist der Website Kaggle entnommen. Dieser enthält Daten zu über 16000 Fussballern des Videospiels FIFA 21. In diesen enthalten sind neben Variablen wie Name, Verein und Alter auch ein ungefähr nach der Qualität des Fussballers festgelegte Bewertung sowie spezifischere Informationen zu den fussballerischen Fähigkeiten (Schießen, Passen, Dribbling, Verteidigen, Geschwindigkeit, Physis, etc.) der Spieler.\\
+Grundsätzlich eignen sich die Daten gut um die genannten Fragestellungen beantworten zu können. Allerdings enthält der Grunddatensatz einige Felder, die für die Visualisierung nicht nötig sind, aus diesem Grund ist der Datensatz in der Vorvorarbeitung verkleinert worden (Siehe \ref{Datenvorverarbeitung}). Weiterhin ist der Datensatz nicht nur im Sinne der Attribute pro Fussballer sehr groß, sondern auch bezüglich der Anzahl an Fussbalern. Das führt bei allen verwendeten Visualisierungen dazu, dass Unübersichtlich werden. Um dies zu verhindern ist entschieden worden zusätzliche Filterfunktionalitäten einzubauen. %Da Datenwerte wie Größe, Alter und Rating der Spieler diskret sind, ist entschieden worden die Opazität der Punkte zu verringern, so ist zu erkennen an welchen Stellen sich mehrere Spieler überlagern. Da ab einer bestimmten Anzahl an Spielern die maximale Opazität erreicht ist und eine geringere Opazität pro Punkt einzelne Punkte fast unsichtbar machen würde, wird im Scatterplot beim hovern über einem Punkt angezeigt wie viele Spieler die genau gleichen  X und Y Werte aufweisen.
 
 \subsection{Technische Bereitstellung der Daten}
 %Wie sind die Daten zugänglich? Welche Formate werden genutzt. Gibt es Besonderheiten beim Lesen der Formate?
@@ -193,24 +193,20 @@ Auch die Daten der Visualisierung als Baumdiagramm liegen als \textit{.csv} vor.
 \subsection{\label{Datenvorverarbeitung}Datenvorverarbeitung}
 %Welche Datenvorverarbeitungsschritte sind notwendig? Beschreiben Sie die einzelnen Schritte und begründen sie sie, z.B. warum werden manche Daten weggelassen, über welche Mengen werden Durchschnitte berechnet, warum sind die so berechneten Werte aussagekräftiger als andere Werte. 
 
-Der Datensatz besteht aus Daten von ca. 17000 einzelnen Fussballern, jeder dieser hat 107 einzelne Variablen. Da diese nicht alle relevant für die Visualisierungen sind und ein kleinerer Datensatz die Visualisierung beschleunigt, sind nur die relevanten Variablen ausgewählt worden. Weiterhin unterscheiden sich die Variablen auch zwischen den verschiedenen Visualisierungstechniken. Aus diesem Grund existieren verschieden gefilterte Datensätze für jede Visualisierung.
+Der Datensatz besteht aus Daten von über 16000 einzelnen Fussballern. Jeder dieser hat 107 einzelne Variablen. Da diese nicht alle relevant für die Visualisierungen sind und ein kleinerer Datensatz die Visualisierung beschleunigt, sind nur die relevanten Variablen ausgewählt worden. Da sich die relevanten Variablen auch zwischen den verschiedenen Visualisierungstechniken unterscheiden, sind für jede Anwendung unterschiedliche Datensätze vorverarbeitet und gefiltert worden.
 
-Die Vorverarbeitung der Daten ist in \textit{R} durchgeführt worden. Das genutzte Skript (\textit{RDataPreprocessing.r}) liegt im Github vor.
-Im ersten Schritt des preprocessings sind \textit{NA} Werte aus dem Datensatz entfernt worden.
-Außerdem ist der Wert \textit{Height} von Fuß und Inch in Zentimeter umgewandelt worden um so eine Schreibweise ohne nicht-numerische Zeichen zu erhalten (Bsp.: \textit{6''2} wird zu \textit{188}). Weiterhin ist beim Wert \textit{Weight} die Beschriftung \textit{lbs} entfernt worden um den Wert so als \textit{Integer} für den csv-Decoder von elm erkennbar zu machen.
+Die Vorverarbeitung der Daten ist in \textit{R} durchgeführt worden. Das verwendete Skript (\textit{RDataPreprocessing.r}) liegt im Github vor.
+Im ersten Schritt der Vorverarbeitung sind \textit{NA} Werte aus dem Datensatz entfernt worden.
+Außerdem ist der Wert \textit{Height} von Fuß und Inch in Zentimeter umgewandelt worden um so eine Schreibweise ohne nicht-numerische Zeichen zu erhalten (Bsp.: \textit{6''2} wird zu \textit{188}). Weiterhin ist beim Wert \textit{Weight} die Beschriftung \textit{lbs} entfernt worden um den Wert so als numerischen Wert für den csv-Decoder von elm erkennbar zu machen.
 Gleiches ist für die Werte \textit{Wage} und \textit{Value} getan worden. Bei diesen Werten ist die Umwandlung allerdings komplexer, da die Zahlen mit \textit{M} für Millionen und \textit{K} für Tausend abgekürzt sind.
-Diese Werte sind in Tausend im finalen Datensatz enthalten. Werte mit \textit{M} sind also mit 1000 multipliziert worden, Werte mit \textit{K} sind entsprechend unverändert geblieben und Werte ohne Buchstaben sind durch 1000 geteilt worden (Bsp.: \textit{1.1M} ist zu \textit{1100} geworden, \textit{90K} zu \textit{90} und \textit{900} zu \textit{0.9}).
-Nach dem anpassen dieser Werte können die für \textit{Scatterplot} und \textit{Parallele Koordinaten} relevanten Werte in einem neuen \textit{Data.frame} gespeichert und als \textit{.csv} wieder exportiert werden.  
+Diese Werte sind ''in Tausend'' im finalen Datensatz enthalten. Werte die im Datensatz mit einem \textit{M} versehen sind, werden mit 1000 multipliziert, Werte mit \textit{K} sind entsprechend unverändert geblieben und Werte ohne Buchstaben sind durch 1000 geteilt worden (Bsp.: \textit{1.1M} ist zu \textit{1100} geworden, \textit{90K} zu \textit{90} und \textit{900} zu \textit{0.9}).
+Sind diese Werte angepasst, können die für Scatterplot und Parallele Koordinaten relevanten Werte in jeweils neuen \textit{Data.frames} gespeichert und als \textit{.csv} wieder exportiert werden.\\
+Für die Darstellung des Baumdiagramms ist sich auf die vier größten europäischen Fussballligen (Premier League, Bundesliga, La Liga und Serie A) konzentriert worden. Da im Datensatz keine Informationen zur Liga vorliegen sind die relevanten Spieler über eine manuell erstellte Liste der Vereine dieser Ligen gefiltert worden.Aus diesem Grund enthält der Datensatz dieser Visualisierungstechnik nur Daten von Spielern, deren Verein Teil einer dieser vier Ligen ist.
 
-
-Der vorhandene Datensatz ist aus zwei verschiedenen Gründen gekürzt worden, zum einen ist die Darstellung durch die Größe des Datensatzes erheblich verlangsamt worden und zum anderen enthält der Datensatz Fussballer für die nicht alle Werte enthalten sind.
-
-Für die Darstellung des Baumdiagramms wurde sich auf die vier größten europäischen Fussballligen (Premier League, Bundesliga, La Liga und Serie A) konzentriert. Deswegen enthält der Datensatz für diese Visualisierungstechnik nur Daten von Spielern, deren Team Teil einer dieser Ligen ist.
-
-Im Git Repository sind unter dem Ordner \textit{data} der ursprüngliche unveränderte Datensatz (\textit{fifa21\_male2.csv}) sowie die veränderten Datensätze (.....) zu finden.
+Im Git Repository sind unter dem Ordner \textit{data} der ursprüngliche, unveränderte Datensatz (\textit{fifa21\_male2.csv}) sowie die vorverarbeiteten Datensätze (Scatterplot: spData.csv, Parallele Koordinaten: pkData.csv, Baumdiagramm: baumData.csv) zu finden.
 
 \section{Visualisierungen}
-Im folgenden Kapitel werden die drei Visualisierungen vorgestellt. Dabei wird sowohl auf die jeweiligen Einsatzmöglichkeiten der Techniken, als auch auf Anforderungen, die sich aus den Zielstellungen ergeben, eingegangen. Weiterhin werden im weiteren Verlauf die Visualisierungen vorgestellt und Interaktionsmöglichkeiten beschrieben.  
+Im folgenden Kapitel werden die drei Visualisierungen vorgestellt. Dabei wird sowohl auf die jeweiligen Einsatzmöglichkeiten der Techniken, als auch auf Anforderungen, die sich aus den Bedürnissen der Zielgruppen ergeben, eingegangen. Weiterhin werden im weiteren Verlauf die Visualisierungen vorgestellt und Interaktionsmöglichkeiten beschrieben.  
 
 \iffalse
 
@@ -226,34 +222,26 @@ Die dritte Visualisierung ist ein explizites Baumdiagramm. Mit diesem kann die S
 
 \subsection{Analyse der Anwendungsaufgaben}
 %Analysieren sie die konkreten Anwendungsaufgaben. Welche Visualisierungen helfen den Personen, die die Software verwenden, sinnvolle mentale Modelle aufzubauen. Sind diese mentalen Modelle für sie notwendig, um die Aufgaben lösen zu können?
-Die Visualisierungen sollen Nutzer dabei unterstützen neue Erkenntnisse aus Daten zu ziehen die ihnen ohne die Visualisierung, wenn überhaupt, nur als Liste vorliegen.
-Dabei bieten Scatterplot und Parallele Koordinaten die Möglichkeit größere Trends innerhalb der Daten zu erkennen: \textit{Wann erreichen Fussballer ihren Peak? Sind größere Fussballer besser, schneller, etc.?}
-Durch die eingebaute Funktion, dass ein Pfad eines Spielers beim hovern die Farbe ändert und die genauen Werte des Spielers angezeigt werden kann auch ein spezieller Spieler aus der gesamten Liste gefiltert werden. So kann untersucht werden ob dessen Eigenschaften von den generellen Trends abweicht. So kann beispielsweise mittels paralleler Koordinaten ein besonders ''guter'' Stürmer gefunden werden.
-Ähnliches bewirkt die Funktion der Farbänderung und Namensanzeige beim hovern über Punkten im Scatterplot.
+Die Visualisierungen sollen Nutzer dabei unterstützen neue Erkenntnisse aus Daten zu ziehen die ihnen ohne die Visualisierung verborgen bleiben würden oder nur mit erheblichem Zeitaufwand zu erkennen wären.
+Dabei bieten Scatterplot und Parallele Koordinaten die Möglichkeit größere Trends innerhalb der Daten zu erkennen: \textit{Korrelieren Alter und Bewertung eines Fussballers? Sind teurere Fussballer besser?}
+Aber auch Detailanforderungen wie die Suche nach einem Innenverteidiger, der die Wünsche des Nutzers bestmöglich erfüllt:\textit{Welcher Innenverteidiger hat einen besonders hohen Passwert bei akzeptablen Bewertungen der anderen relevanten Attribute?}
+Durch die eingebaute Funktion, dass ein Pfad eines Spielers \textit{on:hover} die Farbe ändert und die genauen Werte des Spielers angezeigt werden kann auch ein spezieller Spieler aus der gesamten Liste gefiltert werden. So kann untersucht werden ob dessen Eigenschaften von den generellen Trends abweicht.
+Ähnliches bewirkt die Funktion der Farbänderung und Namensanzeige \textit{on:hover} über Punkten des Scatterplots.
+Dazu sei zu erwähnen, dass diese Funktion auch bei der Analyse größerer Trends hilfreich sein kann. Da sich viele diskrete Werte des Datensatzes überschneiden ist die Opazität der Punkte zwar bereits verringert worden. Eine weitere Reduzierung würde einzelne Punkte fast unsichtbar machen. Trotzdem ist durch die Größe des Datensatzes die maximale Opazität an an einigen Stellen schnell erreicht. Aus diesem Grund wird \textit{on:hover} neben dem Namen des Spielers auch die Anzahl an Spielern, die von diesem überlagert werden angezeigt. 
+Im Vergleich zu diesen Techniken befriedigt das explizite Baumdiagramm andere Anforderungen. Mit ihm lassen sich Hierarchien darstellen. In Kombination mit der implementierten Filterfunktion lassen sich so Fragen nach Spielern bestimmter Positionen in den Ligen beantworten.\\
 
-\textbf{Schreiben über Baumdiagramm}
+Insgesamt ist zu beachten, dass die Zielgruppen mit den Visualisierungsformen Scatterplot und Baumdiagramm vermutlich bereits in Kontakt gekommen sind und diese deswegen bereits interpretieren können. Parallele Koordinaten hingegen sind eine vergleichsweise unbekannte Visualisierungstechnik. Aus diesem Grund bietet es sich an den Parallelen Koordinaten eine Erklärung der Funktionsweise beizulegen. Dadurch kann den Nutzern geholfen werden diese Technik verstehen und nutzen zu können.
 
-Insgesamt ist zu beachten, dass die Zielgruppen der Visualisierung mit Scatterplots und Baumdiagrammen vermutlich bereits in Kontakt gekommen sind und sie diese deswegen schon interpretieren können. Parallele Koordinaten hingegen sind eine vergleichsweise unbekanntere Visualisierungstechnik. Aus diesem Grund würde es sich anbieten zu den parallelen Koordinaten eine Erklärung der Funktionsweise beizulegen um den Nutzern zu hilfen diese Technik zu ihrem vollen Potential nutzen zu können.
-
-
-\textbf{Wie hilft Scatterplot/Parallele Koordinaten/Baumdiagramm die genannten Problemstellungen zu beantworten?}
 \subsection{Anforderungen an die Visualisierungen}
 %Leiten sie Anforderungen an das Design der Visualisierungen ab, die sich durch ihre Analyse des Zielproblems ergeben.
 %\textbf{Wie muss die Visualisierung designed werden um das Zielproblem gut beantworten zu können?}
-Da die Visualisierungen nicht zum Selbstzweck erstellt werden sondern spezifische Ziele adressieren sollen, müssen sie auch deren Anforderungen erfüllen. Deswegen beschreibt dieser Abschnitt Designentscheidungen der Visualisierungen, die sich aus Anforderungen der Zielprobleme ergeben.\\
+Wie bereits im vorherigen Abschnitt beschrieben worden ist adressieren die Visualisierungen spezifische Ziele. Um diese Zielforderungen beantworten zu können, müssen sie auch deren Anforderungen erfüllen. In diesem Abschnitt wird aus diesem Grund die Designentscheidungen, welche sich aus den Anforderungen ergeben, erklärt.\\
 Da es sich bei den Zielgruppen nicht um Programmierer handelt ist eine Anforderung an alle Visualisierungen eine verständliche Darstellung. Dazu gehört die verständliche Beschriftung der Achsen sowie passende farbliche Kodierung einiger Elemente. Ein weiterer Teil dieser Anforderung ist Übersichtlichkeit zu waren. Im Fall großer Datenmengen können Visualisierungen schnell unübersichtlich werden und so ihren Nutzen einbüßen. Aus diesem Grund sind in alle drei Visualisierungen verschiedene Filterfunktionen implementiert worden. Dies befriedigt eine weiteres Ziel: nur bestimmte Teilgruppen mit einander vergleichen zu können.\\
-Eine weitere Designentscheidung ergibt sich aus dem Ziel spezifische Fussballer untersuchen zu können. Aus diesem Grund ist sowohl im Scatterplot als auch bei den Parallelen Koordinaten eine \textit{on:hover} Funktion implementiert worden, die den gewählten Punkt oder Pfad hervorhebt und Name sowie Informationen zu dem jeweiligen Spieler anzeigt.
-Des Weiteren 
-Um den Nutzern einen Mehrwert gegenüber analogen Visualisierungen zu bieten und den Bedarf selbstgewählter Vergleiche von Daten zu decken, ist in die Visualisierung des Scatterplots und der Parallelen Koordinaten die Möglichkeit eingebaut worden die zu vergleichenden Attribute selbst zu wählen.
+Eine weitere Designentscheidung ergibt sich aus dem Ziel spezifische Fussballer untersuchen zu können. Aus diesem Grund ist sowohl im Scatterplot als auch im Fall der Parallelen Koordinaten eine \textit{on:hover} Funktion implementiert worden, die den gewählten Punkt oder Pfad hervorhebt und Name sowie Informationen zu dem jeweiligen Fussballer anzeigt.
+Um den Nutzern einen Mehrwert gegenüber analogen Visualisierungen zu bieten und den Bedarf selbstgewählter Vergleiche von Daten zu decken, ist in die Visualisierung des Scatterplots und der Parallelen Koordinaten die Möglichkeit eingebaut worden die zu vergleichenden Attribute selbst zu wählen.\\
+Da Daten in Baumdiagrammen bei einer großen Menge an Kindern schnell unübersichtlich werden können ist im Baumdiagramm eine Filterfunktion nach Ligen und Positionen der Spieler implementiert worden. So kann sich fast ohne Scrollen ein Überblick über alle Spieler einer Position verschaft werden.\\
 
 
-
-Beim Implementieren der Visualisierungen müssen aufgrund der Anforderungen der Ziele einige Anpassungen im Vergleich zu den Grundformen dieser Darstellung, welche in den Übungen erstellt worden sind, vorgenommen werden.
-Besonders die Größe des Datensatzes sorgt dafür, dass viele Trends innerhalb der Daten kaum visuell zu erkennen sind. Aus diesem Grund sind in allen drei Visualisierungsformen verschiedene Filterfunktionen implementiert worden. 
-So werden neben, den kompletten Datensatz übergreifenden Analysen, auch spezifische Untersuchungen an Hand Spieler einzelner Länder, Vereine und/oder Positionen möglich.
-Weiterhin ist wie bereits beschrieben in der Visualisierungsform der Parallelen Koordinaten eine Anzeige der genauen Werte eines Spielers, beim hovern über dessen Pfad, implementiert worden um überhaupt individuelle Spieler aus dem Datensatz erkennbar zu machen.
-Dies ist ebenfalls im Scatterplot implementiert worden.
-Das Baumdiagramm ist hingegen lediglich mit einem Filter ausgestattet um zu verhindern, dass der Nutzen der Visualisierungsform aufgrund von Unübersichtlichkeit, die bei breiten Baumdiagrammen schnell eintritt, abhanden kommt. 
 \subsection{Präsentation der Visualisierungen}
 
 Im folgenden Kapitel werden die drei Visualisierungsformen vorgestellt. Weiterhin wird auf Funktionalität und Interaktionsmöglichkeiten genauer eingegangen.
@@ -268,9 +256,10 @@ Im folgenden Kapitel werden die drei Visualisierungsformen vorgestellt. Weiterhi
 %\textbf{Visualisierungstechniken vorstellen, Interaktivität zeigen, Designentscheidungen begründen(Erfüllen diese die Anforderungen?), Diskutieren wieso nicht andere Techniken verwendet wurden(Expressivität und Effektivität).}
 \subsubsection{Visualisierung Eins}
 Bei der ersten Visualisierung handelt es sich um einen Scatterplot.
-Mit diesem können zwei Attribute der Fussballer mit einander verglichen werden. Welche diese sind kann vom Anwender per Knopfdruck festgelegt werden. Im Scatterplot wird jeder Spieler als ein Punkt dargestellt. Da im Datensatz viele diskrete Werte existieren und sich deswegen viele Werte überlagern, wurde die Opazität der einzelnen Punkte verringert. Dadurch ist es weiterhin möglich zu erkennen an welchen Stellen sich Daten fokussieren. Da die Opazität aber nicht unendlich verringert werden kann ist weiterhin eine Funktion eingebaut welche beim hovern über einen Spieler anzeigt wie viele andere Spieler von diesem überlagert werden.
+Mit diesem können zwei Attribute der Fussballer mit einander verglichen werden. Welche diese sind kann vom Anwender per Knopfdruck festgelegt werden. Im Scatterplot wird jeder Spieler als ein Punkt dargestellt. Da im Datensatz viele diskrete Werte existieren und deswegen viele Überlagerungen existieren, wurde die Opazität der einzelnen Punkte verringert. Dadurch ist es weiterhin möglich zu erkennen an welchen Stellen sich Daten fokussieren. Da die Opazität aber nicht unendlich verringert werden kann ist zusätzlich eine Funktion eingebaut, die beim \textit{hovern} mit der Maus über einem Punkt anzeigt wie viele andere Fussballer von diesem überlagert werden.
 Die X und Y Achse sind immer mit dem aktuell ausgewählten Attribut beschriftet und skalieren bei Wechsel der Attribute automatisch mit.
 Abschließend sei zu erwähnen, dass eine Filterfunktion für Vereine und Nationalitäten der Spieler implementiert worden ist. Dadurch ist es den Anwendern möglich die Aufmerksamkeit auf spezifische Teilgruppen zu richten und mögliche lokale Trends in den Daten zu erkennen.
+Betrachtet man den Scatterplot im Vergleich zu anderen zweidimensionalen Visualisierungstechniken wie beispielsweise dem Balkendiagramm zeigt sich ein großer Vorteil des Scatterplots. Obwohl übergreifende Trends in den Daten zu erkennen sind lassen sich die Einzelobservationen noch erkennen. Dieser Fakt ist in einigen der beschrieben Anwendungsfälle definitiv relevant.
 \begin{figure}[h!]
 \centering
 \includegraphics[scale=0.4]{grafiken/Scatterplot1}
