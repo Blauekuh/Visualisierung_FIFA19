@@ -84,7 +84,7 @@ footnote
 	\begin{acronym}
 	\acro{CB}[CB]{Centerback}
 	\acro{FUT}[FUT]{Fifa Ultimate Team}
-	\acro{RM}[RM]{rechtes Mittelfeld}
+	\acro{RB}[RB]{Rightback}
 	\end{acronym}
 \newpage
 % ----------------------------------------------------------------------------
@@ -371,7 +371,7 @@ In der Visualisierung der Parallelen Koordinaten werden in Abbildungen \ref{PK5}
 Beispielhaft soll der Nutzen dieser Visualisierung anhand der Anforderungen eines Spielers des FUT Modus von FIFA 21 dargestellt werden.
 Dieser Anwender möchte sein Ultimate Team um einen Innenverteidiger (\textit{Centerback: CB}) erweitern. Neben den für einen Innenverteidiger typischerweise wichtigen Attribute interessiert diesen Spieler auch die Passgenauigkeit des Innenverteidigers. Deswegen wählt er für den Vergleich die Attribute \textit{Defending, Physical, Pace} und \textit{Passing} aus. Generell ist bei Innenverteidigern in dieser Darstellung zu erkennen, dass die Passgenauigkeit im Vergleich zur Geschwindigkeit eher abfallend ist. Wird Abbildung \ref{PK51} betrachtet in der Passen um zwei Positionen in der Darstellung nach Links verschoben worden ist, ist  zu sehen, dass David Alaba entgegen des Trends - Passen ist im Vergleich zu Verteidigen und Physis eher geringer - einen höheren Passwert aufweist. Da die anderen Werte im Vergleich zu anderen Innenverteidigern trotzdessen hoch liegt bietet sich die Auswahl dieses Innenverteidigers für den Beispielnutzer an.
 \subsection{Anwendung Visualisierung Drei}
-In der Visualisierung der Baumdarstellung wird die Hierarchie von Bundesligavereinen inklusive Spielern der Position rechtes Mittelfeld (RM) gezeigt.
+In der Visualisierung der Baumdarstellung wird die Hierarchie von Bundesligavereinen inklusive Spielern der Position Rechtsverteidiger (Rightback: RB) gezeigt.
 \begin{figure}[h!]
 \centering
 \includegraphics[scale=0.6]{grafiken/Baumdiagramm5}
@@ -379,15 +379,32 @@ In der Visualisierung der Baumdarstellung wird die Hierarchie von Bundesligavere
 \label{BD5}
 \end{figure}
 
+Beispielhaft wird diese wieder aus Sicht eines Spielers des FUT Modus betrachtet. In diesem Modus existiert ein Chemiesystem. Nach diesem System spielen nur Spieler gleicher Nation oder gleicher Liga gut miteinander. Weiterhin spielen Spieler gleicher Vereine besser zusammen. Ein Spieler ist dabei sich ein Team aus Spielern der Bundesliga zu bauen. Dabei fehlt allerdings ein Rechtsverteidiger. Um sich einen Überblick über die Rechtsverteidiger der Bundesliga zu verschaffen nutzt er die Funktionalität des Baumdiagramms so werden ihm alle vorhandenen Bundesliga Rechstverteidiger angezeigt. Ist es ihm wichtig, dass der Spieler für einen spezifischen Verein spielt so kann auch dies mit Hilfe dieser Visualisierungstechnik erkannt werden.
+
 
 
 \section{Verwandte Arbeiten}
+
+Da es sich bei den verwendeten Daten um die eines Videospiels handelt existieren wenige wissenschaftliche Visualisierungen zu diesen. Allerdings existieren bereits einige nicht wissenschaftliche Visualisierungen, die hier kurz erwähnt werden sollen.
+
+Zum einen ist dies die \textit{FIFA Data Visualization}\cite{ roshan_fifa_nodate} einer Visualisierung des FIFA 19 Datensatzes durch Roshan Sharma. In dieser Analyse der Daten werden verschiedene Werte des Datensatzes vor allem als Balken oder Kreisdiagramme dargestellt. Weiterhin werden Histogramme dargestellt. Im Verlauf der Analyse werden auch, in dieser Veranstaltung konkreter behandelte Darstellungsformen wie bspw. der Scatterplot oder die Darstellung als Sternförmige Koordinaten, verwendet. 
+
+Eine nichtwissenschaftliche Visualisierung des, in dieser Arbeit verwendeten, FIFA 21 Datensatzes ist von Paramartha Sengupta durchgeführt worden. In \textit{FIFA 21: EDA and Visualization}\cite{sengupta_fifa_nodate} analysiert Sengupta vor allem unter Einsatz von Scatterplots und Balkendiagrammen. Weiterhin benutzt auch er die Sternförmigen Koordinaten um Attribute der Spieler zu vergleichen. Dabei beziehen sich die Analysen allerdings hauptsächlich auf aggregierte Daten und nicht auf Spieler spezifisch.
+Allerdings werden auch zwei Analysen mittels eines Scatterplots durchgeführt, in der ersten wird Alter von Spielern mit ihrem Overall verglichen in der zweiten wird das Alter der Spieler mit ihrem Potential verglichen. Beide Analysen sind auch mit dem hier vorgstellten Scatterplot möglich.\\
+
+Um in der wissenschaftlichen Literatur vergleichbare Arbeiten zu finden muss sich vom Thema entfernt werden, zwar sind zum Videospiel FIFA keine wissenschaftlichen Artikel zu finden, jedoch lässt sich die hier durchgeführte Visualisierung mit der von Janetzko et. al.\cite{janetzko_enhancing_2016}, beruhend auf realen Fussballdaten, vergleichen.
+In dieser Arbeit wird die Darstellungsform der Parallelen Koordinaten eingesetzt um Bewegungsdaten von Fussballern zu analysieren. Interessant ist dabei vor allem, dass die Darstellung aufgrund von Problemen der Erkennung von Clustern innerhalb der Achsen angepasst worden ist und um eine Farbkomponente erweitert worden ist. Weiterhin sind die Interaktionsmöglichkeiten im Vergleich zu denen dieser Arbeit deutlich unterschiedlich. Es kann bspw. die Ober- und Untergrenze der Achsen verändert werden um so genauer in einzelne Cluster reinzoomen zu können. Weiterhin kann die Darstellung durch andere Visualisierungen überlagert werden.
+Zwar lässt sich sagen, dass die Visualisierung gegenüber der aus dieser Arbeit einige Vorteile bietet. Es muss jedoch erwähnt werden, dass der Fokus bezüglich Zielgruppen der Arbeiten und damit auch den Anforderungen unterschiedlich liegt. In der vorgestellten Arbeit liegt der Fokus vor allem auf der Erkennung von Clustern innerhalb der Gesamtmenge der Daten. Im Gegensatz dazu liegt der Fokus dieser Arbeit darauf Ausreißer nach oben aus den vorhandenen Clustern zu identifizieren um so die bestmöglichen Spieler zu finden. Trotzdem wäre die Erweiterung des Achsenskalierens möglicherweise bei einer Verbesserung der Visualisierungen in Betracht zu ziehen.
 %Führen sie eine kurze Literatursuche in der wissenschaftlichen Literatur zu Informationsvisualisierung und Visual Analytics nach ähnlichen Anwendungen durch. Diskutieren sie mindestens zwei Artikel. Stellen sie Gemeinsamkeiten und Unterschiede dar.
-\textbf{Zwei Artikel mit ähnlichen Zielen diskutieren}
+%\textbf{Zwei Artikel mit ähnlichen Zielen diskutieren}
 \section{Zusammenfassung und Ausblick}
 %Fassen sie die Beiträge ihre Visualisierungsanwendung zusammen. Wo bietet sie für die Personen der Zielgruppe einen echten Mehrwert.
+Die Visualisierungen haben es ermöglicht aus einem unübersichtlichen Datensatz mit über 16000 Zeilen Informationen herauszufiltern und anschaulich darzustellen.
+Anwendern ist es nach kurzer Einarbeitung möglich die Interaktionsmöglichkeiten der Visualisierungen selbst zu bedienen und auf neue Erkenntnisse zu stoßen. Dabei kann dies sowohl zum Sammeln von Informationen über einzelne Spieler, als auch zur Analyse größerer Trends getan werden. Besonders die Darstellungsform der Parallelen Koordinaten bietet im Vergleich zur Analyse der Daten als Liste einen echten Mehrwert, da Anwendern nicht nur die Werte der einzelnen Spieler angezeigt werden sondern durch die Pfade aller Spieler ein Maßstab für die Einschätzung der Werte einzelner Fussballer geschaffen wird.
 
-\textbf{Beiträge der Anwendung, welcher Mehrwert für Zielgruppe entsteht, mögliche Erweiterungen(Visualisierungen oder Daten)}
+
+
+%\textbf{Beiträge der Anwendung, welcher Mehrwert für Zielgruppe entsteht, mögliche Erweiterungen(Visualisierungen oder Daten)}
 %Was wären mögliche sinnvolle Erweiterungen, entweder auf der Ebene der Visualisierungen und/oder auf der Datenebene?
 
 \newpage
