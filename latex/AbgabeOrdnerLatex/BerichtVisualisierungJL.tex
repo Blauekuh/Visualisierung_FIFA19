@@ -257,9 +257,9 @@ Im folgenden Kapitel werden die drei Visualisierungsformen vorgestellt. Weiterhi
 \subsubsection{Visualisierung Eins}
 Bei der ersten Visualisierung handelt es sich um einen Scatterplot.
 Mit diesem können zwei Attribute der Fussballer mit einander verglichen werden. Welche diese sind kann vom Anwender per Knopfdruck festgelegt werden. Im Scatterplot wird jeder Spieler als ein Punkt dargestellt. Da im Datensatz viele diskrete Werte existieren und deswegen viele Überlagerungen existieren, wurde die Opazität der einzelnen Punkte verringert. Dadurch ist es weiterhin möglich zu erkennen an welchen Stellen sich Daten fokussieren. Da die Opazität aber nicht unendlich verringert werden kann ist zusätzlich eine Funktion eingebaut, die beim \textit{hovern} mit der Maus über einem Punkt anzeigt wie viele andere Fussballer von diesem überlagert werden.
-Die X und Y Achse sind immer mit dem aktuell ausgewählten Attribut beschriftet und skalieren bei Wechsel der Attribute automatisch mit.
+Die X und Y Achse sind immer mit dem, vom Nutzer ausgewählten, Attribut beschriftet und skalieren bei Wechsel der Attribute automatisch mit.
 Abschließend sei zu erwähnen, dass eine Filterfunktion für Vereine und Nationalitäten der Spieler implementiert worden ist. Dadurch ist es den Anwendern möglich die Aufmerksamkeit auf spezifische Teilgruppen zu richten und mögliche lokale Trends in den Daten zu erkennen.
-Betrachtet man den Scatterplot im Vergleich zu anderen zweidimensionalen Visualisierungstechniken wie beispielsweise dem Balkendiagramm zeigt sich ein großer Vorteil des Scatterplots. Obwohl übergreifende Trends in den Daten zu erkennen sind lassen sich die Einzelobservationen noch erkennen. Dieser Fakt ist in einigen der beschrieben Anwendungsfälle definitiv relevant.
+Betrachtet man den Scatterplot im Vergleich zu anderen zweidimensionalen Visualisierungstechniken wie beispielsweise dem Balkendiagramm zeigt sich ein großer Vorteil des Scatterplots. Obwohl übergreifende Trends in den Daten zu erkennen sind lassen sich die Einzelobservationen noch voneinander differenzieren. Dieser Fakt ist in einigen der beschrieben Anwendungsfälle definitiv relevant.
 \begin{figure}[h!]
 \centering
 \includegraphics[scale=0.4]{grafiken/Scatterplot1}
@@ -270,8 +270,9 @@ Betrachtet man den Scatterplot im Vergleich zu anderen zweidimensionalen Visuali
 
 \subsubsection{Visualisierung Zwei}
 Bei der zweiten Visualisierung handelt es sich um die der Parallelen Koordinaten. 
-Wie bereits beschrieben ist diese Visualisierungsform dafür geeignet höherdimensionale Daten in einem zweidimensionalen Raum darzustellen. Zwar benötigt diese Darstelungsform mehr als einzelne Datensätze um interpretierbar zu sein, trotzdem muss ein einzelner Datensatz erkennbar bleiben. Aus diesem Grund sind zum einen Filterfunktionen für die Attribute: Verein, Nationalität und Position eingebaut worden, zum anderen ist eine \textit{on:hover} Funktionalität implementiert worden, die den Pfad des ausgewählten Fussballers einfärbt, verbreitert und dessen Namen und Werte oberhalb der Darstellung anzeigt.
-Da es für die Parallelen Koordinaten relevant ist ob Attribute benachbart sind oder nicht, ist genauso wie bei der Scatterplot Darstellung die Option implementiert worden die Werte der Achsen vom Nutzer selbst per Knopfdruck festlegen zu lassen.
+Wie bereits beschrieben ist diese Visualisierungsform dafür geeignet höherdimensionale Daten in einem zweidimensionalen Raum darzustellen. Zwar benötigt diese Darstellungsform mehr als einzelne Datensätze um interpretierbar zu sein, trotzdem muss ein einzelner Datensatz erkennbar bleiben. Aus diesem Grund sind zum einen Filterfunktionen für die Attribute: Verein, Nationalität und Position eingebaut worden, zum anderen ist eine \textit{on:hover} Funktion implementiert worden, die den Pfad des ausgewählten Fussballers einfärbt, verbreitert und dessen Namen und Werte oberhalb der Darstellung anzeigt.
+Da es für die Parallelen Koordinaten relevant ist ob Attribute benachbart sind oder nicht, ist genauso wie bei der Scatterplot Darstellung die Option implementiert worden die Werte der parallelen Achsen vom Nutzer selbst per Knopfdruck festlegen zu lassen.
+Eine ähnliche Visualisierungsform zur zweidimensionalen Darstellung mehrdimensionaler Daten ist das Sterndiagramm. Zwar bietet dieses Vorteile wie beispielsweise den Fakt, dass kein Attribut am Ende allein ohne Nachbarn steht. Außerdem haben einzelne Observationen Aussagekraft ohne einen Vergleich mit anderen zu benötigen. Trotzdem ist die Verwendung der Parallelen Koordinaten bei den gegebenen Anforderungen die beste Wahl. Bei einem Datensatz mit der Größe des hier gegebenen wären die Daten im Sterndiagramm nicht zu erkennen. Generell ist diese Darstellungsform eher geeignet wenige Daten zu vergleichen und nicht große Datenmengen auf Trends zu untersuchen. 
 
 \begin{figure}[h!]
 \centering
@@ -280,22 +281,12 @@ Da es für die Parallelen Koordinaten relevant ist ob Attribute benachbart sind 
 \end{figure}
 
 
-
-
-
-
 \subsubsection{Visualisierung Drei}
 
 Bei der dritten Visualisierung handelt es sich um die explizite Baumdarstellung. Diese Darstellungsform ist besonders dazu geeignet Hierarchien zu visualisieren. 
 Die Hierarchie hat in diesem Fall drei Ebenen: Die Fussballliga, die Vereine und die Spieler.
-Die Visualisierung hätte um Länder und Kontinente erweitert werden können, dies hätte aber keinen erheblichen Mehrwert gegeben.
-Weiterhin sind explizite Bäume eine Visualisierungstechnik die schnell in die breite wachsen und unübersichtlich werden kann. Deswegen ist neben der Funktion einzelne Ligen auswählen zu können noch ein Positionsfilter für die Fussballer implementiert worden. So wird die Darstellung entweder aller Spieler einer Liga oder aller Spieler einer bestimmten Position aus einer Liga ermöglicht.
-\begin{figure}[h]
-\centering
-\includegraphics[scale=0.4]{grafiken/BaumDiagram1}
-\caption{Ausschnitt aus Baumdarstellung\\ Quelle: Eigene Darstellung}
-\end{figure}
-
+Die Visualisierung hätte um Länder und Kontinente erweitert werden können. Dies ist allerdings nicht getan worden, da dadurch den Zielgruppen kein Mehrwert entstanden wäre.
+Explizite Bäume sind eine Visualisierungstechnik die schnell in die breite wachsen und unübersichtlich werden können. Deswegen ist neben der Funktion einzelne Ligen auswählen zu können noch eine Filterfunktion nach Positionen implementiert worden. So wird die Darstellung entweder aller Spieler einer Liga oder aller Spieler einer bestimmten Position einer Liga ermöglicht. Ist das Visualisierungsziel das Darstellen von Hierarchien so gibt es verschiedene Techniken zur Auswahl. Diese reichen von Sunburstdiagrammen über implizite Baumdiagramme bis hin zu den Zur Zeit sehr beliebten Sankeydiagrammen. Trotzdem ist das explizite Baumdiagramm noch immer die leichtverständlichste und übersichtlichste Visualisierung hierarchischer Daten. Zwar wird ein Baumdiagramm bei einer großen Menge an Kinddaten schnell sehr breit, trotzdem sind die Daten zu erkennen. Sunburstdiagramme, Sankeydiagramme und implizite Baumdiagramme bieten zwar alle den Vorteil, dass die Größe ihrer Elemente zusätzliche Informationen übermitteln. Haben kleine Elternelemente allerdings viele Kinder sind diese oft kaum noch zu erkennen. Dieser Fall kann bei expliziten Baumdiagrammen nicht eintreten. Da in den Anforderungen lediglich die hierarchische Darstellung, nicht aber bestimmte Mengen relevant sind, ist die explizite Baumdarstellung gewählt worden.
 
 \subsection{Interaktion}
 %Erklären sie die möglichen Interaktionen mit den einzelnen Visualisierungen und die möglichen Verknüpfungen zwischen ihnen. Begründen Sie warum die konkreten Interaktionen umgesetzt wurden und welche Zwecke für die Anwenderinnen mit ihnen unterstützt werden. Begründen sie ebenfalls warum sie andere Interaktionsmöglichkeiten nicht umgesetzt haben. 
@@ -378,7 +369,7 @@ Da es sich bei den verwendeten Daten um die eines Videospiels handelt existieren
 
 Zum einen ist dies die \textit{FIFA Data Visualization}\cite{ roshan_fifa_nodate} einer Visualisierung des FIFA 19 Datensatzes durch Roshan Sharma. In dieser Analyse der Daten werden verschiedene Werte des Datensatzes vor allem als Balken oder Kreisdiagramme dargestellt. Weiterhin werden Histogramme dargestellt. Im Verlauf der Analyse werden auch, in dieser Veranstaltung konkreter behandelte Darstellungsformen wie bspw. der Scatterplot oder die Darstellung als Sternförmige Koordinaten, verwendet. 
 
-Eine nichtwissenschaftliche Visualisierung des, in dieser Arbeit verwendeten, FIFA 21 Datensatzes ist von Paramartha Sengupta durchgeführt worden. In \textit{FIFA 21: EDA and Visualization}\cite{sengupta_fifa_nodate} analysiert Sengupta vor allem unter Einsatz von Scatterplots und Balkendiagrammen. Weiterhin benutzt auch er die Sternförmigen Koordinaten um Attribute der Spieler zu vergleichen. Dabei beziehen sich die Analysen allerdings hauptsächlich auf aggregierte Daten und nicht auf Spieler spezifisch.
+Eine nichtwissenschaftliche Visualisierung des, in dieser Arbeit verwendeten, FIFA 21 Datensatzes ist von Paramartha Sengupta durchgeführt worden. In \textit{FIFA 21: EDA and Visualization}\cite{sengupta_fifa_nodate} analysiert Sengupta vor allem unter Einsatz von Scatterplots und Balkendiagrammen. Weiterhin werden Sterndiagramme verwendet um Attribute der Spieler zu vergleichen. Dabei beziehen sich die Analysen allerdings hauptsächlich auf aggregierte Daten und nicht auf Spieler spezifisch.
 Allerdings werden auch zwei Analysen mittels eines Scatterplots durchgeführt, in der ersten wird Alter von Spielern mit ihrem Overall verglichen in der zweiten wird das Alter der Spieler mit ihrem Potential verglichen. Beide Analysen sind auch mit dem hier vorgstellten Scatterplot möglich.\\
 
 Um in der wissenschaftlichen Literatur vergleichbare Arbeiten zu finden muss sich vom Thema entfernt werden, zwar sind zum Videospiel FIFA keine wissenschaftlichen Artikel zu finden, jedoch lässt sich die hier durchgeführte Visualisierung mit der von Janetzko et. al.\cite{janetzko_enhancing_2016}, beruhend auf realen Fussballdaten, vergleichen.
