@@ -1,4 +1,4 @@
-module Development.ParalleleKoordinaten exposing (..)
+module ParalleleKoordinaten exposing (..)
 
 
 import Axis

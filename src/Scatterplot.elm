@@ -1,4 +1,4 @@
-module Development.Scatterplot exposing (..)
+module Scatterplot exposing (..)
 
 import Axis
 import Browser

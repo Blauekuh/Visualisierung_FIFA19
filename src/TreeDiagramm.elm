@@ -1,4 +1,4 @@
-module Development.TreeDiagramm exposing (..)
+module TreeDiagramm exposing (..)
 
 import Axis
 import Browser

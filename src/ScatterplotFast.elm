@@ -1,4 +1,4 @@
-module Development.ScatterplotFast exposing (..)
+module ScatterplotFast exposing (..)
 
 import Axis
 import Browser
