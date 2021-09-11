@@ -1,4 +1,4 @@
-module Development.Scatterplot exposing (..)
+module Development.ScatterplotFast exposing (..)
 
 import Axis
 import Browser
@@ -300,8 +300,7 @@ point scaleX scaleY xyPoint pointList=
         ]
         [ circle [ cx 0, cy 0, r 3 ] []
         , text_ [ x 10, y -20, textAnchor AnchorMiddle ] [ Html.text xyPoint.pointName ]
-        , text_ [ x 10, y -40, textAnchor AnchorMiddle ] [ Html.text <|"Anzahl an Spielern mit diesen X und Y Werten: " ++ String.fromInt(sumX xyPoint pointList) ]
-        
+                
         ]
 
 
@@ -367,24 +366,6 @@ filterAndReducePlayers playerlist a b c x y =
     XyData x y (List.map (\n -> pointName n a b c x y) playerlist)
 
 
-filterX : Point -> List Point -> List Point
-filterX a b =
-    let
-        isEqual : Point -> Point -> Maybe Point
-        isEqual t z =
-            if z.x == t.x && z.y == t.y then 
-                Just z
-
-            else
-                Nothing
-    in
-    List.filterMap (isEqual a) b  
-
-
-
-sumX : Point -> List Point ->  Int
-sumX e f=
-    List.length (filterX e f) 
 
 type alias Point =
     { pointName : String, x : Float, y : Float }

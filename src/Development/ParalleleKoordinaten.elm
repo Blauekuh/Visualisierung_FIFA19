@@ -100,6 +100,15 @@ type alias Footballer =
     defending: Float,
     physical: Float}
 
+type alias MultiDimPoint =
+    { pointName : String, value : List Float }
+
+
+type alias MultiDimData =
+    { dimDescription : List String
+    , data : List (List MultiDimPoint)
+    }
+
 
 decodeFootballer : Csv.Decode.Decoder (Footballer -> a) a
 decodeFootballer =
@@ -267,15 +276,10 @@ wideExtent values =
     , Tuple.second closeExtent + extension
     )
 
-type alias MultiDimPoint =
-    { pointName : String, value : List Float }
 
-
-type alias MultiDimData =
-    { dimDescription : List String
-    , data : List (List MultiDimPoint)
-    }
-
+filterAttribute : List Footballer -> (Footballer -> String) -> String -> List Footballer
+filterAttribute spieler attribut wort =
+    List.filter (\n -> (attribut n) == wort ) spieler
 
 
 parallelCoodinatesPlot : Float -> Float -> MultiDimData -> Svg msg
@@ -391,9 +395,6 @@ parallelCoodinatesPlot w ar model =
                         )
                )
 
-filterAttribute : List Footballer -> (Footballer -> String) -> String -> List Footballer
-filterAttribute spieler attribut wort =
-    List.filter (\n -> (attribut n) == wort ) spieler
 
 
 
@@ -538,4 +539,6 @@ view model =
                             ]
                     ]        
                     ,parallelCoodinatesPlot 600 2 spielerfiltered
+                , ul[][ Html.text <| "Zum Verständis von Parallelen Koordinaten könnte folgendes Paper nützlich sein:"]
+                , ul[][ Html.text <| "http://www.perceptualedge.com/articles/b-eye/parallel_coordinates.pdf"] 
                 ]

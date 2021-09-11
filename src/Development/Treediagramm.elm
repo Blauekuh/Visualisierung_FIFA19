@@ -63,12 +63,6 @@ getRandomCatGif x =
 
 
 
-
---liste : List String
---liste =
---    [ "data1000.csv" ]
-
-
 csvString_to_data : String -> List Footballer
 csvString_to_data csvRaw =
     Csv.parse csvRaw
@@ -80,18 +74,7 @@ csvString_to_data csvRaw =
 type alias Footballer =
     { name : String, club : String, position: String}-- , age : String}--, liga : String }-- age : String, overall : String, potential : String, height : String }
 
-{--
-decodeFootballer : Csv.Decode.Decoder ( Footballer -> a) a
-decodeFootballer =
-    Csv.Decode.map Footballer 
-        (Csv.Decode.field "Name" Ok 
-            |> Csv.Decode.andMap (Csv.Decode.field "Age" (String.toFloat >> Result.fromMaybe "error parsing string"))
-            |> Csv.Decode.andMap (Csv.Decode.field "Overall" (String.toFloat >> Result.fromMaybe "error parsing string"))
-            |> Csv.Decode.andMap (Csv.Decode.field "Potential" (String.toFloat >> Result.fromMaybe "error parsing string"))
-            |> Csv.Decode.andMap (Csv.Decode.field "Height" (String.toFloat >> Result.fromMaybe "error parsing string"))
-            |> Csv.Decode.andMap (Csv.Decode.field "Club" Ok)
-        )
---}
+
 decodeFootballer : Csv.Decode.Decoder ( Footballer -> a) a
 decodeFootballer =
     Csv.Decode.map Footballer 
@@ -114,7 +97,6 @@ type Msg
     | ActivateFilter (Bool)
 
 
---| UpdateAttribute1 Footballer
 
 
 update : Msg -> Model -> ( Model, Cmd Msg )
@@ -248,18 +230,11 @@ spielerEncoder : Footballer -> Encode.Value
 spielerEncoder spieler = 
     Encode.object
         [ ( "name", Encode.string spieler.name )
-        --, ( "name", Encode.string spieler.age )
         , ( "club", Encode.string spieler.club)
-        --, ( "position", Encode.string spieler.position )
-        --, ( "potential", Encode.string spieler.potential)
-        --, ( "height", Encode.string spieler.height)
-
         ]
         
 testEncoder x y a =
     Encode.encode 0 (ligenEncoder (ligenCombiner a x y))
---testEncoder x y =
---    Encode.encode 0 (mannschaftsEncoder (clubCombiner x y))
 
 treeDecoder2 : Decode.Decoder (TreeDiagram.Tree String)
 treeDecoder2 =
@@ -289,6 +264,8 @@ treeDecoder2 =
         )
         (Decode.maybe <|Decode.field "anzahl" Decode.int)
 
+
+--Code to expand Child variables: in progress
 {--
 treeDecoder2 : Decode.Decoder (TreeDiagram.Tree String)
 treeDecoder2 =
@@ -473,11 +450,11 @@ view model =
                     else
                         l.data
 
-                premierL =
+                daten =
                     testEncoder l.liga spielerfiltered  l.xName
-                    --testEncoder (List.filter (\n-> List.member n listeCalcio)listeCalcio) l.data  "Calcio A"--listSpieler -- l.data
+                    
             in
-                case Decode.decodeString treeDecoder2 premierL of
+                case Decode.decodeString treeDecoder2 daten of
                     Ok schools ->
                         Html.div []
                             [   
