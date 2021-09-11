@@ -76,6 +76,7 @@ footnote
 
 % Abbildungsverzeichnis
 \clearpage
+\addcontentsline{toc}{section}{Abbildungsverzeichnis}
 \listoffigures
 
 % Abkürzungsverzeichnis:
@@ -127,7 +128,7 @@ Ob Fragen von anderen Anforderungsgruppen, wie bspw. Sportwissenschaftlern beant
 Im folgenden werden die drei verwendeten Visualisierungstechniken kurz vorgstellt und erklärt.
 Bei der ersten Visualisierungstechnik handelt es sich um einen Scatterplot.\cite{noauthor_complete_nodate} Mit diesem lassen sich Zusammenhänge zwischen zwei verschiedenen, numerischen Attributen der Fussballer genauer untersuchen. So können Trends in Daten aufgezeigt werden, z.B. ob sich das Alter von Fussballern auf deren Bewertung im Spiel auswirkt.
 Weiterhin können so Spieler gefunden werden deren Werte von den gefundenen Trends abweichen.\\
-Die zweite Visualisierungstechnik ist die der Parallelen Koordinaten.\cite{few_multivariate_nodate} Diese eignet sich aufgrund ihrer Beschaffenheit dazu mehrdimensionale Daten auf übergreifende Trends zu untersuchen. Trotzdem können sie auch genutzt werden um spezifische Fussballer konkret zu untersuchen und deren Werte im Vergleich zu den beschriebenen Trends zu betrachten. Bspw. kann der Frage nach der Eignung eines Fussballers zum Einsatz auf einer spezifischen Position nachgegangen werden.
+Die zweite Visualisierungstechnik ist die der Parallelen Koordinaten.\cite{few_multivariate_2006} Diese eignet sich aufgrund ihrer Beschaffenheit dazu mehrdimensionale Daten auf übergreifende Trends zu untersuchen. Trotzdem können sie auch genutzt werden um spezifische Fussballer konkret zu untersuchen und deren Werte im Vergleich zu den beschriebenen Trends zu betrachten. Bspw. kann der Frage nach der Eignung eines Fussballers zum Einsatz auf einer spezifischen Position nachgegangen werden.
 Diese Darstellungsform ermöglicht den Vergleich vier verschiedener Attribute der Fussballer. Dabei ist allerdings zu beachten, dass Zusammenhänge innerhalb der Daten nur im Vergleich mit anderen Daten zu erkennen sind. Enthält der Datensatz bspw. nur einen Spieler zeigen die parallelen Koordinaten nur eine gerade Linie an. Weiterhin lassen sich lediglich Zusammenhänge zwischen benachbarten Attributen erkennen. Dies kann bei ungeschulten Anwendern schnell zu Fehlinterpretationen führen.\\
 Bei der dritten Visualisierungstechnik handelt es sich um die explizite Baumdarstellung. Durch sie kann ein Überblick über hierarchische Strukturen ermöglicht werden. In diesem Fall ist dies die Fussballliga als oberstes Element, darauf folgen die Vereine der Liga und zum Schluss die Fussballer der Vereine. Von den drei Techniken ist diese aufgrund ihrer Bekanntheit vermutlich am einfachsten zu verstehen.
 
@@ -281,8 +282,8 @@ Explizite Bäume sind eine Visualisierungstechnik die schnell in die breite wach
 
 %\textbf{Interaktionen in den Visualisierungen(möglicherweise Interaktion zwischen den Techniken), Warum genau diese Techniken, welche Zwecke erfüllen sie für die Anwender, Warum wurden andere nicht umgesetzt}
 
-Die Techniken erlauben die im vorherigen Kapitel bereits beschriebenen Interaktionsmöglichkeit. Diese sind im Fall von Scatterplot und Parallelen Koordinaten zum einen Buttons durch welche die Attribute der Achsen ausgewählt werden können.
-Weiterhin existieren  Texteingabefelder mit denen die Daten gefiltert werden können. Eine weitere Interaktion ist die \textit{on:hover} Funktionalität, durch die es Nutzern möglich ist spezifische Spieler aus der Menge an Daten herauszusuchen. 
+Die Techniken erlauben die im vorherigen Kapitel bereits beschriebenen Interaktionsmöglichkeit. Diese sind im Fall von Scatterplot und Parallelen Koordinaten zum einen Buttons, durch welche die Attribute der Achsen ausgewählt werden können.
+Zusätzlich existieren Texteingabefelder mit denen die Daten gefiltert werden können. Eine weitere Interaktion ist die \textit{on:hover} Funktionalität, durch die es Nutzern möglich ist spezifische Spieler aus der Menge an Daten herauszusuchen. 
 Das Baumdiagramm hat vergleichsweise weniger Interaktionsmöglichkeiten. Es ist ebenso möglich Daten über eine Texteingabe zu filtern und bestimmte Daten per Button auszuwählen. Weitere Interaktionen existieren allerdings nicht.\\
 Die Darstellungen sind technisch von einander unabhängig. Es existieren keine Interaktionen, die visualierungsübergreifend funktionieren. Da die Anwendungszwecke der Techniken sich allerdings stark von einander unterscheiden, würde eine solche Interaktion vergleichsweise wenig Mehrwert bieten und die einzelnen Visualisierungen möglicherweise unverständlicher gestalten. 
 
@@ -385,6 +386,7 @@ Abschließend ist zu sagen, dass trotz der Verbesserungsmöglichkeiten bereits d
 
 \pagenumbering{Roman}
 \setcounter{page}{4}
+\addcontentsline{toc}{section}{Anhang: Git-Historie}
 \section*{Anhang: Git-Historie}
 Das die Commits von zwei verschiedenen Accounts stammen ist zu entschuldigen. Die Anmeldung in der GIT GUI von Windows ist unabsichtlich mit einem anderen Account vorgenommen worden und erst später bemerkt worden.
 
