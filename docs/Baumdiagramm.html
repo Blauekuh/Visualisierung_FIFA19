@@ -2,11 +2,21 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>Development.Tree01</title>
+  <title>TreeDiagramm</title>
   <style>body { padding: 0; margin: 0; }</style>
 </head>
 
 <body>
+        </h1>
+        Herzlich Wilkommen zur Fifa Datenvisualisierung. Über die untenstehenden Links gelangen sie zu den jeweiligen Visualisierungen. <br>
+        <br>
+		<a href="Scatterplot.html">Zum Scatterplot</a><br>
+		<a href="ScatterplotFast.html">Zum vereinfachten, schnellen Scatterplot</a><br>
+        <a href="BaumDiagramm.html">Zur Baumhierarchie</a><br>
+        <a href="ParalleleKoordinaten.html">Zu den Parallelen Koordinaten</a><br>
+
+
+
 
 <pre id="elm"></pre>
 
@@ -5333,10 +5343,10 @@ var $elm$core$Task$perform = F2(
 				A2($elm$core$Task$map, toMessage, task)));
 	});
 var $elm$browser$Browser$element = _Browser_element;
-var $author$project$Development$Tree01$GotText = function (a) {
+var $author$project$TreeDiagramm$GotText = function (a) {
 	return {$: 'GotText', a: a};
 };
-var $author$project$Development$Tree01$Loading = {$: 'Loading'};
+var $author$project$TreeDiagramm$Loading = {$: 'Loading'};
 var $elm$http$Http$BadStatus_ = F2(
 	function (a, b) {
 		return {$: 'BadStatus_', a: a, b: b};
@@ -6116,28 +6126,28 @@ var $elm$http$Http$get = function (r) {
 	return $elm$http$Http$request(
 		{body: $elm$http$Http$emptyBody, expect: r.expect, headers: _List_Nil, method: 'GET', timeout: $elm$core$Maybe$Nothing, tracker: $elm$core$Maybe$Nothing, url: r.url});
 };
-var $author$project$Development$Tree01$getRandomCatGif = function (x) {
+var $author$project$TreeDiagramm$getRandomCatGif = function (x) {
 	return $elm$http$Http$get(
 		{
 			expect: $elm$http$Http$expectString(x),
 			url: 'https://raw.githubusercontent.com/JohannesLange/Visualisierung_FIFA19/master/data/baumData.csv'
 		});
 };
-var $author$project$Development$Tree01$init = function (_v0) {
+var $author$project$TreeDiagramm$init = function (_v0) {
 	return _Utils_Tuple2(
-		$author$project$Development$Tree01$Loading,
-		$author$project$Development$Tree01$getRandomCatGif($author$project$Development$Tree01$GotText));
+		$author$project$TreeDiagramm$Loading,
+		$author$project$TreeDiagramm$getRandomCatGif($author$project$TreeDiagramm$GotText));
 };
 var $elm$core$Platform$Sub$batch = _Platform_batch;
 var $elm$core$Platform$Sub$none = $elm$core$Platform$Sub$batch(_List_Nil);
-var $author$project$Development$Tree01$subscriptions = function (model) {
+var $author$project$TreeDiagramm$subscriptions = function (model) {
 	return $elm$core$Platform$Sub$none;
 };
-var $author$project$Development$Tree01$Success = function (a) {
+var $author$project$TreeDiagramm$Success = function (a) {
 	return {$: 'Success', a: a};
 };
-var $author$project$Development$Tree01$listeCalcio = _List_fromArray(
-	['Juventus', 'Napoli', 'Milan', 'Inter', 'Lazio', 'Roma']);
+var $author$project$TreeDiagramm$listeCalcio = _List_fromArray(
+	['Juventus', 'Napoli', 'Milan', 'Inter', 'Lazio', 'Roma', 'Atalanta', 'Sassuolo', 'Sampdoria', 'Hellas Verona', 'Genoa', 'Bologna', 'Fiorentina', 'Udinese', 'Spezia', 'Cagliari', 'Torino', 'Benevento', 'Crotone', 'Parma']);
 var $elm$core$Platform$Cmd$batch = _Platform_batch;
 var $elm$core$Platform$Cmd$none = $elm$core$Platform$Cmd$batch(_List_Nil);
 var $elm$core$List$append = F2(
@@ -6257,9 +6267,9 @@ var $ericgj$elm_csv_decode$Csv$Decode$decodeCsv = F2(
 					A2($ericgj$elm_csv_decode$Csv$Decode$decodeRecord, decoder, headers),
 					records)));
 	});
-var $author$project$Development$Tree01$Footballer = F2(
-	function (name, club) {
-		return {club: club, name: name};
+var $author$project$TreeDiagramm$Footballer = F3(
+	function (name, club, position) {
+		return {club: club, name: name, position: position};
 	});
 var $ericgj$elm_csv_decode$Csv$Decode$Decoder = function (a) {
 	return {$: 'Decoder', a: a};
@@ -6373,13 +6383,16 @@ var $ericgj$elm_csv_decode$Csv$Decode$map = F2(
 						{unvisited: unvisited, value: subValue, visited: visited}));
 			});
 	});
-var $author$project$Development$Tree01$decodeFootballer = A2(
+var $author$project$TreeDiagramm$decodeFootballer = A2(
 	$ericgj$elm_csv_decode$Csv$Decode$map,
-	$author$project$Development$Tree01$Footballer,
+	$author$project$TreeDiagramm$Footballer,
 	A2(
 		$ericgj$elm_csv_decode$Csv$Decode$andMap,
-		A2($ericgj$elm_csv_decode$Csv$Decode$field, 'Club', $elm$core$Result$Ok),
-		A2($ericgj$elm_csv_decode$Csv$Decode$field, 'Name', $elm$core$Result$Ok)));
+		A2($ericgj$elm_csv_decode$Csv$Decode$field, 'BP', $elm$core$Result$Ok),
+		A2(
+			$ericgj$elm_csv_decode$Csv$Decode$andMap,
+			A2($ericgj$elm_csv_decode$Csv$Decode$field, 'Club', $elm$core$Result$Ok),
+			A2($ericgj$elm_csv_decode$Csv$Decode$field, 'Name', $elm$core$Result$Ok))));
 var $elm$core$List$drop = F2(
 	function (n, list) {
 		drop:
@@ -6547,61 +6560,92 @@ var $elm$core$Result$toMaybe = function (result) {
 		return $elm$core$Maybe$Nothing;
 	}
 };
-var $author$project$Development$Tree01$csvString_to_data = function (csvRaw) {
+var $author$project$TreeDiagramm$csvString_to_data = function (csvRaw) {
 	return A2(
 		$elm$core$Maybe$withDefault,
 		_List_Nil,
 		$elm$core$Result$toMaybe(
 			A2(
 				$ericgj$elm_csv_decode$Csv$Decode$decodeCsv,
-				$author$project$Development$Tree01$decodeFootballer,
+				$author$project$TreeDiagramm$decodeFootballer,
 				$lovasoa$elm_csv$Csv$parse(csvRaw))));
 };
-var $author$project$Development$Tree01$spielerListe = function (liste1) {
+var $author$project$TreeDiagramm$spielerListe = function (liste1) {
 	return $elm$core$List$concat(
 		A2(
 			$elm$core$List$map,
 			function (t) {
-				return $author$project$Development$Tree01$csvString_to_data(t);
+				return $author$project$TreeDiagramm$csvString_to_data(t);
 			},
 			liste1));
 };
-var $author$project$Development$Tree01$update = F2(
+var $author$project$TreeDiagramm$update = F2(
 	function (msg, model) {
-		if (msg.$ === 'GotText') {
-			var result = msg.a;
-			if (result.$ === 'Ok') {
-				var fullText = result.a;
-				return _Utils_Tuple2(
-					$author$project$Development$Tree01$Success(
-						{
-							data: $author$project$Development$Tree01$spielerListe(
-								_List_fromArray(
-									[fullText])),
-							liga: $author$project$Development$Tree01$listeCalcio,
-							xName: 'Calcio A'
-						}),
-					$elm$core$Platform$Cmd$none);
-			} else {
-				return _Utils_Tuple2(model, $elm$core$Platform$Cmd$none);
-			}
-		} else {
-			var _v2 = msg.a;
-			var x = _v2.a;
-			var y = _v2.b;
-			if (model.$ === 'Success') {
-				var m = model.a;
-				return _Utils_Tuple2(
-					$author$project$Development$Tree01$Success(
-						{data: m.data, liga: y, xName: x}),
-					$elm$core$Platform$Cmd$none);
-			} else {
-				return _Utils_Tuple2(model, $elm$core$Platform$Cmd$none);
-			}
+		switch (msg.$) {
+			case 'GotText':
+				var result = msg.a;
+				if (result.$ === 'Ok') {
+					var fullText = result.a;
+					return _Utils_Tuple2(
+						$author$project$TreeDiagramm$Success(
+							{
+								data: $author$project$TreeDiagramm$spielerListe(
+									_List_fromArray(
+										[fullText])),
+								liga: $author$project$TreeDiagramm$listeCalcio,
+								onOff: false,
+								position: 'ST',
+								xName: 'Calcio A'
+							}),
+						$elm$core$Platform$Cmd$none);
+				} else {
+					return _Utils_Tuple2(model, $elm$core$Platform$Cmd$none);
+				}
+			case 'ChangeLiga':
+				var _v2 = msg.a;
+				var x = _v2.a;
+				var y = _v2.b;
+				if (model.$ === 'Success') {
+					var m = model.a;
+					return _Utils_Tuple2(
+						$author$project$TreeDiagramm$Success(
+							{data: m.data, liga: y, onOff: m.onOff, position: m.position, xName: x}),
+						$elm$core$Platform$Cmd$none);
+				} else {
+					return _Utils_Tuple2(model, $elm$core$Platform$Cmd$none);
+				}
+			case 'ChangePosition':
+				var x = msg.a;
+				if (model.$ === 'Success') {
+					var m = model.a;
+					return _Utils_Tuple2(
+						$author$project$TreeDiagramm$Success(
+							{data: m.data, liga: m.liga, onOff: m.onOff, position: x, xName: m.xName}),
+						$elm$core$Platform$Cmd$none);
+				} else {
+					return _Utils_Tuple2(model, $elm$core$Platform$Cmd$none);
+				}
+			default:
+				var x = msg.a;
+				if (model.$ === 'Success') {
+					var m = model.a;
+					return _Utils_Tuple2(
+						$author$project$TreeDiagramm$Success(
+							{data: m.data, liga: m.liga, onOff: x, position: m.position, xName: m.xName}),
+						$elm$core$Platform$Cmd$none);
+				} else {
+					return _Utils_Tuple2(model, $elm$core$Platform$Cmd$none);
+				}
 		}
 	});
-var $author$project$Development$Tree01$ChangeLiga = function (a) {
+var $author$project$TreeDiagramm$ActivateFilter = function (a) {
+	return {$: 'ActivateFilter', a: a};
+};
+var $author$project$TreeDiagramm$ChangeLiga = function (a) {
 	return {$: 'ChangeLiga', a: a};
+};
+var $author$project$TreeDiagramm$ChangePosition = function (a) {
+	return {$: 'ChangePosition', a: a};
 };
 var $elm$html$Html$button = _VirtualDom_node('button');
 var $elm$json$Json$Decode$decodeString = _Json_runOnString;
@@ -7298,7 +7342,7 @@ var $elm_community$typed_svg$TypedSvg$Attributes$InPx$y2 = function (value) {
 	return $elm_community$typed_svg$TypedSvg$Attributes$y2(
 		$elm_community$typed_svg$TypedSvg$Types$px(value));
 };
-var $author$project$Development$Tree01$drawLine = function (_v0) {
+var $author$project$TreeDiagramm$drawLine = function (_v0) {
 	var targetX = _v0.a;
 	var targetY = _v0.b;
 	return A2(
@@ -7348,7 +7392,18 @@ var $elm_community$typed_svg$TypedSvg$Attributes$fill = A2(
 	$elm$core$Basics$composeL,
 	$elm_community$typed_svg$TypedSvg$Core$attribute('fill'),
 	$elm_community$typed_svg$TypedSvg$TypesToStrings$paintToString);
+var $elm_community$typed_svg$TypedSvg$Attributes$fontFamily = function (families) {
+	if (!families.b) {
+		return A2($elm_community$typed_svg$TypedSvg$Core$attribute, 'font-family', 'inherit');
+	} else {
+		return A2(
+			$elm_community$typed_svg$TypedSvg$Core$attribute,
+			'font-family',
+			A2($elm$core$String$join, ', ', families));
+	}
+};
 var $elm_community$typed_svg$TypedSvg$g = $elm_community$typed_svg$TypedSvg$Core$node('g');
+var $avh4$elm_color$Color$purple = A4($avh4$elm_color$Color$RgbaSpace, 117 / 255, 80 / 255, 123 / 255, 1.0);
 var $elm_community$typed_svg$TypedSvg$Attributes$r = function (length) {
 	return A2(
 		$elm_community$typed_svg$TypedSvg$Core$attribute,
@@ -7458,8 +7513,7 @@ var $elm_community$typed_svg$TypedSvg$Attributes$transform = function (transform
 			' ',
 			A2($elm$core$List$map, $elm_community$typed_svg$TypedSvg$TypesToStrings$transformToString, transforms)));
 };
-var $avh4$elm_color$Color$white = A4($avh4$elm_color$Color$RgbaSpace, 255 / 255, 255 / 255, 255 / 255, 1.0);
-var $author$project$Development$Tree01$drawNode = function (n) {
+var $author$project$TreeDiagramm$drawNode = function (n) {
 	return A2(
 		$elm_community$typed_svg$TypedSvg$g,
 		_List_Nil,
@@ -7471,9 +7525,9 @@ var $author$project$Development$Tree01$drawNode = function (n) {
 					[
 						$elm_community$typed_svg$TypedSvg$Attributes$InPx$r(16),
 						$elm_community$typed_svg$TypedSvg$Attributes$stroke(
-						$elm_community$typed_svg$TypedSvg$Types$Paint($avh4$elm_color$Color$black)),
+						$elm_community$typed_svg$TypedSvg$Types$Paint($avh4$elm_color$Color$purple)),
 						$elm_community$typed_svg$TypedSvg$Attributes$fill(
-						$elm_community$typed_svg$TypedSvg$Types$Paint($avh4$elm_color$Color$white)),
+						$elm_community$typed_svg$TypedSvg$Types$Paint($avh4$elm_color$Color$purple)),
 						$elm_community$typed_svg$TypedSvg$Attributes$InPx$cx(0),
 						$elm_community$typed_svg$TypedSvg$Attributes$InPx$cy(0)
 					]),
@@ -7483,10 +7537,13 @@ var $author$project$Development$Tree01$drawNode = function (n) {
 				_List_fromArray(
 					[
 						$elm_community$typed_svg$TypedSvg$Attributes$textAnchor($elm_community$typed_svg$TypedSvg$Types$AnchorStart),
+						$elm_community$typed_svg$TypedSvg$Attributes$fontFamily(
+						_List_fromArray(
+							['Calibri', 'sans-serif'])),
 						$elm_community$typed_svg$TypedSvg$Attributes$transform(
 						_List_fromArray(
 							[
-								A2($elm_community$typed_svg$TypedSvg$Types$Translate, 5.5, 20.5),
+								A2($elm_community$typed_svg$TypedSvg$Types$Translate, 5.5, 22.5),
 								A3($elm_community$typed_svg$TypedSvg$Types$Rotate, 25.0, 0.0, 0.0)
 							]))
 					]),
@@ -7496,21 +7553,31 @@ var $author$project$Development$Tree01$drawNode = function (n) {
 					]))
 			]));
 };
-var $elm$html$Html$li = _VirtualDom_node('li');
-var $author$project$Development$Tree01$listeBbva = _List_fromArray(
+var $author$project$TreeDiagramm$filterAttribute = F3(
+	function (spieler, attribut, wort) {
+		return A2(
+			$elm$core$List$filter,
+			function (n) {
+				return _Utils_eq(
+					attribut(n),
+					wort);
+			},
+			spieler);
+	});
+var $elm$html$Html$input = _VirtualDom_node('input');
+var $author$project$TreeDiagramm$listeBbva = _List_fromArray(
 	['Real Madrid', 'FC Barcelona', 'Athletic Club de Bilbao', 'Atlético Madrid', 'Real Betis', 'CA Osasuna', 'RC Celta', 'Deportivo Alavés', 'Cádiz CF', 'Elche CF', 'Getafe CF', 'Sevilla FC', 'Valencia CF', 'Villarreal CF', 'Granada CF', 'Real Sociedad', 'Real Valladolid CF', 'SD Eibar', 'SD Huesca', 'Levante UD']);
-var $author$project$Development$Tree01$listeBundes = _List_fromArray(
+var $author$project$TreeDiagramm$listeBundes = _List_fromArray(
 	['VfL Wolfsburg', 'Bayer 04 Leverkusen', 'SC Freiburg', '1. FC Köln', '1. FSV Mainz 05', '1. FC Union Berlin', 'Hertha BSC', 'TSG 1899 Hoffenheim', 'RB Leipzig', 'Borussia Mönchengladbach', 'Eintracht Frankfurt', 'DSC Arminia Bielefeld', 'SV Werder Bremen', 'FC Schalke 04', 'FC Augsburg', 'Borussia Dortmund', 'FC Bayern München', 'VfB Stuttgart']);
-var $author$project$Development$Tree01$listePremier = _List_fromArray(
-	['Chelsea', 'West Ham United']);
-var $author$project$Development$Tree01$listeLigues = {lC: $author$project$Development$Tree01$listeCalcio, lP: $author$project$Development$Tree01$listePremier};
-var $author$project$Development$Tree01$TreeLayout = F5(
+var $author$project$TreeDiagramm$listePremier = _List_fromArray(
+	['Arsenal', 'Aston Villa', 'Brighton & Hove Albion', 'Burnley', 'Chelsea', 'Crystal Palace', 'Everton', 'Fulham', 'Leeds United', 'Leicester City', 'Liverpool', 'Manchester City', 'Manchester United', 'Sheffield United', 'Newcastle United', 'Southampton', 'Tottenham Hotspur', 'West Bromwich Albion', 'West Ham United', 'Wolverhampton Wanderers']);
+var $author$project$TreeDiagramm$TreeLayout = F5(
 	function (orientation, levelHeight, subtreeDistance, siblingDistance, padding) {
 		return {levelHeight: levelHeight, orientation: orientation, padding: padding, siblingDistance: siblingDistance, subtreeDistance: subtreeDistance};
 	});
 var $alex_tan$elm_tree_diagram$TreeDiagram$TopToBottom = {$: 'TopToBottom'};
 var $alex_tan$elm_tree_diagram$TreeDiagram$topToBottom = $alex_tan$elm_tree_diagram$TreeDiagram$TopToBottom;
-var $author$project$Development$Tree01$newTreelayout = A5($author$project$Development$Tree01$TreeLayout, $alex_tan$elm_tree_diagram$TreeDiagram$topToBottom, 250, 80, 80, 120);
+var $author$project$TreeDiagramm$newTreelayout = A5($author$project$TreeDiagramm$TreeLayout, $alex_tan$elm_tree_diagram$TreeDiagram$topToBottom, 150, 80, 70, 120);
 var $elm$virtual_dom$VirtualDom$Normal = function (a) {
 	return {$: 'Normal', a: a};
 };
@@ -7522,24 +7589,78 @@ var $elm$html$Html$Events$on = F2(
 			event,
 			$elm$virtual_dom$VirtualDom$Normal(decoder));
 	});
+var $elm$json$Json$Decode$field = _Json_decodeField;
+var $elm$json$Json$Decode$at = F2(
+	function (fields, decoder) {
+		return A3($elm$core$List$foldr, $elm$json$Json$Decode$field, decoder, fields);
+	});
+var $elm$json$Json$Decode$bool = _Json_decodeBool;
+var $elm$html$Html$Events$targetChecked = A2(
+	$elm$json$Json$Decode$at,
+	_List_fromArray(
+		['target', 'checked']),
+	$elm$json$Json$Decode$bool);
+var $elm$html$Html$Events$onCheck = function (tagger) {
+	return A2(
+		$elm$html$Html$Events$on,
+		'change',
+		A2($elm$json$Json$Decode$map, tagger, $elm$html$Html$Events$targetChecked));
+};
 var $elm$html$Html$Events$onClick = function (msg) {
 	return A2(
 		$elm$html$Html$Events$on,
 		'click',
 		$elm$json$Json$Decode$succeed(msg));
 };
-var $author$project$Development$Tree01$Liga = F2(
+var $elm$html$Html$Events$alwaysStop = function (x) {
+	return _Utils_Tuple2(x, true);
+};
+var $elm$virtual_dom$VirtualDom$MayStopPropagation = function (a) {
+	return {$: 'MayStopPropagation', a: a};
+};
+var $elm$html$Html$Events$stopPropagationOn = F2(
+	function (event, decoder) {
+		return A2(
+			$elm$virtual_dom$VirtualDom$on,
+			event,
+			$elm$virtual_dom$VirtualDom$MayStopPropagation(decoder));
+	});
+var $elm$json$Json$Decode$string = _Json_decodeString;
+var $elm$html$Html$Events$targetValue = A2(
+	$elm$json$Json$Decode$at,
+	_List_fromArray(
+		['target', 'value']),
+	$elm$json$Json$Decode$string);
+var $elm$html$Html$Events$onInput = function (tagger) {
+	return A2(
+		$elm$html$Html$Events$stopPropagationOn,
+		'input',
+		A2(
+			$elm$json$Json$Decode$map,
+			$elm$html$Html$Events$alwaysStop,
+			A2($elm$json$Json$Decode$map, tagger, $elm$html$Html$Events$targetValue)));
+};
+var $elm$json$Json$Encode$string = _Json_wrap;
+var $elm$html$Html$Attributes$stringProperty = F2(
+	function (key, string) {
+		return A2(
+			_VirtualDom_property,
+			key,
+			$elm$json$Json$Encode$string(string));
+	});
+var $elm$html$Html$Attributes$placeholder = $elm$html$Html$Attributes$stringProperty('placeholder');
+var $author$project$TreeDiagramm$Liga = F2(
 	function (name, children) {
 		return {children: children, name: name};
 	});
-var $author$project$Development$Tree01$Mannschaft = F4(
+var $author$project$TreeDiagramm$Mannschaft = F4(
 	function (name, children, liga, anzahl) {
 		return {anzahl: anzahl, children: children, liga: liga, name: name};
 	});
-var $author$project$Development$Tree01$clubCombiner = F3(
+var $author$project$TreeDiagramm$clubCombiner = F3(
 	function (x, y, z) {
 		return A4(
-			$author$project$Development$Tree01$Mannschaft,
+			$author$project$TreeDiagramm$Mannschaft,
 			x,
 			A2(
 				$elm$core$List$filter,
@@ -7556,10 +7677,10 @@ var $author$project$Development$Tree01$clubCombiner = F3(
 					},
 					y)));
 	});
-var $author$project$Development$Tree01$ligenCombiner = F3(
+var $author$project$TreeDiagramm$ligenCombiner = F3(
 	function (x, y, z) {
 		return A2(
-			$author$project$Development$Tree01$Liga,
+			$author$project$TreeDiagramm$Liga,
 			x,
 			A2(
 				$elm$core$List$filter,
@@ -7569,7 +7690,7 @@ var $author$project$Development$Tree01$ligenCombiner = F3(
 				A2(
 					$elm$core$List$map,
 					function (n) {
-						return A3($author$project$Development$Tree01$clubCombiner, n, z, x);
+						return A3($author$project$TreeDiagramm$clubCombiner, n, z, x);
 					},
 					y)));
 	});
@@ -7596,8 +7717,7 @@ var $elm$json$Json$Encode$object = function (pairs) {
 			_Json_emptyObject(_Utils_Tuple0),
 			pairs));
 };
-var $elm$json$Json$Encode$string = _Json_wrap;
-var $author$project$Development$Tree01$spielerEncoder = function (spieler) {
+var $author$project$TreeDiagramm$spielerEncoder = function (spieler) {
 	return $elm$json$Json$Encode$object(
 		_List_fromArray(
 			[
@@ -7609,7 +7729,7 @@ var $author$project$Development$Tree01$spielerEncoder = function (spieler) {
 				$elm$json$Json$Encode$string(spieler.club))
 			]));
 };
-var $author$project$Development$Tree01$mannschaftsEncoder = function (team) {
+var $author$project$TreeDiagramm$mannschaftsEncoder = function (team) {
 	return $elm$json$Json$Encode$object(
 		_List_fromArray(
 			[
@@ -7618,13 +7738,13 @@ var $author$project$Development$Tree01$mannschaftsEncoder = function (team) {
 				$elm$json$Json$Encode$string(team.name)),
 				_Utils_Tuple2(
 				'children',
-				A2($elm$json$Json$Encode$list, $author$project$Development$Tree01$spielerEncoder, team.children)),
+				A2($elm$json$Json$Encode$list, $author$project$TreeDiagramm$spielerEncoder, team.children)),
 				_Utils_Tuple2(
 				'anzahl',
 				$elm$json$Json$Encode$int(team.anzahl))
 			]));
 };
-var $author$project$Development$Tree01$ligenEncoder = function (liga) {
+var $author$project$TreeDiagramm$ligenEncoder = function (liga) {
 	return $elm$json$Json$Encode$object(
 		_List_fromArray(
 			[
@@ -7633,18 +7753,17 @@ var $author$project$Development$Tree01$ligenEncoder = function (liga) {
 				$elm$json$Json$Encode$string(liga.name)),
 				_Utils_Tuple2(
 				'children',
-				A2($elm$json$Json$Encode$list, $author$project$Development$Tree01$mannschaftsEncoder, liga.children))
+				A2($elm$json$Json$Encode$list, $author$project$TreeDiagramm$mannschaftsEncoder, liga.children))
 			]));
 };
-var $author$project$Development$Tree01$testEncoder = F3(
+var $author$project$TreeDiagramm$testEncoder = F3(
 	function (x, y, a) {
 		return A2(
 			$elm$json$Json$Encode$encode,
 			0,
-			$author$project$Development$Tree01$ligenEncoder(
-				A3($author$project$Development$Tree01$ligenCombiner, a, x, y)));
+			$author$project$TreeDiagramm$ligenEncoder(
+				A3($author$project$TreeDiagramm$ligenCombiner, a, x, y)));
 	});
-var $elm$json$Json$Decode$field = _Json_decodeField;
 var $elm$json$Json$Decode$int = _Json_decodeInt;
 var $elm$json$Json$Decode$andThen = _Json_andThen;
 var $elm$json$Json$Decode$lazy = function (thunk) {
@@ -7668,8 +7787,7 @@ var $alex_tan$elm_tree_diagram$TreeDiagram$node = F2(
 	function (val, children) {
 		return A2($alex_tan$elm_tree_diagram$TreeDiagram$Node, val, children);
 	});
-var $elm$json$Json$Decode$string = _Json_decodeString;
-function $author$project$Development$Tree01$cyclic$treeDecoder2() {
+function $author$project$TreeDiagramm$cyclic$treeDecoder2() {
 	return A4(
 		$elm$json$Json$Decode$map3,
 		F3(
@@ -7692,7 +7810,7 @@ function $author$project$Development$Tree01$cyclic$treeDecoder2() {
 						var a = anzahl.a;
 						return A2(
 							$alex_tan$elm_tree_diagram$TreeDiagram$node,
-							name + (', Anzahl Spieler im Team: ' + $elm$core$String$fromInt(a)),
+							name + (', Anzahl der Spieler: ' + $elm$core$String$fromInt(a)),
 							c);
 					}
 				}
@@ -7705,20 +7823,22 @@ function $author$project$Development$Tree01$cyclic$treeDecoder2() {
 				$elm$json$Json$Decode$list(
 					$elm$json$Json$Decode$lazy(
 						function (_v3) {
-							return $author$project$Development$Tree01$cyclic$treeDecoder2();
+							return $author$project$TreeDiagramm$cyclic$treeDecoder2();
 						})))),
 		$elm$json$Json$Decode$maybe(
 			A2($elm$json$Json$Decode$field, 'anzahl', $elm$json$Json$Decode$int)));
 }
 try {
-	var $author$project$Development$Tree01$treeDecoder2 = $author$project$Development$Tree01$cyclic$treeDecoder2();
-	$author$project$Development$Tree01$cyclic$treeDecoder2 = function () {
-		return $author$project$Development$Tree01$treeDecoder2;
+	var $author$project$TreeDiagramm$treeDecoder2 = $author$project$TreeDiagramm$cyclic$treeDecoder2();
+	$author$project$TreeDiagramm$cyclic$treeDecoder2 = function () {
+		return $author$project$TreeDiagramm$treeDecoder2;
 	};
 } catch ($) {
-	throw 'Some top-level definitions from `Development.Tree01` are causing infinite recursion:\n\n  ┌─────┐\n  │    treeDecoder2\n  └─────┘\n\nThese errors are very tricky, so read https://elm-lang.org/0.19.1/bad-recursion to learn how to fix it!';}
+	throw 'Some top-level definitions from `TreeDiagramm` are causing infinite recursion:\n\n  ┌─────┐\n  │    treeDecoder2\n  └─────┘\n\nThese errors are very tricky, so read https://elm-lang.org/0.19.1/bad-recursion to learn how to fix it!';}
+var $elm$html$Html$Attributes$type_ = $elm$html$Html$Attributes$stringProperty('type');
 var $elm$html$Html$ul = _VirtualDom_node('ul');
-var $author$project$Development$Tree01$view = function (model) {
+var $elm$html$Html$Attributes$value = $elm$html$Html$Attributes$stringProperty('value');
+var $author$project$TreeDiagramm$view = function (model) {
 	switch (model.$) {
 		case 'Failure':
 			return $elm$html$Html$text('I was unable to load the players.');
@@ -7726,9 +7846,15 @@ var $author$project$Development$Tree01$view = function (model) {
 			return $elm$html$Html$text('Loading Players...');
 		default:
 			var l = model.a;
-			var premierL = A3($author$project$Development$Tree01$testEncoder, l.liga, l.data, l.xName);
-			var calcioA = A3($author$project$Development$Tree01$testEncoder, $author$project$Development$Tree01$listeLigues.lC, l.data, l.xName);
-			var _v1 = A2($elm$json$Json$Decode$decodeString, $author$project$Development$Tree01$treeDecoder2, premierL);
+			var spielerfiltered = l.onOff ? A3(
+				$author$project$TreeDiagramm$filterAttribute,
+				l.data,
+				function ($) {
+					return $.position;
+				},
+				l.position) : l.data;
+			var daten = A3($author$project$TreeDiagramm$testEncoder, l.liga, spielerfiltered, l.xName);
+			var _v1 = A2($elm$json$Json$Decode$decodeString, $author$project$TreeDiagramm$treeDecoder2, daten);
 			if (_v1.$ === 'Ok') {
 				var schools = _v1.a;
 				return A2(
@@ -7741,63 +7867,107 @@ var $author$project$Development$Tree01$view = function (model) {
 							_List_Nil,
 							_List_fromArray(
 								[
+									$elm$html$Html$text('Im Testfeld kann nach Positionen der Spieler gefiltert werden.')
+								])),
+							A2(
+							$elm$html$Html$ul,
+							_List_Nil,
+							_List_fromArray(
+								[
+									$elm$html$Html$text('Um dies zu aktivieren muss die Box angeklickt werden.')
+								])),
+							A2(
+							$elm$html$Html$ul,
+							_List_Nil,
+							_List_fromArray(
+								[
 									A2(
-									$elm$html$Html$li,
-									_List_Nil,
+									$elm$html$Html$input,
 									_List_fromArray(
 										[
-											$elm$html$Html$text('Set X Value'),
-											A2(
-											$elm$html$Html$button,
-											_List_fromArray(
-												[
-													$elm$html$Html$Events$onClick(
-													$author$project$Development$Tree01$ChangeLiga(
-														_Utils_Tuple2('Calcio A', $author$project$Development$Tree01$listeCalcio)))
-												]),
-											_List_fromArray(
-												[
-													$elm$html$Html$text('Calcio A')
-												])),
-											A2(
-											$elm$html$Html$button,
-											_List_fromArray(
-												[
-													$elm$html$Html$Events$onClick(
-													$author$project$Development$Tree01$ChangeLiga(
-														_Utils_Tuple2('Premier League', $author$project$Development$Tree01$listePremier)))
-												]),
-											_List_fromArray(
-												[
-													$elm$html$Html$text('Premier League')
-												])),
-											A2(
-											$elm$html$Html$button,
-											_List_fromArray(
-												[
-													$elm$html$Html$Events$onClick(
-													$author$project$Development$Tree01$ChangeLiga(
-														_Utils_Tuple2('Bundesliga', $author$project$Development$Tree01$listeBundes)))
-												]),
-											_List_fromArray(
-												[
-													$elm$html$Html$text('Bundesliga')
-												])),
-											A2(
-											$elm$html$Html$button,
-											_List_fromArray(
-												[
-													$elm$html$Html$Events$onClick(
-													$author$project$Development$Tree01$ChangeLiga(
-														_Utils_Tuple2('La Liga', $author$project$Development$Tree01$listeBbva)))
-												]),
-											_List_fromArray(
-												[
-													$elm$html$Html$text('La Liga')
-												]))
+											$elm$html$Html$Attributes$placeholder('Select Position to filter'),
+											$elm$html$Html$Attributes$value(l.position),
+											$elm$html$Html$Events$onInput($author$project$TreeDiagramm$ChangePosition)
+										]),
+									_List_Nil),
+									A2(
+									$elm$html$Html$input,
+									_List_fromArray(
+										[
+											$elm$html$Html$Attributes$type_('checkbox'),
+											$elm$html$Html$Events$onCheck($author$project$TreeDiagramm$ActivateFilter)
+										]),
+									_List_Nil)
+								])),
+							A2(
+							$elm$html$Html$ul,
+							_List_Nil,
+							_List_fromArray(
+								[
+									$elm$html$Html$text('Positionen zur Auswahl: GK, CB, LB, RB, CDM, CM, CAM, LW, RW, LM, RM, CF, ST')
+								])),
+							A2(
+							$elm$html$Html$ul,
+							_List_Nil,
+							_List_fromArray(
+								[
+									$elm$html$Html$text('Wähle eine Liga aus:'),
+									A2(
+									$elm$html$Html$button,
+									_List_fromArray(
+										[
+											$elm$html$Html$Events$onClick(
+											$author$project$TreeDiagramm$ChangeLiga(
+												_Utils_Tuple2('Calcio A', $author$project$TreeDiagramm$listeCalcio)))
+										]),
+									_List_fromArray(
+										[
+											$elm$html$Html$text('Calcio A')
+										])),
+									A2(
+									$elm$html$Html$button,
+									_List_fromArray(
+										[
+											$elm$html$Html$Events$onClick(
+											$author$project$TreeDiagramm$ChangeLiga(
+												_Utils_Tuple2('Premier League', $author$project$TreeDiagramm$listePremier)))
+										]),
+									_List_fromArray(
+										[
+											$elm$html$Html$text('Premier League')
+										])),
+									A2(
+									$elm$html$Html$button,
+									_List_fromArray(
+										[
+											$elm$html$Html$Events$onClick(
+											$author$project$TreeDiagramm$ChangeLiga(
+												_Utils_Tuple2('Bundesliga', $author$project$TreeDiagramm$listeBundes)))
+										]),
+									_List_fromArray(
+										[
+											$elm$html$Html$text('Bundesliga')
+										])),
+									A2(
+									$elm$html$Html$button,
+									_List_fromArray(
+										[
+											$elm$html$Html$Events$onClick(
+											$author$project$TreeDiagramm$ChangeLiga(
+												_Utils_Tuple2('La Liga', $author$project$TreeDiagramm$listeBbva)))
+										]),
+									_List_fromArray(
+										[
+											$elm$html$Html$text('La Liga')
 										]))
 								])),
-							A4($alex_tan$elm_tree_diagram$TreeDiagram$Svg$draw, $author$project$Development$Tree01$newTreelayout, $author$project$Development$Tree01$drawNode, $author$project$Development$Tree01$drawLine, schools)
+							A2(
+							$elm$html$Html$ul,
+							_List_Nil,
+							_List_fromArray(
+								[
+									A4($alex_tan$elm_tree_diagram$TreeDiagram$Svg$draw, $author$project$TreeDiagramm$newTreelayout, $author$project$TreeDiagramm$drawNode, $author$project$TreeDiagramm$drawLine, schools)
+								]))
 						]));
 			} else {
 				var error = _v1.a;
@@ -7806,12 +7976,12 @@ var $author$project$Development$Tree01$view = function (model) {
 			}
 	}
 };
-var $author$project$Development$Tree01$main = $elm$browser$Browser$element(
-	{init: $author$project$Development$Tree01$init, subscriptions: $author$project$Development$Tree01$subscriptions, update: $author$project$Development$Tree01$update, view: $author$project$Development$Tree01$view});
-_Platform_export({'Development':{'Tree01':{'init':$author$project$Development$Tree01$main(
-	$elm$json$Json$Decode$succeed(_Utils_Tuple0))(0)}}});}(this));
+var $author$project$TreeDiagramm$main = $elm$browser$Browser$element(
+	{init: $author$project$TreeDiagramm$init, subscriptions: $author$project$TreeDiagramm$subscriptions, update: $author$project$TreeDiagramm$update, view: $author$project$TreeDiagramm$view});
+_Platform_export({'TreeDiagramm':{'init':$author$project$TreeDiagramm$main(
+	$elm$json$Json$Decode$succeed(_Utils_Tuple0))(0)}});}(this));
 
-  var app = Elm.Development.Tree01.init({ node: document.getElementById("elm") });
+  var app = Elm.TreeDiagramm.init({ node: document.getElementById("elm") });
 }
 catch (e)
 {

@@ -2,16 +2,21 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>Development.ParalleleKoordinaten</title>
+  <title>ParalleleKoordinaten</title>
   <style>body { padding: 0; margin: 0; }</style>
 </head>
 
 <body>
+
+        </h1>
         Herzlich Wilkommen zur Fifa Datenvisualisierung. Über die untenstehenden Links gelangen sie zu den jeweiligen Visualisierungen. <br>
         <br>
 		<a href="Scatterplot.html">Zum Scatterplot</a><br>
-        <a href="TreeDiagramm.html">Zur Baumhierarchie</a><br>
-        <a href="ParallelKoordinaten.html">Zu den Parallelen Koordinaten</a><br>
+		<a href="ScatterplotFast.html">Zum vereinfachten, schnellen Scatterplot</a><br>
+        <a href="BaumDiagramm.html">Zur Baumhierarchie</a><br>
+        <a href="ParalleleKoordinaten.html">Zu den Parallelen Koordinaten</a><br>
+
+
 <pre id="elm"></pre>
 
 <script>
@@ -5374,10 +5379,10 @@ var $elm$core$Task$perform = F2(
 				A2($elm$core$Task$map, toMessage, task)));
 	});
 var $elm$browser$Browser$element = _Browser_element;
-var $author$project$Development$ParalleleKoordinaten$GotText = function (a) {
+var $author$project$ParalleleKoordinaten$GotText = function (a) {
 	return {$: 'GotText', a: a};
 };
-var $author$project$Development$ParalleleKoordinaten$Loading = {$: 'Loading'};
+var $author$project$ParalleleKoordinaten$Loading = {$: 'Loading'};
 var $elm$http$Http$BadStatus_ = F2(
 	function (a, b) {
 		return {$: 'BadStatus_', a: a, b: b};
@@ -6157,24 +6162,24 @@ var $elm$http$Http$get = function (r) {
 	return $elm$http$Http$request(
 		{body: $elm$http$Http$emptyBody, expect: r.expect, headers: _List_Nil, method: 'GET', timeout: $elm$core$Maybe$Nothing, tracker: $elm$core$Maybe$Nothing, url: r.url});
 };
-var $author$project$Development$ParalleleKoordinaten$getRandomCatGif = function (x) {
+var $author$project$ParalleleKoordinaten$getRandomCatGif = function (x) {
 	return $elm$http$Http$get(
 		{
 			expect: $elm$http$Http$expectString(x),
 			url: 'https://raw.githubusercontent.com/JohannesLange/Visualisierung_FIFA19/master/data/pkData.csv'
 		});
 };
-var $author$project$Development$ParalleleKoordinaten$init = function (_v0) {
+var $author$project$ParalleleKoordinaten$init = function (_v0) {
 	return _Utils_Tuple2(
-		$author$project$Development$ParalleleKoordinaten$Loading,
-		$author$project$Development$ParalleleKoordinaten$getRandomCatGif($author$project$Development$ParalleleKoordinaten$GotText));
+		$author$project$ParalleleKoordinaten$Loading,
+		$author$project$ParalleleKoordinaten$getRandomCatGif($author$project$ParalleleKoordinaten$GotText));
 };
 var $elm$core$Platform$Sub$batch = _Platform_batch;
 var $elm$core$Platform$Sub$none = $elm$core$Platform$Sub$batch(_List_Nil);
-var $author$project$Development$ParalleleKoordinaten$subscriptions = function (model) {
+var $author$project$ParalleleKoordinaten$subscriptions = function (model) {
 	return $elm$core$Platform$Sub$none;
 };
-var $author$project$Development$ParalleleKoordinaten$Success = function (a) {
+var $author$project$ParalleleKoordinaten$Success = function (a) {
 	return {$: 'Success', a: a};
 };
 var $elm$core$Platform$Cmd$batch = _Platform_batch;
@@ -6296,7 +6301,7 @@ var $ericgj$elm_csv_decode$Csv$Decode$decodeCsv = F2(
 					A2($ericgj$elm_csv_decode$Csv$Decode$decodeRecord, decoder, headers),
 					records)));
 	});
-var $author$project$Development$ParalleleKoordinaten$Footballer = function (name) {
+var $author$project$ParalleleKoordinaten$Footballer = function (name) {
 	return function (age) {
 		return function (overall) {
 			return function (club) {
@@ -6447,9 +6452,9 @@ var $ericgj$elm_csv_decode$Csv$Decode$map = F2(
 			});
 	});
 var $elm$core$String$toFloat = _String_toFloat;
-var $author$project$Development$ParalleleKoordinaten$decodeFootballer = A2(
+var $author$project$ParalleleKoordinaten$decodeFootballer = A2(
 	$ericgj$elm_csv_decode$Csv$Decode$map,
-	$author$project$Development$ParalleleKoordinaten$Footballer,
+	$author$project$ParalleleKoordinaten$Footballer,
 	A2(
 		$ericgj$elm_csv_decode$Csv$Decode$andMap,
 		A2(
@@ -6717,26 +6722,26 @@ var $elm$core$Result$toMaybe = function (result) {
 		return $elm$core$Maybe$Nothing;
 	}
 };
-var $author$project$Development$ParalleleKoordinaten$csvString_to_data = function (csvRaw) {
+var $author$project$ParalleleKoordinaten$csvString_to_data = function (csvRaw) {
 	return A2(
 		$elm$core$Maybe$withDefault,
 		_List_Nil,
 		$elm$core$Result$toMaybe(
 			A2(
 				$ericgj$elm_csv_decode$Csv$Decode$decodeCsv,
-				$author$project$Development$ParalleleKoordinaten$decodeFootballer,
+				$author$project$ParalleleKoordinaten$decodeFootballer,
 				$lovasoa$elm_csv$Csv$parse(csvRaw))));
 };
-var $author$project$Development$ParalleleKoordinaten$spielerListe = function (liste1) {
+var $author$project$ParalleleKoordinaten$spielerListe = function (liste1) {
 	return $elm$core$List$concat(
 		A2(
 			$elm$core$List$map,
 			function (t) {
-				return $author$project$Development$ParalleleKoordinaten$csvString_to_data(t);
+				return $author$project$ParalleleKoordinaten$csvString_to_data(t);
 			},
 			liste1));
 };
-var $author$project$Development$ParalleleKoordinaten$update = F2(
+var $author$project$ParalleleKoordinaten$update = F2(
 	function (msg, model) {
 		switch (msg.$) {
 			case 'GotText':
@@ -6744,9 +6749,9 @@ var $author$project$Development$ParalleleKoordinaten$update = F2(
 				if (result.$ === 'Ok') {
 					var fullText = result.a;
 					return _Utils_Tuple2(
-						$author$project$Development$ParalleleKoordinaten$Success(
+						$author$project$ParalleleKoordinaten$Success(
 							{
-								data: $author$project$Development$ParalleleKoordinaten$spielerListe(
+								data: $author$project$ParalleleKoordinaten$spielerListe(
 									_List_fromArray(
 										[fullText])),
 								filterClub: 'Juventus',
@@ -6783,7 +6788,7 @@ var $author$project$Development$ParalleleKoordinaten$update = F2(
 				if (model.$ === 'Success') {
 					var m = model.a;
 					return _Utils_Tuple2(
-						$author$project$Development$ParalleleKoordinaten$Success(
+						$author$project$ParalleleKoordinaten$Success(
 							{data: m.data, filterClub: m.filterClub, filterNation: m.filterNation, filterPosition: m.filterPosition, firstFunc: x, firstName: a, fourthFunc: m.fourthFunc, fourthName: m.fourthName, onOff: m.onOff, onOff2: m.onOff2, onOff3: m.onOff3, secondFunc: m.secondFunc, secondName: m.secondName, thirdFunc: m.thirdFunc, thirdName: m.thirdName}),
 						$elm$core$Platform$Cmd$none);
 				} else {
@@ -6796,7 +6801,7 @@ var $author$project$Development$ParalleleKoordinaten$update = F2(
 				if (model.$ === 'Success') {
 					var m = model.a;
 					return _Utils_Tuple2(
-						$author$project$Development$ParalleleKoordinaten$Success(
+						$author$project$ParalleleKoordinaten$Success(
 							{data: m.data, filterClub: m.filterClub, filterNation: m.filterNation, filterPosition: m.filterPosition, firstFunc: m.firstFunc, firstName: m.firstName, fourthFunc: m.fourthFunc, fourthName: m.fourthName, onOff: m.onOff, onOff2: m.onOff2, onOff3: m.onOff3, secondFunc: y, secondName: a, thirdFunc: m.thirdFunc, thirdName: m.thirdName}),
 						$elm$core$Platform$Cmd$none);
 				} else {
@@ -6809,7 +6814,7 @@ var $author$project$Development$ParalleleKoordinaten$update = F2(
 				if (model.$ === 'Success') {
 					var m = model.a;
 					return _Utils_Tuple2(
-						$author$project$Development$ParalleleKoordinaten$Success(
+						$author$project$ParalleleKoordinaten$Success(
 							{data: m.data, filterClub: m.filterClub, filterNation: m.filterNation, filterPosition: m.filterPosition, firstFunc: m.firstFunc, firstName: m.firstName, fourthFunc: m.fourthFunc, fourthName: m.fourthName, onOff: m.onOff, onOff2: m.onOff2, onOff3: m.onOff3, secondFunc: m.secondFunc, secondName: m.secondName, thirdFunc: z, thirdName: a}),
 						$elm$core$Platform$Cmd$none);
 				} else {
@@ -6822,7 +6827,7 @@ var $author$project$Development$ParalleleKoordinaten$update = F2(
 				if (model.$ === 'Success') {
 					var m = model.a;
 					return _Utils_Tuple2(
-						$author$project$Development$ParalleleKoordinaten$Success(
+						$author$project$ParalleleKoordinaten$Success(
 							{data: m.data, filterClub: m.filterClub, filterNation: m.filterNation, filterPosition: m.filterPosition, firstFunc: m.firstFunc, firstName: m.firstName, fourthFunc: b, fourthName: a, onOff: m.onOff, onOff2: m.onOff2, onOff3: m.onOff3, secondFunc: m.secondFunc, secondName: m.secondName, thirdFunc: m.thirdFunc, thirdName: m.thirdName}),
 						$elm$core$Platform$Cmd$none);
 				} else {
@@ -6833,7 +6838,7 @@ var $author$project$Development$ParalleleKoordinaten$update = F2(
 				if (model.$ === 'Success') {
 					var m = model.a;
 					return _Utils_Tuple2(
-						$author$project$Development$ParalleleKoordinaten$Success(
+						$author$project$ParalleleKoordinaten$Success(
 							{data: m.data, filterClub: m.filterClub, filterNation: x, filterPosition: m.filterPosition, firstFunc: m.firstFunc, firstName: m.firstName, fourthFunc: m.fourthFunc, fourthName: m.fourthName, onOff: m.onOff, onOff2: m.onOff2, onOff3: m.onOff3, secondFunc: m.secondFunc, secondName: m.secondName, thirdFunc: m.thirdFunc, thirdName: m.thirdName}),
 						$elm$core$Platform$Cmd$none);
 				} else {
@@ -6844,7 +6849,7 @@ var $author$project$Development$ParalleleKoordinaten$update = F2(
 				if (model.$ === 'Success') {
 					var m = model.a;
 					return _Utils_Tuple2(
-						$author$project$Development$ParalleleKoordinaten$Success(
+						$author$project$ParalleleKoordinaten$Success(
 							{data: m.data, filterClub: m.filterClub, filterNation: m.filterNation, filterPosition: m.filterPosition, firstFunc: m.firstFunc, firstName: m.firstName, fourthFunc: m.fourthFunc, fourthName: m.fourthName, onOff: x, onOff2: m.onOff2, onOff3: m.onOff3, secondFunc: m.secondFunc, secondName: m.secondName, thirdFunc: m.thirdFunc, thirdName: m.thirdName}),
 						$elm$core$Platform$Cmd$none);
 				} else {
@@ -6855,7 +6860,7 @@ var $author$project$Development$ParalleleKoordinaten$update = F2(
 				if (model.$ === 'Success') {
 					var m = model.a;
 					return _Utils_Tuple2(
-						$author$project$Development$ParalleleKoordinaten$Success(
+						$author$project$ParalleleKoordinaten$Success(
 							{data: m.data, filterClub: x, filterNation: m.filterNation, filterPosition: m.filterPosition, firstFunc: m.firstFunc, firstName: m.firstName, fourthFunc: m.fourthFunc, fourthName: m.fourthName, onOff: m.onOff, onOff2: m.onOff2, onOff3: m.onOff3, secondFunc: m.secondFunc, secondName: m.secondName, thirdFunc: m.thirdFunc, thirdName: m.thirdName}),
 						$elm$core$Platform$Cmd$none);
 				} else {
@@ -6866,7 +6871,7 @@ var $author$project$Development$ParalleleKoordinaten$update = F2(
 				if (model.$ === 'Success') {
 					var m = model.a;
 					return _Utils_Tuple2(
-						$author$project$Development$ParalleleKoordinaten$Success(
+						$author$project$ParalleleKoordinaten$Success(
 							{data: m.data, filterClub: m.filterClub, filterNation: m.filterNation, filterPosition: m.filterPosition, firstFunc: m.firstFunc, firstName: m.firstName, fourthFunc: m.fourthFunc, fourthName: m.fourthName, onOff: m.onOff, onOff2: x, onOff3: m.onOff3, secondFunc: m.secondFunc, secondName: m.secondName, thirdFunc: m.thirdFunc, thirdName: m.thirdName}),
 						$elm$core$Platform$Cmd$none);
 				} else {
@@ -6877,7 +6882,7 @@ var $author$project$Development$ParalleleKoordinaten$update = F2(
 				if (model.$ === 'Success') {
 					var m = model.a;
 					return _Utils_Tuple2(
-						$author$project$Development$ParalleleKoordinaten$Success(
+						$author$project$ParalleleKoordinaten$Success(
 							{data: m.data, filterClub: m.filterClub, filterNation: m.filterNation, filterPosition: x, firstFunc: m.firstFunc, firstName: m.firstName, fourthFunc: m.fourthFunc, fourthName: m.fourthName, onOff: m.onOff, onOff2: m.onOff2, onOff3: m.onOff3, secondFunc: m.secondFunc, secondName: m.secondName, thirdFunc: m.thirdFunc, thirdName: m.thirdName}),
 						$elm$core$Platform$Cmd$none);
 				} else {
@@ -6888,7 +6893,7 @@ var $author$project$Development$ParalleleKoordinaten$update = F2(
 				if (model.$ === 'Success') {
 					var m = model.a;
 					return _Utils_Tuple2(
-						$author$project$Development$ParalleleKoordinaten$Success(
+						$author$project$ParalleleKoordinaten$Success(
 							{data: m.data, filterClub: m.filterClub, filterNation: m.filterNation, filterPosition: m.filterPosition, firstFunc: m.firstFunc, firstName: m.firstName, fourthFunc: m.fourthFunc, fourthName: m.fourthName, onOff: m.onOff, onOff2: m.onOff2, onOff3: x, secondFunc: m.secondFunc, secondName: m.secondName, thirdFunc: m.thirdFunc, thirdName: m.thirdName}),
 						$elm$core$Platform$Cmd$none);
 				} else {
@@ -6896,47 +6901,47 @@ var $author$project$Development$ParalleleKoordinaten$update = F2(
 				}
 		}
 	});
-var $author$project$Development$ParalleleKoordinaten$ActivateFilter = function (a) {
+var $author$project$ParalleleKoordinaten$ActivateFilter = function (a) {
 	return {$: 'ActivateFilter', a: a};
 };
-var $author$project$Development$ParalleleKoordinaten$ActivateFilter2 = function (a) {
+var $author$project$ParalleleKoordinaten$ActivateFilter2 = function (a) {
 	return {$: 'ActivateFilter2', a: a};
 };
-var $author$project$Development$ParalleleKoordinaten$ActivateFilter3 = function (a) {
+var $author$project$ParalleleKoordinaten$ActivateFilter3 = function (a) {
 	return {$: 'ActivateFilter3', a: a};
 };
-var $author$project$Development$ParalleleKoordinaten$Change1 = function (a) {
+var $author$project$ParalleleKoordinaten$Change1 = function (a) {
 	return {$: 'Change1', a: a};
 };
-var $author$project$Development$ParalleleKoordinaten$Change2 = function (a) {
+var $author$project$ParalleleKoordinaten$Change2 = function (a) {
 	return {$: 'Change2', a: a};
 };
-var $author$project$Development$ParalleleKoordinaten$Change3 = function (a) {
+var $author$project$ParalleleKoordinaten$Change3 = function (a) {
 	return {$: 'Change3', a: a};
 };
-var $author$project$Development$ParalleleKoordinaten$Change4 = function (a) {
+var $author$project$ParalleleKoordinaten$Change4 = function (a) {
 	return {$: 'Change4', a: a};
 };
-var $author$project$Development$ParalleleKoordinaten$ChangeClub = function (a) {
+var $author$project$ParalleleKoordinaten$ChangeClub = function (a) {
 	return {$: 'ChangeClub', a: a};
 };
-var $author$project$Development$ParalleleKoordinaten$ChangeNation = function (a) {
+var $author$project$ParalleleKoordinaten$ChangeNation = function (a) {
 	return {$: 'ChangeNation', a: a};
 };
-var $author$project$Development$ParalleleKoordinaten$ChangePosition = function (a) {
+var $author$project$ParalleleKoordinaten$ChangePosition = function (a) {
 	return {$: 'ChangePosition', a: a};
 };
-var $author$project$Development$ParalleleKoordinaten$MultiDimData = F2(
+var $author$project$ParalleleKoordinaten$MultiDimData = F2(
 	function (dimDescription, data) {
 		return {data: data, dimDescription: dimDescription};
 	});
-var $author$project$Development$ParalleleKoordinaten$MultiDimPoint = F2(
+var $author$project$ParalleleKoordinaten$MultiDimPoint = F2(
 	function (pointName, value) {
 		return {pointName: pointName, value: value};
 	});
 var $elm$html$Html$button = _VirtualDom_node('button');
 var $elm$html$Html$div = _VirtualDom_node('div');
-var $author$project$Development$ParalleleKoordinaten$filterAttribute = F3(
+var $author$project$ParalleleKoordinaten$filterAttribute = F3(
 	function (spieler, attribut, wort) {
 		return A2(
 			$elm$core$List$filter,
@@ -8551,7 +8556,7 @@ var $folkertdev$one_true_path_experiment$Curve$linear = function (points) {
 };
 var $gampleman$elm_visualization$Shape$linearCurve = $folkertdev$one_true_path_experiment$Curve$linear;
 var $elm$core$List$map3 = _List_map3;
-var $author$project$Development$ParalleleKoordinaten$padding = 60;
+var $author$project$ParalleleKoordinaten$padding = 60;
 var $elm_community$typed_svg$TypedSvg$Types$px = $elm_community$typed_svg$TypedSvg$Types$Px;
 var $avh4$elm_color$Color$RgbaSpace = F4(
 	function (a, b, c, d) {
@@ -8597,7 +8602,7 @@ var $gampleman$elm_visualization$Axis$TickCount = function (a) {
 	return {$: 'TickCount', a: a};
 };
 var $gampleman$elm_visualization$Axis$tickCount = $gampleman$elm_visualization$Axis$TickCount;
-var $author$project$Development$ParalleleKoordinaten$tickCount_ = 8;
+var $author$project$ParalleleKoordinaten$tickCount_ = 8;
 var $elm_community$typed_svg$TypedSvg$TypesToStrings$transformToString = function (xform) {
 	var tr = F2(
 		function (name, args) {
@@ -8729,7 +8734,7 @@ var $elm_community$typed_svg$TypedSvg$Attributes$viewBox = F4(
 					_List_fromArray(
 						[minX, minY, vWidth, vHeight]))));
 	});
-var $author$project$Development$ParalleleKoordinaten$defaultExtent = _Utils_Tuple2(0, 100);
+var $author$project$ParalleleKoordinaten$defaultExtent = _Utils_Tuple2(0, 100);
 var $gampleman$elm_visualization$Statistics$extentBy = F2(
 	function (fn, list) {
 		var min = F2(
@@ -8778,12 +8783,12 @@ var $gampleman$elm_visualization$Statistics$extentBy = F2(
 		}
 	});
 var $gampleman$elm_visualization$Statistics$extent = $gampleman$elm_visualization$Statistics$extentBy($elm$core$Basics$identity);
-var $author$project$Development$ParalleleKoordinaten$wideExtent = function (values) {
+var $author$project$ParalleleKoordinaten$wideExtent = function (values) {
 	var closeExtent = A2(
 		$elm$core$Maybe$withDefault,
-		$author$project$Development$ParalleleKoordinaten$defaultExtent,
+		$author$project$ParalleleKoordinaten$defaultExtent,
 		$gampleman$elm_visualization$Statistics$extent(values));
-	var extension = (closeExtent.b - closeExtent.a) / (2 * $author$project$Development$ParalleleKoordinaten$tickCount_);
+	var extension = (closeExtent.b - closeExtent.a) / (2 * $author$project$ParalleleKoordinaten$tickCount_);
 	return _Utils_Tuple2(
 		A2($elm$core$Basics$max, 0, closeExtent.a - extension),
 		closeExtent.b + extension);
@@ -8814,7 +8819,7 @@ var $elm_community$typed_svg$TypedSvg$Attributes$InPx$y = function (value) {
 	return $elm_community$typed_svg$TypedSvg$Attributes$y(
 		$elm_community$typed_svg$TypedSvg$Types$px(value));
 };
-var $author$project$Development$ParalleleKoordinaten$parallelCoodinatesPlot = F3(
+var $author$project$ParalleleKoordinaten$parallelCoodinatesPlot = F3(
 	function (w, ar, model) {
 		var xScale = A2(
 			$gampleman$elm_visualization$Scale$linear,
@@ -8829,7 +8834,7 @@ var $author$project$Development$ParalleleKoordinaten$parallelCoodinatesPlot = F3
 					return $.value;
 				},
 				$elm$core$List$concat(model.data)));
-		var listWideExtent = A2($elm$core$List$map, $author$project$Development$ParalleleKoordinaten$wideExtent, listTransformieren);
+		var listWideExtent = A2($elm$core$List$map, $author$project$ParalleleKoordinaten$wideExtent, listTransformieren);
 		var h = w / ar;
 		var listScale = A2(
 			$elm$core$List$map,
@@ -8841,14 +8846,14 @@ var $author$project$Development$ParalleleKoordinaten$parallelCoodinatesPlot = F3
 			$gampleman$elm_visualization$Axis$left(
 				_List_fromArray(
 					[
-						$gampleman$elm_visualization$Axis$tickCount($author$project$Development$ParalleleKoordinaten$tickCount_)
+						$gampleman$elm_visualization$Axis$tickCount($author$project$ParalleleKoordinaten$tickCount_)
 					])),
 			listScale);
 		return A2(
 			$elm_community$typed_svg$TypedSvg$svg,
 			_List_fromArray(
 				[
-					A4($elm_community$typed_svg$TypedSvg$Attributes$viewBox, 0, 0, w + (2 * $author$project$Development$ParalleleKoordinaten$padding), h + (2 * $author$project$Development$ParalleleKoordinaten$padding)),
+					A4($elm_community$typed_svg$TypedSvg$Attributes$viewBox, 0, 0, w + (2 * $author$project$ParalleleKoordinaten$padding), h + (2 * $author$project$ParalleleKoordinaten$padding)),
 					$elm_community$typed_svg$TypedSvg$Attributes$width(
 					$elm_community$typed_svg$TypedSvg$Types$Percent(70)),
 					$elm_community$typed_svg$TypedSvg$Attributes$height(
@@ -8862,7 +8867,7 @@ var $author$project$Development$ParalleleKoordinaten$parallelCoodinatesPlot = F3
 						_List_Nil,
 						_List_fromArray(
 							[
-								$elm_community$typed_svg$TypedSvg$Core$text('\r\n            .parallelPoint { stroke: rgba(1, 0, 0,0.2);}\r\n		    .parallelPoint:hover {stroke: rgb(214, 118, 78); stroke-width: 2;} \r\n            .parallelPoint text { display: none; }\r\n            .parallelPoint:hover text { display: inline; stroke: rgb(0, 0, 0); stroke-width: 1; font-size: small;}  \r\n            ')
+								$elm_community$typed_svg$TypedSvg$Core$text('\r\n            .parallelPoint { stroke: rgba(1, 0, 0,0.2);}\r\n		    .parallelPoint:hover {stroke: rgb(214, 118, 78); stroke-width: 2;} \r\n            .parallelPoint text { display: none; }\r\n            .parallelPoint:hover text { display: inline; stroke: rgb(0, 0, 0); stroke-width: 1; font-size: small; font-family: sans-serif;}  \r\n            .parallelAxis text {stroke: rgb(0,0,0)}\r\n            ')
 							])),
 						A2(
 						$elm_community$typed_svg$TypedSvg$g,
@@ -8881,7 +8886,7 @@ var $author$project$Development$ParalleleKoordinaten$parallelCoodinatesPlot = F3
 										$elm_community$typed_svg$TypedSvg$Attributes$transform(
 										_List_fromArray(
 											[
-												A2($elm_community$typed_svg$TypedSvg$Types$Translate, $author$project$Development$ParalleleKoordinaten$padding - 1, $author$project$Development$ParalleleKoordinaten$padding)
+												A2($elm_community$typed_svg$TypedSvg$Types$Translate, $author$project$ParalleleKoordinaten$padding - 1, $author$project$ParalleleKoordinaten$padding)
 											]))
 									]),
 								A2(
@@ -8912,7 +8917,7 @@ var $author$project$Development$ParalleleKoordinaten$parallelCoodinatesPlot = F3
 										$elm_community$typed_svg$TypedSvg$Attributes$transform(
 										_List_fromArray(
 											[
-												A2($elm_community$typed_svg$TypedSvg$Types$Translate, $author$project$Development$ParalleleKoordinaten$padding - 1, 0)
+												A2($elm_community$typed_svg$TypedSvg$Types$Translate, $author$project$ParalleleKoordinaten$padding - 1, 0)
 											]))
 									]),
 								A2(
@@ -8930,7 +8935,7 @@ var $author$project$Development$ParalleleKoordinaten$parallelCoodinatesPlot = F3
 														$elm_community$typed_svg$TypedSvg$Types$Px(10)),
 														$elm_community$typed_svg$TypedSvg$Attributes$InPx$x(
 														A2($gampleman$elm_visualization$Scale$convert, xScale, i + 1)),
-														$elm_community$typed_svg$TypedSvg$Attributes$InPx$y(($author$project$Development$ParalleleKoordinaten$padding * 7) / 8),
+														$elm_community$typed_svg$TypedSvg$Attributes$InPx$y(($author$project$ParalleleKoordinaten$padding * 7) / 8),
 														$elm_community$typed_svg$TypedSvg$Attributes$textAnchor($elm_community$typed_svg$TypedSvg$Types$AnchorMiddle)
 													]),
 												_List_fromArray(
@@ -8979,7 +8984,7 @@ var $author$project$Development$ParalleleKoordinaten$parallelCoodinatesPlot = F3
 											[
 												$elm_community$typed_svg$TypedSvg$Attributes$stroke(
 												$elm_community$typed_svg$TypedSvg$Types$Paint(
-													A4($avh4$elm_color$Color$rgba, 0, 0, 0, 0.8))),
+													A4($avh4$elm_color$Color$rgba, 0, 0, 0, 0.2))),
 												$elm_community$typed_svg$TypedSvg$Attributes$strokeWidth(
 												$elm_community$typed_svg$TypedSvg$Types$Px(0.5)),
 												$elm_community$typed_svg$TypedSvg$Attributes$fill($elm_community$typed_svg$TypedSvg$Types$PaintNone),
@@ -9024,7 +9029,7 @@ var $author$project$Development$ParalleleKoordinaten$parallelCoodinatesPlot = F3
 										$elm_community$typed_svg$TypedSvg$Attributes$transform(
 										_List_fromArray(
 											[
-												A2($elm_community$typed_svg$TypedSvg$Types$Translate, $author$project$Development$ParalleleKoordinaten$padding - 1, $author$project$Development$ParalleleKoordinaten$padding)
+												A2($elm_community$typed_svg$TypedSvg$Types$Translate, $author$project$ParalleleKoordinaten$padding - 1, $author$project$ParalleleKoordinaten$padding)
 											]))
 									]),
 								A2(
@@ -9050,7 +9055,7 @@ var $elm$html$Html$text = $elm$virtual_dom$VirtualDom$text;
 var $elm$html$Html$Attributes$type_ = $elm$html$Html$Attributes$stringProperty('type');
 var $elm$html$Html$ul = _VirtualDom_node('ul');
 var $elm$html$Html$Attributes$value = $elm$html$Html$Attributes$stringProperty('value');
-var $author$project$Development$ParalleleKoordinaten$view = function (model) {
+var $author$project$ParalleleKoordinaten$view = function (model) {
 	switch (model.$) {
 		case 'Failure':
 			return $elm$html$Html$text('I was unable to load the players.');
@@ -9059,49 +9064,49 @@ var $author$project$Development$ParalleleKoordinaten$view = function (model) {
 		default:
 			var l = model.a;
 			var spielerP = A3(
-				$author$project$Development$ParalleleKoordinaten$filterAttribute,
+				$author$project$ParalleleKoordinaten$filterAttribute,
 				l.data,
 				function ($) {
 					return $.position;
 				},
 				l.filterPosition);
 			var spielerN = A3(
-				$author$project$Development$ParalleleKoordinaten$filterAttribute,
+				$author$project$ParalleleKoordinaten$filterAttribute,
 				l.data,
 				function ($) {
 					return $.nationality;
 				},
 				l.filterNation);
 			var spielerNC = A3(
-				$author$project$Development$ParalleleKoordinaten$filterAttribute,
+				$author$project$ParalleleKoordinaten$filterAttribute,
 				spielerN,
 				function ($) {
 					return $.club;
 				},
 				l.filterClub);
 			var spielerNCP = A3(
-				$author$project$Development$ParalleleKoordinaten$filterAttribute,
+				$author$project$ParalleleKoordinaten$filterAttribute,
 				spielerNC,
 				function ($) {
 					return $.position;
 				},
 				l.filterPosition);
 			var spielerNP = A3(
-				$author$project$Development$ParalleleKoordinaten$filterAttribute,
+				$author$project$ParalleleKoordinaten$filterAttribute,
 				spielerN,
 				function ($) {
 					return $.position;
 				},
 				l.filterPosition);
 			var spielerC = A3(
-				$author$project$Development$ParalleleKoordinaten$filterAttribute,
+				$author$project$ParalleleKoordinaten$filterAttribute,
 				l.data,
 				function ($) {
 					return $.club;
 				},
 				l.filterClub);
 			var spielerCP = A3(
-				$author$project$Development$ParalleleKoordinaten$filterAttribute,
+				$author$project$ParalleleKoordinaten$filterAttribute,
 				spielerC,
 				function ($) {
 					return $.position;
@@ -9118,7 +9123,7 @@ var $author$project$Development$ParalleleKoordinaten$view = function (model) {
 											return function (h) {
 												return function (i) {
 													return A2(
-														$author$project$Development$ParalleleKoordinaten$MultiDimData,
+														$author$project$ParalleleKoordinaten$MultiDimData,
 														_List_fromArray(
 															[f, g, h, i]),
 														_List_fromArray(
@@ -9127,7 +9132,7 @@ var $author$project$Development$ParalleleKoordinaten$view = function (model) {
 																$elm$core$List$map,
 																function (x) {
 																	return A2(
-																		$author$project$Development$ParalleleKoordinaten$MultiDimPoint,
+																		$author$project$ParalleleKoordinaten$MultiDimPoint,
 																		e(x),
 																		_List_fromArray(
 																			[
@@ -9209,7 +9214,7 @@ var $author$project$Development$ParalleleKoordinaten$view = function (model) {
 									[
 										$elm$html$Html$Attributes$placeholder('Select Nation to Filter'),
 										$elm$html$Html$Attributes$value(l.filterNation),
-										$elm$html$Html$Events$onInput($author$project$Development$ParalleleKoordinaten$ChangeNation)
+										$elm$html$Html$Events$onInput($author$project$ParalleleKoordinaten$ChangeNation)
 									]),
 								_List_Nil),
 								A2(
@@ -9217,7 +9222,7 @@ var $author$project$Development$ParalleleKoordinaten$view = function (model) {
 								_List_fromArray(
 									[
 										$elm$html$Html$Attributes$type_('checkbox'),
-										$elm$html$Html$Events$onCheck($author$project$Development$ParalleleKoordinaten$ActivateFilter)
+										$elm$html$Html$Events$onCheck($author$project$ParalleleKoordinaten$ActivateFilter)
 									]),
 								_List_Nil)
 							])),
@@ -9233,7 +9238,7 @@ var $author$project$Development$ParalleleKoordinaten$view = function (model) {
 									[
 										$elm$html$Html$Attributes$placeholder('Select Club to Filter'),
 										$elm$html$Html$Attributes$value(l.filterClub),
-										$elm$html$Html$Events$onInput($author$project$Development$ParalleleKoordinaten$ChangeClub)
+										$elm$html$Html$Events$onInput($author$project$ParalleleKoordinaten$ChangeClub)
 									]),
 								_List_Nil),
 								A2(
@@ -9241,7 +9246,7 @@ var $author$project$Development$ParalleleKoordinaten$view = function (model) {
 								_List_fromArray(
 									[
 										$elm$html$Html$Attributes$type_('checkbox'),
-										$elm$html$Html$Events$onCheck($author$project$Development$ParalleleKoordinaten$ActivateFilter2)
+										$elm$html$Html$Events$onCheck($author$project$ParalleleKoordinaten$ActivateFilter2)
 									]),
 								_List_Nil)
 							])),
@@ -9257,7 +9262,7 @@ var $author$project$Development$ParalleleKoordinaten$view = function (model) {
 									[
 										$elm$html$Html$Attributes$placeholder('Select Position to Filter'),
 										$elm$html$Html$Attributes$value(l.filterPosition),
-										$elm$html$Html$Events$onInput($author$project$Development$ParalleleKoordinaten$ChangePosition)
+										$elm$html$Html$Events$onInput($author$project$ParalleleKoordinaten$ChangePosition)
 									]),
 								_List_Nil),
 								A2(
@@ -9265,7 +9270,7 @@ var $author$project$Development$ParalleleKoordinaten$view = function (model) {
 								_List_fromArray(
 									[
 										$elm$html$Html$Attributes$type_('checkbox'),
-										$elm$html$Html$Events$onCheck($author$project$Development$ParalleleKoordinaten$ActivateFilter3)
+										$elm$html$Html$Events$onCheck($author$project$ParalleleKoordinaten$ActivateFilter3)
 									]),
 								_List_Nil)
 							])),
@@ -9285,7 +9290,7 @@ var $author$project$Development$ParalleleKoordinaten$view = function (model) {
 										_List_fromArray(
 											[
 												$elm$html$Html$Events$onClick(
-												$author$project$Development$ParalleleKoordinaten$Change1(
+												$author$project$ParalleleKoordinaten$Change1(
 													_Utils_Tuple2(
 														function ($) {
 															return $.overall;
@@ -9301,7 +9306,7 @@ var $author$project$Development$ParalleleKoordinaten$view = function (model) {
 										_List_fromArray(
 											[
 												$elm$html$Html$Events$onClick(
-												$author$project$Development$ParalleleKoordinaten$Change1(
+												$author$project$ParalleleKoordinaten$Change1(
 													_Utils_Tuple2(
 														function ($) {
 															return $.potential;
@@ -9317,7 +9322,7 @@ var $author$project$Development$ParalleleKoordinaten$view = function (model) {
 										_List_fromArray(
 											[
 												$elm$html$Html$Events$onClick(
-												$author$project$Development$ParalleleKoordinaten$Change1(
+												$author$project$ParalleleKoordinaten$Change1(
 													_Utils_Tuple2(
 														function ($) {
 															return $.age;
@@ -9333,7 +9338,7 @@ var $author$project$Development$ParalleleKoordinaten$view = function (model) {
 										_List_fromArray(
 											[
 												$elm$html$Html$Events$onClick(
-												$author$project$Development$ParalleleKoordinaten$Change1(
+												$author$project$ParalleleKoordinaten$Change1(
 													_Utils_Tuple2(
 														function ($) {
 															return $.pace;
@@ -9349,7 +9354,7 @@ var $author$project$Development$ParalleleKoordinaten$view = function (model) {
 										_List_fromArray(
 											[
 												$elm$html$Html$Events$onClick(
-												$author$project$Development$ParalleleKoordinaten$Change1(
+												$author$project$ParalleleKoordinaten$Change1(
 													_Utils_Tuple2(
 														function ($) {
 															return $.shooting;
@@ -9365,7 +9370,7 @@ var $author$project$Development$ParalleleKoordinaten$view = function (model) {
 										_List_fromArray(
 											[
 												$elm$html$Html$Events$onClick(
-												$author$project$Development$ParalleleKoordinaten$Change1(
+												$author$project$ParalleleKoordinaten$Change1(
 													_Utils_Tuple2(
 														function ($) {
 															return $.passing;
@@ -9381,7 +9386,7 @@ var $author$project$Development$ParalleleKoordinaten$view = function (model) {
 										_List_fromArray(
 											[
 												$elm$html$Html$Events$onClick(
-												$author$project$Development$ParalleleKoordinaten$Change1(
+												$author$project$ParalleleKoordinaten$Change1(
 													_Utils_Tuple2(
 														function ($) {
 															return $.dribbling;
@@ -9397,7 +9402,7 @@ var $author$project$Development$ParalleleKoordinaten$view = function (model) {
 										_List_fromArray(
 											[
 												$elm$html$Html$Events$onClick(
-												$author$project$Development$ParalleleKoordinaten$Change1(
+												$author$project$ParalleleKoordinaten$Change1(
 													_Utils_Tuple2(
 														function ($) {
 															return $.defending;
@@ -9413,7 +9418,7 @@ var $author$project$Development$ParalleleKoordinaten$view = function (model) {
 										_List_fromArray(
 											[
 												$elm$html$Html$Events$onClick(
-												$author$project$Development$ParalleleKoordinaten$Change1(
+												$author$project$ParalleleKoordinaten$Change1(
 													_Utils_Tuple2(
 														function ($) {
 															return $.physical;
@@ -9442,7 +9447,7 @@ var $author$project$Development$ParalleleKoordinaten$view = function (model) {
 										_List_fromArray(
 											[
 												$elm$html$Html$Events$onClick(
-												$author$project$Development$ParalleleKoordinaten$Change2(
+												$author$project$ParalleleKoordinaten$Change2(
 													_Utils_Tuple2(
 														function ($) {
 															return $.overall;
@@ -9458,7 +9463,7 @@ var $author$project$Development$ParalleleKoordinaten$view = function (model) {
 										_List_fromArray(
 											[
 												$elm$html$Html$Events$onClick(
-												$author$project$Development$ParalleleKoordinaten$Change2(
+												$author$project$ParalleleKoordinaten$Change2(
 													_Utils_Tuple2(
 														function ($) {
 															return $.potential;
@@ -9474,7 +9479,7 @@ var $author$project$Development$ParalleleKoordinaten$view = function (model) {
 										_List_fromArray(
 											[
 												$elm$html$Html$Events$onClick(
-												$author$project$Development$ParalleleKoordinaten$Change2(
+												$author$project$ParalleleKoordinaten$Change2(
 													_Utils_Tuple2(
 														function ($) {
 															return $.age;
@@ -9490,7 +9495,7 @@ var $author$project$Development$ParalleleKoordinaten$view = function (model) {
 										_List_fromArray(
 											[
 												$elm$html$Html$Events$onClick(
-												$author$project$Development$ParalleleKoordinaten$Change2(
+												$author$project$ParalleleKoordinaten$Change2(
 													_Utils_Tuple2(
 														function ($) {
 															return $.pace;
@@ -9506,7 +9511,7 @@ var $author$project$Development$ParalleleKoordinaten$view = function (model) {
 										_List_fromArray(
 											[
 												$elm$html$Html$Events$onClick(
-												$author$project$Development$ParalleleKoordinaten$Change2(
+												$author$project$ParalleleKoordinaten$Change2(
 													_Utils_Tuple2(
 														function ($) {
 															return $.shooting;
@@ -9522,7 +9527,7 @@ var $author$project$Development$ParalleleKoordinaten$view = function (model) {
 										_List_fromArray(
 											[
 												$elm$html$Html$Events$onClick(
-												$author$project$Development$ParalleleKoordinaten$Change2(
+												$author$project$ParalleleKoordinaten$Change2(
 													_Utils_Tuple2(
 														function ($) {
 															return $.passing;
@@ -9538,7 +9543,7 @@ var $author$project$Development$ParalleleKoordinaten$view = function (model) {
 										_List_fromArray(
 											[
 												$elm$html$Html$Events$onClick(
-												$author$project$Development$ParalleleKoordinaten$Change2(
+												$author$project$ParalleleKoordinaten$Change2(
 													_Utils_Tuple2(
 														function ($) {
 															return $.dribbling;
@@ -9554,7 +9559,7 @@ var $author$project$Development$ParalleleKoordinaten$view = function (model) {
 										_List_fromArray(
 											[
 												$elm$html$Html$Events$onClick(
-												$author$project$Development$ParalleleKoordinaten$Change2(
+												$author$project$ParalleleKoordinaten$Change2(
 													_Utils_Tuple2(
 														function ($) {
 															return $.defending;
@@ -9570,7 +9575,7 @@ var $author$project$Development$ParalleleKoordinaten$view = function (model) {
 										_List_fromArray(
 											[
 												$elm$html$Html$Events$onClick(
-												$author$project$Development$ParalleleKoordinaten$Change2(
+												$author$project$ParalleleKoordinaten$Change2(
 													_Utils_Tuple2(
 														function ($) {
 															return $.physical;
@@ -9599,7 +9604,7 @@ var $author$project$Development$ParalleleKoordinaten$view = function (model) {
 										_List_fromArray(
 											[
 												$elm$html$Html$Events$onClick(
-												$author$project$Development$ParalleleKoordinaten$Change3(
+												$author$project$ParalleleKoordinaten$Change3(
 													_Utils_Tuple2(
 														function ($) {
 															return $.overall;
@@ -9615,7 +9620,7 @@ var $author$project$Development$ParalleleKoordinaten$view = function (model) {
 										_List_fromArray(
 											[
 												$elm$html$Html$Events$onClick(
-												$author$project$Development$ParalleleKoordinaten$Change3(
+												$author$project$ParalleleKoordinaten$Change3(
 													_Utils_Tuple2(
 														function ($) {
 															return $.potential;
@@ -9631,7 +9636,7 @@ var $author$project$Development$ParalleleKoordinaten$view = function (model) {
 										_List_fromArray(
 											[
 												$elm$html$Html$Events$onClick(
-												$author$project$Development$ParalleleKoordinaten$Change3(
+												$author$project$ParalleleKoordinaten$Change3(
 													_Utils_Tuple2(
 														function ($) {
 															return $.age;
@@ -9647,7 +9652,7 @@ var $author$project$Development$ParalleleKoordinaten$view = function (model) {
 										_List_fromArray(
 											[
 												$elm$html$Html$Events$onClick(
-												$author$project$Development$ParalleleKoordinaten$Change3(
+												$author$project$ParalleleKoordinaten$Change3(
 													_Utils_Tuple2(
 														function ($) {
 															return $.pace;
@@ -9663,7 +9668,7 @@ var $author$project$Development$ParalleleKoordinaten$view = function (model) {
 										_List_fromArray(
 											[
 												$elm$html$Html$Events$onClick(
-												$author$project$Development$ParalleleKoordinaten$Change3(
+												$author$project$ParalleleKoordinaten$Change3(
 													_Utils_Tuple2(
 														function ($) {
 															return $.shooting;
@@ -9679,7 +9684,7 @@ var $author$project$Development$ParalleleKoordinaten$view = function (model) {
 										_List_fromArray(
 											[
 												$elm$html$Html$Events$onClick(
-												$author$project$Development$ParalleleKoordinaten$Change3(
+												$author$project$ParalleleKoordinaten$Change3(
 													_Utils_Tuple2(
 														function ($) {
 															return $.passing;
@@ -9695,7 +9700,7 @@ var $author$project$Development$ParalleleKoordinaten$view = function (model) {
 										_List_fromArray(
 											[
 												$elm$html$Html$Events$onClick(
-												$author$project$Development$ParalleleKoordinaten$Change3(
+												$author$project$ParalleleKoordinaten$Change3(
 													_Utils_Tuple2(
 														function ($) {
 															return $.dribbling;
@@ -9711,7 +9716,7 @@ var $author$project$Development$ParalleleKoordinaten$view = function (model) {
 										_List_fromArray(
 											[
 												$elm$html$Html$Events$onClick(
-												$author$project$Development$ParalleleKoordinaten$Change3(
+												$author$project$ParalleleKoordinaten$Change3(
 													_Utils_Tuple2(
 														function ($) {
 															return $.defending;
@@ -9727,7 +9732,7 @@ var $author$project$Development$ParalleleKoordinaten$view = function (model) {
 										_List_fromArray(
 											[
 												$elm$html$Html$Events$onClick(
-												$author$project$Development$ParalleleKoordinaten$Change3(
+												$author$project$ParalleleKoordinaten$Change3(
 													_Utils_Tuple2(
 														function ($) {
 															return $.physical;
@@ -9756,7 +9761,7 @@ var $author$project$Development$ParalleleKoordinaten$view = function (model) {
 										_List_fromArray(
 											[
 												$elm$html$Html$Events$onClick(
-												$author$project$Development$ParalleleKoordinaten$Change4(
+												$author$project$ParalleleKoordinaten$Change4(
 													_Utils_Tuple2(
 														function ($) {
 															return $.overall;
@@ -9772,7 +9777,7 @@ var $author$project$Development$ParalleleKoordinaten$view = function (model) {
 										_List_fromArray(
 											[
 												$elm$html$Html$Events$onClick(
-												$author$project$Development$ParalleleKoordinaten$Change4(
+												$author$project$ParalleleKoordinaten$Change4(
 													_Utils_Tuple2(
 														function ($) {
 															return $.potential;
@@ -9788,7 +9793,7 @@ var $author$project$Development$ParalleleKoordinaten$view = function (model) {
 										_List_fromArray(
 											[
 												$elm$html$Html$Events$onClick(
-												$author$project$Development$ParalleleKoordinaten$Change4(
+												$author$project$ParalleleKoordinaten$Change4(
 													_Utils_Tuple2(
 														function ($) {
 															return $.age;
@@ -9804,7 +9809,7 @@ var $author$project$Development$ParalleleKoordinaten$view = function (model) {
 										_List_fromArray(
 											[
 												$elm$html$Html$Events$onClick(
-												$author$project$Development$ParalleleKoordinaten$Change4(
+												$author$project$ParalleleKoordinaten$Change4(
 													_Utils_Tuple2(
 														function ($) {
 															return $.pace;
@@ -9820,7 +9825,7 @@ var $author$project$Development$ParalleleKoordinaten$view = function (model) {
 										_List_fromArray(
 											[
 												$elm$html$Html$Events$onClick(
-												$author$project$Development$ParalleleKoordinaten$Change4(
+												$author$project$ParalleleKoordinaten$Change4(
 													_Utils_Tuple2(
 														function ($) {
 															return $.shooting;
@@ -9836,7 +9841,7 @@ var $author$project$Development$ParalleleKoordinaten$view = function (model) {
 										_List_fromArray(
 											[
 												$elm$html$Html$Events$onClick(
-												$author$project$Development$ParalleleKoordinaten$Change4(
+												$author$project$ParalleleKoordinaten$Change4(
 													_Utils_Tuple2(
 														function ($) {
 															return $.passing;
@@ -9852,7 +9857,7 @@ var $author$project$Development$ParalleleKoordinaten$view = function (model) {
 										_List_fromArray(
 											[
 												$elm$html$Html$Events$onClick(
-												$author$project$Development$ParalleleKoordinaten$Change4(
+												$author$project$ParalleleKoordinaten$Change4(
 													_Utils_Tuple2(
 														function ($) {
 															return $.dribbling;
@@ -9868,7 +9873,7 @@ var $author$project$Development$ParalleleKoordinaten$view = function (model) {
 										_List_fromArray(
 											[
 												$elm$html$Html$Events$onClick(
-												$author$project$Development$ParalleleKoordinaten$Change4(
+												$author$project$ParalleleKoordinaten$Change4(
 													_Utils_Tuple2(
 														function ($) {
 															return $.defending;
@@ -9884,7 +9889,7 @@ var $author$project$Development$ParalleleKoordinaten$view = function (model) {
 										_List_fromArray(
 											[
 												$elm$html$Html$Events$onClick(
-												$author$project$Development$ParalleleKoordinaten$Change4(
+												$author$project$ParalleleKoordinaten$Change4(
 													_Utils_Tuple2(
 														function ($) {
 															return $.physical;
@@ -9897,16 +9902,30 @@ var $author$project$Development$ParalleleKoordinaten$view = function (model) {
 											]))
 									]))
 							])),
-						A3($author$project$Development$ParalleleKoordinaten$parallelCoodinatesPlot, 600, 2, spielerfiltered)
+						A3($author$project$ParalleleKoordinaten$parallelCoodinatesPlot, 600, 2, spielerfiltered),
+						A2(
+						$elm$html$Html$ul,
+						_List_Nil,
+						_List_fromArray(
+							[
+								$elm$html$Html$text('Zum Verständis von Parallelen Koordinaten könnte folgendes Paper nützlich sein:')
+							])),
+						A2(
+						$elm$html$Html$ul,
+						_List_Nil,
+						_List_fromArray(
+							[
+								$elm$html$Html$text('http://www.perceptualedge.com/articles/b-eye/parallel_coordinates.pdf')
+							]))
 					]));
 	}
 };
-var $author$project$Development$ParalleleKoordinaten$main = $elm$browser$Browser$element(
-	{init: $author$project$Development$ParalleleKoordinaten$init, subscriptions: $author$project$Development$ParalleleKoordinaten$subscriptions, update: $author$project$Development$ParalleleKoordinaten$update, view: $author$project$Development$ParalleleKoordinaten$view});
-_Platform_export({'Development':{'ParalleleKoordinaten':{'init':$author$project$Development$ParalleleKoordinaten$main(
-	$elm$json$Json$Decode$succeed(_Utils_Tuple0))(0)}}});}(this));
+var $author$project$ParalleleKoordinaten$main = $elm$browser$Browser$element(
+	{init: $author$project$ParalleleKoordinaten$init, subscriptions: $author$project$ParalleleKoordinaten$subscriptions, update: $author$project$ParalleleKoordinaten$update, view: $author$project$ParalleleKoordinaten$view});
+_Platform_export({'ParalleleKoordinaten':{'init':$author$project$ParalleleKoordinaten$main(
+	$elm$json$Json$Decode$succeed(_Utils_Tuple0))(0)}});}(this));
 
-  var app = Elm.Development.ParalleleKoordinaten.init({ node: document.getElementById("elm") });
+  var app = Elm.ParalleleKoordinaten.init({ node: document.getElementById("elm") });
 }
 catch (e)
 {

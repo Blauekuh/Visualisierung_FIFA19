@@ -2,16 +2,21 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>Development.Scatterplot</title>
+  <title>Scatterplot</title>
   <style>body { padding: 0; margin: 0; }</style>
 </head>
 
 <body>
+
+        </h1>
         Herzlich Wilkommen zur Fifa Datenvisualisierung. Über die untenstehenden Links gelangen sie zu den jeweiligen Visualisierungen. <br>
         <br>
 		<a href="Scatterplot.html">Zum Scatterplot</a><br>
-        <a href="TreeDiagramm.html">Zur Baumhierarchie</a><br>
-        <a href="ParallelKoordinaten.html">Zu den Parallelen Koordinaten</a><br>
+		<a href="ScatterplotFast.html">Zum vereinfachten, schnellen Scatterplot</a><br>
+        <a href="BaumDiagramm.html">Zur Baumhierarchie</a><br>
+        <a href="ParalleleKoordinaten.html">Zu den Parallelen Koordinaten</a><br>
+
+
 <pre id="elm"></pre>
 
 <script>
@@ -5374,10 +5379,10 @@ var $elm$core$Task$perform = F2(
 				A2($elm$core$Task$map, toMessage, task)));
 	});
 var $elm$browser$Browser$element = _Browser_element;
-var $author$project$Development$Scatterplot$GotText = function (a) {
+var $author$project$Scatterplot$GotText = function (a) {
 	return {$: 'GotText', a: a};
 };
-var $author$project$Development$Scatterplot$Loading = {$: 'Loading'};
+var $author$project$Scatterplot$Loading = {$: 'Loading'};
 var $elm$http$Http$BadStatus_ = F2(
 	function (a, b) {
 		return {$: 'BadStatus_', a: a, b: b};
@@ -6157,24 +6162,24 @@ var $elm$http$Http$get = function (r) {
 	return $elm$http$Http$request(
 		{body: $elm$http$Http$emptyBody, expect: r.expect, headers: _List_Nil, method: 'GET', timeout: $elm$core$Maybe$Nothing, tracker: $elm$core$Maybe$Nothing, url: r.url});
 };
-var $author$project$Development$Scatterplot$getRandomCatGif = function (x) {
+var $author$project$Scatterplot$getRandomCatGif = function (x) {
 	return $elm$http$Http$get(
 		{
 			expect: $elm$http$Http$expectString(x),
 			url: 'https://raw.githubusercontent.com/JohannesLange/Visualisierung_FIFA19/master/data/spData.csv'
 		});
 };
-var $author$project$Development$Scatterplot$init = function (_v0) {
+var $author$project$Scatterplot$init = function (_v0) {
 	return _Utils_Tuple2(
-		$author$project$Development$Scatterplot$Loading,
-		$author$project$Development$Scatterplot$getRandomCatGif($author$project$Development$Scatterplot$GotText));
+		$author$project$Scatterplot$Loading,
+		$author$project$Scatterplot$getRandomCatGif($author$project$Scatterplot$GotText));
 };
 var $elm$core$Platform$Sub$batch = _Platform_batch;
 var $elm$core$Platform$Sub$none = $elm$core$Platform$Sub$batch(_List_Nil);
-var $author$project$Development$Scatterplot$subscriptions = function (model) {
+var $author$project$Scatterplot$subscriptions = function (model) {
 	return $elm$core$Platform$Sub$none;
 };
-var $author$project$Development$Scatterplot$Success = function (a) {
+var $author$project$Scatterplot$Success = function (a) {
 	return {$: 'Success', a: a};
 };
 var $elm$core$Platform$Cmd$batch = _Platform_batch;
@@ -6296,7 +6301,7 @@ var $ericgj$elm_csv_decode$Csv$Decode$decodeCsv = F2(
 					A2($ericgj$elm_csv_decode$Csv$Decode$decodeRecord, decoder, headers),
 					records)));
 	});
-var $author$project$Development$Scatterplot$Footballer = function (name) {
+var $author$project$Scatterplot$Footballer = function (name) {
 	return function (age) {
 		return function (overall) {
 			return function (potential) {
@@ -6439,9 +6444,9 @@ var $ericgj$elm_csv_decode$Csv$Decode$map = F2(
 			});
 	});
 var $elm$core$String$toFloat = _String_toFloat;
-var $author$project$Development$Scatterplot$decodeFootballer = A2(
+var $author$project$Scatterplot$decodeFootballer = A2(
 	$ericgj$elm_csv_decode$Csv$Decode$map,
-	$author$project$Development$Scatterplot$Footballer,
+	$author$project$Scatterplot$Footballer,
 	A2(
 		$ericgj$elm_csv_decode$Csv$Decode$andMap,
 		A2(
@@ -6679,26 +6684,26 @@ var $elm$core$Result$toMaybe = function (result) {
 		return $elm$core$Maybe$Nothing;
 	}
 };
-var $author$project$Development$Scatterplot$csvString_to_data = function (csvRaw) {
+var $author$project$Scatterplot$csvString_to_data = function (csvRaw) {
 	return A2(
 		$elm$core$Maybe$withDefault,
 		_List_Nil,
 		$elm$core$Result$toMaybe(
 			A2(
 				$ericgj$elm_csv_decode$Csv$Decode$decodeCsv,
-				$author$project$Development$Scatterplot$decodeFootballer,
+				$author$project$Scatterplot$decodeFootballer,
 				$lovasoa$elm_csv$Csv$parse(csvRaw))));
 };
-var $author$project$Development$Scatterplot$spielerListe = function (liste1) {
+var $author$project$Scatterplot$spielerListe = function (liste1) {
 	return $elm$core$List$concat(
 		A2(
 			$elm$core$List$map,
 			function (t) {
-				return $author$project$Development$Scatterplot$csvString_to_data(t);
+				return $author$project$Scatterplot$csvString_to_data(t);
 			},
 			liste1));
 };
-var $author$project$Development$Scatterplot$update = F2(
+var $author$project$Scatterplot$update = F2(
 	function (msg, model) {
 		switch (msg.$) {
 			case 'GotText':
@@ -6706,17 +6711,17 @@ var $author$project$Development$Scatterplot$update = F2(
 				if (result.$ === 'Ok') {
 					var fullText = result.a;
 					return _Utils_Tuple2(
-						$author$project$Development$Scatterplot$Success(
+						$author$project$Scatterplot$Success(
 							{
-								data: $author$project$Development$Scatterplot$spielerListe(
+								data: $author$project$Scatterplot$spielerListe(
 									_List_fromArray(
 										[fullText])),
 								filterClub: 'FC Barcelona',
 								filterNation: 'Argentina',
 								onOff: false,
 								onOff2: false,
-								selectedValue1: 1,
-								selectedValue2: 2,
+								selectedValue1: 3,
+								selectedValue2: 1,
 								xAAFunction: function ($) {
 									return $.age;
 								},
@@ -6738,7 +6743,7 @@ var $author$project$Development$Scatterplot$update = F2(
 				if (model.$ === 'Success') {
 					var m = model.a;
 					return _Utils_Tuple2(
-						$author$project$Development$Scatterplot$Success(
+						$author$project$Scatterplot$Success(
 							{data: m.data, filterClub: m.filterClub, filterNation: m.filterNation, onOff: m.onOff, onOff2: m.onOff2, selectedValue1: b, selectedValue2: m.selectedValue2, xAAFunction: x, xName: a, yAAFunction: m.yAAFunction, yName: m.yName}),
 						$elm$core$Platform$Cmd$none);
 				} else {
@@ -6752,7 +6757,7 @@ var $author$project$Development$Scatterplot$update = F2(
 				if (model.$ === 'Success') {
 					var m = model.a;
 					return _Utils_Tuple2(
-						$author$project$Development$Scatterplot$Success(
+						$author$project$Scatterplot$Success(
 							{data: m.data, filterClub: m.filterClub, filterNation: m.filterNation, onOff: m.onOff, onOff2: m.onOff2, selectedValue1: m.selectedValue1, selectedValue2: b, xAAFunction: m.xAAFunction, xName: m.xName, yAAFunction: y, yName: a}),
 						$elm$core$Platform$Cmd$none);
 				} else {
@@ -6763,7 +6768,7 @@ var $author$project$Development$Scatterplot$update = F2(
 				if (model.$ === 'Success') {
 					var m = model.a;
 					return _Utils_Tuple2(
-						$author$project$Development$Scatterplot$Success(
+						$author$project$Scatterplot$Success(
 							{data: m.data, filterClub: m.filterClub, filterNation: x, onOff: m.onOff, onOff2: m.onOff2, selectedValue1: m.selectedValue1, selectedValue2: m.selectedValue2, xAAFunction: m.xAAFunction, xName: m.xName, yAAFunction: m.yAAFunction, yName: m.yName}),
 						$elm$core$Platform$Cmd$none);
 				} else {
@@ -6774,7 +6779,7 @@ var $author$project$Development$Scatterplot$update = F2(
 				if (model.$ === 'Success') {
 					var m = model.a;
 					return _Utils_Tuple2(
-						$author$project$Development$Scatterplot$Success(
+						$author$project$Scatterplot$Success(
 							{data: m.data, filterClub: m.filterClub, filterNation: m.filterNation, onOff: x, onOff2: m.onOff2, selectedValue1: m.selectedValue1, selectedValue2: m.selectedValue2, xAAFunction: m.xAAFunction, xName: m.xName, yAAFunction: m.yAAFunction, yName: m.yName}),
 						$elm$core$Platform$Cmd$none);
 				} else {
@@ -6785,7 +6790,7 @@ var $author$project$Development$Scatterplot$update = F2(
 				if (model.$ === 'Success') {
 					var m = model.a;
 					return _Utils_Tuple2(
-						$author$project$Development$Scatterplot$Success(
+						$author$project$Scatterplot$Success(
 							{data: m.data, filterClub: x, filterNation: m.filterNation, onOff: m.onOff, onOff2: m.onOff2, selectedValue1: m.selectedValue1, selectedValue2: m.selectedValue2, xAAFunction: m.xAAFunction, xName: m.xName, yAAFunction: m.yAAFunction, yName: m.yName}),
 						$elm$core$Platform$Cmd$none);
 				} else {
@@ -6796,7 +6801,7 @@ var $author$project$Development$Scatterplot$update = F2(
 				if (model.$ === 'Success') {
 					var m = model.a;
 					return _Utils_Tuple2(
-						$author$project$Development$Scatterplot$Success(
+						$author$project$Scatterplot$Success(
 							{data: m.data, filterClub: m.filterClub, filterNation: m.filterNation, onOff: m.onOff, onOff2: x, selectedValue1: m.selectedValue1, selectedValue2: m.selectedValue2, xAAFunction: m.xAAFunction, xName: m.xName, yAAFunction: m.yAAFunction, yName: m.yName}),
 						$elm$core$Platform$Cmd$none);
 				} else {
@@ -6804,59 +6809,59 @@ var $author$project$Development$Scatterplot$update = F2(
 				}
 		}
 	});
-var $author$project$Development$Scatterplot$ActivateFilter = function (a) {
+var $author$project$Scatterplot$ActivateFilter = function (a) {
 	return {$: 'ActivateFilter', a: a};
 };
-var $author$project$Development$Scatterplot$ActivateFilter2 = function (a) {
+var $author$project$Scatterplot$ActivateFilter2 = function (a) {
 	return {$: 'ActivateFilter2', a: a};
 };
-var $author$project$Development$Scatterplot$ChangeClub = function (a) {
+var $author$project$Scatterplot$ChangeClub = function (a) {
 	return {$: 'ChangeClub', a: a};
 };
-var $author$project$Development$Scatterplot$ChangeNation = function (a) {
+var $author$project$Scatterplot$ChangeNation = function (a) {
 	return {$: 'ChangeNation', a: a};
 };
-var $author$project$Development$Scatterplot$ChangeX = function (a) {
+var $author$project$Scatterplot$ChangeX = function (a) {
 	return {$: 'ChangeX', a: a};
 };
-var $author$project$Development$Scatterplot$ChangeY = function (a) {
+var $author$project$Scatterplot$ChangeY = function (a) {
 	return {$: 'ChangeY', a: a};
 };
 var $elm$html$Html$button = _VirtualDom_node('button');
 var $elm$html$Html$div = _VirtualDom_node('div');
-var $author$project$Development$Scatterplot$XyData = F3(
+var $author$project$Scatterplot$XyData = F3(
 	function (xDescription, yDescription, data) {
 		return {data: data, xDescription: xDescription, yDescription: yDescription};
 	});
-var $author$project$Development$Scatterplot$Point = F3(
+var $author$project$Scatterplot$Point = F3(
 	function (pointName, x, y) {
 		return {pointName: pointName, x: x, y: y};
 	});
 var $elm$core$String$fromFloat = _String_fromNumber;
-var $author$project$Development$Scatterplot$pointName = F6(
+var $author$project$Scatterplot$pointName = F6(
 	function (player, a, b, c, d, e) {
 		return A3(
-			$author$project$Development$Scatterplot$Point,
+			$author$project$Scatterplot$Point,
 			a(player) + (', ' + (d + (': ' + ($elm$core$String$fromFloat(
 				b(player)) + (',' + (e + (': ' + $elm$core$String$fromFloat(
 				c(player))))))))),
 			b(player),
 			c(player));
 	});
-var $author$project$Development$Scatterplot$filterAndReducePlayers = F6(
+var $author$project$Scatterplot$filterAndReducePlayers = F6(
 	function (playerlist, a, b, c, x, y) {
 		return A3(
-			$author$project$Development$Scatterplot$XyData,
+			$author$project$Scatterplot$XyData,
 			x,
 			y,
 			A2(
 				$elm$core$List$map,
 				function (n) {
-					return A6($author$project$Development$Scatterplot$pointName, n, a, b, c, x, y);
+					return A6($author$project$Scatterplot$pointName, n, a, b, c, x, y);
 				},
 				playerlist));
 	});
-var $author$project$Development$Scatterplot$filterAttribute = F3(
+var $author$project$Scatterplot$filterAttribute = F3(
 	function (spieler, attribut, wort) {
 		return A2(
 			$elm$core$List$filter,
@@ -7013,7 +7018,7 @@ var $elm$virtual_dom$VirtualDom$nodeNS = function (tag) {
 };
 var $elm_community$typed_svg$TypedSvg$Core$node = $elm$virtual_dom$VirtualDom$nodeNS('http://www.w3.org/2000/svg');
 var $elm_community$typed_svg$TypedSvg$g = $elm_community$typed_svg$TypedSvg$Core$node('g');
-var $author$project$Development$Scatterplot$h = 450;
+var $author$project$Scatterplot$h = 450;
 var $elm_community$typed_svg$TypedSvg$Attributes$height = function (length) {
 	return A2(
 		$elm_community$typed_svg$TypedSvg$Core$attribute,
@@ -7023,7 +7028,7 @@ var $elm_community$typed_svg$TypedSvg$Attributes$height = function (length) {
 var $elm$core$Basics$negate = function (n) {
 	return -n;
 };
-var $author$project$Development$Scatterplot$padding = 60;
+var $author$project$Scatterplot$padding = 60;
 var $elm_community$typed_svg$TypedSvg$Types$AnchorMiddle = {$: 'AnchorMiddle'};
 var $elm_community$typed_svg$TypedSvg$Types$Px = function (a) {
 	return {$: 'Px', a: a};
@@ -7071,7 +7076,7 @@ var $elm_community$typed_svg$TypedSvg$Attributes$InPx$r = function (value) {
 	return $elm_community$typed_svg$TypedSvg$Attributes$r(
 		$elm_community$typed_svg$TypedSvg$Types$px(value));
 };
-var $author$project$Development$Scatterplot$filterX = F2(
+var $author$project$Scatterplot$filterX = F2(
 	function (a, b) {
 		var isEqual = F2(
 			function (t, z) {
@@ -7082,10 +7087,10 @@ var $author$project$Development$Scatterplot$filterX = F2(
 			isEqual(a),
 			b);
 	});
-var $author$project$Development$Scatterplot$sumX = F2(
+var $author$project$Scatterplot$sumX = F2(
 	function (e, f) {
 		return $elm$core$List$length(
-			A2($author$project$Development$Scatterplot$filterX, e, f));
+			A2($author$project$Scatterplot$filterX, e, f));
 	});
 var $elm$virtual_dom$VirtualDom$text = _VirtualDom_text;
 var $elm$html$Html$text = $elm$virtual_dom$VirtualDom$text;
@@ -7209,7 +7214,7 @@ var $elm_community$typed_svg$TypedSvg$Attributes$InPx$y = function (value) {
 	return $elm_community$typed_svg$TypedSvg$Attributes$y(
 		$elm_community$typed_svg$TypedSvg$Types$px(value));
 };
-var $author$project$Development$Scatterplot$point = F4(
+var $author$project$Scatterplot$point = F4(
 	function (scaleX, scaleY, xyPoint, pointList) {
 		return A2(
 			$elm_community$typed_svg$TypedSvg$g,
@@ -7267,7 +7272,7 @@ var $author$project$Development$Scatterplot$point = F4(
 						[
 							$elm$html$Html$text(
 							'Anzahl an Spielern mit diesen X und Y Werten: ' + $elm$core$String$fromInt(
-								A2($author$project$Development$Scatterplot$sumX, xyPoint, pointList)))
+								A2($author$project$Scatterplot$sumX, xyPoint, pointList)))
 						]))
 				]));
 	});
@@ -7288,8 +7293,8 @@ var $elm_community$typed_svg$TypedSvg$Attributes$viewBox = F4(
 					_List_fromArray(
 						[minX, minY, vWidth, vHeight]))));
 	});
-var $author$project$Development$Scatterplot$w = 900;
-var $author$project$Development$Scatterplot$addieren = F2(
+var $author$project$Scatterplot$w = 900;
+var $author$project$Scatterplot$addieren = F2(
 	function (_v0, shift) {
 		var min = _v0.a;
 		var max = _v0.b;
@@ -7353,8 +7358,8 @@ var $elm$core$List$maximum = function (list) {
 		return $elm$core$Maybe$Nothing;
 	}
 };
-var $author$project$Development$Scatterplot$tickCount = 5;
-var $author$project$Development$Scatterplot$wideExtent = function (values) {
+var $author$project$Scatterplot$tickCount = 5;
+var $author$project$Scatterplot$wideExtent = function (values) {
 	var result = A2(
 		$elm$core$Maybe$withDefault,
 		_Utils_Tuple2(0, 0),
@@ -7363,8 +7368,8 @@ var $author$project$Development$Scatterplot$wideExtent = function (values) {
 		$elm$core$Maybe$withDefault,
 		0,
 		$elm$core$List$maximum(values));
-	var result1 = A2($author$project$Development$Scatterplot$addieren, result, ($author$project$Development$Scatterplot$tickCount * max) / 50);
-	var result2 = A2($author$project$Development$Scatterplot$addieren, result1, 0.0);
+	var result1 = A2($author$project$Scatterplot$addieren, result, ($author$project$Scatterplot$tickCount * max) / 50);
+	var result2 = A2($author$project$Scatterplot$addieren, result1, 0.0);
 	return result2;
 };
 var $elm_community$typed_svg$TypedSvg$Attributes$width = function (length) {
@@ -7909,20 +7914,20 @@ var $gampleman$elm_visualization$Scale$linear = F2(
 		return $gampleman$elm_visualization$Scale$Scale(
 			A2($gampleman$elm_visualization$Scale$Continuous$linear, range_, domain_));
 	});
-var $author$project$Development$Scatterplot$xScale = function (values) {
+var $author$project$Scatterplot$xScale = function (values) {
 	return A2(
 		$gampleman$elm_visualization$Scale$linear,
-		_Utils_Tuple2(0, $author$project$Development$Scatterplot$w - (2 * $author$project$Development$Scatterplot$padding)),
-		$author$project$Development$Scatterplot$wideExtent(values));
+		_Utils_Tuple2(0, $author$project$Scatterplot$w - (2 * $author$project$Scatterplot$padding)),
+		$author$project$Scatterplot$wideExtent(values));
 };
-var $author$project$Development$Scatterplot$xAxis = function (values) {
+var $author$project$Scatterplot$xAxis = function (values) {
 	return A2(
 		$gampleman$elm_visualization$Axis$bottom,
 		_List_fromArray(
 			[
-				$gampleman$elm_visualization$Axis$tickCount($author$project$Development$Scatterplot$tickCount)
+				$gampleman$elm_visualization$Axis$tickCount($author$project$Scatterplot$tickCount)
 			]),
-		$author$project$Development$Scatterplot$xScale(values));
+		$author$project$Scatterplot$xScale(values));
 };
 var $gampleman$elm_visualization$Axis$horizontalAttrs = {
 	horizontal: true,
@@ -7937,49 +7942,49 @@ var $gampleman$elm_visualization$Axis$horizontalAttrs = {
 	y2: A2($elm$core$Basics$composeL, $elm$svg$Svg$Attributes$y2, $elm$core$String$fromFloat)
 };
 var $gampleman$elm_visualization$Axis$left = A4($gampleman$elm_visualization$Axis$element, $gampleman$elm_visualization$Axis$horizontalAttrs, -1, '0.32em', 'end');
-var $author$project$Development$Scatterplot$yScale = function (values) {
+var $author$project$Scatterplot$yScale = function (values) {
 	return A2(
 		$gampleman$elm_visualization$Scale$linear,
-		_Utils_Tuple2($author$project$Development$Scatterplot$h - (2 * $author$project$Development$Scatterplot$padding), 0),
-		$author$project$Development$Scatterplot$wideExtent(values));
+		_Utils_Tuple2($author$project$Scatterplot$h - (2 * $author$project$Scatterplot$padding), 0),
+		$author$project$Scatterplot$wideExtent(values));
 };
-var $author$project$Development$Scatterplot$yAxis = function (values) {
+var $author$project$Scatterplot$yAxis = function (values) {
 	return A2(
 		$gampleman$elm_visualization$Axis$left,
 		_List_fromArray(
 			[
-				$gampleman$elm_visualization$Axis$tickCount($author$project$Development$Scatterplot$tickCount)
+				$gampleman$elm_visualization$Axis$tickCount($author$project$Scatterplot$tickCount)
 			]),
-		$author$project$Development$Scatterplot$yScale(values));
+		$author$project$Scatterplot$yScale(values));
 };
-var $author$project$Development$Scatterplot$scatterplot = function (model) {
+var $author$project$Scatterplot$scatterplot = function (model) {
 	var yValues = A2(
 		$elm$core$List$map,
 		function ($) {
 			return $.y;
 		},
 		model.data);
-	var yScaleLocal = $author$project$Development$Scatterplot$yScale(yValues);
+	var yScaleLocal = $author$project$Scatterplot$yScale(yValues);
 	var xValues = A2(
 		$elm$core$List$map,
 		function ($) {
 			return $.x;
 		},
 		model.data);
-	var xScaleLocal = $author$project$Development$Scatterplot$xScale(xValues);
+	var xScaleLocal = $author$project$Scatterplot$xScale(xValues);
 	var half = function (t) {
 		return (t.b - t.a) / 2;
 	};
 	var labelPositions = {
 		x: half(
-			$author$project$Development$Scatterplot$wideExtent(xValues)),
-		y: $author$project$Development$Scatterplot$wideExtent(yValues).b
+			$author$project$Scatterplot$wideExtent(xValues)),
+		y: $author$project$Scatterplot$wideExtent(yValues).b
 	};
 	return A2(
 		$elm_community$typed_svg$TypedSvg$svg,
 		_List_fromArray(
 			[
-				A4($elm_community$typed_svg$TypedSvg$Attributes$viewBox, 0, 0, $author$project$Development$Scatterplot$w, $author$project$Development$Scatterplot$h),
+				A4($elm_community$typed_svg$TypedSvg$Attributes$viewBox, 0, 0, $author$project$Scatterplot$w, $author$project$Scatterplot$h),
 				$elm_community$typed_svg$TypedSvg$Attributes$width(
 				$elm_community$typed_svg$TypedSvg$Types$Percent(80)),
 				$elm_community$typed_svg$TypedSvg$Attributes$height(
@@ -7992,7 +7997,7 @@ var $author$project$Development$Scatterplot$scatterplot = function (model) {
 				_List_Nil,
 				_List_fromArray(
 					[
-						$elm_community$typed_svg$TypedSvg$Core$text('\r\n            .point circle { stroke: rgba(0, 0, 155,0.05); fill: rgba(0, 0, 155,0.1); }\r\n            .point text { display: none; }\r\n            .point:hover circle { stroke: rgba(0, 0, 0,1.0); fill: rgb(118, 214, 78); }\r\n            .point:hover text { display: inline; text-shadow: 2px 2px rgb(255,255,255); fill: rgb(0,0,0); }\r\n            \r\n          ')
+						$elm_community$typed_svg$TypedSvg$Core$text('\r\n            .point circle { stroke: rgba(0, 0, 155,0.1); fill: rgba(0, 0, 155,0.1); }\r\n            .point text { display: none; }\r\n            .point:hover circle { stroke: rgba(0, 0, 0,1.0); fill: rgb(118, 214, 78); }\r\n            .point:hover text { display: inline; text-shadow: 0px 0px 4px rgb(255,255,255),0px 0px 6px rgb(255,255,255); fill: rgb(0,0,0)}\r\n            \r\n          ')
 					])),
 				A2(
 				$elm_community$typed_svg$TypedSvg$g,
@@ -8006,7 +8011,7 @@ var $author$project$Development$Scatterplot$scatterplot = function (model) {
 					]),
 				_List_fromArray(
 					[
-						$author$project$Development$Scatterplot$xAxis(xValues),
+						$author$project$Scatterplot$xAxis(xValues),
 						A2(
 						$elm_community$typed_svg$TypedSvg$text_,
 						_List_fromArray(
@@ -8036,7 +8041,7 @@ var $author$project$Development$Scatterplot$scatterplot = function (model) {
 					]),
 				_List_fromArray(
 					[
-						$author$project$Development$Scatterplot$yAxis(yValues),
+						$author$project$Scatterplot$yAxis(yValues),
 						A2(
 						$elm_community$typed_svg$TypedSvg$text_,
 						_List_fromArray(
@@ -8061,13 +8066,13 @@ var $author$project$Development$Scatterplot$scatterplot = function (model) {
 						$elm_community$typed_svg$TypedSvg$Attributes$transform(
 						_List_fromArray(
 							[
-								A2($elm_community$typed_svg$TypedSvg$Types$Translate, $author$project$Development$Scatterplot$padding, $author$project$Development$Scatterplot$padding)
+								A2($elm_community$typed_svg$TypedSvg$Types$Translate, $author$project$Scatterplot$padding, $author$project$Scatterplot$padding)
 							]))
 					]),
 				A2(
 					$elm$core$List$map,
 					function (n) {
-						return A4($author$project$Development$Scatterplot$point, xScaleLocal, yScaleLocal, n, model.data);
+						return A4($author$project$Scatterplot$point, xScaleLocal, yScaleLocal, n, model.data);
 					},
 					model.data))
 			]));
@@ -8075,7 +8080,7 @@ var $author$project$Development$Scatterplot$scatterplot = function (model) {
 var $elm$html$Html$Attributes$type_ = $elm$html$Html$Attributes$stringProperty('type');
 var $elm$html$Html$ul = _VirtualDom_node('ul');
 var $elm$html$Html$Attributes$value = $elm$html$Html$Attributes$stringProperty('value');
-var $author$project$Development$Scatterplot$view = function (model) {
+var $author$project$Scatterplot$view = function (model) {
 	switch (model.$) {
 		case 'Failure':
 			return $elm$html$Html$text('I was unable to load the players.');
@@ -8096,28 +8101,28 @@ var $author$project$Development$Scatterplot$view = function (model) {
 			var v2 = (l.selectedValue1 === 2) ? '✓ ' : '';
 			var v1 = (l.selectedValue1 === 1) ? '✓ ' : '';
 			var spieler3 = A3(
-				$author$project$Development$Scatterplot$filterAttribute,
+				$author$project$Scatterplot$filterAttribute,
 				l.data,
 				function ($) {
 					return $.club;
 				},
 				l.filterClub);
 			var spieler2 = A3(
-				$author$project$Development$Scatterplot$filterAttribute,
+				$author$project$Scatterplot$filterAttribute,
 				l.data,
 				function ($) {
 					return $.nationality;
 				},
 				l.filterNation);
 			var spieler4 = A3(
-				$author$project$Development$Scatterplot$filterAttribute,
+				$author$project$Scatterplot$filterAttribute,
 				spieler2,
 				function ($) {
 					return $.club;
 				},
 				l.filterClub);
 			var spielerfiltered = (l.onOff && l.onOff2) ? A6(
-				$author$project$Development$Scatterplot$filterAndReducePlayers,
+				$author$project$Scatterplot$filterAndReducePlayers,
 				spieler4,
 				function ($) {
 					return $.name;
@@ -8126,7 +8131,7 @@ var $author$project$Development$Scatterplot$view = function (model) {
 				l.yAAFunction,
 				l.xName,
 				l.yName) : ((l.onOff && (!l.onOff2)) ? A6(
-				$author$project$Development$Scatterplot$filterAndReducePlayers,
+				$author$project$Scatterplot$filterAndReducePlayers,
 				spieler2,
 				function ($) {
 					return $.name;
@@ -8135,7 +8140,7 @@ var $author$project$Development$Scatterplot$view = function (model) {
 				l.yAAFunction,
 				l.xName,
 				l.yName) : (((!l.onOff) && l.onOff2) ? A6(
-				$author$project$Development$Scatterplot$filterAndReducePlayers,
+				$author$project$Scatterplot$filterAndReducePlayers,
 				spieler3,
 				function ($) {
 					return $.name;
@@ -8144,7 +8149,7 @@ var $author$project$Development$Scatterplot$view = function (model) {
 				l.yAAFunction,
 				l.xName,
 				l.yName) : A6(
-				$author$project$Development$Scatterplot$filterAndReducePlayers,
+				$author$project$Scatterplot$filterAndReducePlayers,
 				l.data,
 				function ($) {
 					return $.name;
@@ -8154,7 +8159,7 @@ var $author$project$Development$Scatterplot$view = function (model) {
 				l.xName,
 				l.yName)));
 			var spieler = A6(
-				$author$project$Development$Scatterplot$filterAndReducePlayers,
+				$author$project$Scatterplot$filterAndReducePlayers,
 				l.data,
 				function ($) {
 					return $.name;
@@ -8193,7 +8198,7 @@ var $author$project$Development$Scatterplot$view = function (model) {
 									[
 										$elm$html$Html$Attributes$placeholder('Select Nation to Filter'),
 										$elm$html$Html$Attributes$value(l.filterNation),
-										$elm$html$Html$Events$onInput($author$project$Development$Scatterplot$ChangeNation)
+										$elm$html$Html$Events$onInput($author$project$Scatterplot$ChangeNation)
 									]),
 								_List_Nil),
 								A2(
@@ -8201,7 +8206,7 @@ var $author$project$Development$Scatterplot$view = function (model) {
 								_List_fromArray(
 									[
 										$elm$html$Html$Attributes$type_('checkbox'),
-										$elm$html$Html$Events$onCheck($author$project$Development$Scatterplot$ActivateFilter)
+										$elm$html$Html$Events$onCheck($author$project$Scatterplot$ActivateFilter)
 									]),
 								_List_Nil),
 								A2(
@@ -8210,7 +8215,7 @@ var $author$project$Development$Scatterplot$view = function (model) {
 									[
 										$elm$html$Html$Attributes$placeholder('Select Club to Filter'),
 										$elm$html$Html$Attributes$value(l.filterClub),
-										$elm$html$Html$Events$onInput($author$project$Development$Scatterplot$ChangeClub)
+										$elm$html$Html$Events$onInput($author$project$Scatterplot$ChangeClub)
 									]),
 								_List_Nil),
 								A2(
@@ -8218,7 +8223,7 @@ var $author$project$Development$Scatterplot$view = function (model) {
 								_List_fromArray(
 									[
 										$elm$html$Html$Attributes$type_('checkbox'),
-										$elm$html$Html$Events$onCheck($author$project$Development$Scatterplot$ActivateFilter2)
+										$elm$html$Html$Events$onCheck($author$project$Scatterplot$ActivateFilter2)
 									]),
 								_List_Nil)
 							])),
@@ -8233,7 +8238,7 @@ var $author$project$Development$Scatterplot$view = function (model) {
 								_List_fromArray(
 									[
 										$elm$html$Html$Events$onClick(
-										$author$project$Development$Scatterplot$ChangeX(
+										$author$project$Scatterplot$ChangeX(
 											_Utils_Tuple3(
 												function ($) {
 													return $.overall;
@@ -8250,7 +8255,7 @@ var $author$project$Development$Scatterplot$view = function (model) {
 								_List_fromArray(
 									[
 										$elm$html$Html$Events$onClick(
-										$author$project$Development$Scatterplot$ChangeX(
+										$author$project$Scatterplot$ChangeX(
 											_Utils_Tuple3(
 												function ($) {
 													return $.potential;
@@ -8267,7 +8272,7 @@ var $author$project$Development$Scatterplot$view = function (model) {
 								_List_fromArray(
 									[
 										$elm$html$Html$Events$onClick(
-										$author$project$Development$Scatterplot$ChangeX(
+										$author$project$Scatterplot$ChangeX(
 											_Utils_Tuple3(
 												function ($) {
 													return $.age;
@@ -8284,7 +8289,7 @@ var $author$project$Development$Scatterplot$view = function (model) {
 								_List_fromArray(
 									[
 										$elm$html$Html$Events$onClick(
-										$author$project$Development$Scatterplot$ChangeX(
+										$author$project$Scatterplot$ChangeX(
 											_Utils_Tuple3(
 												function ($) {
 													return $.height;
@@ -8301,7 +8306,7 @@ var $author$project$Development$Scatterplot$view = function (model) {
 								_List_fromArray(
 									[
 										$elm$html$Html$Events$onClick(
-										$author$project$Development$Scatterplot$ChangeX(
+										$author$project$Scatterplot$ChangeX(
 											_Utils_Tuple3(
 												function ($) {
 													return $.wage;
@@ -8318,7 +8323,7 @@ var $author$project$Development$Scatterplot$view = function (model) {
 								_List_fromArray(
 									[
 										$elm$html$Html$Events$onClick(
-										$author$project$Development$Scatterplot$ChangeX(
+										$author$project$Scatterplot$ChangeX(
 											_Utils_Tuple3(
 												function ($) {
 													return $.value;
@@ -8342,7 +8347,7 @@ var $author$project$Development$Scatterplot$view = function (model) {
 								_List_fromArray(
 									[
 										$elm$html$Html$Events$onClick(
-										$author$project$Development$Scatterplot$ChangeY(
+										$author$project$Scatterplot$ChangeY(
 											_Utils_Tuple3(
 												function ($) {
 													return $.overall;
@@ -8359,7 +8364,7 @@ var $author$project$Development$Scatterplot$view = function (model) {
 								_List_fromArray(
 									[
 										$elm$html$Html$Events$onClick(
-										$author$project$Development$Scatterplot$ChangeY(
+										$author$project$Scatterplot$ChangeY(
 											_Utils_Tuple3(
 												function ($) {
 													return $.potential;
@@ -8376,7 +8381,7 @@ var $author$project$Development$Scatterplot$view = function (model) {
 								_List_fromArray(
 									[
 										$elm$html$Html$Events$onClick(
-										$author$project$Development$Scatterplot$ChangeY(
+										$author$project$Scatterplot$ChangeY(
 											_Utils_Tuple3(
 												function ($) {
 													return $.age;
@@ -8393,7 +8398,7 @@ var $author$project$Development$Scatterplot$view = function (model) {
 								_List_fromArray(
 									[
 										$elm$html$Html$Events$onClick(
-										$author$project$Development$Scatterplot$ChangeY(
+										$author$project$Scatterplot$ChangeY(
 											_Utils_Tuple3(
 												function ($) {
 													return $.height;
@@ -8410,7 +8415,7 @@ var $author$project$Development$Scatterplot$view = function (model) {
 								_List_fromArray(
 									[
 										$elm$html$Html$Events$onClick(
-										$author$project$Development$Scatterplot$ChangeY(
+										$author$project$Scatterplot$ChangeY(
 											_Utils_Tuple3(
 												function ($) {
 													return $.wage;
@@ -8427,7 +8432,7 @@ var $author$project$Development$Scatterplot$view = function (model) {
 								_List_fromArray(
 									[
 										$elm$html$Html$Events$onClick(
-										$author$project$Development$Scatterplot$ChangeY(
+										$author$project$Scatterplot$ChangeY(
 											_Utils_Tuple3(
 												function ($) {
 													return $.value;
@@ -8440,7 +8445,7 @@ var $author$project$Development$Scatterplot$view = function (model) {
 										$elm$html$Html$text(v26 + 'Value in Tausend')
 									]))
 							])),
-						$author$project$Development$Scatterplot$scatterplot(spielerfiltered),
+						$author$project$Scatterplot$scatterplot(spielerfiltered),
 						A2(
 						$elm$html$Html$ul,
 						_List_Nil,
@@ -8458,12 +8463,12 @@ var $author$project$Development$Scatterplot$view = function (model) {
 					]));
 	}
 };
-var $author$project$Development$Scatterplot$main = $elm$browser$Browser$element(
-	{init: $author$project$Development$Scatterplot$init, subscriptions: $author$project$Development$Scatterplot$subscriptions, update: $author$project$Development$Scatterplot$update, view: $author$project$Development$Scatterplot$view});
-_Platform_export({'Development':{'Scatterplot':{'init':$author$project$Development$Scatterplot$main(
-	$elm$json$Json$Decode$succeed(_Utils_Tuple0))(0)}}});}(this));
+var $author$project$Scatterplot$main = $elm$browser$Browser$element(
+	{init: $author$project$Scatterplot$init, subscriptions: $author$project$Scatterplot$subscriptions, update: $author$project$Scatterplot$update, view: $author$project$Scatterplot$view});
+_Platform_export({'Scatterplot':{'init':$author$project$Scatterplot$main(
+	$elm$json$Json$Decode$succeed(_Utils_Tuple0))(0)}});}(this));
 
-  var app = Elm.Development.Scatterplot.init({ node: document.getElementById("elm") });
+  var app = Elm.Scatterplot.init({ node: document.getElementById("elm") });
 }
 catch (e)
 {

@@ -2,16 +2,21 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>Development.TreeDiagramm</title>
+  <title>ScatterplotFast</title>
   <style>body { padding: 0; margin: 0; }</style>
 </head>
 
 <body>
+
+        </h1>
         Herzlich Wilkommen zur Fifa Datenvisualisierung. Über die untenstehenden Links gelangen sie zu den jeweiligen Visualisierungen. <br>
         <br>
 		<a href="Scatterplot.html">Zum Scatterplot</a><br>
-        <a href="TreeDiagramm.html">Zur Baumhierarchie</a><br>
-        <a href="ParallelKoordinaten.html">Zu den Parallelen Koordinaten</a><br>
+		<a href="ScatterplotFast.html">Zum vereinfachten, schnellen Scatterplot</a><br>
+        <a href="BaumDiagramm.html">Zur Baumhierarchie</a><br>
+        <a href="ParalleleKoordinaten.html">Zu den Parallelen Koordinaten</a><br>
+
+
 <pre id="elm"></pre>
 
 <script>
@@ -4548,7 +4553,44 @@ function _Http_track(router, xhr, tracker)
 			size: event.lengthComputable ? $elm$core$Maybe$Just(event.total) : $elm$core$Maybe$Nothing
 		}))));
 	});
-}var $elm$core$Basics$EQ = {$: 'EQ'};
+}
+
+
+var _Bitwise_and = F2(function(a, b)
+{
+	return a & b;
+});
+
+var _Bitwise_or = F2(function(a, b)
+{
+	return a | b;
+});
+
+var _Bitwise_xor = F2(function(a, b)
+{
+	return a ^ b;
+});
+
+function _Bitwise_complement(a)
+{
+	return ~a;
+};
+
+var _Bitwise_shiftLeftBy = F2(function(offset, a)
+{
+	return a << offset;
+});
+
+var _Bitwise_shiftRightBy = F2(function(offset, a)
+{
+	return a >> offset;
+});
+
+var _Bitwise_shiftRightZfBy = F2(function(offset, a)
+{
+	return a >>> offset;
+});
+var $elm$core$Basics$EQ = {$: 'EQ'};
 var $elm$core$Basics$GT = {$: 'GT'};
 var $elm$core$Basics$LT = {$: 'LT'};
 var $elm$core$List$cons = _List_cons;
@@ -5337,10 +5379,10 @@ var $elm$core$Task$perform = F2(
 				A2($elm$core$Task$map, toMessage, task)));
 	});
 var $elm$browser$Browser$element = _Browser_element;
-var $author$project$Development$TreeDiagramm$GotText = function (a) {
+var $author$project$ScatterplotFast$GotText = function (a) {
 	return {$: 'GotText', a: a};
 };
-var $author$project$Development$TreeDiagramm$Loading = {$: 'Loading'};
+var $author$project$ScatterplotFast$Loading = {$: 'Loading'};
 var $elm$http$Http$BadStatus_ = F2(
 	function (a, b) {
 		return {$: 'BadStatus_', a: a, b: b};
@@ -6120,28 +6162,26 @@ var $elm$http$Http$get = function (r) {
 	return $elm$http$Http$request(
 		{body: $elm$http$Http$emptyBody, expect: r.expect, headers: _List_Nil, method: 'GET', timeout: $elm$core$Maybe$Nothing, tracker: $elm$core$Maybe$Nothing, url: r.url});
 };
-var $author$project$Development$TreeDiagramm$getRandomCatGif = function (x) {
+var $author$project$ScatterplotFast$getRandomCatGif = function (x) {
 	return $elm$http$Http$get(
 		{
 			expect: $elm$http$Http$expectString(x),
-			url: 'https://raw.githubusercontent.com/JohannesLange/Visualisierung_FIFA19/master/data/baumData.csv'
+			url: 'https://raw.githubusercontent.com/JohannesLange/Visualisierung_FIFA19/master/data/spData.csv'
 		});
 };
-var $author$project$Development$TreeDiagramm$init = function (_v0) {
+var $author$project$ScatterplotFast$init = function (_v0) {
 	return _Utils_Tuple2(
-		$author$project$Development$TreeDiagramm$Loading,
-		$author$project$Development$TreeDiagramm$getRandomCatGif($author$project$Development$TreeDiagramm$GotText));
+		$author$project$ScatterplotFast$Loading,
+		$author$project$ScatterplotFast$getRandomCatGif($author$project$ScatterplotFast$GotText));
 };
 var $elm$core$Platform$Sub$batch = _Platform_batch;
 var $elm$core$Platform$Sub$none = $elm$core$Platform$Sub$batch(_List_Nil);
-var $author$project$Development$TreeDiagramm$subscriptions = function (model) {
+var $author$project$ScatterplotFast$subscriptions = function (model) {
 	return $elm$core$Platform$Sub$none;
 };
-var $author$project$Development$TreeDiagramm$Success = function (a) {
+var $author$project$ScatterplotFast$Success = function (a) {
 	return {$: 'Success', a: a};
 };
-var $author$project$Development$TreeDiagramm$listeCalcio = _List_fromArray(
-	['Juventus', 'Napoli', 'Milan', 'Inter', 'Lazio', 'Roma', 'Atalanta', 'Sassuolo', 'Sampdoria', 'Hellas Verona', 'Genoa', 'Bologna', 'Fiorentina', 'Udinese', 'Spezia', 'Cagliari', 'Torino', 'Benevento', 'Crotone', 'Parma']);
 var $elm$core$Platform$Cmd$batch = _Platform_batch;
 var $elm$core$Platform$Cmd$none = $elm$core$Platform$Cmd$batch(_List_Nil);
 var $elm$core$List$append = F2(
@@ -6261,10 +6301,27 @@ var $ericgj$elm_csv_decode$Csv$Decode$decodeCsv = F2(
 					A2($ericgj$elm_csv_decode$Csv$Decode$decodeRecord, decoder, headers),
 					records)));
 	});
-var $author$project$Development$TreeDiagramm$Footballer = F3(
-	function (name, club, position) {
-		return {club: club, name: name, position: position};
-	});
+var $author$project$ScatterplotFast$Footballer = function (name) {
+	return function (age) {
+		return function (overall) {
+			return function (potential) {
+				return function (height) {
+					return function (nationality) {
+						return function (club) {
+							return function (weight) {
+								return function (wage) {
+									return function (value) {
+										return {age: age, club: club, height: height, name: name, nationality: nationality, overall: overall, potential: potential, value: value, wage: wage, weight: weight};
+									};
+								};
+							};
+						};
+					};
+				};
+			};
+		};
+	};
+};
 var $ericgj$elm_csv_decode$Csv$Decode$Decoder = function (a) {
 	return {$: 'Decoder', a: a};
 };
@@ -6351,6 +6408,15 @@ var $ericgj$elm_csv_decode$Csv$Decode$field = F2(
 				}
 			});
 	});
+var $elm$core$Result$fromMaybe = F2(
+	function (err, maybe) {
+		if (maybe.$ === 'Just') {
+			var v = maybe.a;
+			return $elm$core$Result$Ok(v);
+		} else {
+			return $elm$core$Result$Err(err);
+		}
+	});
 var $ericgj$elm_csv_decode$Csv$Decode$mapHelp = F2(
 	function (fn, _v0) {
 		var visited = _v0.visited;
@@ -6377,16 +6443,80 @@ var $ericgj$elm_csv_decode$Csv$Decode$map = F2(
 						{unvisited: unvisited, value: subValue, visited: visited}));
 			});
 	});
-var $author$project$Development$TreeDiagramm$decodeFootballer = A2(
+var $elm$core$String$toFloat = _String_toFloat;
+var $author$project$ScatterplotFast$decodeFootballer = A2(
 	$ericgj$elm_csv_decode$Csv$Decode$map,
-	$author$project$Development$TreeDiagramm$Footballer,
+	$author$project$ScatterplotFast$Footballer,
 	A2(
 		$ericgj$elm_csv_decode$Csv$Decode$andMap,
-		A2($ericgj$elm_csv_decode$Csv$Decode$field, 'BP', $elm$core$Result$Ok),
+		A2(
+			$ericgj$elm_csv_decode$Csv$Decode$field,
+			'Value',
+			A2(
+				$elm$core$Basics$composeR,
+				$elm$core$String$toFloat,
+				$elm$core$Result$fromMaybe('error parsing string'))),
 		A2(
 			$ericgj$elm_csv_decode$Csv$Decode$andMap,
-			A2($ericgj$elm_csv_decode$Csv$Decode$field, 'Club', $elm$core$Result$Ok),
-			A2($ericgj$elm_csv_decode$Csv$Decode$field, 'Name', $elm$core$Result$Ok))));
+			A2(
+				$ericgj$elm_csv_decode$Csv$Decode$field,
+				'Wage',
+				A2(
+					$elm$core$Basics$composeR,
+					$elm$core$String$toFloat,
+					$elm$core$Result$fromMaybe('error parsing string'))),
+			A2(
+				$ericgj$elm_csv_decode$Csv$Decode$andMap,
+				A2(
+					$ericgj$elm_csv_decode$Csv$Decode$field,
+					'Weight',
+					A2(
+						$elm$core$Basics$composeR,
+						$elm$core$String$toFloat,
+						$elm$core$Result$fromMaybe('error parsing string'))),
+				A2(
+					$ericgj$elm_csv_decode$Csv$Decode$andMap,
+					A2($ericgj$elm_csv_decode$Csv$Decode$field, 'Club', $elm$core$Result$Ok),
+					A2(
+						$ericgj$elm_csv_decode$Csv$Decode$andMap,
+						A2($ericgj$elm_csv_decode$Csv$Decode$field, 'Nationality', $elm$core$Result$Ok),
+						A2(
+							$ericgj$elm_csv_decode$Csv$Decode$andMap,
+							A2(
+								$ericgj$elm_csv_decode$Csv$Decode$field,
+								'Height',
+								A2(
+									$elm$core$Basics$composeR,
+									$elm$core$String$toFloat,
+									$elm$core$Result$fromMaybe('error parsing string'))),
+							A2(
+								$ericgj$elm_csv_decode$Csv$Decode$andMap,
+								A2(
+									$ericgj$elm_csv_decode$Csv$Decode$field,
+									'POT',
+									A2(
+										$elm$core$Basics$composeR,
+										$elm$core$String$toFloat,
+										$elm$core$Result$fromMaybe('error parsing string'))),
+								A2(
+									$ericgj$elm_csv_decode$Csv$Decode$andMap,
+									A2(
+										$ericgj$elm_csv_decode$Csv$Decode$field,
+										'OVA',
+										A2(
+											$elm$core$Basics$composeR,
+											$elm$core$String$toFloat,
+											$elm$core$Result$fromMaybe('error parsing string'))),
+									A2(
+										$ericgj$elm_csv_decode$Csv$Decode$andMap,
+										A2(
+											$ericgj$elm_csv_decode$Csv$Decode$field,
+											'Age',
+											A2(
+												$elm$core$Basics$composeR,
+												$elm$core$String$toFloat,
+												$elm$core$Result$fromMaybe('error parsing string'))),
+										A2($ericgj$elm_csv_decode$Csv$Decode$field, 'Name', $elm$core$Result$Ok)))))))))));
 var $elm$core$List$drop = F2(
 	function (n, list) {
 		drop:
@@ -6554,26 +6684,26 @@ var $elm$core$Result$toMaybe = function (result) {
 		return $elm$core$Maybe$Nothing;
 	}
 };
-var $author$project$Development$TreeDiagramm$csvString_to_data = function (csvRaw) {
+var $author$project$ScatterplotFast$csvString_to_data = function (csvRaw) {
 	return A2(
 		$elm$core$Maybe$withDefault,
 		_List_Nil,
 		$elm$core$Result$toMaybe(
 			A2(
 				$ericgj$elm_csv_decode$Csv$Decode$decodeCsv,
-				$author$project$Development$TreeDiagramm$decodeFootballer,
+				$author$project$ScatterplotFast$decodeFootballer,
 				$lovasoa$elm_csv$Csv$parse(csvRaw))));
 };
-var $author$project$Development$TreeDiagramm$spielerListe = function (liste1) {
+var $author$project$ScatterplotFast$spielerListe = function (liste1) {
 	return $elm$core$List$concat(
 		A2(
 			$elm$core$List$map,
 			function (t) {
-				return $author$project$Development$TreeDiagramm$csvString_to_data(t);
+				return $author$project$ScatterplotFast$csvString_to_data(t);
 			},
 			liste1));
 };
-var $author$project$Development$TreeDiagramm$update = F2(
+var $author$project$ScatterplotFast$update = F2(
 	function (msg, model) {
 		switch (msg.$) {
 			case 'GotText':
@@ -6581,40 +6711,87 @@ var $author$project$Development$TreeDiagramm$update = F2(
 				if (result.$ === 'Ok') {
 					var fullText = result.a;
 					return _Utils_Tuple2(
-						$author$project$Development$TreeDiagramm$Success(
+						$author$project$ScatterplotFast$Success(
 							{
-								data: $author$project$Development$TreeDiagramm$spielerListe(
+								data: $author$project$ScatterplotFast$spielerListe(
 									_List_fromArray(
 										[fullText])),
-								liga: $author$project$Development$TreeDiagramm$listeCalcio,
+								filterClub: 'FC Barcelona',
+								filterNation: 'Argentina',
 								onOff: false,
-								position: 'ST',
-								xName: 'Calcio A'
+								onOff2: false,
+								selectedValue1: 3,
+								selectedValue2: 1,
+								xAAFunction: function ($) {
+									return $.age;
+								},
+								xName: 'Age',
+								yAAFunction: function ($) {
+									return $.overall;
+								},
+								yName: 'Overall'
 							}),
 						$elm$core$Platform$Cmd$none);
 				} else {
 					return _Utils_Tuple2(model, $elm$core$Platform$Cmd$none);
 				}
-			case 'ChangeLiga':
+			case 'ChangeX':
 				var _v2 = msg.a;
 				var x = _v2.a;
-				var y = _v2.b;
+				var a = _v2.b;
+				var b = _v2.c;
 				if (model.$ === 'Success') {
 					var m = model.a;
 					return _Utils_Tuple2(
-						$author$project$Development$TreeDiagramm$Success(
-							{data: m.data, liga: y, onOff: m.onOff, position: m.position, xName: x}),
+						$author$project$ScatterplotFast$Success(
+							{data: m.data, filterClub: m.filterClub, filterNation: m.filterNation, onOff: m.onOff, onOff2: m.onOff2, selectedValue1: b, selectedValue2: m.selectedValue2, xAAFunction: x, xName: a, yAAFunction: m.yAAFunction, yName: m.yName}),
 						$elm$core$Platform$Cmd$none);
 				} else {
 					return _Utils_Tuple2(model, $elm$core$Platform$Cmd$none);
 				}
-			case 'ChangePosition':
+			case 'ChangeY':
+				var _v4 = msg.a;
+				var y = _v4.a;
+				var a = _v4.b;
+				var b = _v4.c;
+				if (model.$ === 'Success') {
+					var m = model.a;
+					return _Utils_Tuple2(
+						$author$project$ScatterplotFast$Success(
+							{data: m.data, filterClub: m.filterClub, filterNation: m.filterNation, onOff: m.onOff, onOff2: m.onOff2, selectedValue1: m.selectedValue1, selectedValue2: b, xAAFunction: m.xAAFunction, xName: m.xName, yAAFunction: y, yName: a}),
+						$elm$core$Platform$Cmd$none);
+				} else {
+					return _Utils_Tuple2(model, $elm$core$Platform$Cmd$none);
+				}
+			case 'ChangeNation':
 				var x = msg.a;
 				if (model.$ === 'Success') {
 					var m = model.a;
 					return _Utils_Tuple2(
-						$author$project$Development$TreeDiagramm$Success(
-							{data: m.data, liga: m.liga, onOff: m.onOff, position: x, xName: m.xName}),
+						$author$project$ScatterplotFast$Success(
+							{data: m.data, filterClub: m.filterClub, filterNation: x, onOff: m.onOff, onOff2: m.onOff2, selectedValue1: m.selectedValue1, selectedValue2: m.selectedValue2, xAAFunction: m.xAAFunction, xName: m.xName, yAAFunction: m.yAAFunction, yName: m.yName}),
+						$elm$core$Platform$Cmd$none);
+				} else {
+					return _Utils_Tuple2(model, $elm$core$Platform$Cmd$none);
+				}
+			case 'ActivateFilter':
+				var x = msg.a;
+				if (model.$ === 'Success') {
+					var m = model.a;
+					return _Utils_Tuple2(
+						$author$project$ScatterplotFast$Success(
+							{data: m.data, filterClub: m.filterClub, filterNation: m.filterNation, onOff: x, onOff2: m.onOff2, selectedValue1: m.selectedValue1, selectedValue2: m.selectedValue2, xAAFunction: m.xAAFunction, xName: m.xName, yAAFunction: m.yAAFunction, yName: m.yName}),
+						$elm$core$Platform$Cmd$none);
+				} else {
+					return _Utils_Tuple2(model, $elm$core$Platform$Cmd$none);
+				}
+			case 'ChangeClub':
+				var x = msg.a;
+				if (model.$ === 'Success') {
+					var m = model.a;
+					return _Utils_Tuple2(
+						$author$project$ScatterplotFast$Success(
+							{data: m.data, filterClub: x, filterNation: m.filterNation, onOff: m.onOff, onOff2: m.onOff2, selectedValue1: m.selectedValue1, selectedValue2: m.selectedValue2, xAAFunction: m.xAAFunction, xName: m.xName, yAAFunction: m.yAAFunction, yName: m.yName}),
 						$elm$core$Platform$Cmd$none);
 				} else {
 					return _Utils_Tuple2(model, $elm$core$Platform$Cmd$none);
@@ -6624,570 +6801,156 @@ var $author$project$Development$TreeDiagramm$update = F2(
 				if (model.$ === 'Success') {
 					var m = model.a;
 					return _Utils_Tuple2(
-						$author$project$Development$TreeDiagramm$Success(
-							{data: m.data, liga: m.liga, onOff: x, position: m.position, xName: m.xName}),
+						$author$project$ScatterplotFast$Success(
+							{data: m.data, filterClub: m.filterClub, filterNation: m.filterNation, onOff: m.onOff, onOff2: x, selectedValue1: m.selectedValue1, selectedValue2: m.selectedValue2, xAAFunction: m.xAAFunction, xName: m.xName, yAAFunction: m.yAAFunction, yName: m.yName}),
 						$elm$core$Platform$Cmd$none);
 				} else {
 					return _Utils_Tuple2(model, $elm$core$Platform$Cmd$none);
 				}
 		}
 	});
-var $author$project$Development$TreeDiagramm$ActivateFilter = function (a) {
+var $author$project$ScatterplotFast$ActivateFilter = function (a) {
 	return {$: 'ActivateFilter', a: a};
 };
-var $author$project$Development$TreeDiagramm$ChangeLiga = function (a) {
-	return {$: 'ChangeLiga', a: a};
+var $author$project$ScatterplotFast$ActivateFilter2 = function (a) {
+	return {$: 'ActivateFilter2', a: a};
 };
-var $author$project$Development$TreeDiagramm$ChangePosition = function (a) {
-	return {$: 'ChangePosition', a: a};
+var $author$project$ScatterplotFast$ChangeClub = function (a) {
+	return {$: 'ChangeClub', a: a};
+};
+var $author$project$ScatterplotFast$ChangeNation = function (a) {
+	return {$: 'ChangeNation', a: a};
+};
+var $author$project$ScatterplotFast$ChangeX = function (a) {
+	return {$: 'ChangeX', a: a};
+};
+var $author$project$ScatterplotFast$ChangeY = function (a) {
+	return {$: 'ChangeY', a: a};
 };
 var $elm$html$Html$button = _VirtualDom_node('button');
-var $elm$json$Json$Decode$decodeString = _Json_runOnString;
 var $elm$html$Html$div = _VirtualDom_node('div');
-var $elm$core$List$concatMap = F2(
-	function (f, list) {
-		return $elm$core$List$concat(
-			A2($elm$core$List$map, f, list));
+var $author$project$ScatterplotFast$XyData = F3(
+	function (xDescription, yDescription, data) {
+		return {data: data, xDescription: xDescription, yDescription: yDescription};
 	});
-var $alex_tan$elm_tree_diagram$TreeDiagram$drawInternal = F6(
-	function (width, height, drawer, drawNode, drawLine, _v0) {
-		var _v1 = _v0.a;
-		var v = _v1.a;
-		var rootCoord = _v1.b;
-		var subtrees = _v0.b;
-		var transRootCoord = A3(drawer.transform, width, height, rootCoord);
-		var subtreePositions = A2(
-			$elm$core$List$map,
-			function (_v4) {
-				var _v5 = _v4.a;
-				var coord = _v5.b;
-				return coord;
-			},
-			subtrees);
-		var transSubtreePositions = A2(
-			$elm$core$List$map,
-			A2(drawer.transform, width, height),
-			subtreePositions);
-		var rootDrawing = A2(
-			drawer.position,
-			transRootCoord,
-			drawNode(v));
-		var _v2 = transRootCoord;
-		var transRootX = _v2.a;
-		var transRootY = _v2.b;
-		var subtreeOffsetsFromRoot = A2(
-			$elm$core$List$map,
-			function (_v3) {
-				var transSubtreeX = _v3.a;
-				var transSubtreeY = _v3.b;
-				return _Utils_Tuple2(transSubtreeX - transRootX, transSubtreeY - transRootY);
-			},
-			transSubtreePositions);
-		var edgeDrawings = A2(
-			$elm$core$List$map,
-			function (coord) {
-				return A2(
-					drawer.position,
-					transRootCoord,
-					drawLine(coord));
-			},
-			subtreeOffsetsFromRoot);
-		return A2(
-			$elm$core$List$append,
-			A2(
-				$elm$core$List$append,
-				edgeDrawings,
-				_List_fromArray(
-					[rootDrawing])),
-			A2(
-				$elm$core$List$concatMap,
-				A5($alex_tan$elm_tree_diagram$TreeDiagram$drawInternal, width, height, drawer, drawNode, drawLine),
-				subtrees));
-	});
-var $elm$core$Basics$round = _Basics_round;
-var $elm$core$List$maximum = function (list) {
-	if (list.b) {
-		var x = list.a;
-		var xs = list.b;
-		return $elm$core$Maybe$Just(
-			A3($elm$core$List$foldl, $elm$core$Basics$max, x, xs));
-	} else {
-		return $elm$core$Maybe$Nothing;
-	}
-};
-var $elm$core$Basics$min = F2(
-	function (x, y) {
-		return (_Utils_cmp(x, y) < 0) ? x : y;
-	});
-var $elm$core$List$minimum = function (list) {
-	if (list.b) {
-		var x = list.a;
-		var xs = list.b;
-		return $elm$core$Maybe$Just(
-			A3($elm$core$List$foldl, $elm$core$Basics$min, x, xs));
-	} else {
-		return $elm$core$Maybe$Nothing;
-	}
-};
-var $elm$core$List$unzip = function (pairs) {
-	var step = F2(
-		function (_v0, _v1) {
-			var x = _v0.a;
-			var y = _v0.b;
-			var xs = _v1.a;
-			var ys = _v1.b;
-			return _Utils_Tuple2(
-				A2($elm$core$List$cons, x, xs),
-				A2($elm$core$List$cons, y, ys));
-		});
-	return A3(
-		$elm$core$List$foldr,
-		step,
-		_Utils_Tuple2(_List_Nil, _List_Nil),
-		pairs);
-};
-var $alex_tan$elm_tree_diagram$TreeDiagram$treeExtrema = function (_v0) {
-	var _v1 = _v0.a;
-	var _v2 = _v1.b;
-	var x = _v2.a;
-	var y = _v2.b;
-	var subtrees = _v0.b;
-	var extrema = A2($elm$core$List$map, $alex_tan$elm_tree_diagram$TreeDiagram$treeExtrema, subtrees);
-	var _v3 = $elm$core$List$unzip(extrema);
-	var xExtrema = _v3.a;
-	var yExtrema = _v3.b;
-	var _v4 = $elm$core$List$unzip(yExtrema);
-	var minYs = _v4.a;
-	var maxYs = _v4.b;
-	var maxY = A2(
-		$elm$core$Basics$max,
-		y,
-		A2(
-			$elm$core$Maybe$withDefault,
-			y,
-			$elm$core$List$maximum(maxYs)));
-	var minY = A2(
-		$elm$core$Basics$min,
-		y,
-		A2(
-			$elm$core$Maybe$withDefault,
-			y,
-			$elm$core$List$minimum(minYs)));
-	var _v5 = $elm$core$List$unzip(xExtrema);
-	var minXs = _v5.a;
-	var maxXs = _v5.b;
-	var maxX = A2(
-		$elm$core$Basics$max,
-		x,
-		A2(
-			$elm$core$Maybe$withDefault,
-			x,
-			$elm$core$List$maximum(maxXs)));
-	var minX = A2(
-		$elm$core$Basics$min,
-		x,
-		A2(
-			$elm$core$Maybe$withDefault,
-			x,
-			$elm$core$List$minimum(minXs)));
-	return _Utils_Tuple2(
-		_Utils_Tuple2(minX, maxX),
-		_Utils_Tuple2(minY, maxY));
-};
-var $alex_tan$elm_tree_diagram$TreeDiagram$treeBoundingBox = function (tree) {
-	var _v0 = $alex_tan$elm_tree_diagram$TreeDiagram$treeExtrema(tree);
-	var _v1 = _v0.a;
-	var minX = _v1.a;
-	var maxX = _v1.b;
-	var _v2 = _v0.b;
-	var minY = _v2.a;
-	var maxY = _v2.b;
-	return _Utils_Tuple2(maxX - minX, maxY - minY);
-};
-var $alex_tan$elm_tree_diagram$TreeDiagram$drawPositioned = F5(
-	function (drawer, padding, drawNode, drawLine, positionedTree) {
-		var _v0 = $alex_tan$elm_tree_diagram$TreeDiagram$treeBoundingBox(positionedTree);
-		var width = _v0.a;
-		var height = _v0.b;
-		var totalHeight = $elm$core$Basics$round(height) + (2 * padding);
-		var totalWidth = $elm$core$Basics$round(width) + (2 * padding);
-		return A3(
-			drawer.compose,
-			totalWidth,
-			totalHeight,
-			A6($alex_tan$elm_tree_diagram$TreeDiagram$drawInternal, totalWidth, totalHeight, drawer, drawNode, drawLine, positionedTree));
-	});
-var $alex_tan$elm_tree_diagram$TreeDiagram$Node = F2(
-	function (a, b) {
-		return {$: 'Node', a: a, b: b};
-	});
-var $alex_tan$elm_tree_diagram$TreeDiagram$final = F4(
-	function (level, levelHeight, lOffset, _v0) {
-		var _v1 = _v0.a;
-		var v = _v1.a;
-		var prelimPosition = _v1.b;
-		var subtrees = _v0.b;
-		var subtreePrelimPositions = A2(
-			$elm$core$List$map,
-			function (_v2) {
-				var _v3 = _v2.a;
-				var prelimPosition_ = _v3.b;
-				return prelimPosition_;
-			},
-			subtrees);
-		var visited = A3(
-			$elm$core$List$map2,
-			F2(
-				function (prelimPos, subtree) {
-					return A4($alex_tan$elm_tree_diagram$TreeDiagram$final, level + 1, levelHeight, lOffset + prelimPos.subtreeOffset, subtree);
-				}),
-			subtreePrelimPositions,
-			subtrees);
-		var finalPosition = _Utils_Tuple2(lOffset + prelimPosition.rootOffset, level * levelHeight);
-		return A2(
-			$alex_tan$elm_tree_diagram$TreeDiagram$Node,
-			_Utils_Tuple2(v, finalPosition),
-			visited);
-	});
-var $elm$core$Basics$negate = function (n) {
-	return -n;
-};
-var $alex_tan$elm_tree_diagram$TreeDiagram$buildContour = F3(
-	function (lContour, rContour, rContourOffset) {
-		var rLength = $elm$core$List$length(rContour);
-		var lLength = $elm$core$List$length(lContour);
-		var combinedContour = A3(
-			$elm$core$List$map2,
-			F2(
-				function (_v1, _v2) {
-					var lFrom = _v1.a;
-					var lTo = _v1.b;
-					var rFrom = _v2.a;
-					var rTo = _v2.b;
-					return _Utils_Tuple2(lFrom, rTo + rContourOffset);
-				}),
-			lContour,
-			rContour);
-		return (_Utils_cmp(lLength, rLength) > 0) ? A2(
-			$elm$core$List$append,
-			combinedContour,
-			A2($elm$core$List$drop, rLength, lContour)) : A2(
-			$elm$core$List$append,
-			combinedContour,
-			A2(
-				$elm$core$List$map,
-				function (_v0) {
-					var from = _v0.a;
-					var to = _v0.b;
-					return _Utils_Tuple2(from + rContourOffset, to + rContourOffset);
-				},
-				A2($elm$core$List$drop, lLength, rContour)));
-	});
-var $elm$core$Maybe$map2 = F3(
-	function (func, ma, mb) {
-		if (ma.$ === 'Nothing') {
-			return $elm$core$Maybe$Nothing;
-		} else {
-			var a = ma.a;
-			if (mb.$ === 'Nothing') {
-				return $elm$core$Maybe$Nothing;
-			} else {
-				var b = mb.a;
-				return $elm$core$Maybe$Just(
-					A2(func, a, b));
-			}
-		}
-	});
-var $alex_tan$elm_tree_diagram$TreeDiagram$ends = function (list) {
-	var last = $elm$core$List$head(
-		$elm$core$List$reverse(list));
-	var first = $elm$core$List$head(list);
-	return A3(
-		$elm$core$Maybe$map2,
-		F2(
-			function (a, b) {
-				return _Utils_Tuple2(a, b);
-			}),
-		first,
-		last);
-};
-var $alex_tan$elm_tree_diagram$TreeDiagram$rootOffset = F2(
-	function (lPrelimPosition, rPrelimPosition) {
-		return ((((lPrelimPosition.subtreeOffset + rPrelimPosition.subtreeOffset) + lPrelimPosition.rootOffset) + rPrelimPosition.rootOffset) / 2) | 0;
-	});
-var $alex_tan$elm_tree_diagram$TreeDiagram$pairwiseSubtreeOffset = F4(
-	function (siblingDistance, subtreeDistance, lContour, rContour) {
-		var levelDistances = A3(
-			$elm$core$List$map2,
-			F2(
-				function (_v1, _v2) {
-					var lTo = _v1.b;
-					var rFrom = _v2.a;
-					return lTo - rFrom;
-				}),
-			lContour,
-			rContour);
-		var _v0 = $elm$core$List$maximum(levelDistances);
-		if (_v0.$ === 'Just') {
-			var separatingDistance = _v0.a;
-			var minDistance = (($elm$core$List$length(lContour) === 1) || ($elm$core$List$length(rContour) === 1)) ? siblingDistance : subtreeDistance;
-			return separatingDistance + minDistance;
-		} else {
-			return 0;
-		}
-	});
-var $alex_tan$elm_tree_diagram$TreeDiagram$scanl = F3(
-	function (f, b, xs) {
-		var scan1 = F2(
-			function (x, accAcc) {
-				if (accAcc.b) {
-					var acc = accAcc.a;
-					return A2(
-						$elm$core$List$cons,
-						A2(f, x, acc),
-						accAcc);
-				} else {
-					return _List_Nil;
-				}
-			});
-		return $elm$core$List$reverse(
-			A3(
-				$elm$core$List$foldl,
-				scan1,
-				_List_fromArray(
-					[b]),
-				xs));
-	});
-var $alex_tan$elm_tree_diagram$TreeDiagram$subtreeOffsets = F3(
-	function (siblingDistance, subtreeDistance, contours) {
-		var _v0 = $elm$core$List$head(contours);
-		if (_v0.$ === 'Just') {
-			var c0 = _v0.a;
-			var cumulativeContours = A3(
-				$alex_tan$elm_tree_diagram$TreeDiagram$scanl,
-				F2(
-					function (c, _v2) {
-						var aggContour = _v2.a;
-						var offset = A4($alex_tan$elm_tree_diagram$TreeDiagram$pairwiseSubtreeOffset, siblingDistance, subtreeDistance, aggContour, c);
-						return _Utils_Tuple2(
-							A3($alex_tan$elm_tree_diagram$TreeDiagram$buildContour, aggContour, c, offset),
-							offset);
-					}),
-				_Utils_Tuple2(c0, 0),
-				A2($elm$core$List$drop, 1, contours));
-			return A2(
-				$elm$core$List$map,
-				function (_v1) {
-					var runningOffset = _v1.b;
-					return runningOffset;
-				},
-				cumulativeContours);
-		} else {
-			return _List_Nil;
-		}
-	});
-var $alex_tan$elm_tree_diagram$TreeDiagram$prelim = F3(
-	function (siblingDistance, subtreeDistance, _v0) {
-		var val = _v0.a;
-		var children = _v0.b;
-		var visited = A2(
-			$elm$core$List$map,
-			A2($alex_tan$elm_tree_diagram$TreeDiagram$prelim, siblingDistance, subtreeDistance),
-			children);
-		var _v1 = $elm$core$List$unzip(visited);
-		var subtrees = _v1.a;
-		var childContours = _v1.b;
-		var offsets = A3($alex_tan$elm_tree_diagram$TreeDiagram$subtreeOffsets, siblingDistance, subtreeDistance, childContours);
-		var updatedChildren = A3(
-			$elm$core$List$map2,
-			F2(
-				function (_v10, offset) {
-					var _v11 = _v10.a;
-					var v = _v11.a;
-					var prelimPosition = _v11.b;
-					var children_ = _v10.b;
-					return A2(
-						$alex_tan$elm_tree_diagram$TreeDiagram$Node,
-						_Utils_Tuple2(
-							v,
-							_Utils_update(
-								prelimPosition,
-								{subtreeOffset: offset})),
-						children_);
-				}),
-			subtrees,
-			offsets);
-		var _v2 = $alex_tan$elm_tree_diagram$TreeDiagram$ends(
-			A3(
-				$elm$core$List$map2,
-				F2(
-					function (a, b) {
-						return _Utils_Tuple2(a, b);
-					}),
-				updatedChildren,
-				childContours));
-		if (_v2.$ === 'Just') {
-			var _v3 = _v2.a;
-			var _v4 = _v3.a;
-			var lSubtree = _v4.a;
-			var lSubtreeContour = _v4.b;
-			var _v5 = _v3.b;
-			var rSubtree = _v5.a;
-			var rSubtreeContour = _v5.b;
-			var _v6 = rSubtree;
-			var _v7 = _v6.a;
-			var rPrelimPos = _v7.b;
-			var _v8 = lSubtree;
-			var _v9 = _v8.a;
-			var lPrelimPos = _v9.b;
-			var prelimPos = {
-				rootOffset: A2($alex_tan$elm_tree_diagram$TreeDiagram$rootOffset, lPrelimPos, rPrelimPos),
-				subtreeOffset: 0
-			};
-			var rootContour = _Utils_Tuple2(prelimPos.rootOffset, prelimPos.rootOffset);
-			var treeContour = A2(
-				$elm$core$List$cons,
-				rootContour,
-				A3($alex_tan$elm_tree_diagram$TreeDiagram$buildContour, lSubtreeContour, rSubtreeContour, rPrelimPos.subtreeOffset));
-			return _Utils_Tuple2(
-				A2(
-					$alex_tan$elm_tree_diagram$TreeDiagram$Node,
-					_Utils_Tuple2(val, prelimPos),
-					updatedChildren),
-				treeContour);
-		} else {
-			return _Utils_Tuple2(
-				A2(
-					$alex_tan$elm_tree_diagram$TreeDiagram$Node,
-					_Utils_Tuple2(
-						val,
-						{rootOffset: 0, subtreeOffset: 0}),
-					updatedChildren),
-				_List_fromArray(
-					[
-						_Utils_Tuple2(0, 0)
-					]));
-		}
-	});
-var $alex_tan$elm_tree_diagram$TreeDiagram$treeMap = F2(
-	function (fn, _v0) {
-		var v = _v0.a;
-		var children = _v0.b;
-		return A2(
-			$alex_tan$elm_tree_diagram$TreeDiagram$Node,
-			fn(v),
-			A2(
-				$elm$core$List$map,
-				$alex_tan$elm_tree_diagram$TreeDiagram$treeMap(fn),
-				children));
-	});
-var $alex_tan$elm_tree_diagram$TreeDiagram$position = F5(
-	function (siblingDistance, subtreeDistance, levelHeight, layout, tree) {
-		var _v0 = A3($alex_tan$elm_tree_diagram$TreeDiagram$prelim, siblingDistance, subtreeDistance, tree);
-		var prelimTree = _v0.a;
-		var finalTree = A4($alex_tan$elm_tree_diagram$TreeDiagram$final, 0, levelHeight, 0, prelimTree);
-		var _v1 = $alex_tan$elm_tree_diagram$TreeDiagram$treeBoundingBox(finalTree);
-		var width = _v1.a;
-		var height = _v1.b;
-		var transform = function (_v3) {
-			var x = _v3.a;
-			var y = _v3.b;
-			switch (layout.$) {
-				case 'LeftToRight':
-					return _Utils_Tuple2(y - (height / 2), x - (width / 2));
-				case 'RightToLeft':
-					return _Utils_Tuple2((-y) + (height / 2), x - (width / 2));
-				case 'BottomToTop':
-					return _Utils_Tuple2(x - (width / 2), y - (height / 2));
-				default:
-					return _Utils_Tuple2(x - (width / 2), (-y) + (height / 2));
-			}
-		};
-		return A2(
-			$alex_tan$elm_tree_diagram$TreeDiagram$treeMap,
-			function (_v2) {
-				var v = _v2.a;
-				var coord = _v2.b;
-				return _Utils_Tuple2(
-					v,
-					transform(coord));
-			},
-			finalTree);
-	});
-var $alex_tan$elm_tree_diagram$TreeDiagram$draw_ = F5(
-	function (drawer, layout, drawNode, drawLine, tree) {
-		var positionedTree = A5($alex_tan$elm_tree_diagram$TreeDiagram$position, layout.siblingDistance, layout.subtreeDistance, layout.levelHeight, layout.orientation, tree);
-		return A5($alex_tan$elm_tree_diagram$TreeDiagram$drawPositioned, drawer, layout.padding, drawNode, drawLine, positionedTree);
-	});
-var $alex_tan$elm_tree_diagram$TreeDiagram$Drawable = F3(
-	function (position, compose, transform) {
-		return {compose: compose, position: position, transform: transform};
-	});
-var $elm$svg$Svg$trustedNode = _VirtualDom_nodeNS('http://www.w3.org/2000/svg');
-var $elm$svg$Svg$g = $elm$svg$Svg$trustedNode('g');
-var $elm$svg$Svg$Attributes$height = _VirtualDom_attribute('height');
-var $elm$svg$Svg$svg = $elm$svg$Svg$trustedNode('svg');
-var $elm$svg$Svg$Attributes$width = _VirtualDom_attribute('width');
-var $alex_tan$elm_tree_diagram$TreeDiagram$Svg$svgCompose = F3(
-	function (width, height, svgs) {
-		return A2(
-			$elm$svg$Svg$svg,
-			_List_fromArray(
-				[
-					$elm$svg$Svg$Attributes$width(
-					$elm$core$String$fromInt(width)),
-					$elm$svg$Svg$Attributes$height(
-					$elm$core$String$fromInt(height))
-				]),
-			_List_fromArray(
-				[
-					A2($elm$svg$Svg$g, _List_Nil, svgs)
-				]));
+var $author$project$ScatterplotFast$Point = F3(
+	function (pointName, x, y) {
+		return {pointName: pointName, x: x, y: y};
 	});
 var $elm$core$String$fromFloat = _String_fromNumber;
-var $elm$svg$Svg$Attributes$transform = _VirtualDom_attribute('transform');
-var $alex_tan$elm_tree_diagram$TreeDiagram$Svg$svgPosition = F2(
-	function (_v0, svg) {
-		var x = _v0.a;
-		var y = _v0.b;
+var $author$project$ScatterplotFast$pointName = F6(
+	function (player, a, b, c, d, e) {
+		return A3(
+			$author$project$ScatterplotFast$Point,
+			a(player) + (', ' + (d + (': ' + ($elm$core$String$fromFloat(
+				b(player)) + (',' + (e + (': ' + $elm$core$String$fromFloat(
+				c(player))))))))),
+			b(player),
+			c(player));
+	});
+var $author$project$ScatterplotFast$filterAndReducePlayers = F6(
+	function (playerlist, a, b, c, x, y) {
+		return A3(
+			$author$project$ScatterplotFast$XyData,
+			x,
+			y,
+			A2(
+				$elm$core$List$map,
+				function (n) {
+					return A6($author$project$ScatterplotFast$pointName, n, a, b, c, x, y);
+				},
+				playerlist));
+	});
+var $author$project$ScatterplotFast$filterAttribute = F3(
+	function (spieler, attribut, wort) {
 		return A2(
-			$elm$svg$Svg$g,
-			_List_fromArray(
-				[
-					$elm$svg$Svg$Attributes$transform(
-					'translate(' + ($elm$core$String$fromFloat(x) + (' ' + ($elm$core$String$fromFloat(y) + ')'))))
-				]),
-			_List_fromArray(
-				[svg]));
+			$elm$core$List$filter,
+			function (n) {
+				return _Utils_eq(
+					attribut(n),
+					wort);
+			},
+			spieler);
 	});
-var $alex_tan$elm_tree_diagram$TreeDiagram$Svg$svgTransform = F3(
-	function (width, height, coord) {
-		var _v0 = coord;
-		var x = _v0.a;
-		var y = _v0.b;
-		var svgX = x + (width / 2);
-		var svgY = (height / 2) - y;
-		return _Utils_Tuple2(svgX, svgY);
-	});
-var $alex_tan$elm_tree_diagram$TreeDiagram$Svg$svgDrawable = A3($alex_tan$elm_tree_diagram$TreeDiagram$Drawable, $alex_tan$elm_tree_diagram$TreeDiagram$Svg$svgPosition, $alex_tan$elm_tree_diagram$TreeDiagram$Svg$svgCompose, $alex_tan$elm_tree_diagram$TreeDiagram$Svg$svgTransform);
-var $alex_tan$elm_tree_diagram$TreeDiagram$Svg$draw = F4(
-	function (layout, drawNode, drawLine, tree) {
-		return A5($alex_tan$elm_tree_diagram$TreeDiagram$draw_, $alex_tan$elm_tree_diagram$TreeDiagram$Svg$svgDrawable, layout, drawNode, drawLine, tree);
-	});
-var $elm_community$typed_svg$TypedSvg$Types$Paint = function (a) {
-	return {$: 'Paint', a: a};
+var $elm$html$Html$input = _VirtualDom_node('input');
+var $elm$virtual_dom$VirtualDom$Normal = function (a) {
+	return {$: 'Normal', a: a};
 };
-var $avh4$elm_color$Color$RgbaSpace = F4(
-	function (a, b, c, d) {
-		return {$: 'RgbaSpace', a: a, b: b, c: c, d: d};
+var $elm$virtual_dom$VirtualDom$on = _VirtualDom_on;
+var $elm$html$Html$Events$on = F2(
+	function (event, decoder) {
+		return A2(
+			$elm$virtual_dom$VirtualDom$on,
+			event,
+			$elm$virtual_dom$VirtualDom$Normal(decoder));
 	});
-var $avh4$elm_color$Color$black = A4($avh4$elm_color$Color$RgbaSpace, 0 / 255, 0 / 255, 0 / 255, 1.0);
-var $elm$virtual_dom$VirtualDom$nodeNS = function (tag) {
-	return _VirtualDom_nodeNS(
-		_VirtualDom_noScript(tag));
+var $elm$json$Json$Decode$field = _Json_decodeField;
+var $elm$json$Json$Decode$at = F2(
+	function (fields, decoder) {
+		return A3($elm$core$List$foldr, $elm$json$Json$Decode$field, decoder, fields);
+	});
+var $elm$json$Json$Decode$bool = _Json_decodeBool;
+var $elm$html$Html$Events$targetChecked = A2(
+	$elm$json$Json$Decode$at,
+	_List_fromArray(
+		['target', 'checked']),
+	$elm$json$Json$Decode$bool);
+var $elm$html$Html$Events$onCheck = function (tagger) {
+	return A2(
+		$elm$html$Html$Events$on,
+		'change',
+		A2($elm$json$Json$Decode$map, tagger, $elm$html$Html$Events$targetChecked));
 };
-var $elm_community$typed_svg$TypedSvg$Core$node = $elm$virtual_dom$VirtualDom$nodeNS('http://www.w3.org/2000/svg');
-var $elm_community$typed_svg$TypedSvg$line = $elm_community$typed_svg$TypedSvg$Core$node('line');
+var $elm$html$Html$Events$onClick = function (msg) {
+	return A2(
+		$elm$html$Html$Events$on,
+		'click',
+		$elm$json$Json$Decode$succeed(msg));
+};
+var $elm$html$Html$Events$alwaysStop = function (x) {
+	return _Utils_Tuple2(x, true);
+};
+var $elm$virtual_dom$VirtualDom$MayStopPropagation = function (a) {
+	return {$: 'MayStopPropagation', a: a};
+};
+var $elm$html$Html$Events$stopPropagationOn = F2(
+	function (event, decoder) {
+		return A2(
+			$elm$virtual_dom$VirtualDom$on,
+			event,
+			$elm$virtual_dom$VirtualDom$MayStopPropagation(decoder));
+	});
+var $elm$json$Json$Decode$string = _Json_decodeString;
+var $elm$html$Html$Events$targetValue = A2(
+	$elm$json$Json$Decode$at,
+	_List_fromArray(
+		['target', 'value']),
+	$elm$json$Json$Decode$string);
+var $elm$html$Html$Events$onInput = function (tagger) {
+	return A2(
+		$elm$html$Html$Events$stopPropagationOn,
+		'input',
+		A2(
+			$elm$json$Json$Decode$map,
+			$elm$html$Html$Events$alwaysStop,
+			A2($elm$json$Json$Decode$map, tagger, $elm$html$Html$Events$targetValue)));
+};
+var $elm$json$Json$Encode$string = _Json_wrap;
+var $elm$html$Html$Attributes$stringProperty = F2(
+	function (key, string) {
+		return A2(
+			_VirtualDom_property,
+			key,
+			$elm$json$Json$Encode$string(string));
+	});
+var $elm$html$Html$Attributes$placeholder = $elm$html$Html$Attributes$stringProperty('placeholder');
+var $elm_community$typed_svg$TypedSvg$Types$Percent = function (a) {
+	return {$: 'Percent', a: a};
+};
+var $elm_community$typed_svg$TypedSvg$Types$Translate = F2(
+	function (a, b) {
+		return {$: 'Translate', a: a, b: b};
+	});
 var $elm$virtual_dom$VirtualDom$attribute = F2(
 	function (key, value) {
 		return A2(
@@ -7196,69 +6959,16 @@ var $elm$virtual_dom$VirtualDom$attribute = F2(
 			_VirtualDom_noJavaScriptOrHtmlUri(value));
 	});
 var $elm_community$typed_svg$TypedSvg$Core$attribute = $elm$virtual_dom$VirtualDom$attribute;
-var $elm$core$String$concat = function (strings) {
-	return A2($elm$core$String$join, '', strings);
-};
-var $avh4$elm_color$Color$toCssString = function (_v0) {
-	var r = _v0.a;
-	var g = _v0.b;
-	var b = _v0.c;
-	var a = _v0.d;
-	var roundTo = function (x) {
-		return $elm$core$Basics$round(x * 1000) / 1000;
-	};
-	var pct = function (x) {
-		return $elm$core$Basics$round(x * 10000) / 100;
-	};
-	return $elm$core$String$concat(
-		_List_fromArray(
-			[
-				'rgba(',
-				$elm$core$String$fromFloat(
-				pct(r)),
-				'%,',
-				$elm$core$String$fromFloat(
-				pct(g)),
-				'%,',
-				$elm$core$String$fromFloat(
-				pct(b)),
-				'%,',
-				$elm$core$String$fromFloat(
-				roundTo(a)),
-				')'
-			]));
-};
-var $elm_community$typed_svg$TypedSvg$TypesToStrings$paintToString = function (paint) {
-	switch (paint.$) {
-		case 'Paint':
-			var color = paint.a;
-			return $avh4$elm_color$Color$toCssString(color);
-		case 'CSSVariable':
-			var string = paint.a;
-			return $elm$core$String$concat(
-				_List_fromArray(
-					['var(' + (string + ')')]));
-		case 'Reference':
-			var string = paint.a;
-			return $elm$core$String$concat(
-				_List_fromArray(
-					['url(#', string, ')']));
-		case 'ContextFill':
-			return 'context-fill';
-		case 'ContextStroke':
-			return 'context-stroke';
-		default:
-			return 'none';
+var $elm_community$typed_svg$TypedSvg$Attributes$fontFamily = function (families) {
+	if (!families.b) {
+		return A2($elm_community$typed_svg$TypedSvg$Core$attribute, 'font-family', 'inherit');
+	} else {
+		return A2(
+			$elm_community$typed_svg$TypedSvg$Core$attribute,
+			'font-family',
+			A2($elm$core$String$join, ', ', families));
 	}
 };
-var $elm_community$typed_svg$TypedSvg$Attributes$stroke = A2(
-	$elm$core$Basics$composeL,
-	$elm_community$typed_svg$TypedSvg$Core$attribute('stroke'),
-	$elm_community$typed_svg$TypedSvg$TypesToStrings$paintToString);
-var $elm_community$typed_svg$TypedSvg$Types$Px = function (a) {
-	return {$: 'Px', a: a};
-};
-var $elm_community$typed_svg$TypedSvg$Types$px = $elm_community$typed_svg$TypedSvg$Types$Px;
 var $elm_community$typed_svg$TypedSvg$TypesToStrings$lengthToString = function (length) {
 	switch (length.$) {
 		case 'Cm':
@@ -7296,78 +7006,52 @@ var $elm_community$typed_svg$TypedSvg$TypesToStrings$lengthToString = function (
 			return $elm$core$String$fromFloat(x) + 'rem';
 	}
 };
-var $elm_community$typed_svg$TypedSvg$Attributes$x1 = function (position) {
+var $elm_community$typed_svg$TypedSvg$Attributes$fontSize = function (length) {
 	return A2(
 		$elm_community$typed_svg$TypedSvg$Core$attribute,
-		'x1',
-		$elm_community$typed_svg$TypedSvg$TypesToStrings$lengthToString(position));
+		'font-size',
+		$elm_community$typed_svg$TypedSvg$TypesToStrings$lengthToString(length));
 };
-var $elm_community$typed_svg$TypedSvg$Attributes$InPx$x1 = function (value) {
-	return $elm_community$typed_svg$TypedSvg$Attributes$x1(
-		$elm_community$typed_svg$TypedSvg$Types$px(value));
+var $elm$virtual_dom$VirtualDom$nodeNS = function (tag) {
+	return _VirtualDom_nodeNS(
+		_VirtualDom_noScript(tag));
 };
-var $elm_community$typed_svg$TypedSvg$Attributes$x2 = function (position) {
+var $elm_community$typed_svg$TypedSvg$Core$node = $elm$virtual_dom$VirtualDom$nodeNS('http://www.w3.org/2000/svg');
+var $elm_community$typed_svg$TypedSvg$g = $elm_community$typed_svg$TypedSvg$Core$node('g');
+var $author$project$ScatterplotFast$h = 450;
+var $elm_community$typed_svg$TypedSvg$Attributes$height = function (length) {
 	return A2(
 		$elm_community$typed_svg$TypedSvg$Core$attribute,
-		'x2',
-		$elm_community$typed_svg$TypedSvg$TypesToStrings$lengthToString(position));
+		'height',
+		$elm_community$typed_svg$TypedSvg$TypesToStrings$lengthToString(length));
 };
-var $elm_community$typed_svg$TypedSvg$Attributes$InPx$x2 = function (value) {
-	return $elm_community$typed_svg$TypedSvg$Attributes$x2(
-		$elm_community$typed_svg$TypedSvg$Types$px(value));
+var $elm$core$Basics$negate = function (n) {
+	return -n;
 };
-var $elm_community$typed_svg$TypedSvg$Attributes$y1 = function (position) {
-	return A2(
-		$elm_community$typed_svg$TypedSvg$Core$attribute,
-		'y1',
-		$elm_community$typed_svg$TypedSvg$TypesToStrings$lengthToString(position));
+var $author$project$ScatterplotFast$padding = 60;
+var $elm_community$typed_svg$TypedSvg$Types$AnchorMiddle = {$: 'AnchorMiddle'};
+var $elm_community$typed_svg$TypedSvg$Types$Px = function (a) {
+	return {$: 'Px', a: a};
 };
-var $elm_community$typed_svg$TypedSvg$Attributes$InPx$y1 = function (value) {
-	return $elm_community$typed_svg$TypedSvg$Attributes$y1(
-		$elm_community$typed_svg$TypedSvg$Types$px(value));
-};
-var $elm_community$typed_svg$TypedSvg$Attributes$y2 = function (position) {
-	return A2(
-		$elm_community$typed_svg$TypedSvg$Core$attribute,
-		'y2',
-		$elm_community$typed_svg$TypedSvg$TypesToStrings$lengthToString(position));
-};
-var $elm_community$typed_svg$TypedSvg$Attributes$InPx$y2 = function (value) {
-	return $elm_community$typed_svg$TypedSvg$Attributes$y2(
-		$elm_community$typed_svg$TypedSvg$Types$px(value));
-};
-var $author$project$Development$TreeDiagramm$drawLine = function (_v0) {
-	var targetX = _v0.a;
-	var targetY = _v0.b;
-	return A2(
-		$elm_community$typed_svg$TypedSvg$line,
-		_List_fromArray(
-			[
-				$elm_community$typed_svg$TypedSvg$Attributes$InPx$x1(0),
-				$elm_community$typed_svg$TypedSvg$Attributes$InPx$y1(0),
-				$elm_community$typed_svg$TypedSvg$Attributes$InPx$x2(targetX),
-				$elm_community$typed_svg$TypedSvg$Attributes$InPx$y2(targetY),
-				$elm_community$typed_svg$TypedSvg$Attributes$stroke(
-				$elm_community$typed_svg$TypedSvg$Types$Paint($avh4$elm_color$Color$black))
-			]),
-		_List_Nil);
-};
-var $elm_community$typed_svg$TypedSvg$Types$AnchorStart = {$: 'AnchorStart'};
-var $elm_community$typed_svg$TypedSvg$Types$Rotate = F3(
-	function (a, b, c) {
-		return {$: 'Rotate', a: a, b: b, c: c};
-	});
-var $elm_community$typed_svg$TypedSvg$Types$Translate = F2(
-	function (a, b) {
-		return {$: 'Translate', a: a, b: b};
-	});
 var $elm_community$typed_svg$TypedSvg$circle = $elm_community$typed_svg$TypedSvg$Core$node('circle');
+var $elm_community$typed_svg$TypedSvg$Attributes$class = function (names) {
+	return A2(
+		$elm_community$typed_svg$TypedSvg$Core$attribute,
+		'class',
+		A2($elm$core$String$join, ' ', names));
+};
+var $gampleman$elm_visualization$Scale$convert = F2(
+	function (_v0, value) {
+		var scale = _v0.a;
+		return A3(scale.convert, scale.domain, scale.range, value);
+	});
 var $elm_community$typed_svg$TypedSvg$Attributes$cx = function (length) {
 	return A2(
 		$elm_community$typed_svg$TypedSvg$Core$attribute,
 		'cx',
 		$elm_community$typed_svg$TypedSvg$TypesToStrings$lengthToString(length));
 };
+var $elm_community$typed_svg$TypedSvg$Types$px = $elm_community$typed_svg$TypedSvg$Types$Px;
 var $elm_community$typed_svg$TypedSvg$Attributes$InPx$cx = function (value) {
 	return $elm_community$typed_svg$TypedSvg$Attributes$cx(
 		$elm_community$typed_svg$TypedSvg$Types$px(value));
@@ -7382,22 +7066,6 @@ var $elm_community$typed_svg$TypedSvg$Attributes$InPx$cy = function (value) {
 	return $elm_community$typed_svg$TypedSvg$Attributes$cy(
 		$elm_community$typed_svg$TypedSvg$Types$px(value));
 };
-var $elm_community$typed_svg$TypedSvg$Attributes$fill = A2(
-	$elm$core$Basics$composeL,
-	$elm_community$typed_svg$TypedSvg$Core$attribute('fill'),
-	$elm_community$typed_svg$TypedSvg$TypesToStrings$paintToString);
-var $elm_community$typed_svg$TypedSvg$Attributes$fontFamily = function (families) {
-	if (!families.b) {
-		return A2($elm_community$typed_svg$TypedSvg$Core$attribute, 'font-family', 'inherit');
-	} else {
-		return A2(
-			$elm_community$typed_svg$TypedSvg$Core$attribute,
-			'font-family',
-			A2($elm$core$String$join, ', ', families));
-	}
-};
-var $elm_community$typed_svg$TypedSvg$g = $elm_community$typed_svg$TypedSvg$Core$node('g');
-var $avh4$elm_color$Color$purple = A4($avh4$elm_color$Color$RgbaSpace, 117 / 255, 80 / 255, 123 / 255, 1.0);
 var $elm_community$typed_svg$TypedSvg$Attributes$r = function (length) {
 	return A2(
 		$elm_community$typed_svg$TypedSvg$Core$attribute,
@@ -7429,6 +7097,9 @@ var $elm_community$typed_svg$TypedSvg$Attributes$textAnchor = function (anchorAl
 		$elm_community$typed_svg$TypedSvg$TypesToStrings$anchorAlignmentToString(anchorAlignment));
 };
 var $elm_community$typed_svg$TypedSvg$text_ = $elm_community$typed_svg$TypedSvg$Core$node('text');
+var $elm$core$String$concat = function (strings) {
+	return A2($elm$core$String$join, '', strings);
+};
 var $elm_community$typed_svg$TypedSvg$TypesToStrings$transformToString = function (xform) {
 	var tr = F2(
 		function (name, args) {
@@ -7507,332 +7178,879 @@ var $elm_community$typed_svg$TypedSvg$Attributes$transform = function (transform
 			' ',
 			A2($elm$core$List$map, $elm_community$typed_svg$TypedSvg$TypesToStrings$transformToString, transforms)));
 };
-var $author$project$Development$TreeDiagramm$drawNode = function (n) {
+var $elm_community$typed_svg$TypedSvg$Attributes$x = function (length) {
 	return A2(
-		$elm_community$typed_svg$TypedSvg$g,
-		_List_Nil,
+		$elm_community$typed_svg$TypedSvg$Core$attribute,
+		'x',
+		$elm_community$typed_svg$TypedSvg$TypesToStrings$lengthToString(length));
+};
+var $elm_community$typed_svg$TypedSvg$Attributes$InPx$x = function (value) {
+	return $elm_community$typed_svg$TypedSvg$Attributes$x(
+		$elm_community$typed_svg$TypedSvg$Types$px(value));
+};
+var $elm_community$typed_svg$TypedSvg$Attributes$y = function (length) {
+	return A2(
+		$elm_community$typed_svg$TypedSvg$Core$attribute,
+		'y',
+		$elm_community$typed_svg$TypedSvg$TypesToStrings$lengthToString(length));
+};
+var $elm_community$typed_svg$TypedSvg$Attributes$InPx$y = function (value) {
+	return $elm_community$typed_svg$TypedSvg$Attributes$y(
+		$elm_community$typed_svg$TypedSvg$Types$px(value));
+};
+var $author$project$ScatterplotFast$point = F4(
+	function (scaleX, scaleY, xyPoint, pointList) {
+		return A2(
+			$elm_community$typed_svg$TypedSvg$g,
+			_List_fromArray(
+				[
+					$elm_community$typed_svg$TypedSvg$Attributes$class(
+					_List_fromArray(
+						['point'])),
+					$elm_community$typed_svg$TypedSvg$Attributes$fontSize(
+					$elm_community$typed_svg$TypedSvg$Types$Px(15.0)),
+					$elm_community$typed_svg$TypedSvg$Attributes$fontFamily(
+					_List_fromArray(
+						['sans-serif'])),
+					$elm_community$typed_svg$TypedSvg$Attributes$transform(
+					_List_fromArray(
+						[
+							A2(
+							$elm_community$typed_svg$TypedSvg$Types$Translate,
+							A2($gampleman$elm_visualization$Scale$convert, scaleX, xyPoint.x),
+							A2($gampleman$elm_visualization$Scale$convert, scaleY, xyPoint.y))
+						]))
+				]),
+			_List_fromArray(
+				[
+					A2(
+					$elm_community$typed_svg$TypedSvg$circle,
+					_List_fromArray(
+						[
+							$elm_community$typed_svg$TypedSvg$Attributes$InPx$cx(0),
+							$elm_community$typed_svg$TypedSvg$Attributes$InPx$cy(0),
+							$elm_community$typed_svg$TypedSvg$Attributes$InPx$r(3)
+						]),
+					_List_Nil),
+					A2(
+					$elm_community$typed_svg$TypedSvg$text_,
+					_List_fromArray(
+						[
+							$elm_community$typed_svg$TypedSvg$Attributes$InPx$x(10),
+							$elm_community$typed_svg$TypedSvg$Attributes$InPx$y(-20),
+							$elm_community$typed_svg$TypedSvg$Attributes$textAnchor($elm_community$typed_svg$TypedSvg$Types$AnchorMiddle)
+						]),
+					_List_fromArray(
+						[
+							$elm$html$Html$text(xyPoint.pointName)
+						]))
+				]));
+	});
+var $elm_community$typed_svg$TypedSvg$style = $elm_community$typed_svg$TypedSvg$Core$node('style');
+var $elm_community$typed_svg$TypedSvg$svg = $elm_community$typed_svg$TypedSvg$Core$node('svg');
+var $elm_community$typed_svg$TypedSvg$Core$text = $elm$virtual_dom$VirtualDom$text;
+var $elm_community$typed_svg$TypedSvg$Attributes$viewBox = F4(
+	function (minX, minY, vWidth, vHeight) {
+		return A2(
+			$elm_community$typed_svg$TypedSvg$Core$attribute,
+			'viewBox',
+			A2(
+				$elm$core$String$join,
+				' ',
+				A2(
+					$elm$core$List$map,
+					$elm$core$String$fromFloat,
+					_List_fromArray(
+						[minX, minY, vWidth, vHeight]))));
+	});
+var $author$project$ScatterplotFast$w = 900;
+var $author$project$ScatterplotFast$addieren = F2(
+	function (_v0, shift) {
+		var min = _v0.a;
+		var max = _v0.b;
+		return (min <= 0) ? _Utils_Tuple2(0, max + shift) : _Utils_Tuple2(min - shift, max + shift);
+	});
+var $gampleman$elm_visualization$Statistics$extentBy = F2(
+	function (fn, list) {
+		var min = F2(
+			function (a, b) {
+				return (_Utils_cmp(
+					fn(a),
+					fn(b)) < 0) ? a : b;
+			});
+		var max = F2(
+			function (a, b) {
+				return (_Utils_cmp(
+					fn(a),
+					fn(b)) > 0) ? a : b;
+			});
+		var helper = F2(
+			function (l, _v0) {
+				helper:
+				while (true) {
+					var mini = _v0.a;
+					var maxi = _v0.b;
+					if (!l.b) {
+						return _Utils_Tuple2(mini, maxi);
+					} else {
+						var x = l.a;
+						var xs = l.b;
+						var $temp$l = xs,
+							$temp$_v0 = _Utils_Tuple2(
+							A2(min, mini, x),
+							A2(max, maxi, x));
+						l = $temp$l;
+						_v0 = $temp$_v0;
+						continue helper;
+					}
+				}
+			});
+		if (!list.b) {
+			return $elm$core$Maybe$Nothing;
+		} else {
+			var x = list.a;
+			var xs = list.b;
+			return $elm$core$Maybe$Just(
+				A2(
+					helper,
+					xs,
+					_Utils_Tuple2(x, x)));
+		}
+	});
+var $gampleman$elm_visualization$Statistics$extent = $gampleman$elm_visualization$Statistics$extentBy($elm$core$Basics$identity);
+var $elm$core$List$maximum = function (list) {
+	if (list.b) {
+		var x = list.a;
+		var xs = list.b;
+		return $elm$core$Maybe$Just(
+			A3($elm$core$List$foldl, $elm$core$Basics$max, x, xs));
+	} else {
+		return $elm$core$Maybe$Nothing;
+	}
+};
+var $author$project$ScatterplotFast$tickCount = 5;
+var $author$project$ScatterplotFast$wideExtent = function (values) {
+	var result = A2(
+		$elm$core$Maybe$withDefault,
+		_Utils_Tuple2(0, 0),
+		$gampleman$elm_visualization$Statistics$extent(values));
+	var max = A2(
+		$elm$core$Maybe$withDefault,
+		0,
+		$elm$core$List$maximum(values));
+	var result1 = A2($author$project$ScatterplotFast$addieren, result, ($author$project$ScatterplotFast$tickCount * max) / 50);
+	var result2 = A2($author$project$ScatterplotFast$addieren, result1, 0.0);
+	return result2;
+};
+var $elm_community$typed_svg$TypedSvg$Attributes$width = function (length) {
+	return A2(
+		$elm_community$typed_svg$TypedSvg$Core$attribute,
+		'width',
+		$elm_community$typed_svg$TypedSvg$TypesToStrings$lengthToString(length));
+};
+var $elm$svg$Svg$Attributes$class = _VirtualDom_attribute('class');
+var $gampleman$elm_visualization$Scale$tickFormat = function (_v0) {
+	var opts = _v0.a;
+	return opts.tickFormat(opts.domain);
+};
+var $gampleman$elm_visualization$Scale$ticks = F2(
+	function (_v0, count) {
+		var scale = _v0.a;
+		return A2(scale.ticks, scale.domain, count);
+	});
+var $gampleman$elm_visualization$Axis$computeOptions = F2(
+	function (attrs, scale) {
+		var _v0 = A3(
+			$elm$core$List$foldl,
+			F2(
+				function (attr, _v1) {
+					var babyOpts = _v1.a;
+					var post = _v1.b;
+					switch (attr.$) {
+						case 'TickCount':
+							var val = attr.a;
+							return _Utils_Tuple2(
+								_Utils_update(
+									babyOpts,
+									{tickCount: val}),
+								post);
+						case 'TickSizeInner':
+							var val = attr.a;
+							return _Utils_Tuple2(
+								_Utils_update(
+									babyOpts,
+									{tickSizeInner: val}),
+								post);
+						case 'TickSizeOuter':
+							var val = attr.a;
+							return _Utils_Tuple2(
+								_Utils_update(
+									babyOpts,
+									{tickSizeOuter: val}),
+								post);
+						case 'TickPadding':
+							var val = attr.a;
+							return _Utils_Tuple2(
+								_Utils_update(
+									babyOpts,
+									{tickPadding: val}),
+								post);
+						default:
+							return _Utils_Tuple2(
+								babyOpts,
+								A2($elm$core$List$cons, attr, post));
+					}
+				}),
+			_Utils_Tuple2(
+				{tickCount: 10, tickPadding: 3, tickSizeInner: 6, tickSizeOuter: 6},
+				_List_Nil),
+			attrs);
+		var opts = _v0.a;
+		var postList = _v0.b;
+		return A3(
+			$elm$core$List$foldl,
+			F2(
+				function (attr, options) {
+					switch (attr.$) {
+						case 'Ticks':
+							var val = attr.a;
+							return _Utils_update(
+								options,
+								{ticks: val});
+						case 'TickFormat':
+							var val = attr.a;
+							return _Utils_update(
+								options,
+								{tickFormat: val});
+						default:
+							return options;
+					}
+				}),
+			{
+				tickCount: opts.tickCount,
+				tickFormat: A2($gampleman$elm_visualization$Scale$tickFormat, scale, opts.tickCount),
+				tickPadding: opts.tickPadding,
+				tickSizeInner: opts.tickSizeInner,
+				tickSizeOuter: opts.tickSizeOuter,
+				ticks: A2($gampleman$elm_visualization$Scale$ticks, scale, opts.tickCount)
+			},
+			postList);
+	});
+var $elm$svg$Svg$Attributes$d = _VirtualDom_attribute('d');
+var $elm$svg$Svg$Attributes$dy = _VirtualDom_attribute('dy');
+var $elm$svg$Svg$Attributes$fill = _VirtualDom_attribute('fill');
+var $elm$svg$Svg$Attributes$fontFamily = _VirtualDom_attribute('font-family');
+var $elm$svg$Svg$Attributes$fontSize = _VirtualDom_attribute('font-size');
+var $elm$svg$Svg$trustedNode = _VirtualDom_nodeNS('http://www.w3.org/2000/svg');
+var $elm$svg$Svg$g = $elm$svg$Svg$trustedNode('g');
+var $elm$svg$Svg$line = $elm$svg$Svg$trustedNode('line');
+var $elm$svg$Svg$path = $elm$svg$Svg$trustedNode('path');
+var $gampleman$elm_visualization$Scale$rangeExtent = function (_v0) {
+	var options = _v0.a;
+	return A2(options.rangeExtent, options.domain, options.range);
+};
+var $elm$svg$Svg$Attributes$stroke = _VirtualDom_attribute('stroke');
+var $elm$svg$Svg$text = $elm$virtual_dom$VirtualDom$text;
+var $elm$svg$Svg$Attributes$textAnchor = _VirtualDom_attribute('text-anchor');
+var $elm$svg$Svg$text_ = $elm$svg$Svg$trustedNode('text');
+var $elm$svg$Svg$Attributes$transform = _VirtualDom_attribute('transform');
+var $gampleman$elm_visualization$Axis$element = F4(
+	function (_v0, k, displacement, textAnchorPosition) {
+		var x = _v0.x;
+		var y = _v0.y;
+		var x1 = _v0.x1;
+		var x2 = _v0.x2;
+		var y1 = _v0.y1;
+		var y2 = _v0.y2;
+		var translate = _v0.translate;
+		var horizontal = _v0.horizontal;
+		return F2(
+			function (attrs, scale) {
+				var rangeExtent = $gampleman$elm_visualization$Scale$rangeExtent(scale);
+				var range1 = rangeExtent.b + 0.5;
+				var range0 = rangeExtent.a + 0.5;
+				var position = $gampleman$elm_visualization$Scale$convert(scale);
+				var opts = A2($gampleman$elm_visualization$Axis$computeOptions, attrs, scale);
+				var spacing = A2($elm$core$Basics$max, opts.tickSizeInner, 0) + opts.tickPadding;
+				var drawTick = function (tick) {
+					return A2(
+						$elm$svg$Svg$g,
+						_List_fromArray(
+							[
+								$elm$svg$Svg$Attributes$class('tick'),
+								$elm$svg$Svg$Attributes$transform(
+								translate(
+									position(tick)))
+							]),
+						_List_fromArray(
+							[
+								A2(
+								$elm$svg$Svg$line,
+								_List_fromArray(
+									[
+										$elm$svg$Svg$Attributes$stroke('#000'),
+										x2(k * opts.tickSizeInner),
+										y1(0.5),
+										y2(0.5)
+									]),
+								_List_Nil),
+								A2(
+								$elm$svg$Svg$text_,
+								_List_fromArray(
+									[
+										$elm$svg$Svg$Attributes$fill('#000'),
+										x(k * spacing),
+										y(0.5),
+										$elm$svg$Svg$Attributes$dy(displacement)
+									]),
+								_List_fromArray(
+									[
+										$elm$svg$Svg$text(
+										opts.tickFormat(tick))
+									]))
+							]));
+				};
+				var domainLine = horizontal ? ('M' + ($elm$core$String$fromFloat(k * opts.tickSizeOuter) + (',' + ($elm$core$String$fromFloat(range0) + ('H0.5V' + ($elm$core$String$fromFloat(range1) + ('H' + $elm$core$String$fromFloat(k * opts.tickSizeOuter)))))))) : ('M' + ($elm$core$String$fromFloat(range0) + (',' + ($elm$core$String$fromFloat(k * opts.tickSizeOuter) + ('V0.5H' + ($elm$core$String$fromFloat(range1) + ('V' + $elm$core$String$fromFloat(k * opts.tickSizeOuter))))))));
+				return A2(
+					$elm$svg$Svg$g,
+					_List_fromArray(
+						[
+							$elm$svg$Svg$Attributes$fill('none'),
+							$elm$svg$Svg$Attributes$fontSize('10'),
+							$elm$svg$Svg$Attributes$fontFamily('sans-serif'),
+							$elm$svg$Svg$Attributes$textAnchor(textAnchorPosition)
+						]),
+					A2(
+						$elm$core$List$cons,
+						A2(
+							$elm$svg$Svg$path,
+							_List_fromArray(
+								[
+									$elm$svg$Svg$Attributes$class('domain'),
+									$elm$svg$Svg$Attributes$stroke('#000'),
+									$elm$svg$Svg$Attributes$d(domainLine)
+								]),
+							_List_Nil),
+						A2($elm$core$List$map, drawTick, opts.ticks)));
+			});
+	});
+var $elm$svg$Svg$Attributes$x = _VirtualDom_attribute('x');
+var $elm$svg$Svg$Attributes$x1 = _VirtualDom_attribute('x1');
+var $elm$svg$Svg$Attributes$x2 = _VirtualDom_attribute('x2');
+var $elm$svg$Svg$Attributes$y = _VirtualDom_attribute('y');
+var $elm$svg$Svg$Attributes$y1 = _VirtualDom_attribute('y1');
+var $elm$svg$Svg$Attributes$y2 = _VirtualDom_attribute('y2');
+var $gampleman$elm_visualization$Axis$verticalAttrs = {
+	horizontal: false,
+	translate: function (x) {
+		return 'translate(' + ($elm$core$String$fromFloat(x) + ', 0)');
+	},
+	x: A2($elm$core$Basics$composeL, $elm$svg$Svg$Attributes$y, $elm$core$String$fromFloat),
+	x1: A2($elm$core$Basics$composeL, $elm$svg$Svg$Attributes$y1, $elm$core$String$fromFloat),
+	x2: A2($elm$core$Basics$composeL, $elm$svg$Svg$Attributes$y2, $elm$core$String$fromFloat),
+	y: A2($elm$core$Basics$composeL, $elm$svg$Svg$Attributes$x, $elm$core$String$fromFloat),
+	y1: A2($elm$core$Basics$composeL, $elm$svg$Svg$Attributes$x1, $elm$core$String$fromFloat),
+	y2: A2($elm$core$Basics$composeL, $elm$svg$Svg$Attributes$x2, $elm$core$String$fromFloat)
+};
+var $gampleman$elm_visualization$Axis$bottom = A4($gampleman$elm_visualization$Axis$element, $gampleman$elm_visualization$Axis$verticalAttrs, 1, '0.71em', 'middle');
+var $gampleman$elm_visualization$Axis$TickCount = function (a) {
+	return {$: 'TickCount', a: a};
+};
+var $gampleman$elm_visualization$Axis$tickCount = $gampleman$elm_visualization$Axis$TickCount;
+var $gampleman$elm_visualization$Scale$Scale = function (a) {
+	return {$: 'Scale', a: a};
+};
+var $elm$core$Basics$always = F2(
+	function (a, _v0) {
+		return a;
+	});
+var $elm$core$Basics$isNaN = _Basics_isNaN;
+var $gampleman$elm_visualization$Scale$Continuous$normalize = F2(
+	function (a, b) {
+		var c = b - a;
+		return (!c) ? $elm$core$Basics$always(0.5) : ($elm$core$Basics$isNaN(c) ? $elm$core$Basics$always(0 / 0) : function (x) {
+			return (x - a) / c;
+		});
+	});
+var $gampleman$elm_visualization$Scale$Continuous$bimap = F3(
+	function (_v0, _v1, interpolate) {
+		var d0 = _v0.a;
+		var d1 = _v0.b;
+		var r0 = _v1.a;
+		var r1 = _v1.b;
+		var _v2 = (_Utils_cmp(d1, d0) < 0) ? _Utils_Tuple2(
+			A2($gampleman$elm_visualization$Scale$Continuous$normalize, d1, d0),
+			A2(interpolate, r1, r0)) : _Utils_Tuple2(
+			A2($gampleman$elm_visualization$Scale$Continuous$normalize, d0, d1),
+			A2(interpolate, r0, r1));
+		var de = _v2.a;
+		var re = _v2.b;
+		return A2($elm$core$Basics$composeL, re, de);
+	});
+var $gampleman$elm_visualization$Scale$Continuous$convertTransform = F4(
+	function (transform, interpolate, _v0, range) {
+		var d0 = _v0.a;
+		var d1 = _v0.b;
+		return A2(
+			$elm$core$Basics$composeR,
+			transform,
+			A3(
+				$gampleman$elm_visualization$Scale$Continuous$bimap,
+				_Utils_Tuple2(
+					transform(d0),
+					transform(d1)),
+				range,
+				interpolate));
+	});
+var $gampleman$elm_visualization$Interpolation$float = F2(
+	function (a, to) {
+		var b = to - a;
+		return function (t) {
+			return a + (b * t);
+		};
+	});
+var $gampleman$elm_visualization$Scale$Continuous$invertTransform = F4(
+	function (transform, untransform, _v0, range) {
+		var d0 = _v0.a;
+		var d1 = _v0.b;
+		return A2(
+			$elm$core$Basics$composeR,
+			A3(
+				$gampleman$elm_visualization$Scale$Continuous$bimap,
+				range,
+				_Utils_Tuple2(
+					transform(d0),
+					transform(d1)),
+				$gampleman$elm_visualization$Interpolation$float),
+			untransform);
+	});
+var $elm$core$Basics$ge = _Utils_ge;
+var $gampleman$elm_visualization$Scale$Continuous$fixPoint = F3(
+	function (maxIterations, initialInput, fn) {
+		var helper = F2(
+			function (iters, _v0) {
+				helper:
+				while (true) {
+					var a = _v0.a;
+					var b = _v0.b;
+					if (_Utils_cmp(iters + 1, maxIterations) > -1) {
+						return b;
+					} else {
+						var _v1 = fn(b);
+						var outA = _v1.a;
+						var outB = _v1.b;
+						if (_Utils_eq(outA, a)) {
+							return b;
+						} else {
+							if (!outA) {
+								return b;
+							} else {
+								var $temp$iters = iters + 1,
+									$temp$_v0 = _Utils_Tuple2(outA, outB);
+								iters = $temp$iters;
+								_v0 = $temp$_v0;
+								continue helper;
+							}
+						}
+					}
+				}
+			});
+		return A2(
+			helper,
+			1,
+			fn(initialInput));
+	});
+var $elm$core$Basics$e = _Basics_e;
+var $elm$core$Basics$sqrt = _Basics_sqrt;
+var $gampleman$elm_visualization$Scale$Continuous$e10 = $elm$core$Basics$sqrt(50);
+var $gampleman$elm_visualization$Scale$Continuous$e2 = $elm$core$Basics$sqrt(2);
+var $gampleman$elm_visualization$Scale$Continuous$e5 = $elm$core$Basics$sqrt(10);
+var $gampleman$elm_visualization$Scale$Continuous$ln10 = A2($elm$core$Basics$logBase, $elm$core$Basics$e, 10);
+var $elm$core$Basics$pow = _Basics_pow;
+var $gampleman$elm_visualization$Scale$Continuous$tickIncrement = F3(
+	function (start, stop, count) {
+		var step = (stop - start) / A2($elm$core$Basics$max, 0, count);
+		var powr = $elm$core$Basics$floor(
+			A2($elm$core$Basics$logBase, $elm$core$Basics$e, step) / $gampleman$elm_visualization$Scale$Continuous$ln10);
+		var error = step / A2($elm$core$Basics$pow, 10, powr);
+		var order = (_Utils_cmp(error, $gampleman$elm_visualization$Scale$Continuous$e10) > -1) ? 10 : ((_Utils_cmp(error, $gampleman$elm_visualization$Scale$Continuous$e5) > -1) ? 5 : ((_Utils_cmp(error, $gampleman$elm_visualization$Scale$Continuous$e2) > -1) ? 2 : 1));
+		return (powr >= 0) ? (order * A2($elm$core$Basics$pow, 10, powr)) : ((-A2($elm$core$Basics$pow, 10, -powr)) / order);
+	});
+var $gampleman$elm_visualization$Scale$Continuous$withNormalizedDomain = F2(
+	function (fn, _v0) {
+		var a = _v0.a;
+		var b = _v0.b;
+		if (_Utils_cmp(a, b) < 0) {
+			return fn(
+				_Utils_Tuple2(a, b));
+		} else {
+			var _v1 = fn(
+				_Utils_Tuple2(b, a));
+			var d = _v1.a;
+			var c = _v1.b;
+			return _Utils_Tuple2(c, d);
+		}
+	});
+var $gampleman$elm_visualization$Scale$Continuous$nice = F2(
+	function (domain, count) {
+		var computation = function (_v0) {
+			var start = _v0.a;
+			var stop = _v0.b;
+			var step = A3($gampleman$elm_visualization$Scale$Continuous$tickIncrement, start, stop, count);
+			return _Utils_Tuple2(
+				step,
+				(step > 0) ? _Utils_Tuple2(
+					$elm$core$Basics$floor(start / step) * step,
+					$elm$core$Basics$ceiling(stop / step) * step) : ((step < 0) ? _Utils_Tuple2(
+					$elm$core$Basics$ceiling(start * step) / step,
+					$elm$core$Basics$floor(stop * step) / step) : _Utils_Tuple2(start, stop)));
+		};
+		return A2(
+			$gampleman$elm_visualization$Scale$Continuous$withNormalizedDomain,
+			function (dmn) {
+				return A3($gampleman$elm_visualization$Scale$Continuous$fixPoint, 10, dmn, computation);
+			},
+			domain);
+	});
+var $elm$core$Basics$abs = function (n) {
+	return (n < 0) ? (-n) : n;
+};
+var $gampleman$elm_visualization$Scale$Continuous$exponent = function (x) {
+	return (!x) ? 0 : ((x < 1) ? (1 + $gampleman$elm_visualization$Scale$Continuous$exponent(x * 10)) : 0);
+};
+var $gampleman$elm_visualization$Scale$Continuous$precisionFixed = function (step) {
+	return A2(
+		$elm$core$Basics$max,
+		0,
+		$gampleman$elm_visualization$Scale$Continuous$exponent(
+			$elm$core$Basics$abs(step)));
+};
+var $gampleman$elm_visualization$Statistics$tickStep = F3(
+	function (start, stop, count) {
+		var step0 = $elm$core$Basics$abs(stop - start) / A2($elm$core$Basics$max, 0, count);
+		var step1 = A2(
+			$elm$core$Basics$pow,
+			10,
+			$elm$core$Basics$floor(
+				A2($elm$core$Basics$logBase, $elm$core$Basics$e, step0) / A2($elm$core$Basics$logBase, $elm$core$Basics$e, 10)));
+		var error = step0 / step1;
+		var step2 = (_Utils_cmp(
+			error,
+			$elm$core$Basics$sqrt(50)) > -1) ? (step1 * 10) : ((_Utils_cmp(
+			error,
+			$elm$core$Basics$sqrt(10)) > -1) ? (step1 * 5) : ((_Utils_cmp(
+			error,
+			$elm$core$Basics$sqrt(2)) > -1) ? (step1 * 2) : step1));
+		return (_Utils_cmp(stop, start) < 0) ? (-step2) : step2;
+	});
+var $elm$core$String$cons = _String_cons;
+var $elm$core$String$fromChar = function (_char) {
+	return A2($elm$core$String$cons, _char, '');
+};
+var $elm$core$Bitwise$and = _Bitwise_and;
+var $elm$core$Bitwise$shiftRightBy = _Bitwise_shiftRightBy;
+var $elm$core$String$repeatHelp = F3(
+	function (n, chunk, result) {
+		return (n <= 0) ? result : A3(
+			$elm$core$String$repeatHelp,
+			n >> 1,
+			_Utils_ap(chunk, chunk),
+			(!(n & 1)) ? result : _Utils_ap(result, chunk));
+	});
+var $elm$core$String$repeat = F2(
+	function (n, chunk) {
+		return A3($elm$core$String$repeatHelp, n, chunk, '');
+	});
+var $elm$core$String$padRight = F3(
+	function (n, _char, string) {
+		return _Utils_ap(
+			string,
+			A2(
+				$elm$core$String$repeat,
+				n - $elm$core$String$length(string),
+				$elm$core$String$fromChar(_char)));
+	});
+var $elm$core$Basics$round = _Basics_round;
+var $gampleman$elm_visualization$Scale$Continuous$toFixed = F2(
+	function (precision, value) {
+		var power_ = A2($elm$core$Basics$pow, 10, precision);
+		var pad = function (num) {
+			_v0$2:
+			while (true) {
+				if (num.b) {
+					if (num.b.b) {
+						if (!num.b.b.b) {
+							var x = num.a;
+							var _v1 = num.b;
+							var y = _v1.a;
+							return _List_fromArray(
+								[
+									x,
+									A3(
+									$elm$core$String$padRight,
+									precision,
+									_Utils_chr('0'),
+									y)
+								]);
+						} else {
+							break _v0$2;
+						}
+					} else {
+						var val = num.a;
+						return (precision > 0) ? _List_fromArray(
+							[
+								val,
+								A3(
+								$elm$core$String$padRight,
+								precision,
+								_Utils_chr('0'),
+								'')
+							]) : _List_fromArray(
+							[val]);
+					}
+				} else {
+					break _v0$2;
+				}
+			}
+			var val = num;
+			return val;
+		};
+		return A2(
+			$elm$core$String$join,
+			'.',
+			pad(
+				A2(
+					$elm$core$String$split,
+					'.',
+					$elm$core$String$fromFloat(
+						$elm$core$Basics$round(value * power_) / power_))));
+	});
+var $gampleman$elm_visualization$Scale$Continuous$tickFormat = F2(
+	function (_v0, count) {
+		var start = _v0.a;
+		var stop = _v0.b;
+		return $gampleman$elm_visualization$Scale$Continuous$toFixed(
+			$gampleman$elm_visualization$Scale$Continuous$precisionFixed(
+				A3($gampleman$elm_visualization$Statistics$tickStep, start, stop, count)));
+	});
+var $elm$core$Bitwise$or = _Bitwise_or;
+var $gampleman$elm_visualization$Statistics$range = F3(
+	function (start, stop, step) {
+		var n = A2(
+			$elm$core$Basics$max,
+			0,
+			0 | $elm$core$Basics$ceiling((stop - start) / step));
+		var helper = F2(
+			function (i, list) {
+				return (i >= 0) ? A2(
+					helper,
+					i - 1,
+					A2($elm$core$List$cons, start + (step * i), list)) : list;
+			});
+		return A2(helper, n - 1, _List_Nil);
+	});
+var $gampleman$elm_visualization$Statistics$ticks = F3(
+	function (start, stop, count) {
+		var step = A3($gampleman$elm_visualization$Statistics$tickStep, start, stop, count);
+		var end = ($elm$core$Basics$floor(stop / step) * step) + (step / 2);
+		var beg = $elm$core$Basics$ceiling(start / step) * step;
+		return A3($gampleman$elm_visualization$Statistics$range, beg, end, step);
+	});
+var $gampleman$elm_visualization$Scale$Continuous$ticks = F2(
+	function (_v0, count) {
+		var start = _v0.a;
+		var end = _v0.b;
+		return A3($gampleman$elm_visualization$Statistics$ticks, start, end, count);
+	});
+var $gampleman$elm_visualization$Scale$Continuous$scaleWithTransform = F4(
+	function (transform, untransform, range_, domain_) {
+		return {
+			convert: A2($gampleman$elm_visualization$Scale$Continuous$convertTransform, transform, $gampleman$elm_visualization$Interpolation$float),
+			domain: domain_,
+			invert: A2($gampleman$elm_visualization$Scale$Continuous$invertTransform, transform, untransform),
+			nice: $gampleman$elm_visualization$Scale$Continuous$nice,
+			range: range_,
+			rangeExtent: F2(
+				function (_v0, r) {
+					return r;
+				}),
+			tickFormat: $gampleman$elm_visualization$Scale$Continuous$tickFormat,
+			ticks: $gampleman$elm_visualization$Scale$Continuous$ticks
+		};
+	});
+var $gampleman$elm_visualization$Scale$Continuous$linear = A2($gampleman$elm_visualization$Scale$Continuous$scaleWithTransform, $elm$core$Basics$identity, $elm$core$Basics$identity);
+var $gampleman$elm_visualization$Scale$linear = F2(
+	function (range_, domain_) {
+		return $gampleman$elm_visualization$Scale$Scale(
+			A2($gampleman$elm_visualization$Scale$Continuous$linear, range_, domain_));
+	});
+var $author$project$ScatterplotFast$xScale = function (values) {
+	return A2(
+		$gampleman$elm_visualization$Scale$linear,
+		_Utils_Tuple2(0, $author$project$ScatterplotFast$w - (2 * $author$project$ScatterplotFast$padding)),
+		$author$project$ScatterplotFast$wideExtent(values));
+};
+var $author$project$ScatterplotFast$xAxis = function (values) {
+	return A2(
+		$gampleman$elm_visualization$Axis$bottom,
+		_List_fromArray(
+			[
+				$gampleman$elm_visualization$Axis$tickCount($author$project$ScatterplotFast$tickCount)
+			]),
+		$author$project$ScatterplotFast$xScale(values));
+};
+var $gampleman$elm_visualization$Axis$horizontalAttrs = {
+	horizontal: true,
+	translate: function (y) {
+		return 'translate(0, ' + ($elm$core$String$fromFloat(y) + ')');
+	},
+	x: A2($elm$core$Basics$composeL, $elm$svg$Svg$Attributes$x, $elm$core$String$fromFloat),
+	x1: A2($elm$core$Basics$composeL, $elm$svg$Svg$Attributes$x1, $elm$core$String$fromFloat),
+	x2: A2($elm$core$Basics$composeL, $elm$svg$Svg$Attributes$x2, $elm$core$String$fromFloat),
+	y: A2($elm$core$Basics$composeL, $elm$svg$Svg$Attributes$y, $elm$core$String$fromFloat),
+	y1: A2($elm$core$Basics$composeL, $elm$svg$Svg$Attributes$y1, $elm$core$String$fromFloat),
+	y2: A2($elm$core$Basics$composeL, $elm$svg$Svg$Attributes$y2, $elm$core$String$fromFloat)
+};
+var $gampleman$elm_visualization$Axis$left = A4($gampleman$elm_visualization$Axis$element, $gampleman$elm_visualization$Axis$horizontalAttrs, -1, '0.32em', 'end');
+var $author$project$ScatterplotFast$yScale = function (values) {
+	return A2(
+		$gampleman$elm_visualization$Scale$linear,
+		_Utils_Tuple2($author$project$ScatterplotFast$h - (2 * $author$project$ScatterplotFast$padding), 0),
+		$author$project$ScatterplotFast$wideExtent(values));
+};
+var $author$project$ScatterplotFast$yAxis = function (values) {
+	return A2(
+		$gampleman$elm_visualization$Axis$left,
+		_List_fromArray(
+			[
+				$gampleman$elm_visualization$Axis$tickCount($author$project$ScatterplotFast$tickCount)
+			]),
+		$author$project$ScatterplotFast$yScale(values));
+};
+var $author$project$ScatterplotFast$scatterplot = function (model) {
+	var yValues = A2(
+		$elm$core$List$map,
+		function ($) {
+			return $.y;
+		},
+		model.data);
+	var yScaleLocal = $author$project$ScatterplotFast$yScale(yValues);
+	var xValues = A2(
+		$elm$core$List$map,
+		function ($) {
+			return $.x;
+		},
+		model.data);
+	var xScaleLocal = $author$project$ScatterplotFast$xScale(xValues);
+	var half = function (t) {
+		return (t.b - t.a) / 2;
+	};
+	var labelPositions = {
+		x: half(
+			$author$project$ScatterplotFast$wideExtent(xValues)),
+		y: $author$project$ScatterplotFast$wideExtent(yValues).b
+	};
+	return A2(
+		$elm_community$typed_svg$TypedSvg$svg,
+		_List_fromArray(
+			[
+				A4($elm_community$typed_svg$TypedSvg$Attributes$viewBox, 0, 0, $author$project$ScatterplotFast$w, $author$project$ScatterplotFast$h),
+				$elm_community$typed_svg$TypedSvg$Attributes$width(
+				$elm_community$typed_svg$TypedSvg$Types$Percent(80)),
+				$elm_community$typed_svg$TypedSvg$Attributes$height(
+				$elm_community$typed_svg$TypedSvg$Types$Percent(80))
+			]),
 		_List_fromArray(
 			[
 				A2(
-				$elm_community$typed_svg$TypedSvg$circle,
+				$elm_community$typed_svg$TypedSvg$style,
+				_List_Nil,
 				_List_fromArray(
 					[
-						$elm_community$typed_svg$TypedSvg$Attributes$InPx$r(16),
-						$elm_community$typed_svg$TypedSvg$Attributes$stroke(
-						$elm_community$typed_svg$TypedSvg$Types$Paint($avh4$elm_color$Color$purple)),
-						$elm_community$typed_svg$TypedSvg$Attributes$fill(
-						$elm_community$typed_svg$TypedSvg$Types$Paint($avh4$elm_color$Color$purple)),
-						$elm_community$typed_svg$TypedSvg$Attributes$InPx$cx(0),
-						$elm_community$typed_svg$TypedSvg$Attributes$InPx$cy(0)
-					]),
-				_List_Nil),
+						$elm_community$typed_svg$TypedSvg$Core$text('\r\n            .point circle { stroke: rgba(0, 0, 155,0.1); fill: rgba(0, 0, 155,0.1); }\r\n            .point text { display: none; }\r\n            .point:hover circle { stroke: rgba(0, 0, 0,1.0); fill: rgb(118, 214, 78); }\r\n            .point:hover text { display: inline; text-shadow: 0px 0px 4px rgb(255,255,255),0px 0px 6px rgb(255,255,255); fill: rgb(0,0,0)}\r\n            \r\n          ')
+					])),
 				A2(
-				$elm_community$typed_svg$TypedSvg$text_,
+				$elm_community$typed_svg$TypedSvg$g,
 				_List_fromArray(
 					[
-						$elm_community$typed_svg$TypedSvg$Attributes$textAnchor($elm_community$typed_svg$TypedSvg$Types$AnchorStart),
-						$elm_community$typed_svg$TypedSvg$Attributes$fontFamily(
-						_List_fromArray(
-							['Calibri', 'sans-serif'])),
 						$elm_community$typed_svg$TypedSvg$Attributes$transform(
 						_List_fromArray(
 							[
-								A2($elm_community$typed_svg$TypedSvg$Types$Translate, 5.5, 22.5),
-								A3($elm_community$typed_svg$TypedSvg$Types$Rotate, 25.0, 0.0, 0.0)
+								A2($elm_community$typed_svg$TypedSvg$Types$Translate, 60, 390)
 							]))
 					]),
 				_List_fromArray(
 					[
-						$elm$html$Html$text(n)
-					]))
-			]));
-};
-var $author$project$Development$TreeDiagramm$filterAttribute = F3(
-	function (spieler, attribut, wort) {
-		return A2(
-			$elm$core$List$filter,
-			function (n) {
-				return _Utils_eq(
-					attribut(n),
-					wort);
-			},
-			spieler);
-	});
-var $elm$html$Html$input = _VirtualDom_node('input');
-var $author$project$Development$TreeDiagramm$listeBbva = _List_fromArray(
-	['Real Madrid', 'FC Barcelona', 'Athletic Club de Bilbao', 'Atlético Madrid', 'Real Betis', 'CA Osasuna', 'RC Celta', 'Deportivo Alavés', 'Cádiz CF', 'Elche CF', 'Getafe CF', 'Sevilla FC', 'Valencia CF', 'Villarreal CF', 'Granada CF', 'Real Sociedad', 'Real Valladolid CF', 'SD Eibar', 'SD Huesca', 'Levante UD']);
-var $author$project$Development$TreeDiagramm$listeBundes = _List_fromArray(
-	['VfL Wolfsburg', 'Bayer 04 Leverkusen', 'SC Freiburg', '1. FC Köln', '1. FSV Mainz 05', '1. FC Union Berlin', 'Hertha BSC', 'TSG 1899 Hoffenheim', 'RB Leipzig', 'Borussia Mönchengladbach', 'Eintracht Frankfurt', 'DSC Arminia Bielefeld', 'SV Werder Bremen', 'FC Schalke 04', 'FC Augsburg', 'Borussia Dortmund', 'FC Bayern München', 'VfB Stuttgart']);
-var $author$project$Development$TreeDiagramm$listePremier = _List_fromArray(
-	['Arsenal', 'Aston Villa', 'Brighton & Hove Albion', 'Burnley', 'Chelsea', 'Crystal Palace', 'Everton', 'Fulham', 'Leeds United', 'Leicester City', 'Liverpool', 'Manchester City', 'Manchester United', 'Sheffield United', 'Newcastle United', 'Southampton', 'Tottenham Hotspur', 'West Bromwich Albion', 'West Ham United', 'Wolverhampton Wanderers']);
-var $author$project$Development$TreeDiagramm$TreeLayout = F5(
-	function (orientation, levelHeight, subtreeDistance, siblingDistance, padding) {
-		return {levelHeight: levelHeight, orientation: orientation, padding: padding, siblingDistance: siblingDistance, subtreeDistance: subtreeDistance};
-	});
-var $alex_tan$elm_tree_diagram$TreeDiagram$TopToBottom = {$: 'TopToBottom'};
-var $alex_tan$elm_tree_diagram$TreeDiagram$topToBottom = $alex_tan$elm_tree_diagram$TreeDiagram$TopToBottom;
-var $author$project$Development$TreeDiagramm$newTreelayout = A5($author$project$Development$TreeDiagramm$TreeLayout, $alex_tan$elm_tree_diagram$TreeDiagram$topToBottom, 150, 80, 70, 120);
-var $elm$virtual_dom$VirtualDom$Normal = function (a) {
-	return {$: 'Normal', a: a};
-};
-var $elm$virtual_dom$VirtualDom$on = _VirtualDom_on;
-var $elm$html$Html$Events$on = F2(
-	function (event, decoder) {
-		return A2(
-			$elm$virtual_dom$VirtualDom$on,
-			event,
-			$elm$virtual_dom$VirtualDom$Normal(decoder));
-	});
-var $elm$json$Json$Decode$field = _Json_decodeField;
-var $elm$json$Json$Decode$at = F2(
-	function (fields, decoder) {
-		return A3($elm$core$List$foldr, $elm$json$Json$Decode$field, decoder, fields);
-	});
-var $elm$json$Json$Decode$bool = _Json_decodeBool;
-var $elm$html$Html$Events$targetChecked = A2(
-	$elm$json$Json$Decode$at,
-	_List_fromArray(
-		['target', 'checked']),
-	$elm$json$Json$Decode$bool);
-var $elm$html$Html$Events$onCheck = function (tagger) {
-	return A2(
-		$elm$html$Html$Events$on,
-		'change',
-		A2($elm$json$Json$Decode$map, tagger, $elm$html$Html$Events$targetChecked));
-};
-var $elm$html$Html$Events$onClick = function (msg) {
-	return A2(
-		$elm$html$Html$Events$on,
-		'click',
-		$elm$json$Json$Decode$succeed(msg));
-};
-var $elm$html$Html$Events$alwaysStop = function (x) {
-	return _Utils_Tuple2(x, true);
-};
-var $elm$virtual_dom$VirtualDom$MayStopPropagation = function (a) {
-	return {$: 'MayStopPropagation', a: a};
-};
-var $elm$html$Html$Events$stopPropagationOn = F2(
-	function (event, decoder) {
-		return A2(
-			$elm$virtual_dom$VirtualDom$on,
-			event,
-			$elm$virtual_dom$VirtualDom$MayStopPropagation(decoder));
-	});
-var $elm$json$Json$Decode$string = _Json_decodeString;
-var $elm$html$Html$Events$targetValue = A2(
-	$elm$json$Json$Decode$at,
-	_List_fromArray(
-		['target', 'value']),
-	$elm$json$Json$Decode$string);
-var $elm$html$Html$Events$onInput = function (tagger) {
-	return A2(
-		$elm$html$Html$Events$stopPropagationOn,
-		'input',
-		A2(
-			$elm$json$Json$Decode$map,
-			$elm$html$Html$Events$alwaysStop,
-			A2($elm$json$Json$Decode$map, tagger, $elm$html$Html$Events$targetValue)));
-};
-var $elm$json$Json$Encode$string = _Json_wrap;
-var $elm$html$Html$Attributes$stringProperty = F2(
-	function (key, string) {
-		return A2(
-			_VirtualDom_property,
-			key,
-			$elm$json$Json$Encode$string(string));
-	});
-var $elm$html$Html$Attributes$placeholder = $elm$html$Html$Attributes$stringProperty('placeholder');
-var $author$project$Development$TreeDiagramm$Liga = F2(
-	function (name, children) {
-		return {children: children, name: name};
-	});
-var $author$project$Development$TreeDiagramm$Mannschaft = F4(
-	function (name, children, liga, anzahl) {
-		return {anzahl: anzahl, children: children, liga: liga, name: name};
-	});
-var $author$project$Development$TreeDiagramm$clubCombiner = F3(
-	function (x, y, z) {
-		return A4(
-			$author$project$Development$TreeDiagramm$Mannschaft,
-			x,
-			A2(
-				$elm$core$List$filter,
-				function (b) {
-					return _Utils_eq(b.club, x);
-				},
-				y),
-			z,
-			$elm$core$List$length(
+						$author$project$ScatterplotFast$xAxis(xValues),
+						A2(
+						$elm_community$typed_svg$TypedSvg$text_,
+						_List_fromArray(
+							[
+								$elm_community$typed_svg$TypedSvg$Attributes$InPx$x(360),
+								$elm_community$typed_svg$TypedSvg$Attributes$InPx$y(35),
+								$elm_community$typed_svg$TypedSvg$Attributes$fontFamily(
+								_List_fromArray(
+									['sans-serif'])),
+								$elm_community$typed_svg$TypedSvg$Attributes$fontSize(
+								$elm_community$typed_svg$TypedSvg$Types$px(20))
+							]),
+						_List_fromArray(
+							[
+								$elm_community$typed_svg$TypedSvg$Core$text(model.xDescription)
+							]))
+					])),
 				A2(
-					$elm$core$List$filter,
-					function (b) {
-						return _Utils_eq(b.club, x);
-					},
-					y)));
-	});
-var $author$project$Development$TreeDiagramm$ligenCombiner = F3(
-	function (x, y, z) {
-		return A2(
-			$author$project$Development$TreeDiagramm$Liga,
-			x,
-			A2(
-				$elm$core$List$filter,
-				function (b) {
-					return _Utils_eq(b.liga, x);
-				},
+				$elm_community$typed_svg$TypedSvg$g,
+				_List_fromArray(
+					[
+						$elm_community$typed_svg$TypedSvg$Attributes$transform(
+						_List_fromArray(
+							[
+								A2($elm_community$typed_svg$TypedSvg$Types$Translate, 60, 60)
+							]))
+					]),
+				_List_fromArray(
+					[
+						$author$project$ScatterplotFast$yAxis(yValues),
+						A2(
+						$elm_community$typed_svg$TypedSvg$text_,
+						_List_fromArray(
+							[
+								$elm_community$typed_svg$TypedSvg$Attributes$InPx$x(-30),
+								$elm_community$typed_svg$TypedSvg$Attributes$InPx$y(-30),
+								$elm_community$typed_svg$TypedSvg$Attributes$fontFamily(
+								_List_fromArray(
+									['sans-serif'])),
+								$elm_community$typed_svg$TypedSvg$Attributes$fontSize(
+								$elm_community$typed_svg$TypedSvg$Types$px(20))
+							]),
+						_List_fromArray(
+							[
+								$elm_community$typed_svg$TypedSvg$Core$text(model.yDescription)
+							]))
+					])),
+				A2(
+				$elm_community$typed_svg$TypedSvg$g,
+				_List_fromArray(
+					[
+						$elm_community$typed_svg$TypedSvg$Attributes$transform(
+						_List_fromArray(
+							[
+								A2($elm_community$typed_svg$TypedSvg$Types$Translate, $author$project$ScatterplotFast$padding, $author$project$ScatterplotFast$padding)
+							]))
+					]),
 				A2(
 					$elm$core$List$map,
 					function (n) {
-						return A3($author$project$Development$TreeDiagramm$clubCombiner, n, z, x);
+						return A4($author$project$ScatterplotFast$point, xScaleLocal, yScaleLocal, n, model.data);
 					},
-					y)));
-	});
-var $elm$json$Json$Encode$list = F2(
-	function (func, entries) {
-		return _Json_wrap(
-			A3(
-				$elm$core$List$foldl,
-				_Json_addEntry(func),
-				_Json_emptyArray(_Utils_Tuple0),
-				entries));
-	});
-var $elm$json$Json$Encode$int = _Json_wrap;
-var $elm$json$Json$Encode$object = function (pairs) {
-	return _Json_wrap(
-		A3(
-			$elm$core$List$foldl,
-			F2(
-				function (_v0, obj) {
-					var k = _v0.a;
-					var v = _v0.b;
-					return A3(_Json_addField, k, v, obj);
-				}),
-			_Json_emptyObject(_Utils_Tuple0),
-			pairs));
-};
-var $author$project$Development$TreeDiagramm$spielerEncoder = function (spieler) {
-	return $elm$json$Json$Encode$object(
-		_List_fromArray(
-			[
-				_Utils_Tuple2(
-				'name',
-				$elm$json$Json$Encode$string(spieler.name)),
-				_Utils_Tuple2(
-				'club',
-				$elm$json$Json$Encode$string(spieler.club))
+					model.data))
 			]));
 };
-var $author$project$Development$TreeDiagramm$mannschaftsEncoder = function (team) {
-	return $elm$json$Json$Encode$object(
-		_List_fromArray(
-			[
-				_Utils_Tuple2(
-				'name',
-				$elm$json$Json$Encode$string(team.name)),
-				_Utils_Tuple2(
-				'children',
-				A2($elm$json$Json$Encode$list, $author$project$Development$TreeDiagramm$spielerEncoder, team.children)),
-				_Utils_Tuple2(
-				'anzahl',
-				$elm$json$Json$Encode$int(team.anzahl))
-			]));
-};
-var $author$project$Development$TreeDiagramm$ligenEncoder = function (liga) {
-	return $elm$json$Json$Encode$object(
-		_List_fromArray(
-			[
-				_Utils_Tuple2(
-				'name',
-				$elm$json$Json$Encode$string(liga.name)),
-				_Utils_Tuple2(
-				'children',
-				A2($elm$json$Json$Encode$list, $author$project$Development$TreeDiagramm$mannschaftsEncoder, liga.children))
-			]));
-};
-var $author$project$Development$TreeDiagramm$testEncoder = F3(
-	function (x, y, a) {
-		return A2(
-			$elm$json$Json$Encode$encode,
-			0,
-			$author$project$Development$TreeDiagramm$ligenEncoder(
-				A3($author$project$Development$TreeDiagramm$ligenCombiner, a, x, y)));
-	});
-var $elm$json$Json$Decode$int = _Json_decodeInt;
-var $elm$json$Json$Decode$andThen = _Json_andThen;
-var $elm$json$Json$Decode$lazy = function (thunk) {
-	return A2(
-		$elm$json$Json$Decode$andThen,
-		thunk,
-		$elm$json$Json$Decode$succeed(_Utils_Tuple0));
-};
-var $elm$json$Json$Decode$list = _Json_decodeList;
-var $elm$json$Json$Decode$map3 = _Json_map3;
-var $elm$json$Json$Decode$oneOf = _Json_oneOf;
-var $elm$json$Json$Decode$maybe = function (decoder) {
-	return $elm$json$Json$Decode$oneOf(
-		_List_fromArray(
-			[
-				A2($elm$json$Json$Decode$map, $elm$core$Maybe$Just, decoder),
-				$elm$json$Json$Decode$succeed($elm$core$Maybe$Nothing)
-			]));
-};
-var $alex_tan$elm_tree_diagram$TreeDiagram$node = F2(
-	function (val, children) {
-		return A2($alex_tan$elm_tree_diagram$TreeDiagram$Node, val, children);
-	});
-function $author$project$Development$TreeDiagramm$cyclic$treeDecoder2() {
-	return A4(
-		$elm$json$Json$Decode$map3,
-		F3(
-			function (name, children, anzahl) {
-				if (children.$ === 'Nothing') {
-					if (anzahl.$ === 'Nothing') {
-						return A2($alex_tan$elm_tree_diagram$TreeDiagram$node, name, _List_Nil);
-					} else {
-						var a = anzahl.a;
-						return A2(
-							$alex_tan$elm_tree_diagram$TreeDiagram$node,
-							$elm$core$String$fromInt(a),
-							_List_Nil);
-					}
-				} else {
-					var c = children.a;
-					if (anzahl.$ === 'Nothing') {
-						return A2($alex_tan$elm_tree_diagram$TreeDiagram$node, name, c);
-					} else {
-						var a = anzahl.a;
-						return A2(
-							$alex_tan$elm_tree_diagram$TreeDiagram$node,
-							name + (', Anzahl der Spieler: ' + $elm$core$String$fromInt(a)),
-							c);
-					}
-				}
-			}),
-		A2($elm$json$Json$Decode$field, 'name', $elm$json$Json$Decode$string),
-		$elm$json$Json$Decode$maybe(
-			A2(
-				$elm$json$Json$Decode$field,
-				'children',
-				$elm$json$Json$Decode$list(
-					$elm$json$Json$Decode$lazy(
-						function (_v3) {
-							return $author$project$Development$TreeDiagramm$cyclic$treeDecoder2();
-						})))),
-		$elm$json$Json$Decode$maybe(
-			A2($elm$json$Json$Decode$field, 'anzahl', $elm$json$Json$Decode$int)));
-}
-try {
-	var $author$project$Development$TreeDiagramm$treeDecoder2 = $author$project$Development$TreeDiagramm$cyclic$treeDecoder2();
-	$author$project$Development$TreeDiagramm$cyclic$treeDecoder2 = function () {
-		return $author$project$Development$TreeDiagramm$treeDecoder2;
-	};
-} catch ($) {
-	throw 'Some top-level definitions from `Development.TreeDiagramm` are causing infinite recursion:\n\n  ┌─────┐\n  │    treeDecoder2\n  └─────┘\n\nThese errors are very tricky, so read https://elm-lang.org/0.19.1/bad-recursion to learn how to fix it!';}
 var $elm$html$Html$Attributes$type_ = $elm$html$Html$Attributes$stringProperty('type');
 var $elm$html$Html$ul = _VirtualDom_node('ul');
 var $elm$html$Html$Attributes$value = $elm$html$Html$Attributes$stringProperty('value');
-var $author$project$Development$TreeDiagramm$view = function (model) {
+var $author$project$ScatterplotFast$view = function (model) {
 	switch (model.$) {
 		case 'Failure':
 			return $elm$html$Html$text('I was unable to load the players.');
@@ -7840,142 +8058,387 @@ var $author$project$Development$TreeDiagramm$view = function (model) {
 			return $elm$html$Html$text('Loading Players...');
 		default:
 			var l = model.a;
-			var spielerfiltered = l.onOff ? A3(
-				$author$project$Development$TreeDiagramm$filterAttribute,
+			var v6 = (l.selectedValue1 === 6) ? '✓ ' : '';
+			var v5 = (l.selectedValue1 === 5) ? '✓ ' : '';
+			var v4 = (l.selectedValue1 === 4) ? '✓ ' : '';
+			var v3 = (l.selectedValue1 === 3) ? '✓ ' : '';
+			var v26 = (l.selectedValue2 === 6) ? '✓ ' : '';
+			var v25 = (l.selectedValue2 === 5) ? '✓ ' : '';
+			var v24 = (l.selectedValue2 === 4) ? '✓ ' : '';
+			var v23 = (l.selectedValue2 === 3) ? '✓ ' : '';
+			var v22 = (l.selectedValue2 === 2) ? '✓ ' : '';
+			var v21 = (l.selectedValue2 === 1) ? '✓ ' : '';
+			var v2 = (l.selectedValue1 === 2) ? '✓ ' : '';
+			var v1 = (l.selectedValue1 === 1) ? '✓ ' : '';
+			var spieler3 = A3(
+				$author$project$ScatterplotFast$filterAttribute,
 				l.data,
 				function ($) {
-					return $.position;
+					return $.club;
 				},
-				l.position) : l.data;
-			var premierL = A3($author$project$Development$TreeDiagramm$testEncoder, l.liga, spielerfiltered, l.xName);
-			var _v1 = A2($elm$json$Json$Decode$decodeString, $author$project$Development$TreeDiagramm$treeDecoder2, premierL);
-			if (_v1.$ === 'Ok') {
-				var schools = _v1.a;
-				return A2(
-					$elm$html$Html$div,
-					_List_Nil,
-					_List_fromArray(
-						[
-							A2(
-							$elm$html$Html$ul,
-							_List_Nil,
-							_List_fromArray(
-								[
-									$elm$html$Html$text('Im Testfeld kann nach Positionen der Spieler gefiltert werden.')
-								])),
-							A2(
-							$elm$html$Html$ul,
-							_List_Nil,
-							_List_fromArray(
-								[
-									$elm$html$Html$text('Um dies zu aktivieren muss die Box angeklickt werden.')
-								])),
-							A2(
-							$elm$html$Html$ul,
-							_List_Nil,
-							_List_fromArray(
-								[
-									A2(
-									$elm$html$Html$input,
-									_List_fromArray(
-										[
-											$elm$html$Html$Attributes$placeholder('Select Position to filter'),
-											$elm$html$Html$Attributes$value(l.position),
-											$elm$html$Html$Events$onInput($author$project$Development$TreeDiagramm$ChangePosition)
-										]),
-									_List_Nil),
-									A2(
-									$elm$html$Html$input,
-									_List_fromArray(
-										[
-											$elm$html$Html$Attributes$type_('checkbox'),
-											$elm$html$Html$Events$onCheck($author$project$Development$TreeDiagramm$ActivateFilter)
-										]),
-									_List_Nil)
-								])),
-							A2(
-							$elm$html$Html$ul,
-							_List_Nil,
-							_List_fromArray(
-								[
-									$elm$html$Html$text('Positionen zur Auswahl: GK, CB, LB, RB, CDM, CM, CAM, LW, RW, LM, RM, CF, ST')
-								])),
-							A2(
-							$elm$html$Html$ul,
-							_List_Nil,
-							_List_fromArray(
-								[
-									$elm$html$Html$text('Wähle eine Liga aus:'),
-									A2(
-									$elm$html$Html$button,
-									_List_fromArray(
-										[
-											$elm$html$Html$Events$onClick(
-											$author$project$Development$TreeDiagramm$ChangeLiga(
-												_Utils_Tuple2('Calcio A', $author$project$Development$TreeDiagramm$listeCalcio)))
-										]),
-									_List_fromArray(
-										[
-											$elm$html$Html$text('Calcio A')
-										])),
-									A2(
-									$elm$html$Html$button,
-									_List_fromArray(
-										[
-											$elm$html$Html$Events$onClick(
-											$author$project$Development$TreeDiagramm$ChangeLiga(
-												_Utils_Tuple2('Premier League', $author$project$Development$TreeDiagramm$listePremier)))
-										]),
-									_List_fromArray(
-										[
-											$elm$html$Html$text('Premier League')
-										])),
-									A2(
-									$elm$html$Html$button,
-									_List_fromArray(
-										[
-											$elm$html$Html$Events$onClick(
-											$author$project$Development$TreeDiagramm$ChangeLiga(
-												_Utils_Tuple2('Bundesliga', $author$project$Development$TreeDiagramm$listeBundes)))
-										]),
-									_List_fromArray(
-										[
-											$elm$html$Html$text('Bundesliga')
-										])),
-									A2(
-									$elm$html$Html$button,
-									_List_fromArray(
-										[
-											$elm$html$Html$Events$onClick(
-											$author$project$Development$TreeDiagramm$ChangeLiga(
-												_Utils_Tuple2('La Liga', $author$project$Development$TreeDiagramm$listeBbva)))
-										]),
-									_List_fromArray(
-										[
-											$elm$html$Html$text('La Liga')
-										]))
-								])),
-							A2(
-							$elm$html$Html$ul,
-							_List_Nil,
-							_List_fromArray(
-								[
-									A4($alex_tan$elm_tree_diagram$TreeDiagram$Svg$draw, $author$project$Development$TreeDiagramm$newTreelayout, $author$project$Development$TreeDiagramm$drawNode, $author$project$Development$TreeDiagramm$drawLine, schools)
-								]))
-						]));
-			} else {
-				var error = _v1.a;
-				return $elm$html$Html$text(
-					'Error: ' + $elm$json$Json$Decode$errorToString(error));
-			}
+				l.filterClub);
+			var spieler2 = A3(
+				$author$project$ScatterplotFast$filterAttribute,
+				l.data,
+				function ($) {
+					return $.nationality;
+				},
+				l.filterNation);
+			var spieler4 = A3(
+				$author$project$ScatterplotFast$filterAttribute,
+				spieler2,
+				function ($) {
+					return $.club;
+				},
+				l.filterClub);
+			var spielerfiltered = (l.onOff && l.onOff2) ? A6(
+				$author$project$ScatterplotFast$filterAndReducePlayers,
+				spieler4,
+				function ($) {
+					return $.name;
+				},
+				l.xAAFunction,
+				l.yAAFunction,
+				l.xName,
+				l.yName) : ((l.onOff && (!l.onOff2)) ? A6(
+				$author$project$ScatterplotFast$filterAndReducePlayers,
+				spieler2,
+				function ($) {
+					return $.name;
+				},
+				l.xAAFunction,
+				l.yAAFunction,
+				l.xName,
+				l.yName) : (((!l.onOff) && l.onOff2) ? A6(
+				$author$project$ScatterplotFast$filterAndReducePlayers,
+				spieler3,
+				function ($) {
+					return $.name;
+				},
+				l.xAAFunction,
+				l.yAAFunction,
+				l.xName,
+				l.yName) : A6(
+				$author$project$ScatterplotFast$filterAndReducePlayers,
+				l.data,
+				function ($) {
+					return $.name;
+				},
+				l.xAAFunction,
+				l.yAAFunction,
+				l.xName,
+				l.yName)));
+			var spieler = A6(
+				$author$project$ScatterplotFast$filterAndReducePlayers,
+				l.data,
+				function ($) {
+					return $.name;
+				},
+				l.xAAFunction,
+				l.yAAFunction,
+				l.xName,
+				l.yName);
+			return A2(
+				$elm$html$Html$div,
+				_List_Nil,
+				_List_fromArray(
+					[
+						A2(
+						$elm$html$Html$ul,
+						_List_Nil,
+						_List_fromArray(
+							[
+								$elm$html$Html$text('Da der Datensatz sehr groß ist kann das Textfeld genutzt werden um nach Nationen zu filtern.')
+							])),
+						A2(
+						$elm$html$Html$ul,
+						_List_Nil,
+						_List_fromArray(
+							[
+								$elm$html$Html$text('Um dies zu aktivieren muss die Box angeklickt werden.')
+							])),
+						A2(
+						$elm$html$Html$ul,
+						_List_Nil,
+						_List_fromArray(
+							[
+								A2(
+								$elm$html$Html$input,
+								_List_fromArray(
+									[
+										$elm$html$Html$Attributes$placeholder('Select Nation to Filter'),
+										$elm$html$Html$Attributes$value(l.filterNation),
+										$elm$html$Html$Events$onInput($author$project$ScatterplotFast$ChangeNation)
+									]),
+								_List_Nil),
+								A2(
+								$elm$html$Html$input,
+								_List_fromArray(
+									[
+										$elm$html$Html$Attributes$type_('checkbox'),
+										$elm$html$Html$Events$onCheck($author$project$ScatterplotFast$ActivateFilter)
+									]),
+								_List_Nil),
+								A2(
+								$elm$html$Html$input,
+								_List_fromArray(
+									[
+										$elm$html$Html$Attributes$placeholder('Select Club to Filter'),
+										$elm$html$Html$Attributes$value(l.filterClub),
+										$elm$html$Html$Events$onInput($author$project$ScatterplotFast$ChangeClub)
+									]),
+								_List_Nil),
+								A2(
+								$elm$html$Html$input,
+								_List_fromArray(
+									[
+										$elm$html$Html$Attributes$type_('checkbox'),
+										$elm$html$Html$Events$onCheck($author$project$ScatterplotFast$ActivateFilter2)
+									]),
+								_List_Nil)
+							])),
+						A2(
+						$elm$html$Html$ul,
+						_List_Nil,
+						_List_fromArray(
+							[
+								$elm$html$Html$text('X Variable festlegen: '),
+								A2(
+								$elm$html$Html$button,
+								_List_fromArray(
+									[
+										$elm$html$Html$Events$onClick(
+										$author$project$ScatterplotFast$ChangeX(
+											_Utils_Tuple3(
+												function ($) {
+													return $.overall;
+												},
+												'Overall',
+												1)))
+									]),
+								_List_fromArray(
+									[
+										$elm$html$Html$text(v1 + 'Overall')
+									])),
+								A2(
+								$elm$html$Html$button,
+								_List_fromArray(
+									[
+										$elm$html$Html$Events$onClick(
+										$author$project$ScatterplotFast$ChangeX(
+											_Utils_Tuple3(
+												function ($) {
+													return $.potential;
+												},
+												'Potential',
+												2)))
+									]),
+								_List_fromArray(
+									[
+										$elm$html$Html$text(v2 + 'Potential')
+									])),
+								A2(
+								$elm$html$Html$button,
+								_List_fromArray(
+									[
+										$elm$html$Html$Events$onClick(
+										$author$project$ScatterplotFast$ChangeX(
+											_Utils_Tuple3(
+												function ($) {
+													return $.age;
+												},
+												'Age',
+												3)))
+									]),
+								_List_fromArray(
+									[
+										$elm$html$Html$text(v3 + 'Age')
+									])),
+								A2(
+								$elm$html$Html$button,
+								_List_fromArray(
+									[
+										$elm$html$Html$Events$onClick(
+										$author$project$ScatterplotFast$ChangeX(
+											_Utils_Tuple3(
+												function ($) {
+													return $.height;
+												},
+												'Height',
+												4)))
+									]),
+								_List_fromArray(
+									[
+										$elm$html$Html$text(v4 + 'Height')
+									])),
+								A2(
+								$elm$html$Html$button,
+								_List_fromArray(
+									[
+										$elm$html$Html$Events$onClick(
+										$author$project$ScatterplotFast$ChangeX(
+											_Utils_Tuple3(
+												function ($) {
+													return $.wage;
+												},
+												'Wage',
+												5)))
+									]),
+								_List_fromArray(
+									[
+										$elm$html$Html$text(v5 + 'Wage in Tausend')
+									])),
+								A2(
+								$elm$html$Html$button,
+								_List_fromArray(
+									[
+										$elm$html$Html$Events$onClick(
+										$author$project$ScatterplotFast$ChangeX(
+											_Utils_Tuple3(
+												function ($) {
+													return $.value;
+												},
+												'Value',
+												6)))
+									]),
+								_List_fromArray(
+									[
+										$elm$html$Html$text(v6 + 'Value in Tausend')
+									]))
+							])),
+						A2(
+						$elm$html$Html$ul,
+						_List_Nil,
+						_List_fromArray(
+							[
+								$elm$html$Html$text('Y Variable festlegen: '),
+								A2(
+								$elm$html$Html$button,
+								_List_fromArray(
+									[
+										$elm$html$Html$Events$onClick(
+										$author$project$ScatterplotFast$ChangeY(
+											_Utils_Tuple3(
+												function ($) {
+													return $.overall;
+												},
+												'Overall',
+												1)))
+									]),
+								_List_fromArray(
+									[
+										$elm$html$Html$text(v21 + 'Overall')
+									])),
+								A2(
+								$elm$html$Html$button,
+								_List_fromArray(
+									[
+										$elm$html$Html$Events$onClick(
+										$author$project$ScatterplotFast$ChangeY(
+											_Utils_Tuple3(
+												function ($) {
+													return $.potential;
+												},
+												'Potential',
+												2)))
+									]),
+								_List_fromArray(
+									[
+										$elm$html$Html$text(v22 + 'Potential')
+									])),
+								A2(
+								$elm$html$Html$button,
+								_List_fromArray(
+									[
+										$elm$html$Html$Events$onClick(
+										$author$project$ScatterplotFast$ChangeY(
+											_Utils_Tuple3(
+												function ($) {
+													return $.age;
+												},
+												'Age',
+												3)))
+									]),
+								_List_fromArray(
+									[
+										$elm$html$Html$text(v23 + 'Age')
+									])),
+								A2(
+								$elm$html$Html$button,
+								_List_fromArray(
+									[
+										$elm$html$Html$Events$onClick(
+										$author$project$ScatterplotFast$ChangeY(
+											_Utils_Tuple3(
+												function ($) {
+													return $.height;
+												},
+												'Height',
+												4)))
+									]),
+								_List_fromArray(
+									[
+										$elm$html$Html$text(v24 + 'Height')
+									])),
+								A2(
+								$elm$html$Html$button,
+								_List_fromArray(
+									[
+										$elm$html$Html$Events$onClick(
+										$author$project$ScatterplotFast$ChangeY(
+											_Utils_Tuple3(
+												function ($) {
+													return $.wage;
+												},
+												'Wage',
+												5)))
+									]),
+								_List_fromArray(
+									[
+										$elm$html$Html$text(v25 + 'Wage in Tausend')
+									])),
+								A2(
+								$elm$html$Html$button,
+								_List_fromArray(
+									[
+										$elm$html$Html$Events$onClick(
+										$author$project$ScatterplotFast$ChangeY(
+											_Utils_Tuple3(
+												function ($) {
+													return $.value;
+												},
+												'Value',
+												6)))
+									]),
+								_List_fromArray(
+									[
+										$elm$html$Html$text(v26 + 'Value in Tausend')
+									]))
+							])),
+						$author$project$ScatterplotFast$scatterplot(spielerfiltered),
+						A2(
+						$elm$html$Html$ul,
+						_List_Nil,
+						_List_fromArray(
+							[
+								$elm$html$Html$text('Legende:')
+							])),
+						A2(
+						$elm$html$Html$ul,
+						_List_Nil,
+						_List_fromArray(
+							[
+								$elm$html$Html$text('Beispielnationen: Germany, England, France, Portugal')
+							]))
+					]));
 	}
 };
-var $author$project$Development$TreeDiagramm$main = $elm$browser$Browser$element(
-	{init: $author$project$Development$TreeDiagramm$init, subscriptions: $author$project$Development$TreeDiagramm$subscriptions, update: $author$project$Development$TreeDiagramm$update, view: $author$project$Development$TreeDiagramm$view});
-_Platform_export({'Development':{'TreeDiagramm':{'init':$author$project$Development$TreeDiagramm$main(
-	$elm$json$Json$Decode$succeed(_Utils_Tuple0))(0)}}});}(this));
+var $author$project$ScatterplotFast$main = $elm$browser$Browser$element(
+	{init: $author$project$ScatterplotFast$init, subscriptions: $author$project$ScatterplotFast$subscriptions, update: $author$project$ScatterplotFast$update, view: $author$project$ScatterplotFast$view});
+_Platform_export({'ScatterplotFast':{'init':$author$project$ScatterplotFast$main(
+	$elm$json$Json$Decode$succeed(_Utils_Tuple0))(0)}});}(this));
 
-  var app = Elm.Development.TreeDiagramm.init({ node: document.getElementById("elm") });
+  var app = Elm.ScatterplotFast.init({ node: document.getElementById("elm") });
 }
 catch (e)
 {
