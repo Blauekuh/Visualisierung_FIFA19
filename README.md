@@ -1,11 +1,15 @@
 # Visualisierungsprojekt mit Daten des Videospiels FIFA 21
 Bei diesem Projekt handelt es sich um ein Visualisierungsprojekt in der Sprache ELM zum Modul Informationsvisualisierung 
 im SoSe 2021 an der Martin-Luther-Universität Halle-Wittenberg
-
 Das Git-Repository trägt den Namen Visualisierung FIFA19 da ursprünglich mit Daten des Spiels FIFA19 gearbeitet wurde.
+
+## Projektwebsite
+Das Projekt ist online unter folgendem Link zu finden: https://johanneslange.github.io/Visualisierung_FIFA19/
+
 ## Installation
 Zum lokalen Austesten des Projekts muss der Befehl 'elm make' im Terminal ausgeführt werden.
 Anschließend kann das Projekt unter http://localhost:8000/ aufgerufen werden.
+
 ## Pakete
 Für das Projekt werden die folgenden ELM Pakete benötigt:
 - [alex-tan/elm-tree-diagram](https://package.elm-lang.org/packages/alex-tan/elm-tree-diagram/latest/)
@@ -22,11 +26,11 @@ Für das Projekt werden die folgenden ELM Pakete benötigt:
 - [gampleman/elm-visualization](https://package.elm-lang.org/packages/gampleman/elm-visualization/latest/)
 - [lovasoa/elm-csv](https://package.elm-lang.org/packages/lovasoa/elm-csv/latest/)
 - [zwilias/elm-reorderable](https://package.elm-lang.org/packages/zwilias/elm-reorderable/latest/)
-- ["sjorn3/elm-fields"](https://package.elm-lang.org/packages/sjorn3/elm-fields/latest/)
+- [sjorn3/elm-fields](https://package.elm-lang.org/packages/sjorn3/elm-fields/latest/)
 
 ## Daten
 Die [Daten](https://kaggle.com/ekrembayar/fifa-21-complete-player-dataset) entstammen der Plattform Kaggle und wurden, für die jeweilige Visualisierung wie nötig modifiziert.
 Dies wurde in R mittels des im Repository befindlichen R Skriptes getan.
 
-## Projektvorschau
-Eine Vorschau des Projekts ist unter folgendem Link zu finden: https://johanneslange.github.io/Visualisierung_FIFA19/
+## Bericht
+Der Bericht zu dieser Visualisierung ist unter folgendem [Link](https://github.com/JohannesLange/Visualisierung_FIFA19/tree/master/latex/AbgabeOrdnerLatex) als .pdf zu finden.
